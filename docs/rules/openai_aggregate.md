@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `openai` |
 | 规则浏览路径 | `rule/openai/openai_aggregate/openai_aggregate.yaml` |
-| 规则数量（_index） | **58** |
-| SHA-256 | `14e7c66acc7eafcfdf098bc0e2a19c32b9565dea71df7c277fc33673e25afdb8` |
+| 规则数量（_index） | **33** |
+| SHA-256 | `b58877003b709abb4fca6ab224c71627e4c8907eaeaa12b386555deedde97705` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261014T011336499479Z-run` |
-| IR digest | `a3dd9746b1692c3838b7a1c8a9f3a23d765aa1db36576b4f661e02dbc9a07896` |
+| Run ID | `20261015T003707182200Z-run` |
+| IR digest | `e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 58 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/openai/openai_aggregate/openai_aggregate.yaml` |
-| loon | 57 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/openai/openai_aggregate/openai_aggregate.list` |
-| mihomo | 58 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/openai/openai_aggregate/openai_aggregate.yaml` |
-| quantumultx | 57 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/openai/openai_aggregate/openai_aggregate.list` |
-| shadowrocket | 57 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/openai/openai_aggregate/openai_aggregate.list` |
+| egern | 33 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/openai/openai_aggregate/openai_aggregate.yaml` |
+| loon | 33 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/openai/openai_aggregate/openai_aggregate.list` |
+| mihomo | 33 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/openai/openai_aggregate/openai_aggregate.yaml` |
+| quantumultx | 33 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/openai/openai_aggregate/openai_aggregate.list` |
+| shadowrocket | 33 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/openai/openai_aggregate/openai_aggregate.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/openai/openai_aggregate/openai_aggregate.json` |
-| surge | 57 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/openai/openai_aggregate/openai_aggregate.list` |
+| surge | 33 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/openai/openai_aggregate/openai_aggregate.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

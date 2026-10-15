@@ -16,14 +16,14 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-earth/google-earth.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `b7c1cf6cf4e62ca1e32b5c17a865d5a54963b0a67635d5565b27f356de7810bb` |
+| SHA-256 | `4f9a0e212805a57edbe6c5aa38e1458606f0a7c348a97942e7b204712df8e31f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261014T011336499479Z-run` |
-| IR digest | `a3dd9746b1692c3838b7a1c8a9f3a23d765aa1db36576b4f661e02dbc9a07896` |
+| Run ID | `20261015T003707182200Z-run` |
+| IR digest | `e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

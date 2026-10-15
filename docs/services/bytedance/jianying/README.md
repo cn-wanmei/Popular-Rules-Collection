@@ -16,14 +16,14 @@
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/jianying/jianying.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `51554dae1f0247face786c583134dd0585240d655a685cc56d424f584559580f` |
+| SHA-256 | `17c938a38ce0eb0c8d2f9685734825220092029b771d91e40225b8f9cd42f824` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261014T011336499479Z-run` |
-| IR digest | `a3dd9746b1692c3838b7a1c8a9f3a23d765aa1db36576b4f661e02dbc9a07896` |
+| Run ID | `20261015T003707182200Z-run` |
+| IR digest | `e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
