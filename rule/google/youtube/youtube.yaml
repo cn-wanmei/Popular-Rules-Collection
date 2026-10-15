@@ -4,28 +4,14 @@ entity: service
 id: youtube
 display_name: YouTube
 generated_from:
-  run_id: 20261014T011336499479Z-run
+  run_id: 20261015T003707182200Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: a3dd9746b1692c3838b7a1c8a9f3a23d765aa1db36576b4f661e02dbc9a07896
+  ir_digest: e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80
 stats:
-  total: 189
+  total: 175
   by_type:
-    DOMAIN: 1
-    DOMAIN_KEYWORD: 1
-    DOMAIN_SUFFIX: 182
-    IP_CIDR: 2
-    IP_CIDR6: 1
-    PROCESS_NAME: 2
+    DOMAIN_SUFFIX: 175
 rules:
-- id: fcf5ba0f6493ebcd917204b48f1ea5d256b9165adadc7700e6d1e4371f723751
-  type: DOMAIN
-  value: yt3.googleusercontent.com
-- id: ff1ce8586ba549bb1840341619e554641ff0ac54ef2f315a5c66735d5098023c
-  type: DOMAIN_KEYWORD
-  value: youtube
-- id: bb4c794cc106a366ba14dcd88b84cfdb88d87b1a7cb6420a9d565394eb1d8fbc
-  type: DOMAIN_SUFFIX
-  value: ads.youtube.com
 - id: 8f2923cdf2eaf01f73ba119246309c6d18473ac87a8cc547b8ec62a908804d24
   type: DOMAIN_SUFFIX
   value: ggpht.cn
@@ -53,9 +39,6 @@ rules:
 - id: 8c772e8721dc36104b273997756ae72177c36d40f50bb071371e29fa880ef2f6
   type: DOMAIN_SUFFIX
   value: youtu.be
-- id: c9abbb3dd5766cde4330ab6708c0cd334b57fd2e453ae425589d6f257d8634e7
-  type: DOMAIN_SUFFIX
-  value: youtube
 - id: f33e39cf1aa38f1d5329c32a7c6838d661e616bf56f919275448db3bcac77ff7
   type: DOMAIN_SUFFIX
   value: youtube-nocookie.com
@@ -347,9 +330,6 @@ rules:
 - id: cf10ab128a96da113298be6d391e22f5b3afddffbd31824b660334b394a7bfec
   type: DOMAIN_SUFFIX
   value: youtube.ge
-- id: e364042aed9be1ff3f48a4f3acf3f6eee2a71c38bb7c21cfa938aaee29ccbf0e
-  type: DOMAIN_SUFFIX
-  value: youtube.googleapis.com
 - id: 9b058c35d6f1aca254b058778f5b87e41bac311d9b1cc0f95ba2a4ff4cbbb1cc
   type: DOMAIN_SUFFIX
   value: youtube.gr
@@ -521,9 +501,6 @@ rules:
 - id: 9e80e0f3412de8e1c9b3fe9f0d3f043df50aeb3ad7610ef1e191ea05ef6db6ef
   type: DOMAIN_SUFFIX
   value: youtubeeducation.com
-- id: 0bd3d00c9e16f9e94a7a67b095c98381e3bc018ab69d8da3b6cb1d5ba1819bbb
-  type: DOMAIN_SUFFIX
-  value: youtubeembeddedplayer.googleapis.com
 - id: 4275732e825ad6aea534f0affd81f92d2d50546600a3038405b4aedc3d7db9f4
   type: DOMAIN_SUFFIX
   value: youtubefanfest.com
@@ -548,9 +525,6 @@ rules:
 - id: 536c63c6c7c6eb62a9eaad78a9d8267d07360170013f046ab6aea4f0c79494dd
   type: DOMAIN_SUFFIX
   value: youtubego.in
-- id: fc6fbb128a6471e32dc79bd445480d7a47824f0449b2a93807df628a93b5a754
-  type: DOMAIN_SUFFIX
-  value: youtubei.googleapis.com
 - id: 2ab89ca3f0fe331eed2e284ccd3ec766741dac62298614b00d0b31fa0ee645a3
   type: DOMAIN_SUFFIX
   value: youtubekids.com
@@ -560,28 +534,7 @@ rules:
 - id: a656371855fb0f61a54b6a201a81202c90f89f7a817fb2790ab62feb974bd548
   type: DOMAIN_SUFFIX
   value: yt.be
-- id: 1eb22fc148e72821263d25fc9cbbc97e903a57184a4cd4d79c91bbe9dd746331
-  type: DOMAIN_SUFFIX
-  value: yt3.ggpht.com
-- id: 4c4c629a6de76ce91a018f5249d3a12bd181bc8037aedaf41c13d871045caad3
-  type: DOMAIN_SUFFIX
-  value: yt3.googleusercontent.com
 - id: d5cb20e41846294b2bfeccc31ae2e5bb518ee0d76dd54126e9a8a1b8adaf34ec
   type: DOMAIN_SUFFIX
   value: ytimg.com
-- id: f8dcc584ee57efa10b30261fa0a64bf1054e021c100cf13935556e9d186dbaad
-  type: IP_CIDR
-  value: 172.110.32.0/21
-- id: c533ade958c98740515e4b58b5603436b0e2cec4b01dd421fe6c281dae34e47f
-  type: IP_CIDR
-  value: 216.73.80.0/20
-- id: db5a27669ce9e9eb42e51d97b1f88c0e45b706feb1cb5b1cc770c453ea25324a
-  type: IP_CIDR6
-  value: 2620:120:e000::/40
-- id: 9b2565729678c7c710122a096791d66e586de81230883a6928344d27092b38a1
-  type: PROCESS_NAME
-  value: com.google.android.youtube
-- id: 5f12d24f13c0f4563642b77d507facfe3ac2a4d52d27d5765fc1db660bd342b4
-  type: PROCESS_NAME
-  value: com.google.android.youtube.tv
 provider: google

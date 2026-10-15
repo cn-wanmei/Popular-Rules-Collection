@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: eleme
+display_name: Ele.me
+generated_from:
+  run_id: 20261015T003707182200Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: bf9046ed6beacb55114909b9112a00b5156c305fd084e212f87be1c14393e833
+  type: DOMAIN_SUFFIX
+  value: ele.me
+- id: dae74609df43b70192b7745bbb011346654b939d3d0c9f62e1d7f8f97e5c404f
+  type: DOMAIN_SUFFIX
+  value: www.ele.me
+provider: alibaba

@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: tongcheng
+display_name: Tongcheng
+generated_from:
+  run_id: 20261015T003707182200Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: d849bada0e6bd4a8d28dc4289401e270b142b0de0bf5004c75ae8646ecf1aea1
+  type: DOMAIN_SUFFIX
+  value: ly.com
+- id: d92f461a552c625e46f59483e9ae7077ae863eeac5a162a6179aba69a561c413
+  type: DOMAIN_SUFFIX
+  value: www.ly.com
+provider: tongcheng

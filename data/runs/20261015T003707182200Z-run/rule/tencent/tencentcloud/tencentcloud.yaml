@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: tencentcloud
+display_name: Tencent Cloud
+generated_from:
+  run_id: 20261015T003707182200Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: 7b8c5006c641a59cd89e5d04bd5444fe2978b044dbf53855c1980ed9c2bf0958
+  type: DOMAIN_SUFFIX
+  value: cloud.tencent.com
+provider: tencent

@@ -4,14 +4,13 @@ entity: provider_aggregate
 id: bytedance
 display_name: ByteDance
 generated_from:
-  run_id: 20261014T011336499479Z-run
+  run_id: 20261015T003707182200Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: a3dd9746b1692c3838b7a1c8a9f3a23d765aa1db36576b4f661e02dbc9a07896
+  ir_digest: e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80
 stats:
-  total: 1112
+  total: 1099
   by_type:
-    DOMAIN: 12
-    DOMAIN_KEYWORD: 2
+    DOMAIN: 1
     DOMAIN_SUFFIX: 1096
     IP_CIDR: 1
     PROCESS_NAME: 1
@@ -19,45 +18,6 @@ rules:
 - id: 9b57336129609c931d4201e4b624055c1377a0b4816a306986a7ca6130bfa0d9
   type: DOMAIN
   value: bytedance.map.fastly.net
-- id: 0b6bf7af4278c85d7ae3a40b06ba4521309936d67654a1420e81568bdfa3281f
-  type: DOMAIN
-  value: lf16-effectcdn.byteeffecttos-g.com
-- id: 074235e5d3a1c990d7ba03b0f32325b99144c5603701089ab559d947a2ea33d4
-  type: DOMAIN
-  value: lf16-pkgcdn.pitaya-clientai.com
-- id: 53762f84340ee76af334bcc45a44dd89fc418feceba4f24f4122ac82ca3db67b
-  type: DOMAIN
-  value: lf3-static.bytednsdoc.com
-- id: c24a83ca051215812adfa709c271b3744ca4d5c13d73e1ef3705b2ec62b1fafd
-  type: DOMAIN
-  value: p16-tiktok-dm-sticker-sign-sg.ibyteimg.com
-- id: f14a94e86a5242e5d8aca8ad3bf7d5e3c9252b93048f97de5586e0461a204d50
-  type: DOMAIN
-  value: p16-tiktokcdn-com.akamaized.net
-- id: 582096b1365b7d72eb2b2082ff5bfe4009fa2b2b757a01e8c698a506713fb564
-  type: DOMAIN
-  value: roovza-launches.appsflyersdk.com
-- id: 82077ce1f00f60d528ceafe2692a442cd0c001001288e693827c9f028ad4b3ff
-  type: DOMAIN
-  value: roovza.inapps.appsflyersdk.com
-- id: 8b9df3a3c8d63e39ffb6b1e63bacf1641b39166534dad328592be78549480dba
-  type: DOMAIN
-  value: roovza.launches.appsflyersdk.com
-- id: 3c4e1a81d3b8fe782051a225d7c24d16fa13162166dc0b109141c843ae306c40
-  type: DOMAIN
-  value: roovza.skadsdk.appsflyersdk.com
-- id: c402a80ecdf6c98ccede4e73dd37aa0f33a1e00c56d30ce471652b7f44bd9d52
-  type: DOMAIN
-  value: trae-api-sg.mchost.guru
-- id: 9d1f860d3ddb3a30d72c5136922b07ed43a743301f33de49c39113ba0bf9e4e2
-  type: DOMAIN
-  value: v5-dy-o-abtest.zjcdn.com
-- id: 8c85187d9238acc0f79a9b29dd37929be9243e1ff74e49e9c2bf8a97b624c104
-  type: DOMAIN_KEYWORD
-  value: musical.ly
-- id: ea23adef52af1af6cd8fcb0b6d53089ad15c62de97c1b329a344c8ff64957219
-  type: DOMAIN_KEYWORD
-  value: tiktok
 - id: 1e25f9c5169dc423e4bd59a7be6be2f7492ad1733a27b266a5024c24f8ac5737
   type: DOMAIN_SUFFIX
   value: 2333333333333.com

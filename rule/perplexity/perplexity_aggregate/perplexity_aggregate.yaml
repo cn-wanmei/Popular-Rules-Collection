@@ -4,30 +4,20 @@ entity: provider_aggregate
 id: perplexity_aggregate
 display_name: Perplexity
 generated_from:
-  run_id: 20261014T011336499479Z-run
+  run_id: 20261015T003707182200Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: a3dd9746b1692c3838b7a1c8a9f3a23d765aa1db36576b4f661e02dbc9a07896
+  ir_digest: e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80
 stats:
-  total: 7
+  total: 4
   by_type:
-    DOMAIN: 2
-    DOMAIN_SUFFIX: 5
+    DOMAIN_SUFFIX: 4
 rules:
-- id: de18c0486aa7576441fb332673440ef7066bec4598d151c03ed0b8fdc4f4dc6f
-  type: DOMAIN
-  value: ppl-ai-file-upload.s3.amazonaws.com
-- id: 73e5f4f554ad54208eecfc6ad0c539c9ae484522d264af4772f25c4b547a091a
-  type: DOMAIN
-  value: pplx-res.cloudinary.com
 - id: 14492ed9048ac582eab638de59d5dbe831818db358879948c3009062d6d43ad0
   type: DOMAIN_SUFFIX
   value: perplexity.ai
 - id: eaa1636dd8aaa0fa86a309af401c10d55177133149f4439d8ea3bd19155c050b
   type: DOMAIN_SUFFIX
   value: perplexity.com
-- id: 82081ca30a264d2c2ceaccb5b564dac2bb73c5df2fc9e3a6a4d28b5f3405def8
-  type: DOMAIN_SUFFIX
-  value: ppl-ai-file-upload.s3.amazonaws.com
 - id: c7f70a342db2de341d1a4df82ee06fa777d09f1439de99733c85f22f26f65655
   type: DOMAIN_SUFFIX
   value: pplx-res.cloudinary.com

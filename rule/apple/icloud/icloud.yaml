@@ -4,22 +4,14 @@ entity: service
 id: icloud
 display_name: iCloud
 generated_from:
-  run_id: 20261014T011336499479Z-run
+  run_id: 20261015T003707182200Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: a3dd9746b1692c3838b7a1c8a9f3a23d765aa1db36576b4f661e02dbc9a07896
+  ir_digest: e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80
 stats:
-  total: 62
+  total: 58
   by_type:
-    DOMAIN: 1
-    DOMAIN_KEYWORD: 1
-    DOMAIN_SUFFIX: 60
+    DOMAIN_SUFFIX: 58
 rules:
-- id: 632e3ea82ff88f9f9648334db2ae0c297426565b03871ee6f62229b3a8e5dda6
-  type: DOMAIN
-  value: www-cdn.icloud.com.akadns.net
-- id: 16ad2b154635bf471653207cd9d0bed0f1e191ddaeacdb1b8e2180bf36f0e073
-  type: DOMAIN_KEYWORD
-  value: icloud.com.akadns.net
 - id: adb1908541b94caaf8a20d8b10a81306ff680efbb91ec571ee6b7431e7a2633a
   type: DOMAIN_SUFFIX
   value: apple-cloudkit.com
@@ -32,12 +24,6 @@ rules:
 - id: d76beacf03ee0363aacd82c89fd50ffb18420b2eabdbb57e33e0b31c22d791c4
   type: DOMAIN_SUFFIX
   value: appleicloud.cn
-- id: f9544d0d890664c8e2bdd119a294e0abaacd8c0e854d1d68f2267b2133111086
-  type: DOMAIN_SUFFIX
-  value: applemx-icloud.com
-- id: 1bf9f1fa0bb520ffd0fb3f26412cee9709567a17eaa6b91a434bad1246c4b341
-  type: DOMAIN_SUFFIX
-  value: apzones.com
 - id: a043c07a7de7a861ebd7c43e32eef372310d14f5e0a7d0edcfc56bad6c456f27
   type: DOMAIN_SUFFIX
   value: cdn-apple.com

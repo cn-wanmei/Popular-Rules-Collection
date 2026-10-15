@@ -4,84 +4,19 @@ entity: provider_aggregate
 id: tencent
 display_name: Tencent
 generated_from:
-  run_id: 20261014T011336499479Z-run
+  run_id: 20261015T003707182200Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: a3dd9746b1692c3838b7a1c8a9f3a23d765aa1db36576b4f661e02dbc9a07896
+  ir_digest: e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80
 stats:
-  total: 920
+  total: 755
   by_type:
-    DOMAIN: 22
-    DOMAIN_SUFFIX: 740
-    IP_CIDR: 125
-    IP_CIDR6: 31
-    PROCESS_NAME: 2
+    DOMAIN: 1
+    DOMAIN_SUFFIX: 734
+    IP_CIDR: 20
 rules:
-- id: 91e5ac7698204fe1048a886824f799b6323f499bcb369cdc2cbf3920e0dca813
-  type: DOMAIN
-  value: 00713915daab0be43def5c338c02c80b.dlied1.cdntips.net
-- id: 4171c6abeb77e3f9e0823f6fae4a3e2cf296fa7255fc6f4aef8189bb6a77d798
-  type: DOMAIN
-  value: 17caa75e77d31e1f5a7841e0b3374569.dlied1.cdntips.net
-- id: b00bb4643c7a1503a53b3fdd6b5913bff0a68e1999bd986e00c4e807df53d235
-  type: DOMAIN
-  value: apd-pcdnvodstat.teg.tencent-cloud.net
-- id: b8fdb465c6932836fecd59a6110011a4eac779c62ba356ad9aaee0209278d8e1
-  type: DOMAIN
-  value: apd-pcdnwxlogin.teg.tencent-cloud.net
-- id: 0164dd1b7c62e247bc605d89e102240c4c069f15d8b02b5a72db1124581036ba
-  type: DOMAIN
-  value: btrace.qq.com
-- id: 69096910d630fa6e1fc9b437e087245846a59b0bc53605ea721976a0b0f31c04
-  type: DOMAIN
-  value: dldir1.qq.com
-- id: 3e60e988cd272b74e2a66bce9800ab503c127a2b04fd18fab7a0afbd4874b5d0
-  type: DOMAIN
-  value: iacc.qq.com
-- id: 029b48d43de3a2933f96e28e718c9dcb59e3de52aa3de30cf2c4dbff480d7f9f
-  type: DOMAIN
-  value: ins-eeww7kom.ias.tencent-cloud.net
-- id: 0e862b4e7c0fab485cdaa26b36475936e0798a897d5ac2011a60a88687041137
-  type: DOMAIN
-  value: ios.video.mpush.qq.com
-- id: c2b37e7ccd7cd7058108fbe3ea8b4d9d3868ce11a26fbd9e07bab08ff41314a1
-  type: DOMAIN
-  value: rdelivery.qq.com
-- id: e91fbac39ba4faa2e8f0a1c66949cea077b54c23a1ebb4196637997d2f5a046e
-  type: DOMAIN
-  value: slife.xy-asia.com
-- id: a459efe3c49646800b85ee7cb7ac13159bb5cddd55a796440e1c0b247660c16d
-  type: DOMAIN
-  value: soup.v.qq.com
-- id: 7a239089dbc8ab82de670afd45a8b7c5837cc05e77c6a200402287b0b3269a86
-  type: DOMAIN
-  value: ts.qq.com
-- id: 251e5a7a006e53894ad833b39d2506bfd0154200846761209870863236295b71
-  type: DOMAIN
-  value: v.streaming.qq.com
-- id: f58b6955babd44d36b71d8b0f4c71468f8073abc115ea4fe138366cdb726bd43
-  type: DOMAIN
-  value: video-public-1258344701.shiply-cdn.qq.com
-- id: d21594e9fdfbc3e107d7ea533f81eeb64235ee7147e232d45c8c6aae1f3a214c
-  type: DOMAIN
-  value: video-search-1258344701.shiply-cdn.qq.com
-- id: 536f701f2f567d96810e382b182d9eade297abb6a9cf4b78421f8fb37b44d7ee
-  type: DOMAIN
-  value: video-vip-1258344701.shiply-cdn.qq.com
-- id: a068fd13ec35b882ce302fb806858ae13a13d8cf81a1a6f78097b5c302c2cc12
-  type: DOMAIN
-  value: vweixinf.tc.qq.com
-- id: aae65d0707255dc3152a2b0eb4e352e522ce327966dd5c83f6c9b7a1032cec77
-  type: DOMAIN
-  value: weixin110.qq.com
 - id: 367ab6988593c3371b811086523e87f3a0c1832bfb4ed038d3242ed2bd6b0a63
   type: DOMAIN
   value: wetv.qq.com
-- id: f16ae68f802bf5bb9af69bfcb92f501cbebfa278e407c6755d17588bfa1b69a1
-  type: DOMAIN
-  value: wup.imtt.qq.com
-- id: 418e07d174fcd5fe489f68005099792eaac6d3b5eb5a5a72262173b96db9cfa1
-  type: DOMAIN
-  value: yoo.gtimg.com
 - id: 3cd60082514634f94e475c6905bc0b9616bce10b6d01d242a8633eeee5f0df6b
   type: DOMAIN_SUFFIX
   value: 00713915daab0be43def5c338c02c80b.dlied1.cdntips.net
@@ -856,12 +791,6 @@ rules:
 - id: 0f61f271d88f2361e924310d9c3629cbbf85208e857f5841f94aa4c3ec094a6a
   type: DOMAIN_SUFFIX
   value: iemiq.com
-- id: 6a1b4646dcf0852aa46da94d2d8f97fc50e649433a08a9dc7765062ba05cbf53
-  type: DOMAIN_SUFFIX
-  value: iflix-images.akamaized.net
-- id: f2d38fc48e5d9f4b8566151fd0a900382cbe05b1af2dfe6f72c9ece25ad6a786
-  type: DOMAIN_SUFFIX
-  value: iflix.com
 - id: 13686a045efb946e1164535fb7d12401c0bd62d40a7bf52d3b15b125c8ed3882
   type: DOMAIN_SUFFIX
   value: igtm-meeting-tencent.com
@@ -982,9 +911,6 @@ rules:
 - id: 8ae40bd35aa02a3fb51b15469211a3619df0b280dd9bd3b3041ecda8f85a7c04
   type: DOMAIN_SUFFIX
   value: labycore.cn
-- id: d08d72446b1251e625d2aa2a17f957a43dcdc3fba5a1b96e87739c89c12e1753
-  type: DOMAIN_SUFFIX
-  value: lbs.gtimg.com
 - id: 5ded1f8481cd4204b74c2b6549ac5064e4edd65a6cbe7fbe50dfb9e88161ee20
   type: DOMAIN_SUFFIX
   value: log.tbs.qq.com
@@ -1333,9 +1259,6 @@ rules:
 - id: c3db2ab6cd405fcc94bdc8a45c9811da094a172300eadfaffbbf0880b12bb53d
   type: DOMAIN_SUFFIX
   value: qqmusic.com
-- id: 10cad2e1f62a320023ce4d8370a221ff438d0b7d4be9e2c5a8544ad958d5eb76
-  type: DOMAIN_SUFFIX
-  value: qqvideo.gtimg.com
 - id: a645e37a3e8b57f7b271c80898de6d5fa0557b0f468c2569e75030f595849106
   type: DOMAIN_SUFFIX
   value: qyunapp.com
@@ -2074,9 +1997,6 @@ rules:
 - id: 5f184c245cd546aebe8bae92655c16f212cdec54ff6e8075439559008d5c97a2
   type: DOMAIN_SUFFIX
   value: vodtcbk.com
-- id: bf00441b2b063258904cbb70932a11d0c82051cc33832c81839eef818a7e6bf8
-  type: DOMAIN_SUFFIX
-  value: vv.video.qq.com
 - id: 4ac589d0b94ad2c47080224e3b967b066f41a798e1b2c25cee4b02467e9717ae
   type: DOMAIN_SUFFIX
   value: vweixinf.tc.qq.com
@@ -2185,9 +2105,6 @@ rules:
 - id: 00284b60d8c99bb52a9619cb13a171218e9946c0084ce1644197eb570e69983a
   type: DOMAIN_SUFFIX
   value: www.wetv.vip
-- id: 9ef911a7bb21de3dce39723bea7bb3ef90529d33abb2e7ffcb4aff746aff5c1b
-  type: DOMAIN_SUFFIX
-  value: wx.gtimg.com
 - id: 9e9a19b24255e8d8324062eb15a14f9092604a225f460207358d56c907da5194
   type: DOMAIN_SUFFIX
   value: wx.qq.com
@@ -2302,42 +2219,6 @@ rules:
 - id: 1eed354857e77a4211e5c4cc817697ff385ca02880fb6903a600a70e721ec151
   type: DOMAIN_SUFFIX
   value: zhuoyuegame.com
-- id: 6189f319ff236e9d625719c943c35655a71d01a03bbe5feb1e72e5cd97d60473
-  type: IP_CIDR
-  value: 1.116.116.0/22
-- id: 8997e138f61a695e4523b8b4b4851597c768d34aa82dbc759273681432ac51a6
-  type: IP_CIDR
-  value: 1.116.216.0/23
-- id: 9dfb9384b6ed1aa21dd8f5d18e5b94f2f88dbb6f1a01d59d82d557069c324ec6
-  type: IP_CIDR
-  value: 1.117.118.0/23
-- id: cceb27f6c3084d4e241ddc5e4cc11ed3a1cdf740e95819c856122944d0fccf97
-  type: IP_CIDR
-  value: 1.117.218.0/23
-- id: d5b3eb55f26e43839ed879712bbad7b750089bb5ea00aa1d456fb8edcbcd1392
-  type: IP_CIDR
-  value: 1.12.102.0/23
-- id: 7079b1c07bb4324ffe0b869682e7189c0bd2646c7c6d58371027834d315778be
-  type: IP_CIDR
-  value: 1.12.116.0/22
-- id: beb32df5fb6d8990f729ab3adb6e75014646cb9550735f524d8ca6e51512657d
-  type: IP_CIDR
-  value: 1.12.212.0/23
-- id: 4b4dd354582abda8e3190639016385cfda307079b0e05de5d000c18bd25bdf59
-  type: IP_CIDR
-  value: 1.13.116.0/22
-- id: 976302b73168629bd6bb051c289cafdcff9d9246ed2a6a479c6d86dc0f579569
-  type: IP_CIDR
-  value: 1.14.104.0/23
-- id: 344bc800f3a97c1f44dc5f4678dcf4a1c1702136c720d3767fdf84c9150bbfd7
-  type: IP_CIDR
-  value: 1.14.206.0/23
-- id: dcc12432891536e639b3fe91bdbe1aafc1164ddc1ba2bb1580bbcaabdba57b7f
-  type: IP_CIDR
-  value: 1.15.102.0/23
-- id: 21af1c9b29cbdaf3a4855df9ce0762e6ce911e889e9f31c527dc1e4089f14d59
-  type: IP_CIDR
-  value: 1.15.208.0/23
 - id: b33d969635a773ed051fdcfe9c6335095d666d8279afbebc747f746bd2b15420
   type: IP_CIDR
   value: 101.32.104.4/32
@@ -2359,421 +2240,43 @@ rules:
 - id: 2d5ac6d720bbd5f60d7cb9136378890e0ed9b12ef76cf3ad8960d3f37865055a
   type: IP_CIDR
   value: 101.32.133.53/32
-- id: c219cadf24c8d57897e8a23e6f66ff395ba6e0ecdca9ae8a6c3c361a2817b1b3
-  type: IP_CIDR
-  value: 103.238.16.0/22
 - id: 9008ef9081d0edff70fd00b9d92345fff276143c2d0714ca5cbce246d1c2e4ca
   type: IP_CIDR
   value: 103.238.16.0/23
-- id: a3048176fffff0445b8199b57d0f2f64b10c9aacdfe7696b35c40efdf53b8794
-  type: IP_CIDR
-  value: 103.38.116.0/22
 - id: d80684691dcffa01f167b752fd633d1bae7d92de9c536af2626b1054e3cd877d
   type: IP_CIDR
   value: 103.7.28.0/22
-- id: 618af916b2cdf066dad7007faba7ac372a6d06e2bafb25036489b88e5973dd10
-  type: IP_CIDR
-  value: 106.52.0.0/14
-- id: 039861ccedc3a5d80d0702c851a3b0810055c2d88d9d48e4617d967cd87ce00b
-  type: IP_CIDR
-  value: 109.244.0.0/16
-- id: 9b884fd05bda704de9cfdfe926b8bdb989cd1869df9921936b32801f196c65c8
-  type: IP_CIDR
-  value: 111.229.0.0/16
-- id: 7f05d914553a89ffd4221c289e427efa4375b3ea14a97e885a896f66bc998089
-  type: IP_CIDR
-  value: 111.230.0.0/15
-- id: 52d741f2c5de75d630f53675257fdf9a6fb6c6a810fc12bf2f32007cd1dd8246
-  type: IP_CIDR
-  value: 115.159.0.0/16
-- id: b24303a696b63d67028770448a433c7dfc615e6c320e26928ea40ac6f70c118c
-  type: IP_CIDR
-  value: 118.126.64.0/18
-- id: 44c7b18a9ae7b02b78e5ffaca17fce1396a4ac6ab4d7d5351aa85414e3b33a1e
-  type: IP_CIDR
-  value: 118.24.0.0/15
-- id: c88ecbb53c2dda46aae996cdd46aae5a21082f5c377a5ce0f3b88bcb02595057
-  type: IP_CIDR
-  value: 118.89.0.0/16
 - id: 4032b523fabe1a3d851f0350f87285f5689842dab1dbf3d196fc50260515aedc
   type: IP_CIDR
   value: 119.147.8.78/32
-- id: 4b9442244041b51722c06ee0d41f0ff35d23ddb36af2de8ce4d8e62f125e135f
-  type: IP_CIDR
-  value: 119.27.160.0/19
-- id: 9d844d3710c02724621087a43ff930250c9103877f0ee9a4aa0330da62431a96
-  type: IP_CIDR
-  value: 119.28.0.0/15
-- id: 189017c50e703656f79e8225d8b1e1edf0d7eb5f3afe78c8d23301c1c7e3f26e
-  type: IP_CIDR
-  value: 119.45.0.0/16
 - id: bb420935ca7d98163b3571161bb2009a6fcaf36b7bf35d67f2ffc1658a20009a
   type: IP_CIDR
   value: 120.41.44.0/32
-- id: d2099bd8d0737ee8bee43639e6cf4465dd0246f6ce833ce50f0527def4e4aa18
-  type: IP_CIDR
-  value: 120.88.56.0/23
-- id: 6686324f400b2ae853457726e398a4d67f92c1a15a12b181cde1e160f09adf89
-  type: IP_CIDR
-  value: 121.51.0.0/16
-- id: addefcf6392628e4c2324efcdc04e88e77b801249a9208ba0f9b7e745b876194
-  type: IP_CIDR
-  value: 122.152.192.0/18
 - id: ea0af406de87e53d03edb8cfc702b39a5aeb9531dbb41cdc5a4bd72b6f4a332a
   type: IP_CIDR
   value: 122.5.0.129/32
-- id: 08e666a5e414898967e0fa8e7037c763132a711516a6e2f68d03d3725d4c0d0b
-  type: IP_CIDR
-  value: 123.206.0.0/15
-- id: 0025af59a8e0cee9edfdeff3bb951621f054bb57999f18a06c3f4a3bc7acc14d
-  type: IP_CIDR
-  value: 128.108.0.0/16
-- id: 4cdb411966d6fca7b1588448d2193c5e415a6ccc92a3725be12077302c1a91d6
-  type: IP_CIDR
-  value: 129.204.0.0/16
-- id: f9a79a577414763fd71479d9e3251e1068a7ccfb273514537b2393b2ae4e3929
-  type: IP_CIDR
-  value: 129.211.0.0/16
 - id: f80f60dc41e9d2b48ed6092290dcc7c0cecabfe3e69868114c46c403080d764d
   type: IP_CIDR
   value: 129.226.107.244/32
 - id: 082bb4ed9e27809d0b66f837a9927bb1780237e6ab5ce4190b84ebfed9bffec2
   type: IP_CIDR
   value: 129.226.3.47/32
-- id: e44567b416ade756cf599186a9bcecde8fdcae0d53523eba23bd53ce4a1a20a4
-  type: IP_CIDR
-  value: 129.28.0.0/16
-- id: b45f3124ecb4bb655bd915f3f3eefbb8b70a7b6a3bbf27b8c3b9fa11bfeabda9
-  type: IP_CIDR
-  value: 132.232.0.0/16
-- id: 9371c271405cd612f78a942c719e49342952a36d4f9f89a0f82814a508e2b0b8
-  type: IP_CIDR
-  value: 134.175.0.0/16
-- id: 3ad9490a9e01697054e738d91d090478300cac61ec069b96483c4ae0f536e3c9
-  type: IP_CIDR
-  value: 139.155.0.0/16
-- id: 32e6f23b545984b635e00e375fe64c0812b6c3de22d87c7add94bac5546be955
-  type: IP_CIDR
-  value: 139.186.0.0/16
-- id: 4c6eb21e13fe06dcd429104aac7625516057dcb7f1efbdfeebcdeb3486172f25
-  type: IP_CIDR
-  value: 139.199.0.0/16
-- id: e880dd43e029ccf82348c90338eb0b14a605e61b61d1e79b8999a667772e29fb
-  type: IP_CIDR
-  value: 140.143.0.0/16
 - id: 03916dde9ea0c6de24278bf4264ed738ae2a4fa7e914f7464dda2ec10f75de39
   type: IP_CIDR
   value: 140.249.239.0/32
 - id: 0f023bb2e40ce52e6c15c4ec558dad4462506cca1b3063cc83d92155fda0fa4c
   type: IP_CIDR
   value: 140.249.28.0/32
-- id: 7cdffffaee9eb25583d06848b1d84a0c0820f2246f3ef904b7d83e84227c7897
-  type: IP_CIDR
-  value: 146.56.192.0/18
-- id: 29492e41a4998b9acdb72e5c3c173c70f6e134410b726540bf2faabdfa7fb1fb
-  type: IP_CIDR
-  value: 148.70.0.0/16
-- id: ea3512d4e68e0ff19a6b13e36505c028b13e62182f135c9a82e6c2687633fa15
-  type: IP_CIDR
-  value: 150.109.28.51/32
 - id: b62c1713dce50de49ef9a526d7a3aafc2f017d2d2f2f59d27ffccf942e95b124
   type: IP_CIDR
   value: 150.138.137.0/32
 - id: a94de1d58fda13df8412e1550ce28c68550208b528f987657c71176879b60f8a
   type: IP_CIDR
   value: 150.139.143.0/32
-- id: 746b24e2297ddd36883d36a17b948b2dff3a407eada7d47ccfba098ba94b3a47
-  type: IP_CIDR
-  value: 150.158.0.0/16
-- id: 98a776c14ec804581810cd138495285bb87f8983c1d41090f031e09696edc82d
-  type: IP_CIDR
-  value: 152.136.0.0/16
-- id: b3bcc1e19ad0d296c3c97a9090c25154b618f2e2e713071b4edcd01b50ed591d
-  type: IP_CIDR
-  value: 154.8.128.0/17
-- id: f2f5da8330d5d475b5e727e8b6953b6aa85d2167f062d872c841ab47a54c08b5
-  type: IP_CIDR
-  value: 162.14.0.0/16
-- id: e6df19c525be161310fbe93cfae7ae9674f55da0f704d42f321796881994e37d
-  type: IP_CIDR
-  value: 172.81.192.0/18
-- id: 6c6c62ac942f1a9fd3134f4d1aba58780fd0c2d520cd0abf30feed61ea28dca3
-  type: IP_CIDR
-  value: 175.24.0.0/16
-- id: 211f1f23e44480c9f27ed41227dbf1d820fc714d257b2473eed641cdbeac3d2f
-  type: IP_CIDR
-  value: 182.254.0.0/16
-- id: 1653342285933ffbb53c500f24c5da1a4e3f5996082796e2b79832b21a1e14ea
-  type: IP_CIDR
-  value: 188.131.128.0/17
-- id: 8ef5e3df26cb064b03594cfa14b08f5864b9e91f395d1120502db976c4cc0472
-  type: IP_CIDR
-  value: 192.144.128.0/17
-- id: c4d68cfec77f736d1ee2b02a5bcbec55038fec228ec12f7391414b9f41c08ec0
-  type: IP_CIDR
-  value: 193.112.0.0/16
-- id: 2a554928ae6588cef8bd305aff63f5ae68d3254bf0c4a91921576664db9a6aa6
-  type: IP_CIDR
-  value: 203.195.128.0/17
-- id: 39463dc225bc71cd7b50666a380a3bbfd221e4cf644f91550e9c8fa29c63858c
-  type: IP_CIDR
-  value: 203.205.128.0/19
-- id: 4003ab64fde741e4f71e9fd234b7be3eac172e0dd08e59ae3eacf7877579170e
-  type: IP_CIDR
-  value: 203.205.176.0/22
-- id: c79fce0c4d3fa7f2e52acda7de388a8e2c9a400dad544f0f13c3266ed22f75d2
-  type: IP_CIDR
-  value: 203.205.188.0/24
-- id: eafbc86d03fec285ccabdf437385414d003118bbdeb6e49111eb1e8a6712fa12
-  type: IP_CIDR
-  value: 203.205.191.0/24
-- id: 416469031f836eb051354cec06b4b35660cfeba560a8b6ee3d4ba620db123f39
-  type: IP_CIDR
-  value: 203.205.193.0/24
-- id: 2b72ec975bc0745658c2d34b15e7f0acfc06a342ce3df4b7546f7f5375587546
-  type: IP_CIDR
-  value: 203.205.194.0/23
-- id: 05a053d785c6190de1178c6df3ec619599cf0dd4fe8698e0f38fd735161efdb3
-  type: IP_CIDR
-  value: 203.205.218.0/23
-- id: 744084f4f48187c0f577b8926765ae405b940dbfd2be3cfb7ed81c6c1cab8612
-  type: IP_CIDR
-  value: 203.205.220.0/22
-- id: 011011d66dcc5adffbfe5bcd08b48ef169011417a45822d0e5841a05d5be0634
-  type: IP_CIDR
-  value: 203.205.224.0/24
-- id: d8d1ad7b0afd1eed97a7e57d275b62930e6c61c8ff85b9075b2039c9ae5fd9db
-  type: IP_CIDR
-  value: 203.205.232.0/21
-- id: c5f60edb2ee643c685598f251caf328b06364dd03d20af7a7c64b4b9cd5b54ad
-  type: IP_CIDR
-  value: 203.205.240.0/24
-- id: 470fbf6c18977bc8254c651d903822a69995c3194fe86387782c2f571512bbfc
-  type: IP_CIDR
-  value: 203.205.242.0/24
-- id: 59c6004475312485da1828cf21099ce609df5f992ededc522ed6c45d8cc6a33f
-  type: IP_CIDR
-  value: 203.205.244.0/23
-- id: e871527ac4585e5029f8c58a9d7a2b731931bd1b4dc0259d726a98a6ba7670bd
-  type: IP_CIDR
-  value: 203.205.248.0/21
-- id: a106892fd1e2e86c78bb291d68859a155f901ba3c086102740bfb655e914a3cf
-  type: IP_CIDR
-  value: 210.73.160.0/19
-- id: db74abae174033708139d19dfa514d5caca3e7d3543ff87b5bb399f7829ac2d6
-  type: IP_CIDR
-  value: 211.152.128.0/22
-- id: 7c7e014b1eae35d098fb0c8a61f2389cff04b9668ced3c6f775a96c776a61ece
-  type: IP_CIDR
-  value: 211.152.132.0/23
-- id: 9f16b5a80f73c3570bcd072f2ee2c39e2dea0301b5d866b2ba266f1ce7d50375
-  type: IP_CIDR
-  value: 211.152.136.0/23
-- id: 37acf7951179c15a65bf3adeb5e3410ed10247d22e9f991d3e52bb7ad4813e37
-  type: IP_CIDR
-  value: 211.152.144.0/22
-- id: 49577fabe1d4a522dc8100ce91d712ecb439fd22cc792ce1498d930d0abe3360
-  type: IP_CIDR
-  value: 211.152.148.0/23
-- id: 85d1d4b9011de22036561ff6d1a17bd30651a9607aa01b412a5d3228bd091619
-  type: IP_CIDR
-  value: 211.152.152.0/22
-- id: 1e2f2ca3a96bbd9b888a9b9bf5a2650ac75c609c1d21d749d170320b7115078b
-  type: IP_CIDR
-  value: 211.152.156.0/24
-- id: 3f6f294b8b52c3ab1a2d0dd02877698084bbb2164c4c59d00fa049f0b6e4ee37
-  type: IP_CIDR
-  value: 211.159.128.0/17
-- id: cf7fd16eac1f7e264c9de3645f49bca75f86676bda6e0cc6556025095c01b88c
-  type: IP_CIDR
-  value: 212.129.128.0/17
-- id: f59c81a2c3872ca4b69b5660f08c3e563feaeec2425223643a3ff30bef8aa7ca
-  type: IP_CIDR
-  value: 212.64.0.0/17
 - id: 71969ce8a3fabfc37a3530f2b05072d6b9c14dece300e4cd276981b1546300fd
   type: IP_CIDR
   value: 27.159.95.0/32
-- id: 748ddfffc51b8384871fbd4a91c1dce747c912b967a1081f9b1171b764e24aec
-  type: IP_CIDR
-  value: 42.187.128.0/17
-- id: 9b2e0a5140e46bd3430d3b9f36e488b82faaaee9a86c79bbad3d29c32bda253d
-  type: IP_CIDR
-  value: 42.194.128.0/17
-- id: d799620c92541cd158121ff828f624e7edaf7bea1d23a0d02c0490622e11d6d1
-  type: IP_CIDR
-  value: 43.242.252.0/22
-- id: 859f021866da044ae18f661d5ebd64ef3277376174b61b80432475defcaa3079
-  type: IP_CIDR
-  value: 43.247.196.0/22
-- id: 4c36e2b5fa6ea73f0ae222a1414c9dfbd720a29b6f822e1109cec3bc21a736b5
-  type: IP_CIDR
-  value: 45.40.192.0/18
-- id: 4ae38fda29abaf5b653f43c85f46aa06dc383f2e5ae447a649f09023027e084a
-  type: IP_CIDR
-  value: 49.232.0.0/14
-- id: f342a03378e163087a0694574b19e2f930f38bc7e08a782b9525bc39b1b6ecb2
-  type: IP_CIDR
-  value: 49.51.0.0/19
-- id: 85c1e8ef3ee32462fb4f2d4589076fdbabe05366916eb075c3035b9ef7098b38
-  type: IP_CIDR
-  value: 49.51.104.0/22
-- id: afc7ac3a9a7151eb2bd540dc4d4bf5d9d44a4abf2ec547aa89db3a1c1e39eb67
-  type: IP_CIDR
-  value: 49.51.108.0/23
-- id: b0a42b9b8483830e860ca8b17aa5671e694855944d8f130ce7cf7d711b18c314
-  type: IP_CIDR
-  value: 49.51.128.0/18
-- id: e389ac3cbe37a594be96c591c7b5cbc647c0fafbdcfdd4253ca4840b6513ec61
-  type: IP_CIDR
-  value: 49.51.192.0/20
-- id: 53fbc7cd95421e6b2d0dd7751a09c19c190ffc0b6e94c76a4c528e394c26149d
-  type: IP_CIDR
-  value: 49.51.224.0/23
-- id: 71778818fd0eb853ee4499b2af54b2ba6f1779f1ffe127b26e8b066c3008896e
-  type: IP_CIDR
-  value: 49.51.228.0/22
-- id: 18eca373c1d3a96b3b73e82cb35675b868242267462980797ef4c2dfa56b9eca
-  type: IP_CIDR
-  value: 49.51.232.0/21
-- id: aa52ec1ee3bd2b826f1451574e7e6b0c3b614d1dc8765adea66e3f50cd1514fa
-  type: IP_CIDR
-  value: 49.51.240.0/20
-- id: a80472915a5e3d660c6f058c9f50a18cf08fef9c3b360a6b62b8e2b94a04cb8d
-  type: IP_CIDR
-  value: 49.51.32.0/20
-- id: 05555b8955633e1c258ea5e5d9228dcc6734655981d5eb98e149795e937c8559
-  type: IP_CIDR
-  value: 49.51.48.0/21
-- id: 1f4512ee6002899b51f9c1069e52074484459d667ba0c10ee9c18235ee7ef98f
-  type: IP_CIDR
-  value: 49.51.62.0/23
-- id: f2bbc2b5243d7370420f3c8c49c6dedb82dc9af82da0bdf897b69552f2b52404
-  type: IP_CIDR
-  value: 49.51.64.0/19
-- id: e86b434bda37207269c10f3b5b3dd075ba203c0ba7d94cf4a0d555687b609739
-  type: IP_CIDR
-  value: 49.51.96.0/21
-- id: c56d84ea0cdfa37e4e54e5e8f30ebdfc1f9a9f5f31c6f5aa2aa23165b496d857
-  type: IP_CIDR
-  value: 58.49.111.117/32
-- id: c3582386dd04647f5d7d6564c93285477dc26c3b0b8e399bd9dca817f6d06fb8
-  type: IP_CIDR
-  value: 58.49.111.79/32
-- id: 68ecdac92edcd7d55202de2b4a3f48c859835ccd10670e89767792df21849b19
-  type: IP_CIDR
-  value: 58.49.111.95/32
 - id: 8f748124a8a7da52cffee8e4eaa4ffba2f0aab9b7ca0967117dbac5cd2953a94
   type: IP_CIDR
   value: 58.58.81.129/32
-- id: e0101ab6f13efd3fc8cd0039d85e6353c1e73efdc98a6cb0f0dbe12e84164f36
-  type: IP_CIDR
-  value: 58.87.64.0/18
-- id: 21e2029c78621ba0dec1f7bef4d81a09fc82e7dcad7d95fb8c735a3d0d6456ec
-  type: IP_CIDR
-  value: 62.234.0.0/16
-- id: b2ebcf0ed0704a378389f590a2b6689d01b6dccfda6364d251f54f502a7b54b3
-  type: IP_CIDR
-  value: 81.68.0.0/14
-- id: fb911e016c6d1b960847f95cb33df41e2c6a31caed3079d6aef8e85b456aa104
-  type: IP_CIDR
-  value: 94.191.0.0/17
-- id: 7b2c73321c8db00b792a1c790bbf38cd08e7591e7c96964cf44cdb944c5a8d18
-  type: IP_CIDR6
-  value: 2001:df6:f400::/48
-- id: d88dbd29153006bacfabf479a9b2dccc9d067eea6e32dccd999a8e145cfa8ffa
-  type: IP_CIDR6
-  value: 2402:4e00::/32
-- id: b1f4a613034b010de5c2c8771b123999f213f44313ad90c2b76207cc83788be3
-  type: IP_CIDR6
-  value: ::ffff:113.248.172.245/128
-- id: 0c82a5b68ffa3f9a3a72a84de6e067fd934aafaa67d10f3e17875e27fda4c0a5
-  type: IP_CIDR6
-  value: ::ffff:114.235.96.186/128
-- id: efab35425338ff78dbf27064b43969d64cd811683c57913a076114c1faa20214
-  type: IP_CIDR6
-  value: ::ffff:115.236.128.112/128
-- id: 4079da7fcc1544606f72ee7cfc9ca561868990bcf31383b40429cdb9c4f3a436
-  type: IP_CIDR6
-  value: ::ffff:115.236.128.120/128
-- id: 796f157226e3e1a1d23011337e3a807ee2050226078ef3af4a39a363dacd13a0
-  type: IP_CIDR6
-  value: ::ffff:115.236.128.24/128
-- id: 462fe163fb1aacfd2a107b855a691b69824a74e9185619884ac1a9d3470ebb2a
-  type: IP_CIDR6
-  value: ::ffff:115.236.128.80/128
-- id: 0780c9220a7ff39b79e56ed044b46dd55f45b35db095064660c0eb068a1c8d46
-  type: IP_CIDR6
-  value: ::ffff:117.64.75.196/128
-- id: efc3809911e8206167e5bf8fdfdc1d1652bdb156cd6296862b7eb8c434cf635c
-  type: IP_CIDR6
-  value: ::ffff:117.68.200.210/128
-- id: 056ee59db20f1717c7351bec565724779e74962a2cd8ed531ee3678c85176da6
-  type: IP_CIDR6
-  value: ::ffff:117.87.144.24/128
-- id: 1777a4ef4ffb9d04d0ebc458242f58d3c3e5a8b0d05b0477bf4fb7c9da0d50d1
-  type: IP_CIDR6
-  value: ::ffff:121.56.126.255/128
-- id: 4d79b51407f0ea34ad25897e3708ae7bdca371b08cfa32a0f08a071f1e03fc9d
-  type: IP_CIDR6
-  value: ::ffff:124.73.198.81/128
-- id: a387272dcb48f0b5b1ffc841c443994b4c9ca51c31a271ce8d97ada9f17aedbd
-  type: IP_CIDR6
-  value: ::ffff:124.73.200.142/128
-- id: 1e2c0000f57ea8361e41fe6a6b6c2ccbeb395bc416310d2921c2113279b61911
-  type: IP_CIDR6
-  value: ::ffff:175.6.84.30/128
-- id: 30f0129d65b509d6f41bbd6c640f406693e5b708819a4d2dc1dd5dbd49af2c5f
-  type: IP_CIDR6
-  value: ::ffff:175.6.84.96/128
-- id: eaed8232a1d3f49ad9ef59751b5ac547fe64bfe3ff6bb65b86c9e8f73bdf2880
-  type: IP_CIDR6
-  value: ::ffff:183.161.144.133/128
-- id: e5bd7c7e0ecf335c0fb998ad5c48d8b72e1db4dd2e77591c8999ccfc323a8ce2
-  type: IP_CIDR6
-  value: ::ffff:183.161.144.230/128
-- id: 4581954020f3ee4f3f2c5d6a7e0c3a16b5ea4f949397f63fe5d22258e6baa384
-  type: IP_CIDR6
-  value: ::ffff:183.161.149.105/128
-- id: d473554fc52b3697bdbbbd293292c6fee9356bfe54798ca0f9bf5b3b8c99e785
-  type: IP_CIDR6
-  value: ::ffff:198.18.5.138/128
-- id: fb4b28b337b5dc9f410370142405f52c091213f8c67704df6055b47c9040d43c
-  type: IP_CIDR6
-  value: ::ffff:198.18.6.81/128
-- id: d3dc4750d31760fde27d5e68bd663d916d1336eabba9854aa6cca67879643153
-  type: IP_CIDR6
-  value: ::ffff:198.18.6.83/128
-- id: f745c107a774aa615bf3a352b635a80b31087a9eb8dd5d3c3b7a70a487c876b2
-  type: IP_CIDR6
-  value: ::ffff:223.240.191.238/128
-- id: 683d32c7143efd7c92681c30d6454a3791842b3a58e12c641397b45d1685e6a4
-  type: IP_CIDR6
-  value: ::ffff:27.157.209.46/128
-- id: b0565fc9d344ed2584614678a01fc976233968771408c3ffd2a18ca718bf3b7e
-  type: IP_CIDR6
-  value: ::ffff:58.217.232.117/128
-- id: b43ae8a94ab83cafe5a274f6f520d2d7483b15fb72291278f6de38a7c957800a
-  type: IP_CIDR6
-  value: ::ffff:58.217.232.68/128
-- id: 4416112cef4515385b35f2d03cfac23d5038a91a69df408d26758460ebacfe4e
-  type: IP_CIDR6
-  value: ::ffff:58.217.232.79/128
-- id: 9a8ad759a72266346863fc47f222038a60b134d49a154404237e93e0dfa0656e
-  type: IP_CIDR6
-  value: ::ffff:58.58.0.90/128
-- id: b9bff38f9c7f83c021cdcafc4134f706363d8bc52d9f759a105d6ceb051b2bb9
-  type: IP_CIDR6
-  value: ::ffff:60.171.183.161/128
-- id: 2501467eb15d52e0da188741c6fa3891f3be4758d7e3219c802b9ef426f98aec
-  type: IP_CIDR6
-  value: ::ffff:60.171.183.186/128
-- id: ac5928a6d3398f4e2316f0ca8d071b49630d22fce1a26a77409611a2e3ac69f1
-  type: IP_CIDR6
-  value: ::ffff:60.171.183.98/128
-- id: b824e6db464d71245a43b80282c3f3f458a52cb76403642eb357e8706c1e91fb
-  type: PROCESS_NAME
-  value: com.tencent.qqlivei18n
-- id: 1cb80fc7b98e565f0fe2ca91439c93ebf8091e3121af83e486edffcd5e98489c
-  type: PROCESS_NAME
-  value: com.tencent.qqlivei18n.us
 provider: tencent

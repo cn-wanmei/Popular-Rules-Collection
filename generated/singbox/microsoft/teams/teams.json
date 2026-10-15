@@ -2,13 +2,7 @@
   "version": 2,
   "rules": [
     {
-      "domain": [
-        "teams.events.data.microsoft.com"
-      ],
       "domain_suffix": [
-        "teams.cdn.live.net",
-        "teams.live.com",
-        "teams.microsoft.com",
         "teams.cdn.live.net",
         "teams.events.data.microsoft.com",
         "teams.live.com",

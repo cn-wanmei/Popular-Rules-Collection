@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: linkedin
+display_name: LinkedIn
+generated_from:
+  run_id: 20261015T003707182200Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: f6ca8aec2fa84dcce8129970a08c50f03b24f9aa05ae82e0654ed5f23b97ea3a
+  type: DOMAIN_SUFFIX
+  value: linkedin.com
+- id: 2a4743846825ff5f14e44a2954167a32d615c61602d83a1affadf547e34573c8
+  type: DOMAIN_SUFFIX
+  value: www.linkedin.com
+provider: microsoft
