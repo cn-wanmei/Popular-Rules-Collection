@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `pingan` |
 | 规则浏览路径 | `rule/pingan/pingan_aggregate/pingan_aggregate.yaml` |
-| 规则数量（_index） | **2** |
-| SHA-256 | `e108a6a1e733f0feb7a71cae2a5d163e36c9e0bd2ee72630baee956ff50b8e94` |
+| 规则数量（_index） | **28** |
+| SHA-256 | `038461eaf3f90c708a4e74148cfd731583bd19d29158591d9c7ed1e09a6e1c8c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261015T003707182200Z-run` |
-| IR digest | `e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80` |
+| Run ID | `20261016T002214542279Z-run` |
+| IR digest | `77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/pingan/pingan_aggregate/pingan_aggregate.yaml` |
-| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/pingan/pingan_aggregate/pingan_aggregate.list` |
-| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/pingan/pingan_aggregate/pingan_aggregate.yaml` |
-| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/pingan/pingan_aggregate/pingan_aggregate.list` |
-| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/pingan/pingan_aggregate/pingan_aggregate.list` |
+| egern | 28 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/pingan/pingan_aggregate/pingan_aggregate.yaml` |
+| loon | 28 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/pingan/pingan_aggregate/pingan_aggregate.list` |
+| mihomo | 28 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/pingan/pingan_aggregate/pingan_aggregate.yaml` |
+| quantumultx | 28 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/pingan/pingan_aggregate/pingan_aggregate.list` |
+| shadowrocket | 28 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/pingan/pingan_aggregate/pingan_aggregate.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/pingan/pingan_aggregate/pingan_aggregate.json` |
-| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/pingan/pingan_aggregate/pingan_aggregate.list` |
+| surge | 28 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/pingan/pingan_aggregate/pingan_aggregate.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

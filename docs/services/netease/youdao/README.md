@@ -16,14 +16,14 @@
 | Provider | `netease` |
 | 规则浏览路径 | `rule/netease/youdao/youdao.yaml` |
 | 规则数量（_index） | **15** |
-| SHA-256 | `0f1da706a6b7b8df905c5badc1555327df3a774695bdfcc06a9c8ce64aecc894` |
+| SHA-256 | `a97aa472aac4a1fc9aef7f9ab7a2827a8b92450258e1bf8b258c099c6daea06c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261015T003707182200Z-run` |
-| IR digest | `e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80` |
+| Run ID | `20261016T002214542279Z-run` |
+| IR digest | `77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

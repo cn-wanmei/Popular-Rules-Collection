@@ -16,14 +16,14 @@
 | Provider | `iflytek` |
 | 规则浏览路径 | `rule/iflytek/iflytek_aggregate/iflytek_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `145169e99645e64cd9d2a098be4ae6723fbaf23edd9d28e7dc8c04f5254de027` |
+| SHA-256 | `3d048b89ee9429ad31686d3cbd4f7c342ad3bd3b5c4147845d8615fa368d2dc5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261015T003707182200Z-run` |
-| IR digest | `e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80` |
+| Run ID | `20261016T002214542279Z-run` |
+| IR digest | `77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

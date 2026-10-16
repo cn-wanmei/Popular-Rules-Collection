@@ -16,14 +16,14 @@
 | Provider | `atour` |
 | 规则浏览路径 | `rule/atour/atour_aggregate/atour_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `d6e826c3b49d8ff6542a4e0f5e4491e7a03f38fa3f636d3b34b74500896e95d9` |
+| SHA-256 | `e3ccff4b5d79faa9aef768f0ae73cfccdea4cb70f423a84f2e95f612ad9ad7dc` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261015T003707182200Z-run` |
-| IR digest | `e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80` |
+| Run ID | `20261016T002214542279Z-run` |
+| IR digest | `77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

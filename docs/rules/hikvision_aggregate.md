@@ -16,14 +16,14 @@
 | Provider | `hikvision` |
 | 规则浏览路径 | `rule/hikvision/hikvision_aggregate/hikvision_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `480fdf27c3cf5cf604b46f1cd614221ce25cf6d1b3875e87bced8df3a8882590` |
+| SHA-256 | `001758e8ea97b3f0ba3a5b7b1b954befd83f1ecdf303593d37aae5c1bac02970` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261015T003707182200Z-run` |
-| IR digest | `e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80` |
+| Run ID | `20261016T002214542279Z-run` |
+| IR digest | `77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

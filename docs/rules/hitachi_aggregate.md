@@ -16,14 +16,14 @@
 | Provider | `hitachi` |
 | 规则浏览路径 | `rule/hitachi/hitachi_aggregate/hitachi_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `f264245f80a627ff951147cf2f657c591fff4acff9f1989fa1420594dd1ce7bd` |
+| SHA-256 | `f3cb94be62c2518a684384999f5e40b81dcca9b29780f92181c70888bbc4fd18` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261015T003707182200Z-run` |
-| IR digest | `e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80` |
+| Run ID | `20261016T002214542279Z-run` |
+| IR digest | `77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

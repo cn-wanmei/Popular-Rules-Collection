@@ -16,14 +16,14 @@
 | Provider | `signal` |
 | 规则浏览路径 | `rule/signal/signal/signal.yaml` |
 | 规则数量（_index） | **8** |
-| SHA-256 | `7df52a99045ee277fe00ee5e18075cafb1debdea0928632cfd60382f2daa476f` |
+| SHA-256 | `12f953545c037075a5782d542490f3b26bbdd5bb74ab1d09ae3eb51646a98a24` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261015T003707182200Z-run` |
-| IR digest | `e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80` |
+| Run ID | `20261016T002214542279Z-run` |
+| IR digest | `77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 8 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/signal/signal/signal.yaml` |
-| loon | 8 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/signal/signal/signal.list` |
-| mihomo | 8 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/signal/signal/signal.yaml` |
-| quantumultx | 8 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/signal/signal/signal.list` |
-| shadowrocket | 8 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/signal/signal/signal.list` |
+| egern | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/signal/signal/signal.yaml` |
+| loon | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/signal/signal/signal.list` |
+| mihomo | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/signal/signal/signal.yaml` |
+| quantumultx | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/signal/signal/signal.list` |
+| shadowrocket | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/signal/signal/signal.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/signal/signal/signal.json` |
-| surge | 8 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/signal/signal/signal.list` |
+| surge | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/signal/signal/signal.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

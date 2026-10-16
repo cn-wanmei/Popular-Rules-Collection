@@ -16,14 +16,14 @@
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/applemaps/applemaps.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `0eeedf8c3f8e3ddefe47475502b0667d9781ef8a3fd7e44284aa2ec4be5dd1bc` |
+| SHA-256 | `cb6187b47da5b4ccbcb5690589cc889208987521604314348e48775fe19fe9d3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261015T003707182200Z-run` |
-| IR digest | `e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80` |
+| Run ID | `20261016T002214542279Z-run` |
+| IR digest | `77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

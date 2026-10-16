@@ -16,14 +16,14 @@
 | Provider | `arm` |
 | 规则浏览路径 | `rule/arm/arm_aggregate/arm_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `d1078fd5583c483d726b7a0c40da5f6c1a65ec0d2e5b30f8959dbfe2303c1f17` |
+| SHA-256 | `099e772f0f8b3045878dfa5e23acd73256a4a09a26f85419fbac3d929723e8f4` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261015T003707182200Z-run` |
-| IR digest | `e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80` |
+| Run ID | `20261016T002214542279Z-run` |
+| IR digest | `77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
