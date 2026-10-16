@@ -4,14 +4,51 @@ entity: service
 id: netflix
 display_name: Netflix
 generated_from:
-  run_id: 20261015T003707182200Z-run
+  run_id: 20261016T002214542279Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80
+  ir_digest: 77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94
 stats:
-  total: 31
+  total: 44
   by_type:
-    DOMAIN_SUFFIX: 31
+    DOMAIN: 3
+    DOMAIN_KEYWORD: 4
+    DOMAIN_REGEX: 4
+    DOMAIN_SUFFIX: 32
+    PROCESS_NAME: 1
 rules:
+- id: 087099cd82aec334d3bf0522edde3a79eb81094f99f94e13ac1f2d30d5d8ddd0
+  type: DOMAIN
+  value: e13252.dscg.akamaiedge.net
+- id: 88c30f2d8058b526df1cffa73179ce9f1212b21034d391ffe6e19a52742db50f
+  type: DOMAIN
+  value: h-netflix.online-metrix.net
+- id: f3d8b2b123c902987c81e218bd3c8ac417e910e23c71a481572fdedea8042630
+  type: DOMAIN
+  value: netflix.com.edgesuite.net
+- id: aaa6954ba628f87c762518d8733a93e727ec31a341cff87b842c52bf20f905aa
+  type: DOMAIN_KEYWORD
+  value: apiproxy-device-prod-nlb-
+- id: 6d29fa1ee5a03c9b6d7a4db449c665ef0b5f7d7f0d4f5abc6851fc8d4c1e7ebf
+  type: DOMAIN_KEYWORD
+  value: dualstack.apiproxy-
+- id: 40ca71b2a4bfff37330a1d469fbf3dd4d44ddc34f00abd837aa9cfebd709b70a
+  type: DOMAIN_KEYWORD
+  value: dualstack.ichnaea-web-
+- id: ddefe3c44990f7a89c670e4c47212e3c295791e4071677fad9e8fdcca53f8145
+  type: DOMAIN_KEYWORD
+  value: netflixdnstest
+- id: 2a968a7a23e74c87e9cd96f5ee05432660ccb7cca93b20cd9e4cd273784e5136
+  type: DOMAIN_REGEX
+  value: (^|\.)apiproxy-device-prod-nlb-.+\.amazonaws\.com$
+- id: cf829bc49eb66a5a8d6682c787ed4e09ffd1b6a66eb072794574adcfe3846feb
+  type: DOMAIN_REGEX
+  value: (^|\.)apiproxy-website-nlb-prod-.+\.amazonaws\.com$
+- id: 423af036e6e6e59caa558fa538dc2dba0ce189b048f441f3526039d016e53055
+  type: DOMAIN_REGEX
+  value: (^|\.)dualstack\.apiproxy-.+\.amazonaws\.com$
+- id: f49c2fd8359d3638a31f0a64a79f8171396b2f1d54b34625ada74945eea056d3
+  type: DOMAIN_REGEX
+  value: (^|\.)dualstack\.ichnaea-web-.+\.amazonaws\.com$
 - id: 8bd1c20b8d4aeed2deee66fdfd719713b203b9011d95ec66903a0031f709465b
   type: DOMAIN_SUFFIX
   value: cookielaw.org
@@ -105,4 +142,10 @@ rules:
 - id: 32ae0ed4ea80175080098b1b1cff88e08d1ff96c818b341c437c8b89dc3c4149
   type: DOMAIN_SUFFIX
   value: onetrust.com
+- id: 605114b772a6c7fcd8336affeabbad754e9ce3e8520c37d7471786137411eddf
+  type: DOMAIN_SUFFIX
+  value: us-west-2.amazonaws.com
+- id: 0eb67a546b9c3deeeb62c8777ece3030c0214ecc2b6dfe3909daf5fbc5b4f4da
+  type: PROCESS_NAME
+  value: com.netflix.mediaclient
 provider: netflix

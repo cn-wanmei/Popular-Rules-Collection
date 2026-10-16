@@ -4,14 +4,39 @@ entity: service
 id: wechat
 display_name: WeChat
 generated_from:
-  run_id: 20261015T003707182200Z-run
+  run_id: 20261016T002214542279Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: e34985409a9016c9ba92540b2933ab07772407769f696f8a931bebaeb96d2f80
+  ir_digest: 77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94
 stats:
-  total: 28
+  total: 38
   by_type:
-    DOMAIN_SUFFIX: 28
+    DOMAIN: 8
+    DOMAIN_SUFFIX: 30
 rules:
+- id: b8fdb465c6932836fecd59a6110011a4eac779c62ba356ad9aaee0209278d8e1
+  type: DOMAIN
+  value: apd-pcdnwxlogin.teg.tencent-cloud.net
+- id: 0164dd1b7c62e247bc605d89e102240c4c069f15d8b02b5a72db1124581036ba
+  type: DOMAIN
+  value: btrace.qq.com
+- id: 69096910d630fa6e1fc9b437e087245846a59b0bc53605ea721976a0b0f31c04
+  type: DOMAIN
+  value: dldir1.qq.com
+- id: e91fbac39ba4faa2e8f0a1c66949cea077b54c23a1ebb4196637997d2f5a046e
+  type: DOMAIN
+  value: slife.xy-asia.com
+- id: a459efe3c49646800b85ee7cb7ac13159bb5cddd55a796440e1c0b247660c16d
+  type: DOMAIN
+  value: soup.v.qq.com
+- id: a068fd13ec35b882ce302fb806858ae13a13d8cf81a1a6f78097b5c302c2cc12
+  type: DOMAIN
+  value: vweixinf.tc.qq.com
+- id: aae65d0707255dc3152a2b0eb4e352e522ce327966dd5c83f6c9b7a1032cec77
+  type: DOMAIN
+  value: weixin110.qq.com
+- id: f16ae68f802bf5bb9af69bfcb92f501cbebfa278e407c6755d17588bfa1b69a1
+  type: DOMAIN
+  value: wup.imtt.qq.com
 - id: 109eb02c8b41b0f77fc17caebb796435bb03165ba6ecc9588e70b4b36b7723d6
   type: DOMAIN_SUFFIX
   value: apd-pcdnwxlogin.teg.tencent-cloud.net
@@ -24,6 +49,9 @@ rules:
 - id: 601891a3174a614ab30ef1db88f44ee9c276559c5656b9f160d16b0abc57d151
   type: DOMAIN_SUFFIX
   value: iot-tencent.com
+- id: d08d72446b1251e625d2aa2a17f957a43dcdc3fba5a1b96e87739c89c12e1753
+  type: DOMAIN_SUFFIX
+  value: lbs.gtimg.com
 - id: fce70f5a168cc33ce89841319395e4010c2ce161f986fedfd490314de5bbed64
   type: DOMAIN_SUFFIX
   value: map.qq.com
@@ -84,6 +112,9 @@ rules:
 - id: ae97a2b01919562b963f1a064102d851e0d8d2c3faf1a75009c60667cef1c5f5
   type: DOMAIN_SUFFIX
   value: wup.imtt.qq.com
+- id: 9ef911a7bb21de3dce39723bea7bb3ef90529d33abb2e7ffcb4aff746aff5c1b
+  type: DOMAIN_SUFFIX
+  value: wx.gtimg.com
 - id: 9e9a19b24255e8d8324062eb15a14f9092604a225f460207358d56c907da5194
   type: DOMAIN_SUFFIX
   value: wx.qq.com
