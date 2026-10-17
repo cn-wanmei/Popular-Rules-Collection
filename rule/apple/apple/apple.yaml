@@ -4,17 +4,15 @@ entity: provider_aggregate
 id: apple
 display_name: Apple
 generated_from:
-  run_id: 20261016T002214542279Z-run
+  run_id: 20261017T003011836133Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94
+  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
 stats:
-  total: 2067
+  total: 2039
   by_type:
-    DOMAIN: 194
+    DOMAIN: 174
     DOMAIN_KEYWORD: 7
     DOMAIN_SUFFIX: 1832
-    HOST: 7
-    HOST_KEYWORD: 1
     IP_CIDR: 10
     IP_CIDR6: 3
     PROCESS_NAME: 13
@@ -55,12 +53,6 @@ rules:
 - id: c247dbe7d7d8bf6e6ee95b5b88fcac2d7b99bb6e9c910a29152e22ec12caa1be
   type: DOMAIN
   value: amp-api.media.apple.com
-- id: 1adf1471a5736827df63db1ba124218bfac21c97227def5e30dab7c9c976158f
-  type: DOMAIN
-  value: aod-ssl.itunes.apple.com
-- id: 899fd095d09f2ec6e1ac70d230c9ce859f9d9f3ab5f1443c13af3955badfa78b
-  type: DOMAIN
-  value: aod.itunes.apple.com
 - id: 00b11c7959de3faaf69b03b69d1b6539da1f0d0c95111d43928d082b26d31e9d
   type: DOMAIN
   value: api-edge.apps.apple.com
@@ -82,21 +74,9 @@ rules:
 - id: afb7654af354bda7fb97e8304705315a4fb823e2a68499416b1b8cdf3503314a
   type: DOMAIN
   value: appleid.cdn-apple.com
-- id: df916758be586f07392fe3a6a5d00779fc3ea3110ebd6c1eff685b670c85c3d2
-  type: DOMAIN
-  value: apps.apple.com
 - id: 1ac41d466308e6b8880cdd3b25393f701b5a28a22e2087c04c1c98e5dcdcba18
   type: DOMAIN
   value: apps.mzstatic.com
-- id: d1e0c6d6c32d2d4b4277da824db24cb1cd84b909a717258ac017aafc3d041679
-  type: DOMAIN
-  value: audio-ssl.itunes.apple.com
-- id: 2135b6edc6018a70758e6de201b009afa650747cdb33eae4e85f4a3ca27dbd9b
-  type: DOMAIN
-  value: audio.itunes.apple.com
-- id: 2554ce3e1e0b1616f1390462d8949ee3ebef40a19c00b6693d404846b3ecf297
-  type: DOMAIN
-  value: beta.apple.com
 - id: 9556e39f9bff2195d775ad3fc4be2f8de983dbd55703fbc1de9c5e221214b0bf
   type: DOMAIN
   value: cds-cdn.v.aaplimg.com
@@ -199,12 +179,6 @@ rules:
 - id: 656717160f7417a0e1597b4f5b014278f84de2cb902a937128e52875a4f71650
   type: DOMAIN
   value: fides-pol.apple.com
-- id: 238fc705dbd23f3d81043eff29370966f985e19d1cce4734246211f314507577
-  type: DOMAIN
-  value: fmfmobile.icloud.com
-- id: 11c357ed4a9affae18bb368b5278e6111281a29871113dafd2c9117265d36c2d
-  type: DOMAIN
-  value: fmipmobile.icloud.com
 - id: a528ac17d7e4678a90dba8d54fd297cab01449d80fde2ba40d9ada7df6e6f18c
   type: DOMAIN
   value: gs-loc-cn.apple.com
@@ -283,12 +257,6 @@ rules:
 - id: c2cb164dcacacf36494609b85131a69c610272c16a874763a1911e909e6521fc
   type: DOMAIN
   value: guzzoni.smoot.apple.com
-- id: da3a786023b631e80b6aa525a5af4f5e37937cce08717780436391616b764ddc
-  type: DOMAIN
-  value: hls-amt.itunes.apple.com
-- id: 6328c66e90d952b64563b2197aa55cde5bc72a2f51737ee89ea5242f94073352
-  type: DOMAIN
-  value: hls.itunes.apple.com
 - id: 5f0cd8ec2ab1d011db1cf02c49e1a46af97fb3a262c0a9ed089dbd3204251ed4
   type: DOMAIN
   value: idmsa.apple.com
@@ -364,9 +332,6 @@ rules:
 - id: 0bb7ae5bc1fcd4d9fd315aba9a7e523d9c273f4352315d405a66c4d428feee8a
   type: DOMAIN
   value: is5.mzstatic.com
-- id: 33a8e066922f3f7eea376724ca09ce2a31e0aedba34314fa18ee7aeb66042c59
-  type: DOMAIN
-  value: itunes.apple.com
 - id: eb9e8764560145949e22bd592515f55906f24b49d8df2e04d0c2cfa084f26409
   type: DOMAIN
   value: km.support.apple.com
@@ -400,15 +365,9 @@ rules:
 - id: 9389223aea7e1e50b18430c3500d23475a92f59ee7a951daaf6b631a938581c7
   type: DOMAIN
   value: ml.cdn-apple.com
-- id: 9f87aa49405e0d5f8a177f13eef090544366726e3204258611885d56ac419a28
-  type: DOMAIN
-  value: mvod.itunes.apple.com
 - id: dce722c851b4acbee369a686e8934da0217ea8377a1205501dbc5e67fe5ac166
   type: DOMAIN
   value: news-client-search.apple.com
-- id: 5c5c606b8fbc7808217275bb4a8f9e1bf7dc3b6ff9c6cb233eb3bba442932353
-  type: DOMAIN
-  value: np-edge.itunes.apple.com
 - id: de3dbdc2d93090c9257cf77a602b148921eb5fc77ebd427f15dfdc60e171031a
   type: DOMAIN
   value: oscdn.apple.com
@@ -421,9 +380,6 @@ rules:
 - id: cdf2adff552de68924aa19810f31c7356211f76885dc0cdb88abc3e912e91b13
   type: DOMAIN
   value: pba0.apple.com
-- id: 7aaf3cd22489f734090ae87e5928f4b3352b3a26d611388b745a1bed28fcbe79
-  type: DOMAIN
-  value: play-edge.itunes.apple.com
 - id: 8239b3b65c8a2e083a9d6861df51fabbc96d710e45cf2e76d6d8d84518bd3c3a
   type: DOMAIN
   value: probe.siri.apple.com
@@ -478,9 +434,6 @@ rules:
 - id: 6736046d01562ed0c1ba513af76536fc5242dcbb1b31b9b7e7a5f2edaf569b82
   type: DOMAIN
   value: static.gc.apple.com
-- id: c2b25ce8bd8805855beae5012d275a7d396ee11df505f88d5093107290bcfccc
-  type: DOMAIN
-  value: statici.icloud.com
 - id: e588e871f02278d22866d38e2e7bdb45f16bb1f7448b6e8ab47a58c6cfab07df
   type: DOMAIN
   value: stocks-sparkline-lb.apple.com.akadns.net
@@ -502,9 +455,6 @@ rules:
 - id: f60c098b54f3f7d141f71255b29a7f4b04fcdc193358f0c392a4442281a592d8
   type: DOMAIN
   value: store.storeimages.cdn-apple.com
-- id: 5bc59ebe59e154d4be6efcca97d45c1ef45d7118d0c9ff99076406bb5de21f86
-  type: DOMAIN
-  value: streamingaudio.itunes.apple.com
 - id: 42d9d39d13eacb7914fc04dd00f68cbb53738783b60b3409dc7e864a13857d9c
   type: DOMAIN
   value: support-china.apple-support.akadns.net
@@ -544,9 +494,6 @@ rules:
 - id: 73ee167048d2ec05e8c5ffee0e0482db1d12f79d4d63f32111ac5fbb78c67988
   type: DOMAIN
   value: sylvan.apple.com
-- id: 4fb39f3372d750fb91b21229d46b9ad84796f202af861e5a8cae58ff4f31a701
-  type: DOMAIN
-  value: testflight.apple.com
 - id: 348c10420f42a7dfc64145cfb8cdd2b9af493511c227a5380cec6e0344e252b9
   type: DOMAIN
   value: tj-pod1-smp-device.apple.com
@@ -556,9 +503,6 @@ rules:
 - id: 4fd3a919db3794b8c225af54c6d2df0dc854d17034e0e3cee0e339e06892efa6
   type: DOMAIN
   value: tj-pod3-smp-device.apple.com
-- id: 7db444470492f3bf3e282dfba3f7207e78ccef87b19f1806f5d8e08118fe4d41
-  type: DOMAIN
-  value: tv.applemusic.com
 - id: a19d25d938809e7eb9b33e5ad577bd64efdb5ae7428f886c4fb9a4e31e852fdf
   type: DOMAIN
   value: updates-http.cdn-apple.com
@@ -568,9 +512,6 @@ rules:
 - id: 21ba00713157e8abbce1e82fa0363f29c8db4b76453640b8db00c5940811ea7f
   type: DOMAIN
   value: updates.cdn-apple.com
-- id: 6cd1a382fe5a65a706b2f2f84e8e36acb761b65bd0b60f54e3058114bf240574
-  type: DOMAIN
-  value: uts-api.itunes.apple.com
 - id: 7743b85fb1932efc4747c95c5dbc92833c1547941e0bdfe3a53e8b06894e77e4
   type: DOMAIN
   value: weather-data.apple.com
@@ -586,9 +527,6 @@ rules:
 - id: 69a39791014c48ac2e30631a409a9aa0eb64360a4a8c76b941d649ea239a3f9b
   type: DOMAIN
   value: weatherkit.apple.com
-- id: 632e3ea82ff88f9f9648334db2ae0c297426565b03871ee6f62229b3a8e5dda6
-  type: DOMAIN
-  value: www-cdn.icloud.com.akadns.net
 - id: 857bcf8992139883144f6c818a4102f1d8803ede7a14dcbd4740ad04e5009666
   type: DOMAIN
   value: www.apple.com
@@ -6118,30 +6056,6 @@ rules:
 - id: 3935618e29d96f00fd5c4cd8b5da91868b5e68e2c4b14702b7d79ec50ff20938
   type: DOMAIN_SUFFIX
   value: yourmonsterbeats.com
-- id: 1e98d9e8aa660f53d3c671acb5c8e3fa0555edf9686cb316ec07dd5248fbf9fe
-  type: HOST
-  value: apps.apple.com
-- id: 4b5f86fb2156b09ce8a7ecd8d7bbd3e4fdb3fe84366110fe76163b655203c4e8
-  type: HOST
-  value: beta.apple.com
-- id: bbee2289375b61228ae998c53b5e2bbc0bcfdf38b7af0080fb4bf3ed1596823c
-  type: HOST
-  value: fmfmobile.icloud.com
-- id: 7bad046356cd41303dc4cc5eb51350128f0fbb2ae391a55880d43975610d3048
-  type: HOST
-  value: fmipmobile.icloud.com
-- id: b5c0786d3563e6fe8cbe905c2368f8896e7b75b1cdedcde4e0e6fea4569473a1
-  type: HOST
-  value: itunes.apple.com
-- id: 4a275803a2fac4b56be8a1106f42b0d148c85e8282dcb48b8f4cb5864f1f23c5
-  type: HOST
-  value: statici.icloud.com
-- id: 509b9eaf9f80746c4ab5fedc3fff863c36f5e3df62e741af800922d8f3f70fd0
-  type: HOST
-  value: testflight.apple.com
-- id: d92b213e7d6087993cd49a7f1fdf2d1e5167004873dad0befada24c4e2a583e9
-  type: HOST_KEYWORD
-  value: testflight
 - id: 06b55d4b425797b29d982edd0afa0a9837407d1670394487ba385c78e80f5015
   type: IP_CIDR
   value: 139.178.128.0/18

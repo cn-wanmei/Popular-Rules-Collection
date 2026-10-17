@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: youku
+display_name: Youku
+generated_from:
+  run_id: 20261017T003011836133Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 29db2779cdfc5d179903843094838046e21fff52f76e516df63e1f3d09018dbc
+  type: DOMAIN_SUFFIX
+  value: www.youku.com
+- id: 9c9d35bb16a60426ba256a4a19d97a65264a491db8de5dd4a737ec935c821f7a
+  type: DOMAIN_SUFFIX
+  value: youku.com
+provider: alibaba

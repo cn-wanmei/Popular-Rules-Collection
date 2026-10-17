@@ -4,13 +4,13 @@ entity: service
 id: appledev
 display_name: Apple Developer
 generated_from:
-  run_id: 20261016T002214542279Z-run
+  run_id: 20261017T003011836133Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94
+  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
 stats:
-  total: 40
+  total: 38
   by_type:
-    DOMAIN_SUFFIX: 40
+    DOMAIN_SUFFIX: 38
 rules:
 - id: adb1908541b94caaf8a20d8b10a81306ff680efbb91ec571ee6b7431e7a2633a
   type: DOMAIN_SUFFIX
@@ -69,12 +69,6 @@ rules:
 - id: 82d877c3b38bbb3dcbc946f0ba0018ed5e675062a3174bdafde7a331020e4814
   type: DOMAIN_SUFFIX
   value: macruby.org
-- id: e5b9a6bb228940da48f50f2a736d33dba0cca18e53e97a2b2774e124be94b751
-  type: DOMAIN_SUFFIX
-  value: notary-submissions-prod.s3-accelerate.amazonaws.com
-- id: 430fe93ef230891d03a53c856f872a0254e29bce274e11bf7ecff46b00129bf9
-  type: DOMAIN_SUFFIX
-  value: notary-submissions-prod.s3.us-west-2.amazonaws.com
 - id: 94906ca60d77f922ecc6244626272adf3f8bad0b868eade3ce0cd2bbaab269c7
   type: DOMAIN_SUFFIX
   value: p-events-delivery.akamaized.net

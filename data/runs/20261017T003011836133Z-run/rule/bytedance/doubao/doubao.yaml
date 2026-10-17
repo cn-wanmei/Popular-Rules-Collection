@@ -1,0 +1,27 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: doubao
+display_name: Doubao
+generated_from:
+  run_id: 20261017T003011836133Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+stats:
+  total: 4
+  by_type:
+    DOMAIN_SUFFIX: 4
+rules:
+- id: c680090199433ecdd49d354082d5f857212c15aca1eb2fcff3ed690fa9415e4f
+  type: DOMAIN_SUFFIX
+  value: lf-flow-web-cdn.doubao.com
+- id: c3fe3fd855cb823da671e922ab6e05032ace42b2cde355ae2dcdd018f146fcd0
+  type: DOMAIN_SUFFIX
+  value: opt.doubao.com
+- id: 53f97ecf54ab53d16097f5cb8873a787f5cb93b9b5e8761846d4110b52c119d1
+  type: DOMAIN_SUFFIX
+  value: u002fwww.doubao.com
+- id: 93a1785ff3e84d71ea72dda732aae30699f67cc761d01ed23274f376ed45bbde
+  type: DOMAIN_SUFFIX
+  value: www.doubao.com
+provider: bytedance

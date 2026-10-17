@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: alipay
+display_name: Alipay
+generated_from:
+  run_id: 20261017T003011836133Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 03cfc9e7b93d90c92cb5535a7740434bc1e523565ba7437c74961f31282e8077
+  type: DOMAIN_SUFFIX
+  value: alipay.com
+- id: 3549d84d45ee82fcc3a75121f81a25b391c08b57f4a778220dd04291f967ed9c
+  type: DOMAIN_SUFFIX
+  value: www.alipay.com
+provider: alibaba

@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: netapp
+display_name: NetApp
+generated_from:
+  run_id: 20261017T003011836133Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: d01e53a56c9b37e1a60d740df15170efdd6ddc8c8c3a38a8e39d3490b9009f61
+  type: DOMAIN_SUFFIX
+  value: netapp.com
+- id: 2052716d79b4b3280ddbff97fce98b739545f34fe3b8de4ec620798e38212cfd
+  type: DOMAIN_SUFFIX
+  value: www.netapp.com
+provider: netapp

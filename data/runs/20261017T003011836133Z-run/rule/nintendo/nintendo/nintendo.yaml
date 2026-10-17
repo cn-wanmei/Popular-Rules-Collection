@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: nintendo
+display_name: Nintendo
+generated_from:
+  run_id: 20261017T003011836133Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 743289474035e5c515348ae92a3ecb31e14a138dda30ef9c0a8c336f6ab14dd4
+  type: DOMAIN_SUFFIX
+  value: nintendo.com
+- id: e5fb950096f17df05d0903aaada3351d744109a402837bf4648d787dacdee476
+  type: DOMAIN_SUFFIX
+  value: www.nintendo.com
+provider: nintendo

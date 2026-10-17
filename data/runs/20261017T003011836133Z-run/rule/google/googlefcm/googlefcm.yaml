@@ -1,0 +1,54 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: googlefcm
+display_name: Google FCM
+generated_from:
+  run_id: 20261017T003011836133Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+stats:
+  total: 13
+  by_type:
+    DOMAIN_SUFFIX: 13
+rules:
+- id: 1b2c97a72892085b398b55e404a1fcc6290d3d08b0d281a137fd581e772c457e
+  type: DOMAIN_SUFFIX
+  value: alt1-mtalk.google.com
+- id: f27a4532c4a7cb022f0c25f14e99f6aaf76b899227a53739f1468a4ec881924e
+  type: DOMAIN_SUFFIX
+  value: alt2-mtalk.google.com
+- id: c0f78c6f8ed901cd66c112dfcabcea2212a6c3ad37fad004353cf3f86af88308
+  type: DOMAIN_SUFFIX
+  value: alt3-mtalk.google.com
+- id: 49b8723435ac677ea02728660cac083447848fed6d60e6cde56b26b234517764
+  type: DOMAIN_SUFFIX
+  value: alt4-mtalk.google.com
+- id: 92fe3021be122a50cb89ee00432b5e87bbc9ce03028e8c93124d6214bd27aefe
+  type: DOMAIN_SUFFIX
+  value: alt5-mtalk.google.com
+- id: bb7c45e505449e135536136e65eb8416334e59ab0a189ab69d0b337380afbc85
+  type: DOMAIN_SUFFIX
+  value: alt6-mtalk.google.com
+- id: 5e87120fe6aafb8ae49a5b8af26ee3b6ebda04b53a917a9d1af47589625cb307
+  type: DOMAIN_SUFFIX
+  value: alt7-mtalk.google.com
+- id: f95eb01684ea820c757a7f1665d3f891dba9c72f062a6dceba41c877008feea5
+  type: DOMAIN_SUFFIX
+  value: alt8-mtalk.google.com
+- id: dba3e209be08f2e290feef553f91a030b3e0e8d9adc917cd2930dfa4046531a2
+  type: DOMAIN_SUFFIX
+  value: android.apis.google.com
+- id: 80c2542ef92e4abf7f5c3c09023d9e8409c812ddaf7fc6d9637fc5d6732de011
+  type: DOMAIN_SUFFIX
+  value: mtalk-dev.google.com
+- id: ecad2b217100a41ad6ce4d15d6c1ecc288965738e0bef67ca4a00c6dea3ebe54
+  type: DOMAIN_SUFFIX
+  value: mtalk-staging.google.com
+- id: 745640f499f54cb5d9f239890ba20365df845309ebc0ea1bc721d056d129eeb4
+  type: DOMAIN_SUFFIX
+  value: mtalk.google.com
+- id: 7db6c18a33f42b895183900aea4111f06fc4145a7ec47fa9a5d205eeeacba0db
+  type: DOMAIN_SUFFIX
+  value: mtalk4.google.com
+provider: google

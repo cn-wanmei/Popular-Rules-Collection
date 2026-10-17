@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: siemens
+display_name: Siemens
+generated_from:
+  run_id: 20261017T003011836133Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: c7dd832b1829db42917665aa6d3e0be2bd471c65beb0bc0cef9e3691b569674e
+  type: DOMAIN_SUFFIX
+  value: siemens.com
+- id: 6d43bbe925fa7d3700191d0620c68f5968024af862cc460f8d6d953daefb8aa6
+  type: DOMAIN_SUFFIX
+  value: www.siemens.com
+provider: siemens

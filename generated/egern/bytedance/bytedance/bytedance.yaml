@@ -1,16 +1,5 @@
 domain_set:
-  - "lf16-pkgcdn.pitaya-clientai.com"
-  - "lf16-effectcdn.byteeffecttos-g.com"
-  - "roovza.skadsdk.appsflyersdk.com"
-  - "lf3-static.bytednsdoc.com"
-  - "roovza-launches.appsflyersdk.com"
-  - "roovza.inapps.appsflyersdk.com"
-  - "roovza.launches.appsflyersdk.com"
   - "bytedance.map.fastly.net"
-  - "v5-dy-o-abtest.zjcdn.com"
-  - "p16-tiktok-dm-sticker-sign-sg.ibyteimg.com"
-  - "trae-api-sg.mchost.guru"
-  - "p16-tiktokcdn-com.akamaized.net"
 domain_suffix_set:
   - "365yg.com"
   - "zijieapi.net"
@@ -1108,8 +1097,5 @@ domain_suffix_set:
   - "bytegslb.com"
   - "bvfcdn2.com"
   - "byte008.com"
-domain_keyword_set:
-  - "musical.ly"
-  - "tiktok"
 ip_cidr_set:
   - "114.246.10.65/32"

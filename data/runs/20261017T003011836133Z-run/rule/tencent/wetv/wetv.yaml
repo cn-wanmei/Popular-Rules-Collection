@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: wetv
+display_name: WeTV
+generated_from:
+  run_id: 20261017T003011836133Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: deadf4ad148c887060ae06d8da85b884fb8d4ebb46b4035a456b4e91fc8cc6df
+  type: DOMAIN_SUFFIX
+  value: wetv.vip
+- id: 00284b60d8c99bb52a9619cb13a171218e9946c0084ce1644197eb570e69983a
+  type: DOMAIN_SUFFIX
+  value: www.wetv.vip
+provider: tencent

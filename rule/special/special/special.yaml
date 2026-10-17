@@ -4,13 +4,13 @@ entity: provider_aggregate
 id: special
 display_name: Special / Generic
 generated_from:
-  run_id: 20261016T002214542279Z-run
+  run_id: 20261017T003011836133Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94
+  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
 stats:
-  total: 7561
+  total: 7580
   by_type:
-    DOMAIN: 528
+    DOMAIN: 547
     DOMAIN_KEYWORD: 4
     DOMAIN_REGEX: 137
     DOMAIN_SUFFIX: 6850
@@ -146,6 +146,9 @@ rules:
 - id: 4df142f8b19c88ff13f89d34f9c135907124366e9a399015ef755a5831ea4a29
   type: DOMAIN
   value: coeus.torrentonline.cc
+- id: 6d437a2b921c5d5c6bef479723f9f3d17a452242700fb966a09a4289f5484646
+  type: DOMAIN
+  value: content-autofill.googleapis.com
 - id: bc92af787901284bb2427c326e61ca24ce80241564b1e680bd684d04c1b89bf5
   type: DOMAIN
   value: copilot-proxy.githubusercontent.com
@@ -158,6 +161,9 @@ rules:
 - id: 0046543ecce13c67290f8d73d148f09da45463b3dd452c533c0f838efbe46c8e
   type: DOMAIN
   value: cp4.cloudflare.com
+- id: e9a301692d381d1bc21833e5285354cd39b30bbd4a9922a69410cadafb5ff758
+  type: DOMAIN
+  value: csp.withgoogle.com
 - id: 330e81dfdac8816925353b2e062b591bb4445273466cd8e26c20e687460fed8a
   type: DOMAIN
   value: daily-cloudcode-pa.googleapis.com
@@ -167,12 +173,30 @@ rules:
 - id: 904c864d3c88d88b0e5d8b438fe61c78b262c0463c3768ff3d59cf18cc496637
   type: DOMAIN
   value: default.exp-tas.com
+- id: f7506619b3acdc9538ee7d879f9c11b7d45f3d64993870b33645278dcb7284a6
+  type: DOMAIN
+  value: encrypted-tbn0.gstatic.com
+- id: 789904d19b092bfddcfe56c87ab06303cdc05665d174ab7da04f3e77e210b340
+  type: DOMAIN
+  value: encrypted-tbn1.gstatic.com
+- id: 198be10c5300a19c736ccc924a70f416c9f5f5b682c3be74aae9b2f31de9f6e6
+  type: DOMAIN
+  value: encrypted-tbn2.gstatic.com
+- id: 8463ebb243f3c4e494862e10b90ea7255c39855e026b931fc7c87b8283eca5ab
+  type: DOMAIN
+  value: encrypted-tbn3.gstatic.com
 - id: 5000234d4acecc4652a129c3c7a069491f1233a89559f8c6fd030227c7a6f51b
   type: DOMAIN
   value: evan.im
 - id: 6e2725bfc248ff5845018f5b5a22828401af6bee21d41a0bc30300f90c06f4e7
   type: DOMAIN
   value: exodus.desync.com
+- id: 97535ed37ad56741bf7db576156be08204a781772f3062a814e3aab1d14360f9
+  type: DOMAIN
+  value: fonts.googleapis.com
+- id: 81e6460e5ded031ab41b2f522c1de36f43829745bf2c0820340c81479b318d47
+  type: DOMAIN
+  value: fonts.gstatic.com
 - id: 8309ca2c52d2985e7644460c66c16498d8bdb2131d1ca98d88187b9b560ebf81
   type: DOMAIN
   value: forwarder.workos.com
@@ -194,6 +218,9 @@ rules:
 - id: 1f0f693b4d8000b6cfdd0121874d583d81e48efb368a672d0179263cefcc1977
   type: DOMAIN
   value: ipv4announce.sktorrent.eu
+- id: f7ff6627a276d2fb085647c606af7bf433ac88f1601e97d0465c6a6648743ad7
+  type: DOMAIN
+  value: jnn-pa.googleapis.com
 - id: e0cca8ef7b5829abaaeff9a8d8671de92900494256f44fdbf91c185f230f7ee9
   type: DOMAIN
   value: js.stripe.com
@@ -206,12 +233,27 @@ rules:
 - id: 061998cfcb53b369108c2aa9a9d039a68b74494fbf9ae547acf248da81f6cf09
   type: DOMAIN
   value: leet-tracker.moe
+- id: 5b30faa4c08490d36445db6f6e9285761f5819d2560eed2728e3ce7b5716e0a7
+  type: DOMAIN
+  value: lh3.google.com
+- id: 84f1c1afed6d63be190574f80135a79e0800a49698d5d8e397de37ffd31b8194
+  type: DOMAIN
+  value: lh3.googleusercontent.com
+- id: ca053f8434db8fe0494180c4c19ffaf40f6adfa017ef63ca623818b349ef7aa9
+  type: DOMAIN
+  value: lh5.googleusercontent.com
 - id: 8bae6a0b905b7b1cfd2309f0c7f890a4d62224b5d5db61c2bb8b912a3642762d
   type: DOMAIN
   value: login.live.com
 - id: d198dd753242ec80def818083b9c6c748237fd251a7167743339c9ef5192bca8
   type: DOMAIN
   value: login.microsoftonline.com
+- id: ed5b34128bb358d4f6596271c55dae0cb9dfcf883086082df70867ea60a17852
+  type: DOMAIN
+  value: maps.googleapis.com
+- id: 72a41f7a8c3e169caadb95d974d57f7009c6a0da50c7b81d2cef66080d84f2a1
+  type: DOMAIN
+  value: maps.gstatic.com
 - id: 2a99a20675f55224eb50f922b9e3296debbacc9297884597f54bb474da0ff91d
   type: DOMAIN
   value: martin-gebhardt.eu
@@ -233,6 +275,9 @@ rules:
 - id: 5615f4cc942a580ed68aaa348f5965603348607d64dca8beb9ef415ec9d5a017
   type: DOMAIN
   value: obey.torrentonline.cc
+- id: 4883e84513b6d4e861f6ead70035fadc10e5abb207b5f0b5bcc7c87069276c49
+  type: DOMAIN
+  value: ogs.google.com
 - id: a5f769a163088632d4ddadd93a5b90b6f99bef1d499f80704cc81ad48a719852
   type: DOMAIN
   value: open.demonii.com
@@ -260,6 +305,9 @@ rules:
 - id: 290a224c7fa35065bf8960cf8996deef3d3a6c498d0a84affb953fc39d3d4b96
   type: DOMAIN
   value: opentor.org
+- id: 831ff911bc10871754429d2caf8e7d39038fa33729c3a888cbc11880e3e64876
+  type: DOMAIN
+  value: optimizationguide-pa.googleapis.com
 - id: d1a702f5cd0911aa90d5cd3373cc7617e614a3915e74f61f553ee158786abaf4
   type: DOMAIN
   value: orgtgju.org
@@ -269,6 +317,9 @@ rules:
 - id: 7257fa0ab65b72e04c7cbc3c54f9238e9a061a2b6ce3d3ff8376b9cb324643de
   type: DOMAIN
   value: p4p.arenabg.com
+- id: 1bb25a6b6b4dafdb4f98681a378bd691e4f873bbcb355418eee474b93a2b181f
+  type: DOMAIN
+  value: play.google.com
 - id: 51d4627aeaa4b1092647bf6918034731d289cac6ee78089c7525fda2f1e44446
   type: DOMAIN
   value: production-openaicom-storage.azureedge.net
@@ -302,6 +353,12 @@ rules:
 - id: bf4923fffb7dd6c2637a2c3b8875eba5b73d7394a28a4c2714d7a6058feb066f
   type: DOMAIN
   value: shahidrazi.online
+- id: e4c9624b9e91128e664ca36b1113ce8b62150986ac6f4998b6406b50dfeeb8c9
+  type: DOMAIN
+  value: ssl.gstatic.com
+- id: 088c6c5a2010fb0623ba38c424b52bb946e359afc8869327074d05f4f16b23aa
+  type: DOMAIN
+  value: streetviewpixels-pa.googleapis.com
 - id: 3226f77ee05c77774f75ef03a8588de672c74e14d74d5a299ed17a22b7e6cfab
   type: DOMAIN
   value: stun.1-voip.com
