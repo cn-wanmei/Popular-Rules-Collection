@@ -16,14 +16,14 @@
 | Provider | `jingdong` |
 | 规则浏览路径 | `rule/jingdong/jdcloud/jdcloud.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `b875490eab778cb7207c4c29093eec961b4c364affcbb67d601d62c814425e9d` |
+| SHA-256 | `9aadb8cb8f380dc31f51cdda1531c7bd3d162e76028291767fdc33e23f23d7df` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261016T002214542279Z-run` |
-| IR digest | `77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94` |
+| Run ID | `20261017T003011836133Z-run` |
+| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

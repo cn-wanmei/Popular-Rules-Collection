@@ -16,14 +16,14 @@
 | Provider | `shopee` |
 | 规则浏览路径 | `rule/shopee/shopee/shopee.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `ad17ff92c4e75c197361b97c1f982585a1c95a7eca2cc31052d2105434c0427a` |
+| SHA-256 | `cba14eeddd27fca5912148f38768c87b7ad9f5a098f15fcc2edaa9f316dd43a9` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261016T002214542279Z-run` |
-| IR digest | `77d1ef52e6e9892719407e688c6a60fdf8aa6144b9aff4a01674e0e7005aee94` |
+| Run ID | `20261017T003011836133Z-run` |
+| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
