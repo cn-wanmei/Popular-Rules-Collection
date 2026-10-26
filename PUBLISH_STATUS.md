@@ -7,18 +7,19 @@ Repository: https://github.com/cn-wanmei/Popular-Rules-Collection
 <!-- AUTO-GENERATED:BEGIN -->
 ## Automated status
 
-Generated at: `2026-10-25T00:20:55.014543Z`
+Generated at: `2026-10-26T00:16:03.102104Z`
 
 ### Collection
-- Latest snapshot date: `2026-10-25`
-- Collection ID: `2026-10-25-98098ebf33a5de2a6ba2`
+- Latest snapshot date: `2026-10-26`
+- Collection ID: `2026-10-26-203c928c2e8f9f235891`
 - Status: `ok`
-- Root: `backup/2026-10-25`
+- Root: `backup/2026-10-26`
 
 ### Source health
 - Scope: Collection `sources/health.yaml` telemetry (10 sources); **not** full Source repo lifecycle count
 - Details: `reports/source_health_status.yaml` · triage: `docs/FUNNEL_TRIAGE.md`
-- `healthy`: 6
+- `failed`: 1
+- `healthy`: 5
 - `retired`: 4
 
 ### Generated clients
