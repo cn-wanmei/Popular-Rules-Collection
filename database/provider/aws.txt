@@ -1,6 +1,6 @@
 {
-"syncToken": "1793225225",
-"createDate": "2026-10-28-22-07-05",
+"syncToken": "1793312825",
+"createDate": "2026-10-29-22-27-05",
 "prefixes": [
 "ip_prefix": "3.4.12.4/32",
 "region": "eu-west-1",
@@ -48,6 +48,9 @@
 "network_border_group": "ap-southeast-2"
 "ip_prefix": "52.219.170.0/23",
 "ip_prefix": "69.107.10.200/29",
+"ip_prefix": "72.150.2.0/23",
+"region": "ap-southeast-1",
+"network_border_group": "ap-southeast-1"
 "ip_prefix": "99.83.109.0/24",
 "region": "eu-south-1",
 "network_border_group": "eu-south-1"
@@ -80,8 +83,6 @@
 "region": "mx-central-1",
 "network_border_group": "mx-central-1"
 "ip_prefix": "150.222.78.0/24",
-"region": "ap-southeast-1",
-"network_border_group": "ap-southeast-1"
 "ip_prefix": "216.244.32.0/22",
 "region": "ap-east-1",
 "network_border_group": "ap-east-1"
@@ -261,6 +262,8 @@
 "ip_prefix": "52.95.100.0/22",
 "ip_prefix": "52.95.226.0/24",
 "ip_prefix": "52.219.204.0/22",
+"ip_prefix": "72.150.12.0/23",
+"network_border_group": "us-east-1-mia-2"
 "ip_prefix": "77.112.0.0/14",
 "ip_prefix": "99.78.152.0/22",
 "ip_prefix": "104.255.57.173/32",
@@ -501,6 +504,8 @@
 "ip_prefix": "52.93.53.2/32",
 "ip_prefix": "52.144.210.0/26",
 "ip_prefix": "69.107.13.8/29",
+"ip_prefix": "72.150.14.0/23",
+"network_border_group": "us-east-1-nyc-2"
 "ip_prefix": "98.131.0.0/16",
 "region": "ap-south-2",
 "network_border_group": "ap-south-2"
@@ -1066,6 +1071,7 @@
 "ip_prefix": "66.36.5.0/24",
 "ip_prefix": "69.107.7.88/29",
 "ip_prefix": "69.107.10.136/29",
+"ip_prefix": "72.150.6.0/23",
 "ip_prefix": "99.77.155.0/24",
 "ip_prefix": "136.18.4.0/22",
 "ip_prefix": "150.222.25.38/32",
@@ -1109,6 +1115,9 @@
 "ip_prefix": "52.93.86.197/32",
 "ip_prefix": "52.93.178.220/32",
 "ip_prefix": "52.94.64.0/22",
+"ip_prefix": "72.150.10.0/23",
+"network_border_group": "us-east-1-chi-2"
+"ip_prefix": "72.150.16.0/23",
 "ip_prefix": "99.83.100.0/24",
 "ip_prefix": "99.83.105.0/24",
 "ip_prefix": "150.222.234.78/31",
@@ -1319,6 +1328,7 @@
 "ip_prefix": "52.93.127.25/32",
 "ip_prefix": "52.93.238.0/25",
 "ip_prefix": "52.218.0.0/17",
+"ip_prefix": "72.150.18.0/23",
 "ip_prefix": "104.216.0.0/15",
 "ip_prefix": "136.18.138.0/23",
 "ip_prefix": "150.222.41.64/26",
@@ -2095,6 +2105,7 @@
 "ip_prefix": "54.222.32.0/22",
 "ip_prefix": "64.7.200.0/23",
 "ip_prefix": "64.252.123.0/24",
+"ip_prefix": "72.150.8.0/23",
 "ip_prefix": "75.22.192.0/18",
 "ip_prefix": "96.0.180.0/22",
 "network_border_group": "ap-southeast-1-sggov-sin-1b"
@@ -2160,7 +2171,6 @@
 "ip_prefix": "54.218.0.0/16",
 "ip_prefix": "150.222.215.0/24",
 "ip_prefix": "198.41.102.0/24",
-"network_border_group": "us-east-1-nyc-2"
 "ip_prefix": "205.251.206.0/23",
 "ip_prefix": "3.4.12.22/32",
 "ip_prefix": "3.4.14.0/29",
@@ -2291,7 +2301,6 @@
 "ip_prefix": "150.222.53.96/27",
 "ip_prefix": "192.108.239.0/24",
 "ip_prefix": "198.41.98.0/24",
-"network_border_group": "us-east-1-chi-2"
 "ip_prefix": "216.244.38.0/23",
 "ip_prefix": "3.2.54.0/24",
 "ip_prefix": "3.2.60.0/24",
@@ -3222,6 +3231,7 @@
 "ip_prefix": "57.180.0.0/14",
 "ip_prefix": "64.252.80.0/24",
 "ip_prefix": "69.107.9.232/29",
+"ip_prefix": "72.150.0.0/23",
 "ip_prefix": "99.78.220.32/27",
 "ip_prefix": "150.222.160.35/32",
 "ip_prefix": "150.222.180.0/24",
@@ -4464,7 +4474,6 @@
 "ip_prefix": "99.77.232.0/24",
 "ip_prefix": "104.255.57.169/32",
 "ip_prefix": "161.193.0.0/18",
-"network_border_group": "us-east-1-mia-2"
 "ip_prefix": "184.40.0.0/13",
 "ip_prefix": "198.41.101.0/24",
 "ip_prefix": "198.99.2.0/24",
@@ -5438,6 +5447,7 @@
 "ip_prefix": "56.185.0.0/16",
 "ip_prefix": "69.107.11.64/29",
 "ip_prefix": "69.107.12.176/29",
+"ip_prefix": "72.150.4.0/23",
 "ip_prefix": "99.77.48.0/21",
 "ip_prefix": "150.222.25.39/32",
 "ip_prefix": "161.188.64.0/20",
