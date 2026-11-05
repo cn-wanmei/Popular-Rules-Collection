@@ -3,9 +3,9 @@
   "kind": "geoip",
   "scope": "geoip",
   "path": "database/geoip/jp.txt",
-  "lines": 17976,
-  "sha256_source": "07f453080b70f8493180d0293bc63f98864124143f7cd217086977e71a6d77f0",
-  "fetched_at": "2026-11-04T02:08:33.084017+00:00",
+  "lines": 18029,
+  "sha256_source": "d56c3190eb4f4ee547e4ae4f3251c80364650b857b86e9a921f694221902d6de",
+  "fetched_at": "2026-11-05T02:12:46.456729+00:00",
   "source": {
     "owner": "Loyalsoldier",
     "repo": "geoip",
