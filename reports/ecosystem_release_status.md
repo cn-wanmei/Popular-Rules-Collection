@@ -1,6 +1,6 @@
 # Ecosystem Release Status (Read Model)
 
-> **STALE OBSERVATION** — observed_at `2026-11-05T15:52:48Z`  
+> **STALE OBSERVATION** — observed_at `2026-11-06T13:11:58Z`  
 
 > Not SSOT. See `docs/STATE_MODEL.md`.
 
@@ -11,7 +11,7 @@
 |-------|-------|
 | observation_status | **STALE OBSERVATION** |
 | handoff_state | `COMPLETE` |
-| collection_head | `360d11a28322050aee3ee2551fb298b954aebfe5` |
+| collection_head | `3c0fe0df927fa3cdada4eb2158914f8f0f9a9666` |
 | source run / seal | `COMPLETE` / `COMPLETE` |
 | icon semantic | `ok` |
 | icon freeze | frozen=True freshness=`aging` |
@@ -22,8 +22,8 @@
 
 | Signal | freshness | age_seconds |
 |--------|-----------|-------------|
-| source_durable_bridge | stale | 2267561 |
-| icon_identity_snapshot | stale | 1695987 |
+| source_durable_bridge | stale | 2344311 |
+| icon_identity_snapshot | stale | 1772737 |
 
 > ⚠️ **STALE OBSERVATION**: one or more underlying signals exceed hard SLA. Re-run Durable Bridge / Identity Freshness / Publish as appropriate.
 
