@@ -1,5 +1,5 @@
 schema: source_health_status_v1
-generated_at: '2026-11-07T02:01:04.233413Z'
+generated_at: '2026-11-07T14:55:05.928068Z'
 policy: config/health_policy.yaml
 lifecycle_registry: sources/lifecycle.yaml
 sources:
@@ -15,20 +15,20 @@ sources:
   blackmatrix7:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 13h ago
     last_success: '2026-11-07T01:54:55.731952+00:00'
     last_attempt: '2026-11-07T01:54:55.731947+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 13
     rules_declared: 154
   dler:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 12h ago
     last_success: '2026-11-07T01:55:42.968350+00:00'
     last_attempt: '2026-11-07T01:55:42.968346+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 12
     rules_declared: 20
   hagezi:
     lifecycle: retired
@@ -46,7 +46,7 @@ sources:
     last_success: '2026-11-06T02:18:20.453732+00:00'
     last_attempt: '2026-11-07T01:55:43.311582+00:00'
     failure_count: 1
-    age_hours: 23
+    age_hours: 36
     rules_declared: 1
   loyalsoldier:
     lifecycle: retired
@@ -60,20 +60,20 @@ sources:
   metacubex:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 12h ago
     last_success: '2026-11-07T01:55:19.228370+00:00'
     last_attempt: '2026-11-07T01:55:19.228365+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 12
     rules_declared: 76
   popular-rules-source:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 13h ago
     last_success: '2026-11-07T01:54:08.060161+00:00'
     last_attempt: '2026-11-07T01:54:08.060156+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 13
     rules_declared: 281
   sukkaw:
     lifecycle: retired
@@ -87,9 +87,9 @@ sources:
   v2fly:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 12h ago
     last_success: '2026-11-07T01:55:36.796742+00:00'
     last_attempt: '2026-11-07T01:55:36.796737+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 12
     rules_declared: 56
