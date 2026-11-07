@@ -1,0 +1,16 @@
+payload:
+  # > Disney Plus
+  - DOMAIN,authorization.go.com
+  - DOMAIN,disney.content.edge.bamgrid.com
+  - DOMAIN,disney.playback.edge.bamgrid.com
+  - DOMAIN,login.disney.com
+  - DOMAIN-SUFFIX,cdn.registerdisney.go.com
+  - DOMAIN-SUFFIX,disney-plus.net
+  - DOMAIN-SUFFIX,disney.api.edge.bamgrid.com
+  - DOMAIN-SUFFIX,disney.connections.edge.bamgrid.com
+  - DOMAIN-SUFFIX,disneynow.com
+  - DOMAIN-SUFFIX,disneyplus.com
+  - DOMAIN-SUFFIX,disneystreaming.com
+  - DOMAIN-SUFFIX,dssott.com
+  - PROCESS-NAME,com.disney.disneyplus
+  # - USER-AGENT,Disney*
