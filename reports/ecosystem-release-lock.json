@@ -1,14 +1,14 @@
 {
   "schema": "popular_rules_ecosystem_release_lock_v1",
-  "generated_at": "2026-11-06T15:22:56.136525+00:00",
+  "generated_at": "2026-11-07T14:22:57.316338+00:00",
   "collection": {
-    "commit": "098cb956468b27331cfdd753002778b4967a0f13",
+    "commit": "2570f31a04a5b29b9d4b53f3430a610419ebe9df",
     "index_sha256": "b65d390b08fb27982c77540b8b1a79e783d50f6736e676f05c9d93e568c14177",
     "run_id": null
   },
   "source": {
     "repository": "cn-wanmei/Popular-Rules-Source",
-    "persistence_commit": "48cf04bbf32065a53a507ca84cc85caec727cef0",
+    "persistence_commit": "2c1662b854453370069658e9ba8e1e2b972be9c9",
     "run_completeness": "COMPLETE",
     "seal_completeness": "COMPLETE",
     "persisted_count": 281
