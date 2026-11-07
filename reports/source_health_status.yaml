@@ -1,5 +1,5 @@
 schema: source_health_status_v1
-generated_at: '2026-11-06T02:25:15.276965Z'
+generated_at: '2026-11-07T02:01:04.233413Z'
 policy: config/health_policy.yaml
 lifecycle_registry: sources/lifecycle.yaml
 sources:
@@ -16,8 +16,8 @@ sources:
     lifecycle: active
     status: healthy
     reason: last success 0h ago
-    last_success: '2026-11-06T02:18:20.337813+00:00'
-    last_attempt: '2026-11-06T02:18:20.337794+00:00'
+    last_success: '2026-11-07T01:54:55.731952+00:00'
+    last_attempt: '2026-11-07T01:54:55.731947+00:00'
     failure_count: 0
     age_hours: 0
     rules_declared: 154
@@ -25,8 +25,8 @@ sources:
     lifecycle: active
     status: healthy
     reason: last success 0h ago
-    last_success: '2026-11-06T02:18:20.452259+00:00'
-    last_attempt: '2026-11-06T02:18:20.452244+00:00'
+    last_success: '2026-11-07T01:55:42.968350+00:00'
+    last_attempt: '2026-11-07T01:55:42.968346+00:00'
     failure_count: 0
     age_hours: 0
     rules_declared: 20
@@ -41,12 +41,12 @@ sources:
     rules_declared: 3
   lm-firefly:
     lifecycle: active
-    status: healthy
-    reason: last success 0h ago
+    status: failed
+    reason: failure_count is positive
     last_success: '2026-11-06T02:18:20.453732+00:00'
-    last_attempt: '2026-11-06T02:18:20.453722+00:00'
-    failure_count: 0
-    age_hours: 0
+    last_attempt: '2026-11-07T01:55:43.311582+00:00'
+    failure_count: 1
+    age_hours: 23
     rules_declared: 1
   loyalsoldier:
     lifecycle: retired
@@ -61,8 +61,8 @@ sources:
     lifecycle: active
     status: healthy
     reason: last success 0h ago
-    last_success: '2026-11-06T02:18:20.395907+00:00'
-    last_attempt: '2026-11-06T02:18:20.395888+00:00'
+    last_success: '2026-11-07T01:55:19.228370+00:00'
+    last_attempt: '2026-11-07T01:55:19.228365+00:00'
     failure_count: 0
     age_hours: 0
     rules_declared: 76
@@ -70,8 +70,8 @@ sources:
     lifecycle: active
     status: healthy
     reason: last success 0h ago
-    last_success: '2026-11-06T02:18:19.242182+00:00'
-    last_attempt: '2026-11-06T02:18:19.242174+00:00'
+    last_success: '2026-11-07T01:54:08.060161+00:00'
+    last_attempt: '2026-11-07T01:54:08.060156+00:00'
     failure_count: 0
     age_hours: 0
     rules_declared: 281
@@ -88,8 +88,8 @@ sources:
     lifecycle: active
     status: healthy
     reason: last success 0h ago
-    last_success: '2026-11-06T02:18:20.435742+00:00'
-    last_attempt: '2026-11-06T02:18:20.435725+00:00'
+    last_success: '2026-11-07T01:55:36.796742+00:00'
+    last_attempt: '2026-11-07T01:55:36.796737+00:00'
     failure_count: 0
     age_hours: 0
     rules_declared: 56
