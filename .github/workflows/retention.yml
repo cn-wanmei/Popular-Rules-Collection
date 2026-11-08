@@ -4,6 +4,17 @@ on:
   schedule:
     - cron: "0 6 * * 1"
   workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - "scripts/retention.py"
+      - "config/retention.yaml"
+      - ".github/workflows/retention.yml"
+      - "backup/**"
+      - "data/runs/**"
+      - "reports/**"
+      - "baseline/**"
+      - "generated/**"
 
 concurrency:
   group: retention
