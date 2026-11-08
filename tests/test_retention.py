@@ -299,3 +299,17 @@ def test_missing_backup_from_retained_run_blocks_apply(tmp_path: Path) -> None:
     assert plan["summary"]["dangling_backup_reference_count"] == 1
     assert any(x["path"] == "backup/2026-01-01/manifests/_collection.json" and
                x["reason"] == "dangling_backup_reference_target_missing" for x in plan["protected"])
+
+
+def test_run_without_collection_manifest_provenance_is_protected(tmp_path: Path) -> None:
+    run_id = "20260101T000000000000Z-run"
+    path = _run(tmp_path, run_id, "2026-01-01")
+    manifest_path = path / "run_manifest.json"
+    doc = json.loads(manifest_path.read_text(encoding="utf-8"))
+    doc.pop("collection_manifest")
+    manifest_path.write_text(json.dumps(doc), encoding="utf-8")
+    plan = build_plan(tmp_path, _policy(), dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert not any(x["path"] == f"data/runs/{run_id}" for x in plan["candidates"])
+    assert any(x["path"] == f"data/runs/{run_id}" and
+               x["reason"] == "missing_or_invalid_collection_manifest_reference"
+               for x in plan["protected"])
