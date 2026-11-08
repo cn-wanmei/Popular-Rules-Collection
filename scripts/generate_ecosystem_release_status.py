@@ -5,13 +5,11 @@ from __future__ import annotations
 import argparse
 import base64
 import hashlib
-import io
 import json
 import os
 import time
 import urllib.error
 import urllib.request
-import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
