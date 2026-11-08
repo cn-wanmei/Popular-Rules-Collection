@@ -153,7 +153,7 @@ def fetch_latest_identity_verification() -> tuple[dict | None, str | None, int |
     if not icon_token:
         return None, None, None, "ICON_DISPATCH_TOKEN_unavailable"
     runs, err = fetch_json(
-        f"{base}/actions/workflows/identity-freshness.yml/runs?branch=main&per_page=1",
+        f"{base}/actions/workflows/identity-freshness.yml/runs?branch=main&status=completed&per_page=1",
         token=icon_token,
     )
     if err or not isinstance(runs, dict):
