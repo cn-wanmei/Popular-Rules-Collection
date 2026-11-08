@@ -157,6 +157,49 @@ def run_status(path: Path) -> tuple[str, str | None, str | None]:
     return "success", snapshot.get("snapshot_id"), None
 
 
+
+def parse_iso_datetime(value: Any) -> dt.datetime | None:
+    if not isinstance(value, str) or not value.strip():
+        return None
+    try:
+        parsed = dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+        return parsed if parsed.tzinfo else parsed.replace(tzinfo=dt.timezone.utc)
+    except ValueError:
+        return None
+
+
+def release_evidence_status(path: Path) -> tuple[str, dt.datetime | None, str | None]:
+    """Validate the embedded immutable release evidence for a run directory."""
+    release_dir = path / "release"
+    if not release_dir.exists():
+        return "none", None, None
+    manifest = read_json(release_dir / "manifest.json")
+    state = read_json(release_dir / "state.json")
+    sbom = read_json(release_dir / "sbom.json")
+    run_manifest = read_json(path / "run_manifest.json")
+    if not all((manifest, state, sbom, run_manifest)):
+        return "unknown", None, "incomplete_release_evidence"
+    if (manifest.get("schema") != "release_manifest_v3"
+            or manifest.get("run_id") != path.name
+            or state.get("schema") != "release_state_v4"
+            or sbom.get("schema") != "engine_sbom_v1"
+            or sbom.get("run_id") != path.name):
+        return "unknown", None, "release_evidence_identity_mismatch"
+    stages = run_manifest.get("stages", {})
+    snapshot = stages.get("snapshot", {}) if isinstance(stages, dict) else {}
+    run_snapshot = snapshot.get("snapshot_id") if isinstance(snapshot, dict) else None
+    release_snapshot = manifest.get("snapshot_id")
+    if (run_manifest.get("run_id") != path.name or not run_snapshot
+            or release_snapshot != run_snapshot
+            or state.get("snapshot_id") != release_snapshot):
+        return "unknown", None, "release_evidence_snapshot_mismatch"
+    if not isinstance(sbom.get("files"), list) or not sbom.get("files"):
+        return "unknown", None, "release_evidence_sbom_incomplete"
+    generated_at = parse_iso_datetime(manifest.get("generated_at"))
+    if generated_at is None:
+        return "unknown", None, "release_evidence_timestamp_missing"
+    return "valid", generated_at, None
+
 def _entry(path: Path, reason: str, age: int | None = None) -> dict[str, Any]:
     try:
         relative = path.relative_to(ROOT).as_posix()
@@ -215,14 +258,17 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
             else:
                 candidates.append(_entry(path, "expired_successful_backup", age))
 
-    # Runs: require both a complete successful run manifest and PASS quality report.
+    # Runs: keep run payloads 30d, but preserve embedded release evidence for 180d.
+    # Until an external artifact store is authoritative, release evidence lives inside
+    # each run directory; deleting that directory would silently violate the 180d policy.
     runs_root = root / "data" / "runs"
     runs_cfg = policy.get("runs", {})
     run_keep_days = int(runs_cfg.get("keep_days", 30))
     failed_keep_days = int(policy.get("failed_runs", {}).get("keep_days", 14))
     run_min_success = int(runs_cfg.get("keep_min_successful", 10))
+    release_keep_days = int(policy.get("release_evidence", {}).get("keep_days", 180))
     run_successes: list[tuple[Path, dt.datetime, str | None]] = []
-    run_records: list[tuple[Path, dt.datetime, str, str | None]] = []
+    run_records: list[tuple[Path, dt.datetime, str, str | None, str, dt.datetime | None, str | None]] = []
     if runs_root.exists():
         for path in sorted(runs_root.iterdir()):
             match = re.fullmatch(r"(\d{8})T(\d{12})Z-run", path.name)
@@ -235,32 +281,37 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
                 protected.append(_entry(path, "invalid_run_timestamp"))
                 continue
             status, snapshot_id, why = run_status(path)
-            run_records.append((path, date, status, snapshot_id))
+            evidence_status, evidence_at, evidence_why = release_evidence_status(path)
+            run_records.append((path, date, status, snapshot_id, evidence_status, evidence_at, evidence_why))
             if status == "success":
                 run_successes.append((path, date, snapshot_id))
             elif why:
                 protected.append(_entry(path, why, age_days(date, now)))
-            elif status == "failed":
-                age = age_days(date, now)
-                if age <= failed_keep_days:
-                    protected.append(_entry(path, "failed_run_within_retention_window", age))
-                else:
-                    candidates.append(_entry(path, "expired_failed_run", age))
     run_successes.sort(key=lambda item: item[1], reverse=True)
     newest_runs = {path for path, _, _ in run_successes[:run_min_success]}
-    for path, date, status, snapshot_id in run_records:
+    for path, date, status, snapshot_id, evidence_status, evidence_at, evidence_why in run_records:
         age = age_days(date, now)
-        if status != "success":
-            continue
+        evidence_age = age_days(evidence_at, now) if evidence_at else None
         if path.name in run_refs or (snapshot_id and snapshot_id in snapshot_refs):
             protected.append(_entry(path, "referenced_by_baseline_or_release_pointer", age))
         elif path in newest_runs:
             protected.append(_entry(path, "minimum_successful_run_retention", age))
-        elif age <= run_keep_days:
-            protected.append(_entry(path, "within_run_retention_window", age))
+        elif evidence_status == "unknown":
+            protected.append(_entry(path, evidence_why or "release_evidence_unverifiable", age))
+        elif evidence_status == "valid" and evidence_age is not None and evidence_age <= release_keep_days:
+            protected.append(_entry(path, "release_evidence_retention_window", evidence_age))
+        elif status == "failed":
+            if age <= failed_keep_days:
+                protected.append(_entry(path, "failed_run_within_retention_window", age))
+            else:
+                candidates.append(_entry(path, "expired_failed_run", age))
+        elif status == "success":
+            if age <= run_keep_days:
+                protected.append(_entry(path, "within_run_retention_window", age))
+            else:
+                candidates.append(_entry(path, "expired_successful_run", age))
         else:
-            candidates.append(_entry(path, "expired_successful_run", age))
-
+            protected.append(_entry(path, "run_status_unknown", age))
     # Reports: only direct date-partition directories are eligible. Audit and archive
     # subtrees, unknown layouts and explicitly referenced paths are never traversed.
     reports_root = root / "reports"
@@ -274,10 +325,18 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
                 continue
             age = age_days(date, now)
             rel = path.relative_to(root).as_posix()
-            evidence_names = {"audit", "evidence", "release_evidence", "health_history"}
+            evidence_names = {"audit", "evidence", "release", "release_evidence", "health_history"}
             contains_evidence = any(child.name.lower() in evidence_names for child in path.rglob("*"))
-            if contains_evidence:
-                protected.append(_entry(path, "contains_audit_or_release_evidence", age))
+            has_health_history = any(
+                file.is_file() and file.name.lower().startswith(("source-health", "health-history"))
+                for file in path.rglob("*")
+            )
+            health_keep_days = int(policy.get("health_history", {}).get("keep_days", 180))
+            audit_keep_days = int(policy.get("lifecycle", {}).get("audit_days", 180))
+            if contains_evidence and age <= max(reports_keep_days, audit_keep_days, release_keep_days):
+                protected.append(_entry(path, "contains_retained_audit_or_release_evidence", age))
+            elif has_health_history and age <= health_keep_days:
+                protected.append(_entry(path, "health_history_retention_window", age))
             elif any(ref == rel or ref.startswith(rel + "/") for ref in path_refs):
                 protected.append(_entry(path, "explicitly_referenced_report", age))
             elif age > reports_keep_days:
