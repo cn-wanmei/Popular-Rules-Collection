@@ -199,6 +199,11 @@ def run_status(path: Path) -> tuple[str, str | None, str | None]:
         return "unknown", None, "missing_or_invalid_run_manifest"
     if manifest.get("run_id") != path.name:
         return "unknown", None, "run_id_mismatch"
+    collection_manifest = manifest.get("collection_manifest")
+    if (not isinstance(collection_manifest, str)
+            or not collection_manifest.replace("\\", "/").startswith("backup/")
+            or ".." in Path(collection_manifest.replace("\\", "/")).parts):
+        return "unknown", None, "missing_or_invalid_collection_manifest_reference"
     stages = manifest["stages"]
     snapshot = stages.get("snapshot")
     if not isinstance(snapshot, dict) or not snapshot.get("snapshot_id"):
