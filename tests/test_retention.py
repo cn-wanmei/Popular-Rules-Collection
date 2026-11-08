@@ -357,3 +357,17 @@ def test_corrupt_collection_manifest_does_not_fall_back_to_legacy(tmp_path: Path
     assert any(x["path"] == "backup/2026-01-01" and
                x["reason"] == "invalid_collection_manifest" for x in plan["protected"])
     assert not any(x["path"] == "backup/2026-01-01" for x in plan["candidates"])
+
+
+def test_audit_report_file_outlives_shorter_report_retention(tmp_path: Path) -> None:
+    audit = tmp_path / "reports" / "2025-12-01" / "audit_report.json"
+    audit.parent.mkdir(parents=True)
+    audit.write_text("{}", encoding="utf-8")
+    policy = _policy()
+    policy["reports"]["keep_days"] = 30
+    policy["lifecycle"] = {"audit_days": 180}
+    plan = build_plan(tmp_path, policy, dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert any(x["path"] == "reports/2025-12-01" and
+               x["reason"] == "contains_retained_audit_or_release_evidence"
+               for x in plan["protected"])
+    assert not any(x["path"] == "reports/2025-12-01" for x in plan["candidates"])
