@@ -59,10 +59,19 @@ valid | incomplete | broken | unknown
 | canary | fresh | degraded | valid | Hold promotion; fix upstream |
 | verified | fresh | healthy | incomplete | Missing durable seal |
 
+## Icon identity freshness evidence
+
+The Icon identity snapshot is content-addressed and intentionally remains unchanged when Collection's `rule/_index.yaml` identity content does not change. Its `generated_at` records snapshot generation, not a verification heartbeat.
+
+The cross-repo read model therefore uses the latest completed successful Icon **Identity Freshness** workflow artifact as the verification clock. It is fresh only when the report is within the hard SLA, `drift=false`, `content_match=true`, live and pinned SHA-256 values match the currently observed Collection index and Icon snapshot, and there are no missing IDs, extra IDs, or field mismatches. Snapshot age remains visible as informational metadata. Missing reports, stale runs, hash mismatches, drift, or semantic warnings fail closed.
+
+This is stronger than comparing service counts alone and preserves the content-based rule that a Collection HEAD move without an index-content change does not require rewriting the Icon snapshot.
+
 ## Anti-patterns
 
 - Encoding freshness into the lifecycle field
 - Treating “service count match” as freshness proof (Icon snapshot)
+- Treating snapshot `generated_at` as a heartbeat when the snapshot is immutable
 - Treating Collection HEAD move alone as identity drift when `rule/_index.yaml` file_sha is unchanged
 - Creating a fifth authoritative status file that re-owns lifecycle
 
