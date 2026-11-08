@@ -17,7 +17,7 @@ from pathlib import Path
 UA = {"User-Agent": "popular-rules-ecosystem-status/1.5"}
 
 
-def fetch_bytes(url: str, timeout: int = 60) -> tuple[bytes | None, str | None]:
+def fetch_bytes(url: str, timeout: int = 60, token: str | None = None) -> tuple[bytes | None, str | None]:
     try:
         headers = dict(UA)
         headers.update({
@@ -32,9 +32,10 @@ def fetch_bytes(url: str, timeout: int = 60) -> tuple[bytes | None, str | None]:
             headers["Accept"] = "application/vnd.github.raw+json"
         else:
             headers["Accept"] = "application/vnd.github+json"
-        token = (os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or "").strip()
-        if token:
-            headers["Authorization"] = f"Bearer {token}"
+        auth_token = token if token is not None else (os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or "")
+        auth_token = auth_token.strip()
+        if auth_token:
+            headers["Authorization"] = f"Bearer {auth_token}"
 
         req = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(req, timeout=timeout) as resp:
@@ -59,15 +60,15 @@ def fetch_bytes(url: str, timeout: int = 60) -> tuple[bytes | None, str | None]:
         return None, f"{type(exc).__name__}: {exc}"
 
 
-def fetch_text(url: str, timeout: int = 60) -> tuple[str | None, str | None]:
-    raw, err = fetch_bytes(url, timeout=timeout)
+def fetch_text(url: str, timeout: int = 60, token: str | None = None) -> tuple[str | None, str | None]:
+    raw, err = fetch_bytes(url, timeout=timeout, token=token)
     if err:
         return None, err
     return (raw or b"").decode("utf-8", errors="replace"), None
 
 
-def fetch_json(url: str) -> tuple[dict | list | None, str | None]:
-    text, err = fetch_text(url)
+def fetch_json(url: str, token: str | None = None) -> tuple[dict | list | None, str | None]:
+    text, err = fetch_text(url, token=token)
     if err:
         return None, err
     try:
@@ -146,8 +147,12 @@ def identity_freshness(
 def fetch_latest_identity_verification() -> tuple[dict | None, str | None, int | None, str | None]:
     """Read the latest successful Icon Identity Freshness run and its JSON artifact."""
     base = "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon"
+    icon_token = (os.environ.get("ICON_DISPATCH_TOKEN") or "").strip()
+    if not icon_token:
+        return None, None, None, "ICON_DISPATCH_TOKEN_unavailable"
     runs, err = fetch_json(
-        f"{base}/actions/workflows/identity-freshness.yml/runs?branch=main&per_page=1"
+        f"{base}/actions/workflows/identity-freshness.yml/runs?branch=main&per_page=1",
+        token=icon_token,
     )
     if err or not isinstance(runs, dict):
         return None, None, None, err or "invalid_workflow_runs_response"
@@ -159,7 +164,9 @@ def fetch_latest_identity_verification() -> tuple[dict | None, str | None, int |
     created_at = run.get("created_at")
     if run.get("status") != "completed" or run.get("conclusion") != "success" or not run_id:
         return None, created_at, run_id, "latest_identity_freshness_run_not_successful"
-    artifacts, err = fetch_json(f"{base}/actions/runs/{run_id}/artifacts?per_page=100")
+    artifacts, err = fetch_json(
+        f"{base}/actions/runs/{run_id}/artifacts?per_page=100", token=icon_token
+    )
     if err or not isinstance(artifacts, dict):
         return None, created_at, run_id, err or "invalid_artifacts_response"
     artifact = next((item for item in artifacts.get("artifacts", [])
@@ -168,7 +175,7 @@ def fetch_latest_identity_verification() -> tuple[dict | None, str | None, int |
                      and item.get("archive_download_url")), None)
     if not artifact:
         return None, created_at, run_id, "identity_freshness_artifact_missing"
-    archive, err = fetch_bytes(artifact["archive_download_url"])
+    archive, err = fetch_bytes(artifact["archive_download_url"], token=icon_token)
     if err or not archive:
         return None, created_at, run_id, err or "identity_freshness_artifact_empty"
     try:
