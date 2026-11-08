@@ -11,6 +11,7 @@ import datetime as dt
 import json
 import re
 import shutil
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -44,12 +45,10 @@ def read_json(path: Path) -> dict[str, Any] | None:
 
 
 def collect_references(root: Path) -> tuple[set[str], set[str], set[str]]:
-    """Collect run IDs, snapshot IDs and explicit repository paths from pointer/evidence JSON."""
+    """Collect authoritative references and follow run -> snapshot -> backup links."""
     run_ids: set[str] = set()
     snapshot_ids: set[str] = set()
     paths: set[str] = set()
-    # Only authoritative pointer/evidence locations are scanned. Scanning every
-    # report would make a prior retention plan reference its own candidates forever.
     scan_files = [root / "reports" / "latest_release.json"]
     scan_roots = [root / "baseline", root / "data" / "baseline",
                   root / "generated" / "_promotion"]
@@ -72,23 +71,61 @@ def collect_references(root: Path) -> tuple[set[str], set[str], set[str]]:
 
         def walk(obj: Any) -> None:
             if isinstance(obj, dict):
-                for v in obj.values():
-                    walk(v)
+                for value in obj.values():
+                    walk(value)
             elif isinstance(obj, list):
-                for v in obj:
-                    walk(v)
+                for value in obj:
+                    walk(value)
             elif isinstance(obj, str):
-                normalized = obj.replace("\\", "/").lstrip("./")
-                if normalized and normalized.startswith(("data/", "backup/", "reports/", "generated/")):
+                normalized = obj.replace("\\", "/")
+                while normalized.startswith("./"):
+                    normalized = normalized[2:]
+                if (normalized and not normalized.startswith("/")
+                        and ".." not in Path(normalized).parts
+                        and normalized.startswith(("data/", "backup/", "reports/", "generated/"))):
                     paths.add(normalized)
         walk(doc)
-    return run_ids, snapshot_ids, paths
 
+    # A baseline/release pointer to a run also pins that run's snapshot and
+    # collection manifest. This transitive edge is essential: protecting only
+    # data/runs/<id> while deleting its backup manifest breaks provenance.
+    runs_root = root / "data" / "runs"
+    if runs_root.exists():
+        for run_dir in runs_root.iterdir():
+            if not run_dir.is_dir():
+                continue
+            manifest = read_json(run_dir / "run_manifest.json")
+            if not manifest:
+                continue
+            run_id = manifest.get("run_id") or run_dir.name
+            stages = manifest.get("stages", {})
+            snapshot_stage = stages.get("snapshot", {}) if isinstance(stages, dict) else {}
+            snapshot_id = manifest.get("snapshot_id") or (
+                snapshot_stage.get("snapshot_id") if isinstance(snapshot_stage, dict) else None
+            )
+            if run_id in run_ids or (snapshot_id and snapshot_id in snapshot_ids):
+                run_ids.add(run_id)
+                if snapshot_id:
+                    snapshot_ids.add(snapshot_id)
+                collection_manifest = manifest.get("collection_manifest")
+                if isinstance(collection_manifest, str):
+                    normalized = collection_manifest.replace("\\", "/")
+                    while normalized.startswith("./"):
+                        normalized = normalized[2:]
+                    if (normalized and not normalized.startswith("/")
+                            and ".." not in Path(normalized).parts
+                            and normalized.startswith(("backup/", "data/", "reports/", "generated/"))):
+                        paths.add(normalized)
+    return run_ids, snapshot_ids, paths
 
 def backup_status(path: Path) -> tuple[str, str | None]:
     manifest = read_json(path / "manifests" / "_collection.json")
     if not manifest:
         return "unknown", "missing_or_invalid_collection_manifest"
+    if (manifest.get("schema") != "collection_manifest_v1"
+            or manifest.get("date") != path.name
+            or manifest.get("root") != path.relative_to(path.parents[1]).as_posix()):
+        return "unknown", "collection_manifest_identity_mismatch"
     if manifest.get("status") == "ok" and not manifest.get("critical_failures"):
         return "success", None
     if manifest.get("status") in {"failed", "error"} or manifest.get("critical_failures"):
@@ -99,26 +136,25 @@ def backup_status(path: Path) -> tuple[str, str | None]:
 def run_status(path: Path) -> tuple[str, str | None, str | None]:
     manifest = read_json(path / "run_manifest.json")
     quality = read_json(path / "quality.json")
-    if not manifest or not isinstance(manifest.get("stages"), dict):
+    if (not manifest or not str(manifest.get("schema", "")).startswith("engine_run_")
+            or not isinstance(manifest.get("stages"), dict)):
         return "unknown", None, "missing_or_invalid_run_manifest"
-    run_id = manifest.get("run_id")
-    if run_id and run_id != path.name:
+    if manifest.get("run_id") != path.name:
         return "unknown", None, "run_id_mismatch"
     stages = manifest["stages"]
+    snapshot = stages.get("snapshot")
+    if not isinstance(snapshot, dict) or not snapshot.get("snapshot_id"):
+        return "unknown", None, "missing_snapshot_stage_identity"
     statuses = [stage.get("status") for stage in stages.values() if isinstance(stage, dict)]
-    if not statuses or any(status not in {"ok", "success"} for status in statuses):
+    if len(statuses) != len(stages) or not statuses or any(status not in {"ok", "success"} for status in statuses):
         if any(status in {"failed", "error", "failure"} for status in statuses):
             return "failed", None, None
         return "unknown", None, "ambiguous_stage_status"
-    if not quality or quality.get("decision") not in {"PASS", "pass"} or quality.get("all_hard_pass") is False:
+    if not quality or quality.get("decision") not in {"PASS", "pass"} or quality.get("all_hard_pass") is not True:
         if quality and quality.get("decision") in {"FAIL", "fail"}:
             return "failed", None, None
         return "unknown", None, "missing_or_nonpassing_quality_report"
-    snapshot_id = None
-    snapshot = stages.get("snapshot")
-    if isinstance(snapshot, dict):
-        snapshot_id = snapshot.get("snapshot_id")
-    return "success", snapshot_id, None
+    return "success", snapshot.get("snapshot_id"), None
 
 
 def _entry(path: Path, reason: str, age: int | None = None) -> dict[str, Any]:
@@ -257,15 +293,43 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
             skipped.append({"path": key, "reason": label})
 
     # Any unresolved baseline run reference is surfaced; it is not silently discarded.
-    missing_run_refs = sorted(ref for ref in run_refs if not (runs_root / ref).exists())
+    existing_run_ids: set[str] = set()
+    existing_snapshot_ids: set[str] = set()
+    if runs_root.exists():
+        for run_dir in runs_root.iterdir():
+            if not run_dir.is_dir():
+                continue
+            manifest = read_json(run_dir / "run_manifest.json")
+            if not manifest:
+                continue
+            existing_run_ids.add(str(manifest.get("run_id") or run_dir.name))
+            stages = manifest.get("stages", {})
+            snapshot = stages.get("snapshot", {}) if isinstance(stages, dict) else {}
+            snapshot_id = manifest.get("snapshot_id") or (
+                snapshot.get("snapshot_id") if isinstance(snapshot, dict) else None
+            )
+            if snapshot_id:
+                existing_snapshot_ids.add(str(snapshot_id))
+    missing_run_refs = sorted(ref for ref in run_refs if ref not in existing_run_ids)
+    missing_snapshot_refs = sorted(ref for ref in snapshot_refs if ref not in existing_snapshot_ids)
     for ref in missing_run_refs:
-        protected.append({"path": f"data/runs/{ref}", "reason": "dangling_reference_target_missing"})
+        protected.append({"path": f"data/runs/{ref}", "reason": "dangling_run_reference_target_missing"})
+    for ref in missing_snapshot_refs:
+        protected.append({"path": f"snapshot/{ref}", "reason": "dangling_snapshot_reference_target_missing"})
+    blocking_issues = []
+    if missing_run_refs:
+        blocking_issues.append("dangling_run_references")
+    if missing_snapshot_refs:
+        blocking_issues.append("dangling_snapshot_references")
     return {
         "schema": "retention_plan_v2",
         "generated_at": now.isoformat(),
         "mode": "dry-run",
+        "apply_blocked": bool(blocking_issues),
+        "blocking_issues": blocking_issues,
         "summary": {"candidate_count": len(candidates), "protected_count": len(protected),
-                    "skipped_count": len(skipped), "dangling_run_reference_count": len(missing_run_refs)},
+                    "skipped_count": len(skipped), "dangling_run_reference_count": len(missing_run_refs),
+                    "dangling_snapshot_reference_count": len(missing_snapshot_refs)},
         "candidates": sorted(candidates, key=lambda x: x["path"]),
         "protected": sorted(protected, key=lambda x: x["path"]),
         "skipped": sorted(skipped, key=lambda x: x["path"]),
@@ -290,6 +354,9 @@ def main() -> int:
         target = Path(args.json_path)
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(output, encoding="utf-8")
+    if args.apply and plan.get("apply_blocked"):
+        print("retention apply refused: unresolved authoritative run/snapshot references", file=sys.stderr)
+        return 2
     if args.apply:
         for item in plan["candidates"]:
             target = ROOT / item["path"]
