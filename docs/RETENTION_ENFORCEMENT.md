@@ -33,6 +33,10 @@ The workflow must not use `--apply`: deleting files inside an ephemeral Actions 
 3. Create an explicit deletion commit/PR in the repository; do not treat local `--apply` in a temporary runner as a persisted cleanup.
 4. Run the full CI/build/release gates after the cleanup commit.
 
+## Current baseline provenance
+
+The production baseline pointer was reconciled on 2026-11-08 to the tracked verified run `20260917T054015320743Z-run`; see `reports/baseline/BASELINE_POINTER_RECONCILIATION_2026-11-08.md`. The planner validates this pointer and follows each retained run's collection-manifest dependency before proposing backup cleanup.
+
 ## Artifact-store dependency
 
 The tracked tree still contains large `data/runs/` and `backup/` payloads. Until the Artifact Store migration has persisted and verified immutable external URIs/digests, retention must preserve the full run directories while embedded release evidence is inside them. See `docs/ARTIFACT_STORE_MIGRATION.md`.
