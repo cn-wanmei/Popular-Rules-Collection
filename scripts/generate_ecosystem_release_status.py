@@ -300,12 +300,15 @@ def main() -> int:
     icon_age = age_seconds(gen_at if isinstance(gen_at, str) else None, now)
     icon_age_freshness = freshness_label(icon_age, 86400, 604800)
     identity_verified_at, identity_run_id, identity_fetch_error = fetch_latest_identity_verification()
+    # A failed latest workflow is not a verification heartbeat, even if its
+    # timestamp is recent and the snapshot hash happens to match.
+    verified_at_for_freshness = identity_verified_at if identity_fetch_error is None else None
     icon_freshness, icon_freshness_reason, identity_verification_age = identity_freshness(
         err is None and isinstance(data, dict),
         icon_sem,
         live_file_sha256,
         file_sha256,
-        identity_verified_at,
+        verified_at_for_freshness,
         now,
     )
     report["signals"]["icon_identity_snapshot"] = {
