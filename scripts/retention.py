@@ -285,8 +285,6 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
             run_records.append((path, date, status, snapshot_id, evidence_status, evidence_at, evidence_why))
             if status == "success":
                 run_successes.append((path, date, snapshot_id))
-            elif why:
-                protected.append(_entry(path, why, age_days(date, now)))
     run_successes.sort(key=lambda item: item[1], reverse=True)
     newest_runs = {path for path, _, _ in run_successes[:run_min_success]}
     for path, date, status, snapshot_id, evidence_status, evidence_at, evidence_why in run_records:
