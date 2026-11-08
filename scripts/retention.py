@@ -49,9 +49,11 @@ def collect_references(root: Path) -> tuple[set[str], set[str], set[str]]:
     run_ids: set[str] = set()
     snapshot_ids: set[str] = set()
     paths: set[str] = set()
-    scan_files = [root / "reports" / "latest_release.json"]
-    scan_roots = [root / "baseline", root / "data" / "baseline",
-                  root / "generated" / "_promotion"]
+    scan_files = [
+        root / "reports" / "latest_release.json",
+        root / "generated" / "_promotion" / "latest.json",
+    ]
+    scan_roots = [root / "baseline", root / "data" / "baseline"]
     for scan_root in scan_roots:
         if scan_root.exists():
             scan_files.extend(scan_root.rglob("*.json"))
@@ -342,12 +344,41 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
             else:
                 protected.append(_entry(path, "within_report_retention_window", age))
 
-    # These policy classes have no independently verified root/layout in this repo.
-    for key, label in (("release_evidence", "release_evidence_layout_not_independently_identified"),
-                       ("health_history", "health_history_layout_not_independently_identified"),
-                       ("generated", "generated_artifacts_preserved_without_consumer_inventory")):
-        if policy.get(key):
-            skipped.append({"path": key, "reason": label})
+    # Generated client directories are the current distribution, not history.
+    generated_root = root / "generated"
+    if generated_root.exists():
+        skipped.append({"path": "generated", "reason": "current_generated_distribution_preserved"})
+    promotion_root = generated_root / "_promotion"
+    if promotion_root.exists():
+        for path in sorted(promotion_root.iterdir()):
+            if path.name == "latest.json":
+                protected.append(_entry(path, "authoritative_latest_promotion_pointer"))
+                continue
+            match = re.fullmatch(r"(\d{8})T(\d{12})Z-run\.json", path.name)
+            if not path.is_file() or not match:
+                skipped.append(_entry(path, "unrecognized_promotion_record_preserved"))
+                continue
+            doc = read_json(path)
+            run_id = path.stem
+            if not doc or doc.get("schema") != "promotion_v4" or doc.get("run_id") != run_id:
+                protected.append(_entry(path, "promotion_record_identity_unknown"))
+                continue
+            try:
+                promoted_at = dt.datetime.strptime(
+                    match.group(1) + match.group(2)[:6], "%Y%m%d%H%M%S"
+                ).replace(tzinfo=dt.timezone.utc)
+            except ValueError:
+                protected.append(_entry(path, "invalid_promotion_timestamp"))
+                continue
+            age = age_days(promoted_at, now)
+            snapshot_id = doc.get("snapshot_id")
+            rel = path.relative_to(root).as_posix()
+            if run_id in run_refs or (snapshot_id and snapshot_id in snapshot_refs) or rel in path_refs:
+                protected.append(_entry(path, "referenced_promotion_record", age))
+            elif age <= release_keep_days:
+                protected.append(_entry(path, "generated_release_evidence_retention_window", age))
+            else:
+                candidates.append(_entry(path, "expired_generated_promotion_record", age))
 
     # Any unresolved baseline run reference is surfaced; it is not silently discarded.
     existing_run_ids: set[str] = set()
