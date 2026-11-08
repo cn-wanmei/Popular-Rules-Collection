@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
 import json
 import re
 import shutil
@@ -122,18 +123,73 @@ def collect_references(root: Path) -> tuple[set[str], set[str], set[str]]:
 
 def backup_status(path: Path) -> tuple[str, str | None]:
     manifest = read_json(path / "manifests" / "_collection.json")
-    if not manifest:
-        return "unknown", "missing_or_invalid_collection_manifest"
-    if (manifest.get("schema") != "collection_manifest_v1"
-            or manifest.get("date") != path.name
-            or manifest.get("root") != path.relative_to(path.parents[1]).as_posix()):
-        return "unknown", "collection_manifest_identity_mismatch"
-    if manifest.get("status") == "ok" and not manifest.get("critical_failures"):
-        return "success", None
-    if manifest.get("status") in {"failed", "error"} or manifest.get("critical_failures"):
-        return "failed", None
-    return "unknown", "ambiguous_collection_status"
+    if manifest:
+        if (manifest.get("schema") != "collection_manifest_v1"
+                or manifest.get("date") != path.name
+                or manifest.get("root") != path.relative_to(path.parents[1]).as_posix()):
+            return "unknown", "collection_manifest_identity_mismatch"
+        if manifest.get("status") == "ok" and not manifest.get("critical_failures"):
+            return "success", None
+        if manifest.get("status") in {"failed", "error"} or manifest.get("critical_failures"):
+            return "failed", "collection_manifest_reports_failure"
+        return "unknown", "ambiguous_collection_status"
 
+    # Legacy registry-v3 daily snapshots use _day.json rather than the newer
+    # collection manifest. Validate every declared file before treating them as
+    # successful; a partial legacy day is a failed backup, not an unknown success.
+    legacy = read_json(path / "manifests" / "_day.json")
+    if not legacy:
+        return "unknown", "missing_or_invalid_collection_manifest"
+    if legacy.get("registry_version") != 3 or legacy.get("date") != path.name:
+        return "unknown", "legacy_day_manifest_identity_mismatch"
+    sources = legacy.get("sources")
+    if not isinstance(sources, list) or not sources:
+        return "unknown", "legacy_day_manifest_has_no_sources"
+    declared_failures = sum(
+        int(source.get("files_failed", 0) or 0) + int(source.get("empty_blocked", 0) or 0)
+        for source in sources if isinstance(source, dict)
+    )
+    if declared_failures:
+        return "failed", "legacy_day_manifest_partial_failure"
+    seen: set[str] = set()
+    for source in sources:
+        if not isinstance(source, dict) or not isinstance(source.get("files"), list):
+            return "unknown", "legacy_day_source_manifest_invalid"
+        files = source["files"]
+        if int(source.get("files_ok", 0) or 0) != len(files):
+            return "unknown", "legacy_day_file_count_mismatch"
+        for item in files:
+            if not isinstance(item, dict) or item.get("status") != "ok":
+                return "unknown", "legacy_day_file_status_unknown"
+            local = item.get("local")
+            expected_size = item.get("size")
+            expected_hash = item.get("sha256")
+            if (not isinstance(local, str) or not local
+                    or Path(local).is_absolute() or ".." in Path(local).parts
+                    or not isinstance(expected_size, int)
+                    or not isinstance(expected_hash, str)
+                    or not re.fullmatch(r"[0-9a-f]{64}", expected_hash)):
+                return "unknown", "legacy_day_file_identity_invalid"
+            if local in seen:
+                return "unknown", "legacy_day_duplicate_local_path"
+            seen.add(local)
+            file_path = path / local
+            try:
+                resolved = file_path.resolve()
+                resolved.relative_to(path.resolve())
+                if not resolved.is_file() or resolved.stat().st_size != expected_size:
+                    return "unknown", "legacy_day_file_missing_or_size_mismatch"
+                digest = hashlib.sha256()
+                with resolved.open("rb") as stream:
+                    for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+                        digest.update(chunk)
+                if digest.hexdigest() != expected_hash:
+                    return "unknown", "legacy_day_file_hash_mismatch"
+            except (OSError, ValueError):
+                return "unknown", "legacy_day_file_unreadable_or_outside_snapshot"
+    if not seen:
+        return "unknown", "legacy_day_manifest_has_no_files"
+    return "success", None
 
 def run_status(path: Path) -> tuple[str, str | None, str | None]:
     manifest = read_json(path / "run_manifest.json")
@@ -234,6 +290,7 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
     keep_days = int(backup_cfg.get("keep_days", 30))
     min_success = int(backup_cfg.get("keep_min_successful", 7))
     successes: list[tuple[Path, dt.datetime]] = []
+    backup_records: list[tuple[Path, dt.datetime, str, str | None]] = []
     if backup_root.exists():
         for path in sorted(backup_root.iterdir()):
             date = parse_date(path.name)
@@ -241,24 +298,31 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
                 skipped.append(_entry(path, "not_a_dated_backup_directory"))
                 continue
             status, why = backup_status(path)
+            backup_records.append((path, date, status, why))
             if status == "success":
                 successes.append((path, date))
+    successes.sort(key=lambda pair: pair[1], reverse=True)
+    newest_success = {path for path, _ in successes[:min_success]}
+    failed_backup_keep_days = int(backup_cfg.get("failed_keep_days", 14))
+    for path, date, status, why in backup_records:
+        age = age_days(date, now)
+        if status == "unknown":
+            protected.append(_entry(path, why or "backup_status_unknown", age))
+        elif status == "failed":
+            if age <= failed_backup_keep_days:
+                protected.append(_entry(path, "failed_backup_within_retention_window", age))
             else:
-                protected.append(_entry(path, why or "backup_not_confirmed_successful"))
-        successes.sort(key=lambda pair: pair[1], reverse=True)
-        newest_success = {path for path, _ in successes[:min_success]}
-        for path, date in successes:
-            age = age_days(date, now)
-            if path in newest_success:
-                protected.append(_entry(path, "minimum_successful_backup_retention"))
-            elif age <= keep_days:
-                protected.append(_entry(path, "within_backup_retention_window", age))
-            elif any(ref == path.relative_to(root).as_posix()
-                     or ref.startswith(path.relative_to(root).as_posix() + "/")
-                     for ref in path_refs):
-                protected.append(_entry(path, "explicitly_referenced_backup", age))
-            else:
-                candidates.append(_entry(path, "expired_successful_backup", age))
+                candidates.append(_entry(path, "expired_failed_backup", age))
+        elif path in newest_success:
+            protected.append(_entry(path, "minimum_successful_backup_retention", age))
+        elif age <= keep_days:
+            protected.append(_entry(path, "within_backup_retention_window", age))
+        elif any(ref == path.relative_to(root).as_posix()
+                 or ref.startswith(path.relative_to(root).as_posix() + "/")
+                 for ref in path_refs):
+            protected.append(_entry(path, "explicitly_referenced_backup", age))
+        else:
+            candidates.append(_entry(path, "expired_successful_backup", age))
 
     # Runs: keep run payloads 30d, but preserve embedded release evidence for 180d.
     # Until an external artifact store is authoritative, release evidence lives inside
