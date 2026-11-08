@@ -347,3 +347,13 @@ def test_authoritative_pointer_with_malformed_ids_blocks_apply(tmp_path: Path) -
     plan = build_plan(tmp_path, _policy(), dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
     assert plan["apply_blocked"] is True
     assert "baseline/latest.json" in plan["invalid_authoritative_pointers"]
+
+
+def test_corrupt_collection_manifest_does_not_fall_back_to_legacy(tmp_path: Path) -> None:
+    path = _legacy_backup(tmp_path, "2026-01-01")
+    _write(path / "manifests" / "_collection.json", {})
+    _backup(tmp_path, "2026-02-20")
+    plan = build_plan(tmp_path, _policy(), dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert any(x["path"] == "backup/2026-01-01" and
+               x["reason"] == "invalid_collection_manifest" for x in plan["protected"])
+    assert not any(x["path"] == "backup/2026-01-01" for x in plan["candidates"])
