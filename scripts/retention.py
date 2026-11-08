@@ -51,13 +51,11 @@ def collect_references(root: Path) -> tuple[set[str], set[str], set[str]]:
     snapshot_ids: set[str] = set()
     paths: set[str] = set()
     scan_files = [
+        root / "baseline" / "latest.json",
+        root / "data" / "baseline" / "latest.json",
         root / "reports" / "latest_release.json",
         root / "generated" / "_promotion" / "latest.json",
     ]
-    scan_roots = [root / "baseline", root / "data" / "baseline"]
-    for scan_root in scan_roots:
-        if scan_root.exists():
-            scan_files.extend(scan_root.rglob("*.json"))
     for file in sorted(set(scan_files)):
         if not file.is_file():
             continue
