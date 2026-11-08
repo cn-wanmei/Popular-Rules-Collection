@@ -132,8 +132,7 @@ def _entry(path: Path, reason: str, age: int | None = None) -> dict[str, Any]:
 
 def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
                now: dt.datetime | None = None) -> dict[str, Any]:
-    policy = policy if policy is not None else (json.loads("{}") if False else {})
-    if not policy:
+    if policy is None:
         import yaml
         policy = yaml.safe_load((root / "config" / "retention.yaml").read_text(encoding="utf-8")) or {}
     now = now or now_utc()
@@ -231,7 +230,11 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
                 continue
             age = age_days(date, now)
             rel = path.relative_to(root).as_posix()
-            if any(ref == rel or ref.startswith(rel + "/") for ref in path_refs):
+            evidence_names = {"audit", "evidence", "release_evidence", "health_history"}
+            contains_evidence = any(child.name.lower() in evidence_names for child in path.rglob("*"))
+            if contains_evidence:
+                protected.append(_entry(path, "contains_audit_or_release_evidence", age))
+            elif any(ref == rel or ref.startswith(rel + "/") for ref in path_refs):
                 protected.append(_entry(path, "explicitly_referenced_report", age))
             elif age > reports_keep_days:
                 candidates.append(_entry(path, "expired_date_partition_report", age))
