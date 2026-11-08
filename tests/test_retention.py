@@ -86,3 +86,12 @@ def test_nested_backup_reference_protects_snapshot_directory(tmp_path: Path) -> 
     assert any(x["path"] == "backup/2026-01-01" and
                x["reason"] == "explicitly_referenced_backup" for x in plan["protected"])
     assert not any(x["path"] == "backup/2026-01-01" for x in plan["candidates"])
+
+
+def test_prior_retention_plan_is_not_treated_as_authoritative_reference(tmp_path: Path) -> None:
+    _backup(tmp_path, "2026-01-01")
+    _backup(tmp_path, "2026-01-02")
+    _write(tmp_path / "reports" / "retention_plan.json", {
+        "candidates": [{"path": "backup/2026-01-01"}]})
+    plan = build_plan(tmp_path, _policy(), dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert any(x["path"] == "backup/2026-01-01" for x in plan["candidates"])
