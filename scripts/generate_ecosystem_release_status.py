@@ -118,6 +118,8 @@ def identity_freshness(
         return "unknown", "snapshot_unreadable", None
     if semantic_consistency == "error":
         return "stale", "identity_semantic_error", None
+    if semantic_consistency == "warning":
+        return "unknown", "identity_semantic_warning", None
     if not live_file_sha256 or not pinned_file_sha256:
         return "unknown", "identity_content_hash_missing", None
     if live_file_sha256 != pinned_file_sha256:
