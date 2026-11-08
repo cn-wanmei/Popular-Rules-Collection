@@ -320,7 +320,7 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
     run_min_success = int(runs_cfg.get("keep_min_successful", 10))
     release_keep_days = int(policy.get("release_evidence", {}).get("keep_days", 180))
     run_successes: list[tuple[Path, dt.datetime, str | None]] = []
-    run_records: list[tuple[Path, dt.datetime, str, str | None, str, dt.datetime | None, str | None]] = []
+    run_records: list[tuple[Path, dt.datetime, str, str | None, str | None, str, dt.datetime | None, str | None]] = []
     if runs_root.exists():
         for path in sorted(runs_root.iterdir()):
             match = re.fullmatch(r"(\d{8})T(\d{12})Z-run", path.name)
@@ -334,12 +334,12 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
                 continue
             status, snapshot_id, why = run_status(path)
             evidence_status, evidence_at, evidence_why = release_evidence_status(path)
-            run_records.append((path, date, status, snapshot_id, evidence_status, evidence_at, evidence_why))
+            run_records.append((path, date, status, snapshot_id, why, evidence_status, evidence_at, evidence_why))
             if status == "success":
                 run_successes.append((path, date, snapshot_id))
     run_successes.sort(key=lambda item: item[1], reverse=True)
     newest_runs = {path for path, _, _ in run_successes[:run_min_success]}
-    for path, date, status, snapshot_id, evidence_status, evidence_at, evidence_why in run_records:
+    for path, date, status, snapshot_id, run_why, evidence_status, evidence_at, evidence_why in run_records:
         age = age_days(date, now)
         evidence_age = age_days(evidence_at, now) if evidence_at else None
         if path.name in run_refs or (snapshot_id and snapshot_id in snapshot_refs):
@@ -361,12 +361,12 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
             else:
                 candidates.append(_entry(path, "expired_successful_run", age))
         else:
-            protected.append(_entry(path, "run_status_unknown", age))
+            protected.append(_entry(path, run_why or "run_status_unknown", age))
 
 
     # Any run whose collection provenance cannot be resolved blocks destructive cleanup.
     unresolved_run_provenance: list[str] = []
-    for path, _, _, _, _, _, _ in run_records:
+    for path, _, _, _, _, _, _, _ in run_records:
         manifest = read_json(path / "run_manifest.json")
         collection_manifest = manifest.get("collection_manifest") if manifest else None
         if (not isinstance(collection_manifest, str)
