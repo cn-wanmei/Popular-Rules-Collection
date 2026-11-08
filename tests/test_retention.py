@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import datetime as dt
+import hashlib
 import json
 from pathlib import Path
 
@@ -20,6 +21,27 @@ def _backup(root: Path, day: str, status: str = "ok") -> Path:
             "critical_failures": [] if status == "ok" else ["failed"]})
     return path
 
+
+
+def _legacy_backup(root: Path, day: str, *, failed: int = 0,
+                   corrupt_hash: bool = False) -> Path:
+    path = root / "backup" / day
+    payload = b"legacy snapshot test payload"
+    local = path / "sources" / "test.yaml"
+    local.parent.mkdir(parents=True, exist_ok=True)
+    local.write_bytes(payload)
+    digest = hashlib.sha256(payload).hexdigest()
+    if corrupt_hash:
+        digest = "0" * 64
+    _write(path / "manifests" / "_day.json", {
+        "date": day, "registry_version": 3,
+        "sources": [{
+            "source": "legacy", "files_ok": 1, "files_failed": failed,
+            "empty_blocked": 0,
+            "files": [{"status": "ok", "local": "sources/test.yaml",
+                       "size": len(payload), "sha256": digest}]
+        }]})
+    return path
 
 def _run(root: Path, run_id: str, day: str, *, quality: str = "PASS",
          snapshot_id: str = "snap-20260101T000000000000Z") -> Path:
@@ -220,3 +242,29 @@ def test_generated_promotion_keeps_latest_and_180_day_release_evidence(tmp_path:
     assert any(x["path"] == f"generated/_promotion/{old_id}.json" and
                x["reason"] == "expired_generated_promotion_record" for x in plan["candidates"])
     assert any(x["path"] == "generated/_promotion/latest.json" for x in plan["protected"])
+
+
+def test_legacy_backup_manifest_with_verified_hash_is_successful_and_expires(tmp_path: Path) -> None:
+    old = _legacy_backup(tmp_path, "2026-01-01")
+    _backup(tmp_path, "2026-02-20")
+    plan = build_plan(tmp_path, _policy(), dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert any(x["path"] == "backup/2026-01-01" and
+               x["reason"] == "expired_successful_backup" for x in plan["candidates"])
+    assert not any(x["path"] == "backup/2026-01-01" for x in plan["protected"])
+
+
+def test_legacy_partial_backup_expires_after_failed_backup_window(tmp_path: Path) -> None:
+    _legacy_backup(tmp_path, "2026-01-01", failed=1)
+    _backup(tmp_path, "2026-02-20")
+    plan = build_plan(tmp_path, _policy(), dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert any(x["path"] == "backup/2026-01-01" and
+               x["reason"] == "expired_failed_backup" for x in plan["candidates"])
+
+
+def test_legacy_backup_hash_mismatch_is_protected_as_unknown(tmp_path: Path) -> None:
+    _legacy_backup(tmp_path, "2026-01-01", corrupt_hash=True)
+    _backup(tmp_path, "2026-02-20")
+    plan = build_plan(tmp_path, _policy(), dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert any(x["path"] == "backup/2026-01-01" and
+               x["reason"] == "legacy_day_file_hash_mismatch" for x in plan["protected"])
+    assert not any(x["path"] == "backup/2026-01-01" for x in plan["candidates"])
