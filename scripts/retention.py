@@ -343,6 +343,16 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
             protected.append(_entry(path, "run_status_unknown", age))
 
 
+    # Any run whose collection provenance cannot be resolved blocks destructive cleanup.
+    unresolved_run_provenance: list[str] = []
+    for path, _, _, _, _, _, _ in run_records:
+        manifest = read_json(path / "run_manifest.json")
+        collection_manifest = manifest.get("collection_manifest") if manifest else None
+        if (not isinstance(collection_manifest, str)
+                or not collection_manifest.replace("\\", "/").startswith("backup/")
+                or ".." in Path(collection_manifest.replace("\\", "/")).parts):
+            unresolved_run_provenance.append(path.relative_to(root).as_posix())
+
     # Every retained run pins the collection manifest it was built from, not only
     # runs named by the latest baseline/release pointers.
     for item in protected:
@@ -507,16 +517,20 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
         blocking_issues.append("dangling_snapshot_references")
     if missing_backup_refs:
         blocking_issues.append("dangling_backup_references")
+    if unresolved_run_provenance:
+        blocking_issues.append("unresolved_run_provenance")
     return {
         "schema": "retention_plan_v2",
         "generated_at": now.isoformat(),
         "mode": "dry-run",
         "apply_blocked": bool(blocking_issues),
         "blocking_issues": blocking_issues,
+        "unresolved_run_provenance": sorted(unresolved_run_provenance),
         "summary": {"candidate_count": len(candidates), "protected_count": len(protected),
                     "skipped_count": len(skipped), "dangling_run_reference_count": len(missing_run_refs),
                     "dangling_snapshot_reference_count": len(missing_snapshot_refs),
-                    "dangling_backup_reference_count": len(missing_backup_refs)},
+                    "dangling_backup_reference_count": len(missing_backup_refs),
+                    "unresolved_run_provenance_count": len(unresolved_run_provenance)},
         "candidates": sorted(candidates, key=lambda x: x["path"]),
         "protected": sorted(protected, key=lambda x: x["path"]),
         "skipped": sorted(skipped, key=lambda x: x["path"]),
