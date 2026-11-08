@@ -61,26 +61,27 @@ def collect_references(root: Path) -> tuple[set[str], set[str], set[str]]:
             continue
         try:
             raw = file.read_text(encoding="utf-8")
-            except (OSError, UnicodeError):
-                continue
-            run_ids.update(RUN_ID_RE.findall(raw))
-            snapshot_ids.update(SNAPSHOT_RE.findall(raw))
-            try:
-                doc = json.loads(raw)
-            except json.JSONDecodeError:
-                continue
-            def walk(obj: Any) -> None:
-                if isinstance(obj, dict):
-                    for v in obj.values():
-                        walk(v)
-                elif isinstance(obj, list):
-                    for v in obj:
-                        walk(v)
-                elif isinstance(obj, str):
-                    normalized = obj.replace("\\", "/").lstrip("./")
-                    if normalized and (normalized.startswith(("data/", "backup/", "reports/", "generated/"))):
-                        paths.add(normalized)
-            walk(doc)
+        except (OSError, UnicodeError):
+            continue
+        run_ids.update(RUN_ID_RE.findall(raw))
+        snapshot_ids.update(SNAPSHOT_RE.findall(raw))
+        try:
+            doc = json.loads(raw)
+        except json.JSONDecodeError:
+            continue
+
+        def walk(obj: Any) -> None:
+            if isinstance(obj, dict):
+                for v in obj.values():
+                    walk(v)
+            elif isinstance(obj, list):
+                for v in obj:
+                    walk(v)
+            elif isinstance(obj, str):
+                normalized = obj.replace("\\", "/").lstrip("./")
+                if normalized and normalized.startswith(("data/", "backup/", "reports/", "generated/")):
+                    paths.add(normalized)
+        walk(doc)
     return run_ids, snapshot_ids, paths
 
 
