@@ -95,3 +95,31 @@ def test_latest_failed_identity_run_is_not_accepted(monkeypatch) -> None:
     assert created == "2026-11-08T10:57:00Z"
     assert run_id == 12346
     assert error == "latest_identity_freshness_run_not_successful"
+
+
+def test_latest_identity_run_retries_transient_api_503(monkeypatch) -> None:
+    payload = {
+        "workflow_runs": [{
+            "id": 12347,
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-11-08T10:57:00Z",
+        }]
+    }
+    attempts = {"count": 0}
+
+    def flaky(*args, **kwargs):
+        attempts["count"] += 1
+        if attempts["count"] == 1:
+            import urllib.error
+            raise urllib.error.HTTPError(
+                "https://api.github.com/runs", 503, "Service Unavailable", {}, None)
+        return BytesIO(json.dumps(payload).encode("utf-8"))
+
+    monkeypatch.setattr(status.urllib.request, "urlopen", flaky)
+    monkeypatch.setattr(status.time, "sleep", lambda *_: None)
+    created, run_id, error = status.fetch_latest_identity_verification()
+    assert created == "2026-11-08T10:57:00Z"
+    assert run_id == 12347
+    assert error is None
+    assert attempts["count"] == 2
