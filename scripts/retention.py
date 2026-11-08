@@ -145,10 +145,13 @@ def backup_status(path: Path) -> tuple[str, str | None]:
     sources = legacy.get("sources")
     if not isinstance(sources, list) or not sources:
         return "unknown", "legacy_day_manifest_has_no_sources"
-    declared_failures = sum(
-        int(source.get("files_failed", 0) or 0) + int(source.get("empty_blocked", 0) or 0)
-        for source in sources if isinstance(source, dict)
-    )
+    try:
+        declared_failures = sum(
+            int(source.get("files_failed", 0) or 0) + int(source.get("empty_blocked", 0) or 0)
+            for source in sources if isinstance(source, dict)
+        )
+    except (TypeError, ValueError):
+        return "unknown", "legacy_day_failure_count_invalid"
     if declared_failures:
         return "failed", "legacy_day_manifest_partial_failure"
     seen: set[str] = set()
@@ -156,7 +159,11 @@ def backup_status(path: Path) -> tuple[str, str | None]:
         if not isinstance(source, dict) or not isinstance(source.get("files"), list):
             return "unknown", "legacy_day_source_manifest_invalid"
         files = source["files"]
-        if int(source.get("files_ok", 0) or 0) != len(files):
+        try:
+            files_ok = int(source.get("files_ok", 0) or 0)
+        except (TypeError, ValueError):
+            return "unknown", "legacy_day_file_count_invalid"
+        if files_ok != len(files):
             return "unknown", "legacy_day_file_count_mismatch"
         for item in files:
             if not isinstance(item, dict) or item.get("status") != "ok":
@@ -166,7 +173,7 @@ def backup_status(path: Path) -> tuple[str, str | None]:
             expected_hash = item.get("sha256")
             if (not isinstance(local, str) or not local
                     or Path(local).is_absolute() or ".." in Path(local).parts
-                    or not isinstance(expected_size, int)
+                    or not isinstance(expected_size, int) or isinstance(expected_size, bool) or expected_size < 0
                     or not isinstance(expected_hash, str)
                     or not re.fullmatch(r"[0-9a-f]{64}", expected_hash)):
                 return "unknown", "legacy_day_file_identity_invalid"
