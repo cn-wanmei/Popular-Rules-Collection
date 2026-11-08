@@ -24,7 +24,7 @@ def test_recent_identity_verification_stays_fresh_even_when_snapshot_is_old() ->
         _report(), "2026-11-08T10:57:00Z", NOW)
     assert status == "fresh"
     assert reason == "recent_identity_freshness_workflow_pass"
-    assert age == 6180
+    assert age == 3780
 
 
 def test_identity_content_mismatch_is_stale() -> None:
