@@ -120,7 +120,10 @@ def collect_references(root: Path) -> tuple[set[str], set[str], set[str]]:
     return run_ids, snapshot_ids, paths
 
 def backup_status(path: Path) -> tuple[str, str | None]:
-    manifest = read_json(path / "manifests" / "_collection.json")
+    collection_path = path / "manifests" / "_collection.json"
+    manifest = read_json(collection_path)
+    if collection_path.exists() and not manifest:
+        return "unknown", "invalid_collection_manifest"
     if manifest:
         if (manifest.get("schema") != "collection_manifest_v1"
                 or manifest.get("date") != path.name
