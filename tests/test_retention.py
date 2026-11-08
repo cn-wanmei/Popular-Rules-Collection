@@ -313,3 +313,5 @@ def test_run_without_collection_manifest_provenance_is_protected(tmp_path: Path)
     assert any(x["path"] == f"data/runs/{run_id}" and
                x["reason"] == "missing_or_invalid_collection_manifest_reference"
                for x in plan["protected"])
+    assert plan["apply_blocked"] is True
+    assert plan["summary"]["unresolved_run_provenance_count"] == 1
