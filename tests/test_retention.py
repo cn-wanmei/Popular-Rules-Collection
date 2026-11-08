@@ -15,7 +15,9 @@ def _write(path: Path, data: dict) -> None:
 def _backup(root: Path, day: str, status: str = "ok") -> Path:
     path = root / "backup" / day
     _write(path / "manifests" / "_collection.json",
-           {"status": status, "critical_failures": [] if status == "ok" else ["failed"]})
+           {"schema": "collection_manifest_v1", "date": day,
+            "root": f"backup/{day}", "status": status,
+            "critical_failures": [] if status == "ok" else ["failed"]})
     return path
 
 
@@ -23,7 +25,9 @@ def _run(root: Path, run_id: str, day: str, *, quality: str = "PASS",
          snapshot_id: str = "snap-20260101T000000000000Z") -> Path:
     path = root / "data" / "runs" / run_id
     _write(path / "run_manifest.json", {
-        "run_id": run_id, "started_at": day + "T00:00:00+00:00",
+        "schema": "engine_run_v1", "run_id": run_id,
+        "started_at": day + "T00:00:00+00:00",
+        "collection_manifest": f"backup/{day}/manifests/_collection.json",
         "stages": {"snapshot": {"status": "ok", "snapshot_id": snapshot_id},
                    "ingest": {"status": "ok"}}})
     _write(path / "quality.json", {"decision": quality, "all_hard_pass": quality == "PASS"})
@@ -95,3 +99,37 @@ def test_prior_retention_plan_is_not_treated_as_authoritative_reference(tmp_path
         "candidates": [{"path": "backup/2026-01-01"}]})
     plan = build_plan(tmp_path, _policy(), dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
     assert any(x["path"] == "backup/2026-01-01" for x in plan["candidates"])
+
+
+def test_baseline_run_reference_transitively_protects_collection_backup(tmp_path: Path) -> None:
+    run_id = "20260101T000000000000Z-run"
+    backup = _backup(tmp_path, "2026-01-01")
+    _backup(tmp_path, "2026-01-02")
+    _run(tmp_path, run_id, "2026-01-01")
+    _write(tmp_path / "baseline" / "latest.json", {"source_run_id": run_id})
+    plan = build_plan(tmp_path, _policy(), dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert any(x["path"] == "backup/2026-01-01" and
+               x["reason"] == "explicitly_referenced_backup" for x in plan["protected"])
+    assert not any(x["path"] == "backup/2026-01-01" for x in plan["candidates"])
+
+
+def test_dangling_run_and_snapshot_references_block_apply(tmp_path: Path) -> None:
+    _write(tmp_path / "baseline" / "latest.json", {
+        "source_run_id": "20260101T000000000000Z-run",
+        "source_snapshot_id": "snap-20260101T000000000001Z"})
+    plan = build_plan(tmp_path, _policy(), dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert plan["apply_blocked"] is True
+    assert plan["summary"]["dangling_run_reference_count"] == 1
+    assert plan["summary"]["dangling_snapshot_reference_count"] == 1
+
+
+def test_backup_manifest_identity_mismatch_is_protected(tmp_path: Path) -> None:
+    path = _backup(tmp_path, "2026-01-01")
+    manifest_path = path / "manifests" / "_collection.json"
+    doc = json.loads(manifest_path.read_text(encoding="utf-8"))
+    doc["date"] = "2025-12-31"
+    manifest_path.write_text(json.dumps(doc), encoding="utf-8")
+    plan = build_plan(tmp_path, _policy(), dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert not any(x["path"] == "backup/2026-01-01" for x in plan["candidates"])
+    assert any(x["path"] == "backup/2026-01-01" and
+               x["reason"] == "collection_manifest_identity_mismatch" for x in plan["protected"])
