@@ -315,3 +315,11 @@ def test_run_without_collection_manifest_provenance_is_protected(tmp_path: Path)
                for x in plan["protected"])
     assert plan["apply_blocked"] is True
     assert plan["summary"]["unresolved_run_provenance_count"] == 1
+
+
+def test_missing_authoritative_baseline_pointer_blocks_apply(tmp_path: Path) -> None:
+    (tmp_path / "baseline").mkdir()
+    plan = build_plan(tmp_path, _policy(), dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert plan["apply_blocked"] is True
+    assert plan["summary"]["invalid_authoritative_pointer_count"] == 1
+    assert "baseline/latest.json" in plan["invalid_authoritative_pointers"]
