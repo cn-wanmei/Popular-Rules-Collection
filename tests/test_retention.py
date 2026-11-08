@@ -188,3 +188,35 @@ def test_health_history_outlives_shorter_report_retention(tmp_path: Path) -> Non
     assert any(x["path"] == "reports/2025-12-01" and
                x["reason"] == "health_history_retention_window" for x in plan["protected"])
     assert not any(x["path"] == "reports/2025-12-01" for x in plan["candidates"])
+
+
+def test_generated_promotion_keeps_latest_and_180_day_release_evidence(tmp_path: Path) -> None:
+    current_id = "20260220T000000000000Z-run"
+    current_snapshot = "snap-20260220T000000000000Z"
+    current_run = tmp_path / "data" / "runs" / current_id
+    _write(current_run / "run_manifest.json", {
+        "schema": "engine_run_v1", "run_id": current_id,
+        "stages": {"snapshot": {"status": "ok", "snapshot_id": current_snapshot}}})
+    promotion = tmp_path / "generated" / "_promotion"
+    _write(promotion / "latest.json", {
+        "schema": "promotion_v4", "run_id": current_id,
+        "snapshot_id": current_snapshot})
+    _write(promotion / f"{current_id}.json", {
+        "schema": "promotion_v4", "run_id": current_id,
+        "snapshot_id": current_snapshot})
+    recent_id = "20251201T000000000000Z-run"
+    _write(promotion / f"{recent_id}.json", {
+        "schema": "promotion_v4", "run_id": recent_id,
+        "snapshot_id": "snap-20251201T000000000000Z"})
+    old_id = "20250701T000000000000Z-run"
+    _write(promotion / f"{old_id}.json", {
+        "schema": "promotion_v4", "run_id": old_id,
+        "snapshot_id": "snap-20250701T000000000000Z"})
+    plan = build_plan(tmp_path, _policy(), dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert any(x["path"] == f"generated/_promotion/{current_id}.json" and
+               x["reason"] == "referenced_promotion_record" for x in plan["protected"])
+    assert any(x["path"] == f"generated/_promotion/{recent_id}.json" and
+               x["reason"] == "generated_release_evidence_retention_window" for x in plan["protected"])
+    assert any(x["path"] == f"generated/_promotion/{old_id}.json" and
+               x["reason"] == "expired_generated_promotion_record" for x in plan["candidates"])
+    assert any(x["path"] == "generated/_promotion/latest.json" for x in plan["protected"])
