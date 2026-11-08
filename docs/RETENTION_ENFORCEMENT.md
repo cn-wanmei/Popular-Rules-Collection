@@ -22,7 +22,8 @@ The workflow must not use `--apply`: deleting files inside an ephemeral Actions 
 - `data/runs/<run>/release/`: `release/manifest.json`, `state.json`, and `sbom.json` form the embedded release-evidence set. Because this evidence is stored inside the run directory and no external artifact-store migration is complete, the whole run directory is retained for `release_evidence.keep_days` (180 days by default). A malformed or incomplete evidence set is protected as unknown.
 - Baseline/release references are transitive: a referenced run pins its snapshot and its `collection_manifest` backup.
 - `reports/YYYY-MM-DD/`: apply the report window only after checking nested audit/release evidence and `source-health.md` history. Health history and release/audit evidence use their longer policy windows.
-- Non-date report areas, archive, quarantine, audit, and generated consumer roots are preserved until their exact consumers and layouts are independently inventoried.
+- Non-date report areas, archive, quarantine, audit, and current generated client distributions are preserved until their exact consumers and layouts are independently inventoried.
+- `generated/_promotion/latest.json` and its referenced promotion record are protected; unreferenced timestamped promotion records remain for the release-evidence window and become candidates only after that window expires.
 - Unknown names, malformed timestamps, missing manifests, and unresolved run/snapshot references are never delete candidates. Any dangling authoritative run or snapshot reference blocks `--apply`.
 
 ## Applying repository cleanup
