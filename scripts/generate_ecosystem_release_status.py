@@ -5,10 +5,12 @@ from __future__ import annotations
 import argparse
 import base64
 import hashlib
+import io
 import json
 import os
 import time
 import urllib.request
+import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -101,24 +103,83 @@ def identity_freshness(
     semantic_consistency: str,
     live_file_sha256: str | None,
     pinned_file_sha256: str | None,
-) -> tuple[str, str]:
-    """Judge immutable identity snapshots by content, not creation timestamp.
+    verification_report: dict | None,
+    verified_at: str | None,
+    now: datetime,
+    hard_sla_seconds: int = 604800,
+) -> tuple[str, str, int | None]:
+    """Use a recent successful Identity Freshness comparison as the verification clock.
 
-    The Icon workflow deliberately leaves a snapshot unchanged when its content
-    still matches Collection. Its generated_at is therefore not a heartbeat.
+    The Icon snapshot is intentionally immutable when identity content is unchanged;
+    generated_at is not a verification heartbeat. The latest workflow artifact is.
     """
     if not readable:
-        return "unknown", "snapshot_unreadable"
+        return "unknown", "snapshot_unreadable", None
     if semantic_consistency == "error":
-        return "stale", "identity_semantic_error"
+        return "stale", "identity_semantic_error", None
     if not live_file_sha256 or not pinned_file_sha256:
-        return "unknown", "identity_content_hash_missing"
+        return "unknown", "identity_content_hash_missing", None
     if live_file_sha256 != pinned_file_sha256:
-        return "stale", "identity_content_hash_mismatch"
-    if semantic_consistency == "warning":
-        return "unknown", "identity_semantic_warning"
-    return "fresh", "identity_content_hash_match"
+        return "stale", "identity_content_hash_mismatch", None
+    if not isinstance(verification_report, dict):
+        return "unknown", "identity_verification_report_unavailable", None
+    verification_age = age_seconds(verified_at, now)
+    if verification_age is None:
+        return "unknown", "identity_verification_timestamp_missing", None
+    if verification_age > hard_sla_seconds:
+        return "stale", "identity_verification_expired", verification_age
+    if verification_report.get("drift") is not False:
+        return "stale", "identity_freshness_drift_detected", verification_age
+    if verification_report.get("content_match") is not True:
+        return "unknown", "identity_verification_not_content_match", verification_age
+    if verification_report.get("live_file_sha256") != live_file_sha256:
+        return "stale", "identity_verification_targets_different_collection_index", verification_age
+    if verification_report.get("pinned_file_sha256") != pinned_file_sha256:
+        return "stale", "identity_verification_targets_different_icon_pin", verification_age
+    if verification_report.get("only_in_collection") or verification_report.get("only_in_snapshot"):
+        return "stale", "identity_service_set_mismatch", verification_age
+    if verification_report.get("field_mismatches"):
+        return "stale", "identity_service_field_mismatch", verification_age
+    return "fresh", "recent_identity_freshness_workflow_pass", verification_age
 
+
+def fetch_latest_identity_verification() -> tuple[dict | None, str | None, int | None, str | None]:
+    """Read the latest successful Icon Identity Freshness run and its JSON artifact."""
+    base = "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon"
+    runs, err = fetch_json(
+        f"{base}/actions/workflows/identity-freshness.yml/runs?branch=main&per_page=1"
+    )
+    if err or not isinstance(runs, dict):
+        return None, None, None, err or "invalid_workflow_runs_response"
+    items = runs.get("workflow_runs") or []
+    if not items:
+        return None, None, None, "no_identity_freshness_runs"
+    run = items[0]
+    run_id = run.get("id")
+    created_at = run.get("created_at")
+    if run.get("status") != "completed" or run.get("conclusion") != "success" or not run_id:
+        return None, created_at, run_id, "latest_identity_freshness_run_not_successful"
+    artifacts, err = fetch_json(f"{base}/actions/runs/{run_id}/artifacts?per_page=100")
+    if err or not isinstance(artifacts, dict):
+        return None, created_at, run_id, err or "invalid_artifacts_response"
+    artifact = next((item for item in artifacts.get("artifacts", [])
+                     if item.get("name") == "identity-freshness-report"
+                     and not item.get("expired")
+                     and item.get("archive_download_url")), None)
+    if not artifact:
+        return None, created_at, run_id, "identity_freshness_artifact_missing"
+    archive, err = fetch_bytes(artifact["archive_download_url"])
+    if err or not archive:
+        return None, created_at, run_id, err or "identity_freshness_artifact_empty"
+    try:
+        with zipfile.ZipFile(io.BytesIO(archive)) as bundle:
+            names = [name for name in bundle.namelist() if name.endswith("identity_freshness.json")]
+            if len(names) != 1:
+                return None, created_at, run_id, "identity_freshness_artifact_invalid"
+            report = json.loads(bundle.read(names[0]).decode("utf-8"))
+    except (OSError, ValueError, KeyError, zipfile.BadZipFile, json.JSONDecodeError) as exc:
+        return None, created_at, run_id, f"identity_freshness_artifact_decode_error: {type(exc).__name__}"
+    return report if isinstance(report, dict) else None, created_at, run_id, None
 
 def main() -> int:
     ap = argparse.ArgumentParser()
@@ -257,11 +318,17 @@ def main() -> int:
 
     icon_age = age_seconds(gen_at if isinstance(gen_at, str) else None, now)
     icon_age_freshness = freshness_label(icon_age, 86400, 604800)
-    icon_freshness, icon_freshness_reason = identity_freshness(
+    identity_report, identity_verified_at, identity_run_id, identity_fetch_error = (
+        fetch_latest_identity_verification()
+    )
+    icon_freshness, icon_freshness_reason, identity_verification_age = identity_freshness(
         err is None and isinstance(data, dict),
         icon_sem,
         live_file_sha256,
         file_sha256,
+        identity_report,
+        identity_verified_at,
+        now,
     )
     report["signals"]["icon_identity_snapshot"] = {
         "url": sources["icon_identity_snapshot"],
@@ -278,8 +345,12 @@ def main() -> int:
         "semantic_reasons": reasons,
         "age_seconds": icon_age,
         "age_freshness": icon_age_freshness,
+        "verification_run_id": identity_run_id,
+        "verification_created_at": identity_verified_at,
+        "verification_age_seconds": identity_verification_age,
+        "verification_error": identity_fetch_error,
         "freshness": icon_freshness,
-        "freshness_basis": "content_hash",
+        "freshness_basis": "latest_successful_identity_freshness_run",
         "freshness_reason": icon_freshness_reason,
     }
 
@@ -357,7 +428,7 @@ def main() -> int:
         "semantic_consistency": overall_sem,
         "observation_status": observation_status,
         "observation_watermark": now_s,
-        "freshness_sla_note": "source soft=24h hard=7d; icon identity is content-hash based (snapshot age informational); freeze soft=14d hard=45d (read-model labels only)",
+        "freshness_sla_note": "source soft=24h hard=7d; icon identity uses latest successful Identity Freshness verification (snapshot age informational); freeze soft=14d hard=45d (read-model labels only)",
     }
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
