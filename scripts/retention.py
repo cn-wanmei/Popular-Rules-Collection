@@ -465,7 +465,7 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
                 for child in path.rglob("*")
             )
             has_health_history = any(
-                file.is_file() and file.name.lower().startswith(("source-health", "health-history"))
+                file.is_file() and file.name.lower().startswith(("source-health", "health-history", "health_history"))
                 for file in path.rglob("*")
             )
             health_keep_days = int(policy.get("health_history", {}).get("keep_days", 180))
