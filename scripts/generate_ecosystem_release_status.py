@@ -96,6 +96,30 @@ def freshness_label(age: int | None, soft: int, hard: int) -> str:
     return "stale"
 
 
+def identity_freshness(
+    readable: bool,
+    semantic_consistency: str,
+    live_file_sha256: str | None,
+    pinned_file_sha256: str | None,
+) -> tuple[str, str]:
+    """Judge immutable identity snapshots by content, not creation timestamp.
+
+    The Icon workflow deliberately leaves a snapshot unchanged when its content
+    still matches Collection. Its generated_at is therefore not a heartbeat.
+    """
+    if not readable:
+        return "unknown", "snapshot_unreadable"
+    if semantic_consistency == "error":
+        return "stale", "identity_semantic_error"
+    if not live_file_sha256 or not pinned_file_sha256:
+        return "unknown", "identity_content_hash_missing"
+    if live_file_sha256 != pinned_file_sha256:
+        return "stale", "identity_content_hash_mismatch"
+    if semantic_consistency == "warning":
+        return "unknown", "identity_semantic_warning"
+    return "fresh", "identity_content_hash_match"
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", type=Path, default=Path("reports/ecosystem_release_status.json"))
@@ -232,6 +256,13 @@ def main() -> int:
         reasons.append("collection_head_ahead_content_ok")
 
     icon_age = age_seconds(gen_at if isinstance(gen_at, str) else None, now)
+    icon_age_freshness = freshness_label(icon_age, 86400, 604800)
+    icon_freshness, icon_freshness_reason = identity_freshness(
+        err is None and isinstance(data, dict),
+        icon_sem,
+        live_file_sha256,
+        file_sha256,
+    )
     report["signals"]["icon_identity_snapshot"] = {
         "url": sources["icon_identity_snapshot"],
         "readability": "ok" if err is None and isinstance(data, dict) else "error",
@@ -246,7 +277,10 @@ def main() -> int:
         "semantic_consistency": icon_sem,
         "semantic_reasons": reasons,
         "age_seconds": icon_age,
-        "freshness": freshness_label(icon_age, 86400, 604800),
+        "age_freshness": icon_age_freshness,
+        "freshness": icon_freshness,
+        "freshness_basis": "content_hash",
+        "freshness_reason": icon_freshness_reason,
     }
 
     text, err = fetch_text(sources["icon_release_pointers"])
@@ -323,7 +357,7 @@ def main() -> int:
         "semantic_consistency": overall_sem,
         "observation_status": observation_status,
         "observation_watermark": now_s,
-        "freshness_sla_note": "icon/source soft=24h hard=7d; freeze soft=14d hard=45d (read-model labels only)",
+        "freshness_sla_note": "source soft=24h hard=7d; icon identity is content-hash based (snapshot age informational); freeze soft=14d hard=45d (read-model labels only)",
     }
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
