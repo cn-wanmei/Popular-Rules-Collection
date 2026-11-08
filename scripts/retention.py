@@ -48,14 +48,19 @@ def collect_references(root: Path) -> tuple[set[str], set[str], set[str]]:
     run_ids: set[str] = set()
     snapshot_ids: set[str] = set()
     paths: set[str] = set()
+    # Only authoritative pointer/evidence locations are scanned. Scanning every
+    # report would make a prior retention plan reference its own candidates forever.
+    scan_files = [root / "reports" / "latest_release.json"]
     scan_roots = [root / "baseline", root / "data" / "baseline",
-                  root / "reports", root / "generated"]
+                  root / "generated" / "_promotion"]
     for scan_root in scan_roots:
-        if not scan_root.exists():
+        if scan_root.exists():
+            scan_files.extend(scan_root.rglob("*.json"))
+    for file in sorted(set(scan_files)):
+        if not file.is_file():
             continue
-        for file in scan_root.rglob("*.json"):
-            try:
-                raw = file.read_text(encoding="utf-8")
+        try:
+            raw = file.read_text(encoding="utf-8")
             except (OSError, UnicodeError):
                 continue
             run_ids.update(RUN_ID_RE.findall(raw))
