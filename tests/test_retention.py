@@ -34,6 +34,19 @@ def _run(root: Path, run_id: str, day: str, *, quality: str = "PASS",
     return path
 
 
+
+def _release_evidence(root: Path, run_id: str, snapshot_id: str, day: str) -> None:
+    release = root / "data" / "runs" / run_id / "release"
+    _write(release / "manifest.json", {
+        "schema": "release_manifest_v3", "run_id": run_id,
+        "snapshot_id": snapshot_id, "generated_at": day + "T00:00:00+00:00"})
+    _write(release / "state.json", {
+        "schema": "release_state_v4", "snapshot_id": snapshot_id,
+        "all_hard_pass": True, "state": "RC_READY"})
+    _write(release / "sbom.json", {
+        "schema": "engine_sbom_v1", "run_id": run_id,
+        "files": [{"path": "artifacts/client.yaml", "sha256": "abc", "size": 1}]})
+
 def _policy() -> dict:
     return {"backup": {"keep_days": 30, "keep_min_successful": 1},
             "runs": {"keep_days": 30, "keep_min_successful": 1},
@@ -133,3 +146,45 @@ def test_backup_manifest_identity_mismatch_is_protected(tmp_path: Path) -> None:
     assert not any(x["path"] == "backup/2026-01-01" for x in plan["candidates"])
     assert any(x["path"] == "backup/2026-01-01" and
                x["reason"] == "collection_manifest_identity_mismatch" for x in plan["protected"])
+
+
+def test_release_evidence_retention_overrides_short_run_retention(tmp_path: Path) -> None:
+    run_id = "20260101T000000000000Z-run"
+    snapshot_id = "snap-20260101T000000000000Z"
+    _run(tmp_path, run_id, "2026-01-01", snapshot_id=snapshot_id)
+    _release_evidence(tmp_path, run_id, snapshot_id, "2026-01-01")
+    policy = _policy()
+    policy["runs"]["keep_min_successful"] = 0
+    plan = build_plan(tmp_path, policy, dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert any(x["path"] == f"data/runs/{run_id}" and
+               x["reason"] == "release_evidence_retention_window" for x in plan["protected"])
+    assert not any(x["path"] == f"data/runs/{run_id}" for x in plan["candidates"])
+
+
+def test_expired_release_evidence_allows_old_run_cleanup(tmp_path: Path) -> None:
+    old_id = "20250701T000000000000Z-run"
+    old_snapshot = "snap-20250701T000000000000Z"
+    recent_id = "20260220T000000000000Z-run"
+    _run(tmp_path, old_id, "2025-07-01", snapshot_id=old_snapshot)
+    _release_evidence(tmp_path, old_id, old_snapshot, "2025-07-01")
+    _run(tmp_path, recent_id, "2026-02-20")
+    policy = _policy()
+    policy["runs"]["keep_min_successful"] = 1
+    plan = build_plan(tmp_path, policy, dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert any(x["path"] == f"data/runs/{old_id}" and
+               x["reason"] == "expired_successful_run" for x in plan["candidates"])
+    assert any(x["path"] == f"data/runs/{recent_id}" and
+               x["reason"] == "minimum_successful_run_retention" for x in plan["protected"])
+
+
+def test_health_history_outlives_shorter_report_retention(tmp_path: Path) -> None:
+    health = tmp_path / "reports" / "2025-12-01" / "source-health.md"
+    health.parent.mkdir(parents=True)
+    health.write_text("historical health evidence", encoding="utf-8")
+    policy = _policy()
+    policy["reports"]["keep_days"] = 30
+    policy["health_history"] = {"keep_days": 180}
+    plan = build_plan(tmp_path, policy, dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert any(x["path"] == "reports/2025-12-01" and
+               x["reason"] == "health_history_retention_window" for x in plan["protected"])
+    assert not any(x["path"] == "reports/2025-12-01" for x in plan["candidates"])
