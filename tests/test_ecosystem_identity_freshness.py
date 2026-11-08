@@ -123,3 +123,10 @@ def test_latest_identity_run_retries_transient_api_503(monkeypatch) -> None:
     assert run_id == 12347
     assert error is None
     assert attempts["count"] == 2
+
+
+def test_failed_latest_workflow_timestamp_cannot_be_used_as_verification() -> None:
+    result, reason, _ = status.identity_freshness(
+        True, "ok", "same-digest", "same-digest", None, NOW)
+    assert result == "unknown"
+    assert reason == "identity_verification_timestamp_missing"
