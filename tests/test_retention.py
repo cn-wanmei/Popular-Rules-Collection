@@ -324,3 +324,16 @@ def test_missing_authoritative_baseline_pointer_blocks_apply(tmp_path: Path) -> 
     assert plan["apply_blocked"] is True
     assert plan["summary"]["invalid_authoritative_pointer_count"] == 1
     assert "baseline/latest.json" in plan["invalid_authoritative_pointers"]
+
+
+def test_legacy_backup_malformed_counters_are_protected(tmp_path: Path) -> None:
+    path = _legacy_backup(tmp_path, "2026-01-01")
+    manifest_path = path / "manifests" / "_day.json"
+    doc = json.loads(manifest_path.read_text(encoding="utf-8"))
+    doc["sources"][0]["files_ok"] = "not-a-number"
+    manifest_path.write_text(json.dumps(doc), encoding="utf-8")
+    _backup(tmp_path, "2026-02-20")
+    plan = build_plan(tmp_path, _policy(), dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert any(x["path"] == "backup/2026-01-01" and
+               x["reason"] == "legacy_day_file_count_invalid" for x in plan["protected"])
+    assert not any(x["path"] == "backup/2026-01-01" for x in plan["candidates"])
