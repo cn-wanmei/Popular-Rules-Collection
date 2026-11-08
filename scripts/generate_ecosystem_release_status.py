@@ -126,6 +126,8 @@ def identity_freshness(
         return "stale", "identity_content_hash_mismatch", None
     if not isinstance(verification_report, dict):
         return "unknown", "identity_verification_report_unavailable", None
+    if verification_report.get("schema") != "icon_identity_freshness_v4":
+        return "unknown", "identity_verification_schema_invalid", None
     verification_age = age_seconds(verified_at, now)
     if verification_age is None:
         return "unknown", "identity_verification_timestamp_missing", None
