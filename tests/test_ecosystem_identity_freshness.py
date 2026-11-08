@@ -8,6 +8,7 @@ NOW = dt.datetime(2026, 11, 8, 12, 0, tzinfo=dt.timezone.utc)
 
 def _report() -> dict:
     return {
+        "schema": "icon_identity_freshness_v4",
         "drift": False,
         "content_match": True,
         "live_file_sha256": "same-digest",
@@ -75,3 +76,13 @@ def test_semantic_warning_is_not_fresh() -> None:
         _report(), "2026-11-08T10:57:00Z", NOW)
     assert status == "unknown"
     assert reason == "identity_semantic_warning"
+
+
+def test_unexpected_identity_report_schema_is_unknown() -> None:
+    report = _report()
+    report["schema"] = "unexpected"
+    status, reason, _ = identity_freshness(
+        True, "ok", "same-digest", "same-digest",
+        report, "2026-11-08T10:57:00Z", NOW)
+    assert status == "unknown"
+    assert reason == "identity_verification_schema_invalid"
