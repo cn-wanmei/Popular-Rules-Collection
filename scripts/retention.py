@@ -116,7 +116,15 @@ def run_status(path: Path) -> tuple[str, str | None, str | None]:
 
 
 def _entry(path: Path, reason: str, age: int | None = None) -> dict[str, Any]:
-    item: dict[str, Any] = {"path": path.relative_to(ROOT).as_posix(), "reason": reason}
+    try:
+        relative = path.relative_to(ROOT).as_posix()
+    except ValueError:
+        # Keep planner tests hermetic when they operate on a temporary repository.
+        markers = {"backup", "reports", "generated", "data", "baseline"}
+        parts = path.parts
+        index = next((i for i, part in enumerate(parts) if part in markers), None)
+        relative = Path(*parts[index:]).as_posix() if index is not None else path.name
+    item: dict[str, Any] = {"path": relative, "reason": reason}
     if age is not None:
         item["age_days"] = age
     return item
