@@ -17,7 +17,7 @@ The workflow must not use `--apply`: deleting files inside an ephemeral Actions 
 
 ## Retention semantics
 
-- `backup/`: retain successful snapshots for `keep_days` and at least `keep_min_successful`; only a valid `collection_manifest_v1` whose date and root match the directory is eligible.
+- `backup/`: retain successful snapshots for `keep_days` and at least `keep_min_successful`; current snapshots require a valid `collection_manifest_v1` whose date and root match the directory. Legacy registry-v3 snapshots are eligible only after every declared local file's path, size and SHA-256 have been verified against `manifests/_day.json`. Partial legacy backups use `backup.failed_keep_days` (14 days by default); malformed or unverifiable snapshots are protected.
 - `data/runs/`: apply the run and failed-run windows only when no longer protected by references or embedded release evidence.
 - `data/runs/<run>/release/`: `release/manifest.json`, `state.json`, and `sbom.json` form the embedded release-evidence set. Because this evidence is stored inside the run directory and no external artifact-store migration is complete, the whole run directory is retained for `release_evidence.keep_days` (180 days by default). A malformed or incomplete evidence set is protected as unknown.
 - Baseline/release references are transitive: a referenced run pins its snapshot and its `collection_manifest` backup.
