@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - "scripts/retention.py"
+      - "tests/test_retention.py"
       - "config/retention.yaml"
       - ".github/workflows/retention.yml"
       - "backup/**"
