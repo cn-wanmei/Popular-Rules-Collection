@@ -84,6 +84,7 @@ def test_verify_fails_closed_when_live_icon_snapshot_is_unavailable(tmp_path, mo
         raise OSError("network unavailable")
 
     monkeypatch.setattr(verifier.urllib.request, "urlopen", unavailable)
+    monkeypatch.setattr(verifier.time, "sleep", lambda *_: None)
     assert verifier.main() == 1
     assert "could not read live Icon identity snapshot" in capsys.readouterr().out
 
