@@ -9,6 +9,7 @@ import io
 import json
 import os
 import time
+import urllib.error
 import urllib.request
 import zipfile
 from datetime import datetime, timezone
@@ -17,48 +18,61 @@ from pathlib import Path
 UA = {"User-Agent": "popular-rules-ecosystem-status/1.5"}
 
 
-def fetch_bytes(url: str, timeout: int = 60, token: str | None = None) -> tuple[bytes | None, str | None]:
-    try:
-        headers = dict(UA)
-        headers.update({
-            "Cache-Control": "no-cache",
-            "Pragma": "no-cache",
-            "X-GitHub-Api-Version": "2022-11-28",
-        })
-        is_contents_api = "api.github.com/repos/" in url and "/contents/" in url
-        if is_contents_api:
-            separator = "&" if "?" in url else "?"
-            url = f"{url}{separator}v={time.time_ns()}"
-            headers["Accept"] = "application/vnd.github.raw+json"
-        else:
-            headers["Accept"] = "application/vnd.github+json"
-        auth_token = token if token is not None else (os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or "")
-        auth_token = auth_token.strip()
-        if auth_token:
-            headers["Authorization"] = f"Bearer {auth_token}"
+def fetch_bytes(
+    url: str, timeout: int = 60, token: str | None = None, max_attempts: int = 4
+) -> tuple[bytes | None, str | None]:
+    """Fetch public cross-repository data with bounded retries for transient failures."""
+    retryable_statuses = {408, 425, 429, 500, 502, 503, 504}
+    last_error: Exception | None = None
+    for attempt in range(max_attempts):
+        try:
+            headers = dict(UA)
+            headers.update({
+                "Cache-Control": "no-cache",
+                "Pragma": "no-cache",
+                "X-GitHub-Api-Version": "2022-11-28",
+            })
+            is_contents_api = "api.github.com/repos/" in url and "/contents/" in url
+            request_url = url
+            if is_contents_api:
+                separator = "&" if "?" in request_url else "?"
+                request_url = f"{request_url}{separator}v={time.time_ns()}"
+                headers["Accept"] = "application/vnd.github.raw+json"
+            else:
+                headers["Accept"] = "application/vnd.github+json"
+            auth_token = token if token is not None else (
+                os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or ""
+            )
+            if auth_token.strip():
+                headers["Authorization"] = f"Bearer {auth_token.strip()}"
 
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            raw = resp.read()
+            req = urllib.request.Request(request_url, headers=headers)
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                raw = resp.read()
 
-        # Normally the raw media type returns file bytes. Some frontends/proxies
-        # still return the Contents API JSON envelope; decode only an explicitly
-        # Base64-encoded envelope so ordinary JSON files remain intact.
-        if is_contents_api and raw.lstrip().startswith(b"{"):
-            try:
-                envelope = json.loads(raw.decode("utf-8"))
-            except (UnicodeDecodeError, json.JSONDecodeError):
-                envelope = None
-            if (
-                isinstance(envelope, dict)
-                and envelope.get("encoding") == "base64"
-                and isinstance(envelope.get("content"), str)
-            ):
-                raw = base64.b64decode(envelope["content"])
-        return raw, None
-    except Exception as exc:  # noqa: BLE001
-        return None, f"{type(exc).__name__}: {exc}"
-
+            if is_contents_api and raw.lstrip().startswith(b"{"):
+                try:
+                    envelope = json.loads(raw.decode("utf-8"))
+                except (UnicodeDecodeError, json.JSONDecodeError):
+                    envelope = None
+                if (
+                    isinstance(envelope, dict)
+                    and envelope.get("encoding") == "base64"
+                    and isinstance(envelope.get("content"), str)
+                ):
+                    raw = base64.b64decode(envelope["content"])
+            return raw, None
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+            if exc.code not in retryable_statuses:
+                return None, f"{type(exc).__name__}: {exc}"
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            last_error = exc
+        except Exception as exc:  # noqa: BLE001
+            return None, f"{type(exc).__name__}: {exc}"
+        if attempt + 1 < max_attempts:
+            time.sleep(min(2 ** attempt, 4))
+    return None, f"{type(last_error).__name__}: {last_error}" if last_error else "unknown fetch failure"
 
 def fetch_text(url: str, timeout: int = 60, token: str | None = None) -> tuple[str | None, str | None]:
     raw, err = fetch_bytes(url, timeout=timeout, token=token)
