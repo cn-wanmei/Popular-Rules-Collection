@@ -458,7 +458,12 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
             age = age_days(date, now)
             rel = path.relative_to(root).as_posix()
             evidence_names = {"audit", "evidence", "release", "release_evidence", "health_history"}
-            contains_evidence = any(child.name.lower() in evidence_names for child in path.rglob("*"))
+            evidence_prefixes = ("audit_", "audit-", "release_", "release-", "evidence_", "evidence-", "sbom")
+            contains_evidence = any(
+                child.name.lower() in evidence_names
+                or child.name.lower().startswith(evidence_prefixes)
+                for child in path.rglob("*")
+            )
             has_health_history = any(
                 file.is_file() and file.name.lower().startswith(("source-health", "health-history"))
                 for file in path.rglob("*")
