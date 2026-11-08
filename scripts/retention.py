@@ -278,6 +278,26 @@ def _entry(path: Path, reason: str, age: int | None = None) -> dict[str, Any]:
     return item
 
 
+
+def validate_authoritative_pointers(root: Path) -> list[str]:
+    """Fail closed when an existing authority root has a missing or malformed pointer."""
+    specs = [
+        ("baseline/latest.json", "production_baseline_v1", "source_run_id", "source_snapshot_id"),
+        ("data/baseline/latest.json", "production_baseline_v1", "source_run_id", "source_snapshot_id"),
+        ("reports/latest_release.json", "latest_release_projection_v3", "run_id", "snapshot_id"),
+        ("generated/_promotion/latest.json", "promotion_v4", "run_id", "snapshot_id"),
+    ]
+    errors: list[str] = []
+    for relative, schema, run_key, snapshot_key in specs:
+        authority_root = root / Path(relative).parent
+        if not authority_root.exists():
+            continue
+        doc = read_json(root / relative)
+        if (not doc or doc.get("schema") != schema
+                or not doc.get(run_key) or not doc.get(snapshot_key)):
+            errors.append(relative)
+    return sorted(errors)
+
 def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
                now: dt.datetime | None = None) -> dict[str, Any]:
     if policy is None:
@@ -285,6 +305,7 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
         policy = yaml.safe_load((root / "config" / "retention.yaml").read_text(encoding="utf-8")) or {}
     now = now or now_utc()
     run_refs, snapshot_refs, path_refs = collect_references(root)
+    pointer_errors = validate_authoritative_pointers(root)
     protected: list[dict[str, Any]] = []
     candidates: list[dict[str, Any]] = []
     skipped: list[dict[str, Any]] = []
@@ -511,6 +532,8 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
     for ref in missing_snapshot_refs:
         protected.append({"path": f"snapshot/{ref}", "reason": "dangling_snapshot_reference_target_missing"})
     blocking_issues = []
+    if pointer_errors:
+        blocking_issues.append("invalid_authoritative_pointers")
     if missing_run_refs:
         blocking_issues.append("dangling_run_references")
     if missing_snapshot_refs:
@@ -525,12 +548,14 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
         "mode": "dry-run",
         "apply_blocked": bool(blocking_issues),
         "blocking_issues": blocking_issues,
+        "invalid_authoritative_pointers": pointer_errors,
         "unresolved_run_provenance": sorted(unresolved_run_provenance),
         "summary": {"candidate_count": len(candidates), "protected_count": len(protected),
                     "skipped_count": len(skipped), "dangling_run_reference_count": len(missing_run_refs),
                     "dangling_snapshot_reference_count": len(missing_snapshot_refs),
                     "dangling_backup_reference_count": len(missing_backup_refs),
-                    "unresolved_run_provenance_count": len(unresolved_run_provenance)},
+                    "unresolved_run_provenance_count": len(unresolved_run_provenance),
+                    "invalid_authoritative_pointer_count": len(pointer_errors)},
         "candidates": sorted(candidates, key=lambda x: x["path"]),
         "protected": sorted(protected, key=lambda x: x["path"]),
         "skipped": sorted(skipped, key=lambda x: x["path"]),
