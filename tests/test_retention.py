@@ -83,7 +83,8 @@ def test_backup_minimum_counts_successful_not_newest_directories(tmp_path: Path)
     plan = build_plan(tmp_path, _policy(), dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
     assert any(x["path"] == "backup/2026-01-01" and x["reason"] == "minimum_successful_backup_retention"
                for x in plan["protected"])
-    assert not any(x["path"] == "backup/2026-01-02" for x in plan["candidates"])
+    assert any(x["path"] == "backup/2026-01-02" and
+               x["reason"] == "expired_failed_backup" for x in plan["candidates"])
 
 
 def test_timestamp_run_id_is_parsed_and_baseline_reference_protects_run(tmp_path: Path) -> None:
