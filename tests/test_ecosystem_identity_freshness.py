@@ -67,3 +67,11 @@ def test_missing_verification_report_is_unknown() -> None:
         None, None, NOW)
     assert status == "unknown"
     assert reason == "identity_verification_report_unavailable"
+
+
+def test_semantic_warning_is_not_fresh() -> None:
+    status, reason, _ = identity_freshness(
+        True, "warning", "same-digest", "same-digest",
+        _report(), "2026-11-08T10:57:00Z", NOW)
+    assert status == "unknown"
+    assert reason == "identity_semantic_warning"
