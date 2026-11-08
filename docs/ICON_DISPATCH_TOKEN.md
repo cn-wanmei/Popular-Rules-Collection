@@ -1,25 +1,27 @@
 # Cross-repo identity dispatch setup
 
-Collection workflow `.github/workflows/notify-icon-identity.yml` fires when `rule/_index.yaml` changes.
+The Icon identity snapshot is immutable when its content matches the current Collection index. A Publish run does **not** need a cross-repository token when the existing Icon snapshot already matches.
 
-## Required secret (Collection repo)
+## Required secret (only when synchronization is needed)
 
-| Name | Scope | Purpose |
-|------|--------|---------|
-| `ICON_DISPATCH_TOKEN` | PAT or GitHub App token | `repository_dispatch` on `cn-wanmei/Popular-Rules-Icon` |
+Configure a fine-grained PAT or GitHub App token named \`ICON_DISPATCH_TOKEN\`:
 
-### Token permissions
+- In **Popular-Rules-Collection** repository secrets: permits \`repository_dispatch\` to \`cn-wanmei/Popular-Rules-Icon\`.
+- In **Popular-Rules-Icon** repository secrets: permits the Identity Freshness workflow to create/push its snapshot branch and open a pull request.
 
-- `repo` (or fine-grained: Actions write + Contents read on Icon)
-- Target event: `collection-identity-changed` (handled by Icon `identity-freshness.yml`)
+Target repository permissions on Icon:
+- Contents: read and write
+- Pull requests: read and write
+- Actions: read/write only if required by the selected dispatch integration
 
-### Without secret
+The Collection Publish preflight first compares the live Icon pin with the exact current Collection index. It only needs the token when a mismatch must be dispatched for repair. If the pin already matches, Publish proceeds without a needless token smoke-test.
 
-Workflow exits 0 and logs skip. Icon still runs daily schedule freshness.
+## If the token is unavailable
 
-### Verify
+- A matching Icon pin can still pass Publish's identity preflight.
+- If the pin is stale, Collection refuses promotion until identity is synchronized.
+- Collection's push notification workflow and Icon's drift-remediation job report the missing credential; scheduled Identity Freshness comparisons still run, but cannot create/merge a repair PR without the Icon-side credential.
 
-```bash
-gh secret set ICON_DISPATCH_TOKEN --repo cn-wanmei/Popular-Rules-Collection
-# then touch rule/_index.yaml on main or workflow_dispatch notify job
-```
+## Verify
+
+After configuring the secret in both repositories, trigger the Icon Identity Freshness workflow and confirm that its latest run succeeds with \`drift=false\` and \`content_match=true\`.
