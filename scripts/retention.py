@@ -166,7 +166,9 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
                 protected.append(_entry(path, "minimum_successful_backup_retention"))
             elif age <= keep_days:
                 protected.append(_entry(path, "within_backup_retention_window", age))
-            elif path_refs.intersection({path.relative_to(root).as_posix(), path.as_posix()}):
+            elif any(ref == path.relative_to(root).as_posix()
+                     or ref.startswith(path.relative_to(root).as_posix() + "/")
+                     for ref in path_refs):
                 protected.append(_entry(path, "explicitly_referenced_backup", age))
             else:
                 candidates.append(_entry(path, "expired_successful_backup", age))
