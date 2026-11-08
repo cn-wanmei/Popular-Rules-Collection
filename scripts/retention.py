@@ -300,8 +300,11 @@ def validate_authoritative_pointers(root: Path) -> list[str]:
         if not authority_root.exists():
             continue
         doc = read_json(root / relative)
+        run_id = doc.get(run_key) if doc else None
+        snapshot_id = doc.get(snapshot_key) if doc else None
         if (not doc or doc.get("schema") != schema
-                or not doc.get(run_key) or not doc.get(snapshot_key)):
+                or not isinstance(run_id, str) or not RUN_ID_RE.fullmatch(run_id)
+                or not isinstance(snapshot_id, str) or not SNAPSHOT_RE.fullmatch(snapshot_id)):
             errors.append(relative)
     return sorted(errors)
 
