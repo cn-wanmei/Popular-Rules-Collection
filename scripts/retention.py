@@ -376,6 +376,67 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
                 candidates.append(_entry(path, "expired_successful_run", age))
         else:
             protected.append(_entry(path, "run_status_unknown", age))
+
+
+    # Every retained run pins the collection manifest it was built from, not only
+    # runs named by the latest baseline/release pointers.
+    for item in protected:
+        relative = item.get("path", "")
+        if not relative.startswith("data/runs/") or relative.count("/") != 2:
+            continue
+        run_manifest = read_json(root / relative / "run_manifest.json")
+        if not run_manifest:
+            continue
+        collection_manifest = run_manifest.get("collection_manifest")
+        if not isinstance(collection_manifest, str):
+            continue
+        normalized = collection_manifest.replace("\\", "/")
+        while normalized.startswith("./"):
+            normalized = normalized[2:]
+        if (normalized.startswith("backup/")
+                and ".." not in Path(normalized).parts):
+            path_refs.add(normalized)
+
+    # Backups: retain the newest N successful snapshots, not merely newest dates.
+    backup_root = root / "backup"
+    backup_cfg = policy.get("backup", {})
+    keep_days = int(backup_cfg.get("keep_days", 30))
+    min_success = int(backup_cfg.get("keep_min_successful", 7))
+    successes: list[tuple[Path, dt.datetime]] = []
+    backup_records: list[tuple[Path, dt.datetime, str, str | None]] = []
+    if backup_root.exists():
+        for path in sorted(backup_root.iterdir()):
+            date = parse_date(path.name)
+            if not path.is_dir() or date is None:
+                skipped.append(_entry(path, "not_a_dated_backup_directory"))
+                continue
+            status, why = backup_status(path)
+            backup_records.append((path, date, status, why))
+            if status == "success":
+                successes.append((path, date))
+    successes.sort(key=lambda pair: pair[1], reverse=True)
+    newest_success = {path for path, _ in successes[:min_success]}
+    failed_backup_keep_days = int(backup_cfg.get("failed_keep_days", 14))
+    for path, date, status, why in backup_records:
+        age = age_days(date, now)
+        if status == "unknown":
+            protected.append(_entry(path, why or "backup_status_unknown", age))
+        elif status == "failed":
+            if age <= failed_backup_keep_days:
+                protected.append(_entry(path, "failed_backup_within_retention_window", age))
+            else:
+                candidates.append(_entry(path, "expired_failed_backup", age))
+        elif path in newest_success:
+            protected.append(_entry(path, "minimum_successful_backup_retention", age))
+        elif age <= keep_days:
+            protected.append(_entry(path, "within_backup_retention_window", age))
+        elif any(ref == path.relative_to(root).as_posix()
+                 or ref.startswith(path.relative_to(root).as_posix() + "/")
+                 for ref in path_refs):
+            protected.append(_entry(path, "explicitly_referenced_backup", age))
+        else:
+            candidates.append(_entry(path, "expired_successful_backup", age))
+
     # Reports: only direct date-partition directories are eligible. Audit and archive
     # subtrees, unknown layouts and explicitly referenced paths are never traversed.
     reports_root = root / "reports"
@@ -445,6 +506,12 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
                 candidates.append(_entry(path, "expired_generated_promotion_record", age))
 
     # Any unresolved baseline run reference is surfaced; it is not silently discarded.
+    missing_backup_refs = sorted(
+        ref for ref in path_refs
+        if ref.startswith("backup/") and not (root / ref).exists()
+    )
+    for ref in missing_backup_refs:
+        protected.append({"path": ref, "reason": "dangling_backup_reference_target_missing"})
     existing_run_ids: set[str] = set()
     existing_snapshot_ids: set[str] = set()
     if runs_root.exists():
@@ -473,6 +540,8 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
         blocking_issues.append("dangling_run_references")
     if missing_snapshot_refs:
         blocking_issues.append("dangling_snapshot_references")
+    if missing_backup_refs:
+        blocking_issues.append("dangling_backup_references")
     return {
         "schema": "retention_plan_v2",
         "generated_at": now.isoformat(),
@@ -481,7 +550,8 @@ def build_plan(root: Path = ROOT, policy: dict[str, Any] | None = None,
         "blocking_issues": blocking_issues,
         "summary": {"candidate_count": len(candidates), "protected_count": len(protected),
                     "skipped_count": len(skipped), "dangling_run_reference_count": len(missing_run_refs),
-                    "dangling_snapshot_reference_count": len(missing_snapshot_refs)},
+                    "dangling_snapshot_reference_count": len(missing_snapshot_refs),
+                    "dangling_backup_reference_count": len(missing_backup_refs)},
         "candidates": sorted(candidates, key=lambda x: x["path"]),
         "protected": sorted(protected, key=lambda x: x["path"]),
         "skipped": sorted(skipped, key=lambda x: x["path"]),
