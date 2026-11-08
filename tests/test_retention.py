@@ -268,3 +268,34 @@ def test_legacy_backup_hash_mismatch_is_protected_as_unknown(tmp_path: Path) -> 
     assert any(x["path"] == "backup/2026-01-01" and
                x["reason"] == "legacy_day_file_hash_mismatch" for x in plan["protected"])
     assert not any(x["path"] == "backup/2026-01-01" for x in plan["candidates"])
+
+
+def test_retained_release_run_pins_its_collection_backup(tmp_path: Path) -> None:
+    run_id = "20260101T000000000000Z-run"
+    snapshot_id = "snap-20260101T000000000000Z"
+    backup = _backup(tmp_path, "2026-01-01")
+    _backup(tmp_path, "2026-02-20")
+    _run(tmp_path, run_id, "2026-01-01", snapshot_id=snapshot_id)
+    _release_evidence(tmp_path, run_id, snapshot_id, "2026-01-01")
+    policy = _policy()
+    policy["runs"]["keep_min_successful"] = 0
+    plan = build_plan(tmp_path, policy, dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert any(x["path"] == f"data/runs/{run_id}" and
+               x["reason"] == "release_evidence_retention_window" for x in plan["protected"])
+    assert any(x["path"] == "backup/2026-01-01" and
+               x["reason"] == "explicitly_referenced_backup" for x in plan["protected"])
+    assert not any(x["path"] == "backup/2026-01-01" for x in plan["candidates"])
+
+
+def test_missing_backup_from_retained_run_blocks_apply(tmp_path: Path) -> None:
+    run_id = "20260101T000000000000Z-run"
+    snapshot_id = "snap-20260101T000000000000Z"
+    _run(tmp_path, run_id, "2026-01-01", snapshot_id=snapshot_id)
+    _release_evidence(tmp_path, run_id, snapshot_id, "2026-01-01")
+    policy = _policy()
+    policy["runs"]["keep_min_successful"] = 0
+    plan = build_plan(tmp_path, policy, dt.datetime(2026, 3, 1, tzinfo=dt.timezone.utc))
+    assert plan["apply_blocked"] is True
+    assert plan["summary"]["dangling_backup_reference_count"] == 1
+    assert any(x["path"] == "backup/2026-01-01/manifests/_collection.json" and
+               x["reason"] == "dangling_backup_reference_target_missing" for x in plan["protected"])
