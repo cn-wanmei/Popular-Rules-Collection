@@ -28,38 +28,56 @@ def fail(message: str) -> int:
     return 1
 
 
-def read_live_icon_snapshot() -> dict:
-    # Read the exact current Icon branch file through the Contents API, rather
-    # than a raw branch URL that can lag immediately after an identity PR merges.
-    url = f"{ICON_SNAPSHOT_API_URL}?ref=main&v={time.time_ns()}"
-    req = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": "Popular-Rules-Collection-release-lock-verifier",
-            "Accept": "application/vnd.github.raw+json",
-            "X-GitHub-Api-Version": "2022-11-28",
-            "Cache-Control": "no-cache",
-            "Pragma": "no-cache",
-        },
-    )
-    with urllib.request.urlopen(req, timeout=60) as response:
-        raw = response.read()
-    if raw.lstrip().startswith(b"{"):
-        try:
-            envelope = json.loads(raw.decode("utf-8"))
-        except (UnicodeDecodeError, json.JSONDecodeError):
-            envelope = None
-        if (
-            isinstance(envelope, dict)
-            and envelope.get("encoding") == "base64"
-            and isinstance(envelope.get("content"), str)
-        ):
-            raw = base64.b64decode(envelope["content"])
-    snapshot = json.loads(raw.decode("utf-8"))
-    if not isinstance(snapshot, dict):
-        raise ValueError("Icon snapshot root is not an object")
-    return snapshot
+def read_live_icon_snapshot(max_attempts: int = 5) -> dict:
+    """Read the live Icon identity snapshot, retrying transient GitHub failures.
 
+    Cross-repository Contents API requests occasionally return 429/5xx during
+    GitHub incidents. Retry those responses with bounded exponential backoff;
+    never convert a persistent failure into a passing release-lock check.
+    """
+    last_error: Exception | None = None
+    retryable_statuses = {408, 425, 429, 500, 502, 503, 504}
+    for attempt in range(max_attempts):
+        url = f"{ICON_SNAPSHOT_API_URL}?ref=main&v={time.time_ns()}"
+        req = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Popular-Rules-Collection-release-lock-verifier",
+                "Accept": "application/vnd.github.raw+json",
+                "X-GitHub-Api-Version": "2022-11-28",
+                "Cache-Control": "no-cache",
+                "Pragma": "no-cache",
+            },
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=60) as response:
+                raw = response.read()
+            if raw.lstrip().startswith(b"{"):
+                try:
+                    envelope = json.loads(raw.decode("utf-8"))
+                except (UnicodeDecodeError, json.JSONDecodeError):
+                    envelope = None
+                if (
+                    isinstance(envelope, dict)
+                    and envelope.get("encoding") == "base64"
+                    and isinstance(envelope.get("content"), str)
+                ):
+                    raw = base64.b64decode(envelope["content"])
+            snapshot = json.loads(raw.decode("utf-8"))
+            if not isinstance(snapshot, dict):
+                raise ValueError("Icon snapshot root is not an object")
+            return snapshot
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+            if exc.code not in retryable_statuses:
+                raise
+        except (urllib.error.URLError, TimeoutError, OSError, UnicodeDecodeError, json.JSONDecodeError, ValueError) as exc:
+            last_error = exc
+        if attempt + 1 < max_attempts:
+            time.sleep(min(2 ** attempt, 8))
+    if last_error is not None:
+        raise last_error
+    raise RuntimeError("Icon identity snapshot fetch failed without an error detail")
 
 def main() -> int:
     if not LOCK.is_file():

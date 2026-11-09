@@ -6,6 +6,7 @@ lifecycle:
 backup:
   keep_days: 30
   keep_min_successful: 7
+  failed_keep_days: 14
 reports:
   keep_days: 90
 runs:

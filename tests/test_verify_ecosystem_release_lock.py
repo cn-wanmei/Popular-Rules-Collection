@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import io
+import urllib.error
 import json
 from pathlib import Path
 
@@ -83,5 +84,44 @@ def test_verify_fails_closed_when_live_icon_snapshot_is_unavailable(tmp_path, mo
         raise OSError("network unavailable")
 
     monkeypatch.setattr(verifier.urllib.request, "urlopen", unavailable)
+    monkeypatch.setattr(verifier.time, "sleep", lambda *_: None)
     assert verifier.main() == 1
+    assert "could not read live Icon identity snapshot" in capsys.readouterr().out
+
+
+def test_verify_retries_transient_icon_api_503(tmp_path, monkeypatch, capsys):
+    raw = b"entries:\n  - id: example\n    entity: service\n"
+    digest = hashlib.sha256(raw).hexdigest()
+    setup_lock(tmp_path, monkeypatch, make_lock(digest), raw)
+    body = json.dumps({"source": {"file_sha256": digest, "ref": "a" * 40}}).encode()
+    attempts = {"count": 0}
+
+    def flaky(*args, **kwargs):
+        attempts["count"] += 1
+        if attempts["count"] == 1:
+            raise urllib.error.HTTPError(
+                "https://api.github.com/icon", 503, "Service Unavailable", {}, None)
+        return io.BytesIO(body)
+
+    monkeypatch.setattr(verifier.urllib.request, "urlopen", flaky)
+    monkeypatch.setattr(verifier.time, "sleep", lambda *_: None)
+    assert verifier.main() == 0
+    assert attempts["count"] == 2
+    assert "OK: ecosystem-release-lock verifies" in capsys.readouterr().out
+
+
+def test_verify_does_not_retry_permanent_icon_api_404(tmp_path, monkeypatch, capsys):
+    raw = b"entries: []\n"
+    digest = hashlib.sha256(raw).hexdigest()
+    setup_lock(tmp_path, monkeypatch, make_lock(digest), raw)
+    attempts = {"count": 0}
+
+    def missing(*args, **kwargs):
+        attempts["count"] += 1
+        raise urllib.error.HTTPError(
+            "https://api.github.com/icon", 404, "Not Found", {}, None)
+
+    monkeypatch.setattr(verifier.urllib.request, "urlopen", missing)
+    assert verifier.main() == 1
+    assert attempts["count"] == 1
     assert "could not read live Icon identity snapshot" in capsys.readouterr().out
