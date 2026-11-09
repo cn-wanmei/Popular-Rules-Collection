@@ -1,7 +1,7 @@
 {
   "schema": "ecosystem_release_status_v5",
-  "generated_at": "2026-11-08T14:37:41Z",
-  "observed_at": "2026-11-08T14:37:41Z",
+  "generated_at": "2026-11-09T11:28:51Z",
+  "observed_at": "2026-11-09T11:28:51Z",
   "authority_note": "READ MODEL ONLY. Does not replace Collection/Source/Icon SSOT. See docs/STATE_MODEL.md.",
   "repos": {
     "collection": "cn-wanmei/Popular-Rules-Collection",
@@ -14,14 +14,14 @@
       "readability": "ok",
       "ok": true,
       "error": null,
-      "bytes": 1863
+      "bytes": 1877
     },
     "collection_main": {
       "url": "https://api.github.com/repos/cn-wanmei/Popular-Rules-Collection/commits/main",
       "readability": "ok",
       "ok": true,
       "error": null,
-      "sha": "0bf780b93a416d6b9bc68bd5f44322a795582c04"
+      "sha": "77bbc34947afb3f13b0f4b2ce0332f4294af7e75"
     },
     "collection_index": {
       "url": "https://api.github.com/repos/cn-wanmei/Popular-Rules-Collection/contents/rule/_index.yaml?ref=main",
@@ -43,7 +43,7 @@
       "batch_completeness": "COMPLETE",
       "semantic_consistency": "ok",
       "created_at": "2026-11-07T14:32:29.098215+00:00",
-      "age_seconds": 86712,
+      "age_seconds": 161782,
       "freshness": "aging",
       "persistence_commit": "2e90fdba33d7abacef28c5c18d49eda6b186878c"
     },
@@ -56,14 +56,21 @@
       "generated_at": "2026-10-17T00:46:21Z",
       "source_ref": "cd04ff5bbda0a516370612d6dfb393eef7dc0a0b",
       "file_sha256": "b65d390b08fb27982c77540b8b1a79e783d50f6736e676f05c9d93e568c14177",
-      "collection_main_sha": "0bf780b93a416d6b9bc68bd5f44322a795582c04",
+      "collection_main_sha": "77bbc34947afb3f13b0f4b2ce0332f4294af7e75",
       "collection_index_file_sha256": "b65d390b08fb27982c77540b8b1a79e783d50f6736e676f05c9d93e568c14177",
       "semantic_consistency": "ok",
       "semantic_reasons": [
         "collection_head_ahead_content_ok"
       ],
-      "age_seconds": 1950680,
-      "freshness": "stale"
+      "age_seconds": 2025750,
+      "age_freshness": "stale",
+      "verification_run_id": 42559023587,
+      "verification_created_at": "2026-11-09T03:56:01Z",
+      "verification_age_seconds": 27170,
+      "verification_error": null,
+      "freshness": "fresh",
+      "freshness_basis": "latest_successful_identity_freshness_run",
+      "freshness_reason": "recent_identity_freshness_workflow_pass"
     },
     "icon_release_pointers": {
       "url": "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/contents/config/release-pointers.yaml?ref=main",
@@ -72,12 +79,12 @@
       "error": null,
       "bytes": 739,
       "frozen": true,
-      "freeze_age_seconds": 2863001,
+      "freeze_age_seconds": 2938071,
       "freeze_freshness": "aging"
     }
   },
   "summary": {
-    "collection_head": "0bf780b93a416d6b9bc68bd5f44322a795582c04",
+    "collection_head": "77bbc34947afb3f13b0f4b2ce0332f4294af7e75",
     "collection_index_file_sha256": "b65d390b08fb27982c77540b8b1a79e783d50f6736e676f05c9d93e568c14177",
     "source_durable_persisted": 281,
     "source_seal_completeness": "COMPLETE",
@@ -92,8 +99,8 @@
     "all_core_signals_ok": true,
     "readability": "ok",
     "semantic_consistency": "ok",
-    "observation_status": "STALE OBSERVATION",
-    "observation_watermark": "2026-11-08T14:37:41Z",
-    "freshness_sla_note": "icon/source soft=24h hard=7d; freeze soft=14d hard=45d (read-model labels only)"
+    "observation_status": "AGING OBSERVATION",
+    "observation_watermark": "2026-11-09T11:28:51Z",
+    "freshness_sla_note": "source soft=24h hard=7d; icon identity uses latest successful Identity Freshness verification (snapshot age informational); freeze soft=14d hard=45d (read-model labels only)"
   }
 }
