@@ -29,3 +29,5 @@ execution:
   default_mode: dry-run
   schedule: weekly
   destructive_requires_explicit_apply: true
+
+# Operational note: post-merge dry-run trigger for PR #310/#311 verification (no policy change).
