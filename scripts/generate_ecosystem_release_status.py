@@ -8,6 +8,7 @@ import hashlib
 import json
 import os
 import time
+import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -15,57 +16,71 @@ from pathlib import Path
 UA = {"User-Agent": "popular-rules-ecosystem-status/1.5"}
 
 
-def fetch_bytes(url: str, timeout: int = 60) -> tuple[bytes | None, str | None]:
-    try:
-        headers = dict(UA)
-        headers.update({
-            "Cache-Control": "no-cache",
-            "Pragma": "no-cache",
-            "X-GitHub-Api-Version": "2022-11-28",
-        })
-        is_contents_api = "api.github.com/repos/" in url and "/contents/" in url
-        if is_contents_api:
-            separator = "&" if "?" in url else "?"
-            url = f"{url}{separator}v={time.time_ns()}"
-            headers["Accept"] = "application/vnd.github.raw+json"
-        else:
-            headers["Accept"] = "application/vnd.github+json"
-        token = (os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or "").strip()
-        if token:
-            headers["Authorization"] = f"Bearer {token}"
+def fetch_bytes(
+    url: str, timeout: int = 60, token: str | None = None, max_attempts: int = 4
+) -> tuple[bytes | None, str | None]:
+    """Fetch public cross-repository data with bounded retries for transient failures."""
+    retryable_statuses = {408, 425, 429, 500, 502, 503, 504}
+    last_error: Exception | None = None
+    for attempt in range(max_attempts):
+        try:
+            headers = dict(UA)
+            headers.update({
+                "Cache-Control": "no-cache",
+                "Pragma": "no-cache",
+                "X-GitHub-Api-Version": "2022-11-28",
+            })
+            is_contents_api = "api.github.com/repos/" in url and "/contents/" in url
+            request_url = url
+            if is_contents_api:
+                separator = "&" if "?" in request_url else "?"
+                request_url = f"{request_url}{separator}v={time.time_ns()}"
+                headers["Accept"] = "application/vnd.github.raw+json"
+            else:
+                headers["Accept"] = "application/vnd.github+json"
+            auth_token = token if token is not None else (
+                os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or ""
+            )
+            if auth_token.strip():
+                headers["Authorization"] = f"Bearer {auth_token.strip()}"
 
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            raw = resp.read()
+            req = urllib.request.Request(request_url, headers=headers)
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                raw = resp.read()
 
-        # Normally the raw media type returns file bytes. Some frontends/proxies
-        # still return the Contents API JSON envelope; decode only an explicitly
-        # Base64-encoded envelope so ordinary JSON files remain intact.
-        if is_contents_api and raw.lstrip().startswith(b"{"):
-            try:
-                envelope = json.loads(raw.decode("utf-8"))
-            except (UnicodeDecodeError, json.JSONDecodeError):
-                envelope = None
-            if (
-                isinstance(envelope, dict)
-                and envelope.get("encoding") == "base64"
-                and isinstance(envelope.get("content"), str)
-            ):
-                raw = base64.b64decode(envelope["content"])
-        return raw, None
-    except Exception as exc:  # noqa: BLE001
-        return None, f"{type(exc).__name__}: {exc}"
+            if is_contents_api and raw.lstrip().startswith(b"{"):
+                try:
+                    envelope = json.loads(raw.decode("utf-8"))
+                except (UnicodeDecodeError, json.JSONDecodeError):
+                    envelope = None
+                if (
+                    isinstance(envelope, dict)
+                    and envelope.get("encoding") == "base64"
+                    and isinstance(envelope.get("content"), str)
+                ):
+                    raw = base64.b64decode(envelope["content"])
+            return raw, None
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+            if exc.code not in retryable_statuses:
+                return None, f"{type(exc).__name__}: {exc}"
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            last_error = exc
+        except Exception as exc:  # noqa: BLE001
+            return None, f"{type(exc).__name__}: {exc}"
+        if attempt + 1 < max_attempts:
+            time.sleep(min(2 ** attempt, 4))
+    return None, f"{type(last_error).__name__}: {last_error}" if last_error else "unknown fetch failure"
 
-
-def fetch_text(url: str, timeout: int = 60) -> tuple[str | None, str | None]:
-    raw, err = fetch_bytes(url, timeout=timeout)
+def fetch_text(url: str, timeout: int = 60, token: str | None = None) -> tuple[str | None, str | None]:
+    raw, err = fetch_bytes(url, timeout=timeout, token=token)
     if err:
         return None, err
     return (raw or b"").decode("utf-8", errors="replace"), None
 
 
-def fetch_json(url: str) -> tuple[dict | list | None, str | None]:
-    text, err = fetch_text(url)
+def fetch_json(url: str, token: str | None = None) -> tuple[dict | list | None, str | None]:
+    text, err = fetch_text(url, token=token)
     if err:
         return None, err
     try:
@@ -95,6 +110,57 @@ def freshness_label(age: int | None, soft: int, hard: int) -> str:
         return "aging"
     return "stale"
 
+
+def identity_freshness(
+    readable: bool,
+    semantic_consistency: str,
+    live_file_sha256: str | None,
+    pinned_file_sha256: str | None,
+    verified_at: str | None,
+    now: datetime,
+    hard_sla_seconds: int = 604800,
+) -> tuple[str, str, int | None]:
+    """Use a recent successful public Identity Freshness run as verification time.
+
+    The snapshot is immutable when content is unchanged. A public workflow-run
+    record plus exact live/pinned content-hash agreement is sufficient; do not
+    require private Actions-artifact access or a cross-repository PAT.
+    """
+    if not readable:
+        return "unknown", "snapshot_unreadable", None
+    if semantic_consistency == "error":
+        return "stale", "identity_semantic_error", None
+    if semantic_consistency == "warning":
+        return "unknown", "identity_semantic_warning", None
+    if not live_file_sha256 or not pinned_file_sha256:
+        return "unknown", "identity_content_hash_missing", None
+    if live_file_sha256 != pinned_file_sha256:
+        return "stale", "identity_content_hash_mismatch", None
+    verification_age = age_seconds(verified_at, now)
+    if verification_age is None:
+        return "unknown", "identity_verification_timestamp_missing", None
+    if verification_age > hard_sla_seconds:
+        return "stale", "identity_verification_expired", verification_age
+    return "fresh", "recent_identity_freshness_workflow_pass", verification_age
+
+
+def fetch_latest_identity_verification() -> tuple[str | None, int | None, str | None]:
+    """Read the latest completed Icon Identity Freshness run (public metadata)."""
+    base = "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon"
+    runs, err = fetch_json(
+        f"{base}/actions/workflows/identity-freshness.yml/runs?branch=main&status=completed&per_page=1"
+    )
+    if err or not isinstance(runs, dict):
+        return None, None, err or "invalid_workflow_runs_response"
+    items = runs.get("workflow_runs") or []
+    if not items:
+        return None, None, "no_identity_freshness_runs"
+    run = items[0]
+    run_id = run.get("id")
+    created_at = run.get("created_at")
+    if run.get("status") != "completed" or run.get("conclusion") != "success" or not run_id:
+        return created_at, run_id, "latest_identity_freshness_run_not_successful"
+    return created_at, run_id, None
 
 def main() -> int:
     ap = argparse.ArgumentParser()
@@ -232,6 +298,19 @@ def main() -> int:
         reasons.append("collection_head_ahead_content_ok")
 
     icon_age = age_seconds(gen_at if isinstance(gen_at, str) else None, now)
+    icon_age_freshness = freshness_label(icon_age, 86400, 604800)
+    identity_verified_at, identity_run_id, identity_fetch_error = fetch_latest_identity_verification()
+    # A failed latest workflow is not a verification heartbeat, even if its
+    # timestamp is recent and the snapshot hash happens to match.
+    verified_at_for_freshness = identity_verified_at if identity_fetch_error is None else None
+    icon_freshness, icon_freshness_reason, identity_verification_age = identity_freshness(
+        err is None and isinstance(data, dict),
+        icon_sem,
+        live_file_sha256,
+        file_sha256,
+        verified_at_for_freshness,
+        now,
+    )
     report["signals"]["icon_identity_snapshot"] = {
         "url": sources["icon_identity_snapshot"],
         "readability": "ok" if err is None and isinstance(data, dict) else "error",
@@ -246,7 +325,14 @@ def main() -> int:
         "semantic_consistency": icon_sem,
         "semantic_reasons": reasons,
         "age_seconds": icon_age,
-        "freshness": freshness_label(icon_age, 86400, 604800),
+        "age_freshness": icon_age_freshness,
+        "verification_run_id": identity_run_id,
+        "verification_created_at": identity_verified_at,
+        "verification_age_seconds": identity_verification_age,
+        "verification_error": identity_fetch_error,
+        "freshness": icon_freshness,
+        "freshness_basis": "latest_successful_identity_freshness_run",
+        "freshness_reason": icon_freshness_reason,
     }
 
     text, err = fetch_text(sources["icon_release_pointers"])
@@ -323,7 +409,7 @@ def main() -> int:
         "semantic_consistency": overall_sem,
         "observation_status": observation_status,
         "observation_watermark": now_s,
-        "freshness_sla_note": "icon/source soft=24h hard=7d; freeze soft=14d hard=45d (read-model labels only)",
+        "freshness_sla_note": "source soft=24h hard=7d; icon identity uses latest successful Identity Freshness verification (snapshot age informational); freeze soft=14d hard=45d (read-model labels only)",
     }
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
