@@ -1,0 +1,65 @@
+name: Source Auto Handoff Stale Watchdog
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Source Auto Handoff"]
+    types: [completed]
+
+concurrency:
+  group: source-auto-handoff-stale-watchdog
+  cancel-in-progress: false
+
+permissions:
+  actions: read
+  issues: write
+
+jobs:
+  check-freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check latest successful handoff and update the tracking issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          ISSUE_NUMBER: "317"
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          RUNS="$(gh api "repos/${REPOSITORY}/actions/workflows/source-auto-handoff.yml/runs?per_page=100")"
+          LAST_SUCCESS="$(jq -r '[.workflow_runs[] | select(.conclusion == "success")] | sort_by(.updated_at) | last | .updated_at // empty' <<< "$RUNS")"
+          NOW_EPOCH="$(date -u +%s)"
+          STALE_SECONDS=1800
+          IS_STALE=false
+
+          if [[ -z "$LAST_SUCCESS" ]]; then
+            IS_STALE=true
+            AGE_TEXT="no successful Source Auto Handoff run is recorded"
+          else
+            LAST_EPOCH="$(date -u -d "$LAST_SUCCESS" +%s)"
+            AGE_SECONDS="$((NOW_EPOCH - LAST_EPOCH))"
+            if (( AGE_SECONDS > STALE_SECONDS )); then
+              IS_STALE=true
+            fi
+            AGE_TEXT="last successful run: $LAST_SUCCESS (age: $((AGE_SECONDS / 60)) minutes)"
+          fi
+
+          COMMENTS="$(gh api "repos/${REPOSITORY}/issues/${ISSUE_NUMBER}/comments?per_page=100")"
+          COMMENT_ID="$(jq -r '[.[] | select(.body | contains("<!-- source-auto-handoff-stale-alert -->"))] | last | .id // empty' <<< "$COMMENTS")"
+
+          if [[ "$IS_STALE" == "true" ]]; then
+            BODY="$(printf '%s\n\n%s\n\n%s\n' '<!-- source-auto-handoff-stale-alert -->' '### Automated stale-run alert: Source Auto Handoff' "- $AGE_TEXT" 'No immutable binding was modified by this watchdog. Investigate Actions schedule/queue/concurrency and verify source_auto_handoff.py plus source_provenance_gate.py before changing any binding.')"
+          else
+            BODY="$(printf '%s\n\n%s\n\n%s\n' '<!-- source-auto-handoff-stale-alert -->' '### Source Auto Handoff freshness recovered' "- $AGE_TEXT" 'The latest successful run is within the 30-minute freshness window. This watchdog does not modify immutable bindings.')"
+          fi
+
+          if [[ -n "$COMMENT_ID" ]]; then
+            gh api --method PATCH "repos/${REPOSITORY}/issues/comments/${COMMENT_ID}" -f body="$BODY" >/dev/null
+          elif [[ "$IS_STALE" == "true" ]]; then
+            gh api --method POST "repos/${REPOSITORY}/issues/${ISSUE_NUMBER}/comments" -f body="$BODY" >/dev/null
+          fi
+
+          printf 'is_stale=%s\n%s\n' "$IS_STALE" "$AGE_TEXT"
