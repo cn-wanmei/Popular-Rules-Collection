@@ -59,7 +59,11 @@ def _load_immutable_binding(service: str) -> dict | None:
          if str(key).strip().casefold() == wanted and isinstance(value, dict)),
         None,
     )
-    return binding if isinstance(binding, dict) else None
+    if not isinstance(binding, dict):
+        return None
+    resolved = dict(binding)
+    resolved["_source_repository"] = str(data.get("source_repository") or "").strip()
+    return resolved
 
 
 def _immutable_cfg(entry: dict[str, str], cfg: dict) -> tuple[dict, str, dict | None]:
@@ -89,7 +93,20 @@ def _immutable_cfg(entry: dict[str, str], cfg: dict) -> tuple[dict, str, dict | 
         raise ValueError(f"immutable source binding for {service} is incomplete")
     if release_identity_version != "2" or not all((evidence_digest, policy_digest, generator_digest, release_digest)):
         raise ValueError(f"immutable source binding provenance identity is incomplete for {service}")
-    resolved = {**cfg, "branch": ref, "fallback_bases": []}
+    source_repository = str(binding.get("_source_repository") or "").strip()
+    source_parts = source_repository.split("/", 1)
+    if len(source_parts) != 2 or not all(source_parts):
+        raise ValueError(
+            f"immutable source registry for {service} requires source_repository as owner/repo"
+        )
+    source_owner, source_repo = source_parts
+    resolved = {
+        **cfg,
+        "owner": source_owner,
+        "repo": source_repo,
+        "branch": ref,
+        "fallback_bases": [],
+    }
     metadata = {
         "service": service,
         "release_path": release_path,
