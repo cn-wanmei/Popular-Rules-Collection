@@ -18,7 +18,6 @@ domain_set:
   - "cdn-spotify-experiments.conductrics.com"
   - "heads-ak-spotify-com.akamaized.net"
   - "heads4-ak-spotify-com.akamaized.net"
-  - "spotify.com.edgesuite.net"
   - "spotify.map.fastly.net"
   - "spotify.map.fastlylb.net"
   - "adeventtracker.spotify.com"
@@ -80,6 +79,7 @@ domain_suffix_set:
   - "spotifyforvendors.com"
   - "spotifyjobs.com"
   - "tospotify.com"
+  - "spotify.com.edgesuite.net"
 domain_keyword_set:
   - "spotify"
 ip_cidr_set:

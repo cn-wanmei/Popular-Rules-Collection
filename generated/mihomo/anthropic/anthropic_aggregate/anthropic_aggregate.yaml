@@ -1,13 +1,27 @@
 payload:
   - DOMAIN-SUFFIX,claude.dev
   - DOMAIN-SUFFIX,cdn.usefathom.com
+  - DOMAIN-SUFFIX,claudepages.dev
+  - DOMAIN-SUFFIX,ant.dev
   - DOMAIN-SUFFIX,platform.claude.com
+  - DOMAIN-SUFFIX,claude.app
+  - DOMAIN,o1158394.ingest.us.sentry.io
   - DOMAIN-SUFFIX,servd-anthropic-website.b-cdn.net
+  - DOMAIN-SUFFIX,chatbotclaude.com
+  - DOMAIN-SUFFIX,http-intake.logs.us5.datadoghq.com
+  - DOMAIN,http-intake.logs.us5.datadoghq.com
   - DOMAIN-SUFFIX,claudeusercontent.com
   - DOMAIN-SUFFIX,clau.de
   - DOMAIN-SUFFIX,claudemcpclient.com
   - DOMAIN-SUFFIX,claude.com
+  - DOMAIN-SUFFIX,claudestudio.com
+  - DOMAIN-SUFFIX,o1158394.ingest.us.sentry.io
+  - DOMAIN-SUFFIX,claude.site
+  - DOMAIN-SUFFIX,antspace.dev
   - DOMAIN,servd-anthropic-website.b-cdn.net
+  - DOMAIN-SUFFIX,claudeacademy.com
   - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,claude.new
+  - DOMAIN-SUFFIX,anthropic.team
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,claudemcpcontent.com

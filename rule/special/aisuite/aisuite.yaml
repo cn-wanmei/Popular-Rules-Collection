@@ -4,14 +4,14 @@ entity: service
 id: aisuite
 display_name: AI Suite
 generated_from:
-  run_id: 20261017T003011836133Z-run
+  run_id: 20261110T041728493091Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+  ir_digest: 5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f
 stats:
-  total: 178
+  total: 192
   by_type:
-    DOMAIN: 78
-    DOMAIN_SUFFIX: 77
+    DOMAIN: 87
+    DOMAIN_SUFFIX: 82
     IP_CIDR: 23
 rules:
 - id: b2f7f44276eeb1a3a737e0d3f5f08cb9c1146d6c201753a2cc0b820dc05bbded
@@ -20,15 +20,24 @@ rules:
 - id: 36b9fa516f3689ae17e2aefeec6d0e1a9975d136ba1b71f6ce28433e122ff8bf
   type: DOMAIN
   value: accounts.spacex.ai
-- id: 44957adf8927ec0f7a764962edd7616baa3689cea642027e73b9bb00f5379089
-  type: DOMAIN
-  value: accounts.x.ai
 - id: a3ee44c74a767bee76123f9a2c17d078a2bebda0c356b21cf52b4fd1ad6ba27e
   type: DOMAIN
   value: ai.google.dev
 - id: 22c780380d30ea48715a791a641bad21db387dd6d4da00d42eac15600f92906d
   type: DOMAIN
   value: aida.googleapis.com
+- id: 4fe8b701892bc667352cb619dc33aa74d6608631976cbb8568decaba4d08c93d
+  type: DOMAIN
+  value: aiplatform.eu.rep.googleapis.com
+- id: e1a09b84d99aad2b9a8a4ffe3bdd9578e0574d147402f7343ad81b632d065579
+  type: DOMAIN
+  value: aiplatform.googleapis.com
+- id: 5f1574da1df6cc2c92674d011308c1574f3e86e0aab8546d1e1f65b9165721fa
+  type: DOMAIN
+  value: aiplatform.mtls.googleapis.com
+- id: 6f557e7ae035be3b3604824f05a894a1eeade16586e49a1c374e6074a4814ad1
+  type: DOMAIN
+  value: aiplatform.us.rep.googleapis.com
 - id: 9e3565151aaa620663152adcbb22f3c8740e68efa35cb531e93dfa2fa9ff2d55
   type: DOMAIN
   value: alkalicore-pa.clients6.google.com
@@ -65,18 +74,18 @@ rules:
 - id: 4bd2ee79641579f76c12b83bd96af6777a00dd98cec20d62d86bda2a743e148d
   type: DOMAIN
   value: apple-relay.mask.apple-dns.net
-- id: 0fbb24edf0ca701656a2dea0ab312caef009a31c4acb84dcb57b6c1a5823f27c
+- id: 4ceba5f3185736406d62062950863d7b58dd739e2740c1c48cb111e3db8ea3a1
   type: DOMAIN
-  value: auth.grok.com
-- id: c5bff8de5a3a1a31da9e2d4b067735a4d1329dd4125e14a353a0d1ea03973a52
+  value: businessaicode.eu.rep.googleapis.com
+- id: 2e1217ebd9d81909af822fe61b7bdf504a15e1f43618251e59cc91adc1b7b2ad
   type: DOMAIN
-  value: auth.grokipedia.com
-- id: d94595c5db081d6e999a09fd02bdebc1e6ec644d196cb97d70c12f621f95b437
+  value: businessaicode.googleapis.com
+- id: 6d7f673713893a270a7e2eda21ddc17aeb91cabbb25075abe81bbd5e4cfd4f79
   type: DOMAIN
-  value: auth.grokusercontent.com
-- id: 8de38566a659466c888a2b61a66234aa612fb2e958bc50b1f31a318406fc6969
+  value: businessaicode.mtls.googleapis.com
+- id: 5c066258f2db69b0222b5c803e45c62e3ef7cf086f1d6bba1eaf0ec766c01d7b
   type: DOMAIN
-  value: auth.x.ai
+  value: businessaicode.us.rep.googleapis.com
 - id: 99fb05b1ccf8a7cda928654bc4d6cd55140f5a2aca4594c28b22329ffeab947c
   type: DOMAIN
   value: cdn.openaimerge.com
@@ -119,6 +128,12 @@ rules:
 - id: 904c864d3c88d88b0e5d8b438fe61c78b262c0463c3768ff3d59cf18cc496637
   type: DOMAIN
   value: default.exp-tas.com
+- id: a3d072702552b2f77956d5316dc15f1d98ef8674926c4d2eddfcc969823e0644
+  type: DOMAIN
+  value: discoveryengine.googleapis.com
+- id: dd17ad7679306fd6ea3117a8a758ce792879760dcacb70ae3ce6512309a28187
+  type: DOMAIN
+  value: discoveryengine.mtls.googleapis.com
 - id: f7506619b3acdc9538ee7d879f9c11b7d45f3d64993870b33645278dcb7284a6
   type: DOMAIN
   value: encrypted-tbn0.gstatic.com
@@ -131,6 +146,12 @@ rules:
 - id: 8463ebb243f3c4e494862e10b90ea7255c39855e026b931fc7c87b8283eca5ab
   type: DOMAIN
   value: encrypted-tbn3.gstatic.com
+- id: e0b09279a31d0acec881664632e1c25c6772ed25ddf3b7d9080c8c5359091122
+  type: DOMAIN
+  value: eu-discoveryengine.googleapis.com
+- id: 2b4f235b258e2ec29fd3f62d2315c9e16ae86a811d9bded2a0539f06511eae8a
+  type: DOMAIN
+  value: eu-discoveryengine.mtls.googleapis.com
 - id: 97535ed37ad56741bf7db576156be08204a781772f3062a814e3aab1d14360f9
   type: DOMAIN
   value: fonts.googleapis.com
@@ -242,6 +263,12 @@ rules:
 - id: f39551e914d58d7e5a799918dfe7ea6f0807d12228e7216457f59e59442cc162
   type: DOMAIN
   value: trae-api-us.mchost.guru
+- id: 74d4bebacca0b677d6190208cdcd9e99b4614d2f3b950aa28bf949cc013e54a0
+  type: DOMAIN
+  value: us-discoveryengine.googleapis.com
+- id: 0c32764acd3719007c7d463a88f9e6acc708b8095af6c5e016c0a1521debe4b7
+  type: DOMAIN
+  value: us-discoveryengine.mtls.googleapis.com
 - id: afb3f7109030e8df2bf871571bed88107662ca0f2f2c9c2f26aca077d7860834
   type: DOMAIN
   value: waa-pa.clients6.google.com
@@ -371,6 +398,15 @@ rules:
 - id: e8a14692042d8554b0e0d0e60ce1ba2fcf71ceca4f415e18e1ca7f3caf6e570c
   type: DOMAIN_SUFFIX
   value: githubcopilot.com
+- id: 9e4ec19be6814f4ea6ecdbc1ad1947e14024218404cd9a3adc23710e7039d392
+  type: DOMAIN_SUFFIX
+  value: grok.com
+- id: 54bdde9a609be1e0acb26db4c806970bb776897eda6dd45159f65e72c8e7ac76
+  type: DOMAIN_SUFFIX
+  value: grokipedia.com
+- id: 6a2f15788fce1d0913e0d650779b9efc347e07b96adcb815b845e2d78c3d6a67
+  type: DOMAIN_SUFFIX
+  value: grokusercontent.com
 - id: e384ae3ddfdb390152a70cf773569cff716db3ff5e889ed1a8e16db0ff47287f
   type: DOMAIN_SUFFIX
   value: groq.com
@@ -404,6 +440,9 @@ rules:
 - id: 20c1c5d2074a2a62a511d56220e507746f4a1d98822ccb3a135f5d9e2f024baa
   type: DOMAIN_SUFFIX
   value: mistral.ai
+- id: d4e1a4425e6918cf607c0c2bb8f7bedc928a2dbe43d800f6ec09028314cd42a7
+  type: DOMAIN_SUFFIX
+  value: muse.ai
 - id: 01d085747275fd46fc6c44305277be5dfa4f0ce4c943444a0c9843b9e14e2f4e
   type: DOMAIN_SUFFIX
   value: notebook.google
@@ -476,6 +515,9 @@ rules:
 - id: a20522891dc90b1bca90dbd56c26113104a398a1a7fe3cf2a0d587cc9aba00e0
   type: DOMAIN_SUFFIX
   value: windsurf.com
+- id: 189e87cf503eb88154183a1013541c9b4bff16532ec4006654f2b91d2a399e20
+  type: DOMAIN_SUFFIX
+  value: x.ai
 - id: 9bde1395c645bdfc54586565a1365c4a6925619167a72c02aa662f464ccdcf2c
   type: DOMAIN_SUFFIX
   value: zed.dev

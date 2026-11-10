@@ -4,14 +4,14 @@ entity: service
 id: scholar
 display_name: Google Scholar
 generated_from:
-  run_id: 20261017T003011836133Z-run
+  run_id: 20261110T041728493091Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+  ir_digest: 5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f
 stats:
-  total: 231
+  total: 250
   by_type:
     DOMAIN: 1
-    DOMAIN_SUFFIX: 230
+    DOMAIN_SUFFIX: 249
 rules:
 - id: 1a80a96dfbba4d6a4ddeb890ff884d44d4fbe4d11cfae4d44d224e81625bc61c
   type: DOMAIN
@@ -388,6 +388,45 @@ rules:
 - id: d105d27bdb61d6e0d91e09287c5ec760be798d2ba7d8797580278fc49232fb89
   type: DOMAIN_SUFFIX
   value: madsrevolution.net
+- id: cccf9e8cb416dc73eac66d9f7ba99d41d92a0ca26844fc8793795e31b479d6a6
+  type: DOMAIN_SUFFIX
+  value: mathematica.com
+- id: 63051fdefa1ec2d9fde569a37d1cbeece756a3d043fd013da4d1b130768224c9
+  type: DOMAIN_SUFFIX
+  value: mathworks.cn
+- id: e87adf9abe61c5fd2f4c39af80432b617dfd036596cf4d966929c69e1ada910e
+  type: DOMAIN_SUFFIX
+  value: mathworks.co.jp
+- id: 3fa66286eb3a29a9f44f9ee25b99e09851a56a67cb57cba13e5c8a8e2ec45d87
+  type: DOMAIN_SUFFIX
+  value: mathworks.co.kr
+- id: 153ea5ffffba8443d3691d35a1b5a9634d01784250008fec2b887c484a291d44
+  type: DOMAIN_SUFFIX
+  value: mathworks.co.uk
+- id: 03eb0f36edb790010ca0122f184c735ae58426a9108c46e047fbc7f6f6643237
+  type: DOMAIN_SUFFIX
+  value: mathworks.com
+- id: c9a69beeea2de8222b58098eb0013af68b4c2f67e3ac0ac3e19196d431278698
+  type: DOMAIN_SUFFIX
+  value: mathworks.com.au
+- id: daed79289c134742b6a03ab4a69e5b92af0e1da3f05a4a28d0054824603ba838
+  type: DOMAIN_SUFFIX
+  value: mathworks.de
+- id: 4b02ed40638664d17af437297501b17b8516414558198535ea85da8d96217c9d
+  type: DOMAIN_SUFFIX
+  value: mathworks.fr
+- id: 209b5e21fc7f9c71f264ec8755882e726b6a06fe8e7c61882dd95572c6ca43b3
+  type: DOMAIN_SUFFIX
+  value: mathworks.in
+- id: 7e3c81b4e3187768703a584a3d0c10eae3005261c4ac40c70dcbfef29902fbd0
+  type: DOMAIN_SUFFIX
+  value: mathworks.nl
+- id: b2c80b6889d59131d5b990d58b932596b93a0f9499843a7d29c22bd2dd162d57
+  type: DOMAIN_SUFFIX
+  value: mathworks.se
+- id: ccdfa89587c250b12d3a52708273910cfc108febaf2f63fb89b3b6aeec8725f5
+  type: DOMAIN_SUFFIX
+  value: matlab.com
 - id: edec61caf3b56d24e2154f7876428e0fa7e1c60dccdb54ffac66278312327486
   type: DOMAIN_SUFFIX
   value: mdpi.com
@@ -682,6 +721,24 @@ rules:
 - id: 289c885dd525edd8ee41826ab5fea02964042c59b38c851cb418850cec18f58e
   type: DOMAIN_SUFFIX
   value: wkap.nl
+- id: 29b7379403ab3ce68dcda7c299f6bb42a0c15c71e5a59b910db1325c0e34076a
+  type: DOMAIN_SUFFIX
+  value: wolfram.co.uk
+- id: 23b1f6ae5bde429c53559db28d222e17b67cc631db359289718e534fcc83ed52
+  type: DOMAIN_SUFFIX
+  value: wolfram.com
+- id: c4394d02f75e74359e5b1ab2fe2968b599a67343e8977f1c3d19b52e27e17cfb
+  type: DOMAIN_SUFFIX
+  value: wolframalpha.com
+- id: 9015e8222e8ca83d487e86d3fee2ef787e5bbb27346f65a7c75efc4a47cec299
+  type: DOMAIN_SUFFIX
+  value: wolframalpha.net
+- id: 7067d97004dc728efc1c6c3269e4a2d0a074463531bae242f2e2c00aa727fe58
+  type: DOMAIN_SUFFIX
+  value: wolframcdn.com
+- id: 841276dc0e9339e8894628827ae2cde483ca96d22ff84ae0989d91bdc2de21c0
+  type: DOMAIN_SUFFIX
+  value: wolframcloud.com
 - id: b3412aa53f7d657be132b53273f3027411b01f026ba3a5a31341a436e0cf8d87
   type: DOMAIN_SUFFIX
   value: worldbank.org

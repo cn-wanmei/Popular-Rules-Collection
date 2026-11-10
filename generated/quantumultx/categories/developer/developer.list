@@ -24,9 +24,11 @@ host-suffix, productionresultssa17.blob.core.windows.net, proxy
 host-suffix, discourse.group, proxy
 host-suffix, crates.io, proxy
 host-suffix, sonatype.org, proxy
+host-suffix, cloudwp.dev, proxy
 host-suffix, fedorainfracloud.org, proxy
 host-suffix, stackoverflowteams.com, proxy
 host-suffix, microsoftsilverlight.net, proxy
+host-suffix, website-files.com, proxy
 host-suffix, putty.org, proxy
 host-suffix, unity3d.com, proxy
 host-suffix, fontawesome.com, proxy
@@ -45,6 +47,7 @@ host-suffix, productionresultssa4.blob.core.windows.net, proxy
 host-suffix, productionresultssa0.blob.core.windows.net, proxy
 host-suffix, flatpak.org, proxy
 host-suffix, linuxfoundation.org, proxy
+host-suffix, editorx.com, proxy
 host-suffix, fbf8.com, proxy
 host-suffix, qt-project.org, proxy
 host-suffix, mariadb.org, proxy
@@ -81,6 +84,8 @@ host-suffix, git.io, proxy
 host-suffix, conda.io, proxy
 host-suffix, stackoverflow.blog, proxy
 host-suffix, ktor.io, proxy
+host-suffix, production-copilot-host-westus.webpubsub.azure.com, proxy
+host-suffix, wixapps.net, proxy
 host-suffix, macosforge.org, proxy
 host-suffix, cdn.ampproject.org, proxy
 host-suffix, bintray.com, proxy
@@ -140,6 +145,7 @@ host-suffix, wapm.io, proxy
 host-suffix, alpinelinux.org, proxy
 host-suffix, braveux.com, proxy
 host-suffix, launchpadcontent.net, proxy
+host-suffix, pyup.io, proxy
 host-suffix, readthedocs.com, proxy
 host-suffix, datalore.io, proxy
 host-suffix, plasma-mobile.org, proxy
@@ -207,6 +213,7 @@ host-suffix, grazie.ai, proxy
 host-suffix, amp.akamaized.net, proxy
 host-suffix, redislabs.com, proxy
 host-suffix, sstatic.net, proxy
+host-suffix, postman.com, proxy
 host-suffix, microsoftsilverlight.com, proxy
 host-suffix, termius.com, proxy
 host-suffix, jb.gg, proxy
@@ -241,6 +248,7 @@ host-suffix, dartlang.org, proxy
 host-suffix, appleworldwidedeveloper.sc.omtrdc.net, proxy
 host-suffix, gitgud.io, proxy
 host-suffix, opendroneid.org, proxy
+host-suffix, rt.services.visualstudio.com, proxy
 host-suffix, fortawesome.com, proxy
 host-suffix, microbit.org, proxy
 host-suffix, msdn.com, proxy
@@ -274,6 +282,7 @@ host-suffix, devimages-cdn.apple.com, proxy
 host-suffix, uwpcommunitytoolkit.com, proxy
 host-suffix, codeforaliving.io, proxy
 host-suffix, developerservices2.apple.com, proxy
+host-suffix, dc.services.visualstudio.com, proxy
 host-suffix, fblitho.com, proxy
 host-suffix, discourse.org, proxy
 host-suffix, fury.io, proxy
@@ -297,6 +306,7 @@ host-suffix, atscaleconference.com, proxy
 host-suffix, facebookdevelopergarage.com, proxy
 host-suffix, tildaapi.com, proxy
 host-suffix, sourcehut.org, proxy
+host-suffix, wixmp.com, proxy
 host-suffix, archlinuxarm.org, proxy
 host-suffix, packagist.org, proxy
 host-suffix, cdn3.apple-mapkit.com, proxy
@@ -322,6 +332,8 @@ host-suffix, chocolatey.org, proxy
 host-suffix, flow.org, proxy
 host-suffix, componentkit.org, proxy
 host-suffix, mcrouter.net, proxy
+host-suffix, templatemonster.com, proxy
+host-suffix, wixsite.com, proxy
 host-suffix, fedorapeople.org, proxy
 host-suffix, java.com, proxy
 host-suffix, elastic.co, proxy
@@ -356,6 +368,7 @@ host-suffix, greenend.org.uk, proxy
 host-suffix, messengerdevelopers.com, proxy
 host-suffix, webkit.org, proxy
 host-suffix, launchpadlibrarian.org, proxy
+host-suffix, bmonkeys.net, proxy
 host-suffix, braventures.com, proxy
 host-suffix, researchkit.com.cn, proxy
 host-suffix, productionresultssa1.blob.core.windows.net, proxy
@@ -365,6 +378,7 @@ host-suffix, wp.com, proxy
 host-suffix, debian.org, proxy
 host-suffix, npm.community, proxy
 host-suffix, mcrouter.org, proxy
+host-suffix, tmimgcdn.com, proxy
 host-suffix, copilot-workspace.githubnext.com, proxy
 host-suffix, cdn-cn2.apple-mapkit.com, proxy
 host-suffix, centos.org, proxy
@@ -401,6 +415,7 @@ host-suffix, linuxmint.com, proxy
 host-suffix, firebasedynamiclinks-ipv6.googleapis.com, proxy
 host-suffix, cdn-cn3.apple-mapkit.com, proxy
 host-suffix, firebaseio.com, proxy
+host-suffix, safetycli.com, proxy
 host-suffix, zed.dev, proxy
 host-suffix, github.career, proxy
 host-suffix, productionresultssa2.blob.core.windows.net, proxy
@@ -433,6 +448,7 @@ host-suffix, intellij.net, proxy
 host-suffix, stackapps.com, proxy
 host-suffix, pythonhosted.org, proxy
 host-suffix, maven.org, proxy
+host-suffix, wix-code.com, proxy
 host-suffix, fedoraforum.org, proxy
 host-suffix, jetbrains.team, proxy
 host-suffix, sentry-cdn.com, proxy
@@ -474,6 +490,7 @@ host-suffix, filezilla-project.org, proxy
 host-suffix, termux.dev, proxy
 host-suffix, raspbian.org, proxy
 host-suffix, firebaseinstallations.googleapis.com, proxy
+host-suffix, getsafety.com, proxy
 host-suffix, wpmailsmtp.com, proxy
 host-suffix, renderingtoolkit.org, proxy
 host-suffix, visualstudio.net, proxy
@@ -506,6 +523,7 @@ host-suffix, thesffblog.com, proxy
 host-suffix, sqlserveronlinux.com, proxy
 host-suffix, haskellstack.org, proxy
 host-suffix, makeitopen.com, proxy
+host-suffix, boldgrid.com, proxy
 host-suffix, tex-talk.net, proxy
 host-suffix, jetbrains.com, proxy
 host-suffix, stackoverflow.com, proxy
@@ -594,6 +612,7 @@ host-suffix, stackoverflow.co, proxy
 host-suffix, packagecloud.io, proxy
 host-suffix, universalscalablefirmware.org, proxy
 host-suffix, githubapp.com, proxy
+host-suffix, webflow-ext.com, proxy
 host-suffix, reactjs.com, proxy
 host-suffix, wasmer.io, proxy
 host-suffix, androidify.com, proxy
@@ -610,6 +629,8 @@ host-suffix, codebuff.com, proxy
 host-suffix, tildacdn.net, proxy
 host-suffix, reddit.com, proxy
 host-suffix, metacpan.org, proxy
+host-suffix, parastorage.com, proxy
+host-suffix, wix.com, proxy
 host-suffix, macruby.net, proxy
 host-suffix, developer.microsoft.com, proxy
 host-suffix, scoop.sh, proxy
@@ -659,6 +680,7 @@ host-suffix, busybox.net, proxy
 host-suffix, gitbook.com, proxy
 host-suffix, openjsf.org, proxy
 host-suffix, fightforux.com, proxy
+host-suffix, wixstatic.com, proxy
 host-suffix, cdp.cloud.unity3d.com, proxy
 host-suffix, cdn.apple-mapkit.com, proxy
 host-suffix, fbredex.com, proxy
@@ -673,6 +695,8 @@ host-suffix, spring.net, proxy
 host-suffix, archlinux.de, proxy
 host-suffix, researchkit.net, proxy
 host-suffix, mingw.org, proxy
+host-suffix, wixanswers.com, proxy
+host-suffix, webflow.io, proxy
 host-suffix, nugettest.org, proxy
 host-suffix, golang.org, proxy
 host-suffix, wireshark.org, proxy

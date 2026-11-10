@@ -50,6 +50,7 @@ host-suffix, a122.dscg3.akamai.net, proxy
 host-suffix, cloudappsecurity.com, proxy
 host-suffix, msads.net, proxy
 host-suffix, microsoftsilverlight.net, proxy
+host-suffix, in.applicationinsights.azure.com, proxy
 host-suffix, beth.games, proxy
 host-suffix, www.bing.com, proxy
 host-suffix, r.bing.com, proxy
@@ -58,6 +59,7 @@ host-suffix, msftcloudes.cn, proxy
 host-suffix, hockeyapp.net, proxy
 host-suffix, powerbi.com, proxy
 host-suffix, bethesdagamestudios.com, proxy
+host-suffix, data.microsoft.com, proxy
 host-suffix, appserviceenvironment.cn, proxy
 host-suffix, mpnbenefits.download.prss.microsoft.com, proxy
 host-suffix, centralvalidation.com, proxy
@@ -138,7 +140,7 @@ host-suffix, osrelease.download.prss.microsoft.com, proxy
 host, storeedgefd.dsx.mp.microsoft.com, proxy
 host-suffix, live.cn, proxy
 host-suffix, azcrmc.cn, proxy
-host-suffix, flightsimulator.com, proxy
+host-suffix, production-copilot-host-westus.webpubsub.azure.com, proxy
 host-suffix, azurefd.net, proxy
 host-suffix, discoverbing.com, proxy
 host-suffix, fasttrackreadysupport.com, proxy
@@ -152,7 +154,6 @@ host-suffix, doom.com, proxy
 host-suffix, cloudapp.net, proxy
 host-suffix, octocaptcha.com, proxy
 host-suffix, efproject.net, proxy
-host-suffix, flightsimulator.azureedge.net, proxy
 host-suffix, photos.live.com, proxy
 host-suffix, skypeforbusiness.com, proxy
 host-suffix, storage.msn.com, proxy
@@ -273,6 +274,7 @@ host-suffix, vscode.blob.core.windows.net, proxy
 host-suffix, microsoftready.com, proxy
 host-suffix, userpxt.io, proxy
 host-suffix, microsoftcloudworkshop.com, proxy
+host-suffix, telemetry.microsoft.com, proxy
 host-suffix, microsoftazuresponsorships.com, proxy
 host-suffix, microsoft-give.com, proxy
 host-suffix, binads.com, proxy
@@ -369,6 +371,7 @@ host-suffix, binf.com, proxy
 host-suffix, microsoftonline.cn, proxy
 host-suffix, microsoftol.com, proxy
 host-suffix, hdinsightservices.cn, proxy
+host-suffix, rt.services.visualstudio.com, proxy
 host-suffix, microsoft.rs, proxy
 host-suffix, microbit.org, proxy
 host-suffix, collaborateppe.download.prss.microsoft.com, proxy
@@ -432,6 +435,7 @@ host-suffix, what-fan.net, proxy
 host-suffix, microsoftonline-p-i.cn, proxy
 host-suffix, uwpcommunitytoolkit.com, proxy
 host-suffix, azurestaticapps.net, proxy
+host-suffix, dc.services.visualstudio.com, proxy
 host-suffix, microsoftnewskids.com, proxy
 host-suffix, prodforza.blob.core.windows.net, proxy
 host-suffix, azurecomcdn.net, proxy
@@ -575,6 +579,7 @@ host-suffix, ms-studiosmedia.com, proxy
 host-suffix, ocsp.microsoft.com, proxy
 host-suffix, githubstatus.com, proxy
 host-suffix, elderscrolls.com, proxy
+host-suffix, dc.applicationinsights.azure.com, proxy
 host-suffix, xboxstudios.com, proxy
 host-suffix, momentumms.com, proxy
 host-suffix, microsoftonline.com, proxy
@@ -685,7 +690,6 @@ host-suffix, githubsupport.com, proxy
 host-suffix, azuresmartspaces.net, proxy
 host-suffix, 1drv.com, proxy
 host-suffix, azure-dns.com, proxy
-host-suffix, asobostudio.com, proxy
 host-suffix, officeplus.cn, proxy
 host-suffix, omniroot.com, proxy
 host-suffix, microsoftonline-m-i.cn, proxy
@@ -839,6 +843,7 @@ host-suffix, bingparachute.com, proxy
 host-suffix, dtlgalleryint.cloudapp.net, proxy
 host-suffix, microsoftonline-p-i.net.cn, proxy
 host-suffix, microsoft.es, proxy
+host-suffix, msftstatic.com, proxy
 host-suffix, azurerms.cn, proxy
 host-suffix, teams.cdn.live.net, proxy
 host, osrelease.download.prss.microsoft.com, proxy
@@ -973,10 +978,12 @@ host-suffix, 1drv.ms, proxy
 host-suffix, fabric.io, proxy
 host-suffix, azchcdnq.com, proxy
 host-suffix, azchcdnj.com, proxy
+host-suffix, bingstatic.com, proxy
 host-suffix, ingads.com, proxy
 host-suffix, bingpix.com, proxy
 host-suffix, msn.com, proxy
 host-suffix, spo-msedge.net, proxy
+host-suffix, live.applicationinsights.azure.com, proxy
 host-suffix, cs11.wpc.v0cdn.net, proxy
 host-suffix, live.com.akadns.net, proxy
 host-suffix, vfsforgit.org, proxy

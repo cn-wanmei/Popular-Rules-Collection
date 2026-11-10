@@ -4,13 +4,13 @@ entity: service
 id: ai
 display_name: AI
 generated_from:
-  run_id: 20261017T003011836133Z-run
+  run_id: 20261110T041728493091Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+  ir_digest: 5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f
 stats:
-  total: 189
+  total: 217
   by_type:
-    DOMAIN_SUFFIX: 189
+    DOMAIN_SUFFIX: 217
 rules:
 - id: 524e5b599959e842fdfa0fec7da2c8775200b36cf3c2fc62f89543ff84441edf
   type: DOMAIN_SUFFIX
@@ -39,9 +39,15 @@ rules:
 - id: 3b93f7c03bd63f7fa7259787c099c8bcc9d691fcf2d2d1b2229ab5a5f9ebd568
   type: DOMAIN_SUFFIX
   value: alkalimakersuite-pa.clients6.google.com
+- id: 3b54d23cd7c1275553ec64d39ddf0ccff67670d197b9e490abc1930fe1ead853
+  type: DOMAIN_SUFFIX
+  value: ant.dev
 - id: edfa5266714a59797be064395e485a0c1cf839fa58ce9bf9ba223767f04b29a7
   type: DOMAIN_SUFFIX
   value: anthropic.com
+- id: e46786038928603f4a3977b661787ff8461c47f5285690a004d02489978296bd
+  type: DOMAIN_SUFFIX
+  value: anthropic.team
 - id: 26609ae237485d8cd3ef6d8f061b984f8d51124a910583d45790d87a54857a12
   type: DOMAIN_SUFFIX
   value: antigravity-pa.googleapis.com
@@ -54,12 +60,27 @@ rules:
 - id: fe6360fdbd1c82c4eb59f27be307be29b54c5cd38754e49f06aeb33d1da1e86f
   type: DOMAIN_SUFFIX
   value: antigravity.googleapis.com
+- id: b9c2d843f2c406d7f2bdc50d84eabecdf541c13a23b16e7d7003ed1793dc35e1
+  type: DOMAIN_SUFFIX
+  value: antspace.dev
 - id: 7a06b88ca61869c054f4ebf61a36961a7ba19e6334ea34532f60960d668beef1
   type: DOMAIN_SUFFIX
   value: anythingllm.com
+- id: 0441d734f542df67bfff7e8bb228f94f676db3f5fee2930cae0bc3c3684568bc
+  type: DOMAIN_SUFFIX
+  value: appsgenaiserver-pa.clients.google.com
+- id: 66532a0eb627c5c09a18c6661662085babc774e75608719d880c4c5aca69202c
+  type: DOMAIN_SUFFIX
+  value: appsgenaiserver-pa.clients6.google.com
+- id: 1532057f076372963ab3a7bc13eeb4bd9afcec45d12692ea5b0f254166a8fcfc
+  type: DOMAIN_SUFFIX
+  value: appsgenaiserver-pa.googleapis.com
 - id: 37359e51beb7379bd568ea6041fd09c19068296d40922ca1e447e469000c91a9
   type: DOMAIN_SUFFIX
   value: arena.ai
+- id: 398e8b0fdec2b1a90085da89edda15f5e2014a57ab1b4fc1537632d684dda4d9
+  type: DOMAIN_SUFFIX
+  value: artificialanalysis.ai
 - id: 73ae3cd3fca1e3ead1fe49653ca65aeef9dc16256b1188ad052254c2bc9564b5
   type: DOMAIN_SUFFIX
   value: bard.google.com
@@ -72,6 +93,9 @@ rules:
 - id: 9690c4c1dde0cb73334360a32da4e1cfcab1ba5926dd961963c0cf0ba2c9283e
   type: DOMAIN_SUFFIX
   value: chat.com
+- id: 650ba62c5496bb5388c44537775b4d315272f7fba8d051e686e2ec62f2c66d95
+  type: DOMAIN_SUFFIX
+  value: chatbotclaude.com
 - id: 83b01463ccc0c1e990fd5aa80b968a756d91e46b4c14a179d2680dd46ab9482b
   type: DOMAIN_SUFFIX
   value: chatgpt.com
@@ -99,24 +123,45 @@ rules:
 - id: cd6d7260e7aea5a5c2802ebe7ce8d6a3434d9945147a5893a2738d5915a22fff
   type: DOMAIN_SUFFIX
   value: claude.ai
+- id: 4a6aa6b2fdcdb5019a676ad91f4d54e1ab1bca444d534246c137d54f06dede57
+  type: DOMAIN_SUFFIX
+  value: claude.app
 - id: 8479c10bdebd2ec4b99a97713726c55cce831cdbed43c9b8a5da7396bf1452c5
   type: DOMAIN_SUFFIX
   value: claude.com
 - id: 09de57e03758df51e16710528252242ec9f17d6debad6411aff75f5e6d474ed8
   type: DOMAIN_SUFFIX
   value: claude.dev
+- id: d892c0dde58b6938f58e0374b0fdec4096b9f0339cf7e7f6e73a3032be5f7654
+  type: DOMAIN_SUFFIX
+  value: claude.new
+- id: ab75268069c4177842c3d4ef901c431906d37bd5dd2386c0f4aab35f90e037bd
+  type: DOMAIN_SUFFIX
+  value: claude.site
+- id: c71142ef3a87dcfc6204a44da2188999d8bad221651dab5d4a0fcfe920017d4a
+  type: DOMAIN_SUFFIX
+  value: claudeacademy.com
 - id: 77f4452e9aa9ab8a75a0d86ebf14d7141f93a91b2a9c5617475fdc87eef9ffcd
   type: DOMAIN_SUFFIX
   value: claudemcpclient.com
 - id: efa7a50310411d7b1966bbfc6da7a8a21acda39f7889bafac6a7bc0ea8485691
   type: DOMAIN_SUFFIX
   value: claudemcpcontent.com
+- id: 3b0f84a81e7d5ee43484fc7fc1feea8cc8811510ad064ca705d6a649efa4a189
+  type: DOMAIN_SUFFIX
+  value: claudepages.dev
+- id: 904f60d7caf61cab913e808735242fcb2c916307547acd3325939ef7bf8db7b2
+  type: DOMAIN_SUFFIX
+  value: claudestudio.com
 - id: 6ec04269283c4950ffcbabb9ec409eea0743f0ca63b9bcf66e6462279e21db02
   type: DOMAIN_SUFFIX
   value: claudeusercontent.com
 - id: 2ad5d3503cef20cd7f2ab1aeca0f25c0665a8ca4c7edb5ac815b04b3cdc4b884
   type: DOMAIN_SUFFIX
   value: clawhub.ai
+- id: c8430a0e18869792c059eb5b8f1113971a25a2bac241604c85b6b2713c6d4532
+  type: DOMAIN_SUFFIX
+  value: cline.bot
 - id: e0c81b1b3680c1a73055c9c2bd12722b2ab970731701797842e68c370472780c
   type: DOMAIN_SUFFIX
   value: clipdrop.co
@@ -153,6 +198,12 @@ rules:
 - id: 0d79b071d4ac6a066d4271e3d4facb9bc31dd6c8eef0b34efa2bbcbd120f4503
   type: DOMAIN_SUFFIX
   value: comfyregistry.org
+- id: 33be4889146606ba9caee71e198be70f1655a5716068c53e5c36a8768ac91c91
+  type: DOMAIN_SUFFIX
+  value: commandcode.ai
+- id: fc7b25fdc257669949cbb68aeaa0f117523df25b4c89fae1562dae8a0c58327e
+  type: DOMAIN_SUFFIX
+  value: context7.com
 - id: 1e32a4ff6e1388692646d7fca63e8e1106ce2130107264a85340de04a93bcacb
   type: DOMAIN_SUFFIX
   value: copilot-proxy.githubusercontent.com
@@ -201,6 +252,9 @@ rules:
 - id: 82b7808fb4c66e7406cec5c08db7021bace5fd5b3a4bc9c17aaaf2098250c8cc
   type: DOMAIN_SUFFIX
   value: cursorapi.com
+- id: 793fd6030f260aa4e0b0d36b9a5993c00302e4c6c4dacaf062ac9328b12c5c56
+  type: DOMAIN_SUFFIX
+  value: cursorvm.com
 - id: 3ab5ca750391c50e4aa1e71517b45f1aca595b95ecb2010629f5ff6cb6edfa93
   type: DOMAIN_SUFFIX
   value: daily-cloudcode-pa.googleapis.com
@@ -300,6 +354,9 @@ rules:
 - id: a4baf50c4e6eb91ef0f6a954066215a7d58e4a25e78d0b03b892a9d7e1ac3fc2
   type: DOMAIN_SUFFIX
   value: grok.x.com
+- id: f5a33092dec5c56dd7e0d30286d76aaa6e415ebe106a3c4abfa97ad9c4d1a689
+  type: DOMAIN_SUFFIX
+  value: grokbot.com
 - id: 54bdde9a609be1e0acb26db4c806970bb776897eda6dd45159f65e72c8e7ac76
   type: DOMAIN_SUFFIX
   value: grokipedia.com
@@ -318,6 +375,9 @@ rules:
 - id: bf45f75cac4f85712174bbb303e7e051f2d6a77061565e0934f56e2dba7bd31b
   type: DOMAIN_SUFFIX
   value: host.livekit.cloud
+- id: 68fa5854b3d2dbcdfb4aa9af46f9c2c96c998c6fedff2d6e2021265dc0f4435d
+  type: DOMAIN_SUFFIX
+  value: http-intake.logs.us5.datadoghq.com
 - id: a0b5d83115d257a7761d3bc935081e264de0ffab6356ba6ea1b9a0504ec04771
   type: DOMAIN_SUFFIX
   value: huggingface.co
@@ -363,6 +423,9 @@ rules:
 - id: 9beed95a401b6d01f7b065b465b45b248375b116ae45a8114c4e620812a0068e
   type: DOMAIN_SUFFIX
   value: lpsnmedia.net
+- id: 1be52fe2bde26d5ec1ac4487f09b14bd26fd55c650615af22fd4a3c822815461
+  type: DOMAIN_SUFFIX
+  value: magnific.com
 - id: e34bba05f8ff0e1bbef07c2aca793362ee60d80e81912f8900ad741b9a74b56e
   type: DOMAIN_SUFFIX
   value: makersuite.google.com
@@ -378,6 +441,9 @@ rules:
 - id: f47ad9740740ae0f0566e02b1987063ab9429041547ced03c15628035451d557
   type: DOMAIN_SUFFIX
   value: meta.ai
+- id: d8ba4f2c2a64a5ea479dc169a6201cdc14dab230e8a14efb6f8a259e25d85f53
+  type: DOMAIN_SUFFIX
+  value: metaaiusercontent.com
 - id: 7d37b5640430a89e289534d0b283680e3f983418d3dab2749c6cafebd46b20e0
   type: DOMAIN_SUFFIX
   value: metaaivm.com
@@ -420,12 +486,21 @@ rules:
 - id: 9b18b4c1a3799b7580d69adc4dedcbed9f868e199ac924a586842e5d3090badc
   type: DOMAIN_SUFFIX
   value: notegpt.io
+- id: e2cf5d155a1e0f3299fc7aaa33122635c4e12961530717090b87db6698607c0b
+  type: DOMAIN_SUFFIX
+  value: nousresearch.com
 - id: 2575b2b8f0c41a3502af012e628d7af46c895bce91fc64de76e9c07b242b68f4
   type: DOMAIN_SUFFIX
   value: novelai.net
+- id: a49c69602ade324f7a9bdba6780a9e76826b6bcc98a9935f2b83aea88663049e
+  type: DOMAIN_SUFFIX
+  value: o1158394.ingest.us.sentry.io
 - id: a0241564d92c61ee2a553588747f5891bf47b196deedc1a1404829ef92e02774
   type: DOMAIN_SUFFIX
   value: o33249.ingest.sentry.io
+- id: c842b5540142f3e551697f012a2bf03ac71db2b92dafc82fe3a208ce0c3f7fda
+  type: DOMAIN_SUFFIX
+  value: o33249.ingest.us.sentry.io
 - id: 18096fce146f89e5839b576181aec8abad6462bf718605bb9301da15edb88deb
   type: DOMAIN_SUFFIX
   value: oaistatic.com
@@ -450,6 +525,9 @@ rules:
 - id: 68c5b89fa6af98b87e64711fe0b48a4dd22b4e1cb307e95bbc5b32473012c888
   type: DOMAIN_SUFFIX
   value: openai.com.cdn.cloudflare.net
+- id: f4f6a79a91f0ddd2a84942c083e338ee867772e0aa676ac9da51f8d3fdab0b13
+  type: DOMAIN_SUFFIX
+  value: openai.org
 - id: c04d8e4987f91a1522a6b81b0dcfa097d1edb00cfbcb2d5596fe51d1aa72eb90
   type: DOMAIN_SUFFIX
   value: openai.qualtrics.com
@@ -513,6 +591,9 @@ rules:
 - id: c88a55f06b01aebdb5a1ab771a4203d536e508c6469630e306bdb66f4977764b
   type: DOMAIN_SUFFIX
   value: proactivebackend-pa.googleapis.com
+- id: 227ba87174a6bddf6bf2e8066d29be5d88d73f2f91addc619d3aa186482acd5f
+  type: DOMAIN_SUFFIX
+  value: production-copilot-host-westus.webpubsub.azure.com
 - id: 6da48b7780f095eb69c73ce07dc9dc30f06c11d947f060fb055ddf53f2e0cf77
   type: DOMAIN_SUFFIX
   value: production-openaicom-storage.azureedge.net
@@ -558,6 +639,9 @@ rules:
 - id: 63ac094dd63768ec6475311a4704fe37b1db3cf48d4637f3b3e800c4d1410e48
   type: DOMAIN_SUFFIX
   value: turn.livekit.cloud
+- id: 0e60a0e812ecbf79d85dcef2bd013e61e8eb557eb543e7be21ad5576ce3434d9
+  type: DOMAIN_SUFFIX
+  value: typesafe.ai
 - id: e3e7a507614ff3c5deccd94e6402caba4d77333ea56300586c7ee8ef2289f1f3
   type: DOMAIN_SUFFIX
   value: webchannel-alkalimakersuite-pa.clients6.google.com

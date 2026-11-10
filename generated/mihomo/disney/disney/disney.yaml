@@ -171,6 +171,10 @@ payload:
   - DOMAIN-SUFFIX,thisispolaris.com
   - DOMAIN-SUFFIX,watchdisneyfe.com
   - DOMAIN-SUFFIX,watchespn.com
+  - DOMAIN,authorization.go.com
+  - DOMAIN,disney.content.edge.bamgrid.com
+  - DOMAIN,disney.playback.edge.bamgrid.com
+  - DOMAIN,login.disney.com
   - DOMAIN-SUFFIX,cdn.registerdisney.go.com
   - DOMAIN-SUFFIX,disney-plus.net
   - DOMAIN-SUFFIX,disney.api.edge.bamgrid.com

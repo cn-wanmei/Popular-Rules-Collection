@@ -4,15 +4,15 @@ entity: provider_aggregate
 id: google
 display_name: Google
 generated_from:
-  run_id: 20261017T003011836133Z-run
+  run_id: 20261110T041728493091Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+  ir_digest: 5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f
 stats:
-  total: 1500
+  total: 1522
   by_type:
     DOMAIN: 108
     DOMAIN_KEYWORD: 6
-    DOMAIN_SUFFIX: 1375
+    DOMAIN_SUFFIX: 1397
     IP_CIDR: 4
     IP_CIDR6: 1
     PROCESS_NAME: 6
@@ -617,6 +617,15 @@ rules:
 - id: f3cd3bbbbdd6efc5e12c0867c316f3e56a4a47d22ec57fc230045a09a2bee026
   type: DOMAIN_SUFFIX
   value: apps5.oingo.com
+- id: 0441d734f542df67bfff7e8bb228f94f676db3f5fee2930cae0bc3c3684568bc
+  type: DOMAIN_SUFFIX
+  value: appsgenaiserver-pa.clients.google.com
+- id: 66532a0eb627c5c09a18c6661662085babc774e75608719d880c4c5aca69202c
+  type: DOMAIN_SUFFIX
+  value: appsgenaiserver-pa.clients6.google.com
+- id: 1532057f076372963ab3a7bc13eeb4bd9afcec45d12692ea5b0f254166a8fcfc
+  type: DOMAIN_SUFFIX
+  value: appsgenaiserver-pa.googleapis.com
 - id: 4b890f398acf5381003c5be72455813be0b8535907969e967e889ef42ee9b99e
   type: DOMAIN_SUFFIX
   value: appspot.com
@@ -2801,6 +2810,45 @@ rules:
 - id: 5836d1a6a31db5a0ebef531ba8cc1b8ee2d3c009b2f4c94cec730fa22f4859d7
   type: DOMAIN_SUFFIX
   value: material.io
+- id: cccf9e8cb416dc73eac66d9f7ba99d41d92a0ca26844fc8793795e31b479d6a6
+  type: DOMAIN_SUFFIX
+  value: mathematica.com
+- id: 63051fdefa1ec2d9fde569a37d1cbeece756a3d043fd013da4d1b130768224c9
+  type: DOMAIN_SUFFIX
+  value: mathworks.cn
+- id: e87adf9abe61c5fd2f4c39af80432b617dfd036596cf4d966929c69e1ada910e
+  type: DOMAIN_SUFFIX
+  value: mathworks.co.jp
+- id: 3fa66286eb3a29a9f44f9ee25b99e09851a56a67cb57cba13e5c8a8e2ec45d87
+  type: DOMAIN_SUFFIX
+  value: mathworks.co.kr
+- id: 153ea5ffffba8443d3691d35a1b5a9634d01784250008fec2b887c484a291d44
+  type: DOMAIN_SUFFIX
+  value: mathworks.co.uk
+- id: 03eb0f36edb790010ca0122f184c735ae58426a9108c46e047fbc7f6f6643237
+  type: DOMAIN_SUFFIX
+  value: mathworks.com
+- id: c9a69beeea2de8222b58098eb0013af68b4c2f67e3ac0ac3e19196d431278698
+  type: DOMAIN_SUFFIX
+  value: mathworks.com.au
+- id: daed79289c134742b6a03ab4a69e5b92af0e1da3f05a4a28d0054824603ba838
+  type: DOMAIN_SUFFIX
+  value: mathworks.de
+- id: 4b02ed40638664d17af437297501b17b8516414558198535ea85da8d96217c9d
+  type: DOMAIN_SUFFIX
+  value: mathworks.fr
+- id: 209b5e21fc7f9c71f264ec8755882e726b6a06fe8e7c61882dd95572c6ca43b3
+  type: DOMAIN_SUFFIX
+  value: mathworks.in
+- id: 7e3c81b4e3187768703a584a3d0c10eae3005261c4ac40c70dcbfef29902fbd0
+  type: DOMAIN_SUFFIX
+  value: mathworks.nl
+- id: b2c80b6889d59131d5b990d58b932596b93a0f9499843a7d29c22bd2dd162d57
+  type: DOMAIN_SUFFIX
+  value: mathworks.se
+- id: ccdfa89587c250b12d3a52708273910cfc108febaf2f63fb89b3b6aeec8725f5
+  type: DOMAIN_SUFFIX
+  value: matlab.com
 - id: f34b66b69e0495e771b0d8193a6f7ffd742b203d875c8db67e23a16d546323aa
   type: DOMAIN_SUFFIX
   value: mdialog.com
@@ -3872,6 +3920,24 @@ rules:
 - id: 289c885dd525edd8ee41826ab5fea02964042c59b38c851cb418850cec18f58e
   type: DOMAIN_SUFFIX
   value: wkap.nl
+- id: 29b7379403ab3ce68dcda7c299f6bb42a0c15c71e5a59b910db1325c0e34076a
+  type: DOMAIN_SUFFIX
+  value: wolfram.co.uk
+- id: 23b1f6ae5bde429c53559db28d222e17b67cc631db359289718e534fcc83ed52
+  type: DOMAIN_SUFFIX
+  value: wolfram.com
+- id: c4394d02f75e74359e5b1ab2fe2968b599a67343e8977f1c3d19b52e27e17cfb
+  type: DOMAIN_SUFFIX
+  value: wolframalpha.com
+- id: 9015e8222e8ca83d487e86d3fee2ef787e5bbb27346f65a7c75efc4a47cec299
+  type: DOMAIN_SUFFIX
+  value: wolframalpha.net
+- id: 7067d97004dc728efc1c6c3269e4a2d0a074463531bae242f2e2c00aa727fe58
+  type: DOMAIN_SUFFIX
+  value: wolframcdn.com
+- id: 841276dc0e9339e8894628827ae2cde483ca96d22ff84ae0989d91bdc2de21c0
+  type: DOMAIN_SUFFIX
+  value: wolframcloud.com
 - id: b0a8a0649419ee4bd62287ad94729999af6d1bb250cf21b2ac6257f64e63b40f
   type: DOMAIN_SUFFIX
   value: womenwill.com

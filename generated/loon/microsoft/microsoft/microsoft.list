@@ -50,6 +50,7 @@ DOMAIN-SUFFIX,a122.dscg3.akamai.net
 DOMAIN-SUFFIX,cloudappsecurity.com
 DOMAIN-SUFFIX,msads.net
 DOMAIN-SUFFIX,microsoftsilverlight.net
+DOMAIN-SUFFIX,in.applicationinsights.azure.com
 DOMAIN-SUFFIX,beth.games
 DOMAIN-SUFFIX,www.bing.com
 DOMAIN-SUFFIX,r.bing.com
@@ -58,6 +59,7 @@ DOMAIN-SUFFIX,msftcloudes.cn
 DOMAIN-SUFFIX,hockeyapp.net
 DOMAIN-SUFFIX,powerbi.com
 DOMAIN-SUFFIX,bethesdagamestudios.com
+DOMAIN-SUFFIX,data.microsoft.com
 DOMAIN-SUFFIX,appserviceenvironment.cn
 DOMAIN-SUFFIX,mpnbenefits.download.prss.microsoft.com
 DOMAIN-SUFFIX,centralvalidation.com
@@ -138,7 +140,7 @@ DOMAIN-SUFFIX,osrelease.download.prss.microsoft.com
 DOMAIN,storeedgefd.dsx.mp.microsoft.com
 DOMAIN-SUFFIX,live.cn
 DOMAIN-SUFFIX,azcrmc.cn
-DOMAIN-SUFFIX,flightsimulator.com
+DOMAIN-SUFFIX,production-copilot-host-westus.webpubsub.azure.com
 DOMAIN-SUFFIX,azurefd.net
 DOMAIN-SUFFIX,discoverbing.com
 DOMAIN-SUFFIX,fasttrackreadysupport.com
@@ -152,7 +154,6 @@ DOMAIN-SUFFIX,doom.com
 DOMAIN-SUFFIX,cloudapp.net
 DOMAIN-SUFFIX,octocaptcha.com
 DOMAIN-SUFFIX,efproject.net
-DOMAIN-SUFFIX,flightsimulator.azureedge.net
 DOMAIN-SUFFIX,photos.live.com
 DOMAIN-SUFFIX,skypeforbusiness.com
 DOMAIN-SUFFIX,storage.msn.com
@@ -273,6 +274,7 @@ DOMAIN-SUFFIX,vscode.blob.core.windows.net
 DOMAIN-SUFFIX,microsoftready.com
 DOMAIN-SUFFIX,userpxt.io
 DOMAIN-SUFFIX,microsoftcloudworkshop.com
+DOMAIN-SUFFIX,telemetry.microsoft.com
 DOMAIN-SUFFIX,microsoftazuresponsorships.com
 DOMAIN-SUFFIX,microsoft-give.com
 DOMAIN-SUFFIX,binads.com
@@ -369,6 +371,7 @@ DOMAIN-SUFFIX,binf.com
 DOMAIN-SUFFIX,microsoftonline.cn
 DOMAIN-SUFFIX,microsoftol.com
 DOMAIN-SUFFIX,hdinsightservices.cn
+DOMAIN-SUFFIX,rt.services.visualstudio.com
 DOMAIN-SUFFIX,microsoft.rs
 DOMAIN-SUFFIX,microbit.org
 DOMAIN-SUFFIX,collaborateppe.download.prss.microsoft.com
@@ -432,6 +435,7 @@ DOMAIN-SUFFIX,what-fan.net
 DOMAIN-SUFFIX,microsoftonline-p-i.cn
 DOMAIN-SUFFIX,uwpcommunitytoolkit.com
 DOMAIN-SUFFIX,azurestaticapps.net
+DOMAIN-SUFFIX,dc.services.visualstudio.com
 DOMAIN-SUFFIX,microsoftnewskids.com
 DOMAIN-SUFFIX,prodforza.blob.core.windows.net
 DOMAIN-SUFFIX,azurecomcdn.net
@@ -575,6 +579,7 @@ DOMAIN-SUFFIX,ms-studiosmedia.com
 DOMAIN-SUFFIX,ocsp.microsoft.com
 DOMAIN-SUFFIX,githubstatus.com
 DOMAIN-SUFFIX,elderscrolls.com
+DOMAIN-SUFFIX,dc.applicationinsights.azure.com
 DOMAIN-SUFFIX,xboxstudios.com
 DOMAIN-SUFFIX,momentumms.com
 DOMAIN-SUFFIX,microsoftonline.com
@@ -685,7 +690,6 @@ DOMAIN-SUFFIX,githubsupport.com
 DOMAIN-SUFFIX,azuresmartspaces.net
 DOMAIN-SUFFIX,1drv.com
 DOMAIN-SUFFIX,azure-dns.com
-DOMAIN-SUFFIX,asobostudio.com
 DOMAIN-SUFFIX,officeplus.cn
 DOMAIN-SUFFIX,omniroot.com
 DOMAIN-SUFFIX,microsoftonline-m-i.cn
@@ -839,6 +843,7 @@ DOMAIN-SUFFIX,bingparachute.com
 DOMAIN-SUFFIX,dtlgalleryint.cloudapp.net
 DOMAIN-SUFFIX,microsoftonline-p-i.net.cn
 DOMAIN-SUFFIX,microsoft.es
+DOMAIN-SUFFIX,msftstatic.com
 DOMAIN-SUFFIX,azurerms.cn
 DOMAIN-SUFFIX,teams.cdn.live.net
 DOMAIN,osrelease.download.prss.microsoft.com
@@ -973,10 +978,12 @@ DOMAIN-SUFFIX,1drv.ms
 DOMAIN-SUFFIX,fabric.io
 DOMAIN-SUFFIX,azchcdnq.com
 DOMAIN-SUFFIX,azchcdnj.com
+DOMAIN-SUFFIX,bingstatic.com
 DOMAIN-SUFFIX,ingads.com
 DOMAIN-SUFFIX,bingpix.com
 DOMAIN-SUFFIX,msn.com
 DOMAIN-SUFFIX,spo-msedge.net
+DOMAIN-SUFFIX,live.applicationinsights.azure.com
 DOMAIN-SUFFIX,cs11.wpc.v0cdn.net
 DOMAIN-SUFFIX,live.com.akadns.net
 DOMAIN-SUFFIX,vfsforgit.org

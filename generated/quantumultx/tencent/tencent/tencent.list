@@ -105,6 +105,7 @@ host-suffix, smtcdns.com, proxy
 host-suffix, push.qq.com, proxy
 host-suffix, dishu3.com, proxy
 host-suffix, ap-bangkok.tencentcos.cn, proxy
+host-suffix, tenpayglobal.com, proxy
 host-suffix, v.streaming.qq.com, proxy
 host-suffix, sogou.net, proxy
 host-suffix, yxwsgame.com, proxy
@@ -133,7 +134,6 @@ host-suffix, tencentrio.com, proxy
 host-suffix, tcdnlivebak2.com, proxy
 host-suffix, tdnsv5.net, proxy
 host-suffix, tencdns.net, proxy
-host-suffix, in.th, proxy
 host-suffix, qcloudipv6.com, proxy
 host-suffix, tcdnvodbak.com, proxy
 host-suffix, tapd.cn, proxy
@@ -419,6 +419,7 @@ host-suffix, tdnsv1.net, proxy
 host-suffix, tencent.net.cn, proxy
 host-suffix, ad.qq.com, proxy
 host-suffix, weishi.com, proxy
+host-suffix, tencentgames.com, proxy
 host-suffix, pinyin.cn, proxy
 ip-cidr, 58.58.81.129/32, proxy
 host-suffix, ectencent.cn, proxy
@@ -512,6 +513,7 @@ host-suffix, qdmm.com, proxy
 host-suffix, adsview.qq.com, proxy
 host-suffix, tencentcloudclub.com, proxy
 host-suffix, computeinit.com, proxy
+host-suffix, wesure.cn, proxy
 host-suffix, tcss.qq.com, proxy
 host-suffix, tcdnkcbak.com, proxy
 host-suffix, essurl.com, proxy
@@ -612,6 +614,7 @@ host-suffix, adse.wsa.ximalaya.com, proxy
 host-suffix, dcloudlive.com, proxy
 host-suffix, qidian.com, proxy
 host-suffix, cloudidaas.com, proxy
+host-suffix, wesure100.com, proxy
 host-suffix, tdnsv8.net, proxy
 host-suffix, adv.app.qq.com, proxy
 host-suffix, weiyun.com, proxy
@@ -658,6 +661,7 @@ host-suffix, weixinbridge.com, proxy
 host-suffix, ap-hongkong.tencentcos.com, proxy
 host-suffix, timmerse.com, proxy
 host-suffix, scescdn.cn, proxy
+host-suffix, levelinfinite.com, proxy
 host-suffix, wetv.vip, proxy
 host-suffix, yeyousg.com, proxy
 host-suffix, adserviceretry.kugou.com, proxy
@@ -688,6 +692,7 @@ host-suffix, badjs.weixinbridge.com, proxy
 host-suffix, tdnsv6.com, proxy
 host-suffix, tdnsv14.net, proxy
 host-suffix, adsclick.qq.com, proxy
+host-suffix, nikke-en.com, proxy
 host-suffix, qpic.cn, proxy
 host-suffix, koowo.com, proxy
 host-suffix, bktencent.com, proxy

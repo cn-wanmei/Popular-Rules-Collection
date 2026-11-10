@@ -25,9 +25,11 @@ payload:
   - DOMAIN-SUFFIX,discourse.group
   - DOMAIN-SUFFIX,crates.io
   - DOMAIN-SUFFIX,sonatype.org
+  - DOMAIN-SUFFIX,cloudwp.dev
   - DOMAIN-SUFFIX,fedorainfracloud.org
   - DOMAIN-SUFFIX,stackoverflowteams.com
   - DOMAIN-SUFFIX,microsoftsilverlight.net
+  - DOMAIN-SUFFIX,website-files.com
   - DOMAIN-SUFFIX,putty.org
   - DOMAIN-SUFFIX,unity3d.com
   - DOMAIN-SUFFIX,fontawesome.com
@@ -46,6 +48,7 @@ payload:
   - DOMAIN-SUFFIX,productionresultssa0.blob.core.windows.net
   - DOMAIN-SUFFIX,flatpak.org
   - DOMAIN-SUFFIX,linuxfoundation.org
+  - DOMAIN-SUFFIX,editorx.com
   - DOMAIN-SUFFIX,fbf8.com
   - DOMAIN-SUFFIX,qt-project.org
   - DOMAIN-SUFFIX,mariadb.org
@@ -82,6 +85,8 @@ payload:
   - DOMAIN-SUFFIX,conda.io
   - DOMAIN-SUFFIX,stackoverflow.blog
   - DOMAIN-SUFFIX,ktor.io
+  - DOMAIN-SUFFIX,production-copilot-host-westus.webpubsub.azure.com
+  - DOMAIN-SUFFIX,wixapps.net
   - DOMAIN-SUFFIX,macosforge.org
   - DOMAIN-SUFFIX,cdn.ampproject.org
   - DOMAIN-SUFFIX,bintray.com
@@ -141,6 +146,7 @@ payload:
   - DOMAIN-SUFFIX,alpinelinux.org
   - DOMAIN-SUFFIX,braveux.com
   - DOMAIN-SUFFIX,launchpadcontent.net
+  - DOMAIN-SUFFIX,pyup.io
   - DOMAIN-SUFFIX,readthedocs.com
   - DOMAIN-SUFFIX,datalore.io
   - DOMAIN-SUFFIX,plasma-mobile.org
@@ -208,6 +214,7 @@ payload:
   - DOMAIN-SUFFIX,amp.akamaized.net
   - DOMAIN-SUFFIX,redislabs.com
   - DOMAIN-SUFFIX,sstatic.net
+  - DOMAIN-SUFFIX,postman.com
   - DOMAIN-SUFFIX,microsoftsilverlight.com
   - DOMAIN-SUFFIX,termius.com
   - DOMAIN-SUFFIX,jb.gg
@@ -242,6 +249,7 @@ payload:
   - DOMAIN-SUFFIX,appleworldwidedeveloper.sc.omtrdc.net
   - DOMAIN-SUFFIX,gitgud.io
   - DOMAIN-SUFFIX,opendroneid.org
+  - DOMAIN-SUFFIX,rt.services.visualstudio.com
   - DOMAIN-SUFFIX,fortawesome.com
   - DOMAIN-SUFFIX,microbit.org
   - DOMAIN-SUFFIX,msdn.com
@@ -275,6 +283,7 @@ payload:
   - DOMAIN-SUFFIX,uwpcommunitytoolkit.com
   - DOMAIN-SUFFIX,codeforaliving.io
   - DOMAIN-SUFFIX,developerservices2.apple.com
+  - DOMAIN-SUFFIX,dc.services.visualstudio.com
   - DOMAIN-SUFFIX,fblitho.com
   - DOMAIN-SUFFIX,discourse.org
   - DOMAIN-SUFFIX,fury.io
@@ -298,6 +307,7 @@ payload:
   - DOMAIN-SUFFIX,facebookdevelopergarage.com
   - DOMAIN-SUFFIX,tildaapi.com
   - DOMAIN-SUFFIX,sourcehut.org
+  - DOMAIN-SUFFIX,wixmp.com
   - DOMAIN-SUFFIX,archlinuxarm.org
   - DOMAIN-SUFFIX,packagist.org
   - DOMAIN-SUFFIX,cdn3.apple-mapkit.com
@@ -323,6 +333,8 @@ payload:
   - DOMAIN-SUFFIX,flow.org
   - DOMAIN-SUFFIX,componentkit.org
   - DOMAIN-SUFFIX,mcrouter.net
+  - DOMAIN-SUFFIX,templatemonster.com
+  - DOMAIN-SUFFIX,wixsite.com
   - DOMAIN-SUFFIX,fedorapeople.org
   - DOMAIN-SUFFIX,java.com
   - DOMAIN-SUFFIX,elastic.co
@@ -357,6 +369,7 @@ payload:
   - DOMAIN-SUFFIX,messengerdevelopers.com
   - DOMAIN-SUFFIX,webkit.org
   - DOMAIN-SUFFIX,launchpadlibrarian.org
+  - DOMAIN-SUFFIX,bmonkeys.net
   - DOMAIN-SUFFIX,braventures.com
   - DOMAIN-SUFFIX,researchkit.com.cn
   - DOMAIN-SUFFIX,productionresultssa1.blob.core.windows.net
@@ -366,6 +379,7 @@ payload:
   - DOMAIN-SUFFIX,debian.org
   - DOMAIN-SUFFIX,npm.community
   - DOMAIN-SUFFIX,mcrouter.org
+  - DOMAIN-SUFFIX,tmimgcdn.com
   - DOMAIN-SUFFIX,copilot-workspace.githubnext.com
   - DOMAIN-SUFFIX,cdn-cn2.apple-mapkit.com
   - DOMAIN-SUFFIX,centos.org
@@ -402,6 +416,7 @@ payload:
   - DOMAIN-SUFFIX,firebasedynamiclinks-ipv6.googleapis.com
   - DOMAIN-SUFFIX,cdn-cn3.apple-mapkit.com
   - DOMAIN-SUFFIX,firebaseio.com
+  - DOMAIN-SUFFIX,safetycli.com
   - DOMAIN-SUFFIX,zed.dev
   - DOMAIN-SUFFIX,github.career
   - DOMAIN-SUFFIX,productionresultssa2.blob.core.windows.net
@@ -434,6 +449,7 @@ payload:
   - DOMAIN-SUFFIX,stackapps.com
   - DOMAIN-SUFFIX,pythonhosted.org
   - DOMAIN-SUFFIX,maven.org
+  - DOMAIN-SUFFIX,wix-code.com
   - DOMAIN-SUFFIX,fedoraforum.org
   - DOMAIN-SUFFIX,jetbrains.team
   - DOMAIN-SUFFIX,sentry-cdn.com
@@ -475,6 +491,7 @@ payload:
   - DOMAIN-SUFFIX,termux.dev
   - DOMAIN-SUFFIX,raspbian.org
   - DOMAIN-SUFFIX,firebaseinstallations.googleapis.com
+  - DOMAIN-SUFFIX,getsafety.com
   - DOMAIN-SUFFIX,wpmailsmtp.com
   - DOMAIN-SUFFIX,renderingtoolkit.org
   - DOMAIN-SUFFIX,visualstudio.net
@@ -507,6 +524,7 @@ payload:
   - DOMAIN-SUFFIX,sqlserveronlinux.com
   - DOMAIN-SUFFIX,haskellstack.org
   - DOMAIN-SUFFIX,makeitopen.com
+  - DOMAIN-SUFFIX,boldgrid.com
   - DOMAIN-SUFFIX,tex-talk.net
   - DOMAIN-SUFFIX,jetbrains.com
   - DOMAIN-SUFFIX,stackoverflow.com
@@ -595,6 +613,7 @@ payload:
   - DOMAIN-SUFFIX,packagecloud.io
   - DOMAIN-SUFFIX,universalscalablefirmware.org
   - DOMAIN-SUFFIX,githubapp.com
+  - DOMAIN-SUFFIX,webflow-ext.com
   - DOMAIN-SUFFIX,reactjs.com
   - DOMAIN-SUFFIX,wasmer.io
   - DOMAIN-SUFFIX,androidify.com
@@ -611,6 +630,8 @@ payload:
   - DOMAIN-SUFFIX,tildacdn.net
   - DOMAIN-SUFFIX,reddit.com
   - DOMAIN-SUFFIX,metacpan.org
+  - DOMAIN-SUFFIX,parastorage.com
+  - DOMAIN-SUFFIX,wix.com
   - DOMAIN-SUFFIX,macruby.net
   - DOMAIN-SUFFIX,developer.microsoft.com
   - DOMAIN-SUFFIX,scoop.sh
@@ -660,6 +681,7 @@ payload:
   - DOMAIN-SUFFIX,gitbook.com
   - DOMAIN-SUFFIX,openjsf.org
   - DOMAIN-SUFFIX,fightforux.com
+  - DOMAIN-SUFFIX,wixstatic.com
   - DOMAIN-SUFFIX,cdp.cloud.unity3d.com
   - DOMAIN-SUFFIX,cdn.apple-mapkit.com
   - DOMAIN-SUFFIX,fbredex.com
@@ -674,6 +696,8 @@ payload:
   - DOMAIN-SUFFIX,archlinux.de
   - DOMAIN-SUFFIX,researchkit.net
   - DOMAIN-SUFFIX,mingw.org
+  - DOMAIN-SUFFIX,wixanswers.com
+  - DOMAIN-SUFFIX,webflow.io
   - DOMAIN-SUFFIX,nugettest.org
   - DOMAIN-SUFFIX,golang.org
   - DOMAIN-SUFFIX,wireshark.org

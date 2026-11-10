@@ -4,14 +4,14 @@ entity: provider_aggregate
 id: tencent
 display_name: Tencent
 generated_from:
-  run_id: 20261017T003011836133Z-run
+  run_id: 20261110T041728493091Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+  ir_digest: 5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f
 stats:
-  total: 755
+  total: 760
   by_type:
     DOMAIN: 1
-    DOMAIN_SUFFIX: 734
+    DOMAIN_SUFFIX: 739
     IP_CIDR: 20
 rules:
 - id: 367ab6988593c3371b811086523e87f3a0c1832bfb4ed038d3242ed2bd6b0a63
@@ -812,9 +812,6 @@ rules:
 - id: 26cbe5d4b9db32ae290f723add08e1073b0d7e9ffbbdad0055a6a8ae57fc08e8
   type: DOMAIN_SUFFIX
   value: imweb.io
-- id: 259fd304bc0a75233b2138bdddb2424fb4edb07e05b25314e41e05cf1ac5171d
-  type: DOMAIN_SUFFIX
-  value: in.th
 - id: 9c6b7c06e9c08aa7aac65173da615418038047d3082ea486ca2c8cb1918cabeb
   type: DOMAIN_SUFFIX
   value: ins-eeww7kom.ias.tencent-cloud.net
@@ -911,6 +908,9 @@ rules:
 - id: 8ae40bd35aa02a3fb51b15469211a3619df0b280dd9bd3b3041ecda8f85a7c04
   type: DOMAIN_SUFFIX
   value: labycore.cn
+- id: ddf87125bed14fdbf6a782c6c955a1ceb1a77df1997e0fd175a070814fca92ff
+  type: DOMAIN_SUFFIX
+  value: levelinfinite.com
 - id: 5ded1f8481cd4204b74c2b6549ac5064e4edd65a6cbe7fbe50dfb9e88161ee20
   type: DOMAIN_SUFFIX
   value: log.tbs.qq.com
@@ -1058,6 +1058,9 @@ rules:
 - id: 125163685aab921380c35fd11847cf9e88ab3b1f4910cf9db72555979530ea26
   type: DOMAIN_SUFFIX
   value: nextworkshop.net
+- id: e93447efc5717567ded49df9c80070532a3d6d17337265c2ccfe01c820812544
+  type: DOMAIN_SUFFIX
+  value: nikke-en.com
 - id: 0685c27abd6ad859995ac8aefec41d2b9286ca9780c3e3d051b17b895aef1e30
   type: DOMAIN_SUFFIX
   value: onexmail.com
@@ -1790,6 +1793,9 @@ rules:
 - id: 3ac188e11774cdb4cb304a844e187dc18e76f1cf63a9bc15244f1f8c7714ca95
   type: DOMAIN_SUFFIX
   value: tencentelasticsearch.com
+- id: 8df1eb9ee5640393b0bd5e5f80a87be294932bffb8a8d81575e776e26801aee3
+  type: DOMAIN_SUFFIX
+  value: tencentgames.com
 - id: 4c8bfc6ef18e8bc747165060fa2b00081d972777b866f1a69b9714d6e3f81c93
   type: DOMAIN_SUFFIX
   value: tencentid.com
@@ -1835,6 +1841,9 @@ rules:
 - id: d12188c173265dee8c4e975e88f04fab304165db79f5b504cf0834b819cad141
   type: DOMAIN_SUFFIX
   value: tenpay.com
+- id: 1b4a3ce3b063f7ec8dab7d4b4c352101c134e1d55642a415ba9710f6d8e53be4
+  type: DOMAIN_SUFFIX
+  value: tenpayglobal.com
 - id: 2f73aa8e1cad065e7af72b5a3a45ba4ff2bc836631430de7f964d674e7f6f69c
   type: DOMAIN_SUFFIX
   value: testjrzk.net.cn
@@ -2066,6 +2075,12 @@ rules:
 - id: c520747724261b77dcf5ee9364c70ee5d7606efd20c2cd92328d31d2f269d32a
   type: DOMAIN_SUFFIX
   value: werepository.com.cn
+- id: b251028d4eb3464113b72cb6ee4017aac6f005b7574be396f53708f18b2289d8
+  type: DOMAIN_SUFFIX
+  value: wesure.cn
+- id: cffb42e7e68b5f0fe81a9faa1d6958d53f2a088a7801e157381af6e86058004a
+  type: DOMAIN_SUFFIX
+  value: wesure100.com
 - id: 7259136fae7748eaeede56391837a77e85e805f3de0cd02c23e9911c25017378
   type: DOMAIN_SUFFIX
   value: wetv.qq.com

@@ -4,14 +4,14 @@ entity: provider_aggregate
 id: bytedance
 display_name: ByteDance
 generated_from:
-  run_id: 20261017T003011836133Z-run
+  run_id: 20261110T041728493091Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+  ir_digest: 5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f
 stats:
-  total: 1099
+  total: 1105
   by_type:
     DOMAIN: 1
-    DOMAIN_SUFFIX: 1096
+    DOMAIN_SUFFIX: 1102
     IP_CIDR: 1
     PROCESS_NAME: 1
 rules:
@@ -924,6 +924,9 @@ rules:
 - id: 6166d38e9633892f5143e9c218f002709b13e6d513ae369462bf0692bc912398
   type: DOMAIN_SUFFIX
   value: doubao.com
+- id: 44260b2e31614f90658a0dbac55fa3d686e9fb848451e4edd91cec294b644da3
+  type: DOMAIN_SUFFIX
+  value: doubaoapps.com
 - id: 6aadd0d5c539e52054e30ec48e35a1cc8dbf61c73f323726e7fd660b002fd332
   type: DOMAIN_SUFFIX
   value: doubaocdn.com
@@ -1035,6 +1038,9 @@ rules:
 - id: 363da1dfd77afb4bab4f7d4b77e555ba32b805eb8d2aa865a9dc78ebac5a115b
   type: DOMAIN_SUFFIX
   value: ecombdvod.com
+- id: 4e4f9d42ecbc274a3a814f66c702fddd2f51e310da90906bfa24dcc15c9d87e5
+  type: DOMAIN_SUFFIX
+  value: edge-byted.com
 - id: 0977b04f174b39f2a5927e03bb6395a7913d9fd5075c49de3fb2b4b10260a03f
   type: DOMAIN_SUFFIX
   value: edgeceler.com
@@ -1263,6 +1269,9 @@ rules:
 - id: 013cfad25cbfe84608b5752cfb43b4ee6dad37dc601e5e8428b62764c26ebd94
   type: DOMAIN_SUFFIX
   value: gslbdns.net
+- id: 2c75cdc18575318a67d91c48001cd6662ab8b114d6696731c36b8bab887257cf
+  type: DOMAIN_SUFFIX
+  value: haimian.com
 - id: 273c4936c8e3c42204f7506de852a6d53900534218c54c571ec2a0e31461ed75
   type: DOMAIN_SUFFIX
   value: hapierxia.com
@@ -2307,6 +2316,12 @@ rules:
 - id: 7e4a6235323aad30c02f095b7f3d9d48659bce0e0e9275c622a42c5eef135e72
   type: DOMAIN_SUFFIX
   value: tiktokrow-cdn.com
+- id: 7c6576bb7f257fe406060a4f949f40f818931cdf4c6ba0293ed3868a7d0aaacc
+  type: DOMAIN_SUFFIX
+  value: tiktokshop.com
+- id: e67015a08ddc83bdb6bf9802807cf2eeada4d0d4f9033846c5bcaa3f4c9239cb
+  type: DOMAIN_SUFFIX
+  value: tiktokstaticb.com
 - id: ae59767af638a44521b0ce2e4d59c54e763aa7f972594b43d42bc14f8ae7e686
   type: DOMAIN_SUFFIX
   value: tiktokv.com
@@ -2322,6 +2337,9 @@ rules:
 - id: a832326ffabdccc91f0ec5985be7f2db594e359f8c6d73c0c013734fa5532471
   type: DOMAIN_SUFFIX
   value: tiktokv.us
+- id: 770a7472fa1670c05f9e96a3af8e989b7da484628069200b0b03f33c9d1d1e81
+  type: DOMAIN_SUFFIX
+  value: tiktokvapp.com
 - id: 12feb68810963e9faafff5a0545c019d45fc10bcea3f70e82c83dbc683efad36
   type: DOMAIN_SUFFIX
   value: tiktokw.eu

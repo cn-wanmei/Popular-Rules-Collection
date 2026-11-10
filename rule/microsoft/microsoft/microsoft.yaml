@@ -4,15 +4,15 @@ entity: provider_aggregate
 id: microsoft
 display_name: Microsoft
 generated_from:
-  run_id: 20261017T003011836133Z-run
+  run_id: 20261110T041728493091Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+  ir_digest: 5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f
 stats:
-  total: 1025
+  total: 1032
   by_type:
     DOMAIN: 60
     DOMAIN_KEYWORD: 4
-    DOMAIN_SUFFIX: 959
+    DOMAIN_SUFFIX: 966
     PROCESS_NAME: 2
 rules:
 - id: 573f224fc5b31e1171ef2fd80e088d4c85baed568501a5aa1e4a5143a9d8affe
@@ -303,9 +303,6 @@ rules:
 - id: d6e7b47b8356307a0da2bd91b381d00c37d1f9bc07edef507c9a4aa0b5741365
   type: DOMAIN_SUFFIX
   value: aria.ms
-- id: a60ff05f9bcf6284f17e26d5d6fba47210a88c75066c74474937fe08ea2e32d8
-  type: DOMAIN_SUFFIX
-  value: asobostudio.com
 - id: 3421ac81a2c34d3872d1a67c0341177f489a76f1540961b3b3a9e41b5a85afd1
   type: DOMAIN_SUFFIX
   value: asp.net
@@ -741,6 +738,9 @@ rules:
 - id: a4df99283a403698c3f5258e11254aca3335777a89fd34c6011996c62053c70a
   type: DOMAIN_SUFFIX
   value: bingsettingssearch.trafficmanager.net
+- id: f448c7eb98178cf30a1bc2cbae73558cbd09a4bd3677f3c3a5e60e0d49511c31
+  type: DOMAIN_SUFFIX
+  value: bingstatic.com
 - id: 66840e8a18391c516a3e79f91f1ce69c80de1188d7c5a0204a2c362f60e999d1
   type: DOMAIN_SUFFIX
   value: bingtoolbar.com
@@ -942,6 +942,15 @@ rules:
 - id: 44a0782230f4894c560f6d29088acdb693dd0df8d9bfa843a67b37cf3c77b37b
   type: DOMAIN_SUFFIX
   value: ctldl.windowsupdate.com
+- id: 0efb95d05ddec483b707b36f0c5d9e628ee5d723b025999ccd8b6230861634c3
+  type: DOMAIN_SUFFIX
+  value: data.microsoft.com
+- id: 8f696ce00875927ef341119b33ff0ad81e43a0dc6696a6b7266465bd7fc8e0df
+  type: DOMAIN_SUFFIX
+  value: dc.applicationinsights.azure.com
+- id: 6b0b913d4b50629c8299b6094a4a20c72345822c758b63f8488deb2d37004695
+  type: DOMAIN_SUFFIX
+  value: dc.services.visualstudio.com
 - id: feab19ce6af5aafde4d72e7707db95b4d0ab17ec6367d11de0f8e1c1d4ecce30
   type: DOMAIN_SUFFIX
   value: dcg.microsoft.com
@@ -1056,12 +1065,6 @@ rules:
 - id: 76a6b888acb33e6a486d8a7bdf911542c8055c4d5a1fe8bbb125c58266ff9bee
   type: DOMAIN_SUFFIX
   value: femalefounderscomp.com
-- id: 2661c63d98c19a24dcebe8615293edb1746bb1485835d1d5a6c291a11183881f
-  type: DOMAIN_SUFFIX
-  value: flightsimulator.azureedge.net
-- id: 22a7b8dd4c7769af312fd43613131f989f3d299cca19a9dc4ff91cbf0ec81b84
-  type: DOMAIN_SUFFIX
-  value: flightsimulator.com
 - id: 2020c654084a1fbc53044da99d8c48e60c6d39d265ed4ba7b182d0e755e33481
   type: DOMAIN_SUFFIX
   value: flipwithsurface.com
@@ -1293,6 +1296,9 @@ rules:
 - id: bd631e84074928ad0c804b552cf59eb9a755be9b079574b2ec5087b0296b26f9
   type: DOMAIN_SUFFIX
   value: in.appcenter.ms
+- id: 0b06e62ae1f2abaf7a8bcbe4d236e793b4c4a7a5f7e2ad117faea31c98d893c0
+  type: DOMAIN_SUFFIX
+  value: in.applicationinsights.azure.com
 - id: f46c3849efaa5b63c6b8c9f4bf6fea674792786313a8a2fbc5d293bd8fa4cc1a
   type: DOMAIN_SUFFIX
   value: ingads.com
@@ -1359,6 +1365,9 @@ rules:
 - id: f6ca8aec2fa84dcce8129970a08c50f03b24f9aa05ae82e0654ed5f23b97ea3a
   type: DOMAIN_SUFFIX
   value: linkedin.com
+- id: f5da336dba91ca27b25f5b0009f827793d2c5704f63ad6d9ed956ae3e688f004
+  type: DOMAIN_SUFFIX
+  value: live.applicationinsights.azure.com
 - id: 2242b8f2e7138e3f32e7f50b34c89aa6a45b35a5a9da86c7a56f31f9bf275a7d
   type: DOMAIN_SUFFIX
   value: live.cn
@@ -1998,6 +2007,9 @@ rules:
 - id: dee9272272c1f8986899cb28f407b2101a7323691a37a717a8d34e5631ef30dd
   type: DOMAIN_SUFFIX
   value: msftnet.org
+- id: cff04b8547835637ad96b02b092eadba3931d4f1fda2530c29ce0dcf8f12a730
+  type: DOMAIN_SUFFIX
+  value: msftstatic.com
 - id: 64b7316dbf8477d78770d7ed54480b5f51606361f1ae19c7be62deb4224e6adf
   type: DOMAIN_SUFFIX
   value: msgamesresearch.com
@@ -2439,6 +2451,9 @@ rules:
 - id: 6b617120770cc8eeec4e80a473fd9aa9cac8d9fff957d4e5b54c75e34db3330b
   type: DOMAIN_SUFFIX
   value: prodforza.blob.core.windows.net
+- id: 227ba87174a6bddf6bf2e8066d29be5d88d73f2f91addc619d3aa186482acd5f
+  type: DOMAIN_SUFFIX
+  value: production-copilot-host-westus.webpubsub.azure.com
 - id: 6da48b7780f095eb69c73ce07dc9dc30f06c11d947f060fb055ddf53f2e0cf77
   type: DOMAIN_SUFFIX
   value: production-openaicom-storage.azureedge.net
@@ -2553,6 +2568,9 @@ rules:
 - id: 3a3b00da52ac34295be22efa292cf3e82b7cd9eb42cc90bebd7155473898f22b
   type: DOMAIN_SUFFIX
   value: rsm.download.prss.microsoft.com
+- id: 5ab4a32c85c38e4ee4eb89df8a401935d3a314620797ed451561d46e6e47b363
+  type: DOMAIN_SUFFIX
+  value: rt.services.visualstudio.com
 - id: 9980867112305a5c6d994fa8e1de25cc429c36a80ec2a125c53e4e4fdfd5ed2b
   type: DOMAIN_SUFFIX
   value: s-dc-msedge.net
@@ -2769,6 +2787,9 @@ rules:
 - id: a2a78ef3717338d04c7a12bae7e6f54f926aedd5fe601f002edb40802ece8c59
   type: DOMAIN_SUFFIX
   value: techhub.ms
+- id: 4649e3a8a0790f1d2ecf5289ff21cfd46c0c048e13f3936aa12e43430e96a0f5
+  type: DOMAIN_SUFFIX
+  value: telemetry.microsoft.com
 - id: 43a35a63665e29c41d1720cc4e8edd768b2611ab84e0898ace64dba5ec313e92
   type: DOMAIN_SUFFIX
   value: tellmewhygame.com

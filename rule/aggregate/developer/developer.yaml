@@ -4,13 +4,13 @@ entity: aggregate
 id: developer
 display_name: developer
 generated_from:
-  run_id: 20261017T003011836133Z-run
+  run_id: 20261110T041728493091Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+  ir_digest: 5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f
 stats:
-  total: 685
+  total: 709
   by_type:
-    DOMAIN_SUFFIX: 685
+    DOMAIN_SUFFIX: 709
 rules:
 - id: 2448051afa80b760ccf196ef03d6f74d0da413b077c971aa0aa96ff2bf6c36dd
   type: DOMAIN_SUFFIX
@@ -156,6 +156,12 @@ rules:
 - id: b37f95f15bf554efff89689cf3c73ddc66d79fc84da585b448f55c8098442567
   type: DOMAIN_SUFFIX
   value: blogoverflow.com
+- id: 8a8118402aab040522d01b531a45b6264c5337156d82cf2ab04f65a33dd41445
+  type: DOMAIN_SUFFIX
+  value: bmonkeys.net
+- id: c07361107c0d7acbd6ec91bc1babff87ec0a911f2cd1ca28c65e2d7b38af4e57
+  type: DOMAIN_SUFFIX
+  value: boldgrid.com
 - id: 7d88115cd4c85e3f35e89e698f26ac304a1dfa201d68dfeaf77da2d325f65af1
   type: DOMAIN_SUFFIX
   value: bootstrapcdn.com
@@ -252,6 +258,9 @@ rules:
 - id: fd36c77f6f24baa2fd54b3c3a31d208466b765fdfc32cd16bdca5d3951edfc86
   type: DOMAIN_SUFFIX
   value: clojure.org
+- id: 09d6ff93f23329b11494135d910ff66ff3cdf0e23ebcafe1aea579c69f4f1389
+  type: DOMAIN_SUFFIX
+  value: cloudwp.dev
 - id: 82b3e53b07b977f4b472f76a2dd38e680cba8d98a0a9a2da393c63d5755d8113
   type: DOMAIN_SUFFIX
   value: cnpmjs.org
@@ -351,6 +360,9 @@ rules:
 - id: 37b0dca54bf05cac16c66fb1c5475e78b246827beb9505cd8caaac6d219d462c
   type: DOMAIN_SUFFIX
   value: datalore.io
+- id: 6b0b913d4b50629c8299b6094a4a20c72345822c758b63f8488deb2d37004695
+  type: DOMAIN_SUFFIX
+  value: dc.services.visualstudio.com
 - id: 9554f492633200b2f974234e9399c835fb9adbd45f4e6bd3069fc514168c7437
   type: DOMAIN_SUFFIX
   value: debian.com
@@ -438,6 +450,9 @@ rules:
 - id: 111bdb1c5f2e2ac73e77b81713cb33ecbcb484c35be95f9c357228fafdd89e9a
   type: DOMAIN_SUFFIX
   value: ecr.aws
+- id: 1393c807f5d075084f262071017f3b5689eca1a348c1613438abbe4fd005e205
+  type: DOMAIN_SUFFIX
+  value: editorx.com
 - id: 8037de70736ec9b867f3c98507323fd9814ecb9d0bc1a201d4df687a77fa429a
   type: DOMAIN_SUFFIX
   value: elastic.co
@@ -693,6 +708,9 @@ rules:
 - id: 4a2bf2494006b9db0501647c08e4ec317dd098e5377328e936c9ef49a44c6714
   type: DOMAIN_SUFFIX
   value: getpaint.net
+- id: b662556b78e4266261c6feb587a0093d469faa8cc5cd4fcf96df586a4749a0c1
+  type: DOMAIN_SUFFIX
+  value: getsafety.com
 - id: 9688a52f4998a0ac4af54bd2019ee1518d5025df1d94f7ec65ddf9601c9c9b66
   type: DOMAIN_SUFFIX
   value: getsentry.com
@@ -1374,6 +1392,9 @@ rules:
 - id: 27ec1cee805d066cc83b9e177e8bd3f81926e1844a1a0369f191647d188dec93
   type: DOMAIN_SUFFIX
   value: paint.net
+- id: e3923c4e1f5b8e8f007ce212eff3bb8a3936e8d3a241db6cf6e9ddc11a36f0af
+  type: DOMAIN_SUFFIX
+  value: parastorage.com
 - id: 53589f0017679fc2965900ec824b74c68c670d81321ac06e7c91e5646d2c114a
   type: DOMAIN_SUFFIX
   value: parse.com
@@ -1428,9 +1449,15 @@ rules:
 - id: 411715feaa7b302f453b2466750434125a78e1a1cbcea521b20f47ba1132cf50
   type: DOMAIN_SUFFIX
   value: postman-echo.com
+- id: 4ee3fdd1615fff22441d48782713265193efb78beeef0e19dd3a4441175e5a60
+  type: DOMAIN_SUFFIX
+  value: postman.com
 - id: b3696b5aca87719b5c19e22005db25cb61f34e7c0c6a2ea21406f13caf6a0bac
   type: DOMAIN_SUFFIX
   value: prd-lender.cdp.internal.unity3d.com
+- id: 227ba87174a6bddf6bf2e8066d29be5d88d73f2f91addc619d3aa186482acd5f
+  type: DOMAIN_SUFFIX
+  value: production-copilot-host-westus.webpubsub.azure.com
 - id: 124e35c2b165b8b6f452dc1cf0cfe707aecd8723cf5c2b1326c758dcd90c9c3f
   type: DOMAIN_SUFFIX
   value: productionresultssa0.blob.core.windows.net
@@ -1530,6 +1557,9 @@ rules:
 - id: a617bbeca9d21c151f57616be822716cf3cb05689fae99813d286971d517ad10
   type: DOMAIN_SUFFIX
   value: pythonhosted.org
+- id: 379bc67aa212d2f9f7fef08c43a957cc290d2a0e9567cb4df4dacd47ca55e9ba
+  type: DOMAIN_SUFFIX
+  value: pyup.io
 - id: 140a6445fd549dbc690bed57c70a1ef7a49b0dcc5cd0ce4c70f5e0cb0fb1c4da
   type: DOMAIN_SUFFIX
   value: qt-project.org
@@ -1641,6 +1671,9 @@ rules:
 - id: 361d034a892b424a76e82580867705eac3df80a18cc62805a7285cbfc3288bed
   type: DOMAIN_SUFFIX
   value: rpmfusion.org
+- id: 5ab4a32c85c38e4ee4eb89df8a401935d3a314620797ed451561d46e6e47b363
+  type: DOMAIN_SUFFIX
+  value: rt.services.visualstudio.com
 - id: 5eb1fae96ef8bbe36cf94bd71f7b1c644d0081874cdb807f2783996279ca6e92
   type: DOMAIN_SUFFIX
   value: ruby-lang.org
@@ -1653,6 +1686,9 @@ rules:
 - id: 03da04c4136b4ba39953f1abe31a6c5c7377207b6901e929f629463fdc1b2651
   type: DOMAIN_SUFFIX
   value: rustup.rs
+- id: 9b42e8cf5e04057edee4aced85896861529e14089d1d88ccbf54902ccc0b65d8
+  type: DOMAIN_SUFFIX
+  value: safetycli.com
 - id: 6e4b2c6952086fc9272748f076d3a3ae1980b5cba3240b50162eb62215a3dba7
   type: DOMAIN_SUFFIX
   value: sankie.net
@@ -1809,6 +1845,9 @@ rules:
 - id: 9f064c8d8fd751a3c48a73924f1db641530d941c2f9e01e3c9e72d2ba8fc6834
   type: DOMAIN_SUFFIX
   value: tampermonkey.net
+- id: 7f97504f8db4aafd68183d740dcf2dee46b9d1b24e11c35fbad8aebc560b33f4
+  type: DOMAIN_SUFFIX
+  value: templatemonster.com
 - id: 4f3b234693a009064adc04b376ea55e0c0d7fc6e2db57e242e9ab627f5df1449
   type: DOMAIN_SUFFIX
   value: termius.com
@@ -1857,6 +1896,9 @@ rules:
 - id: 82676ea50e8f45d6f16ffd013234a43686b1cde19a0cffc19be62dfcd50d1a79
   type: DOMAIN_SUFFIX
   value: timestamp.apple.com
+- id: 8df38915e29cf54b027745ec55417f02e6768e667489998b2d887f4798d7cbd6
+  type: DOMAIN_SUFFIX
+  value: tmimgcdn.com
 - id: 271c95630df9eac74b0409bc9d6ee9205989ccbc3c699df2a26e04390e13ed80
   type: DOMAIN_SUFFIX
   value: topcoder.com
@@ -1989,9 +2031,15 @@ rules:
 - id: deb2a1b6cb125be761958e9369c0186503718e97efe2decfb242e4e518982ec9
   type: DOMAIN_SUFFIX
   value: wasmer.io
+- id: dcce70f62955b93a23faa24f09034c6340266a64bd499cf0379cb21943951ef3
+  type: DOMAIN_SUFFIX
+  value: webflow-ext.com
 - id: 78405bdf88dabd74c630f39671acc04b298114eb1dea9739d33143e80deea20f
   type: DOMAIN_SUFFIX
   value: webflow.com
+- id: fbf329cb817addddeab8730877bebd04a42472fe794a4abae521c063465f0e7a
+  type: DOMAIN_SUFFIX
+  value: webflow.io
 - id: 89f69f63f0c7dfc0d188ac0290bf5536401d21e8921212fd6dbab348e3e1b8ab
   type: DOMAIN_SUFFIX
   value: webkit.org
@@ -2004,9 +2052,33 @@ rules:
 - id: 69f37e056fe2596198fbe26d12cc8e5650ef2850581fa914e130a6ca29478a9b
   type: DOMAIN_SUFFIX
   value: webobjects.com
+- id: 0b8b3ede5210741a23be0c7c1de46c667778dec2534713c5a40d0d12cfccbcf3
+  type: DOMAIN_SUFFIX
+  value: website-files.com
 - id: fd24c742c4bf01748af1c59a69dc452a195ca30e40a574fb07ec8c92f47fdc38
   type: DOMAIN_SUFFIX
   value: wireshark.org
+- id: a71220f64e7ca58677e74c50a1b55719fd4151e91812547256c3865cfefa13c4
+  type: DOMAIN_SUFFIX
+  value: wix-code.com
+- id: e3a997b5791fb0f27cc309df653f2273add41d9aee3ec50d882b008ea90ea0e7
+  type: DOMAIN_SUFFIX
+  value: wix.com
+- id: fbd7f7883ee82fc402d23b7d17b61fa7c0d3dfcb92874243074505e5d5da5452
+  type: DOMAIN_SUFFIX
+  value: wixanswers.com
+- id: 227df392615ffc707a9d24b359f933839949e32e6406c705e2971d7192bde5fc
+  type: DOMAIN_SUFFIX
+  value: wixapps.net
+- id: 73776cf1ce7d1e8bea6d40397f51cbbdec03b3bf6c09c32d16794e42f2e3790e
+  type: DOMAIN_SUFFIX
+  value: wixmp.com
+- id: 7fa3ab11bb9d8eb67d5e38e15ce08c725a42fcac57c35fee35fa978586990715
+  type: DOMAIN_SUFFIX
+  value: wixsite.com
+- id: f48cc817d2c708b11fd65be47973a1fd5c95733f74e47ce23e642d92b6f6b8ee
+  type: DOMAIN_SUFFIX
+  value: wixstatic.com
 - id: f12ed89f7cd466239f77fa19c25f74593f88ae01765fd5359f2210dca33be6b3
   type: DOMAIN_SUFFIX
   value: wordcamp.org

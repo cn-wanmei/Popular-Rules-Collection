@@ -4,15 +4,16 @@ entity: service
 id: steam
 display_name: Steam
 generated_from:
-  run_id: 20261017T003011836133Z-run
+  run_id: 20261110T041728493091Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+  ir_digest: 5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f
 stats:
-  total: 84
+  total: 97
   by_type:
     DOMAIN: 19
     DOMAIN_KEYWORD: 3
-    DOMAIN_SUFFIX: 62
+    DOMAIN_SUFFIX: 63
+    IP_CIDR: 12
 rules:
 - id: 8a0dc392dd43e8cdc8fdafd15e7669395e072d3452bc3a4922ebc6c3ecfd9877
   type: DOMAIN
@@ -209,6 +210,9 @@ rules:
 - id: eae50858600caa7081f47db1d5a2feb750a486a31ed24fadf6e03d4f092a9528
   type: DOMAIN_SUFFIX
   value: steammobile.akamaized.net
+- id: ad29de306998e6578272afc637024fe6f44c71a4c08a2cb6b937f36085ef5d5d
+  type: DOMAIN_SUFFIX
+  value: steamos.cloud
 - id: 12215aa78f772db151bae564131aafc50fe84ea216801b49527e422126d3e840
   type: DOMAIN_SUFFIX
   value: steampipe-kr.akamaized.net
@@ -266,4 +270,40 @@ rules:
 - id: a99429c6d1eb3c5748d44bf2f8060704fa3d80d6a64dda8a15c27965cab70472
   type: DOMAIN_SUFFIX
   value: wmsjsteam.com
+- id: e350e970ab5038d165cb6ad6ca61496d742bdcc92b9e40d3613e6581f2b1194e
+  type: IP_CIDR
+  value: 103.10.124.0/23
+- id: 54c2c50dc9b5501140c4befff99f34dfc23f42cddfeb0fbc17661c3287e731c9
+  type: IP_CIDR
+  value: 103.28.54.0/24
+- id: 09bd433b2bd7cd58443053bad64990ad292561b42c2dfe5037e6f0039d302b63
+  type: IP_CIDR
+  value: 146.66.152.0/24
+- id: 835ad0285ae9f202ed445fd2cb48a9b782d2d46e390649d50a5c2bbd8dd28110
+  type: IP_CIDR
+  value: 146.66.155.0/24
+- id: 7e1f12efa4a7acf0566d4f4b38381e1c874ec1d14e8eee5c3917cd8d17609f4b
+  type: IP_CIDR
+  value: 155.133.224.0/19
+- id: d510f8aff8a227329d0096c9d1f29125346611cb3360fa83880423aa2cc2e1e5
+  type: IP_CIDR
+  value: 162.254.192.0/21
+- id: 69a71e11aa3494054b1457f1b4e5cee1be98a749f357d9467b2a8b5691647c18
+  type: IP_CIDR
+  value: 185.25.180.0/22
+- id: d10f8f8754862cb1ca5a0813e4b0f7eaf90a2e4e41050c8d11f36e4732862618
+  type: IP_CIDR
+  value: 192.69.96.0/22
+- id: 4938975eb2c1bf43982acc47b27b529420ddbce144ca7614aba88597d37b7c81
+  type: IP_CIDR
+  value: 205.196.6.0/24
+- id: 7d02b7938b77cbde0294766b14883ec31e9c9ca2758b843dfb7167d8bd6d8287
+  type: IP_CIDR
+  value: 208.64.200.0/22
+- id: 52f5ae8085e032d647b6e4e37edc71a6e41ed2c5c7bde09f74769f80e96c35ce
+  type: IP_CIDR
+  value: 208.78.164.0/22
+- id: efb7ef6fa1c2a3ccf79e12c39d13ca3fea307c26564d28f26b7260449d8f0431
+  type: IP_CIDR
+  value: 45.121.184.0/24
 provider: steam

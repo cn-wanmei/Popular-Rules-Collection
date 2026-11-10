@@ -20,6 +20,8 @@ payload:
   - DOMAIN-SUFFIX,igoogle.com
   - DOMAIN-SUFFIX,crossref.org
   - DOMAIN-SUFFIX,stcroixmosquitoproject.com
+  - DOMAIN-SUFFIX,mathworks.com
+  - DOMAIN-SUFFIX,appsgenaiserver-pa.clients.google.com
   - DOMAIN-SUFFIX,1e100.net
   - DOMAIN-SUFFIX,google.org
   - DOMAIN-SUFFIX,singlelogin.me
@@ -115,6 +117,8 @@ payload:
   - DOMAIN-SUFFIX,google.com.cy
   - DOMAIN-SUFFIX,google.com.ua
   - DOMAIN-SUFFIX,scholar.google.com.sg
+  - DOMAIN-SUFFIX,appsgenaiserver-pa.googleapis.com
+  - DOMAIN-SUFFIX,mathworks.co.uk
   - DOMAIN-SUFFIX,staging-controlbe.floonet.goog
   - DOMAIN-SUFFIX,blogspot.hu
   - DOMAIN,googleflights-cn.net
@@ -188,6 +192,7 @@ payload:
   - DOMAIN-SUFFIX,partylikeits1986.org
   - DOMAIN-SUFFIX,google.com.pa
   - DOMAIN-SUFFIX,gipscorp.com
+  - DOMAIN-SUFFIX,mathworks.in
   - DOMAIN-SUFFIX,google.cv
   - DOMAIN-SUFFIX,science.org
   - DOMAIN-SUFFIX,youtube.qa
@@ -201,6 +206,7 @@ payload:
   - DOMAIN-SUFFIX,google.com.bd
   - DOMAIN-SUFFIX,khm1.google.com
   - DOMAIN-SUFFIX,google.ca
+  - DOMAIN-SUFFIX,wolfram.com
   - DOMAIN-SUFFIX,jstor.org
   - DOMAIN-SUFFIX,google.com.na
   - IP-CIDR,74.125.0.0/16
@@ -237,6 +243,7 @@ payload:
   - DOMAIN-SUFFIX,universitypressscholarship.com
   - DOMAIN-SUFFIX,scholar.google.de
   - DOMAIN-SUFFIX,alkalicore-pa.clients6.google.com
+  - DOMAIN-SUFFIX,wolfram.co.uk
   - DOMAIN-SUFFIX,get.new
   - DOMAIN-SUFFIX,ssl.gstatic.com
   - DOMAIN-SUFFIX,scholar.google.ru
@@ -374,6 +381,7 @@ payload:
   - DOMAIN-SUFFIX,google.co.ke
   - DOMAIN-SUFFIX,google.bg
   - DOMAIN-SUFFIX,www-google-analytics.l.google.com
+  - DOMAIN-SUFFIX,mathworks.co.kr
   - DOMAIN-SUFFIX,google.td
   - DOMAIN-SUFFIX,scholar.google.it
   - DOMAIN-SUFFIX,get.rsvp
@@ -434,6 +442,7 @@ payload:
   - DOMAIN-SUFFIX,blogspot.it
   - DOMAIN-SUFFIX,globaledu.org
   - DOMAIN-SUFFIX,cloudfunctions.net
+  - DOMAIN-SUFFIX,mathworks.fr
   - DOMAIN,google-ohttp-relay-safebrowsing.fastly-edge.com
   - DOMAIN-SUFFIX,scholar.google.com.tr
   - DOMAIN-SUFFIX,tandf.co.uk
@@ -573,6 +582,7 @@ payload:
   - DOMAIN-SUFFIX,campuslondon.com
   - DOMAIN-SUFFIX,gvt1-cn.com
   - DOMAIN-SUFFIX,scholar.google.com.ly
+  - DOMAIN-SUFFIX,mathworks.cn
   - DOMAIN-SUFFIX,firebasedynamiclinks-ipv4.googleapis.com
   - DOMAIN-SUFFIX,youtube.com.mk
   - DOMAIN-SUFFIX,ouplaw.com
@@ -583,6 +593,7 @@ payload:
   - DOMAIN-SUFFIX,youtube.co.uk
   - DOMAIN,voice.telephony.goog
   - DOMAIN-SUFFIX,blogger.com
+  - DOMAIN-SUFFIX,appsgenaiserver-pa.clients6.google.com
   - DOMAIN-SUFFIX,google.com.tw
   - DOMAIN-SUFFIX,gvt2.com
   - DOMAIN-SUFFIX,scholar.google.com.bo
@@ -631,6 +642,7 @@ payload:
   - DOMAIN-SUFFIX,csiro.au
   - DOMAIN-SUFFIX,google.rw
   - DOMAIN-SUFFIX,cs4hs.com
+  - DOMAIN-SUFFIX,wolframcdn.com
   - DOMAIN-SUFFIX,bookshome.net
   - DOMAIN-SUFFIX,google.com.sg
   - DOMAIN-SUFFIX,ggoogle.com
@@ -711,6 +723,7 @@ payload:
   - DOMAIN-SUFFIX,scholar.google.co.ve
   - DOMAIN-SUFFIX,gsuite.com
   - DOMAIN-SUFFIX,mtalk4.google.com
+  - DOMAIN-SUFFIX,mathworks.nl
   - DOMAIN-SUFFIX,peerj.com
   - DOMAIN,googleanalytics.com
   - DOMAIN-SUFFIX,hwgo.com
@@ -745,6 +758,7 @@ payload:
   - DOMAIN-SUFFIX,fonts.gstatic.com
   - DOMAIN-SUFFIX,dartpad.dev
   - DOMAIN-SUFFIX,crls.pki.goog
+  - DOMAIN-SUFFIX,wolframcloud.com
   - DOMAIN-SUFFIX,google.bi
   - DOMAIN-SUFFIX,nature.com
   - DOMAIN-SUFFIX,youtube.cz
@@ -827,6 +841,7 @@ payload:
   - DOMAIN-SUFFIX,imperial.insendi.com
   - DOMAIN-SUFFIX,1lib.tw
   - DOMAIN-SUFFIX,uni-bielefeld.de
+  - DOMAIN-SUFFIX,wolframalpha.net
   - DOMAIN-SUFFIX,physiology.org
   - DOMAIN-SUFFIX,youtube.hu
   - DOMAIN-SUFFIX,hk1lib.org
@@ -1033,6 +1048,7 @@ payload:
   - DOMAIN-SUFFIX,google.com.et
   - DOMAIN-SUFFIX,youtube.ch
   - DOMAIN-SUFFIX,androidtv.com
+  - DOMAIN-SUFFIX,mathworks.se
   - DOMAIN-SUFFIX,scholar.google.ch
   - DOMAIN-SUFFIX,mail.google.com
   - DOMAIN,googletagservices-cn.com
@@ -1138,6 +1154,7 @@ payload:
   - DOMAIN-SUFFIX,apress.com
   - DOMAIN-SUFFIX,googlevads-cn.com
   - DOMAIN-SUFFIX,google.com.ni
+  - DOMAIN-SUFFIX,wolframalpha.com
   - DOMAIN-SUFFIX,youtubego.id
   - DOMAIN-SUFFIX,admob.com
   - DOMAIN-SUFFIX,itasoftware.com
@@ -1165,6 +1182,7 @@ payload:
   - DOMAIN-SUFFIX,google.com.bh
   - DOMAIN-SUFFIX,polymerproject.org
   - DOMAIN-SUFFIX,txcloud.net
+  - DOMAIN-SUFFIX,mathworks.com.au
   - DOMAIN-KEYWORD,youtube
   - DOMAIN-SUFFIX,firebase.io
   - DOMAIN-SUFFIX,openthread.io
@@ -1177,6 +1195,8 @@ payload:
   - DOMAIN-SUFFIX,blackstonespoliceservice.com
   - DOMAIN-SUFFIX,g3.gstatic.com
   - DOMAIN-SUFFIX,google.sc
+  - DOMAIN-SUFFIX,mathematica.com
+  - DOMAIN-SUFFIX,matlab.com
   - DOMAIN-SUFFIX,springernature.com
   - DOMAIN,connectivitycheck.gstatic.com
   - DOMAIN-SUFFIX,westlaw.com
@@ -1255,6 +1275,7 @@ payload:
   - DOMAIN-SUFFIX,fastlane.ci
   - DOMAIN-SUFFIX,google.co.ao
   - DOMAIN-SUFFIX,whatbrowser.org
+  - DOMAIN-SUFFIX,mathworks.de
   - DOMAIN-SUFFIX,sites.google.com
   - DOMAIN-SUFFIX,wallet.com
   - DOMAIN-SUFFIX,creativelab5.com
@@ -1340,6 +1361,7 @@ payload:
   - DOMAIN-SUFFIX,verilystudywatch.com
   - DOMAIN-SUFFIX,ok.gle
   - DOMAIN-SUFFIX,pnas.org
+  - DOMAIN-SUFFIX,mathworks.co.jp
   - DOMAIN-SUFFIX,appbridge.ca
   - DOMAIN-SUFFIX,google.co.kr
   - DOMAIN-SUFFIX,screenwisetrends.com

@@ -62,6 +62,7 @@ payload:
   - DOMAIN-SUFFIX,hotstarext.com
   - DOMAIN-SUFFIX,nationalgeographic.com
   - DOMAIN-SUFFIX,disneynewseries.com
+  - DOMAIN,disney.content.edge.bamgrid.com
   - DOMAIN-SUFFIX,disney.fr
   - DOMAIN-SUFFIX,espncdn.com
   - DOMAIN-SUFFIX,edgedatg.com
@@ -124,6 +125,7 @@ payload:
   - DOMAIN-SUFFIX,dtci.co
   - DOMAIN-SUFFIX,joinmaidez.com
   - DOMAIN-SUFFIX,themarvelexperiencetour.com
+  - DOMAIN,authorization.go.com
   - DOMAIN-SUFFIX,thewaltdisneycompany.com
   - DOMAIN-SUFFIX,hulupurchase.com
   - DOMAIN-SUFFIX,hulufree.com
@@ -211,6 +213,7 @@ payload:
   - DOMAIN-SUFFIX,disneyplus.bn5x.net
   - DOMAIN-SUFFIX,disneymagicmoments.it
   - DOMAIN-SUFFIX,huluteam.com
+  - DOMAIN,disney.playback.edge.bamgrid.com
   - DOMAIN-SUFFIX,huluqa.com
   - DOMAIN-SUFFIX,disney.in
   - DOMAIN,live-mediashield-ava-hulustream-com.akamaized.net
@@ -220,6 +223,7 @@ payload:
   - DOMAIN-SUFFIX,dssedge.com
   - DOMAIN-SUFFIX,dmed.technology
   - DOMAIN-SUFFIX,disneyprivacycenter.com
+  - DOMAIN,login.disney.com
   - DOMAIN-SUFFIX,huluad.com
   - DOMAIN-SUFFIX,disneyarena.com
   - DOMAIN-SUFFIX,espn.com

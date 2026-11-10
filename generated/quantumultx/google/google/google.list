@@ -19,6 +19,8 @@ host-suffix, clickserver.googleads.com, proxy
 host-suffix, igoogle.com, proxy
 host-suffix, crossref.org, proxy
 host-suffix, stcroixmosquitoproject.com, proxy
+host-suffix, mathworks.com, proxy
+host-suffix, appsgenaiserver-pa.clients.google.com, proxy
 host-suffix, 1e100.net, proxy
 host-suffix, google.org, proxy
 host-suffix, singlelogin.me, proxy
@@ -114,6 +116,8 @@ host-suffix, youtube.com.tr, proxy
 host-suffix, google.com.cy, proxy
 host-suffix, google.com.ua, proxy
 host-suffix, scholar.google.com.sg, proxy
+host-suffix, appsgenaiserver-pa.googleapis.com, proxy
+host-suffix, mathworks.co.uk, proxy
 host-suffix, staging-controlbe.floonet.goog, proxy
 host-suffix, blogspot.hu, proxy
 host, googleflights-cn.net, proxy
@@ -187,6 +191,7 @@ host-suffix, nest.com, proxy
 host-suffix, partylikeits1986.org, proxy
 host-suffix, google.com.pa, proxy
 host-suffix, gipscorp.com, proxy
+host-suffix, mathworks.in, proxy
 host-suffix, google.cv, proxy
 host-suffix, science.org, proxy
 host-suffix, youtube.qa, proxy
@@ -200,6 +205,7 @@ host, google-analytics.com, proxy
 host-suffix, google.com.bd, proxy
 host-suffix, khm1.google.com, proxy
 host-suffix, google.ca, proxy
+host-suffix, wolfram.com, proxy
 host-suffix, jstor.org, proxy
 host-suffix, google.com.na, proxy
 ip-cidr, 74.125.0.0/16, proxy
@@ -236,6 +242,7 @@ host-suffix, www.destinationurl.com, proxy
 host-suffix, universitypressscholarship.com, proxy
 host-suffix, scholar.google.de, proxy
 host-suffix, alkalicore-pa.clients6.google.com, proxy
+host-suffix, wolfram.co.uk, proxy
 host-suffix, get.new, proxy
 host-suffix, ssl.gstatic.com, proxy
 host-suffix, scholar.google.ru, proxy
@@ -373,6 +380,7 @@ host-suffix, google.bt, proxy
 host-suffix, google.co.ke, proxy
 host-suffix, google.bg, proxy
 host-suffix, www-google-analytics.l.google.com, proxy
+host-suffix, mathworks.co.kr, proxy
 host-suffix, google.td, proxy
 host-suffix, scholar.google.it, proxy
 host-suffix, get.rsvp, proxy
@@ -433,6 +441,7 @@ host-suffix, adwords-community.com, proxy
 host-suffix, blogspot.it, proxy
 host-suffix, globaledu.org, proxy
 host-suffix, cloudfunctions.net, proxy
+host-suffix, mathworks.fr, proxy
 host, google-ohttp-relay-safebrowsing.fastly-edge.com, proxy
 host-suffix, scholar.google.com.tr, proxy
 host-suffix, tandf.co.uk, proxy
@@ -572,6 +581,7 @@ host, www-googletagmanager.l.google.com, proxy
 host-suffix, campuslondon.com, proxy
 host-suffix, gvt1-cn.com, proxy
 host-suffix, scholar.google.com.ly, proxy
+host-suffix, mathworks.cn, proxy
 host-suffix, firebasedynamiclinks-ipv4.googleapis.com, proxy
 host-suffix, youtube.com.mk, proxy
 host-suffix, ouplaw.com, proxy
@@ -582,6 +592,7 @@ host-suffix, omscr.com, proxy
 host-suffix, youtube.co.uk, proxy
 host, voice.telephony.goog, proxy
 host-suffix, blogger.com, proxy
+host-suffix, appsgenaiserver-pa.clients6.google.com, proxy
 host-suffix, google.com.tw, proxy
 host-suffix, gvt2.com, proxy
 host-suffix, scholar.google.com.bo, proxy
@@ -630,6 +641,7 @@ host-suffix, stxmosquitoproject.org, proxy
 host-suffix, csiro.au, proxy
 host-suffix, google.rw, proxy
 host-suffix, cs4hs.com, proxy
+host-suffix, wolframcdn.com, proxy
 host-suffix, bookshome.net, proxy
 host-suffix, google.com.sg, proxy
 host-suffix, ggoogle.com, proxy
@@ -710,6 +722,7 @@ host-suffix, forms.google.com, proxy
 host-suffix, scholar.google.co.ve, proxy
 host-suffix, gsuite.com, proxy
 host-suffix, mtalk4.google.com, proxy
+host-suffix, mathworks.nl, proxy
 host-suffix, peerj.com, proxy
 host, googleanalytics.com, proxy
 host-suffix, hwgo.com, proxy
@@ -744,6 +757,7 @@ host-suffix, blogspot.co.at, proxy
 host-suffix, fonts.gstatic.com, proxy
 host-suffix, dartpad.dev, proxy
 host-suffix, crls.pki.goog, proxy
+host-suffix, wolframcloud.com, proxy
 host-suffix, google.bi, proxy
 host-suffix, nature.com, proxy
 host-suffix, youtube.cz, proxy
@@ -826,6 +840,7 @@ host-suffix, pagead.l.google.com, proxy
 host-suffix, imperial.insendi.com, proxy
 host-suffix, 1lib.tw, proxy
 host-suffix, uni-bielefeld.de, proxy
+host-suffix, wolframalpha.net, proxy
 host-suffix, physiology.org, proxy
 host-suffix, youtube.hu, proxy
 host-suffix, hk1lib.org, proxy
@@ -1032,6 +1047,7 @@ host-suffix, youtube.com.jm, proxy
 host-suffix, google.com.et, proxy
 host-suffix, youtube.ch, proxy
 host-suffix, androidtv.com, proxy
+host-suffix, mathworks.se, proxy
 host-suffix, scholar.google.ch, proxy
 host-suffix, mail.google.com, proxy
 host, googletagservices-cn.com, proxy
@@ -1137,6 +1153,7 @@ host-suffix, youtube.com.hk, proxy
 host-suffix, apress.com, proxy
 host-suffix, googlevads-cn.com, proxy
 host-suffix, google.com.ni, proxy
+host-suffix, wolframalpha.com, proxy
 host-suffix, youtubego.id, proxy
 host-suffix, admob.com, proxy
 host-suffix, itasoftware.com, proxy
@@ -1164,6 +1181,7 @@ host-suffix, google.ventures, proxy
 host-suffix, google.com.bh, proxy
 host-suffix, polymerproject.org, proxy
 host-suffix, txcloud.net, proxy
+host-suffix, mathworks.com.au, proxy
 host-keyword, youtube, proxy
 host-suffix, firebase.io, proxy
 host-suffix, openthread.io, proxy
@@ -1176,6 +1194,8 @@ host-suffix, springerlink.com, proxy
 host-suffix, blackstonespoliceservice.com, proxy
 host-suffix, g3.gstatic.com, proxy
 host-suffix, google.sc, proxy
+host-suffix, mathematica.com, proxy
+host-suffix, matlab.com, proxy
 host-suffix, springernature.com, proxy
 host, connectivitycheck.gstatic.com, proxy
 host-suffix, westlaw.com, proxy
@@ -1254,6 +1274,7 @@ host-suffix, epigeum.com, proxy
 host-suffix, fastlane.ci, proxy
 host-suffix, google.co.ao, proxy
 host-suffix, whatbrowser.org, proxy
+host-suffix, mathworks.de, proxy
 host-suffix, sites.google.com, proxy
 host-suffix, wallet.com, proxy
 host-suffix, creativelab5.com, proxy
@@ -1339,6 +1360,7 @@ host-suffix, getbumptop.com, proxy
 host-suffix, verilystudywatch.com, proxy
 host-suffix, ok.gle, proxy
 host-suffix, pnas.org, proxy
+host-suffix, mathworks.co.jp, proxy
 host-suffix, appbridge.ca, proxy
 host-suffix, google.co.kr, proxy
 host-suffix, screenwisetrends.com, proxy

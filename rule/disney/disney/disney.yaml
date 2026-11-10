@@ -4,15 +4,28 @@ entity: service
 id: disney
 display_name: Disney
 generated_from:
-  run_id: 20261017T003011836133Z-run
+  run_id: 20261110T041728493091Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+  ir_digest: 5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f
 stats:
-  total: 177
+  total: 181
   by_type:
+    DOMAIN: 4
     DOMAIN_SUFFIX: 175
     PROCESS_NAME: 2
 rules:
+- id: 85f47694f3d8d37cae892ae6352fa067e25011963b74b7c51b7f27584b54ff1a
+  type: DOMAIN
+  value: authorization.go.com
+- id: 472cef06f0988f75c166dd50e994344a6be7630b8b4d0db55869e2f6c9aba017
+  type: DOMAIN
+  value: disney.content.edge.bamgrid.com
+- id: e67e9e2188389aba19c6d53696d7183ccfdcdfcf2f9772d5440ede731c6102ed
+  type: DOMAIN
+  value: disney.playback.edge.bamgrid.com
+- id: f27d847672fd27829fba8877f1464c9582096fba96e2fe4e87273b3ee7316dbc
+  type: DOMAIN
+  value: login.disney.com
 - id: 29f6dfcba3de6ee9e92d2c84f8499c998ba7e56640b647e1a3c84df392cf997e
   type: DOMAIN_SUFFIX
   value: 20thcenturystudios.com.au

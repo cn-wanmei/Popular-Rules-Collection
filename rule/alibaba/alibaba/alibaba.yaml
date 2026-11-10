@@ -4,14 +4,14 @@ entity: provider_aggregate
 id: alibaba
 display_name: Alibaba
 generated_from:
-  run_id: 20261017T003011836133Z-run
+  run_id: 20261110T041728493091Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5
+  ir_digest: 5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f
 stats:
-  total: 539
+  total: 542
   by_type:
     DOMAIN-KEYWORD: 4
-    DOMAIN_SUFFIX: 480
+    DOMAIN_SUFFIX: 483
     IP_CIDR: 53
     IP_CIDR6: 1
     PROCESS_NAME: 1
@@ -373,6 +373,9 @@ rules:
 - id: 9ae4a25643b18db289a890c76b5279592fc08b87a54510db620fe067706bf6d1
   type: DOMAIN_SUFFIX
   value: aliunicorn.com
+- id: 5deb7e3582ca0f076619818d8ab36c63097fb1c9e47325a3e53cf5633f1a5051
+  type: DOMAIN_SUFFIX
+  value: alivecdn.com
 - id: dbc237f2fe5f075ed722c9b7f87ae7da8b431a35c9212a7fc1e989f9c43cefbc
   type: DOMAIN_SUFFIX
   value: aliway.com
@@ -763,6 +766,9 @@ rules:
 - id: e73f005f525aff565f2e5552108cf5181603d7bd3dd46a1fd8146063d1175e50
   type: DOMAIN_SUFFIX
   value: hichina.com
+- id: 442c7ce5b299495ef40b52aa76d0eb032a04482612990ea05310c5fbf00ad0d6
+  type: DOMAIN_SUFFIX
+  value: hmxs.cn
 - id: 8e5ff15cee00f227e60a4b9e0f9191e8bff3bc28bf1b98ff34dedf65ab01ba0f
   type: DOMAIN_SUFFIX
   value: hotfix-api.aliyuncs.com
@@ -958,6 +964,9 @@ rules:
 - id: 1efcfdecfd5a6a86667609362c1f2c9832d0a9a6ec99649443ec700359f33418
   type: DOMAIN_SUFFIX
   value: mashort.cn
+- id: ee02f5e9d34b946cd8ca5b283286b8deb44fd450b4f4dcd87472248144eabc78
+  type: DOMAIN_SUFFIX
+  value: mayibao.cn
 - id: b80eef2c3824ed855858c7d1c50dac1365d426937490605129c88b71e3b5f7c5
   type: DOMAIN_SUFFIX
   value: mdeer.com

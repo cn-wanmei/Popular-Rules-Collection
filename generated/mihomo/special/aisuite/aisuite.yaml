@@ -73,11 +73,6 @@ payload:
   - DOMAIN-SUFFIX,cursorapi.com
   - DOMAIN-SUFFIX,cursorvm.com
   - DOMAIN,accounts.spacex.ai
-  - DOMAIN,accounts.x.ai
-  - DOMAIN,auth.grok.com
-  - DOMAIN,auth.grokipedia.com
-  - DOMAIN,auth.grokusercontent.com
-  - DOMAIN,auth.x.ai
   - DOMAIN-SUFFIX,diabrowser.com
   - DOMAIN-SUFFIX,diabrowser.engineering
   - DOMAIN-SUFFIX,dify.ai
@@ -101,6 +96,20 @@ payload:
   - DOMAIN,cloudcode-pa.googleapis.com
   - DOMAIN,daily-cloudcode-pa.googleapis.com
   - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
+  - DOMAIN,aiplatform.eu.rep.googleapis.com
+  - DOMAIN,aiplatform.googleapis.com
+  - DOMAIN,aiplatform.mtls.googleapis.com
+  - DOMAIN,aiplatform.us.rep.googleapis.com
+  - DOMAIN,businessaicode.eu.rep.googleapis.com
+  - DOMAIN,businessaicode.googleapis.com
+  - DOMAIN,businessaicode.mtls.googleapis.com
+  - DOMAIN,businessaicode.us.rep.googleapis.com
+  - DOMAIN,discoveryengine.googleapis.com
+  - DOMAIN,discoveryengine.mtls.googleapis.com
+  - DOMAIN,eu-discoveryengine.googleapis.com
+  - DOMAIN,eu-discoveryengine.mtls.googleapis.com
+  - DOMAIN,us-discoveryengine.googleapis.com
+  - DOMAIN,us-discoveryengine.mtls.googleapis.com
   - DOMAIN,aida.googleapis.com
   - DOMAIN-SUFFIX,deepmind.com
   - DOMAIN-SUFFIX,deepmind.google
@@ -158,6 +167,7 @@ payload:
   - DOMAIN,q.eu-central-1.amazonaws.com
   - DOMAIN,q.us-east-1.amazonaws.com
   - DOMAIN-SUFFIX,meta.ai
+  - DOMAIN-SUFFIX,muse.ai
   - DOMAIN-SUFFIX,copilot.cloud.microsoft
   - DOMAIN-SUFFIX,copilot.com
   - DOMAIN-SUFFIX,copilot.microsoft.com
@@ -177,3 +187,7 @@ payload:
   - DOMAIN-SUFFIX,codeiumdata.com
   - DOMAIN-SUFFIX,windsurf.com
   - DOMAIN-SUFFIX,zed.dev
+  - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,grokipedia.com
+  - DOMAIN-SUFFIX,grokusercontent.com
+  - DOMAIN-SUFFIX,x.ai
