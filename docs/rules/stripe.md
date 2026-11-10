@@ -16,14 +16,14 @@
 | Provider | `stripe` |
 | 规则浏览路径 | `rule/stripe/stripe/stripe.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `5d4a6bcd49e4f7503ef70063bbabaa9486c6d64f239e8fbf0587cbab98eaf43d` |
+| SHA-256 | `39f068bfc0db828e1526f66673ab41eb6d77e9ac19b217ad21a50f5f545d86ab` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

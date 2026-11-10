@@ -16,14 +16,14 @@
 | Provider | `adobe` |
 | 规则浏览路径 | `rule/adobe/adobe-fonts/adobe-fonts.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `85a27d7f2232ab42faa755bca5178a13a44d6fb7341bc599c8a03b84d6696573` |
+| SHA-256 | `04023079e8ae9ecdd65b6f6411ebe88c7023072a1c1d4398ecf789f47870bcc6` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

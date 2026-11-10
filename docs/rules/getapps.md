@@ -16,14 +16,14 @@
 | Provider | `xiaomi` |
 | 规则浏览路径 | `rule/xiaomi/getapps/getapps.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `55d71070cf15d81d735e3ea6dfa4a79ef7a14a636e9f0728adbc7de6ec715525` |
+| SHA-256 | `5aa39ffbfdfe623331979a62b1913fc8c0264c0993cf78efe9a14d71ee99e984` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

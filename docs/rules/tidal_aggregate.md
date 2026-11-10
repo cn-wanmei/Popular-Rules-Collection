@@ -16,14 +16,14 @@
 | Provider | `tidal` |
 | 规则浏览路径 | `rule/tidal/tidal_aggregate/tidal_aggregate.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `e885e84ccab7b72d2e9b46855eb0c1a2f2fe9b6d4ec793f121ace7d4a01113f6` |
+| SHA-256 | `c8e4d4054ba02efedd0c8713d7d3cb32627b4fbef3bf17f629d65df4fd296dd7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

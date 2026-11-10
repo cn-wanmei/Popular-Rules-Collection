@@ -16,14 +16,14 @@
 | Provider | `atlassian` |
 | 规则浏览路径 | `rule/atlassian/atlassian_aggregate/atlassian_aggregate.yaml` |
 | 规则数量（_index） | **4** |
-| SHA-256 | `472f1a114a1a2b5a23b22d71deba9031b6aef8dedc57de4963319aa13d60169b` |
+| SHA-256 | `015afe1fa6584c13e10b87393a267a118d999cf6028e7d19832dcbe486670cb5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

@@ -16,14 +16,14 @@
 | Provider | `chinamobile` |
 | 规则浏览路径 | `rule/chinamobile/chinamobile_aggregate/chinamobile_aggregate.yaml` |
 | 规则数量（_index） | **38** |
-| SHA-256 | `87dee58e1e64d9018cef8cc8dc3a8719709a491880d314ebec41ced87a72bf9f` |
+| SHA-256 | `430aabd9d5663279dfef5b92eed4b3a9840810667939fb566a16d437cb76b3eb` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

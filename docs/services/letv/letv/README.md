@@ -16,14 +16,14 @@
 | Provider | `letv` |
 | 规则浏览路径 | `rule/letv/letv/letv.yaml` |
 | 规则数量（_index） | **13** |
-| SHA-256 | `3e4b7a57159fb7389eeaa0fb06dec2493e37167c860bda5012d8949be0f8db62` |
+| SHA-256 | `46c34356576bcd8a41476605c7d358f44f97af387c24833f1928f507ad91d259` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

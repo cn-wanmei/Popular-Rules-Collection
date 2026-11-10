@@ -16,14 +16,14 @@
 | Provider | `roborock` |
 | 规则浏览路径 | `rule/roborock/roborock/roborock.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `e7b5356bc4c8704e999fd16b2a7bdb11b989defc594a5738dcc46c818affcac3` |
+| SHA-256 | `1535f6d9d93b6a5969b0167caa2595fa7e4959eb65524ce1961bf985ac515aed` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

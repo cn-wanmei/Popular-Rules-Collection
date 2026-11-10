@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `steam` |
 | 规则浏览路径 | `rule/steam/steam_aggregate/steam_aggregate.yaml` |
-| 规则数量（_index） | **84** |
-| SHA-256 | `b7c1b63af7a85d4fa9eb19161391ad125dc3a878eeec0919d3ecf75a36704c53` |
+| 规则数量（_index） | **97** |
+| SHA-256 | `6d7c6af5a45bcdc6bf39abc46c7a01b8587b2b6afba7c378c032d12636d94bb6` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 84 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/steam/steam_aggregate/steam_aggregate.yaml` |
-| loon | 84 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/steam/steam_aggregate/steam_aggregate.list` |
-| mihomo | 84 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/steam/steam_aggregate/steam_aggregate.yaml` |
-| quantumultx | 84 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/steam/steam_aggregate/steam_aggregate.list` |
-| shadowrocket | 84 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/steam/steam_aggregate/steam_aggregate.list` |
+| egern | 97 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/steam/steam_aggregate/steam_aggregate.yaml` |
+| loon | 97 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/steam/steam_aggregate/steam_aggregate.list` |
+| mihomo | 97 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/steam/steam_aggregate/steam_aggregate.yaml` |
+| quantumultx | 97 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/steam/steam_aggregate/steam_aggregate.list` |
+| shadowrocket | 97 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/steam/steam_aggregate/steam_aggregate.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/steam/steam_aggregate/steam_aggregate.json` |
-| surge | 84 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/steam/steam_aggregate/steam_aggregate.list` |
+| surge | 97 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/steam/steam_aggregate/steam_aggregate.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

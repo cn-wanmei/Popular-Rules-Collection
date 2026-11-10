@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `special` |
 | 规则浏览路径 | `rule/special/ai/ai.yaml` |
-| 规则数量（_index） | **189** |
-| SHA-256 | `403887971e8cc85b1eca7571fbda7fbd72cb6d81f87da73e54474476a9de3cf1` |
+| 规则数量（_index） | **217** |
+| SHA-256 | `6979c847fcd6a3ff87928bd5239ac0f93bb277166284d688b7256ad5fc06fb2d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 189 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/special/ai/ai.yaml` |
-| loon | 189 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/special/ai/ai.list` |
-| mihomo | 189 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/special/ai/ai.yaml` |
-| quantumultx | 189 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/special/ai/ai.list` |
-| shadowrocket | 189 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/special/ai/ai.list` |
+| egern | 217 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/special/ai/ai.yaml` |
+| loon | 217 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/special/ai/ai.list` |
+| mihomo | 217 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/special/ai/ai.yaml` |
+| quantumultx | 217 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/special/ai/ai.list` |
+| shadowrocket | 217 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/special/ai/ai.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/special/ai/ai.json` |
-| surge | 189 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/special/ai/ai.list` |
+| surge | 217 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/special/ai/ai.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

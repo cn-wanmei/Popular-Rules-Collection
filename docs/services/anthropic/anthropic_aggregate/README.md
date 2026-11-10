@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `anthropic` |
 | 规则浏览路径 | `rule/anthropic/anthropic_aggregate/anthropic_aggregate.yaml` |
-| 规则数量（_index） | **12** |
-| SHA-256 | `4e62b787206257d2d795062d1fff6e61239d990fe68e2d351f7e65608237bc67` |
+| 规则数量（_index） | **26** |
+| SHA-256 | `bad8115ec0c07466bf8c976a4a5e33e5351fa6450080f0eca1d6635ce480ee3e` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 12 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/anthropic/anthropic_aggregate/anthropic_aggregate.yaml` |
-| loon | 12 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/anthropic/anthropic_aggregate/anthropic_aggregate.list` |
-| mihomo | 12 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/anthropic/anthropic_aggregate/anthropic_aggregate.yaml` |
-| quantumultx | 12 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/anthropic/anthropic_aggregate/anthropic_aggregate.list` |
-| shadowrocket | 12 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/anthropic/anthropic_aggregate/anthropic_aggregate.list` |
+| egern | 26 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/anthropic/anthropic_aggregate/anthropic_aggregate.yaml` |
+| loon | 26 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/anthropic/anthropic_aggregate/anthropic_aggregate.list` |
+| mihomo | 26 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/anthropic/anthropic_aggregate/anthropic_aggregate.yaml` |
+| quantumultx | 26 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/anthropic/anthropic_aggregate/anthropic_aggregate.list` |
+| shadowrocket | 26 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/anthropic/anthropic_aggregate/anthropic_aggregate.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/anthropic/anthropic_aggregate/anthropic_aggregate.json` |
-| surge | 12 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/anthropic/anthropic_aggregate/anthropic_aggregate.list` |
+| surge | 26 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/anthropic/anthropic_aggregate/anthropic_aggregate.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

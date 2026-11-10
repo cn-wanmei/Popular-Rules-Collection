@@ -16,14 +16,14 @@
 | Provider | `amazon` |
 | 规则浏览路径 | `rule/amazon/primevideo/primevideo.yaml` |
 | 规则数量（_index） | **26** |
-| SHA-256 | `f172538ff57bd7325c3dd0c9ec60285370210b94ed56e50103811bab1745c1e3` |
+| SHA-256 | `f2d2a0a18bcccf9aea6877a2c7ae49a07b9c7154846a8601d789a76e7302dfb4` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

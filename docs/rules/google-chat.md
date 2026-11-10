@@ -16,14 +16,14 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-chat/google-chat.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `e6a326ffa223cabb44cf293f951e99c859c000f13cca5631ed70c6f23881b9c8` |
+| SHA-256 | `ca46b349d86df48d628719a8732b3155ec4d4a17873dcfe564a3051d24c04ae7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

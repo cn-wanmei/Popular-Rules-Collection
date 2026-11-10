@@ -16,14 +16,14 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-search/google-search.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `fbce6020844749381ab76d4c4ea8930d4d3caeb5b9dbd20517059d0450b2927a` |
+| SHA-256 | `b985cfe15bb2ebbb60c60ef20654edfa1aac6bc66d198259ce4251dd4c4646ee` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

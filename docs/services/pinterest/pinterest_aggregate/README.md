@@ -16,14 +16,14 @@
 | Provider | `pinterest` |
 | 规则浏览路径 | `rule/pinterest/pinterest_aggregate/pinterest_aggregate.yaml` |
 | 规则数量（_index） | **23** |
-| SHA-256 | `b65f315dc341e4c0a2ab4c0f537a16b042611f9924da5fbf1d8c7c6d90e69a1b` |
+| SHA-256 | `ed3191be988dd83c47b4566bfe823d45b91e20840281df1acde544f4e9b7c4d4` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

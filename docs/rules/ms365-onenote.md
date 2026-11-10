@@ -16,14 +16,14 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/ms365-onenote/ms365-onenote.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `5dddc15fa2ce5c8ee3478ac14c732742d84dc4d6cb4143e369582a363ffcda45` |
+| SHA-256 | `2c213c8b86e691ffc60d8ac0929cd7b837adfaf417dfbc16a7e11d00ea24850e` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

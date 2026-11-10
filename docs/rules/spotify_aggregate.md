@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `spotify` |
 | 规则浏览路径 | `rule/spotify/spotify_aggregate/spotify_aggregate.yaml` |
-| 规则数量（_index） | **38** |
-| SHA-256 | `710c8fdbb914c18cd33ee7de23f974871d6b714e075b112c225cfff3139f1926` |
+| 规则数量（_index） | **39** |
+| SHA-256 | `d59824dc8ccf2447080cb0f03e654c2593a53c4ee00756f850a4dc8bbc3f9a2f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 37 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/spotify/spotify_aggregate/spotify_aggregate.yaml` |
-| loon | 37 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/spotify/spotify_aggregate/spotify_aggregate.list` |
-| mihomo | 37 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/spotify/spotify_aggregate/spotify_aggregate.yaml` |
-| quantumultx | 37 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/spotify/spotify_aggregate/spotify_aggregate.list` |
-| shadowrocket | 37 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/spotify/spotify_aggregate/spotify_aggregate.list` |
+| egern | 38 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/spotify/spotify_aggregate/spotify_aggregate.yaml` |
+| loon | 38 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/spotify/spotify_aggregate/spotify_aggregate.list` |
+| mihomo | 38 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/spotify/spotify_aggregate/spotify_aggregate.yaml` |
+| quantumultx | 38 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/spotify/spotify_aggregate/spotify_aggregate.list` |
+| shadowrocket | 38 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/spotify/spotify_aggregate/spotify_aggregate.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/spotify/spotify_aggregate/spotify_aggregate.json` |
-| surge | 37 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/spotify/spotify_aggregate/spotify_aggregate.list` |
+| surge | 38 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/spotify/spotify_aggregate/spotify_aggregate.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

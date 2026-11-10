@@ -16,14 +16,14 @@
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/appletv/appletv.yaml` |
 | 规则数量（_index） | **7** |
-| SHA-256 | `5961d2d6c0e1b416ca202a0129300487490120ec8d12e08dfbafaa694e3b84a0` |
+| SHA-256 | `2483841fe8597ecc1075c6877ec96649496f08e7db0dfe8339e1af4ee6a73e18` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

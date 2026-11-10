@@ -1,7 +1,7 @@
 # Service Catalog (generated)
 
-Run: `20261017T003011836133Z-run`  
-IR: `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5`  
+Run: `20261110T041728493091Z-run`  
+IR: `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f`  
 Services: **651**  
 Icon release: `icon-2026.10.06.full1`
 
@@ -23,11 +23,11 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `adobe-firefly` | Adobe Firefly | `adobe` | service | 1 | 7 | [adobe-firefly](rules/adobe-firefly.md) |
 | `adobe-fonts` | Adobe Fonts | `adobe` | service | 1 | 7 | [adobe-fonts](rules/adobe-fonts.md) |
 | `adobe-stock` | Adobe Stock | `adobe` | service | 1 | 7 | [adobe-stock](rules/adobe-stock.md) |
-| `ai` | AI | `special` | service | 189 | 7 | [ai](rules/ai.md) |
+| `ai` | AI | `special` | service | 217 | 7 | [ai](rules/ai.md) |
 | `airbnb` | Airbnb | `airbnb` | service | 83 | 7 | [airbnb](rules/airbnb.md) |
 | `airbnb_aggregate` | Airbnb | `airbnb` | provider_aggregate | 83 | 7 | [airbnb_aggregate](rules/airbnb_aggregate.md) |
-| `aisuite` | AI Suite | `special` | service | 178 | 7 | [aisuite](rules/aisuite.md) |
-| `alibaba` | Alibaba | `alibaba` | provider_aggregate | 539 | 7 | [alibaba](rules/alibaba.md) |
+| `aisuite` | AI Suite | `special` | service | 192 | 7 | [aisuite](rules/aisuite.md) |
+| `alibaba` | Alibaba | `alibaba` | provider_aggregate | 542 | 7 | [alibaba](rules/alibaba.md) |
 | `alibabacloud` | Alibaba Cloud | `alibaba` | service | 12 | 7 | [alibabacloud](rules/alibabacloud.md) |
 | `aliexpress` | AliExpress | `alibaba` | service | 2 | 7 | [aliexpress](rules/aliexpress.md) |
 | `alipay` | Alipay | `alibaba` | service | 2 | 7 | [alipay](rules/alipay.md) |
@@ -40,11 +40,11 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `anjuke_aggregate` | 安居客 | `anjuke` | provider_aggregate | 2 | 7 | [anjuke_aggregate](rules/anjuke_aggregate.md) |
 | `anker` | 安克创新 | `anker` | service | 2 | 7 | [anker](rules/anker.md) |
 | `anker_aggregate` | 安克创新 | `anker` | provider_aggregate | 2 | 7 | [anker_aggregate](rules/anker_aggregate.md) |
-| `anthropic` | Anthropic | `anthropic` | service | 10 | 7 | [anthropic](rules/anthropic.md) |
+| `anthropic` | Anthropic | `anthropic` | service | 24 | 7 | [anthropic](rules/anthropic.md) |
 | `anthropic-claude` | Claude | `anthropic` | service | 1 | 7 | [anthropic-claude](rules/anthropic-claude.md) |
 | `anthropic-platform` | Anthropic Platform | `anthropic` | service | 1 | 7 | [anthropic-platform](rules/anthropic-platform.md) |
-| `anthropic_aggregate` | Anthropic | `anthropic` | provider_aggregate | 12 | 7 | [anthropic_aggregate](rules/anthropic_aggregate.md) |
-| `apple` | Apple | `apple` | provider_aggregate | 2039 | 7 | [apple](rules/apple.md) |
+| `anthropic_aggregate` | Anthropic | `anthropic` | provider_aggregate | 26 | 7 | [anthropic_aggregate](rules/anthropic_aggregate.md) |
+| `apple` | Apple | `apple` | provider_aggregate | 2047 | 7 | [apple](rules/apple.md) |
 | `applebooks` | Apple Books | `apple` | service | 1 | 7 | [applebooks](rules/applebooks.md) |
 | `appledev` | Apple Developer | `apple` | service | 38 | 7 | [appledev](rules/appledev.md) |
 | `applefirmware` | Apple Firmware | `apple` | service | 175 | 7 | [applefirmware](rules/applefirmware.md) |
@@ -113,7 +113,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `broadcom_aggregate` | Broadcom | `broadcom` | provider_aggregate | 2 | 7 | [broadcom_aggregate](rules/broadcom_aggregate.md) |
 | `byd` | BYD | `byd` | service | 2 | 7 | [byd](rules/byd.md) |
 | `byd_aggregate` | BYD | `byd` | provider_aggregate | 2 | 7 | [byd_aggregate](rules/byd_aggregate.md) |
-| `bytedance` | ByteDance | `bytedance` | provider_aggregate | 1099 | 7 | [bytedance](rules/bytedance.md) |
+| `bytedance` | ByteDance | `bytedance` | provider_aggregate | 1105 | 7 | [bytedance](rules/bytedance.md) |
 | `cadence` | Cadence | `cadence` | service | 2 | 7 | [cadence](rules/cadence.md) |
 | `cadence_aggregate` | Cadence | `cadence` | provider_aggregate | 2 | 7 | [cadence_aggregate](rules/cadence_aggregate.md) |
 | `cainiao` | Cainiao | `alibaba` | service | 1 | 7 | [cainiao](rules/cainiao.md) |
@@ -131,7 +131,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `ceb` | China Everbright Bank | `ceb` | service | 15 | 7 | [ceb](rules/ceb.md) |
 | `ceb_aggregate` | China Everbright Bank | `ceb` | provider_aggregate | 15 | 7 | [ceb_aggregate](rules/ceb_aggregate.md) |
 | `chatgpt` | ChatGPT | `openai` | service | 1 | 7 | [chatgpt](rules/chatgpt.md) |
-| `china` | China | `` | domestic_aggregate | 110834 | 0 | [china](rules/china.md) |
+| `china` | China | `` | domestic_aggregate | 110479 | 0 | [china](rules/china.md) |
 | `chinamobile` | China Mobile | `chinamobile` | service | 38 | 7 | [chinamobile](rules/chinamobile.md) |
 | `chinamobile_aggregate` | China Mobile | `chinamobile` | provider_aggregate | 38 | 7 | [chinamobile_aggregate](rules/chinamobile_aggregate.md) |
 | `chinatelecom` | China Telecom | `chinatelecom` | service | 83 | 7 | [chinatelecom](rules/chinatelecom.md) |
@@ -155,8 +155,8 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `ctrip_aggregate` | Trip.com | `ctrip` | provider_aggregate | 29 | 7 | [ctrip_aggregate](rules/ctrip_aggregate.md) |
 | `ctyun` | 天翼云 | `ctyun` | service | 2 | 7 | [ctyun](rules/ctyun.md) |
 | `ctyun_aggregate` | 天翼云 | `ctyun` | provider_aggregate | 2 | 7 | [ctyun_aggregate](rules/ctyun_aggregate.md) |
-| `cursor` | Cursor | `cursor` | service | 4 | 7 | [cursor](rules/cursor.md) |
-| `cursor_aggregate` | Cursor | `cursor` | provider_aggregate | 4 | 7 | [cursor_aggregate](rules/cursor_aggregate.md) |
+| `cursor` | Cursor | `cursor` | service | 5 | 7 | [cursor](rules/cursor.md) |
+| `cursor_aggregate` | Cursor | `cursor` | provider_aggregate | 5 | 7 | [cursor_aggregate](rules/cursor_aggregate.md) |
 | `dahua` | 大华股份 | `dahua` | service | 2 | 7 | [dahua](rules/dahua.md) |
 | `dahua_aggregate` | 大华股份 | `dahua` | provider_aggregate | 2 | 7 | [dahua_aggregate](rules/dahua_aggregate.md) |
 | `dassault` | Dassault Systèmes | `dassault` | service | 2 | 7 | [dassault](rules/dassault.md) |
@@ -169,8 +169,8 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `deepseek_aggregate` | DeepSeek | `deepseek` | provider_aggregate | 2 | 7 | [deepseek_aggregate](rules/deepseek_aggregate.md) |
 | `dell` | Dell | `dell` | service | 2 | 7 | [dell](rules/dell.md) |
 | `dell_aggregate` | Dell | `dell` | provider_aggregate | 2 | 7 | [dell_aggregate](rules/dell_aggregate.md) |
-| `developer` | developer | `` | aggregate | 685 | 7 | [developer](rules/developer.md) |
-| `developer` | Developer Ecosystem | `` | category | 285 | 7 | [developer](rules/developer.md) |
+| `developer` | developer | `` | aggregate | 709 | 7 | [developer](rules/developer.md) |
+| `developer` | Developer Ecosystem | `` | category | 286 | 7 | [developer](rules/developer.md) |
 | `dewu` | Dewu | `dewu` | service | 45 | 7 | [dewu](rules/dewu.md) |
 | `dewu_aggregate` | Dewu | `dewu` | provider_aggregate | 45 | 7 | [dewu_aggregate](rules/dewu_aggregate.md) |
 | `didi` | DiDi | `didi` | service | 25 | 7 | [didi](rules/didi.md) |
@@ -180,8 +180,8 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `dingding` | DingTalk | `alibaba` | service | 3 | 7 | [dingding](rules/dingding.md) |
 | `discord` | Discord | `discord` | service | 28 | 7 | [discord](rules/discord.md) |
 | `discord_aggregate` | Discord | `discord` | provider_aggregate | 28 | 7 | [discord_aggregate](rules/discord_aggregate.md) |
-| `disney` | Disney | `disney` | service | 177 | 7 | [disney](rules/disney.md) |
-| `disney_aggregate` | Disney | `disney` | provider_aggregate | 236 | 7 | [disney_aggregate](rules/disney_aggregate.md) |
+| `disney` | Disney | `disney` | service | 181 | 7 | [disney](rules/disney.md) |
+| `disney_aggregate` | Disney | `disney` | provider_aggregate | 240 | 7 | [disney_aggregate](rules/disney_aggregate.md) |
 | `dji` | 大疆 | `dji` | service | 2 | 7 | [dji](rules/dji.md) |
 | `dji_aggregate` | 大疆 | `dji` | provider_aggregate | 2 | 7 | [dji_aggregate](rules/dji_aggregate.md) |
 | `docker` | Docker | `docker` | service | 12 | 7 | [docker](rules/docker.md) |
@@ -236,7 +236,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `globalfoundries_aggregate` | GlobalFoundries | `globalfoundries` | provider_aggregate | 2 | 7 | [globalfoundries_aggregate](rules/globalfoundries_aggregate.md) |
 | `gmail` | Gmail | `google` | service | 1 | 7 | [gmail](rules/gmail.md) |
 | `goodreads` | Goodreads | `amazon` | service | 1 | 7 | [goodreads](rules/goodreads.md) |
-| `google` | Google | `google` | provider_aggregate | 1500 | 7 | [google](rules/google.md) |
+| `google` | Google | `google` | provider_aggregate | 1522 | 7 | [google](rules/google.md) |
 | `google-calendar` | Google Calendar | `google` | service | 1 | 7 | [google-calendar](rules/google-calendar.md) |
 | `google-chat` | Google Chat | `google` | service | 1 | 7 | [google-chat](rules/google-chat.md) |
 | `google-contacts` | Google Contacts | `google` | service | 1 | 7 | [google-contacts](rules/google-contacts.md) |
@@ -374,7 +374,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `mi-cloud` | Mi Cloud | `xiaomi` | service | 1 | 7 | [mi-cloud](rules/mi-cloud.md) |
 | `micron` | Micron | `micron` | service | 2 | 7 | [micron](rules/micron.md) |
 | `micron_aggregate` | Micron | `micron` | provider_aggregate | 2 | 7 | [micron_aggregate](rules/micron_aggregate.md) |
-| `microsoft` | Microsoft | `microsoft` | provider_aggregate | 1025 | 7 | [microsoft](rules/microsoft.md) |
+| `microsoft` | Microsoft | `microsoft` | provider_aggregate | 1032 | 7 | [microsoft](rules/microsoft.md) |
 | `microsoftedge` | Microsoft Edge | `microsoft` | service | 4 | 7 | [microsoftedge](rules/microsoftedge.md) |
 | `migu` | 咪咕 | `migu` | service | 2 | 7 | [migu](rules/migu.md) |
 | `migu_aggregate` | 咪咕 | `migu` | provider_aggregate | 2 | 7 | [migu_aggregate](rules/migu_aggregate.md) |
@@ -397,7 +397,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `nec_aggregate` | NEC | `nec` | provider_aggregate | 2 | 7 | [nec_aggregate](rules/nec_aggregate.md) |
 | `netapp` | NetApp | `netapp` | service | 2 | 7 | [netapp](rules/netapp.md) |
 | `netapp_aggregate` | NetApp | `netapp` | provider_aggregate | 2 | 7 | [netapp_aggregate](rules/netapp_aggregate.md) |
-| `netease` | NetEase | `netease` | provider_aggregate | 100 | 7 | [netease](rules/netease.md) |
+| `netease` | NetEase | `netease` | provider_aggregate | 101 | 7 | [netease](rules/netease.md) |
 | `neteasemail` | NetEase Mail | `netease` | service | 3 | 7 | [neteasemail](rules/neteasemail.md) |
 | `neteasemusic` | NetEase Cloud Music | `netease` | service | 10 | 7 | [neteasemusic](rules/neteasemusic.md) |
 | `netflix` | Netflix | `netflix` | service | 31 | 7 | [netflix](rules/netflix.md) |
@@ -471,7 +471,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `rakuten_aggregate` | Rakuten | `rakuten` | provider_aggregate | 2 | 7 | [rakuten_aggregate](rules/rakuten_aggregate.md) |
 | `reddit` | Reddit | `reddit` | service | 15 | 7 | [reddit](rules/reddit.md) |
 | `reddit_aggregate` | Reddit | `reddit` | provider_aggregate | 15 | 7 | [reddit_aggregate](rules/reddit_aggregate.md) |
-| `restricted` | Restricted | `special` | service | 6662 | 7 | [restricted](rules/restricted.md) |
+| `restricted` | Restricted | `special` | service | 6663 | 7 | [restricted](rules/restricted.md) |
 | `riotgames` | Riot Games | `riotgames` | service | 55 | 7 | [riotgames](rules/riotgames.md) |
 | `riotgames_aggregate` | Riot Games | `riotgames` | provider_aggregate | 55 | 7 | [riotgames_aggregate](rules/riotgames_aggregate.md) |
 | `roblox` | Roblox | `roblox` | service | 47 | 7 | [roblox](rules/roblox.md) |
@@ -490,7 +490,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `sap_aggregate` | SAP | `sap` | provider_aggregate | 2 | 7 | [sap_aggregate](rules/sap_aggregate.md) |
 | `schneider` | Schneider Electric | `schneider` | service | 2 | 7 | [schneider](rules/schneider.md) |
 | `schneider_aggregate` | Schneider Electric | `schneider` | provider_aggregate | 2 | 7 | [schneider_aggregate](rules/schneider_aggregate.md) |
-| `scholar` | Google Scholar | `google` | service | 231 | 7 | [scholar](rules/scholar.md) |
+| `scholar` | Google Scholar | `google` | service | 250 | 7 | [scholar](rules/scholar.md) |
 | `sensetime` | 商汤科技 | `sensetime` | service | 2 | 7 | [sensetime](rules/sensetime.md) |
 | `sensetime_aggregate` | 商汤科技 | `sensetime` | provider_aggregate | 2 | 7 | [sensetime_aggregate](rules/sensetime_aggregate.md) |
 | `servicenow` | ServiceNow | `servicenow` | service | 2 | 7 | [servicenow](rules/servicenow.md) |
@@ -526,14 +526,14 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `soundcloud_aggregate` | SoundCloud | `soundcloud` | provider_aggregate | 5 | 7 | [soundcloud_aggregate](rules/soundcloud_aggregate.md) |
 | `spacex` | SpaceX | `spacex` | service | 2 | 7 | [spacex](rules/spacex.md) |
 | `spacex_aggregate` | SpaceX | `spacex` | provider_aggregate | 2 | 7 | [spacex_aggregate](rules/spacex_aggregate.md) |
-| `special` | Special / Generic | `special` | provider_aggregate | 7580 | 7 | [special](rules/special.md) |
+| `special` | Special / Generic | `special` | provider_aggregate | 7618 | 7 | [special](rules/special.md) |
 | `speedtest` | Speedtest | `ookla` | service | 8 | 7 | [speedtest](rules/speedtest.md) |
-| `spotify` | Spotify | `spotify` | service | 38 | 7 | [spotify](rules/spotify.md) |
-| `spotify_aggregate` | Spotify | `spotify` | provider_aggregate | 38 | 7 | [spotify_aggregate](rules/spotify_aggregate.md) |
+| `spotify` | Spotify | `spotify` | service | 39 | 7 | [spotify](rules/spotify.md) |
+| `spotify_aggregate` | Spotify | `spotify` | provider_aggregate | 39 | 7 | [spotify_aggregate](rules/spotify_aggregate.md) |
 | `starlink` | Starlink | `starlink` | service | 2 | 7 | [starlink](rules/starlink.md) |
 | `starlink_aggregate` | Starlink | `starlink` | provider_aggregate | 2 | 7 | [starlink_aggregate](rules/starlink_aggregate.md) |
-| `steam` | Steam | `steam` | service | 84 | 7 | [steam](rules/steam.md) |
-| `steam_aggregate` | Steam | `steam` | provider_aggregate | 84 | 7 | [steam_aggregate](rules/steam_aggregate.md) |
+| `steam` | Steam | `steam` | service | 97 | 7 | [steam](rules/steam.md) |
+| `steam_aggregate` | Steam | `steam` | provider_aggregate | 97 | 7 | [steam_aggregate](rules/steam_aggregate.md) |
 | `stripe` | Stripe | `stripe` | service | 1 | 7 | [stripe](rules/stripe.md) |
 | `stripe-dashboard` | Stripe Dashboard | `stripe` | service | 1 | 7 | [stripe-dashboard](rules/stripe-dashboard.md) |
 | `stripe_aggregate` | Stripe | `stripe` | provider_aggregate | 2 | 7 | [stripe_aggregate](rules/stripe_aggregate.md) |
@@ -552,7 +552,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `telegram_aggregate` | Telegram | `telegram` | provider_aggregate | 24 | 7 | [telegram_aggregate](rules/telegram_aggregate.md) |
 | `temu` | Temu | `temu` | service | 2 | 7 | [temu](rules/temu.md) |
 | `temu_aggregate` | Temu | `temu` | provider_aggregate | 2 | 7 | [temu_aggregate](rules/temu_aggregate.md) |
-| `tencent` | Tencent | `tencent` | provider_aggregate | 755 | 7 | [tencent](rules/tencent.md) |
+| `tencent` | Tencent | `tencent` | provider_aggregate | 760 | 7 | [tencent](rules/tencent.md) |
 | `tencentcloud` | Tencent Cloud | `tencent` | service | 1 | 7 | [tencentcloud](rules/tencentcloud.md) |
 | `tencentdocs` | Tencent Docs | `tencent` | service | 1 | 7 | [tencentdocs](rules/tencentdocs.md) |
 | `tencentmeeting` | Tencent Meeting | `tencent` | service | 3 | 7 | [tencentmeeting](rules/tencentmeeting.md) |
@@ -626,7 +626,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `wps` | WPS | `kingsoft` | service | 2 | 7 | [wps](rules/wps.md) |
 | `wuba` | 58同城 | `wuba` | service | 2 | 7 | [wuba](rules/wuba.md) |
 | `wuba_aggregate` | 58同城 | `wuba` | provider_aggregate | 2 | 7 | [wuba_aggregate](rules/wuba_aggregate.md) |
-| `xai` | xAI | `xai` | provider_aggregate | 4 | 7 | [xai](rules/xai.md) |
+| `xai` | xAI | `xai` | provider_aggregate | 5 | 7 | [xai](rules/xai.md) |
 | `xai-grok` | Grok | `xai` | service | 1 | 7 | [xai-grok](rules/xai-grok.md) |
 | `xbox` | Xbox | `microsoft` | service | 42 | 7 | [xbox](rules/xbox.md) |
 | `xgimi` | 极米 | `xgimi` | service | 2 | 7 | [xgimi](rules/xgimi.md) |

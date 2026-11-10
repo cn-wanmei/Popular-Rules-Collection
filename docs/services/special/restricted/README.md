@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `special` |
 | 规则浏览路径 | `rule/special/restricted/restricted.yaml` |
-| 规则数量（_index） | **6662** |
-| SHA-256 | `33851b0c9f6cf9a40bdf075a2e6d134e658180a3b50c082c1441f02a3238789d` |
+| 规则数量（_index） | **6663** |
+| SHA-256 | `489427a15ed50d2ea8ed47e5e128281f15185e5fe1f0aa12389f5b2cb1507512` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 12685 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/special/restricted/restricted.yaml` |
-| loon | 12548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/special/restricted/restricted.list` |
-| mihomo | 12685 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/special/restricted/restricted.yaml` |
-| quantumultx | 12548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/special/restricted/restricted.list` |
-| shadowrocket | 12548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/special/restricted/restricted.list` |
+| egern | 12686 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/special/restricted/restricted.yaml` |
+| loon | 12549 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/special/restricted/restricted.list` |
+| mihomo | 12686 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/special/restricted/restricted.yaml` |
+| quantumultx | 12549 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/special/restricted/restricted.list` |
+| shadowrocket | 12549 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/special/restricted/restricted.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/special/restricted/restricted.json` |
-| surge | 12548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/special/restricted/restricted.list` |
+| surge | 12549 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/special/restricted/restricted.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

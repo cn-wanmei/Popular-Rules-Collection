@@ -16,14 +16,14 @@
 | Provider | `caocao` |
 | 规则浏览路径 | `rule/caocao/caocao_aggregate/caocao_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `da107d9c02a8cd039ccc3f7807586f6589d7edcb355fb8680f6d08d3d1384bb9` |
+| SHA-256 | `a736f705a269197627173a8c7c36a9be18715a97e639d6cb8a8761eec2834523` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

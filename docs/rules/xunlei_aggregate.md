@@ -16,14 +16,14 @@
 | Provider | `xunlei` |
 | 规则浏览路径 | `rule/xunlei/xunlei_aggregate/xunlei_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `6316ef4b3553e91df61ab5b559786013f7da1d1b7a614ba162293751c0bd1f93` |
+| SHA-256 | `62c037d7b5f7e6d7ade05a2c306c59facccc2d3a940e2bf1ffb45b0434133fb4` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

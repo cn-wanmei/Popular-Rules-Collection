@@ -16,14 +16,14 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/googlevoice/googlevoice.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `d3c3b6670f2682ba6476f456d0102fef86e53e47c897fe579cdfef8acf72aa61` |
+| SHA-256 | `b4e3e266312b10baa2acc925f4691355786bd5b76fdfa00f0c726807edfb6485` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

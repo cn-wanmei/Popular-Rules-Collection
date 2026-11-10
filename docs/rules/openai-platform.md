@@ -16,14 +16,14 @@
 | Provider | `openai` |
 | 规则浏览路径 | `rule/openai/openai-platform/openai-platform.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `09030c193492e7c4255ca9bcb438f413f7235490007419a368c8d9fd9c669115` |
+| SHA-256 | `df30d74e76d8c9b956f8b7cee51b83fcb62e8bc212a118708c52c4d5b7448a1a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

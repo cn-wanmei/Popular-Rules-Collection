@@ -16,14 +16,14 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/gemini/gemini.yaml` |
 | 规则数量（_index） | **9** |
-| SHA-256 | `cfe041c66b741963dfc2053a5cbd99633aad5e92ad91544adef97fe9fd08fee4` |
+| SHA-256 | `cf48866445188ffeaa601861ac6651ae2f819cf8a8cf1aefae0413c525141b69` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

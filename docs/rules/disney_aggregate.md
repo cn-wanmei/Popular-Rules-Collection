@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `disney` |
 | 规则浏览路径 | `rule/disney/disney_aggregate/disney_aggregate.yaml` |
-| 规则数量（_index） | **236** |
-| SHA-256 | `7fe253ef53658104cb9d1738b267eb6acab242465db108319641033339593f22` |
+| 规则数量（_index） | **240** |
+| SHA-256 | `0551538ed35536a01311e064af9da087c613abd2ce54f390fe14307d82f5539a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 233 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/disney/disney_aggregate/disney_aggregate.yaml` |
-| loon | 233 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/disney/disney_aggregate/disney_aggregate.list` |
-| mihomo | 233 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/disney/disney_aggregate/disney_aggregate.yaml` |
-| quantumultx | 233 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/disney/disney_aggregate/disney_aggregate.list` |
-| shadowrocket | 233 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/disney/disney_aggregate/disney_aggregate.list` |
+| egern | 237 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/disney/disney_aggregate/disney_aggregate.yaml` |
+| loon | 237 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/disney/disney_aggregate/disney_aggregate.list` |
+| mihomo | 237 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/disney/disney_aggregate/disney_aggregate.yaml` |
+| quantumultx | 237 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/disney/disney_aggregate/disney_aggregate.list` |
+| shadowrocket | 237 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/disney/disney_aggregate/disney_aggregate.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/disney/disney_aggregate/disney_aggregate.json` |
-| surge | 233 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/disney/disney_aggregate/disney_aggregate.list` |
+| surge | 237 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/disney/disney_aggregate/disney_aggregate.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

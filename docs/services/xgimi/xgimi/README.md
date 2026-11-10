@@ -16,14 +16,14 @@
 | Provider | `xgimi` |
 | 规则浏览路径 | `rule/xgimi/xgimi/xgimi.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `324edf09297e9e51567d1f1d32633169254a51c53ef9ccb242e1e07c0a219e5c` |
+| SHA-256 | `36948c4b5bb637027dd11dc5020a806196ea376c24125a9b8c8a16e405fcc0aa` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

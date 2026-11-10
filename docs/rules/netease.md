@@ -13,15 +13,15 @@
 | 类型 | provider_aggregate |
 | Provider | `netease` |
 | 规则浏览路径 | `rule/netease/netease/netease.yaml` |
-| 规则数量（_index） | **100** |
-| SHA-256 | `2d96035c8e4c4b83b6db5420a87e9cf1059f9ee0e4e27874a079facce96a6fbf` |
+| 规则数量（_index） | **101** |
+| SHA-256 | `c3129442d37a45f36e921980bbc85b3cf41704ca4eae66c4c894541b2f785942` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -46,13 +46,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 100 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/netease/netease/netease.yaml` |
-| loon | 100 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/netease/netease/netease.list` |
-| mihomo | 100 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/netease/netease/netease.yaml` |
-| quantumultx | 100 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/netease/netease/netease.list` |
-| shadowrocket | 100 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/netease/netease/netease.list` |
+| egern | 101 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/netease/netease/netease.yaml` |
+| loon | 101 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/netease/netease/netease.list` |
+| mihomo | 101 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/netease/netease/netease.yaml` |
+| quantumultx | 101 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/netease/netease/netease.list` |
+| shadowrocket | 101 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/netease/netease/netease.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/netease/netease/netease.json` |
-| surge | 100 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/netease/netease/netease.list` |
+| surge | 101 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/netease/netease/netease.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

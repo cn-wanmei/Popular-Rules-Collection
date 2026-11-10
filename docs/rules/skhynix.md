@@ -16,14 +16,14 @@
 | Provider | `skhynix` |
 | 规则浏览路径 | `rule/skhynix/skhynix/skhynix.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `d1b174cfa555ee80dec71158cfd678e26e29da6633c0867d610a0ba169fdf467` |
+| SHA-256 | `9e51f00bd86a6df15ad6aaeee334978b70ae3b22c93e91d02bf8c9fce8f239e6` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

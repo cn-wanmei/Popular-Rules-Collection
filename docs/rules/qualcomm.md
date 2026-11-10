@@ -16,14 +16,14 @@
 | Provider | `qualcomm` |
 | 规则浏览路径 | `rule/qualcomm/qualcomm/qualcomm.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `bb4fea7a9e54079e53e70b682a3fbfbbe76febdf4799db8f01155729bdb19f53` |
+| SHA-256 | `51a73ddd67a06fb8fbebeef92d421f04a2ecffbf371b2a404f90934d5ebcb4f9` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261017T003011836133Z-run` |
-| IR digest | `031152f14e51d755f54933b640cb7d6be83d81d444bfefbc5a3d9c9d8e262db5` |
+| Run ID | `20261110T041728493091Z-run` |
+| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
