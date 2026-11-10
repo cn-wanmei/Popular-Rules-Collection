@@ -12,12 +12,12 @@ concurrency:
   group: source-auto-handoff-stale-watchdog
   cancel-in-progress: false
 
-permissions:
-  actions: read
-  issues: write
-
 jobs:
   check-freshness:
+    permissions:
+      contents: read
+      actions: read
+      issues: write
     runs-on: ubuntu-latest
     steps:
       - name: Check latest successful handoff and update the tracking issue
