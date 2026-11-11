@@ -1,10 +1,10 @@
 {
   "schema": "popular_rules_ecosystem_release_lock_v1",
-  "generated_at": "2026-11-10T15:49:22.656710+00:00",
+  "generated_at": "2026-11-11T02:21:57.633222+00:00",
   "collection": {
-    "commit": "7829de9874fe89aaaca9fe291f20e920304e5be8",
-    "index_sha256": "322855e71a348ceba1a8c1d2f61756be6b3943b9c4267a813c82b139e00c2f17",
-    "run_id": null
+    "commit": "c62d5cecf00ebd5b5a4f32f4c65e2b13d75e0cd1",
+    "index_sha256": "109aa318ac4388af866d35c003c2df9a99fae8d0c22648aa1e3bc57a0e27f632",
+    "run_id": "20261111T020425721267Z-run"
   },
   "source": {
     "repository": "cn-wanmei/Popular-Rules-Source",
@@ -19,8 +19,8 @@
     "release_id": "icon-2026.10.06.full1",
     "rollback_id": "icon-2026.09.30.clean1",
     "frozen": true,
-    "collection_identity_ref": "4458a0ffdb88ea0d836fc7de86c5aaf39c8afc90",
-    "collection_identity_sha256": "322855e71a348ceba1a8c1d2f61756be6b3943b9c4267a813c82b139e00c2f17",
+    "collection_identity_ref": "c62d5cecf00ebd5b5a4f32f4c65e2b13d75e0cd1",
+    "collection_identity_sha256": "109aa318ac4388af866d35c003c2df9a99fae8d0c22648aa1e3bc57a0e27f632",
     "identity_matches_index": true
   },
   "clients": {}
