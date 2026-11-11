@@ -16,14 +16,14 @@
 | Provider | `ti` |
 | 规则浏览路径 | `rule/ti/ti/ti.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `4a8a6f88adb4d26602c616278397646bca23136f35b8027dfbafa49d896d6cca` |
+| SHA-256 | `e82398b66f31f5f8141814176189fcb91501da0bb71952911c8c11d525163828` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261110T041728493091Z-run` |
-| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
+| Run ID | `20261111T020425721267Z-run` |
+| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

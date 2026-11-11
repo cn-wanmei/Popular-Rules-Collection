@@ -16,14 +16,14 @@
 | Provider | `spotify` |
 | 规则浏览路径 | `rule/spotify/spotify_aggregate/spotify_aggregate.yaml` |
 | 规则数量（_index） | **39** |
-| SHA-256 | `d59824dc8ccf2447080cb0f03e654c2593a53c4ee00756f850a4dc8bbc3f9a2f` |
+| SHA-256 | `a754d4ec6a0fc76d833a4ab86a73450c9c5c2b0a7321433c953500a27026d8d7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261110T041728493091Z-run` |
-| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
+| Run ID | `20261111T020425721267Z-run` |
+| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

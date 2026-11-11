@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `discord` |
 | 规则浏览路径 | `rule/discord/discord/discord.yaml` |
-| 规则数量（_index） | **28** |
-| SHA-256 | `e95670d3bdb4b8b8220f282280ac4497b936d39ba77b3b265009c2cd6f54aff7` |
+| 规则数量（_index） | **31** |
+| SHA-256 | `6e0ebf2bbf82a954296a93265ce620ad17c76d4af2e0d97c04d9c7eceb32bcc5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261110T041728493091Z-run` |
-| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
+| Run ID | `20261111T020425721267Z-run` |
+| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 28 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/discord/discord/discord.yaml` |
-| loon | 28 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/discord/discord/discord.list` |
-| mihomo | 28 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/discord/discord/discord.yaml` |
-| quantumultx | 28 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/discord/discord/discord.list` |
-| shadowrocket | 28 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/discord/discord/discord.list` |
+| egern | 91 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/discord/discord/discord.yaml` |
+| loon | 91 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/discord/discord/discord.list` |
+| mihomo | 91 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/discord/discord/discord.yaml` |
+| quantumultx | 91 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/discord/discord/discord.list` |
+| shadowrocket | 91 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/discord/discord/discord.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/discord/discord/discord.json` |
-| surge | 28 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/discord/discord/discord.list` |
+| surge | 91 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/discord/discord/discord.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

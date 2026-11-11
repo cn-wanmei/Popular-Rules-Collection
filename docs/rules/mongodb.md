@@ -16,14 +16,14 @@
 | Provider | `mongodb` |
 | 规则浏览路径 | `rule/mongodb/mongodb/mongodb.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `d3f1e68ce53b5cdd16ff4d44e69b5d9a7465d62972e13ff9508b5dac4d47d497` |
+| SHA-256 | `fb26c653df8c1ef01b54c092f01ca6bebcbcda061f2c8176e40a21da381cfce0` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261110T041728493091Z-run` |
-| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
+| Run ID | `20261111T020425721267Z-run` |
+| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

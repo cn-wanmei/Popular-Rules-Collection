@@ -16,14 +16,14 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-photos/google-photos.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `001d21fba8d9b41de638731fea3a354ffaa148e0cdcf80a74637dd1992ed33d4` |
+| SHA-256 | `e5085998f42056f499cce2e6347e7b9d6d181459079f3db5aa3284b790c0c0c0` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261110T041728493091Z-run` |
-| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
+| Run ID | `20261111T020425721267Z-run` |
+| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

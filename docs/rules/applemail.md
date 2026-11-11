@@ -16,14 +16,14 @@
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/applemail/applemail.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `b46655c0d03b044fc5b10bdb4c38b9b55d3642db6d8136cd3bfb63f11d3cf8c9` |
+| SHA-256 | `bc32c39b3acebd5cd7b86df5ade3a8013019c5c1174eeddba460df47e6bce9ed` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261110T041728493091Z-run` |
-| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
+| Run ID | `20261111T020425721267Z-run` |
+| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

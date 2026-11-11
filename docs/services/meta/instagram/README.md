@@ -16,14 +16,14 @@
 | Provider | `meta` |
 | 规则浏览路径 | `rule/meta/instagram/instagram.yaml` |
 | 规则数量（_index） | **76** |
-| SHA-256 | `1efd470e8ea4c4e1f591d6252bc90af65c50203a2795f36522742fccc55461a9` |
+| SHA-256 | `9be02549a6cf75762add8b923e66120aff1e2d31813f13c190d640c638fd095e` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261110T041728493091Z-run` |
-| IR digest | `5d521be1afcf3eb4e296a655169d9120d4eeedf8f4809e60de918390d4abd70f` |
+| Run ID | `20261111T020425721267Z-run` |
+| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
