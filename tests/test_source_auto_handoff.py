@@ -115,6 +115,14 @@ def test_handoff_workflow_propagates_python_pipeline_failures() -> None:
     workflow = yaml.safe_load(
         (root / ".github" / "workflows" / "source-auto-handoff.yml").read_text(encoding="utf-8")
     )
+    triggers = workflow.get("on", workflow.get(True, {}))
+    push = triggers.get("push", {})
+    assert push.get("branches") == ["main"]
+    assert {
+        "scripts/source_auto_handoff.py",
+        ".github/workflows/source-auto-handoff.yml",
+    } <= set(push.get("paths", []))
+
     jobs = workflow["jobs"]
     steps = jobs["handoff"]["steps"]
     step = next(item for item in steps if item.get("name") == "Materialize and verify current Source durable seal")
