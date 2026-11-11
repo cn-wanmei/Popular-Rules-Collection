@@ -36,7 +36,9 @@ jobs:
           git reset --hard origin/main
 
       - name: Materialize and verify current Source durable seal
+        shell: bash
         run: |
+          set -euo pipefail
           python scripts/source_auto_handoff.py | tee /tmp/source-handoff.json
           python scripts/source_provenance_gate.py
 
