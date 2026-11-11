@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-import copy
-
 import pytest
 
 from scripts.source_auto_handoff import (
