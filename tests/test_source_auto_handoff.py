@@ -104,3 +104,19 @@ def test_source_handoff_rejects_unknown_report_schema() -> None:
     report["schema"] = "popular_rules_source_durable_bridge_v4"
     with pytest.raises(RuntimeError, match="unsupported Source durable report schema"):
         _validate_source_seal_report(report)
+
+
+def test_handoff_workflow_propagates_python_pipeline_failures() -> None:
+    from pathlib import Path
+
+    import yaml
+
+    root = Path(__file__).resolve().parents[1]
+    workflow = yaml.safe_load(
+        (root / ".github" / "workflows" / "source-auto-handoff.yml").read_text(encoding="utf-8")
+    )
+    jobs = workflow["jobs"]
+    steps = jobs["handoff"]["steps"]
+    step = next(item for item in steps if item.get("name") == "Materialize and verify current Source durable seal")
+    assert step.get("shell") == "bash"
+    assert "set -euo pipefail" in step.get("run", "")
