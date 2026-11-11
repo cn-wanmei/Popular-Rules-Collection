@@ -1,7 +1,7 @@
 {
   "maps_to": "china",
-  "updated_at": "2026-11-10T04:05:59.782439+00:00",
-  "cidr_count": 10085,
+  "updated_at": "2026-11-11T01:53:36.611795+00:00",
+  "cidr_count": 10084,
   "existing_lines_before": 10085,
   "incoming_lines": 15851,
   "contributions": [
@@ -16,7 +16,7 @@
         "branch": "release"
       },
       "lines_in": 9647,
-      "fetched_at": "2026-11-10T04:05:59.782439+00:00",
+      "fetched_at": "2026-11-11T01:53:36.611795+00:00",
       "notes": "Country CN prefixes only. Never attribute to a product service."
     },
     {
@@ -30,7 +30,7 @@
         "branch": "ip-lists"
       },
       "lines_in": 6204,
-      "fetched_at": "2026-11-10T04:05:59.782439+00:00",
+      "fetched_at": "2026-11-11T01:53:36.611795+00:00",
       "notes": "Alternate CN aggregate; merged + containment-deduped into china."
     }
   ],
