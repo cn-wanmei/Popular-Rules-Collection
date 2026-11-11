@@ -1,3 +1,8 @@
+domain_set:
+  - "robloxcorp.s.llnwi.net"
+  - "roblox-poc.global.ssl.fastly.net"
+  - "d1unuk07s6td74.cloudfront.net"
+  - "roblox-load-generator-configuration.s3.us-east-2.amazonaws.com"
 domain_suffix_set:
   - "roblox.ph"
   - "roblox.uk"
@@ -30,6 +35,7 @@ domain_suffix_set:
   - "roblox.cl"
   - "roblox.fr"
   - "roblox.dk"
+  - "roblox-load-generator-configuration.s3.us-east-2.amazonaws.com"
   - "roblox.us"
   - "roblox.co.jp"
   - "roblocks.com"

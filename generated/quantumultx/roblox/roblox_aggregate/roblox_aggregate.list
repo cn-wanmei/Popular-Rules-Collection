@@ -7,6 +7,7 @@ host-suffix, ro-blox.com, proxy
 host-suffix, roblox.mx, proxy
 host-suffix, roblox.org, proxy
 host-suffix, roblox.vn, proxy
+host, robloxcorp.s.llnwi.net, proxy
 host-suffix, roblox.pt, proxy
 host-suffix, rbxtrk.com, proxy
 host-suffix, roblox.com, proxy
@@ -29,7 +30,9 @@ host-suffix, humancoexperience.com, proxy
 host-suffix, roblox.cl, proxy
 host-suffix, roblox.fr, proxy
 host-suffix, roblox.dk, proxy
+host-suffix, roblox-load-generator-configuration.s3.us-east-2.amazonaws.com, proxy
 host-suffix, roblox.us, proxy
+host, roblox-poc.global.ssl.fastly.net, proxy
 host-suffix, roblox.co.jp, proxy
 host-suffix, roblocks.com, proxy
 host-suffix, goblocks.com, proxy
@@ -41,7 +44,9 @@ host-suffix, roblox.sk, proxy
 host-suffix, roblox.jp, proxy
 host-suffix, blox.com, proxy
 host-suffix, roblox-api.arkoselabs.com, proxy
+host, d1unuk07s6td74.cloudfront.net, proxy
 host-suffix, roblox-poc.global.ssl.fastly.net, proxy
 host-suffix, roblox.net, proxy
 host-suffix, rbxinfra.net, proxy
+host, roblox-load-generator-configuration.s3.us-east-2.amazonaws.com, proxy
 host-suffix, roblox.tv, proxy

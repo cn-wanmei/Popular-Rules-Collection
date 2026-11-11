@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: chatgpt
+display_name: ChatGPT
+generated_from:
+  run_id: 20261111T020425721267Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: 83b01463ccc0c1e990fd5aa80b968a756d91e46b4c14a179d2680dd46ab9482b
+  type: DOMAIN_SUFFIX
+  value: chatgpt.com
+provider: openai
