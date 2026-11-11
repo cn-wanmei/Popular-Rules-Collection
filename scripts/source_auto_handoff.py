@@ -48,23 +48,55 @@ def _get_json(url: str, timeout: int = 45) -> dict:
     return value
 
 
-def _get_source_seal() -> dict:
-    report = _get_json(SOURCE_REPORT_URL)
-    if report.get("schema") != "popular_rules_source_durable_bridge_v2":
-        raise RuntimeError(
-            f"unsupported Source durable report schema: {report.get('schema')!r}"
-        )
+def _validate_source_seal_report(report: dict) -> dict:
+    schema = str(report.get("schema") or "")
+    if schema not in {
+        "popular_rules_source_durable_bridge_v2",
+        "popular_rules_source_durable_bridge_v3",
+    }:
+        raise RuntimeError(f"unsupported Source durable report schema: {schema!r}")
+
     source_ref = str(report.get("persistence_commit") or "")
     verified_input = str(report.get("verified_input_commit") or "")
     if not SHA40.fullmatch(source_ref) or not SHA40.fullmatch(verified_input):
         raise RuntimeError("Source durable report must contain exact SHA40 persistence and verified input commits")
+
     services = report.get("services") or {}
+    if not isinstance(services, dict):
+        raise RuntimeError("Source durable report services must be a mapping")
+
+    if schema == "popular_rules_source_durable_bridge_v3":
+        # V3 distinguishes the full durable seal from the most recent execution batch.
+        # Handoff is permitted only when both are complete and every persisted service
+        # points at the same immutable persistence commit.
+        for field in ("seal_completeness", "batch_completeness", "run_completeness"):
+            if report.get(field) != "COMPLETE":
+                raise RuntimeError(f"Source durable v3 report is not complete: {field}={report.get(field)!r}")
+        if report.get("missing_from_execution") or report.get("incomplete"):
+            raise RuntimeError("Source durable v3 report contains missing or incomplete services")
+
+        persisted = {
+            sid: item for sid, item in services.items()
+            if isinstance(item, dict) and item.get("status") == "PERSISTED"
+        }
+        try:
+            persisted_count = int(report.get("persisted_count"))
+        except (TypeError, ValueError) as exc:
+            raise RuntimeError("Source durable v3 report persisted_count must be an integer") from exc
+        if persisted_count != len(persisted) or persisted_count != len(services):
+            raise RuntimeError(
+                "Source durable v3 persisted_count does not match the complete persisted service map"
+            )
+        for sid, item in persisted.items():
+            if str(item.get("source_ref") or "") != source_ref:
+                raise RuntimeError(f"{sid}: Source durable service source_ref does not match persistence_commit")
+
     missing = sorted(set(SERVICES) - set(services))
     if missing:
         raise RuntimeError(f"Source durable service set missing required services: {missing}")
     for sid in SERVICES:
         item = services[sid]
-        if item.get("status") != "PERSISTED":
+        if not isinstance(item, dict) or item.get("status") != "PERSISTED":
             raise RuntimeError(f"{sid}: Source durable status is not PERSISTED")
         for field in ("snapshot_id", "content_digest", *PROVENANCE_FIELDS, "release_path", "expected_sha256"):
             value = str(item.get(field) or "")
@@ -73,6 +105,10 @@ def _get_source_seal() -> dict:
         if str(item.get("release_identity_version")) != "2":
             raise RuntimeError(f"{sid}: release_identity_version must be 2")
     return report
+
+
+def _get_source_seal() -> dict:
+    return _validate_source_seal_report(_get_json(SOURCE_REPORT_URL))
 
 
 def _load_registry() -> dict:
