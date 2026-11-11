@@ -1,6 +1,11 @@
 name: Source Auto Handoff
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/source_auto_handoff.py"
+      - ".github/workflows/source-auto-handoff.yml"
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
