@@ -12,17 +12,17 @@
   "file_count": 4707,
   "files": [
     {
-      "file": "_promotion/20261112T030053237447Z-run.json",
+      "file": "_promotion/20261112T132831735283Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "c3274645dda0a58be8d3d34ec7976fb099b2c17d22ef1d362a203949b0395bf9",
+      "sha256": "50b844ad3f43d6e175600f13fc26d140b194a24d552bd3b52f9733f2e84960a7",
       "size": 542960
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "c3274645dda0a58be8d3d34ec7976fb099b2c17d22ef1d362a203949b0395bf9",
+      "sha256": "50b844ad3f43d6e175600f13fc26d140b194a24d552bd3b52f9733f2e84960a7",
       "size": 542960
     },
     {
@@ -5910,8 +5910,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "ip",
-      "sha256": "58f2b79174244a9eb0040b35de42fb241f5f30fcc116da7460359005717742f7",
-      "size": 159635
+      "sha256": "c0adc9ac32f02d73226dfb64d473977a1ae1481e06ea755b0c323559a0ce39e5",
+      "size": 159636
     },
     {
       "file": "ip/chinamobile.txt",
@@ -5926,8 +5926,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "ip",
-      "sha256": "6eaa6598c695e7d23d0b16ef7ca059b2ad220d8c4b364ee688cc414e3758f13d",
-      "size": 62011
+      "sha256": "df7a24147337a4925f4e335a40128b4906fc4ac25c6a2a4e04ff8f6e7720dfc8",
+      "size": 62251
     },
     {
       "file": "ip/cloudflare.txt",
@@ -16598,15 +16598,15 @@
       "kind": "network_dataset",
       "rule_count": 2,
       "scope": "mmdb",
-      "sha256": "90b78ab861c1cdc3f871f305f9ceedfb8d6d6329e3a40295e6773e057297384c",
-      "size": 16475153
+      "sha256": "304ac8a1cbcc8166e4f5a4f32955e4d0fb77a1bd713583e371b30ee27f3659d8",
+      "size": 16467275
     },
     {
       "file": "mmdb/geosite.dat",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "mmdb",
-      "sha256": "da712b401ea6f4fdb45983e7a3458332decb85c244307b443df3e11feb4af366",
+      "sha256": "aaf8ba4aeabebdffdccf2d4b4a0a4a50e62f2aaca27586c4e9f6525a878b3d9e",
       "size": 4356285
     },
     {
@@ -16742,16 +16742,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "54fa239e095701e5a190bbc6f73b9f629c194471706fee638ebb68d1b55f3895",
-      "size": 395367
+      "sha256": "7ad69d948d18794e71a8b7f403df0dc48cae3a7c30aab8aef3184283e50115d1",
+      "size": 395337
     },
     {
       "file": "provider/aws_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 11496,
+      "rule_count": 11495,
       "scope": "provider",
-      "sha256": "cbf7578fa9e956c5b0fb0204a8bad91d9300f85e72977867c7ed298fff05b4af",
-      "size": 491478
+      "sha256": "9758c30e846d5f398c3fa5e4c607c102371bd00babc6d010da847778cf8c5cb5",
+      "size": 491439
     },
     {
       "file": "provider/cloudflare.txt",
@@ -16790,7 +16790,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "650e2d01762866ebb9817a9827ced1820a2f555ddfc3aa425ba1932b67d48fad",
+      "sha256": "772c1e4db19582282b3ea9d04990a82bb881df5807329b4188752e42f7028532",
       "size": 4691
     },
     {
@@ -16806,7 +16806,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "89cc722e9dcfc0aa9e8f830673781209ed8c09a33b5a4e434640353471c554ca",
+      "sha256": "484b0ba70c87e7328a3773d795e7340ada5043a72636b3ccacbcd4540cc28f0c",
       "size": 38617
     },
     {
@@ -37666,7 +37666,7 @@
       "size": 54
     }
   ],
-  "generated_at": "2026-11-12T03:07:40.361190+00:00",
+  "generated_at": "2026-11-12T13:37:21.415952+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [
