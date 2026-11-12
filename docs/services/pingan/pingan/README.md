@@ -16,14 +16,14 @@
 | Provider | `pingan` |
 | 规则浏览路径 | `rule/pingan/pingan/pingan.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `23f6b69f67d8c9cdc1ecae208df744d39dccd9c393f899eb8a80e76bcfa4dad1` |
+| SHA-256 | `f3767fed6df0cca4ff496101ca16594353372ddccad616ff51683730de0b98de` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T030053237447Z-run` |
-| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
+| Run ID | `20261112T132831735283Z-run` |
+| IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

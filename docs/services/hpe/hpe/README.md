@@ -16,14 +16,14 @@
 | Provider | `hpe` |
 | 规则浏览路径 | `rule/hpe/hpe/hpe.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `6dd8e6d5bba94e9104deed0677601d68be3328cc5047ff34098f5c69fb1c5275` |
+| SHA-256 | `502f8d5a865572282e41ebba7e5c4e5d2b6136a2cdd36ac4d985248bda77d3d1` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T030053237447Z-run` |
-| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
+| Run ID | `20261112T132831735283Z-run` |
+| IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

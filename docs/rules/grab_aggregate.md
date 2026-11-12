@@ -16,14 +16,14 @@
 | Provider | `grab` |
 | 规则浏览路径 | `rule/grab/grab_aggregate/grab_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `1a336498abe9f6bc2d8f9fc35f18284ffb00944adcc743bea3536dca6e8fab82` |
+| SHA-256 | `ae8944effa574727beaaa22611fb270c66a0cf87a7a8f80b7b8d5b9c2c08d7d7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T030053237447Z-run` |
-| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
+| Run ID | `20261112T132831735283Z-run` |
+| IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

@@ -16,14 +16,14 @@
 | Provider | `qunar` |
 | 规则浏览路径 | `rule/qunar/qunar/qunar.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `ba204a147c18a4359269dbb181759ca84cc07c2c7e2c4d7a53771197c0dfe53b` |
+| SHA-256 | `63dccef4bfae2ff567a88e5b53cef51585049ec7a08724e8e504efca6099a5c5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T030053237447Z-run` |
-| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
+| Run ID | `20261112T132831735283Z-run` |
+| IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

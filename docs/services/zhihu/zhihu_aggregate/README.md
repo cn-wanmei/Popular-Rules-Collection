@@ -16,14 +16,14 @@
 | Provider | `zhihu` |
 | 规则浏览路径 | `rule/zhihu/zhihu_aggregate/zhihu_aggregate.yaml` |
 | 规则数量（_index） | **7** |
-| SHA-256 | `b3b9f0a6d66558e344d6873d4c9ae7453becaa030e0652513c15df76fec60f32` |
+| SHA-256 | `b8b963c24d398b5a0016a03eaa88e5f307632271b988eef600a1be92582d7e83` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T030053237447Z-run` |
-| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
+| Run ID | `20261112T132831735283Z-run` |
+| IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

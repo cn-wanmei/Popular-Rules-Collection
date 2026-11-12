@@ -16,14 +16,14 @@
 | Provider | `nokia` |
 | 规则浏览路径 | `rule/nokia/nokia/nokia.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `bc955d415f159009e75b3f1aac870546321d34efb6d81ca2e5f389e8bc964fc5` |
+| SHA-256 | `e0d6690403f191c2c4a3b448c47a0377e1c0d8c27474ebe25b094b5870dc02cc` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T030053237447Z-run` |
-| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
+| Run ID | `20261112T132831735283Z-run` |
+| IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

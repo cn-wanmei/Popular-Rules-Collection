@@ -16,14 +16,14 @@
 | Provider | `deepseek` |
 | 规则浏览路径 | `rule/deepseek/deepseek_aggregate/deepseek_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `bcb48c1aee3d95548202fe73562679255cc84cf08022c7e9f405fa085217b86c` |
+| SHA-256 | `65dbd5fc465992ae1f90d391b0d9f96bb6d8075b01822390452c4c8ccf63add0` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T030053237447Z-run` |
-| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
+| Run ID | `20261112T132831735283Z-run` |
+| IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

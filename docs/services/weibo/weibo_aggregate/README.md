@@ -16,14 +16,14 @@
 | Provider | `weibo` |
 | 规则浏览路径 | `rule/weibo/weibo_aggregate/weibo_aggregate.yaml` |
 | 规则数量（_index） | **4** |
-| SHA-256 | `5603235e72318d3fd20195cb1212d732e21c56fa259b266a3ba84a1587ff685c` |
+| SHA-256 | `dfe261af5e2d4a4f6e3b740c1d2504f166a7fec19c0166e42caea4432aa92333` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T030053237447Z-run` |
-| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
+| Run ID | `20261112T132831735283Z-run` |
+| IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

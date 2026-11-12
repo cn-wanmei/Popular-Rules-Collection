@@ -16,14 +16,14 @@
 | Provider | `soundcloud` |
 | 规则浏览路径 | `rule/soundcloud/soundcloud_aggregate/soundcloud_aggregate.yaml` |
 | 规则数量（_index） | **5** |
-| SHA-256 | `492a07bad5d0d1466a6dde564b56f7b950b8e469a07b657d7c7c0fc8a53c6ccf` |
+| SHA-256 | `eb2bec0b55173e734fb974bc9634d9653b50f2d08f4668cc5a505a36add43969` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T030053237447Z-run` |
-| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
+| Run ID | `20261112T132831735283Z-run` |
+| IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

@@ -16,14 +16,14 @@
 | Provider | `dji` |
 | 规则浏览路径 | `rule/dji/dji_aggregate/dji_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `f74a18a9556f1fa7334d91cbac36882e34d7410dd30c63072e8877d09fb423c5` |
+| SHA-256 | `4b747f5e37b4c4149edae95803a5a4c511dc1f2c4e308037a0e191444668d744` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T030053237447Z-run` |
-| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
+| Run ID | `20261112T132831735283Z-run` |
+| IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

@@ -16,14 +16,14 @@
 | Provider | `kugou` |
 | 规则浏览路径 | `rule/kugou/kugou/kugou.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `a666f88de9471848b249b02fa31792af6ec505a75be29fc142235c3f18d2c1d6` |
+| SHA-256 | `e03660813c66b337eaa8dba329cf06e42b8302dfcd5cf89a33f44ac52ca89436` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T030053237447Z-run` |
-| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
+| Run ID | `20261112T132831735283Z-run` |
+| IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

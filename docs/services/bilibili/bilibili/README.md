@@ -16,14 +16,14 @@
 | Provider | `bilibili` |
 | 规则浏览路径 | `rule/bilibili/bilibili/bilibili.yaml` |
 | 规则数量（_index） | **135** |
-| SHA-256 | `3f07407405a9c2e510381a8fd58774033d284e073ce91e006a9cbbd4b127b004` |
+| SHA-256 | `9ca63f8ebfa203552e26f8ca09683397c8f0fba79fa7ff0cce52ccdffd62d003` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T030053237447Z-run` |
-| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
+| Run ID | `20261112T132831735283Z-run` |
+| IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

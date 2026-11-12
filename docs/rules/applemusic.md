@@ -16,14 +16,14 @@
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/applemusic/applemusic.yaml` |
 | 规则数量（_index） | **9** |
-| SHA-256 | `917f80cd3cc44a10b369305b04c8fdda9ab96172b5b5c71385c1c926a6f85bb9` |
+| SHA-256 | `30003a4449c83cc5dcfc8b7fa33ac2ee218b05571ae4d01ec603c4e10dcc7971` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T030053237447Z-run` |
-| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
+| Run ID | `20261112T132831735283Z-run` |
+| IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
