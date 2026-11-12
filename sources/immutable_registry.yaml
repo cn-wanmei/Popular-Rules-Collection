@@ -1,6 +1,9 @@
 version: 2
 schema: popular_rules_collection_immutable_source_registry_v2
 source_repository: cn-wanmei/Popular-Rules-Source
+# New bindings require an exact Source lifecycle attestation at the immutable persistence commit.
+# Only enabled production/verified services are eligible; review/canary remain non-eligible.
+# Legacy LKG bindings stay unchanged until individually reviewed; never bulk-promote or revoke them.
 bindings:
   '1688':
     status: active
