@@ -11,7 +11,7 @@
       "artifact": "generated/mmdb/Country.mmdb",
       "sha256": "bbedba6ef8584c484e35acdee4153ecf4bc9aa5e22b25d3982870ec1e780f681",
       "bytes": 7628821,
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -28,7 +28,7 @@
       "artifact": "generated/mmdb/ASN.mmdb",
       "sha256": "3dceeef0f161aee0b48a3e71dd538798f5d95e9f4c2e0bc35f1c62874e22a4d5",
       "bytes": 9065111,
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -45,7 +45,7 @@
       "artifact": "generated/mmdb/geoip-lite.dat",
       "sha256": "05148054bebbeaaf0c0ab09ec8308a2448b92a4f470364a51235a068ef77a04b",
       "bytes": 211279,
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": null,
         "repo": null,
@@ -60,9 +60,9 @@
       "scope": "artifact",
       "backup": "backup/2026-11-12/datasets/dat-geoip.bin",
       "artifact": "generated/mmdb/geoip.dat",
-      "sha256": "90b78ab861c1cdc3f871f305f9ceedfb8d6d6329e3a40295e6773e057297384c",
-      "bytes": 16475153,
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "sha256": "304ac8a1cbcc8166e4f5a4f32955e4d0fb77a1bd713583e371b30ee27f3659d8",
+      "bytes": 16467275,
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": null,
         "repo": null,
@@ -77,9 +77,9 @@
       "scope": "artifact",
       "backup": "backup/2026-11-12/datasets/dat-geosite.bin",
       "artifact": "generated/mmdb/geosite.dat",
-      "sha256": "da712b401ea6f4fdb45983e7a3458332decb85c244307b443df3e11feb4af366",
+      "sha256": "aaf8ba4aeabebdffdccf2d4b4a0a4a50e62f2aaca27586c4e9f6525a878b3d9e",
       "bytes": 4356285,
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": null,
         "repo": null,
@@ -95,7 +95,7 @@
       "path": "database/geoip/cn.txt",
       "lines": 9640,
       "sha256_source": "d308cc97fd9222c5b66a5e71790f4f508a59b0a7a574dc04778dcf21ea49e6e6",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -112,7 +112,7 @@
       "path": "database/geoip/hk.txt",
       "lines": 15973,
       "sha256_source": "77b0fbe8e2d1225eb9b0fd871612a4bc0e7dcce60342760713d9e93646c0351c",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -129,7 +129,7 @@
       "path": "database/geoip/tw.txt",
       "lines": 4885,
       "sha256_source": "b7d16581a227f3dd73220b9b9637fa0108a5495aa8300cc0a78bc7e92b4d99fc",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -146,7 +146,7 @@
       "path": "database/geoip/jp.txt",
       "lines": 17699,
       "sha256_source": "5093adb5941a89368534a2d8218832c8eb5205ee546aca60697160c87f28e313",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -163,7 +163,7 @@
       "path": "database/geoip/kr.txt",
       "lines": 5581,
       "sha256_source": "69c614d464051f7c0becc50e285766f28a02f23e6b8261eda3bb6ceb45f2f685",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -180,7 +180,7 @@
       "path": "database/geoip/sg.txt",
       "lines": 14549,
       "sha256_source": "b37524471a9dcda09b46cff998319c61f058ff51b150104dec5d7b8b1728f1ae",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -197,7 +197,7 @@
       "path": "database/geoip/us.txt",
       "lines": 259527,
       "sha256_source": "bb2f342fd9760c5b426d34a4b77ca29f5c72e2c1f9bdb81557f78b8383bb8ee3",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -214,7 +214,7 @@
       "path": "database/geoip/de.txt",
       "lines": 73212,
       "sha256_source": "b1c9230409784d331d60900b80e32ba47b6a874089f10ee1fe59c07a1bbaa877",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -231,7 +231,7 @@
       "path": "database/geoip/gb.txt",
       "lines": 50638,
       "sha256_source": "77dc89cb0c05d4765907ee23249ce9db9cfca7a5c2c95deb9518e5912b468369",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -248,7 +248,7 @@
       "path": "database/geoip/au.txt",
       "lines": 18052,
       "sha256_source": "f8c4e967181e8f247ba212f723faa007faa401ff010edb4d56d595b86b344796",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -265,7 +265,7 @@
       "path": "database/geoip/my.txt",
       "lines": 3989,
       "sha256_source": "db896b0b854a35002c581ccb5c3751f8e75f96750c039e27924cfa7948e12c7d",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -282,7 +282,7 @@
       "path": "database/geoip/in.txt",
       "lines": 21383,
       "sha256_source": "f2cbd96d95049b172eaf44ed89a268ec4360451f350597ad946d3df0f32497d6",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -299,7 +299,7 @@
       "path": "database/geoip/id.txt",
       "lines": 11133,
       "sha256_source": "cb33b18c52198fbdead3aadc95dae133035284a79bd79773a68580e1782c260a",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -316,7 +316,7 @@
       "path": "database/geoip/vn.txt",
       "lines": 3870,
       "sha256_source": "17073918bb2b1445b534135954c3b21bacb9a8365b3698e8f94536c3930451ea",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -333,7 +333,7 @@
       "path": "database/geoip/th.txt",
       "lines": 3611,
       "sha256_source": "ace2248a665a91b5ae7b5a7d731115f135fb7dffdd876769597c33746c4fd315",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -350,7 +350,7 @@
       "path": "database/geoip/private.txt",
       "lines": 28,
       "sha256_source": "dcde78bca5ce41e7505b5612b0fa2f0f71761abfdb3cdad641759c929ec12440",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -368,7 +368,7 @@
       "artifact": "generated/mmdb/Country.mmdb",
       "sha256": "bbedba6ef8584c484e35acdee4153ecf4bc9aa5e22b25d3982870ec1e780f681",
       "bytes": 7628821,
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "geoip",
@@ -384,7 +384,7 @@
       "path": "database/geosite/direct.txt",
       "lines": 110149,
       "sha256_source": "4354f4703b356c653882e70dda64c47cb56f6e27aff3d0ed5d2fdb1a01443e49",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "v2ray-rules-dat",
@@ -401,7 +401,7 @@
       "path": "database/geosite/proxy.txt",
       "lines": 27501,
       "sha256_source": "140fe42d1d0b3dea85ff0f5f8c7059b7e9fac10686a4c97587621ac107851017",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "v2ray-rules-dat",
@@ -418,7 +418,7 @@
       "path": "database/geosite/reject.txt",
       "lines": 199528,
       "sha256_source": "e9ab5e8704c1ad0e069a70caed034b4b27f6c019f01ebcde4a5c0a8d08bffae6",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "v2ray-rules-dat",
@@ -435,7 +435,7 @@
       "path": "database/geosite/china.txt",
       "lines": 109455,
       "sha256_source": "7be397e2e81e1b9b39ec7d1e34622006493f0724ec1dbb108a91a652528928c8",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "v2ray-rules-dat",
@@ -452,7 +452,7 @@
       "path": "database/geosite/apple-cn.txt",
       "lines": 165,
       "sha256_source": "9fbb3bc9b6c9d81c4b1887ce4c81f816a676618592c3dbd2a8c742e14fbba32b",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "v2ray-rules-dat",
@@ -469,7 +469,7 @@
       "path": "database/geosite/google-cn.txt",
       "lines": 112,
       "sha256_source": "35f95e0c5172cf4afac90aa542a2809ca8c84706173ef363b8ad870d27e9fa06",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": "Loyalsoldier",
         "repo": "v2ray-rules-dat",
@@ -486,7 +486,7 @@
       "path": "database/provider/cloudflare.txt",
       "lines": 15,
       "sha256_source": "f02c6d83bc01ab0ae8577160e036d700c7455359bce054df884e5d7d9e4e9e7b",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": null,
         "repo": null,
@@ -503,7 +503,7 @@
       "path": "database/provider/cloudflare6.txt",
       "lines": 7,
       "sha256_source": "9e9d39e3e83bad00c4decafd53c63fa62029f3d95db68de937d2be28234ca0a9",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": null,
         "repo": null,
@@ -518,9 +518,9 @@
       "kind": "provider",
       "scope": "provider",
       "path": "database/provider/aws.txt",
-      "lines": 11700,
-      "sha256_source": "b0a32625b6641dafdd0b7873d7c4b5352d2ad6be618e2de436ce791e66aecdd8",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "lines": 11699,
+      "sha256_source": "b0f4f93c6c23f21ab4e4509d7537b819eb5b35c261bb92f00f39ae0e853ad7ad",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": null,
         "repo": null,
@@ -536,8 +536,8 @@
       "scope": "provider",
       "path": "database/provider/googlecloud.txt",
       "lines": 1209,
-      "sha256_source": "474eeb1f9981586a793607c9e482fb1574c6c9f8ad3310f8307613170b25bb5a",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "sha256_source": "d7b7dcda87150c1496f23ba5e2602816ab6ca7243d27675f6d7eadaf789020e0",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": null,
         "repo": null,
@@ -553,8 +553,8 @@
       "scope": "provider",
       "path": "database/provider/goog.txt",
       "lines": 155,
-      "sha256_source": "0e4a9265f0ca58e5de8d61f332c6651da970f053adcccf79a03112aa98f66599",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "sha256_source": "e1f16b1b76490d7717de66b818a7cafdd335b3865c32d62ddfbbb0080466e207",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": null,
         "repo": null,
@@ -571,7 +571,7 @@
       "path": "database/provider/oracle.txt",
       "lines": 1414,
       "sha256_source": "c070ef9ff7bea6d63e56e19578d083ffbdbd535c1344d6b74d36d23cce2cd228",
-      "fetched_at": "2026-11-12T02:51:40.828971+00:00",
+      "fetched_at": "2026-11-12T13:18:37.660459+00:00",
       "source": {
         "owner": null,
         "repo": null,
