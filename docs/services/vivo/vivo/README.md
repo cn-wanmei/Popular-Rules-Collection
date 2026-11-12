@@ -16,14 +16,14 @@
 | Provider | `vivo` |
 | 规则浏览路径 | `rule/vivo/vivo/vivo.yaml` |
 | 规则数量（_index） | **14** |
-| SHA-256 | `90f1bcf4f1ae4b577d8163556a5129195b911a0d347283594d495a6a1ce1f3a7` |
+| SHA-256 | `d9a3cff09aa8d6364a3936e14b49cb66b42e707d1dcec385f38b24d0e5e4f93b` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

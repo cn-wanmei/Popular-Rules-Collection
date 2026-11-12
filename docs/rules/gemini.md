@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/gemini/gemini.yaml` |
-| 规则数量（_index） | **16** |
-| SHA-256 | `9d5ac5c65fb08cd83ede92b60159a9205eed22932822d35a6679f3403b3f4f49` |
+| 规则数量（_index） | **9** |
+| SHA-256 | `76c969e608b2f786d23373f0b3cbb2ec010f097c5a4e4e718af482962d65cf41` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 22 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/google/gemini/gemini.yaml` |
-| loon | 22 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/google/gemini/gemini.list` |
-| mihomo | 22 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/google/gemini/gemini.yaml` |
-| quantumultx | 22 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/google/gemini/gemini.list` |
-| shadowrocket | 22 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/google/gemini/gemini.list` |
+| egern | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/google/gemini/gemini.yaml` |
+| loon | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/google/gemini/gemini.list` |
+| mihomo | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/google/gemini/gemini.yaml` |
+| quantumultx | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/google/gemini/gemini.list` |
+| shadowrocket | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/google/gemini/gemini.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/google/gemini/gemini.json` |
-| surge | 22 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/google/gemini/gemini.list` |
+| surge | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/google/gemini/gemini.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

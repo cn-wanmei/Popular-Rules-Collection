@@ -16,14 +16,14 @@
 | Provider | `abc` |
 | 规则浏览路径 | `rule/abc/abc/abc.yaml` |
 | 规则数量（_index） | **6** |
-| SHA-256 | `fa41fb230965630e30b42fd277173d2be3690499c21f45f91c53a7b2ce9671d1` |
+| SHA-256 | `25aee339d1a4c827b7f90c3844ba7e4e2235605ab776d470f761738c846cb938` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

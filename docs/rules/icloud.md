@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/icloud/icloud.yaml` |
-| 规则数量（_index） | **62** |
-| SHA-256 | `fe6a98f5202ae6362a2b39b83b04dd296571823823c143360572f4ce86f0e7b5` |
+| 规则数量（_index） | **58** |
+| SHA-256 | `823ae693c22f3abdbb25700649120927918de405d6c0c2cdadd574deb5e1719b` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 225 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/apple/icloud/icloud.yaml` |
-| loon | 225 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/apple/icloud/icloud.list` |
-| mihomo | 225 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/apple/icloud/icloud.yaml` |
-| quantumultx | 225 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/apple/icloud/icloud.list` |
-| shadowrocket | 225 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/apple/icloud/icloud.list` |
+| egern | 232 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/apple/icloud/icloud.yaml` |
+| loon | 232 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/apple/icloud/icloud.list` |
+| mihomo | 232 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/apple/icloud/icloud.yaml` |
+| quantumultx | 232 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/apple/icloud/icloud.list` |
+| shadowrocket | 232 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/apple/icloud/icloud.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/apple/icloud/icloud.json` |
-| surge | 225 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/apple/icloud/icloud.list` |
+| surge | 232 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/apple/icloud/icloud.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

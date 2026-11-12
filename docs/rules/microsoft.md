@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/microsoft/microsoft.yaml` |
-| 规则数量（_index） | **1099** |
-| SHA-256 | `b80bfa7593be1a639fcdbcfee08a4a90dfdffabe641a688ab5bb129a3b7df972` |
+| 规则数量（_index） | **1032** |
+| SHA-256 | `7bb366db9f9ed42d42a849a574a05f1cd834349762eb9eabd15936c0b237b5c3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 1097 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/microsoft/microsoft/microsoft.yaml` |
-| loon | 1097 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/microsoft/microsoft/microsoft.list` |
-| mihomo | 1097 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/microsoft/microsoft/microsoft.yaml` |
-| quantumultx | 1097 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/microsoft/microsoft/microsoft.list` |
-| shadowrocket | 1097 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/microsoft/microsoft/microsoft.list` |
+| egern | 1030 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/microsoft/microsoft/microsoft.yaml` |
+| loon | 1030 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/microsoft/microsoft/microsoft.list` |
+| mihomo | 1030 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/microsoft/microsoft/microsoft.yaml` |
+| quantumultx | 1030 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/microsoft/microsoft/microsoft.list` |
+| shadowrocket | 1030 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/microsoft/microsoft/microsoft.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/microsoft/microsoft/microsoft.json` |
-| surge | 1097 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/microsoft/microsoft/microsoft.list` |
+| surge | 1030 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/microsoft/microsoft/microsoft.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `telegram` |
 | 规则浏览路径 | `rule/telegram/telegram_aggregate/telegram_aggregate.yaml` |
-| 规则数量（_index） | **59** |
-| SHA-256 | `c7a4095dfac7753f07b9fe8c2c8e1dbe0b0750685633c340545c9563362afedb` |
+| 规则数量（_index） | **24** |
+| SHA-256 | `b21477c4b071c267a73376235b2843552d43153a9047f18af7011d8ece34f25d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 53 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/telegram/telegram_aggregate/telegram_aggregate.yaml` |
-| loon | 53 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/telegram/telegram_aggregate/telegram_aggregate.list` |
-| mihomo | 53 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/telegram/telegram_aggregate/telegram_aggregate.yaml` |
-| quantumultx | 53 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/telegram/telegram_aggregate/telegram_aggregate.list` |
-| shadowrocket | 53 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/telegram/telegram_aggregate/telegram_aggregate.list` |
+| egern | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/telegram/telegram_aggregate/telegram_aggregate.yaml` |
+| loon | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/telegram/telegram_aggregate/telegram_aggregate.list` |
+| mihomo | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/telegram/telegram_aggregate/telegram_aggregate.yaml` |
+| quantumultx | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/telegram/telegram_aggregate/telegram_aggregate.list` |
+| shadowrocket | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/telegram/telegram_aggregate/telegram_aggregate.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/telegram/telegram_aggregate/telegram_aggregate.json` |
-| surge | 53 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/telegram/telegram_aggregate/telegram_aggregate.list` |
+| surge | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/telegram/telegram_aggregate/telegram_aggregate.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

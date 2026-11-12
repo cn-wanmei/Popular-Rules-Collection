@@ -16,14 +16,14 @@
 | Provider | `snowflake` |
 | 规则浏览路径 | `rule/snowflake/snowflake/snowflake.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `3f6b8cb022b0021e7b4d4718c76e60fb279c0736bb2f7389cc12a986cccb80d6` |
+| SHA-256 | `3b8f93bed3fb722c54e33493c9218ad5d4325cca8fb7dc14557a2d2116387563` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

@@ -16,14 +16,14 @@
 | Provider | `salesforce` |
 | 规则浏览路径 | `rule/salesforce/salesforce_aggregate/salesforce_aggregate.yaml` |
 | 规则数量（_index） | **25** |
-| SHA-256 | `270201553839c4deebcbe722b054fd865315f2feb4046fcc1e1173aa25c37958` |
+| SHA-256 | `73580c66cac0bcb62d5bbe563c0c48fc08c9fc723d4f7d9973af1ac1d4890430` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

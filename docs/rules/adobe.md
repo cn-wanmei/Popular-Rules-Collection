@@ -14,14 +14,14 @@
 | Provider | `adobe` |
 | 规则浏览路径 | `rule/adobe/adobe/adobe.yaml` |
 | 规则数量（_index） | **143** |
-| SHA-256 | `2d08d0550d2f501f51d6cb3dcaecb43d2e5c89f17a3b1ff477bbbcd46f90de4c` |
+| SHA-256 | `1dc856c695205b9f4116c51c5674815420661e953eb2296878052e46f0a6fc3d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

@@ -16,14 +16,14 @@
 | Provider | `uber` |
 | 规则浏览路径 | `rule/uber/uber_aggregate/uber_aggregate.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `8aeb4d25ac5f09b41dd0267abb8592cb0127c97f045fb5e5e48e761c6c4b0545` |
+| SHA-256 | `49905e00e5ca2f249a3b64216617926e5f24610138a6cec4b9938a074fb24201` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

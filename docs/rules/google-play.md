@@ -16,14 +16,14 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-play/google-play.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `e3a4d7ffea1ac19854064dae0dacead477e20dfcf467001d97e44af8cc1e6649` |
+| SHA-256 | `e78550b87ab02b7a5b20b9f28a9da4909b8ba0ae72a1ba31d3ec5603d8109cf1` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

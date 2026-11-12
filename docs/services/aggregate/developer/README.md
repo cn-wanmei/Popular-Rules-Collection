@@ -13,15 +13,15 @@
 | 类型 | aggregate |
 | Provider | `` |
 | 规则浏览路径 | `rule/aggregate/developer/developer.yaml` |
-| 规则数量（_index） | **709** |
-| SHA-256 | `0d369f0889b9193f2b1484dbde48ed4458e86387a2ce0dea200dc4d5ebc5d95b` |
+| 规则数量（_index） | **711** |
+| SHA-256 | `1e3bd2c900994374e16d72c1ae7f5c1d84fa2f4ef3f511e9c0c530d1f07782c4` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -46,13 +46,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 709 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/categories/developer/developer.yaml` |
-| loon | 709 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/categories/developer/developer.list` |
-| mihomo | 709 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/categories/developer/developer.yaml` |
-| quantumultx | 709 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/categories/developer/developer.list` |
-| shadowrocket | 709 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/categories/developer/developer.list` |
+| egern | 711 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/categories/developer/developer.yaml` |
+| loon | 711 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/categories/developer/developer.list` |
+| mihomo | 711 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/categories/developer/developer.yaml` |
+| quantumultx | 711 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/categories/developer/developer.list` |
+| shadowrocket | 711 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/categories/developer/developer.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/categories/developer/developer.json` |
-| surge | 709 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/categories/developer/developer.list` |
+| surge | 711 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/categories/developer/developer.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/googlefcm/googlefcm.yaml` |
-| 规则数量（_index） | **54** |
-| SHA-256 | `e5a038e2177843c4cc919b6fbe01d0114e6c7425fc326a5021a7cb9a3914c169` |
+| 规则数量（_index） | **13** |
+| SHA-256 | `6cd07b61a7d87b3697f88e088d0c63c4080d3361cdb56148949ed0ed2f365900` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 95 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/google/googlefcm/googlefcm.yaml` |
-| loon | 95 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/google/googlefcm/googlefcm.list` |
-| mihomo | 95 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/google/googlefcm/googlefcm.yaml` |
-| quantumultx | 95 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/google/googlefcm/googlefcm.list` |
-| shadowrocket | 95 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/google/googlefcm/googlefcm.list` |
+| egern | 39 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/google/googlefcm/googlefcm.yaml` |
+| loon | 39 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/google/googlefcm/googlefcm.list` |
+| mihomo | 39 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/google/googlefcm/googlefcm.yaml` |
+| quantumultx | 39 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/google/googlefcm/googlefcm.list` |
+| shadowrocket | 39 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/google/googlefcm/googlefcm.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/google/googlefcm/googlefcm.json` |
-| surge | 95 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/google/googlefcm/googlefcm.list` |
+| surge | 39 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/google/googlefcm/googlefcm.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

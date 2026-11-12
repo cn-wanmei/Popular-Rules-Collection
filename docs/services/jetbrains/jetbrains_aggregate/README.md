@@ -16,14 +16,14 @@
 | Provider | `jetbrains` |
 | 规则浏览路径 | `rule/jetbrains/jetbrains_aggregate/jetbrains_aggregate.yaml` |
 | 规则数量（_index） | **25** |
-| SHA-256 | `42a9bf2a737a3a6a43ddc5cf7c912d2fdb8cabc97985327b202323dc30f886c8` |
+| SHA-256 | `fb7325bb9730c751cf31bc4739dc6d3eec12b67082d7526da0c59a789013315f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

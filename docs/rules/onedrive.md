@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/onedrive/onedrive.yaml` |
-| 规则数量（_index） | **18** |
-| SHA-256 | `f02a4268ebf1b79117f3ad993e2f70d572a6260e25732f58899df36f6837cd6b` |
+| 规则数量（_index） | **13** |
+| SHA-256 | `ec7a2a77a8a3182b459483eb08207136d4c16e20945f24170253196373a32e28` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 29 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/microsoft/onedrive/onedrive.yaml` |
-| loon | 29 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/microsoft/onedrive/onedrive.list` |
-| mihomo | 29 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/microsoft/onedrive/onedrive.yaml` |
-| quantumultx | 29 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/microsoft/onedrive/onedrive.list` |
-| shadowrocket | 29 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/microsoft/onedrive/onedrive.list` |
+| egern | 26 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/microsoft/onedrive/onedrive.yaml` |
+| loon | 26 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/microsoft/onedrive/onedrive.list` |
+| mihomo | 26 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/microsoft/onedrive/onedrive.yaml` |
+| quantumultx | 26 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/microsoft/onedrive/onedrive.list` |
+| shadowrocket | 26 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/microsoft/onedrive/onedrive.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/microsoft/onedrive/onedrive.json` |
-| surge | 29 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/microsoft/onedrive/onedrive.list` |
+| surge | 26 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/microsoft/onedrive/onedrive.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

@@ -16,14 +16,14 @@
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/qqdoc/qqdoc.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `8c5dd698d013a9989749bdd3bdd58e67bfef0624e9132daaee5abc07b5bfd0f5` |
+| SHA-256 | `4032e6668d42bbd680ae7358f96df7499ddac5a30747172ee72dc462afe93b38` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

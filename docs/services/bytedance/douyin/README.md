@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/douyin/douyin.yaml` |
-| 规则数量（_index） | **80** |
-| SHA-256 | `330595b72a5bda65215f999e4b84fbf4073bab503513b4243a56d29bcc42d9c1` |
+| 规则数量（_index） | **13** |
+| SHA-256 | `81e86447e27fa7aa442a1ad957134bbf7f3f0ce39f2db9881ae98896fb0b03cc` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 103 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/bytedance/douyin/douyin.yaml` |
-| loon | 103 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/bytedance/douyin/douyin.list` |
-| mihomo | 103 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bytedance/douyin/douyin.yaml` |
-| quantumultx | 103 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/bytedance/douyin/douyin.list` |
-| shadowrocket | 103 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/bytedance/douyin/douyin.list` |
+| egern | 52 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/bytedance/douyin/douyin.yaml` |
+| loon | 52 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/bytedance/douyin/douyin.list` |
+| mihomo | 52 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bytedance/douyin/douyin.yaml` |
+| quantumultx | 52 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/bytedance/douyin/douyin.list` |
+| shadowrocket | 52 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/bytedance/douyin/douyin.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/bytedance/douyin/douyin.json` |
-| surge | 103 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/bytedance/douyin/douyin.list` |
+| surge | 52 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/bytedance/douyin/douyin.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

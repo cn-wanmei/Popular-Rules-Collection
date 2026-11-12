@@ -16,14 +16,14 @@
 | Provider | `mgtv` |
 | 规则浏览路径 | `rule/mgtv/mgtv_aggregate/mgtv_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `4e81314539ee86179dcd28b1f5ca39adc2f42b9c697bbb901a835f05e43f3f0c` |
+| SHA-256 | `0fbfca0afa78c5deec2bc60d5680b6f6d85aec05b47fbe62574c73662bbc928a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

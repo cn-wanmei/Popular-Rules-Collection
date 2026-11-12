@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `nintendo` |
 | 规则浏览路径 | `rule/nintendo/nintendo_aggregate/nintendo_aggregate.yaml` |
-| 规则数量（_index） | **127** |
-| SHA-256 | `ead60edb43bbd41e7eac9a38562186d6f9eadc15acfc5c2a88f90c30aaa94f34` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `a7b71e990e2161e617023354bc8b30d9ea5b31b5b11daac747d46b4266955d34` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 127 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/nintendo/nintendo_aggregate/nintendo_aggregate.yaml` |
-| loon | 127 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/nintendo/nintendo_aggregate/nintendo_aggregate.list` |
-| mihomo | 127 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/nintendo/nintendo_aggregate/nintendo_aggregate.yaml` |
-| quantumultx | 127 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/nintendo/nintendo_aggregate/nintendo_aggregate.list` |
-| shadowrocket | 127 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/nintendo/nintendo_aggregate/nintendo_aggregate.list` |
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/nintendo/nintendo_aggregate/nintendo_aggregate.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/nintendo/nintendo_aggregate/nintendo_aggregate.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/nintendo/nintendo_aggregate/nintendo_aggregate.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/nintendo/nintendo_aggregate/nintendo_aggregate.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/nintendo/nintendo_aggregate/nintendo_aggregate.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/nintendo/nintendo_aggregate/nintendo_aggregate.json` |
-| surge | 127 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/nintendo/nintendo_aggregate/nintendo_aggregate.list` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/nintendo/nintendo_aggregate/nintendo_aggregate.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

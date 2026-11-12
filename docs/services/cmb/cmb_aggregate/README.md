@@ -16,14 +16,14 @@
 | Provider | `cmb` |
 | 规则浏览路径 | `rule/cmb/cmb_aggregate/cmb_aggregate.yaml` |
 | 规则数量（_index） | **38** |
-| SHA-256 | `19bc38c3216ea1ece629cd8f82ac656ce49c3da051f107c7f4a776cb03d01cc9` |
+| SHA-256 | `44a1230b90faa881b871aac2c24e0809df40786712d3ad1e2b5cb8851929d8cb` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

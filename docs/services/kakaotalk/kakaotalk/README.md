@@ -16,14 +16,14 @@
 | Provider | `kakaotalk` |
 | 规则浏览路径 | `rule/kakaotalk/kakaotalk/kakaotalk.yaml` |
 | 规则数量（_index） | **15** |
-| SHA-256 | `b95693412811152718a71f0b4b24141f89d6c72fec6a48b27c23df4c474ec4a7` |
+| SHA-256 | `b02e34224a65fa4046668d2c701dd504d3da32ae393a046f1742fd3312aaee94` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

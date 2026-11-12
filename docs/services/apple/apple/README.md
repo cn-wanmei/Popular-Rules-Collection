@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/apple/apple.yaml` |
-| 规则数量（_index） | **2075** |
-| SHA-256 | `ddace944213d43634a7aaf2d4be071bfc192208548f87ff435a2f6b51c62e711` |
+| 规则数量（_index） | **2047** |
+| SHA-256 | `5299c05d705c11554e41f0ac58028ec9c83fe08407b3b94eea242bc0aac4151e` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 2054 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/apple/apple/apple.yaml` |
-| loon | 2054 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/apple/apple/apple.list` |
-| mihomo | 2054 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/apple/apple/apple.yaml` |
-| quantumultx | 2054 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/apple/apple/apple.list` |
-| shadowrocket | 2054 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/apple/apple/apple.list` |
+| egern | 2034 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/apple/apple/apple.yaml` |
+| loon | 2034 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/apple/apple/apple.list` |
+| mihomo | 2034 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/apple/apple/apple.yaml` |
+| quantumultx | 2034 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/apple/apple/apple.list` |
+| shadowrocket | 2034 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/apple/apple/apple.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/apple/apple/apple.json` |
-| surge | 2054 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/apple/apple/apple.list` |
+| surge | 2034 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/apple/apple/apple.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

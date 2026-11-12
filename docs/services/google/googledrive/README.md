@@ -16,14 +16,14 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/googledrive/googledrive.yaml` |
 | 规则数量（_index） | **4** |
-| SHA-256 | `d8410873224404b5e49699055120a224b40424507fa9e87778d0bdb25ff5543f` |
+| SHA-256 | `3524b1e9798b6109d0842a8a253119bc7fd5c3addeea54288165c3a03d67dc9f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261111T020425721267Z-run` |
-| IR digest | `72021c505b2bf1f042268466ced93c97422ca7911c8f682d3dbe57cf438cad07` |
+| Run ID | `20261112T030053237447Z-run` |
+| IR digest | `cfe75abf9e0622b505904625c2909cd152fc5f1a3ed40f0d0040a5e171355b08` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
