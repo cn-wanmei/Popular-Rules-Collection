@@ -2,11 +2,11 @@
   "id": "dat-geoip",
   "kind": "binary",
   "scope": "artifact",
-  "backup": "backup/2026-11-11/datasets/dat-geoip.bin",
+  "backup": "backup/2026-11-12/datasets/dat-geoip.bin",
   "artifact": "generated/mmdb/geoip.dat",
   "sha256": "90b78ab861c1cdc3f871f305f9ceedfb8d6d6329e3a40295e6773e057297384c",
   "bytes": 16475153,
-  "fetched_at": "2026-11-11T01:53:36.564967+00:00",
+  "fetched_at": "2026-11-12T02:51:40.828971+00:00",
   "source": {
     "owner": null,
     "repo": null,
