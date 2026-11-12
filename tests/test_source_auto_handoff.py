@@ -5,6 +5,7 @@ import pytest
 from scripts.source_auto_handoff import (
     LINEAGE_SERVICES,
     _validate_source_seal_report,
+    _lifecycle_eligible,
 )
 
 
@@ -128,3 +129,13 @@ def test_handoff_workflow_propagates_python_pipeline_failures() -> None:
     step = next(item for item in steps if item.get("name") == "Materialize and verify current Source durable seal")
     assert step.get("shell") == "bash"
     assert "set -euo pipefail" in step.get("run", "")
+
+
+
+def test_lifecycle_handoff_allows_only_enabled_verified_or_production() -> None:
+    assert _lifecycle_eligible({"state": "production", "enabled": True})
+    assert _lifecycle_eligible({"state": "verified", "enabled": True})
+    assert not _lifecycle_eligible({"state": "canary", "enabled": True})
+    assert not _lifecycle_eligible({"state": "review", "enabled": True})
+    assert not _lifecycle_eligible({"state": "production", "enabled": False})
+    assert not _lifecycle_eligible({})

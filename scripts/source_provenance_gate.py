@@ -92,6 +92,33 @@ def verify_binding(service_id: str, binding: dict) -> dict:
         }
 
     checks: dict[str, bool] = {}
+    lifecycle_attestation = "LEGACY_LKG_UNATTESTED"
+    lifecycle_fields = ("lifecycle_ref", "lifecycle_state", "lifecycle_config_sha256")
+    if any(binding.get(field) for field in lifecycle_fields):
+        if not all(binding.get(field) for field in lifecycle_fields):
+            return {"service_id": service_id, "status": "FAIL", "errors": ["incomplete lifecycle attestation"]}
+        lifecycle_ref = str(binding.get("lifecycle_ref") or "")
+        if lifecycle_ref != source_ref:
+            return {"service_id": service_id, "status": "FAIL", "errors": ["lifecycle_ref must equal immutable source_ref"]}
+        try:
+            lifecycle_raw = get_text(f"{SOURCE_ROOT}/{source_ref}/config/source_canary_state.yaml")
+            lifecycle_digest = hashlib.sha256(lifecycle_raw).hexdigest()
+            lifecycle_doc = yaml.safe_load(lifecycle_raw.decode("utf-8")) or {}
+            lifecycle_record = (lifecycle_doc.get("services") or {}).get(service_id) or {}
+        except Exception as exc:
+            return {"service_id": service_id, "status": "FAIL", "errors": [f"lifecycle SSOT fetch/parse failed: {type(exc).__name__}: {exc}"]}
+        lifecycle_state = str(lifecycle_record.get("state") or "")
+        lifecycle_ok = (
+            lifecycle_doc.get("schema") == "popular_rules_source_lifecycle_v1"
+            and lifecycle_record.get("enabled") is True
+            and lifecycle_state in {"production", "verified"}
+            and lifecycle_state == str(binding.get("lifecycle_state"))
+            and lifecycle_digest == str(binding.get("lifecycle_config_sha256"))
+        )
+        checks["lifecycle_eligibility"] = lifecycle_ok
+        lifecycle_attestation = "ATTESTED"
+    else:
+        checks["lifecycle_eligibility"] = True
     checks["release_service"] = release.get("service_id") == service_id
     checks["release_snapshot"] = str(release.get("snapshot_id")) == str(binding["snapshot_id"])
     checks["release_content"] = str(release.get("content_digest")) == str(binding["content_digest"])
@@ -106,6 +133,7 @@ def verify_binding(service_id: str, binding: dict) -> dict:
         "source_ref": source_ref,
         "verified_input_commit": verified_input,
         "snapshot_id": binding["snapshot_id"],
+        "lifecycle_attestation": lifecycle_attestation,
         "checks": checks,
         "failed_checks": failed,
     }
