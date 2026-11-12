@@ -111,6 +111,25 @@ def _get_source_seal() -> dict:
     return _validate_source_seal_report(_get_json(SOURCE_REPORT_URL))
 
 
+def _get_source_lifecycle(source_ref: str) -> tuple[dict, str]:
+    raw = _get_bytes(f"{SOURCE_ROOT}/{source_ref}/config/source_canary_state.yaml")
+    value = yaml.safe_load(raw.decode("utf-8")) or {}
+    if not isinstance(value, dict) or value.get("schema") != "popular_rules_source_lifecycle_v1":
+        raise RuntimeError("Source lifecycle SSOT missing or unsupported at immutable source_ref")
+    services = value.get("services") or {}
+    if not isinstance(services, dict):
+        raise RuntimeError("Source lifecycle services must be a mapping")
+    return services, hashlib.sha256(raw).hexdigest()
+
+
+def _lifecycle_eligible(record: dict) -> bool:
+    return (
+        isinstance(record, dict)
+        and record.get("enabled") is True
+        and str(record.get("state") or "") in {"production", "verified"}
+    )
+
+
 def _load_registry() -> dict:
     value = yaml.safe_load(REGISTRY_PATH.read_text(encoding="utf-8")) or {}
     if not isinstance(value, dict):
@@ -118,7 +137,11 @@ def _load_registry() -> dict:
     return value
 
 
-def _build_binding(source_ref: str, verified_input: str, sid: str, item: dict) -> dict:
+def _build_binding(source_ref: str, verified_input: str, sid: str, item: dict, lifecycle: dict, lifecycle_digest: str) -> dict:
+    lifecycle_record = lifecycle.get(sid)
+    if not _lifecycle_eligible(lifecycle_record):
+        state = (lifecycle_record or {}).get("state", "MISSING") if isinstance(lifecycle_record, dict) else "MISSING"
+        raise RuntimeError(f"{sid}: lifecycle state {state!r} is not eligible for production handoff")
     release_path = str(item["release_path"])
     if not release_path.startswith(f"releases/{sid}/"):
         raise RuntimeError(f"{sid}: unsafe release_path {release_path}")
@@ -149,6 +172,9 @@ def _build_binding(source_ref: str, verified_input: str, sid: str, item: dict) -
         "source_id": "popular-rules-source",
         "source_ref": source_ref,
         "verified_input_commit": verified_input,
+        "lifecycle_ref": source_ref,
+        "lifecycle_state": str(lifecycle_record["state"]),
+        "lifecycle_config_sha256": lifecycle_digest,
         "artifact_path": f"generated/source/{sid}/domains.txt",
         "release_path": release_path,
         "snapshot_id": str(item["snapshot_id"]),
@@ -166,6 +192,7 @@ def main() -> None:
     report = _get_source_seal()
     source_ref = str(report["persistence_commit"])
     verified_input = str(report["verified_input_commit"])
+    lifecycle, lifecycle_digest = _get_source_lifecycle(source_ref)
     durable_services = set(report.get("services") or {})
 
     registry = _load_registry()
@@ -174,14 +201,22 @@ def main() -> None:
         raise RuntimeError("immutable registry bindings must be a mapping")
 
     changed_services: list[str] = []
+    skipped_ineligible: dict[str, str] = {}
     retired_services: list[str] = []
-    # Bind every PERSISTED durable service (full seal), not only lineage subset.
+    # Bind only PERSISTED services whose lifecycle SSOT at the same immutable
+    # Source commit is enabled and explicitly production/verified. Preserve all
+    # existing bindings for review/canary/missing lifecycle states as Last Known Good.
     for sid, item in sorted((report.get("services") or {}).items()):
         if not isinstance(item, dict):
             continue
         if item.get("status") != "PERSISTED":
             continue
-        binding = _build_binding(source_ref, verified_input, sid, item)
+        lifecycle_record = lifecycle.get(sid)
+        if not _lifecycle_eligible(lifecycle_record):
+            state = lifecycle_record.get("state", "MISSING") if isinstance(lifecycle_record, dict) else "MISSING"
+            skipped_ineligible[sid] = str(state)
+            continue
+        binding = _build_binding(source_ref, verified_input, sid, item, lifecycle, lifecycle_digest)
         if bindings.get(sid) != binding:
             bindings[sid] = binding
             changed_services.append(sid)
@@ -222,6 +257,8 @@ def main() -> None:
         "changed": bool(changed_services or retired_services),
         "changed_services": changed_services,
         "retired_services": retired_services,
+        "skipped_ineligible": skipped_ineligible,
+        "lifecycle_config_sha256": lifecycle_digest,
         "services": sorted(durable_persisted),
     }, ensure_ascii=False, indent=2))
 
