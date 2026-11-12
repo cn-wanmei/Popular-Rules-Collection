@@ -684,6 +684,41 @@ sources:
     service: huawei-cloud
     local: PRS_huawei-cloud.domains.txt
     enabled: true
+  - path: generated/source/huawei-iam-api/domains.txt
+    name: huawei-iam-api
+    service: huawei-iam-api
+    local: PRS_huawei-iam-api.domains.txt
+    enabled: false
+  - path: generated/source/huawei-ecs-api/domains.txt
+    name: huawei-ecs-api
+    service: huawei-ecs-api
+    local: PRS_huawei-ecs-api.domains.txt
+    enabled: false
+  - path: generated/source/huawei-evs-api/domains.txt
+    name: huawei-evs-api
+    service: huawei-evs-api
+    local: PRS_huawei-evs-api.domains.txt
+    enabled: false
+  - path: generated/source/huawei-vpc-api/domains.txt
+    name: huawei-vpc-api
+    service: huawei-vpc-api
+    local: PRS_huawei-vpc-api.domains.txt
+    enabled: false
+  - path: generated/source/huawei-ims-api/domains.txt
+    name: huawei-ims-api
+    service: huawei-ims-api
+    local: PRS_huawei-ims-api.domains.txt
+    enabled: false
+  - path: generated/source/huawei-dns-api/domains.txt
+    name: huawei-dns-api
+    service: huawei-dns-api
+    local: PRS_huawei-dns-api.domains.txt
+    enabled: false
+  - path: generated/source/huawei-obs-api/domains.txt
+    name: huawei-obs-api
+    service: huawei-obs-api
+    local: PRS_huawei-obs-api.domains.txt
+    enabled: false
   - path: generated/source/jd-cloud/domains.txt
     name: jd-cloud
     service: jd-cloud
