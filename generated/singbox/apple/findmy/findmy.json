@@ -2,12 +2,13 @@
   "version": 2,
   "rules": [
     {
-      "domain": [
+      "domain_suffix": [
         "fmfmobile.icloud.com",
         "fmipmobile.icloud.com",
-        "statici.icloud.com"
-      ],
-      "domain_suffix": [
+        "statici.icloud.com",
+        "fmfmobile.icloud.com",
+        "fmipmobile.icloud.com",
+        "statici.icloud.com",
         "fmfmobile.icloud.com",
         "fmipmobile.icloud.com",
         "statici.icloud.com"
