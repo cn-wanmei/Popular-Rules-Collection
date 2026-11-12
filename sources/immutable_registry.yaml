@@ -1,18 +1,15 @@
 version: 2
 schema: popular_rules_collection_immutable_source_registry_v2
 source_repository: cn-wanmei/Popular-Rules-Source
-# New bindings require an exact Source lifecycle attestation at the immutable persistence commit.
-# Only enabled production/verified services are eligible; review/canary remain non-eligible.
-# Legacy LKG bindings stay unchanged until individually reviewed; never bulk-promote or revoke them.
 bindings:
   '1688':
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: production
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/1688/domains.txt
     release_path: releases/1688/snap-1688-222302f3a20ecb7c08c72ed0/release.json
     snapshot_id: snap-1688-222302f3a20ecb7c08c72ed0
@@ -26,11 +23,11 @@ bindings:
   cainiao:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: production
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/cainiao/domains.txt
     release_path: releases/cainiao/snap-cainiao-a8a898392298ebaa644a783e/release.json
     snapshot_id: snap-cainiao-a8a898392298ebaa644a783e
@@ -44,11 +41,11 @@ bindings:
   dingding:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: production
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/dingding/domains.txt
     release_path: releases/dingding/snap-dingding-09ae1ecd000f1688f61e99a0/release.json
     snapshot_id: snap-dingding-09ae1ecd000f1688f61e99a0
@@ -62,11 +59,11 @@ bindings:
   qqmail:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: production
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/qqmail/domains.txt
     release_path: releases/qqmail/snap-qqmail-013babbee1bf9cf46a1741a1/release.json
     snapshot_id: snap-qqmail-013babbee1bf9cf46a1741a1
@@ -80,11 +77,11 @@ bindings:
   qqmusic:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: production
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/qqmusic/domains.txt
     release_path: releases/qqmusic/snap-qqmusic-421df9f4465ad7fb35ed9c06/release.json
     snapshot_id: snap-qqmusic-421df9f4465ad7fb35ed9c06
@@ -98,11 +95,11 @@ bindings:
   taobao:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: production
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/taobao/domains.txt
     release_path: releases/taobao/snap-taobao-834d549e8982036ce1438963/release.json
     snapshot_id: snap-taobao-834d549e8982036ce1438963
@@ -116,11 +113,11 @@ bindings:
   tencentcloud:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: production
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/tencentcloud/domains.txt
     release_path: releases/tencentcloud/snap-tencentcloud-e55bc8c508e839813ae20cd0/release.json
     snapshot_id: snap-tencentcloud-e55bc8c508e839813ae20cd0
@@ -134,11 +131,11 @@ bindings:
   tmall:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: production
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/tmall/domains.txt
     release_path: releases/tmall/snap-tmall-17de7049e2f7bf67cb88c785/release.json
     snapshot_id: snap-tmall-17de7049e2f7bf67cb88c785
@@ -377,11 +374,11 @@ bindings:
   applenews:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/applenews/domains.txt
     release_path: releases/applenews/snap-applenews-5b92e365d4fca996fc468b19/release.json
     snapshot_id: snap-applenews-5b92e365d4fca996fc468b19
@@ -395,11 +392,11 @@ bindings:
   baidu:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/baidu/domains.txt
     release_path: releases/baidu/snap-baidu-584ae9eeb87fa1dabd00d11f/release.json
     snapshot_id: snap-baidu-584ae9eeb87fa1dabd00d11f
@@ -413,11 +410,11 @@ bindings:
   bing:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/bing/domains.txt
     release_path: releases/bing/snap-bing-3f36698777489885ba7fdbfd/release.json
     snapshot_id: snap-bing-3f36698777489885ba7fdbfd
@@ -431,11 +428,11 @@ bindings:
   tiktok:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/tiktok/domains.txt
     release_path: releases/tiktok/snap-tiktok-d7c408670d9f72fda616937c/release.json
     snapshot_id: snap-tiktok-d7c408670d9f72fda616937c
@@ -464,11 +461,11 @@ bindings:
   copilot:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/copilot/domains.txt
     release_path: releases/copilot/snap-copilot-9f6da111d1453ad19fc927d2/release.json
     snapshot_id: snap-copilot-9f6da111d1453ad19fc927d2
@@ -497,11 +494,11 @@ bindings:
   gemini:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/gemini/domains.txt
     release_path: releases/gemini/snap-gemini-9e01a42e8140aafccd75f9ea/release.json
     snapshot_id: snap-gemini-9e01a42e8140aafccd75f9ea
@@ -530,11 +527,11 @@ bindings:
   telegram:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/telegram/domains.txt
     release_path: releases/telegram/snap-telegram-ae2063026508ed946661df66/release.json
     snapshot_id: snap-telegram-ae2063026508ed946661df66
@@ -548,11 +545,11 @@ bindings:
   discord:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/discord/domains.txt
     release_path: releases/discord/snap-discord-e5a47c19f5c45c25c613f6f6/release.json
     snapshot_id: snap-discord-e5a47c19f5c45c25c613f6f6
@@ -566,19 +563,19 @@ bindings:
   netflix:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/netflix/domains.txt
-    release_path: releases/netflix/snap-netflix-873e9c1253bb6a6cf515e45e/release.json
-    snapshot_id: snap-netflix-873e9c1253bb6a6cf515e45e
+    release_path: releases/netflix/snap-netflix-f7bcc6dc486bc9165e110b85/release.json
+    snapshot_id: snap-netflix-f7bcc6dc486bc9165e110b85
     content_digest: cd1651259d94ee21a9384bd8c78b0a6aeccc49eb8faf6b36a5a413a645c605cd
     evidence_digest: 105578c08c7f915694ec2d307328719666f834cfa75720b8e5d0c344e8912149
     policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
-    generator_digest: 4c23abf61f30a1503ce75fceeb875035819d9d7b6c60e3d7e2991c69386d22e0
-    release_digest: 873e9c1253bb6a6cf515e45e744f8dab2324e4dc056cd7f547a9c81807d6c1cb
+    generator_digest: d174881c253284a64dee9bb2755d69b9c6de9cc02ffe4eab1f07e61f07a7ac08
+    release_digest: f7bcc6dc486bc9165e110b85d8a2657245bc94d4f218292887da44161ce8e3c3
     release_identity_version: '2'
     expected_sha256: b1e1bb7d32f176618ef7335b6e5ea5ced9bca71e540e694a40bf48a34d3ac5bf
   appstore:
@@ -599,11 +596,11 @@ bindings:
   testflight:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/testflight/domains.txt
     release_path: releases/testflight/snap-testflight-922accff387fa39f172c3c41/release.json
     snapshot_id: snap-testflight-922accff387fa39f172c3c41
@@ -647,11 +644,11 @@ bindings:
   googledrive:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/googledrive/domains.txt
     release_path: releases/googledrive/snap-googledrive-a3f033b61b8bc0b99e39f7ca/release.json
     snapshot_id: snap-googledrive-a3f033b61b8bc0b99e39f7ca
@@ -665,11 +662,11 @@ bindings:
   youtubemusic:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/youtubemusic/domains.txt
     release_path: releases/youtubemusic/snap-youtubemusic-0e39136672e2e05e52470bd5/release.json
     snapshot_id: snap-youtubemusic-0e39136672e2e05e52470bd5
@@ -683,11 +680,11 @@ bindings:
   onedrive:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/onedrive/domains.txt
     release_path: releases/onedrive/snap-onedrive-241ab9a1831b3f0a3affb85a/release.json
     snapshot_id: snap-onedrive-241ab9a1831b3f0a3affb85a
@@ -701,11 +698,11 @@ bindings:
   teams:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/teams/domains.txt
     release_path: releases/teams/snap-teams-b7790f52024c56ece9273ef3/release.json
     snapshot_id: snap-teams-b7790f52024c56ece9273ef3
@@ -719,11 +716,11 @@ bindings:
   wechat:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/wechat/domains.txt
     release_path: releases/wechat/snap-wechat-84a8d3ac3ff682614f4d7470/release.json
     snapshot_id: snap-wechat-84a8d3ac3ff682614f4d7470
@@ -737,11 +734,11 @@ bindings:
   baidutieba:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/baidutieba/domains.txt
     release_path: releases/baidutieba/snap-baidutieba-9badf818529f1807c7959832/release.json
     snapshot_id: snap-baidutieba-9badf818529f1807c7959832
@@ -815,11 +812,11 @@ bindings:
   neteasemusic:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/neteasemusic/domains.txt
     release_path: releases/neteasemusic/snap-neteasemusic-34efc854219f96a2aa121d84/release.json
     snapshot_id: snap-neteasemusic-34efc854219f96a2aa121d84
@@ -833,11 +830,11 @@ bindings:
   douyin:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/douyin/domains.txt
     release_path: releases/douyin/snap-douyin-3780b3c2b6ee1a9abdccf245/release.json
     snapshot_id: snap-douyin-3780b3c2b6ee1a9abdccf245
@@ -866,11 +863,11 @@ bindings:
   findmy:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/findmy/domains.txt
     release_path: releases/findmy/snap-findmy-5dbfa7a125855e4ee11e3daf/release.json
     snapshot_id: snap-findmy-5dbfa7a125855e4ee11e3daf
@@ -899,11 +896,11 @@ bindings:
   feishu:
     status: active
     source_id: popular-rules-source
-    source_ref: f5a3291c5020368f886064bcca026c836801ba3d
-    verified_input_commit: 338ef57418768779aeb712f03ddb387545e375a2
-    lifecycle_ref: f5a3291c5020368f886064bcca026c836801ba3d
+    source_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
+    verified_input_commit: 957c5da5ea86ab08072b011e074b9e2723052fda
+    lifecycle_ref: ee11dab3cbb0004c89eb6a535c6b78becb6034ba
     lifecycle_state: verified
-    lifecycle_config_sha256: fc68dc01eeca7f562f788518de24007b7d8d96b5566181a9f4cdd2e447959f82
+    lifecycle_config_sha256: 46a7a11e85e984e740ce33e025ab395ab1b3776bd9f2e7c46e7e6ed005697fd7
     artifact_path: generated/source/feishu/domains.txt
     release_path: releases/feishu/snap-feishu-dd8e2cd8a4ac32fa8b355226/release.json
     snapshot_id: snap-feishu-dd8e2cd8a4ac32fa8b355226
