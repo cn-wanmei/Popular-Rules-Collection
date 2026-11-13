@@ -16,13 +16,13 @@
 | Provider | `kuaishou` |
 | 规则浏览路径 | `rule/kuaishou/kuaishou/kuaishou.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `9f5a2838055eec52c97d045a69412a69a785c06a337e146eb6cfaebbfe387998` |
+| SHA-256 | `a658b655ae68408872ba30d4b17b1d039d93ea7b5a79645246fc8851936aea55` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T132831735283Z-run` |
+| Run ID | `20261113T024550612922Z-run` |
 | IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 

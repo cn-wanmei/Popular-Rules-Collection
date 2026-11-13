@@ -16,13 +16,13 @@
 | Provider | `paypal` |
 | 规则浏览路径 | `rule/paypal/venmo/venmo.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `fd2c316df7c066a4d22037edb7aa7b57e2adfdbb430c52192405ef461b0ab476` |
+| SHA-256 | `cd2485a4bde44d977ee48223de4f784be217c809e466ee47c2ce24afec80e73c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T132831735283Z-run` |
+| Run ID | `20261113T024550612922Z-run` |
 | IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 

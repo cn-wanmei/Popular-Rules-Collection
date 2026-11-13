@@ -16,13 +16,13 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/firebase/firebase.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `493454651da78b4510787d436cd6180425efba84fe81487b0bb4eb59e7dda560` |
+| SHA-256 | `f2f90f1b335a99c15d326f3eb92d218bdc80c267524d25152a930d8541f4c68e` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T132831735283Z-run` |
+| Run ID | `20261113T024550612922Z-run` |
 | IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 

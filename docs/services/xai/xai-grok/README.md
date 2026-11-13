@@ -16,13 +16,13 @@
 | Provider | `xai` |
 | 规则浏览路径 | `rule/xai/xai-grok/xai-grok.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `a80a05e115a2ba1fda926e7a622cd6ef9023cf941df2b8c2cda9d79594348fac` |
+| SHA-256 | `a5ca055dddbe1714572c78b40dfb79914a61c5b73fe8ad2a7028442f0c48c5c7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T132831735283Z-run` |
+| Run ID | `20261113T024550612922Z-run` |
 | IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 

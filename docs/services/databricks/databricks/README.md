@@ -16,13 +16,13 @@
 | Provider | `databricks` |
 | 规则浏览路径 | `rule/databricks/databricks/databricks.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `80689c87adea2cad4b7069fccdb0adc386e9ed413f53dbd09e771499dfc0dd6a` |
+| SHA-256 | `744f50004f57acffdc710d7ff4c74dd4b2bc0260f1269d18d6a1ab8461b03168` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261112T132831735283Z-run` |
+| Run ID | `20261113T024550612922Z-run` |
 | IR digest | `130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981` |
 | IR schema | `semantic_ir_v2` |
 
