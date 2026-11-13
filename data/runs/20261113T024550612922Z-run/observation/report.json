@@ -1,0 +1,85 @@
+{
+  "schema": "v1_observation_v1",
+  "run_id": "20261113T024550612922Z-run",
+  "snapshot_id": "snap-20261113T024550613686Z",
+  "baseline_decision": "PASS",
+  "quality_decision": "PASS",
+  "release_state": "RC_READY",
+  "blockers": [],
+  "evidence": {
+    "records": {
+      "ingested": 258924,
+      "clean": 258924,
+      "quarantined": 0,
+      "unique_rules": 127870,
+      "memberships": 258924,
+      "ingest_errors": 0,
+      "canonical_errors": 0
+    },
+    "rates": {
+      "clean_rate": 1.0,
+      "quarantine_rate": 0.0,
+      "canonical_error_rate": 0.0
+    },
+    "source_health": {
+      "datasets": {
+        "files": 34,
+        "bytes": 65263270,
+        "errors": 0,
+        "quarantined": 0
+      },
+      "ip_sources": {
+        "files": 3,
+        "bytes": 278971,
+        "errors": 0,
+        "quarantined": 0
+      },
+      "manifests": {
+        "files": 10,
+        "bytes": 1676460,
+        "errors": 0,
+        "quarantined": 0
+      },
+      "sources": {
+        "files": 588,
+        "bytes": 5344120,
+        "errors": 0,
+        "quarantined": 0
+      }
+    },
+    "parser_coverage": {
+      "input_records": 258924,
+      "recognized_records": 258924,
+      "parse_errors": 0,
+      "recognition_rate": 1.0,
+      "quarantine_rate": 0.0
+    },
+    "baseline": {
+      "schema": "baseline_evidence_v1",
+      "decision": "PASS",
+      "anomalies": [],
+      "baseline_path": "baseline/latest.json",
+      "source_run_id": "20260917T054015320743Z-run",
+      "source_snapshot_id": "snap-20260917T054015321635Z"
+    },
+    "quality_score": 100,
+    "release_gates": {
+      "v2_runtime_dependency_zero": true,
+      "snapshot_present": true,
+      "golden_all_pass": true,
+      "canonical_present": true,
+      "ir_present": true,
+      "artifacts_present": true,
+      "rule_distribution_present": true,
+      "directory_manifest_validation": true,
+      "diff_present": true,
+      "baseline_evidence_present": true,
+      "quality_all_hard_pass": true,
+      "parser_coverage_present": true,
+      "source_health_present": true,
+      "seven_clients_present": true,
+      "cas_integrity": true
+    }
+  },
+  "all_pass": true
+}
