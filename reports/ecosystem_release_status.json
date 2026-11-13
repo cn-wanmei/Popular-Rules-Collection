@@ -1,7 +1,7 @@
 {
   "schema": "ecosystem_release_status_v5",
-  "generated_at": "2026-11-12T16:20:43Z",
-  "observed_at": "2026-11-12T16:20:43Z",
+  "generated_at": "2026-11-13T13:23:06Z",
+  "observed_at": "2026-11-13T13:23:06Z",
   "authority_note": "READ MODEL ONLY. Does not replace Collection/Source/Icon SSOT. See docs/STATE_MODEL.md.",
   "repos": {
     "collection": "cn-wanmei/Popular-Rules-Collection",
@@ -21,14 +21,14 @@
       "readability": "ok",
       "ok": true,
       "error": null,
-      "sha": "657af9526c8290522c1be2d7a2591444475a205f"
+      "sha": "bf4780f5667c08823278444e0247d61bb97172af"
     },
     "collection_index": {
       "url": "https://api.github.com/repos/cn-wanmei/Popular-Rules-Collection/contents/rule/_index.yaml?ref=main",
       "readability": "ok",
       "ok": true,
       "error": null,
-      "file_sha256": "e04a49c89e647eeaadc259413d5f0fe19da8728555302228aa57d01365a717ab",
+      "file_sha256": "d24f06b2cb908a2f4f6b748c3f3b5768ae36aeb099b4a03fdf0f2e6f4c598ddd",
       "bytes": 143600
     },
     "source_durable_bridge": {
@@ -42,10 +42,10 @@
       "seal_completeness": "COMPLETE",
       "batch_completeness": "COMPLETE",
       "semantic_consistency": "ok",
-      "created_at": "2026-11-12T13:19:25.763465+00:00",
-      "age_seconds": 10877,
+      "created_at": "2026-11-12T17:57:53.838776+00:00",
+      "age_seconds": 69913,
       "freshness": "fresh",
-      "persistence_commit": "bf8f0a9dcd268f86ed83138edc440d6866e28ecd"
+      "persistence_commit": "ee11dab3cbb0004c89eb6a535c6b78becb6034ba"
     },
     "icon_identity_snapshot": {
       "url": "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/contents/config/collection_identity_snapshot.json?ref=main",
@@ -53,20 +53,20 @@
       "ok": true,
       "error": null,
       "service_count": 394,
-      "generated_at": "2026-11-12T13:48:14Z",
-      "source_ref": "010e0508fc00ac3761aad243bc01340734265448",
-      "file_sha256": "e04a49c89e647eeaadc259413d5f0fe19da8728555302228aa57d01365a717ab",
-      "collection_main_sha": "657af9526c8290522c1be2d7a2591444475a205f",
-      "collection_index_file_sha256": "e04a49c89e647eeaadc259413d5f0fe19da8728555302228aa57d01365a717ab",
+      "generated_at": "2026-11-13T03:00:18Z",
+      "source_ref": "beab647a447b1ca1cb2e92a0ca2ccad68e1a4d74",
+      "file_sha256": "d24f06b2cb908a2f4f6b748c3f3b5768ae36aeb099b4a03fdf0f2e6f4c598ddd",
+      "collection_main_sha": "bf4780f5667c08823278444e0247d61bb97172af",
+      "collection_index_file_sha256": "d24f06b2cb908a2f4f6b748c3f3b5768ae36aeb099b4a03fdf0f2e6f4c598ddd",
       "semantic_consistency": "ok",
       "semantic_reasons": [
         "collection_head_ahead_content_ok"
       ],
-      "age_seconds": 9149,
+      "age_seconds": 37368,
       "age_freshness": "fresh",
-      "verification_run_id": 43230735520,
-      "verification_created_at": "2026-11-12T13:47:54Z",
-      "verification_age_seconds": 9169,
+      "verification_run_id": 43365690497,
+      "verification_created_at": "2026-11-13T04:27:52Z",
+      "verification_age_seconds": 32114,
       "verification_error": null,
       "freshness": "fresh",
       "freshness_basis": "latest_successful_identity_freshness_run",
@@ -79,20 +79,20 @@
       "error": null,
       "bytes": 739,
       "frozen": true,
-      "freeze_age_seconds": 3214783,
+      "freeze_age_seconds": 3290526,
       "freeze_freshness": "aging"
     }
   },
   "summary": {
-    "collection_head": "657af9526c8290522c1be2d7a2591444475a205f",
-    "collection_index_file_sha256": "e04a49c89e647eeaadc259413d5f0fe19da8728555302228aa57d01365a717ab",
+    "collection_head": "bf4780f5667c08823278444e0247d61bb97172af",
+    "collection_index_file_sha256": "d24f06b2cb908a2f4f6b748c3f3b5768ae36aeb099b4a03fdf0f2e6f4c598ddd",
     "source_durable_persisted": 281,
     "source_seal_completeness": "COMPLETE",
     "source_run_completeness": "COMPLETE",
     "handoff_state": "COMPLETE",
     "icon_snapshot_services": 394,
-    "icon_snapshot_ref": "010e0508fc00ac3761aad243bc01340734265448",
-    "icon_snapshot_file_sha256": "e04a49c89e647eeaadc259413d5f0fe19da8728555302228aa57d01365a717ab",
+    "icon_snapshot_ref": "beab647a447b1ca1cb2e92a0ca2ccad68e1a4d74",
+    "icon_snapshot_file_sha256": "d24f06b2cb908a2f4f6b748c3f3b5768ae36aeb099b4a03fdf0f2e6f4c598ddd",
     "icon_vs_collection": "ok",
     "icon_production_frozen": true,
     "icon_freeze_freshness": "aging",
@@ -100,7 +100,7 @@
     "readability": "ok",
     "semantic_consistency": "ok",
     "observation_status": "FRESH OBSERVATION",
-    "observation_watermark": "2026-11-12T16:20:43Z",
+    "observation_watermark": "2026-11-13T13:23:06Z",
     "freshness_sla_note": "source soft=24h hard=7d; icon identity uses latest successful Identity Freshness verification (snapshot age informational); freeze soft=14d hard=45d (read-model labels only)"
   }
 }
