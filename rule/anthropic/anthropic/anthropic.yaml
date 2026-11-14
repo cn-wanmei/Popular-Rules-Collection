@@ -4,9 +4,9 @@ entity: service
 id: anthropic
 display_name: Anthropic
 generated_from:
-  run_id: 20261113T024550612922Z-run
+  run_id: 20261114T022450393541Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 130052f9cd838ad66a6da49a03bb4a90afb8a3633c3eb3aa8ae15e7c491dd981
+  ir_digest: 37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2
 stats:
   total: 24
   by_type:
