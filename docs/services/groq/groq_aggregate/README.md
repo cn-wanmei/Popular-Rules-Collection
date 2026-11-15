@@ -16,14 +16,14 @@
 | Provider | `groq` |
 | 规则浏览路径 | `rule/groq/groq_aggregate/groq_aggregate.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `dd2cea66b818c3bf55b372a8777f3883e44e37d45047424523a72a377e655b4a` |
+| SHA-256 | `968e9252d3b095a32952d7ccd66752be7bb4849c4332179d7b1b60c623b62edb` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T015415083624Z-run` |
-| IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
+| Run ID | `20261115T120546440376Z-run` |
+| IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
