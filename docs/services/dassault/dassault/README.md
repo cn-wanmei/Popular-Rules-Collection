@@ -16,13 +16,13 @@
 | Provider | `dassault` |
 | 规则浏览路径 | `rule/dassault/dassault/dassault.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `298475dcc1ae9c67701a2c88cba851e9454dcc1f5ca8307a5a1d95cd7f90e9de` |
+| SHA-256 | `62c68c738847cdd44bec51c61e653c0b527a65895b005fc9fd7ae78b04e6d424` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

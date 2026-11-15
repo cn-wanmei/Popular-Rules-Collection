@@ -16,13 +16,13 @@
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/icloudprivaterelay/icloudprivaterelay.yaml` |
 | 规则数量（_index） | **6** |
-| SHA-256 | `661820ea4b585da5d60f73dbdff9f74155269b9065c73312b5a1e7d053dc8e0d` |
+| SHA-256 | `42aa82175e821d8018bc86fdd963506e9e9fb68a21349204b9bcf6208e5af92c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `sap` |
 | 规则浏览路径 | `rule/sap/sap/sap.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `75cec6cb16e2b0df54889b66a80a664f1a828f0e0bfeedbe5365ad7cca40355d` |
+| SHA-256 | `f4455388c85110dc366c22bfe853dd02be848d039bb8b508380b6a6527aa4a85` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

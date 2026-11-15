@@ -16,13 +16,13 @@
 | Provider | `globalfoundries` |
 | 规则浏览路径 | `rule/globalfoundries/globalfoundries/globalfoundries.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `a0b4a8e02cc98af82c64218c550bbc445d53f2d0cf9b2f4a3841fcffb8d4255a` |
+| SHA-256 | `4be770ed7b189f16da1347571dbfc42a8366098b08e738be61f854b3c8c32fcf` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

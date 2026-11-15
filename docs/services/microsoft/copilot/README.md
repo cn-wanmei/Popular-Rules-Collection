@@ -16,13 +16,13 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/copilot/copilot.yaml` |
 | 规则数量（_index） | **45** |
-| SHA-256 | `0d5b75044228c1e9b667b7c3250a5c6168720ac0760eb4fbe9c99e0fe2adfb00` |
+| SHA-256 | `3f2c060d35da5f640d44a7c07fd68ca0b66de6403a7fdb1752c9879b168df970` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

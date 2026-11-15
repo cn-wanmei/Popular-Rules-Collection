@@ -16,13 +16,13 @@
 | Provider | `zhipu` |
 | 规则浏览路径 | `rule/zhipu/zhipu_aggregate/zhipu_aggregate.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `a78d2434999ecd92ec8f82957fef353892c34b1ec33c4922af8cda81602b6e6b` |
+| SHA-256 | `a928a2cdff4bb02e926cbafb2a691ebb5d61afac57f3766155f8caf8115179c5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `epicgames` |
 | 规则浏览路径 | `rule/epicgames/epicgames/epicgames.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `3fe3a62363e5b6f5b1a80cb8ca0f01475347e339730e7cf5a7d1a4cfb1553f20` |
+| SHA-256 | `14c464c1d748e686078b7b9257c4c02233d4f3807335e36f4d8a1018ec8ed91c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

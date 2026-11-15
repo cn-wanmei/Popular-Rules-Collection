@@ -16,13 +16,13 @@
 | Provider | `dahua` |
 | 规则浏览路径 | `rule/dahua/dahua_aggregate/dahua_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `0b8753497708d98980333b27b4d7dbeb690f2fc1d92a46ddb9930bd8f58709d6` |
+| SHA-256 | `acd6d4032ea0dafa4ffd211d8ec7133db34470a09b75709f07bce3a0d2c1d47e` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

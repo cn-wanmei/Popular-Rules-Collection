@@ -16,13 +16,13 @@
 | Provider | `moonshot` |
 | 规则浏览路径 | `rule/moonshot/moonshot/moonshot.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `a10e6bf98539fcef9a55b5d0137a6aa78628042130b6c4f780fba2b9e0ee01b7` |
+| SHA-256 | `5b7e90bc58e79f89e8781511c1ca3d5fa27af91a5bdbc15bee2dafd74658cf83` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

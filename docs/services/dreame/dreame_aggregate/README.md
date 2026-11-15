@@ -16,13 +16,13 @@
 | Provider | `dreame` |
 | 规则浏览路径 | `rule/dreame/dreame_aggregate/dreame_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `8a8b159e16cd5be809896998d4f2cece8edf96f13a6dc95bb64893e77e6955e8` |
+| SHA-256 | `da24f10a4e5885fdee84f7dd2938cfc1b26ac245c2b10d7c05d1c01addd71735` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

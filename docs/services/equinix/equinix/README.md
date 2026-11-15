@@ -16,13 +16,13 @@
 | Provider | `equinix` |
 | 规则浏览路径 | `rule/equinix/equinix/equinix.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `c5b53183a9c08ab085e3eda0fcde4526eca02a8aa047b5a7c73bc20be25eda72` |
+| SHA-256 | `8047764e50f0e297be96a53167cd9ead837dad6cb2ef4b65231eaf4e6c193290` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

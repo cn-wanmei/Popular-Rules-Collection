@@ -16,13 +16,13 @@
 | Provider | `meituan` |
 | 规则浏览路径 | `rule/meituan/meituan_aggregate/meituan_aggregate.yaml` |
 | 规则数量（_index） | **7** |
-| SHA-256 | `4a2dbd023b2391b44a34cd43162e974136f17faf7375dcbc432e81c8593d8fbe` |
+| SHA-256 | `818cbead534b83387056ce0445145fb5dff87e18ff21bfb45dc5e337b1ca65af` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

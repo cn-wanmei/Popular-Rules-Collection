@@ -16,13 +16,13 @@
 | Provider | `kingdee` |
 | 规则浏览路径 | `rule/kingdee/kingdee_aggregate/kingdee_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `c82e10813ee5016b7baf9c61abd4e10bcd76b050e11ffe90690629a5047544a5` |
+| SHA-256 | `8a3e4e1a7ed72dad808e18dd35d2e3717abe0c7c601a4d2f6128c70e72d843f8` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

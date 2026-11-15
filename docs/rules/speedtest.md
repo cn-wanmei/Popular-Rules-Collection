@@ -16,13 +16,13 @@
 | Provider | `ookla` |
 | 规则浏览路径 | `rule/ookla/speedtest/speedtest.yaml` |
 | 规则数量（_index） | **8** |
-| SHA-256 | `17d161488854518fde54d1472c49d6b6ba820bdeea66dc8ab47083e3aeb0823f` |
+| SHA-256 | `10e91c5e213a53270d690877dc0d98f9bccdcc97ddaa6e6453d62f360d373545` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

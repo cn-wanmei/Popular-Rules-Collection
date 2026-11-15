@@ -16,13 +16,13 @@
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/wecom/wecom.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `d7d132a371608a7fccdb342c8976fa689ecb84b316913c0a34c48460d02b2fdf` |
+| SHA-256 | `f0c3a4cc8064591bdce613e89c9d5eeb84d33a8a53cdf5e26bbcd6d903633635` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

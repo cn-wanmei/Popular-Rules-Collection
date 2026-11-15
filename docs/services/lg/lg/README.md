@@ -16,13 +16,13 @@
 | Provider | `lg` |
 | 规则浏览路径 | `rule/lg/lg/lg.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `d77c1aebf570331e69d017afc64bf51894c428efa2b8bca1021d544de6543cac` |
+| SHA-256 | `0e0dcb487dc1ebb5d942dedaa1bb604bb02d6f97a946ad9d1fd7b90e5fa011d2` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

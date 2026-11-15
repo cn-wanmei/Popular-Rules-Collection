@@ -16,13 +16,13 @@
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/capcut/capcut.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `6c7f3bf581e2740f60082ba321ddf191b23568e0bfc0e5d340c2f35411db8721` |
+| SHA-256 | `a7f486b51e585f023be4bbcc6c9c7c8199d03e20afcd8e21d3b1a7dcef6c741d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

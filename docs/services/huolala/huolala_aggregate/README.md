@@ -16,13 +16,13 @@
 | Provider | `huolala` |
 | 规则浏览路径 | `rule/huolala/huolala_aggregate/huolala_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `cc12a74cc4524b961d3d7a7e790ec4914cdc7d140a306fe0e7b6aeb450b49872` |
+| SHA-256 | `2d200d4d710812a254cba910931824bf8f65f93e884ee57b55a7bc0a223ef30a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

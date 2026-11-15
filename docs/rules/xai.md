@@ -14,13 +14,13 @@
 | Provider | `xai` |
 | 规则浏览路径 | `rule/xai/xai/xai.yaml` |
 | 规则数量（_index） | **5** |
-| SHA-256 | `1c6b70210d40b79e2d1fccafa4cb5193939c44448d236742586006aa669f359d` |
+| SHA-256 | `48bd7c6f96c446bd48258361376240c313c728706039fa9562d16505ce31fd4f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

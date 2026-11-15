@@ -16,13 +16,13 @@
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/lark/lark.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `7923fd36ff15fe9f781c371344f947affe347ee2b92d08e5cb34b1d3c20a5e51` |
+| SHA-256 | `38aa0cfe1e96d2a963852c1af1f5a83d67d58aacb5b05840b8cd06d155bb17bf` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `panasonic` |
 | 规则浏览路径 | `rule/panasonic/panasonic_aggregate/panasonic_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `3460abd0ff87b08f8007243111a6991b2e7acbf22404ab64a9c858fae8d230e3` |
+| SHA-256 | `718a6a4a9e5b372ca80a6f0f827a5e7669ccbc43cd1268d30ab6faea82946b46` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

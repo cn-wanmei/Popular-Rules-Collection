@@ -16,13 +16,13 @@
 | Provider | `vipshop` |
 | 规则浏览路径 | `rule/vipshop/vipshop_aggregate/vipshop_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `13eb2236f2b7b2cbb872517f420ba970bbf97c5d2b9aba6a8d82725cc4ebcdc0` |
+| SHA-256 | `8231147cfa9966ec1ee76a30f35577ec7613290e15d9ca7474587e09348c60f9` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

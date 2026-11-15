@@ -16,13 +16,13 @@
 | Provider | `kingsoft` |
 | 规则浏览路径 | `rule/kingsoft/wps/wps.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `2064b6a20e4af38173a3f912d5865c86eeb18926ac887cf15f0511aad117edb5` |
+| SHA-256 | `add437bcf12da8891f939aa7edab8a56fa1e834ae9d6d5bc8bbfadf2764e2deb` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

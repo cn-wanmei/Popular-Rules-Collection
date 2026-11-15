@@ -16,13 +16,13 @@
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/douyin/douyin.yaml` |
 | 规则数量（_index） | **13** |
-| SHA-256 | `f1ed1b5666750c53b3e619040a6714a976297d59d9455cd3389cae9a76a964b4` |
+| SHA-256 | `692c77027261731b94b212162efad6cbe30388c252fd28f1fccc9635708412f0` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

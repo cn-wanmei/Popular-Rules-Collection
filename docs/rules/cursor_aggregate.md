@@ -16,13 +16,13 @@
 | Provider | `cursor` |
 | 规则浏览路径 | `rule/cursor/cursor_aggregate/cursor_aggregate.yaml` |
 | 规则数量（_index） | **5** |
-| SHA-256 | `5bbc4252728ebc8b3d2cbd5ed4abfb04b19884cb25458129529c7deea9a4d363` |
+| SHA-256 | `e6d8ed5c6fad20978bcf169f73bf76b661bd0e7b5281efe9884a3c911cc3538b` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

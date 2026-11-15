@@ -16,13 +16,13 @@
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/qqmusic/qqmusic.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `41c59ed6f3346e8f26558234bf0090f62bbe02c767e195ae8ebf6237e66868c6` |
+| SHA-256 | `c658f1738cc2694a054a1ab5b43f03fd857325415775e3ad48b494122e7ac061` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/scholar/scholar.yaml` |
 | 规则数量（_index） | **250** |
-| SHA-256 | `c9f0da553ec575d96ee78fc2d8561c0ab4c03d8dee8ce2a272b95071785d0917` |
+| SHA-256 | `d2e13ad7f525b47e3c02021bd465d01f7f1580cc3a9fbc9862db6b154f19e29a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

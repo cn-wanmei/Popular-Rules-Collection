@@ -16,13 +16,13 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/xbox/xbox.yaml` |
 | 规则数量（_index） | **42** |
-| SHA-256 | `366ac6ed8af6f4463bb57fafd3aa3a757ac7c3eab868f7d93efc691037fe233d` |
+| SHA-256 | `95f78a745a247527fe7d0cbfbc8e23db788c39a379da7570c56599dd0227ace3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

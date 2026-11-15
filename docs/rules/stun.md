@@ -16,13 +16,13 @@
 | Provider | `special` |
 | 规则浏览路径 | `rule/special/stun/stun.yaml` |
 | 规则数量（_index） | **366** |
-| SHA-256 | `8675f1ae7eb17a588c7a3a945efe40b4cf031fcc5f5ea3b11a18ec2d34112525` |
+| SHA-256 | `0137fb6c917b0279e1acac6fe33ba3e2278081a0644358c09cfe811c5bcddecc` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

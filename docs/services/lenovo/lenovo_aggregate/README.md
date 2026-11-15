@@ -16,13 +16,13 @@
 | Provider | `lenovo` |
 | 规则浏览路径 | `rule/lenovo/lenovo_aggregate/lenovo_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `fca1e2922f0b5b4567ee0bc873698897ab014a3a76673f41fef78a9835953738` |
+| SHA-256 | `3aa9aaba8e8173096fd476c60a0671725920426dd33c1db5ecff96d697873ed7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

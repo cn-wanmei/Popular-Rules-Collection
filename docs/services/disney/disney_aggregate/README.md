@@ -16,13 +16,13 @@
 | Provider | `disney` |
 | 规则浏览路径 | `rule/disney/disney_aggregate/disney_aggregate.yaml` |
 | 规则数量（_index） | **240** |
-| SHA-256 | `32b0b7399ee89fd73ec2af58cf02248a81872b0cafca1eea0f45cba84d10cfc2` |
+| SHA-256 | `f37b4574c0ae063b7111d69bd4a6a813cf225974476aef917b260f3c1ed9b01c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `alibaba` |
 | 规则浏览路径 | `rule/alibaba/lazada/lazada.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `2662f7f929c8e7b6e8a7870023d72ece8246508b61c319b44d909cbe9e62e11c` |
+| SHA-256 | `58502649d079dd42feab16daa11e25d183d5021bd64a6f5ae430c4d0c8a4fdcf` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261114T022450393541Z-run` |
+| Run ID | `20261115T015415083624Z-run` |
 | IR digest | `37c1aab29804fd4e8dd6c9c0e4a149c9ea08b83b780d71d61783e72bebc21fc2` |
 | IR schema | `semantic_ir_v2` |
 
