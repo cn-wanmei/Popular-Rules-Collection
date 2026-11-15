@@ -1043,6 +1043,13 @@ services:
     - huaweicloud
     - huaweiappgallery
     - huawei-appgallery
+    - huawei-iam-api
+    - huawei-ecs-api
+    - huawei-evs-api
+    - huawei-vpc-api
+    - huawei-ims-api
+    - huawei-dns-api
+    - huawei-obs-api
   xiaomi:
     primary_category: china
     display_name: Xiaomi
@@ -1470,6 +1477,62 @@ services:
   huawei-cloud:
     primary_category: china
     display_name: Huawei Cloud
+    categories:
+    - china
+    - developer
+    service_type: service
+    parent: huawei
+  huawei-iam-api:
+    primary_category: china
+    display_name: Huawei Cloud IAM API
+    categories:
+    - china
+    - developer
+    service_type: service
+    parent: huawei
+  huawei-ecs-api:
+    primary_category: china
+    display_name: Huawei Cloud ECS API
+    categories:
+    - china
+    - developer
+    service_type: service
+    parent: huawei
+  huawei-evs-api:
+    primary_category: china
+    display_name: Huawei Cloud EVS API
+    categories:
+    - china
+    - developer
+    service_type: service
+    parent: huawei
+  huawei-vpc-api:
+    primary_category: china
+    display_name: Huawei Cloud VPC API
+    categories:
+    - china
+    - developer
+    service_type: service
+    parent: huawei
+  huawei-ims-api:
+    primary_category: china
+    display_name: Huawei Cloud IMS API
+    categories:
+    - china
+    - developer
+    service_type: service
+    parent: huawei
+  huawei-dns-api:
+    primary_category: china
+    display_name: Huawei Cloud DNS API
+    categories:
+    - china
+    - developer
+    service_type: service
+    parent: huawei
+  huawei-obs-api:
+    primary_category: china
+    display_name: Huawei Cloud OBS API
     categories:
     - china
     - developer
