@@ -2,10 +2,10 @@
   "schema": "promotion_v4",
   "schema_version": 2,
   "layout_schema": "directory_layout_v2",
-  "promoted_at": "2026-11-15T12:12:31.942110+00:00",
-  "run_id": "20261115T120546440376Z-run",
+  "promoted_at": "2026-11-16T02:06:09.651236+00:00",
+  "run_id": "20261116T015738564940Z-run",
   "release_state": "RC_READY",
-  "snapshot_id": "snap-20261115T120546441318Z",
+  "snapshot_id": "snap-20261116T015738565970Z",
   "quality_score": 100,
   "v2_runtime_dependency": 0,
   "artifact_count": 4557,
@@ -4578,7 +4578,7 @@
     "surge": "de9a6117c09eb5f45549cb03ee52ac2ae70d28985869d880ddcaa3e6ea778bb2"
   },
   "cas_verified": true,
-  "ir_digest": "c5171f4c697f4e99120607b6949eb1385094ecaa53bb78b86b27325d1ee9bb70",
+  "ir_digest": "d6a023e8607d0a6ac022a0c1f638b308c3ace91db04e94b4d89498abff4dc41a",
   "baseline_path": "release-candidate/data/baseline/canonical.json",
   "baseline_digest": "3c74b7def7fbc549c6c9813f456a8caf005b617038d62a99ee2c81e982b6af80"
 }

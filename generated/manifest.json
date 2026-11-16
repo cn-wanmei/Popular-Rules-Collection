@@ -8,21 +8,21 @@
     "singbox",
     "surge"
   ],
-  "collection_date": "2026-11-15",
+  "collection_date": "2026-11-16",
   "file_count": 4707,
   "files": [
     {
-      "file": "_promotion/20261115T120546440376Z-run.json",
+      "file": "_promotion/20261116T015738564940Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "90c2bdae0d133257ab5bc0facb23f1b7e5091e07bae752a4aeb1041dafa5d441",
+      "sha256": "93848156c05f32c7ba1bdd2b6c4c4c016f81b2c2ea3bb3583e219892b4bdf808",
       "size": 542960
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "90c2bdae0d133257ab5bc0facb23f1b7e5091e07bae752a4aeb1041dafa5d441",
+      "sha256": "93848156c05f32c7ba1bdd2b6c4c4c016f81b2c2ea3bb3583e219892b4bdf808",
       "size": 542960
     },
     {
@@ -5790,16 +5790,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "fedcc85d0f219e2356f032b7fe440831ecf8ef82864fe63596774a56f00d5a3d",
-      "size": 1395576
+      "sha256": "3fd2559f2d93e3db93ec56428a73f57ec7f4b56334445d59b590ecbf7d944c12",
+      "size": 1395678
     },
     {
       "file": "geosite/direct_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 110199,
+      "rule_count": 110203,
       "scope": "geosite",
-      "sha256": "b7c545efc103ce7674a8316221734c923604102288b19eaec64d795498b427f6",
-      "size": 2938360
+      "sha256": "23953731de4ac9cc7a3a7524755f19e7ea0c0498a4cb0d4a99043061daa14ac2",
+      "size": 2938518
     },
     {
       "file": "geosite/google-cn.txt",
@@ -5822,32 +5822,32 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "272ef4573f545ebb9e310ce2f236b7dd6560f081d222585333dd88adba94a281",
-      "size": 410421
+      "sha256": "98912d45476c41bf0f4e002472c7610ba4c5cbe692a48a2538778d27f04899f0",
+      "size": 410536
     },
     {
       "file": "geosite/proxy_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 27502,
+      "rule_count": 27507,
       "scope": "geosite",
-      "sha256": "fe5b04883f5e3778ae2309e432db7ad99cfddafecefa83e9734e8c900bec7e6c",
-      "size": 795447
+      "sha256": "17da7fb8c91525d256cbd8561d5cb389ffbd7e2aad42f370bcce56016d839a40",
+      "size": 795632
     },
     {
       "file": "geosite/reject.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "ade0027a51f9f129e8906cc57c4bd94e07db60e08068e2e00821bec8f8a85752",
-      "size": 4206345
+      "sha256": "e9b78f87131ed14bfb69a2e822761d35da483dcdbdb45b87a6bcaf548af3b48c",
+      "size": 4214119
     },
     {
       "file": "geosite/reject_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 200708,
+      "rule_count": 201102,
       "scope": "geosite",
-      "sha256": "fa270292e63920dbe2de1fcca6b27e48373cf321d3f8df4f354b5a73ad8e9ebb",
-      "size": 7016257
+      "sha256": "ebeb2eb3ea47d477c4f71bdbddd4cf70dbaa3662446087de3cb1f5b6cc8db0bd",
+      "size": 7029547
     },
     {
       "file": "ip/adblock.txt",
@@ -16742,16 +16742,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "714472a8788ec2ae73cd46172a902a6ccee04fab2844b2816957e747871f69a6",
-      "size": 394946
+      "sha256": "2efa10911006dc6293f9964adca679d16cf4a22b7e6e15d25115868dbaf11e0d",
+      "size": 394976
     },
     {
       "file": "provider/aws_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 11484,
+      "rule_count": 11485,
       "scope": "provider",
-      "sha256": "120ee35d7ee792771da856e75e3973b1e0bb4fd5ba3a2b62f907b10e40fedea3",
-      "size": 490949
+      "sha256": "28324425ca38a98fc8704970151f17102af701551cc1f3175a87af8399ba758b",
+      "size": 490988
     },
     {
       "file": "provider/cloudflare.txt",
@@ -16790,7 +16790,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "e04954c00fff0e7a22e762980acb168cfb679ff26bb0293464faf898878173a1",
+      "sha256": "e11943a05061f9392b50fdaa945552d90bf1dbe69acdb05b67014805c28af3c5",
       "size": 4691
     },
     {
@@ -16806,7 +16806,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "23d4b698ae7f85a59dba4da1e8a5427aa7ef41bfc8eea504579fb94b17591de6",
+      "sha256": "137b361bfd1819dc8d7b6bf3155bb70ee15af2430452bd0f26dd0ce3c0533581",
       "size": 38617
     },
     {
@@ -37666,7 +37666,7 @@
       "size": 54
     }
   ],
-  "generated_at": "2026-11-15T12:12:33.832377+00:00",
+  "generated_at": "2026-11-16T02:06:11.771758+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [
