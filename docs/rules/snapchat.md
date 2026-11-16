@@ -16,13 +16,13 @@
 | Provider | `snap` |
 | 规则浏览路径 | `rule/snap/snapchat/snapchat.yaml` |
 | 规则数量（_index） | **9** |
-| SHA-256 | `d531d1122b82f0ce9246ed5739b9cb35e7acfd006645c002293f88bf7da24c50` |
+| SHA-256 | `4406f12eb2dd8a20b07519e00ea3dd3a4589091a9207f945b8e0e2c918aab2fb` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `jetbrains` |
 | 规则浏览路径 | `rule/jetbrains/jetbrains/jetbrains.yaml` |
 | 规则数量（_index） | **25** |
-| SHA-256 | `4335926839fefdbb7f66b1da54641e030f3faf5155a4c14c26ea62f1b695bb6f` |
+| SHA-256 | `52705162697c8d1751922496b9608e57baea59c03d90fca505ed9a2e5b504773` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

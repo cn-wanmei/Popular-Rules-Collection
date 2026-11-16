@@ -16,13 +16,13 @@
 | Provider | `transsion` |
 | 规则浏览路径 | `rule/transsion/transsion_aggregate/transsion_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `213a5cb15170bc44363989e0c0a8b58ffa29ef8658d41ad6966b46c3f28f1b80` |
+| SHA-256 | `7b71d4b0caadb96534920c567aa57dbe1520c982ea42a01bf2fa50cfebaee8e9` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

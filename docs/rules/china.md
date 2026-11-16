@@ -14,13 +14,13 @@
 | Provider | `` |
 | 规则浏览路径 | `rule/china/china.yaml` |
 | 规则数量（_index） | **110479** |
-| SHA-256 | `ec0b0cc4e4538e0d1c6a231cb4d435713c4ed2709fd939b5157c0355738769cd` |
+| SHA-256 | `5b5327c2f8a7f4d4a7d06467220b26d717496a68b688335a998ac53b29dbaee7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `huggingface` |
 | 规则浏览路径 | `rule/huggingface/huggingface/huggingface.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `d9894bb72b914fd492f80c52c0bce6847d5c35a84947e8f10942cb3e3a4f927e` |
+| SHA-256 | `7716fffb3e465bf0cc3b8f80f0ee16d065b01420a18ef65e5735651a7bb7a2ac` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

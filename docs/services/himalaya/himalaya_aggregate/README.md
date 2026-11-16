@@ -16,13 +16,13 @@
 | Provider | `himalaya` |
 | 规则浏览路径 | `rule/himalaya/himalaya_aggregate/himalaya_aggregate.yaml` |
 | 规则数量（_index） | **17** |
-| SHA-256 | `08b5b52b5fc54b41299a3069b5a4667006e45fdf69f15526e31c9f581c8e60b9` |
+| SHA-256 | `0ed72353142296058ddfeda153d8c73fd2ffd32576a645ec022408cbcd89fbcb` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

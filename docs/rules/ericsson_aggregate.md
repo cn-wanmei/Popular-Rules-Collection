@@ -16,13 +16,13 @@
 | Provider | `ericsson` |
 | 规则浏览路径 | `rule/ericsson/ericsson_aggregate/ericsson_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `476699c535d974deb32b6ba73d02820b7451e008bb787c199e1b3eb6124e1c4c` |
+| SHA-256 | `a285fab41d728d3f405262afc4cca215eed5fdb14c2e919e5f22f79f0099c696` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `netlify` |
 | 规则浏览路径 | `rule/netlify/netlify_aggregate/netlify_aggregate.yaml` |
 | 规则数量（_index） | **10** |
-| SHA-256 | `7d7c6f0cb64587bdaa1037e9e63eab29c007677b37bdefb7947b4a1e757a2eb1` |
+| SHA-256 | `76614b11b10bcda51198518a9d5934c783c329cfed966b4a80f1508006269410` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

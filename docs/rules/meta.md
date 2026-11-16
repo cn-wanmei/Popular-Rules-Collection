@@ -16,13 +16,13 @@
 | Provider | `meta` |
 | 规则浏览路径 | `rule/meta/meta/meta.yaml` |
 | 规则数量（_index） | **594** |
-| SHA-256 | `68895068fc0be3d9375c1d0e0c55d6509ae79a5fdf4984a9f424436a276a81f1` |
+| SHA-256 | `06d6cc727dc2da908076851e889b7a762eb66c6d43060a38756a18674f0495eb` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

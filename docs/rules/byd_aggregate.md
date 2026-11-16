@@ -16,13 +16,13 @@
 | Provider | `byd` |
 | 规则浏览路径 | `rule/byd/byd_aggregate/byd_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `5da7b29ae49a980eb74e1afff1a69a202ab9239e7709753cbae3fc9fe2316b54` |
+| SHA-256 | `4ea2ef170975e2c3ad4ec225b160c38f6dea81763a832c88ba7a26230a8dbad3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

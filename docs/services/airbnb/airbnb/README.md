@@ -16,13 +16,13 @@
 | Provider | `airbnb` |
 | 规则浏览路径 | `rule/airbnb/airbnb/airbnb.yaml` |
 | 规则数量（_index） | **83** |
-| SHA-256 | `de38bf8a49774a8c6a9c01cdcf123bfb2d46b2572444c9123e9800a751a9b448` |
+| SHA-256 | `2c3331e22b80e9725b46ae3b877a8e2876e2ee90c331a27be9480cc4100a7f34` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

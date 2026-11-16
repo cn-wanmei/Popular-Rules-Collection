@@ -16,13 +16,13 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-calendar/google-calendar.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `cbc525ba12e5af94c337d2f2e95ea3fcf4fc823f4bd7c4cd789cd46d1bece624` |
+| SHA-256 | `6686999509a864966ee75ab4eaac950d81cdcd97e9cf40e5bb2a7d99f7e5eac7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

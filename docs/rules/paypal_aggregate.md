@@ -16,13 +16,13 @@
 | Provider | `paypal` |
 | 规则浏览路径 | `rule/paypal/paypal_aggregate/paypal_aggregate.yaml` |
 | 规则数量（_index） | **247** |
-| SHA-256 | `c8d401896063d02325edd72f4542c9f42c06610fa57aa50b84e7940c280d0c5b` |
+| SHA-256 | `a77df33f38485405d885e1b209c3cb2acae6ff8787943d404bca0799eab1d6df` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `steam` |
 | 规则浏览路径 | `rule/steam/steam_aggregate/steam_aggregate.yaml` |
 | 规则数量（_index） | **97** |
-| SHA-256 | `e5c379e4656754c0e675d4807118f3692f4da8ffdf513d15fe6325f10181978f` |
+| SHA-256 | `de146906def3b57ca9c9c0bc337dba7d86b9617789dbcac2725af40035119128` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

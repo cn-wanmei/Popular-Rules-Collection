@@ -16,13 +16,13 @@
 | Provider | `yonyou` |
 | 规则浏览路径 | `rule/yonyou/yonyou_aggregate/yonyou_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `942f8e1fbed0fc83a012c8d0796439895f1ef43afce688771f54e91bf3754934` |
+| SHA-256 | `7f99c699243cf4194a683d8018382058c491af86605598e32cab90172684a8b5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

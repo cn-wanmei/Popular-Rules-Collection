@@ -14,13 +14,13 @@
 | Provider | `baidu` |
 | 规则浏览路径 | `rule/baidu/baidu/baidu.yaml` |
 | 规则数量（_index） | **288** |
-| SHA-256 | `30ff5c4e1ce9db54ce28ec99ae9ecd70d72e00e4e8bf7cfbc0d594677aa50c33` |
+| SHA-256 | `92e80c51c392733929a2dffb6e90bfcc3d9b4a56f4ebc67c8d52a357b30329b6` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

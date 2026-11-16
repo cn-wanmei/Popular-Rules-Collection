@@ -16,13 +16,13 @@
 | Provider | `notion` |
 | 规则浏览路径 | `rule/notion/notion/notion.yaml` |
 | 规则数量（_index） | **8** |
-| SHA-256 | `834cb12473cc7e21d6cf22d1b9b47c923f9329c66eb40bb36a81545bad6a5caa` |
+| SHA-256 | `330aad17837b3515deabbaa1d8fa886e21130fdf39bd86f9662e3cc7ac0eb189` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

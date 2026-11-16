@@ -16,13 +16,13 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/ms365-planner/ms365-planner.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `44850bb9fcdaa49aa9cfb73b55d65baa583b0799b21e6ba1a8f2f0cc353f1189` |
+| SHA-256 | `d818a55a58454a98c2c6c25e1d546ad78d80afedc066728ca61c71c73ee4f0ff` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

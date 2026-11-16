@@ -16,13 +16,13 @@
 | Provider | `cambricon` |
 | 规则浏览路径 | `rule/cambricon/cambricon/cambricon.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `2700601043b4105f1f497fb3e6ef8eb43f0d157d1f321598ecae0279edc2f7e2` |
+| SHA-256 | `59479ec26075cfc41c95484ddd1c8d46c1a04e203616cc3a43b94f05ce22620c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

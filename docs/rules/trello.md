@@ -16,13 +16,13 @@
 | Provider | `atlassian` |
 | 规则浏览路径 | `rule/atlassian/trello/trello.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `64d6e5a392f55f70aeac84caa0bbb9bf71d0da32f60a195ec64c6a2c9a824fd3` |
+| SHA-256 | `dc4fad276c6a64e109545631af3863d2247e646f0efc286b478dcd7f20b8deea` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `psbc` |
 | 规则浏览路径 | `rule/psbc/psbc/psbc.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `22d3381137dc7fae4eebed5d06b39a36bca3b46024db0e8730f3b4f945784397` |
+| SHA-256 | `64eab3ff1078a543219c2f34e5a41934869b17869bd5e335af94df44bea75cec` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

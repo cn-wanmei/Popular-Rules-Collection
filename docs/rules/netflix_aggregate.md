@@ -16,13 +16,13 @@
 | Provider | `netflix` |
 | 规则浏览路径 | `rule/netflix/netflix_aggregate/netflix_aggregate.yaml` |
 | 规则数量（_index） | **31** |
-| SHA-256 | `53133515d157c5f390e06010589b1120b78445523b852ff0c55f404900241059` |
+| SHA-256 | `a4b5f7936ed9f4a0b7eabc7ea4296396977869c43b14f10810f75fb21df63b90` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

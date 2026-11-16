@@ -16,13 +16,13 @@
 | Provider | `umc` |
 | 规则浏览路径 | `rule/umc/umc_aggregate/umc_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `218d547e846d02fd2af169706f87d552caa0e662969c479c9f2f0d6e6f94a3e2` |
+| SHA-256 | `cec88be8e5e07f34286a83e6d48c873b924cea2aef74ac9a25968a5e6a0441fa` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `fortinet` |
 | 规则浏览路径 | `rule/fortinet/fortinet_aggregate/fortinet_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `7205b628e6173a1c3b634383e2a74d68e122b4538d8648ceb56d745d92efdba2` |
+| SHA-256 | `00d90f8ec4939d38ee8232c449340379dbbd914167a59fae245377da0d52a5da` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

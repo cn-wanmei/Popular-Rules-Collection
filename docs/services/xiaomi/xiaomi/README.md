@@ -14,13 +14,13 @@
 | Provider | `xiaomi` |
 | 规则浏览路径 | `rule/xiaomi/xiaomi/xiaomi.yaml` |
 | 规则数量（_index） | **162** |
-| SHA-256 | `7fbd5c10ef0192d2444d41b0762c07214ad0eb90978aa7cb24b4bb55f02d4d69` |
+| SHA-256 | `a65c0a962b338175393671ca40e97fba0c8603b5c231c2f03b9aa06e21d42d37` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `unity` |
 | 规则浏览路径 | `rule/unity/unity/unity.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `e5051ba46ca587334db6ad235d46701f56ec62712337602f6e7f5827a782818b` |
+| SHA-256 | `a108d0ad16ccb83633176b02839c1f586d12d417a763f57d6fa1808f250555a5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

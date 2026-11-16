@@ -16,13 +16,13 @@
 | Provider | `sensetime` |
 | 规则浏览路径 | `rule/sensetime/sensetime_aggregate/sensetime_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `c27049bc1de7c4638561228a08bd7eda04c20adae471f790062c3943acd63265` |
+| SHA-256 | `98b364dee90d0c527f486d9ee9045dc6942f6a86bb643ceca242ee37a07a33b6` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

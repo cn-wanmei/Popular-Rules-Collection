@@ -16,13 +16,13 @@
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/testflight/testflight.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `e02883b6414caea7379e0de525473e7b98a0e1832593569e475f29195da74db9` |
+| SHA-256 | `fe26645021a71a7635d853fbe4385f82877a67047459cfa8c90ebd5c0b940774` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

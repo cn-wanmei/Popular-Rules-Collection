@@ -16,13 +16,13 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/minecraft/minecraft.yaml` |
 | 规则数量（_index） | **6** |
-| SHA-256 | `8fa5fcda61835f052955c789461c788dc4d63cfffda515952eaeae665046fb66` |
+| SHA-256 | `dab39a3540a0b15e952da17d657a47c83620a2006f0afbe02e0eddb3d40d9439` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

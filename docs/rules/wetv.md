@@ -16,13 +16,13 @@
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/wetv/wetv.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `c74266126f072201e1c1837c10418453ed07e748e72f7474876e05585f2e01e5` |
+| SHA-256 | `6e9f8d97d50b5cf75d867dd0fd6ca7e0460faf7bb0ead36bf1da0b92d8699779` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

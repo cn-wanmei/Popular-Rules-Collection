@@ -16,13 +16,13 @@
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/tiktok/tiktok.yaml` |
 | 规则数量（_index） | **29** |
-| SHA-256 | `55f0b58618b20fe2c88deb8ab1296c411ec034a96a20c2738b7f953697358e03` |
+| SHA-256 | `918bb3455ea3880b0e79fc9d604d5bba770264743b07400b79e2b0321dceb537` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

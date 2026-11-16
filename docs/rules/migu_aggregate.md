@@ -16,13 +16,13 @@
 | Provider | `migu` |
 | 规则浏览路径 | `rule/migu/migu_aggregate/migu_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `ab68c5ac1e2d90255bd93db24a07a7b1c44f42f3c0b8aa509af040418c3e75f9` |
+| SHA-256 | `7f18b72f034c2448ec0104189562a4b92232eff1889e9f0e760996bd8a83e995` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

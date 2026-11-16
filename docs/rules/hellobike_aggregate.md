@@ -16,13 +16,13 @@
 | Provider | `hellobike` |
 | 规则浏览路径 | `rule/hellobike/hellobike_aggregate/hellobike_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `391aa34bb8c5ba7c3674f46699c5cca8e2d9916b8bbacff03cd4e5292f70fa97` |
+| SHA-256 | `ff9e8267a8eed239c88b4cd0ea0121ad218d94b45ec34f08b5249cd632dee393` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

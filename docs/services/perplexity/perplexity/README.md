@@ -16,13 +16,13 @@
 | Provider | `perplexity` |
 | 规则浏览路径 | `rule/perplexity/perplexity/perplexity.yaml` |
 | 规则数量（_index） | **4** |
-| SHA-256 | `6e516b2dd9237c0a931587e7d3947e9a67d4f31f646d06f9ff54a91a4161584c` |
+| SHA-256 | `8e72b36f4006f8258d1a4c6050d1e418805ae4cfc06f009bb62d52985f408c58` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

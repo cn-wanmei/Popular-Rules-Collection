@@ -16,13 +16,13 @@
 | Provider | `nvidia` |
 | 规则浏览路径 | `rule/nvidia/nvidia/nvidia.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `4710f192842deae0fb23d2cf6ae11fcc572fe1abc9c7eea99a838af50ac82d5d` |
+| SHA-256 | `f0f1b6122cfd71af1705fba788a00e75a6660d24c6685c8cb661923451679057` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 

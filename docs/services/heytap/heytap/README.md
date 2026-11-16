@@ -16,13 +16,13 @@
 | Provider | `heytap` |
 | 规则浏览路径 | `rule/heytap/heytap/heytap.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `6235137e33ec569e1602f577dee14c646e3b0b18f0241cd14bcccc57d88d483d` |
+| SHA-256 | `40cb62de683687acb8e84a4ae150d701f8c5bc25dffc5aafd2496cfd59590cb7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261115T120546440376Z-run` |
+| Run ID | `20261116T015738564940Z-run` |
 | IR digest | `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2` |
 | IR schema | `semantic_ir_v2` |
 
