@@ -79,7 +79,7 @@ jobs:
             # A previous run may have left this deterministic branch attached to a closed PR.
             # Reuse an already-open PR carrying the exact same Source persistence ref, even if
             # it was regenerated onto a newer Collection base under a different branch name.
-            SUPERSEDING_PR_JSON="$(gh pr list --repo "$GITHUB_REPOSITORY" --base main --state open --json number,url,body --jq --arg source_ref "$SOURCE_REF" '[.[] | select((.body // "") | contains($source_ref))] | .[0] // empty')"
+            SUPERSEDING_PR_JSON="$(gh pr list --repo "$GITHUB_REPOSITORY" --base main --state open --json number,url,body --jq '[.[] | select((.body // "") | contains("'"$SOURCE_REF"'"))] | .[0] // empty')"
             if [ -n "$SUPERSEDING_PR_JSON" ]; then
               PR_NUMBER="$(printf '%s' "$SUPERSEDING_PR_JSON" | jq -r '.number')"
               PR_URL="$(printf '%s' "$SUPERSEDING_PR_JSON" | jq -r '.url')"
