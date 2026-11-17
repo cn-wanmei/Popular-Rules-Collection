@@ -452,6 +452,7 @@ host-suffix, skydrive.wns.windows.com, proxy
 host-suffix, projectmurphy.net, proxy
 host-suffix, opensource.guide, proxy
 host-suffix, sankie.net, proxy
+host-suffix, sundry-star-net-geo.trafficmanager.net, proxy
 host, statics-marketingsites-wcus-ms-com.akamaized.net, proxy
 host-suffix, surface.downloads.prss.microsoft.com, proxy
 host-suffix, oemsoc.download.prss.microsoft.com, proxy
@@ -480,6 +481,7 @@ host-suffix, vlportal.download.prss.microsoft.com, proxy
 host-suffix, azuredigitaltwins.net, proxy
 host-suffix, oaspapps.com, proxy
 host-suffix, gamesstack.com, proxy
+host-suffix, dotnetcli.trafficmanager.net, proxy
 host, windbg.download.prss.microsoft.com, proxy
 host-suffix, femalefounderscomp.com, proxy
 host-suffix, store-images.s-microsoft.com, proxy
@@ -845,6 +847,7 @@ host-suffix, microsoftonline-p-i.net.cn, proxy
 host-suffix, microsoft.es, proxy
 host-suffix, msftstatic.com, proxy
 host-suffix, azurerms.cn, proxy
+host-suffix, builds.dotnet.microsoft.com, proxy
 host-suffix, teams.cdn.live.net, proxy
 host, osrelease.download.prss.microsoft.com, proxy
 host-suffix, playfabapi.cn, proxy
@@ -991,7 +994,6 @@ host-suffix, linkedin.com, proxy
 host-suffix, msft.net, proxy
 host-suffix, msn.net, proxy
 host-suffix, microsofttranslator.com, proxy
-host, vscode.download.prss.microsoft.com, proxy
 host-suffix, intercomcdn.com, proxy
 host, dreamsparkuat.download.prss.microsoft.com, proxy
 host-suffix, azchcdng.com, proxy

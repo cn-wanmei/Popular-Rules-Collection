@@ -453,6 +453,7 @@ payload:
   - DOMAIN-SUFFIX,projectmurphy.net
   - DOMAIN-SUFFIX,opensource.guide
   - DOMAIN-SUFFIX,sankie.net
+  - DOMAIN-SUFFIX,sundry-star-net-geo.trafficmanager.net
   - DOMAIN,statics-marketingsites-wcus-ms-com.akamaized.net
   - DOMAIN-SUFFIX,surface.downloads.prss.microsoft.com
   - DOMAIN-SUFFIX,oemsoc.download.prss.microsoft.com
@@ -481,6 +482,7 @@ payload:
   - DOMAIN-SUFFIX,azuredigitaltwins.net
   - DOMAIN-SUFFIX,oaspapps.com
   - DOMAIN-SUFFIX,gamesstack.com
+  - DOMAIN-SUFFIX,dotnetcli.trafficmanager.net
   - DOMAIN,windbg.download.prss.microsoft.com
   - DOMAIN-SUFFIX,femalefounderscomp.com
   - DOMAIN-SUFFIX,store-images.s-microsoft.com
@@ -846,6 +848,7 @@ payload:
   - DOMAIN-SUFFIX,microsoft.es
   - DOMAIN-SUFFIX,msftstatic.com
   - DOMAIN-SUFFIX,azurerms.cn
+  - DOMAIN-SUFFIX,builds.dotnet.microsoft.com
   - DOMAIN-SUFFIX,teams.cdn.live.net
   - DOMAIN,osrelease.download.prss.microsoft.com
   - DOMAIN-SUFFIX,playfabapi.cn
@@ -992,7 +995,6 @@ payload:
   - DOMAIN-SUFFIX,msft.net
   - DOMAIN-SUFFIX,msn.net
   - DOMAIN-SUFFIX,microsofttranslator.com
-  - DOMAIN,vscode.download.prss.microsoft.com
   - DOMAIN-SUFFIX,intercomcdn.com
   - DOMAIN,dreamsparkuat.download.prss.microsoft.com
   - DOMAIN-SUFFIX,azchcdng.com

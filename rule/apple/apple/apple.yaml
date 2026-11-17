@@ -4,15 +4,15 @@ entity: provider_aggregate
 id: apple
 display_name: Apple
 generated_from:
-  run_id: 20261116T015738564940Z-run
+  run_id: 20261117T044048365836Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2
+  ir_digest: 407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c
 stats:
-  total: 2047
+  total: 2052
   by_type:
-    DOMAIN: 176
+    DOMAIN: 177
     DOMAIN_KEYWORD: 7
-    DOMAIN_SUFFIX: 1838
+    DOMAIN_SUFFIX: 1842
     IP_CIDR: 10
     IP_CIDR6: 3
     PROCESS_NAME: 13
@@ -149,6 +149,9 @@ rules:
 - id: e4cb3024491405c70dbb6561f260de6757e39afa92ca31596c964d743716499f
   type: DOMAIN
   value: configuration.apple.com.akadns.net
+- id: 7c1aefe2c3f862e1fe7f71fd0bff374edfdf0ea1c8e57da4e385c42657baa867
+  type: DOMAIN
+  value: configuration.ls.apple.com
 - id: d660a653b7c534d5f10fd7c391274577a31eb22a19b311066187dca5f3dd6cc0
   type: DOMAIN
   value: cstat.apple.com
@@ -2882,6 +2885,9 @@ rules:
 - id: fcd1089027eac36d09103a7566b777ace3cede00eaf89213ac554c12f211d47c
   type: DOMAIN_SUFFIX
   value: canada-beatsbydre.com
+- id: 9520793957a0d3cfe7bc8bcfc00c1b7d4b7ecacacff74313e47ee6efa5c8bc95
+  type: DOMAIN_SUFFIX
+  value: captive.apple.com
 - id: 672692c5ce85a663a0fa6fa88722d40d5f11c977f61fcf9d84a122be986838c4
   type: DOMAIN_SUFFIX
   value: carbon.com
@@ -3227,6 +3233,9 @@ rules:
 - id: b125af088ab34a1d5ff93eaba1be007047a109f25a9b1a4417e832a96a9672cf
   type: DOMAIN_SUFFIX
   value: configuration.apple.com.akadns.net
+- id: 73530178274de2698a38ec28b52ffaba3f49754275cf19acdf3c4bab8dd5c8bf
+  type: DOMAIN_SUFFIX
+  value: configuration.ls.apple.com
 - id: 494c174e83b833127abff725fe4bd1af7521866e0a841607345003c132b0f799
   type: DOMAIN_SUFFIX
   value: cooliphonecasesstore.com
@@ -5213,6 +5222,9 @@ rules:
 - id: 217eeb5e49300ea24525f87b1fe4083db246bbdd0d4a7b69023daaa6fc40c3db
   type: DOMAIN_SUFFIX
   value: musickit.net
+- id: bba6dc52508bcbcce63017d7707e517565e1ac0e4fc9e7f1ea7d76fdb4ff698e
+  type: DOMAIN_SUFFIX
+  value: musicstatus.itunes.apple.com
 - id: 42f1999e2b331df6987e9375ca066dde471e2792034dd8566b13db54f3c31756
   type: DOMAIN_SUFFIX
   value: musicstatus.music.apple.com
@@ -5249,6 +5261,9 @@ rules:
 - id: ff1d8107aac9991c3185725044b9e088e4e0673a1e474ee7c97cbe1c75d4b3cc
   type: DOMAIN_SUFFIX
   value: mzstatic.com
+- id: d897b995b1089a1fc2da7b5b52cb055d97a4d03dd9b861f22432f3cede0f0c83
+  type: DOMAIN_SUFFIX
+  value: mzstorekit.itunes.apple.com
 - id: 25af9ed91b016bb8a368bb9629e1d86dc580333cf45e7e2358387c6d3a661a3a
   type: DOMAIN_SUFFIX
   value: namemybeats.com

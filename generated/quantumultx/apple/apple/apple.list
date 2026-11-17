@@ -930,6 +930,7 @@ host-suffix, ipod.es, proxy
 host-suffix, headphonezip.com, proxy
 host, cl2.apple.com.edgekey.net.globalredir.akadns.net, proxy
 host-suffix, icloud.com.cn, proxy
+host-suffix, configuration.ls.apple.com, proxy
 host-suffix, ipod.co, proxy
 host-suffix, services-apple.net, proxy
 host-suffix, next.com, proxy
@@ -987,6 +988,7 @@ host-suffix, beatsbydreonlinesale-nz.com, proxy
 host, store.storeimages.apple.com.akadns.net, proxy
 host-suffix, applepaysupplies.net, proxy
 host-suffix, icloud.om, proxy
+host, configuration.ls.apple.com, proxy
 host-suffix, apple.com.mg, proxy
 host-suffix, appleappstore.net, proxy
 host-suffix, aplleipods.com, proxy
@@ -1186,6 +1188,7 @@ host-suffix, icloud.net.cn, proxy
 host-suffix, 2013pascherbeatsbydre.com, proxy
 host-suffix, p-events-delivery.akamaized.net, proxy
 host-suffix, oscdn.apple.com, proxy
+host-suffix, captive.apple.com, proxy
 host-suffix, shazam.com, proxy
 host, cds-cdn.v.aaplimg.com, proxy
 host-suffix, beatsbydreblackfridaypro.com, proxy
@@ -1522,6 +1525,7 @@ host-suffix, headphones-dre.com, proxy
 host-suffix, applepay.berlin, proxy
 host-suffix, cybermondaybeats4sale.com, proxy
 host-suffix, beatsbydreausale.net, proxy
+host-suffix, musicstatus.itunes.apple.com, proxy
 host-suffix, applestore.com.eg, proxy
 host-suffix, 12diasdepresentesdeitunes.com, proxy
 host-suffix, beatselectronicsllc.tt.omtrdc.net, proxy
@@ -1736,6 +1740,7 @@ host-suffix, casquebeatsofficiel-fr.com, proxy
 host-suffix, applecomputerimac.com, proxy
 host-suffix, itunesparty.com, proxy
 host, a1.mzstatic.com, proxy
+host-suffix, mzstorekit.itunes.apple.com, proxy
 host-suffix, wkms-public.apple.com, proxy
 host-suffix, apple.fr, proxy
 host-suffix, monsterheadphone.net, proxy

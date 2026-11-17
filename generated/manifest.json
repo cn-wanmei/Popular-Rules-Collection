@@ -8,21 +8,21 @@
     "singbox",
     "surge"
   ],
-  "collection_date": "2026-11-16",
+  "collection_date": "2026-11-17",
   "file_count": 4707,
   "files": [
     {
-      "file": "_promotion/20261116T015738564940Z-run.json",
+      "file": "_promotion/20261117T044048365836Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "93848156c05f32c7ba1bdd2b6c4c4c016f81b2c2ea3bb3583e219892b4bdf808",
+      "sha256": "4fd9e1f1dfde57c9b0608e125bef51ae64ca325c29256fb2979ce32ac777f3bb",
       "size": 542960
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "93848156c05f32c7ba1bdd2b6c4c4c016f81b2c2ea3bb3583e219892b4bdf808",
+      "sha256": "4fd9e1f1dfde57c9b0608e125bef51ae64ca325c29256fb2979ce32ac777f3bb",
       "size": 542960
     },
     {
@@ -428,10 +428,10 @@
     {
       "file": "egern/apple/apple/apple.yaml",
       "kind": "client_rules",
-      "rule_count": 2034,
+      "rule_count": 2039,
       "scope": "egern",
-      "sha256": "a736391ee011d49c659c6bff6d6ed0211c15dd0bbb18e3d59879f160a39e6b8e",
-      "size": 51641
+      "sha256": "18216ccb356eab6a40624f765105cb192a0b94e20069c5175cf376058a134aac",
+      "size": 51800
     },
     {
       "file": "egern/apple/applebooks/applebooks.yaml",
@@ -1148,18 +1148,18 @@
     {
       "file": "egern/categories/developer/developer.yaml",
       "kind": "client_rules",
-      "rule_count": 711,
+      "rule_count": 715,
       "scope": "egern",
-      "sha256": "bb09fbbe653ef4db41b15dbce5684405dd91c011d91612f4dba0060fda9fcef7",
-      "size": 16338
+      "sha256": "f976db97dc201bb221b9bea7d8c5c594612d699452475a9e255802c158dad68e",
+      "size": 16493
     },
     {
       "file": "egern/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 127829,
+      "rule_count": 127836,
       "scope": "egern",
-      "sha256": "c0796ddbf346f139f14a0c1128cd2c9782c7d65bacaab10f121be480f8d6eeb9",
-      "size": 2447349
+      "sha256": "4b5401fdf89240d3e9008f83d9648bda7cf06b84462be9ed3a28702c0ddf1a71",
+      "size": 2447581
     },
     {
       "file": "egern/ccb/ccb/ccb.yaml",
@@ -3044,10 +3044,10 @@
     {
       "file": "egern/microsoft/microsoft/microsoft.yaml",
       "kind": "client_rules",
-      "rule_count": 1030,
+      "rule_count": 1032,
       "scope": "egern",
-      "sha256": "38a1c177c60ebe0b32ca578163c2ee9fc1f5d9f3e0585eef911bf20296583cdf",
-      "size": 26504
+      "sha256": "849be73cae5e1bc722ccc421b1f9afe6e5c23874c9a451bf8305e78163929a1a",
+      "size": 26577
     },
     {
       "file": "egern/microsoft/microsoftedge/microsoftedge.yaml",
@@ -4222,7 +4222,7 @@
       "kind": "client_rules",
       "rule_count": 217,
       "scope": "egern",
-      "sha256": "1889335c4a2329c5a30ba4eb1958f8d0091aaf89a39258cc2ab3cb421015c31d",
+      "sha256": "9335c34de7830cfdd381f290a9300d73b061ac089f8a6bfc8673abc6c7cac363",
       "size": 5184
     },
     {
@@ -4246,7 +4246,7 @@
       "kind": "client_rules",
       "rule_count": 12686,
       "scope": "egern",
-      "sha256": "5c91b1fc8a7f3075b092d6c73ba4767e13d449c43b04b59bfe91ebaa0303db27",
+      "sha256": "1659db51fc30440e7f68c32cfbc73b02f328ac77e09731e2c114b4f4dfb1cf12",
       "size": 261820
     },
     {
@@ -5822,32 +5822,32 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "98912d45476c41bf0f4e002472c7610ba4c5cbe692a48a2538778d27f04899f0",
-      "size": 410536
+      "sha256": "05cbf71a79c93319da8ab36837f33b8984864516e0002924b5ae53463c841980",
+      "size": 410562
     },
     {
       "file": "geosite/proxy_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 27507,
+      "rule_count": 27509,
       "scope": "geosite",
-      "sha256": "17da7fb8c91525d256cbd8561d5cb389ffbd7e2aad42f370bcce56016d839a40",
-      "size": 795632
+      "sha256": "9546a789100fb0604f6af9799a2de2879b984bc1209b286c303ff09541feab3a",
+      "size": 795686
     },
     {
       "file": "geosite/reject.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "e9b78f87131ed14bfb69a2e822761d35da483dcdbdb45b87a6bcaf548af3b48c",
-      "size": 4214119
+      "sha256": "b8ad49cc3bf8b12002b823feee4f57c2701adb9dd822fba63a62ec361c799f0c",
+      "size": 4184424
     },
     {
       "file": "geosite/reject_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 201102,
+      "rule_count": 199590,
       "scope": "geosite",
-      "sha256": "ebeb2eb3ea47d477c4f71bdbddd4cf70dbaa3662446087de3cb1f5b6cc8db0bd",
-      "size": 7029547
+      "sha256": "42b7e46218deb9939ef35824d3ceb726cbbe4f7737e84f9d244c189dba242f8a",
+      "size": 6978684
     },
     {
       "file": "ip/adblock.txt",
@@ -5910,8 +5910,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "ip",
-      "sha256": "76179c509b23264b86a5dacb05e0ac4110ed3ca48161764b329cee35aa27f887",
-      "size": 159652
+      "sha256": "0e46a777479f1f5b64c21ea5053fb11c9a80d5429fe97d4fc1f45802d9178d07",
+      "size": 159650
     },
     {
       "file": "ip/chinamobile.txt",
@@ -5926,8 +5926,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "ip",
-      "sha256": "d832fb78d5854b6be8a7cbeeba00880b6ac67dec610a3e2a590b785caf6129d7",
-      "size": 62267
+      "sha256": "002fae2cc9a8c4f861044bb2c18e9f0e1361b1238130e8a34807e0b73e72df65",
+      "size": 62298
     },
     {
       "file": "ip/cloudflare.txt",
@@ -6548,10 +6548,10 @@
     {
       "file": "loon/apple/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2034,
+      "rule_count": 2039,
       "scope": "loon",
-      "sha256": "fc6ece4e1ee64c65be9e775e218641f0362b54487adcb97b32abc200690f9e20",
-      "size": 66536
+      "sha256": "3ba1c06008fc2c127cc261bb5d48746191b8feb17c3ce30175f7c6ad1bbf52a7",
+      "size": 66728
     },
     {
       "file": "loon/apple/applebooks/applebooks.list",
@@ -7268,18 +7268,18 @@
     {
       "file": "loon/categories/developer/developer.list",
       "kind": "client_rules",
-      "rule_count": 711,
+      "rule_count": 715,
       "scope": "loon",
-      "sha256": "807ee0345d5fca83e091025778591c1d1277b798f54165b6b77c24aa0ce84b53",
-      "size": 21989
+      "sha256": "badbeccec33f6ae4129d1ebacc9793fccf81baa9f1f96d9d2c1027372869abe8",
+      "size": 22176
     },
     {
       "file": "loon/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 127691,
+      "rule_count": 127698,
       "scope": "loon",
-      "sha256": "498469c8e0400fdd59382437ddf782066afe46a70c752532848f3cf7e9a368fd",
-      "size": 3454698
+      "sha256": "6b06078a82cb67902013eaceb9296b5f909f4df887f262cdfe45b1e7657f6d6b",
+      "size": 3454986
     },
     {
       "file": "loon/ccb/ccb/ccb.list",
@@ -9164,10 +9164,10 @@
     {
       "file": "loon/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 1030,
+      "rule_count": 1032,
       "scope": "loon",
-      "sha256": "7a44752c6a6005ce7819a0b7c982afbbf3f4bb399687c841811f67c2b9ca94f7",
-      "size": 34288
+      "sha256": "3633c455525e6dabb9fae1e281bdb61b82b8f1fc2d84fb64a1265206b1578e23",
+      "size": 34384
     },
     {
       "file": "loon/microsoft/microsoftedge/microsoftedge.list",
@@ -10342,7 +10342,7 @@
       "kind": "client_rules",
       "rule_count": 217,
       "scope": "loon",
-      "sha256": "c0c05a070fb2f37364b74c7b82960b765056d6285ba8feef1b05132ce95331ef",
+      "sha256": "df916ae32f71b75276aaa5222cc422a4f0345539c3a710a91c9a3b9199613f99",
       "size": 6901
     },
     {
@@ -10366,7 +10366,7 @@
       "kind": "client_rules",
       "rule_count": 12549,
       "scope": "loon",
-      "sha256": "0f2cb99848525a0b95e94405e7fcfc5b79335d7c304a46d5fb2ab1ff70e5c5fc",
+      "sha256": "60039ad75268c3ad3f72213604f93e8067a980c68c0b735ae81aab696d0c6268",
       "size": 357217
     },
     {
@@ -11756,10 +11756,10 @@
     {
       "file": "mihomo/apple/apple/apple.yaml",
       "kind": "client_rules",
-      "rule_count": 2034,
+      "rule_count": 2039,
       "scope": "mihomo",
-      "sha256": "9eeaea04369db51edfde9523c045a8fe0004f96744708371b25651cc38c7a188",
-      "size": 74681
+      "sha256": "be13e1f0fcce68c9dc8a3314cdde512fab642e501a4bca074e7bb5d020b55ba5",
+      "size": 74893
     },
     {
       "file": "mihomo/apple/applebooks/applebooks.yaml",
@@ -12476,18 +12476,18 @@
     {
       "file": "mihomo/categories/developer/developer.yaml",
       "kind": "client_rules",
-      "rule_count": 711,
+      "rule_count": 715,
       "scope": "mihomo",
-      "sha256": "bbfed247232be550810193036695d4f7f8ea6a4422d583802d25679c23dc079c",
-      "size": 24842
+      "sha256": "2f19e7e7605a4f5eeba4556989653083d0f57f3876bc348aedbdd800c9e42560",
+      "size": 25045
     },
     {
       "file": "mihomo/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 127829,
+      "rule_count": 127836,
       "scope": "mihomo",
-      "sha256": "52bc1c29d50b693f0ee7968cba96eff92f3df7081607fcfac97d15a193263609",
-      "size": 3971687
+      "sha256": "98aca0fe18d6cbcafa51298915d9636d374f72340f1c2eae0223962885009318",
+      "size": 3972003
     },
     {
       "file": "mihomo/ccb/ccb/ccb.yaml",
@@ -14372,10 +14372,10 @@
     {
       "file": "mihomo/microsoft/microsoft/microsoft.yaml",
       "kind": "client_rules",
-      "rule_count": 1030,
+      "rule_count": 1032,
       "scope": "mihomo",
-      "sha256": "67e0544d23605b627012b00c7c38c9c9c7be5a10573be5904c8d1e835495cbe5",
-      "size": 38417
+      "sha256": "42523bad8ae80d01fa8766b7669e91277866a009d50796ad95f0947040d80149",
+      "size": 38521
     },
     {
       "file": "mihomo/microsoft/microsoftedge/microsoftedge.yaml",
@@ -15550,7 +15550,7 @@
       "kind": "client_rules",
       "rule_count": 217,
       "scope": "mihomo",
-      "sha256": "53036045b2cd340f030d542812b7263d09a4cebaa891fd9d2d1bdfb6a7c27cc9",
+      "sha256": "3157f698af8292938d5d060a30762ddd15a1bb41939e420f00212773c654ce21",
       "size": 7778
     },
     {
@@ -15574,7 +15574,7 @@
       "kind": "client_rules",
       "rule_count": 12686,
       "scope": "mihomo",
-      "sha256": "16f6d5f0564045855900ee3266e809090529a32525baf8f241b1511b680e7370",
+      "sha256": "16b2b8e0b7ca806dbcd2d8bdf43f50043484af1aac40483dc107355184d58215",
       "size": 413576
     },
     {
@@ -16606,8 +16606,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "mmdb",
-      "sha256": "acb166b2846dc86a89d85c5cf78ca96c001a411531cdf146244a5f5a15d3736f",
-      "size": 4356378
+      "sha256": "03996897044b01466b85c6f109f47b9d10405b80aa02aaca56e1624be7257d2a",
+      "size": 4357694
     },
     {
       "file": "network/dns.txt",
@@ -16742,7 +16742,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "2efa10911006dc6293f9964adca679d16cf4a22b7e6e15d25115868dbaf11e0d",
+      "sha256": "07928e6f42f744039c26d0eecbf9b8c0a5968981d59b2f14ad3dc072ca424d0e",
       "size": 394976
     },
     {
@@ -16750,7 +16750,7 @@
       "kind": "network_dataset",
       "rule_count": 11485,
       "scope": "provider",
-      "sha256": "28324425ca38a98fc8704970151f17102af701551cc1f3175a87af8399ba758b",
+      "sha256": "0c24a8917121964b1cadeab9f82817a040fe51e2a0439f8851fbd366aae9340c",
       "size": 490988
     },
     {
@@ -16790,7 +16790,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "e11943a05061f9392b50fdaa945552d90bf1dbe69acdb05b67014805c28af3c5",
+      "sha256": "575bde6f0286cd5b1140bdeaaf4a6f4c20f8ddbdd8a3bc67b085dcc8c60bc881",
       "size": 4691
     },
     {
@@ -16806,7 +16806,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "137b361bfd1819dc8d7b6bf3155bb70ee15af2430452bd0f26dd0ce3c0533581",
+      "sha256": "6c95e87b531e6a43c082258bb7ff8d8af495058ed34e376dcaa24b3adb880ccc",
       "size": 38617
     },
     {
@@ -17228,10 +17228,10 @@
     {
       "file": "quantumultx/apple/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2034,
+      "rule_count": 2039,
       "scope": "quantumultx",
-      "sha256": "61088f4c41746f5c2fa6cd75b7e2e3a5ea12ff51dbbcbe5956cb3fa2d330e816",
-      "size": 78766
+      "sha256": "761c21b7cfd9e17863f6809d614745b8fa3306e513ec8d5a8cb102e0fa8d6e98",
+      "size": 78988
     },
     {
       "file": "quantumultx/apple/applebooks/applebooks.list",
@@ -17948,18 +17948,18 @@
     {
       "file": "quantumultx/categories/developer/developer.list",
       "kind": "client_rules",
-      "rule_count": 711,
+      "rule_count": 715,
       "scope": "quantumultx",
-      "sha256": "10eca81f8efba4ae87e2b3f9b61e02f93f92de13f42a5fcb2ad75f6d8de79631",
-      "size": 26255
+      "sha256": "4da3ed6c1161a38850451402148006e8e1cb09f4f3ea3af5b82a83daeec10226",
+      "size": 26466
     },
     {
       "file": "quantumultx/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 127691,
+      "rule_count": 127698,
       "scope": "quantumultx",
-      "sha256": "0e45efae75f6601a0e4f5061dd0da17e51216eab13e88bc8507c83b4fdd2f52f",
-      "size": 4221532
+      "sha256": "60bbc685af75352d04c1d4750ea200a5929cb20a6b080d2f7eeb4fc67ae8a635",
+      "size": 4221862
     },
     {
       "file": "quantumultx/ccb/ccb/ccb.list",
@@ -19844,10 +19844,10 @@
     {
       "file": "quantumultx/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 1030,
+      "rule_count": 1032,
       "scope": "quantumultx",
-      "sha256": "1b2b71b080482d5bde21559443403c750953f756713ae51696baf0eca6d8e0ae",
-      "size": 40468
+      "sha256": "f61f272eecc5106bc53f240bf826161ca13d5dadb4e97dba44bb20dcab0244e3",
+      "size": 40576
     },
     {
       "file": "quantumultx/microsoft/microsoftedge/microsoftedge.list",
@@ -21022,7 +21022,7 @@
       "kind": "client_rules",
       "rule_count": 217,
       "scope": "quantumultx",
-      "sha256": "b5f34bea47ba9c5b33b2bdc35b230eade5c2620e1dfd3e98a0d7f83632e0c024",
+      "sha256": "c5b96b315869bd54dbc718b2315c59e44b4c4a3a3b4558b49227cdde83f86e18",
       "size": 8203
     },
     {
@@ -21046,7 +21046,7 @@
       "kind": "client_rules",
       "rule_count": 12549,
       "scope": "quantumultx",
-      "sha256": "5868a49f1a79056591dea8105a1a2dd80968255a27cc732bbbb9f4eedabcbb14",
+      "sha256": "1ca9154c5f8f56bfdb03128eb7b8e6b62d8a2fb37aef2afd73fb167e8c07d594",
       "size": 432511
     },
     {
@@ -22436,10 +22436,10 @@
     {
       "file": "shadowrocket/apple/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2034,
+      "rule_count": 2039,
       "scope": "shadowrocket",
-      "sha256": "fc6ece4e1ee64c65be9e775e218641f0362b54487adcb97b32abc200690f9e20",
-      "size": 66536
+      "sha256": "3ba1c06008fc2c127cc261bb5d48746191b8feb17c3ce30175f7c6ad1bbf52a7",
+      "size": 66728
     },
     {
       "file": "shadowrocket/apple/applebooks/applebooks.list",
@@ -23156,18 +23156,18 @@
     {
       "file": "shadowrocket/categories/developer/developer.list",
       "kind": "client_rules",
-      "rule_count": 711,
+      "rule_count": 715,
       "scope": "shadowrocket",
-      "sha256": "807ee0345d5fca83e091025778591c1d1277b798f54165b6b77c24aa0ce84b53",
-      "size": 21989
+      "sha256": "badbeccec33f6ae4129d1ebacc9793fccf81baa9f1f96d9d2c1027372869abe8",
+      "size": 22176
     },
     {
       "file": "shadowrocket/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 127691,
+      "rule_count": 127698,
       "scope": "shadowrocket",
-      "sha256": "498469c8e0400fdd59382437ddf782066afe46a70c752532848f3cf7e9a368fd",
-      "size": 3454698
+      "sha256": "6b06078a82cb67902013eaceb9296b5f909f4df887f262cdfe45b1e7657f6d6b",
+      "size": 3454986
     },
     {
       "file": "shadowrocket/ccb/ccb/ccb.list",
@@ -25052,10 +25052,10 @@
     {
       "file": "shadowrocket/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 1030,
+      "rule_count": 1032,
       "scope": "shadowrocket",
-      "sha256": "7a44752c6a6005ce7819a0b7c982afbbf3f4bb399687c841811f67c2b9ca94f7",
-      "size": 34288
+      "sha256": "3633c455525e6dabb9fae1e281bdb61b82b8f1fc2d84fb64a1265206b1578e23",
+      "size": 34384
     },
     {
       "file": "shadowrocket/microsoft/microsoftedge/microsoftedge.list",
@@ -26230,7 +26230,7 @@
       "kind": "client_rules",
       "rule_count": 217,
       "scope": "shadowrocket",
-      "sha256": "c0c05a070fb2f37364b74c7b82960b765056d6285ba8feef1b05132ce95331ef",
+      "sha256": "df916ae32f71b75276aaa5222cc422a4f0345539c3a710a91c9a3b9199613f99",
       "size": 6901
     },
     {
@@ -26254,7 +26254,7 @@
       "kind": "client_rules",
       "rule_count": 12549,
       "scope": "shadowrocket",
-      "sha256": "0f2cb99848525a0b95e94405e7fcfc5b79335d7c304a46d5fb2ab1ff70e5c5fc",
+      "sha256": "60039ad75268c3ad3f72213604f93e8067a980c68c0b735ae81aab696d0c6268",
       "size": 357217
     },
     {
@@ -27646,8 +27646,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "e1a0f02b9c0171a8e966ff242a34c5d1b65a8966513292249544a49ab095c832",
-      "size": 61901
+      "sha256": "95ef4e16a59c2c69173422a22ab4962f6356d3a6ba65f81f6578ec799ba8da6b",
+      "size": 62085
     },
     {
       "file": "singbox/apple/applebooks/applebooks.json",
@@ -28366,16 +28366,16 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "f902808ca7c7923cfbe471d1885ee3d67c0c087ce48f7bc23f034d6ea4f0b307",
-      "size": 19969
+      "sha256": "7f48deda64b8230edddc7e6c87af19392aa0d6b56cacde0c8032f552982db494",
+      "size": 20144
     },
     {
       "file": "singbox/categories/other/other.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "310b0529e63282d0eef4f21aeda1fad9b66b9d5a2beb7b0b613aeba9c1b3a97c",
-      "size": 3086598
+      "sha256": "6a1e6a22d3c8bebc5712de526638e7511b6953202a9ec3f427907f9372588f69",
+      "size": 3086865
     },
     {
       "file": "singbox/ccb/ccb/ccb.json",
@@ -30262,8 +30262,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "bdb61b6721beb9076761b030b2f24e0d13288709641311b824d64a822ec48ac7",
-      "size": 31744
+      "sha256": "dbb5efcfb2d3cb5029d23c4ac6af689395d4aea44c4f257fb3d2f5535b707e3b",
+      "size": 31827
     },
     {
       "file": "singbox/microsoft/microsoftedge/microsoftedge.json",
@@ -31438,7 +31438,7 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "d7a6141f896de157e77e06966f36ac5f897a7b4a28c38e5408afef45c4ddd0e5",
+      "sha256": "0706e88a764af42e471bb4840ad72642a9766a2a79183c41285b82e9cbd1683b",
       "size": 6331
     },
     {
@@ -31462,7 +31462,7 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "858b59083025383eeefc43d36bbb7ca54c6ba8a965ccd05f7856fb320697a865",
+      "sha256": "e0447cd4f6f6e4011b2d013a88480f6bffc5df78de8f9253141678ebe9ed81a3",
       "size": 325354
     },
     {
@@ -32852,10 +32852,10 @@
     {
       "file": "surge/apple/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2034,
+      "rule_count": 2039,
       "scope": "surge",
-      "sha256": "fc6ece4e1ee64c65be9e775e218641f0362b54487adcb97b32abc200690f9e20",
-      "size": 66536
+      "sha256": "3ba1c06008fc2c127cc261bb5d48746191b8feb17c3ce30175f7c6ad1bbf52a7",
+      "size": 66728
     },
     {
       "file": "surge/apple/applebooks/applebooks.list",
@@ -33572,18 +33572,18 @@
     {
       "file": "surge/categories/developer/developer.list",
       "kind": "client_rules",
-      "rule_count": 711,
+      "rule_count": 715,
       "scope": "surge",
-      "sha256": "807ee0345d5fca83e091025778591c1d1277b798f54165b6b77c24aa0ce84b53",
-      "size": 21989
+      "sha256": "badbeccec33f6ae4129d1ebacc9793fccf81baa9f1f96d9d2c1027372869abe8",
+      "size": 22176
     },
     {
       "file": "surge/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 127691,
+      "rule_count": 127698,
       "scope": "surge",
-      "sha256": "498469c8e0400fdd59382437ddf782066afe46a70c752532848f3cf7e9a368fd",
-      "size": 3454698
+      "sha256": "6b06078a82cb67902013eaceb9296b5f909f4df887f262cdfe45b1e7657f6d6b",
+      "size": 3454986
     },
     {
       "file": "surge/ccb/ccb/ccb.list",
@@ -35468,10 +35468,10 @@
     {
       "file": "surge/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 1030,
+      "rule_count": 1032,
       "scope": "surge",
-      "sha256": "7a44752c6a6005ce7819a0b7c982afbbf3f4bb399687c841811f67c2b9ca94f7",
-      "size": 34288
+      "sha256": "3633c455525e6dabb9fae1e281bdb61b82b8f1fc2d84fb64a1265206b1578e23",
+      "size": 34384
     },
     {
       "file": "surge/microsoft/microsoftedge/microsoftedge.list",
@@ -36646,7 +36646,7 @@
       "kind": "client_rules",
       "rule_count": 217,
       "scope": "surge",
-      "sha256": "c0c05a070fb2f37364b74c7b82960b765056d6285ba8feef1b05132ce95331ef",
+      "sha256": "df916ae32f71b75276aaa5222cc422a4f0345539c3a710a91c9a3b9199613f99",
       "size": 6901
     },
     {
@@ -36670,7 +36670,7 @@
       "kind": "client_rules",
       "rule_count": 12549,
       "scope": "surge",
-      "sha256": "0f2cb99848525a0b95e94405e7fcfc5b79335d7c304a46d5fb2ab1ff70e5c5fc",
+      "sha256": "60039ad75268c3ad3f72213604f93e8067a980c68c0b735ae81aab696d0c6268",
       "size": 357217
     },
     {
@@ -37666,7 +37666,7 @@
       "size": 54
     }
   ],
-  "generated_at": "2026-11-16T02:06:11.771758+00:00",
+  "generated_at": "2026-11-17T04:47:28.113276+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [

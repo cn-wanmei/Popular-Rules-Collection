@@ -4,13 +4,13 @@ entity: aggregate
 id: developer
 display_name: developer
 generated_from:
-  run_id: 20261116T015738564940Z-run
+  run_id: 20261117T044048365836Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2
+  ir_digest: 407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c
 stats:
-  total: 711
+  total: 715
   by_type:
-    DOMAIN_SUFFIX: 711
+    DOMAIN_SUFFIX: 715
 rules:
 - id: 2448051afa80b760ccf196ef03d6f74d0da413b077c971aa0aa96ff2bf6c36dd
   type: DOMAIN_SUFFIX
@@ -189,6 +189,9 @@ rules:
 - id: be362f90301ca1d5a54eafa7bb6b1c9861f74b616fcdd1250a1686cddefefd32
   type: DOMAIN_SUFFIX
   value: bugsnag.com
+- id: d0d7424d15365b8925e9499503f8da87eac18fdb2bbd0d95bc10430b2504b03b
+  type: DOMAIN_SUFFIX
+  value: builds.dotnet.microsoft.com
 - id: d33fefb3c31552033c560a34efdee94445eb68d47cb7928c7d27eae7e386cca6
   type: DOMAIN_SUFFIX
   value: builtwithnix.org
@@ -438,6 +441,9 @@ rules:
 - id: eb462134dd57e4ad55acda736054b16f9ae84c96fe46d309ee60f1c76dc7c1c3
   type: DOMAIN_SUFFIX
   value: dotdeb.org
+- id: 76422346609868306f08f29520cb606327a4b0f8a4bec5e9d64ea1652894944d
+  type: DOMAIN_SUFFIX
+  value: dotnetcli.trafficmanager.net
 - id: 91d83577a59149d22a5979c0696eb5f575b7a9623a33402db15443bd6e79e3ae
   type: DOMAIN_SUFFIX
   value: download.visualstudio.microsoft.com
@@ -1830,6 +1836,9 @@ rules:
 - id: 187f3e2057279abc9af2327544f9892042d55050a9b9330b98a316064025e810
   type: DOMAIN_SUFFIX
   value: sublimetext.com
+- id: 6e542c637f46cff2a8b7910037b2c4d08b0b9ec227cfe9ce5363519871115c17
+  type: DOMAIN_SUFFIX
+  value: sundry-star-net-geo.trafficmanager.net
 - id: 43acd2a3e89a91cd63e49c5d74483723cd984c8d5acb0fdb8116fa6a0b2d49b3
   type: DOMAIN_SUFFIX
   value: superuser.com
@@ -2016,6 +2025,9 @@ rules:
 - id: c2c98ed97754b364f78673e8df923abbc2b66f3c7e66425ed0acb1e77713e734
   type: DOMAIN_SUFFIX
   value: vscode.dev
+- id: 1404f34e0d29bb199faeaa2bfc4b85ee3948aa5b4f234e29490263851aa6304c
+  type: DOMAIN_SUFFIX
+  value: vscode.download.prss.microsoft.com
 - id: c4ade94a7308d693821d6906218993dd732ddb195e331c16b2001e3d9a4f94d0
   type: DOMAIN_SUFFIX
   value: vscode.search.windows.net

@@ -4,15 +4,15 @@ entity: provider_aggregate
 id: microsoft
 display_name: Microsoft
 generated_from:
-  run_id: 20261116T015738564940Z-run
+  run_id: 20261117T044048365836Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2
+  ir_digest: 407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c
 stats:
-  total: 1032
+  total: 1034
   by_type:
-    DOMAIN: 60
+    DOMAIN: 59
     DOMAIN_KEYWORD: 4
-    DOMAIN_SUFFIX: 966
+    DOMAIN_SUFFIX: 969
     PROCESS_NAME: 2
 rules:
 - id: 573f224fc5b31e1171ef2fd80e088d4c85baed568501a5aa1e4a5143a9d8affe
@@ -183,9 +183,6 @@ rules:
 - id: 9d73e2bf5872dcd21bcbcaa67e1db2cb8d17a0d632fa165afb3b2be192ba9fb7
   type: DOMAIN
   value: volic.download.prss.microsoft.com
-- id: f861203d161269e49b79b5b9a734b5ef93c580d9514192ff80adede3f4807cef
-  type: DOMAIN
-  value: vscode.download.prss.microsoft.com
 - id: 0478827c840575ee13074aac548c3ba475f3e262d2dc4f32f213044c715e3402
   type: DOMAIN
   value: vsmarketplacebadge.apphb.com
@@ -801,6 +798,9 @@ rules:
 - id: be91a5d63e17476435590942c40f19f6f55caaed6e02792d1642aff0cf01a6e3
   type: DOMAIN_SUFFIX
   value: browser.events.data.msn.com
+- id: d0d7424d15365b8925e9499503f8da87eac18fdb2bbd0d95bc10430b2504b03b
+  type: DOMAIN_SUFFIX
+  value: builds.dotnet.microsoft.com
 - id: 54f4ecebd6a92fb420ad37c364a1471a4524a63a0d645aa89bb30417d3b30c03
   type: DOMAIN_SUFFIX
   value: c-msedge.net
@@ -990,6 +990,9 @@ rules:
 - id: 6325a64552eb4434b5c9dd6d1f4726686315f01a26d1881394bc0cea8d316973
   type: DOMAIN_SUFFIX
   value: dot.net
+- id: 76422346609868306f08f29520cb606327a4b0f8a4bec5e9d64ea1652894944d
+  type: DOMAIN_SUFFIX
+  value: dotnetcli.trafficmanager.net
 - id: dfc9ef025133de433749d3389f6c9d0b4e24477e1b1de664bcae3f1e5b810782
   type: DOMAIN_SUFFIX
   value: download.microsoft.com
@@ -2736,6 +2739,9 @@ rules:
 - id: 53c62dbd8b83ef7113ef26a82b6dd0b5890c1efad72dbd3cf96d7ff4b295b0e9
   type: DOMAIN_SUFFIX
   value: successwithteams.com
+- id: 6e542c637f46cff2a8b7910037b2c4d08b0b9ec227cfe9ce5363519871115c17
+  type: DOMAIN_SUFFIX
+  value: sundry-star-net-geo.trafficmanager.net
 - id: 9c03448eac548f32eab43fec1f3f7d77636a6ae606de3783e377ef9c33a29a58
   type: DOMAIN_SUFFIX
   value: surface.com
