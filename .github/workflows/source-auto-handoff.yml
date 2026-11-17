@@ -53,19 +53,32 @@ jobs:
         run: |
           set -euo pipefail
 
-          if git diff --quiet -- sources/immutable_registry.yaml; then
-            echo "No Source binding changes."
-            exit 0
-          fi
-
           SOURCE_REF=$(python -c 'import json; print(json.load(open("/tmp/source-handoff.json"))["source_ref"])')
           test "${#SOURCE_REF}" -eq 40
 
           BRANCH="automation/source-handoff-$SOURCE_REF"
 
+          if git diff --quiet -- sources/immutable_registry.yaml; then
+            echo "No Source binding changes."
+            printf 'handoff_status=NO_BINDING_CHANGES\nsource_ref=%s\nbranch=%s\n' "$SOURCE_REF" "$BRANCH" > source-handoff-status.txt
+            exit 0
+          fi
+
           if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
             echo "Handoff branch already exists: $BRANCH"
-            exit 0
+            EXISTING_PR_JSON="$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$BRANCH" --base main --state open --json number,url --jq '.[0] // empty')"
+            if [ -n "$EXISTING_PR_JSON" ]; then
+              PR_NUMBER="$(printf '%s' "$EXISTING_PR_JSON" | jq -r '.number')"
+              PR_URL="$(printf '%s' "$EXISTING_PR_JSON" | jq -r '.url')"
+              printf 'handoff_status=PR_EXISTS\nsource_ref=%s\nbranch=%s\npr_number=%s\n' "$SOURCE_REF" "$BRANCH" "$PR_NUMBER" > source-handoff-status.txt
+              printf '%s\n' "$PR_URL" > source-handoff-pr-url.txt
+              echo "Existing handoff PR #$PR_NUMBER: $PR_URL"
+              exit 0
+            fi
+
+            printf 'handoff_status=BRANCH_EXISTS_NO_OPEN_PR\nsource_ref=%s\nbranch=%s\n' "$SOURCE_REF" "$BRANCH" > source-handoff-status.txt
+            echo "::error::Handoff branch exists without an open PR; manual reconciliation is required."
+            exit 1
           fi
 
           git switch -c "$BRANCH"
@@ -75,14 +88,20 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "Collection immutable registry already matches the Source seal."
+            printf 'handoff_status=NO_STAGED_BINDING_CHANGES\nsource_ref=%s\nbranch=%s\n' "$SOURCE_REF" "$BRANCH" > source-handoff-status.txt
             exit 0
           fi
 
           git commit -m "chore(source): promote immutable Source durable seal"
           git push --set-upstream origin "$BRANCH"
 
-          if gh pr list --repo "$GITHUB_REPOSITORY" --head "$BRANCH" --state open --json number --jq 'length' | grep -q '^1$'; then
-            echo "Handoff PR already exists for $BRANCH"
+          EXISTING_PR_JSON="$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$BRANCH" --base main --state open --json number,url --jq '.[0] // empty')"
+          if [ -n "$EXISTING_PR_JSON" ]; then
+            PR_NUMBER="$(printf '%s' "$EXISTING_PR_JSON" | jq -r '.number')"
+            PR_URL="$(printf '%s' "$EXISTING_PR_JSON" | jq -r '.url')"
+            printf 'handoff_status=PR_EXISTS\nsource_ref=%s\nbranch=%s\npr_number=%s\n' "$SOURCE_REF" "$BRANCH" "$PR_NUMBER" > source-handoff-status.txt
+            printf '%s\n' "$PR_URL" > source-handoff-pr-url.txt
+            echo "Handoff PR already exists for $BRANCH: $PR_URL"
             exit 0
           fi
 
@@ -104,6 +123,13 @@ jobs:
           else
             printf 'handoff_status=PR_CREATED\nsource_ref=%s\nbranch=%s\n' "$SOURCE_REF" "$BRANCH" > source-handoff-status.txt
             printf '%s\n' "$PR_OUTPUT" > source-handoff-pr-url.txt
+          fi
+
+      - name: Ensure handoff evidence status
+        if: always()
+        run: |
+          if [ ! -f source-handoff-status.txt ]; then
+            printf 'handoff_status=WORKFLOW_STEP_FAILED\nrun_id=%s\n' "$GITHUB_RUN_ID" > source-handoff-status.txt
           fi
 
       - name: Upload handoff evidence
