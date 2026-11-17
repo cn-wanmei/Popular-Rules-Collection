@@ -76,9 +76,23 @@ jobs:
               exit 0
             fi
 
-            printf 'handoff_status=BRANCH_EXISTS_NO_OPEN_PR\nsource_ref=%s\nbranch=%s\n' "$SOURCE_REF" "$BRANCH" > source-handoff-status.txt
-            echo "::error::Handoff branch exists without an open PR; manual reconciliation is required."
-            exit 1
+            # A previous run may have left this deterministic branch attached to a closed PR.
+            # Reuse an already-open PR carrying the exact same Source persistence ref, even if
+            # it was regenerated onto a newer Collection base under a different branch name.
+            SUPERSEDING_PR_JSON="$(gh pr list --repo "$GITHUB_REPOSITORY" --base main --state open --json number,url,body --jq --arg source_ref "$SOURCE_REF" '[.[] | select((.body // "") | contains($source_ref))] | .[0] // empty')"
+            if [ -n "$SUPERSEDING_PR_JSON" ]; then
+              PR_NUMBER="$(printf '%s' "$SUPERSEDING_PR_JSON" | jq -r '.number')"
+              PR_URL="$(printf '%s' "$SUPERSEDING_PR_JSON" | jq -r '.url')"
+              printf 'handoff_status=PR_EXISTS_SUPERSEDING_BRANCH\nsource_ref=%s\nbranch=%s\npr_number=%s\n' "$SOURCE_REF" "$BRANCH" "$PR_NUMBER" > source-handoff-status.txt
+              printf '%s\n' "$PR_URL" > source-handoff-pr-url.txt
+              echo "Existing open PR #$PR_NUMBER already carries Source ref $SOURCE_REF: $PR_URL"
+              exit 0
+            fi
+
+            # Do not delete an audit branch or fail forever on a closed-PR branch.
+            # Use a run/attempt-scoped recovery branch when no open PR represents this seal.
+            BRANCH="${BRANCH}-recovery-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+            echo "::warning::Deterministic handoff branch is stale; using recovery branch $BRANCH."
           fi
 
           git switch -c "$BRANCH"
