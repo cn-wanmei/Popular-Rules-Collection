@@ -1,7 +1,7 @@
 # Service Catalog (generated)
 
-Run: `20261116T015738564940Z-run`  
-IR: `2e6ab1d923c63faf874801796e54c7d2b956f210250d4c8228e23681cf3d31c2`  
+Run: `20261117T044048365836Z-run`  
+IR: `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c`  
 Services: **651**  
 Icon release: `icon-2026.10.06.full1`
 
@@ -44,7 +44,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `anthropic-claude` | Claude | `anthropic` | service | 1 | 7 | [anthropic-claude](rules/anthropic-claude.md) |
 | `anthropic-platform` | Anthropic Platform | `anthropic` | service | 1 | 7 | [anthropic-platform](rules/anthropic-platform.md) |
 | `anthropic_aggregate` | Anthropic | `anthropic` | provider_aggregate | 26 | 7 | [anthropic_aggregate](rules/anthropic_aggregate.md) |
-| `apple` | Apple | `apple` | provider_aggregate | 2047 | 7 | [apple](rules/apple.md) |
+| `apple` | Apple | `apple` | provider_aggregate | 2052 | 7 | [apple](rules/apple.md) |
 | `applebooks` | Apple Books | `apple` | service | 1 | 7 | [applebooks](rules/applebooks.md) |
 | `appledev` | Apple Developer | `apple` | service | 38 | 7 | [appledev](rules/appledev.md) |
 | `applefirmware` | Apple Firmware | `apple` | service | 175 | 7 | [applefirmware](rules/applefirmware.md) |
@@ -169,7 +169,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `deepseek_aggregate` | DeepSeek | `deepseek` | provider_aggregate | 2 | 7 | [deepseek_aggregate](rules/deepseek_aggregate.md) |
 | `dell` | Dell | `dell` | service | 2 | 7 | [dell](rules/dell.md) |
 | `dell_aggregate` | Dell | `dell` | provider_aggregate | 2 | 7 | [dell_aggregate](rules/dell_aggregate.md) |
-| `developer` | developer | `` | aggregate | 711 | 7 | [developer](rules/developer.md) |
+| `developer` | developer | `` | aggregate | 715 | 7 | [developer](rules/developer.md) |
 | `developer` | Developer Ecosystem | `` | category | 286 | 7 | [developer](rules/developer.md) |
 | `dewu` | Dewu | `dewu` | service | 45 | 7 | [dewu](rules/dewu.md) |
 | `dewu_aggregate` | Dewu | `dewu` | provider_aggregate | 45 | 7 | [dewu_aggregate](rules/dewu_aggregate.md) |
@@ -374,7 +374,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `mi-cloud` | Mi Cloud | `xiaomi` | service | 1 | 7 | [mi-cloud](rules/mi-cloud.md) |
 | `micron` | Micron | `micron` | service | 2 | 7 | [micron](rules/micron.md) |
 | `micron_aggregate` | Micron | `micron` | provider_aggregate | 2 | 7 | [micron_aggregate](rules/micron_aggregate.md) |
-| `microsoft` | Microsoft | `microsoft` | provider_aggregate | 1032 | 7 | [microsoft](rules/microsoft.md) |
+| `microsoft` | Microsoft | `microsoft` | provider_aggregate | 1034 | 7 | [microsoft](rules/microsoft.md) |
 | `microsoftedge` | Microsoft Edge | `microsoft` | service | 4 | 7 | [microsoftedge](rules/microsoftedge.md) |
 | `migu` | 咪咕 | `migu` | service | 2 | 7 | [migu](rules/migu.md) |
 | `migu_aggregate` | 咪咕 | `migu` | provider_aggregate | 2 | 7 | [migu_aggregate](rules/migu_aggregate.md) |
