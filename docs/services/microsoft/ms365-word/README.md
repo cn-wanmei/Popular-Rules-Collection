@@ -16,13 +16,13 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/ms365-word/ms365-word.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `ca8174af9bd5036ed52d4d62e7f17e34f1dc8deb1b3b1b2c0f2113ec5835bfd3` |
+| SHA-256 | `461e9073c2c372f1e0c21f8ad9f3cffc17be71f82c9424923c1358ba0630b926` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

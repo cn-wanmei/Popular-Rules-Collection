@@ -16,13 +16,13 @@
 | Provider | `linecorp` |
 | 规则浏览路径 | `rule/linecorp/linecorp_aggregate/linecorp_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `bc44aff848eb493ecb0a37064c4baf82f2148d0be94db07fb7bfce04935d3dc6` |
+| SHA-256 | `9143dec8853f9b9472a5083f881127b33eddbf85b99370af87e50d996b958b7e` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/wechat/wechat.yaml` |
 | 规则数量（_index） | **28** |
-| SHA-256 | `6b8d2e96dc1165f5f4e65027a5508f817f1287f41598203801915cd7ebba8ad2` |
+| SHA-256 | `695dd4f7093d22f370968dcac00075eb7f9f93fb7ca1227d7c408073606aa178` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

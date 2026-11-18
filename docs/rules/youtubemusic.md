@@ -16,13 +16,13 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/youtubemusic/youtubemusic.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `054ba16e55c6d259a2e473a1658b8ee3feea4d1c721de31852b65ea390fdfff4` |
+| SHA-256 | `143cffc7d01ce75279a81cc0c7fa804735f724976aef91f980ed332b35c0c6a7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

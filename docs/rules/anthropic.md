@@ -16,13 +16,13 @@
 | Provider | `anthropic` |
 | 规则浏览路径 | `rule/anthropic/anthropic/anthropic.yaml` |
 | 规则数量（_index） | **24** |
-| SHA-256 | `b5faa082883e6d17ae2c9e01cf1749d3def50b5f628a2fd0b1effe92f1399558` |
+| SHA-256 | `1e3f72703c98e1450308e46435a5e5cb2c5d64a43e41aeedf0e0c86396a00753` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

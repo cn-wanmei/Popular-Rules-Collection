@@ -16,13 +16,13 @@
 | Provider | `zhaopin` |
 | 规则浏览路径 | `rule/zhaopin/zhaopin/zhaopin.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `d0c21c1d3f5557121b7f3356b589b64ae9fddad863773483abe93992ebc1d5ee` |
+| SHA-256 | `08a3be3bbc3e0f0ddbe09fc41b126db2b3813783dbc3be82ec482dfe70321975` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

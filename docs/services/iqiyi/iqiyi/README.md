@@ -16,13 +16,13 @@
 | Provider | `iqiyi` |
 | 规则浏览路径 | `rule/iqiyi/iqiyi/iqiyi.yaml` |
 | 规则数量（_index） | **67** |
-| SHA-256 | `5afc296a3b9c265e4f6bd9359c6a9b21ca701b10c90152a0ecbd2e524dffa569` |
+| SHA-256 | `37d9fa08a1dcb37623946f13414bfb5674053c834b558d7ce9b84f45b498e30d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

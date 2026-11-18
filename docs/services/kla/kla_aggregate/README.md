@@ -16,13 +16,13 @@
 | Provider | `kla` |
 | 规则浏览路径 | `rule/kla/kla_aggregate/kla_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `8903e1cdafb9a5f1a080b0ca1f01aa6a685db6dcfeda54e75fdfd195242b00b0` |
+| SHA-256 | `0374ea2a085ec1a4451a340ac4eac037dce0333de8ba998e9280e5a2172df7ba` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `hbo` |
 | 规则浏览路径 | `rule/hbo/hbo_aggregate/hbo_aggregate.yaml` |
 | 规则数量（_index） | **48** |
-| SHA-256 | `1f6bab3e4bc0bde6829f86346f5c8c887d26700e0811235aa519489a062a361b` |
+| SHA-256 | `712e9ac9f65bfadbaa85226ec523521f960afe0d7cb424b5fa7f62bc75560117` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

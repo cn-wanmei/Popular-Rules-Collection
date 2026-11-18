@@ -16,13 +16,13 @@
 | Provider | `asml` |
 | 规则浏览路径 | `rule/asml/asml_aggregate/asml_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `cfbf50b38916bd3cd98164f8a5ce2664c1525185c26c6fe03646b1e1ad7320ec` |
+| SHA-256 | `582a34be35c45d33994ec657ef3c051f6404474aac8b94e0cd21e8ad1f0ef73c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

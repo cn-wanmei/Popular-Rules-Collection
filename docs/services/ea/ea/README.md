@@ -16,13 +16,13 @@
 | Provider | `ea` |
 | 规则浏览路径 | `rule/ea/ea/ea.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `dca86d7dffc90db22c4342afa94a7fa6d12d431c6fbbf2ac920f5b0bc55a8fc6` |
+| SHA-256 | `fba5a94de82475023caece900c0573014435822d30aa0c31198881449b25a568` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

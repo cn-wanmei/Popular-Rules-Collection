@@ -16,13 +16,13 @@
 | Provider | `telegram` |
 | 规则浏览路径 | `rule/telegram/telegram_aggregate/telegram_aggregate.yaml` |
 | 规则数量（_index） | **24** |
-| SHA-256 | `24e8b64f163e09c62781691d9e939f57be0fb7e631208642fa18586693e6f0c9` |
+| SHA-256 | `5dc3ba751bdb94a4d7e147caab8a9484fa8c44a46134a4663ae9cd7f015d8e65` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

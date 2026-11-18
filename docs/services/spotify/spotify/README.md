@@ -16,13 +16,13 @@
 | Provider | `spotify` |
 | 规则浏览路径 | `rule/spotify/spotify/spotify.yaml` |
 | 规则数量（_index） | **39** |
-| SHA-256 | `4668f0ea1f018d8d37eb0859bb245b8c31442db803bb0b5992743471c87bf855` |
+| SHA-256 | `63dbb0b79b5cac01706224ae5360cd616130490ec597f7c83fa4c79756c94b25` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

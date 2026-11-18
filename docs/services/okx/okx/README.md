@@ -16,13 +16,13 @@
 | Provider | `okx` |
 | 规则浏览路径 | `rule/okx/okx/okx.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `0d3e582e9e48299f0eb649cf02cf297c94bbdfdb8a8ac309a0cf09f2f2f6062b` |
+| SHA-256 | `6f03e13a34901b0fcd8215e229c0d779347b48830b96fe2ab9edfe51b3973943` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

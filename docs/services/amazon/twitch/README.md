@@ -16,13 +16,13 @@
 | Provider | `amazon` |
 | 规则浏览路径 | `rule/amazon/twitch/twitch.yaml` |
 | 规则数量（_index） | **22** |
-| SHA-256 | `f925a8ed035decd13e61b198c33f662ac05562b4f931c9d58dd718ac6cd8864f` |
+| SHA-256 | `b64763eaa0509afacc4384fccd9aa94cdb6f14640a502d08e9f0e2a67ec8a2c4` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

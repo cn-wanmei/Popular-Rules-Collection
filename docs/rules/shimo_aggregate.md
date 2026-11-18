@@ -16,13 +16,13 @@
 | Provider | `shimo` |
 | 规则浏览路径 | `rule/shimo/shimo_aggregate/shimo_aggregate.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `d1ef6c39036583243e0bfe9fa66af2b03abc5bceecbd34ecae81f84fb3ae2707` |
+| SHA-256 | `30b7df3c2ca3fbb0b2894fb0799bf163315da4e404596e1b8c96e40669a433b2` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

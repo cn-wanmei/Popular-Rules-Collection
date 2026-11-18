@@ -16,13 +16,13 @@
 | Provider | `servicenow` |
 | 规则浏览路径 | `rule/servicenow/servicenow_aggregate/servicenow_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `f82988b9a0f33fbf4b4f22475f4d1288846b531aa3fd1b46d5060066cee2f6e6` |
+| SHA-256 | `8b1cad9bb0b473654137674e34c0afefc793f7340a338628821ffc7a8f460b6f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

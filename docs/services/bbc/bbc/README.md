@@ -16,13 +16,13 @@
 | Provider | `bbc` |
 | 规则浏览路径 | `rule/bbc/bbc/bbc.yaml` |
 | 规则数量（_index） | **34** |
-| SHA-256 | `48f3e88c725916b07ea4e067c9a3aa672f2be98279c0bdb8b42ede3684a80797` |
+| SHA-256 | `3417245f6ac41aca0aee0e46fce93b99b6a70a030b4a66c5310d67296fac703f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

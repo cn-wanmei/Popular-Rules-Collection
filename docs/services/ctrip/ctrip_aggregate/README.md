@@ -16,13 +16,13 @@
 | Provider | `ctrip` |
 | 规则浏览路径 | `rule/ctrip/ctrip_aggregate/ctrip_aggregate.yaml` |
 | 规则数量（_index） | **29** |
-| SHA-256 | `e4709af1abd2288a819e1cac2d540cae4557d7ea3b435f514a360ab053659e8f` |
+| SHA-256 | `ec4eb8cca7d80515f8c7fa1252acfa867c407ec9651dd1b607d0d0ede8658de8` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

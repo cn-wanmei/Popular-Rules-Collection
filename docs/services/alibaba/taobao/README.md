@@ -16,13 +16,13 @@
 | Provider | `alibaba` |
 | 规则浏览路径 | `rule/alibaba/taobao/taobao.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `aed2ecaf7d37088d3a21f22b49e55f2d23ea1faacb535b1dec10f44e4d3db3ed` |
+| SHA-256 | `cddc0c1b554b155d5da02e8da3c774f66be172726f47403986c358ca52908d9b` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `siemens` |
 | 规则浏览路径 | `rule/siemens/siemens/siemens.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `4b4b41560cb08078fba4e7b1b99de9898bb068ab4603410db0486233efdfa797` |
+| SHA-256 | `df2cf0c0eb9c7459f32250c1199685f63370b178704d34e9a43005acd103c81a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

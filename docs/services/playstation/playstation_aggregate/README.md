@@ -16,13 +16,13 @@
 | Provider | `playstation` |
 | 规则浏览路径 | `rule/playstation/playstation_aggregate/playstation_aggregate.yaml` |
 | 规则数量（_index） | **4** |
-| SHA-256 | `5da99b443c8fcdb23967e933c8e9ba054cb6ce84af59baddb8a4834640ee77c3` |
+| SHA-256 | `3ae8251e752e8b9f0b14ea4d0853e2d519031c9a7b51fe359ce3554afef35e2f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `douyu` |
 | 规则浏览路径 | `rule/douyu/douyu/douyu.yaml` |
 | 规则数量（_index） | **13** |
-| SHA-256 | `89dd6f1d25b1a9cf75e00fa62abb66e72d68ecda71a9a6817fcff966af005703` |
+| SHA-256 | `ec3ea005cac09e4654a8cb00f9219e3fefc163f6a0756cbb70d49eccc1a61c95` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

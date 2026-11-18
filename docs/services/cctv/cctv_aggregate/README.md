@@ -16,13 +16,13 @@
 | Provider | `cctv` |
 | 规则浏览路径 | `rule/cctv/cctv_aggregate/cctv_aggregate.yaml` |
 | 规则数量（_index） | **44** |
-| SHA-256 | `13c5ae6c85240cc45585310fcdc672f62f1bdf1341db8a26fd2e1d1d5fbb5917` |
+| SHA-256 | `bc41b3de335d46beeb0eddddb0becc9a22c610bf284933f554ea22f5ff3fea56` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `openai` |
 | 规则浏览路径 | `rule/openai/chatgpt/chatgpt.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `2bef37146cf318ee3efcce4a461c7d03a8c94241bbccad8dfcd12d8c347b9693` |
+| SHA-256 | `a9fc786cdc49a1cdc9b86da2de7ae2434c02267118bb17c6dc180c0700ecc7b9` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261117T044048365836Z-run` |
+| Run ID | `20261118T034355577607Z-run` |
 | IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
 | IR schema | `semantic_ir_v2` |
 
