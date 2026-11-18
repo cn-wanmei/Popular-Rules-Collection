@@ -16,14 +16,14 @@
 | Provider | `kakao` |
 | 规则浏览路径 | `rule/kakao/kakao_aggregate/kakao_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `33505ae779fc94e517658f2d15dffe9f5ad8631b3cd790530d62ac49f0511d84` |
+| SHA-256 | `cadd72e1661294736a183ce33ba86838f55563065820e4d03924575dab723f86` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

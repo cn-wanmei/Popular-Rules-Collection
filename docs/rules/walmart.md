@@ -16,14 +16,14 @@
 | Provider | `walmart` |
 | 规则浏览路径 | `rule/walmart/walmart/walmart.yaml` |
 | 规则数量（_index） | **10** |
-| SHA-256 | `77be2f6d0ef95d76e695de16114079292c81e3b8903f7fa6213b59f34fd789ea` |
+| SHA-256 | `b15f21a6823211b1e63e2ba903456c6bb1020561b4ed303de830fd9293668909` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

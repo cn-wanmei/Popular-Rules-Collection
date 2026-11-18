@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `elevenlabs` |
 | 规则浏览路径 | `rule/elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.yaml` |
-| 规则数量（_index） | **2** |
-| SHA-256 | `0f4828f1f46edec7817de0e6fbfa513cefc32446560328fec8ae7e1e8704c85d` |
+| 规则数量（_index） | **3** |
+| SHA-256 | `f91c646a95f887187b30445464f901086e50bcf7856523b97c4681e31c9a8d21` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.yaml` |
-| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.list` |
-| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.yaml` |
-| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.list` |
-| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.list` |
+| egern | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.yaml` |
+| loon | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.list` |
+| mihomo | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.yaml` |
+| quantumultx | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.list` |
+| shadowrocket | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.json` |
-| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.list` |
+| surge | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

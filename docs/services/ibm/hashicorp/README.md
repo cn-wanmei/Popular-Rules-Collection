@@ -16,14 +16,14 @@
 | Provider | `ibm` |
 | 规则浏览路径 | `rule/ibm/hashicorp/hashicorp.yaml` |
 | 规则数量（_index） | **8** |
-| SHA-256 | `f9f73417cb032a2d5bbf42059012a4b9cfbfce8cbc20be0eda545aaf6ff01381` |
+| SHA-256 | `3bd652fd813ce606f816ba53b3b96a0e77abeb1898e934e3b2a24d01817f8fe3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

@@ -14,14 +14,14 @@
 | Provider | `amazon` |
 | 规则浏览路径 | `rule/amazon/amazon/amazon.yaml` |
 | 规则数量（_index） | **307** |
-| SHA-256 | `b0bf1583d06f20fff2dcfb90cd98d54c8e63e8035e6a84475e3fc8107b0f12ae` |
+| SHA-256 | `3fd666b3ff3e208051d6e08be49da493c8722e520eaf5e227a54a32dfc3b6efb` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

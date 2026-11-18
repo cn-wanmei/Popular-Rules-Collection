@@ -16,14 +16,14 @@
 | Provider | `ibm` |
 | 规则浏览路径 | `rule/ibm/ibm_aggregate/ibm_aggregate.yaml` |
 | 规则数量（_index） | **10** |
-| SHA-256 | `caa857e82999a7fc5304c183b61985676746e2f03c30b28df023c73f27a58394` |
+| SHA-256 | `d93d2bbc678215af9378dfb907f8fc6ab90d98714a4a7e4a0e4fe859837ca6b6` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

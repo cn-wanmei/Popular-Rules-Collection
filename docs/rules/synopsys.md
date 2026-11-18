@@ -16,14 +16,14 @@
 | Provider | `synopsys` |
 | 规则浏览路径 | `rule/synopsys/synopsys/synopsys.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `320c2c3ade01e5b6e4a1476a8759cfd97aebd3b5cc169e435bbe26ec55966520` |
+| SHA-256 | `e62fcb40c16caea365a9f52c4fef3c5312b5b2874eacc6c0b9f7a5ef9dda2dee` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

@@ -14,14 +14,14 @@
 | Provider | `blizzard` |
 | 规则浏览路径 | `rule/blizzard/blizzard_aggregate/blizzard_aggregate.yaml` |
 | 规则数量（_index） | **62** |
-| SHA-256 | `ddf4c51d41cfea906f41c12d0e053522b9c2a0ffc23e635f24144d463cf8311d` |
+| SHA-256 | `83cb709985913020d5849f8f2318d940dc3eff0d71543096d3e0fb09bf48f5a2` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

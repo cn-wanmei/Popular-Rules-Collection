@@ -14,14 +14,14 @@
 | Provider | `huawei` |
 | 规则浏览路径 | `rule/huawei/huawei/huawei.yaml` |
 | 规则数量（_index） | **404** |
-| SHA-256 | `80c23d5d2993c386f95e1eb596b0b5fdad8fa00c2759634bcac7e86307c88099` |
+| SHA-256 | `1e24863b348da9d6611f63140fbf088a3b81623850930e837fa71954633aaae7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

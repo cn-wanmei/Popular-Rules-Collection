@@ -16,14 +16,14 @@
 | Provider | `salesforce` |
 | 规则浏览路径 | `rule/salesforce/slack/slack.yaml` |
 | 规则数量（_index） | **11** |
-| SHA-256 | `aca3ea190ec319a6067025f0fb19c29251f1cd53adf4a0b7b78023f0a8e22172` |
+| SHA-256 | `e7a441614481c56ee6cc2e5e7d3a8cc62ab80491cfe9a37cc55b12feb1c0d9f7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

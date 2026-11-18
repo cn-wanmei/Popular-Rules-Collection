@@ -16,14 +16,14 @@
 | Provider | `special` |
 | 规则浏览路径 | `rule/special/private/private.yaml` |
 | 规则数量（_index） | **248** |
-| SHA-256 | `07f104dfa77bd2f4d640e2633254e62d7fad11aa503108cd76247394d109450f` |
+| SHA-256 | `97004a6d311279270cf4bf97bd36c79d8888a7d0f751975d8bc3431826cec15d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

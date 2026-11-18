@@ -16,14 +16,14 @@
 | Provider | `signal` |
 | 规则浏览路径 | `rule/signal/signal/signal.yaml` |
 | 规则数量（_index） | **8** |
-| SHA-256 | `08bb5bcb976a14cdd4d3407404354a1667b8b43afc5e7958f10ec75af30e1902` |
+| SHA-256 | `c9fb4c9d7900d03ce4a7f1ee03153f5216805a8b667cf60092c486bf89e4520f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

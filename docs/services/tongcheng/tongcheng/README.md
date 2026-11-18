@@ -16,14 +16,14 @@
 | Provider | `tongcheng` |
 | 规则浏览路径 | `rule/tongcheng/tongcheng/tongcheng.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `869219ab2949ab4961c62bfb7df20e2f72308c02583ee3df1d8f1b30f2fa30ec` |
+| SHA-256 | `4c5b5a50c450994052ec8903668d451e315b46e87a095c2bca4734b99d36e3ba` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

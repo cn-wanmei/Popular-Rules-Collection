@@ -16,14 +16,14 @@
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/bytedance/bytedance.yaml` |
 | 规则数量（_index） | **1105** |
-| SHA-256 | `5e4a81a8c5c557b3f97044d68a8a9270d257d3a75e3594c7aa40429cb4a1e6a0` |
+| SHA-256 | `2563da5ed85f72597b2ae10890309af1ed1d24e21a86c500ca72eee432c5387f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

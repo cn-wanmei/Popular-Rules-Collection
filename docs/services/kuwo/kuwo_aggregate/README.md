@@ -16,14 +16,14 @@
 | Provider | `kuwo` |
 | 规则浏览路径 | `rule/kuwo/kuwo_aggregate/kuwo_aggregate.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `ddf6b19cef10765cf67f3cc8bbdde834abc57b94c33b7e0fda2fe63b92cf415f` |
+| SHA-256 | `7dfddc426e12944ea61e648e77b67df2fb246b6bdfcce500933d194de2eb3a9c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

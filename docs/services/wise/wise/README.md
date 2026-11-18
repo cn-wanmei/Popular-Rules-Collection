@@ -16,14 +16,14 @@
 | Provider | `wise` |
 | 规则浏览路径 | `rule/wise/wise/wise.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `00363310bf991df6105840404c552847afde39743ccba2d0de690ef4ec549022` |
+| SHA-256 | `164e23def0738cfea6d963380c22bed0af394676b2145a2e86a3b24a89f19899` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

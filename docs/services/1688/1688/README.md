@@ -16,14 +16,14 @@
 | Provider | `1688` |
 | 规则浏览路径 | `rule/1688/1688/1688.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `fb50dd8f1005cf080f4a8415c5aa81deb5421522e27dc77a1620a1eac53cec99` |
+| SHA-256 | `37f27338c4fde262257dbbf1bfeb7baf98a96b6eff494384b1f56342595ba616` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

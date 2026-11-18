@@ -1,7 +1,7 @@
 # Service Catalog (generated)
 
-Run: `20261118T034355577607Z-run`  
-IR: `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c`  
+Run: `20261118T214823691905Z-run`  
+IR: `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a`  
 Services: **651**  
 Icon release: `icon-2026.10.06.full1`
 
@@ -23,10 +23,10 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `adobe-firefly` | Adobe Firefly | `adobe` | service | 1 | 7 | [adobe-firefly](rules/adobe-firefly.md) |
 | `adobe-fonts` | Adobe Fonts | `adobe` | service | 1 | 7 | [adobe-fonts](rules/adobe-fonts.md) |
 | `adobe-stock` | Adobe Stock | `adobe` | service | 1 | 7 | [adobe-stock](rules/adobe-stock.md) |
-| `ai` | AI | `special` | service | 217 | 7 | [ai](rules/ai.md) |
+| `ai` | AI | `special` | service | 218 | 7 | [ai](rules/ai.md) |
 | `airbnb` | Airbnb | `airbnb` | service | 83 | 7 | [airbnb](rules/airbnb.md) |
 | `airbnb_aggregate` | Airbnb | `airbnb` | provider_aggregate | 83 | 7 | [airbnb_aggregate](rules/airbnb_aggregate.md) |
-| `aisuite` | AI Suite | `special` | service | 192 | 7 | [aisuite](rules/aisuite.md) |
+| `aisuite` | AI Suite | `special` | service | 193 | 7 | [aisuite](rules/aisuite.md) |
 | `alibaba` | Alibaba | `alibaba` | provider_aggregate | 542 | 7 | [alibaba](rules/alibaba.md) |
 | `alibabacloud` | Alibaba Cloud | `alibaba` | service | 12 | 7 | [alibabacloud](rules/alibabacloud.md) |
 | `aliexpress` | AliExpress | `alibaba` | service | 2 | 7 | [aliexpress](rules/aliexpress.md) |
@@ -201,8 +201,8 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `ebay` | eBay | `ebay` | service | 370 | 7 | [ebay](rules/ebay.md) |
 | `ebay_aggregate` | eBay | `ebay` | provider_aggregate | 370 | 7 | [ebay_aggregate](rules/ebay_aggregate.md) |
 | `eleme` | Ele.me | `alibaba` | service | 2 | 7 | [eleme](rules/eleme.md) |
-| `elevenlabs` | ElevenLabs | `elevenlabs` | service | 2 | 7 | [elevenlabs](rules/elevenlabs.md) |
-| `elevenlabs_aggregate` | ElevenLabs | `elevenlabs` | provider_aggregate | 2 | 7 | [elevenlabs_aggregate](rules/elevenlabs_aggregate.md) |
+| `elevenlabs` | ElevenLabs | `elevenlabs` | service | 3 | 7 | [elevenlabs](rules/elevenlabs.md) |
+| `elevenlabs_aggregate` | ElevenLabs | `elevenlabs` | provider_aggregate | 3 | 7 | [elevenlabs_aggregate](rules/elevenlabs_aggregate.md) |
 | `emby` | Emby | `emby` | service | 52 | 7 | [emby](rules/emby.md) |
 | `emby_aggregate` | Emby | `emby` | provider_aggregate | 52 | 7 | [emby_aggregate](rules/emby_aggregate.md) |
 | `epic` | Epic Games | `epic` | service | 15 | 7 | [epic](rules/epic.md) |
@@ -552,7 +552,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `telegram_aggregate` | Telegram | `telegram` | provider_aggregate | 24 | 7 | [telegram_aggregate](rules/telegram_aggregate.md) |
 | `temu` | Temu | `temu` | service | 2 | 7 | [temu](rules/temu.md) |
 | `temu_aggregate` | Temu | `temu` | provider_aggregate | 2 | 7 | [temu_aggregate](rules/temu_aggregate.md) |
-| `tencent` | Tencent | `tencent` | provider_aggregate | 760 | 7 | [tencent](rules/tencent.md) |
+| `tencent` | Tencent | `tencent` | provider_aggregate | 761 | 7 | [tencent](rules/tencent.md) |
 | `tencentcloud` | Tencent Cloud | `tencent` | service | 1 | 7 | [tencentcloud](rules/tencentcloud.md) |
 | `tencentdocs` | Tencent Docs | `tencent` | service | 1 | 7 | [tencentdocs](rules/tencentdocs.md) |
 | `tencentmeeting` | Tencent Meeting | `tencent` | service | 3 | 7 | [tencentmeeting](rules/tencentmeeting.md) |

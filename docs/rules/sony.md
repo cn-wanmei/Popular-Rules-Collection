@@ -16,14 +16,14 @@
 | Provider | `sony` |
 | 规则浏览路径 | `rule/sony/sony/sony.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `311920053ec5663677d97ed4acc2b15e99916c93d56fe328d0703f97ee79b402` |
+| SHA-256 | `bc6e5fdd8908fcb8ffc7aabe29fd83a382a8ae29e19f1d3cce876601456e4b6e` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

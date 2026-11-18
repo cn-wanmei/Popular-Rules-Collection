@@ -16,14 +16,14 @@
 | Provider | `umc` |
 | 规则浏览路径 | `rule/umc/umc/umc.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `038ef636014412a4bfe8a21128d33522fd417be8121503c8c6b6a57799e94b08` |
+| SHA-256 | `201e18b027981b5d8336d43756026c4ad2c572656e9de1ffe568f115ce392c77` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T034355577607Z-run` |
-| IR digest | `407857e90759629f0cbcb1b0927b90baa578c1ddb4d5c2a5419182e55efa7c6c` |
+| Run ID | `20261118T214823691905Z-run` |
+| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
