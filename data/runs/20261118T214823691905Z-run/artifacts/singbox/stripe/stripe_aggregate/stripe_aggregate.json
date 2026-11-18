@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_keyword": [
+        "stripe"
+      ],
+      "domain_suffix": [
+        "dashboard.stripe.com"
+      ]
+    }
+  ]
+}
