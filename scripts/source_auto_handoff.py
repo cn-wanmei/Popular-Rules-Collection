@@ -166,6 +166,18 @@ def _lifecycle_eligible(record: dict) -> bool:
     )
 
 
+def _release_handoff_eligible(release: dict) -> bool:
+    """Reject REVIEW audit archives and any explicitly non-handoff-eligible release."""
+    validation = release.get("validation")
+    if not isinstance(validation, dict):
+        return False
+    if str(validation.get("release_state") or "") != "CANDIDATE":
+        return False
+    if "handoff_eligible" in validation and validation.get("handoff_eligible") is not True:
+        return False
+    return True
+
+
 def _load_registry() -> dict:
     value = yaml.safe_load(REGISTRY_PATH.read_text(encoding="utf-8")) or {}
     if not isinstance(value, dict):
@@ -185,6 +197,8 @@ def _build_binding(source_ref: str, verified_input: str, sid: str, item: dict, l
         raise RuntimeError(f"{sid}: unsafe release_path {release_path}")
 
     release = _get_json(f"{SOURCE_ROOT}/{source_ref}/{release_path}")
+    if not _release_handoff_eligible(release):
+        raise RuntimeError(f"{sid}: Source release is not a qualified handoff-eligible CANDIDATE")
     expected_release = {
         "service_id": sid,
         "snapshot_id": str(item["snapshot_id"]),
