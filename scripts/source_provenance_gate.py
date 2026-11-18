@@ -44,6 +44,37 @@ def get_json(url: str, timeout: int = 45) -> dict:
         raise ValueError(f"expected JSON object: {url}")
     return value
 
+def phase2_eligibility(source_ref: str, service_id: str, binding: dict, lifecycle_state: str) -> bool:
+    """Require the derived Phase-2 report to agree with the exact lifecycle and release."""
+    report = get_json(
+        f"{SOURCE_ROOT}/{source_ref}/reports/generated/phase2_service_completion.json"
+    )
+    if report.get("schema") != "phase2_service_completion_derived_v1":
+        return False
+    services = report.get("services") or {}
+    if not isinstance(services, dict):
+        return False
+    record = services.get(service_id)
+    if not isinstance(record, dict):
+        return False
+    blockers = record.get("blockers")
+    if not isinstance(blockers, list) or blockers:
+        return False
+    if record.get("verified") is not True:
+        return False
+    if str(record.get("declared_state") or "") != lifecycle_state:
+        return False
+    if str(record.get("snapshot_id") or "") != str(binding.get("snapshot_id") or ""):
+        return False
+    if str(record.get("release_digest") or "") != str(binding.get("release_digest") or ""):
+        return False
+    if lifecycle_state == "production" and record.get("production_activated") is not True:
+        return False
+    if lifecycle_state == "verified" and record.get("production_activated") is True:
+        return False
+    return True
+
+
 
 def verify_binding(service_id: str, binding: dict) -> dict:
     errors: list[str] = []
@@ -116,6 +147,12 @@ def verify_binding(service_id: str, binding: dict) -> dict:
             and lifecycle_digest == str(binding.get("lifecycle_config_sha256"))
         )
         checks["lifecycle_eligibility"] = lifecycle_ok
+        try:
+            checks["phase2_eligibility"] = phase2_eligibility(
+                source_ref, service_id, binding, lifecycle_state
+            )
+        except Exception:
+            checks["phase2_eligibility"] = False
         lifecycle_attestation = "ATTESTED"
     else:
         checks["lifecycle_eligibility"] = True
