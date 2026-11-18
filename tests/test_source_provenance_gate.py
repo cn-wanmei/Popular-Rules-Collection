@@ -118,7 +118,17 @@ def test_provenance_gate_verifies_exact_lifecycle_attestation(monkeypatch):
         "policy_digest": "e" * 64, "generator_digest": "f" * 64,
         "release_digest": "0" * 64, "release_identity_version": "2",
     }
-    monkeypatch.setattr(gate, "get_json", lambda *args, **kwargs: release)
+    phase2 = {
+        "schema": "phase2_service_completion_derived_v1",
+        "services": {"qqmail": {
+            "blockers": [], "verified": True, "declared_state": "verified",
+            "snapshot_id": "snap-qqmail-test", "release_digest": "0" * 64,
+            "production_activated": False,
+        }},
+    }
+    def fake_get_json(url, *args, **kwargs):
+        return phase2 if url.endswith("phase2_service_completion.json") else release
+    monkeypatch.setattr(gate, "get_json", fake_get_json)
     def fake_get_text(url, *args, **kwargs):
         if url.endswith("config/source_canary_state.yaml"):
             return lifecycle_raw
@@ -163,7 +173,17 @@ def test_provenance_gate_rejects_review_lifecycle_attestation(monkeypatch):
         "policy_digest": "e" * 64, "generator_digest": "f" * 64,
         "release_digest": "0" * 64, "release_identity_version": "2",
     }
-    monkeypatch.setattr(gate, "get_json", lambda *args, **kwargs: release)
+    phase2 = {
+        "schema": "phase2_service_completion_derived_v1",
+        "services": {"qqmail": {
+            "blockers": [], "verified": True, "declared_state": "review",
+            "snapshot_id": "snap-qqmail-test", "release_digest": "0" * 64,
+            "production_activated": False,
+        }},
+    }
+    def fake_get_json(url, *args, **kwargs):
+        return phase2 if url.endswith("phase2_service_completion.json") else release
+    monkeypatch.setattr(gate, "get_json", fake_get_json)
     monkeypatch.setattr(gate, "get_text", lambda url, *args, **kwargs: lifecycle_raw if url.endswith("config/source_canary_state.yaml") else body)
 
     result = gate.verify_binding("qqmail", binding)
