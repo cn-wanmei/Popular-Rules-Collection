@@ -121,6 +121,42 @@ def _get_source_lifecycle(source_ref: str) -> tuple[dict, str]:
         raise RuntimeError("Source lifecycle services must be a mapping")
     return services, hashlib.sha256(raw).hexdigest()
 
+ 
+def _get_source_phase2(source_ref: str) -> dict:
+    report = _get_json(
+        f"{SOURCE_ROOT}/{source_ref}/reports/generated/phase2_service_completion.json"
+    )
+    if report.get("schema") != "phase2_service_completion_derived_v1":
+        raise RuntimeError("Source Phase-2 report missing or unsupported at immutable source_ref")
+    services = report.get("services") or {}
+    if not isinstance(services, dict):
+        raise RuntimeError("Source Phase-2 services must be a mapping")
+    return services
+
+
+def _phase2_eligible(lifecycle_record: dict, phase2_record: dict, item: dict) -> bool:
+    if not isinstance(lifecycle_record, dict) or not isinstance(phase2_record, dict):
+        return False
+    state = str(lifecycle_record.get("state") or "")
+    blockers = phase2_record.get("blockers")
+    if not _lifecycle_eligible(lifecycle_record):
+        return False
+    if not isinstance(blockers, list) or blockers:
+        return False
+    if phase2_record.get("verified") is not True:
+        return False
+    if str(phase2_record.get("declared_state") or "") != state:
+        return False
+    if str(phase2_record.get("snapshot_id") or "") != str(item.get("snapshot_id") or ""):
+        return False
+    if str(phase2_record.get("release_digest") or "") != str(item.get("release_digest") or ""):
+        return False
+    if state == "production" and phase2_record.get("production_activated") is not True:
+        return False
+    if state == "verified" and phase2_record.get("production_activated") is True:
+        return False
+    return True
+
 
 def _lifecycle_eligible(record: dict) -> bool:
     return (
@@ -137,11 +173,13 @@ def _load_registry() -> dict:
     return value
 
 
-def _build_binding(source_ref: str, verified_input: str, sid: str, item: dict, lifecycle: dict, lifecycle_digest: str) -> dict:
+def _build_binding(source_ref: str, verified_input: str, sid: str, item: dict, lifecycle: dict, phase2: dict, lifecycle_digest: str) -> dict:
     lifecycle_record = lifecycle.get(sid)
     if not _lifecycle_eligible(lifecycle_record):
         state = (lifecycle_record or {}).get("state", "MISSING") if isinstance(lifecycle_record, dict) else "MISSING"
         raise RuntimeError(f"{sid}: lifecycle state {state!r} is not eligible for production handoff")
+    if not _phase2_eligible(lifecycle_record, phase2, item):
+        raise RuntimeError(f"{sid}: Phase-2 eligibility is missing, blocked, or inconsistent with lifecycle/release")
     release_path = str(item["release_path"])
     if not release_path.startswith(f"releases/{sid}/"):
         raise RuntimeError(f"{sid}: unsafe release_path {release_path}")
@@ -193,6 +231,7 @@ def main() -> None:
     source_ref = str(report["persistence_commit"])
     verified_input = str(report["verified_input_commit"])
     lifecycle, lifecycle_digest = _get_source_lifecycle(source_ref)
+    phase2 = _get_source_phase2(source_ref)
     durable_services = set(report.get("services") or {})
 
     registry = _load_registry()
@@ -216,7 +255,11 @@ def main() -> None:
             state = lifecycle_record.get("state", "MISSING") if isinstance(lifecycle_record, dict) else "MISSING"
             skipped_ineligible[sid] = str(state)
             continue
-        binding = _build_binding(source_ref, verified_input, sid, item, lifecycle, lifecycle_digest)
+        phase2_record = phase2.get(sid)
+        if not _phase2_eligible(lifecycle_record, phase2_record, item):
+            skipped_ineligible[sid] = f"{lifecycle_record.get('state', 'MISSING')}:PHASE2_INELIGIBLE"
+            continue
+        binding = _build_binding(source_ref, verified_input, sid, item, lifecycle, phase2_record, lifecycle_digest)
         if bindings.get(sid) != binding:
             bindings[sid] = binding
             changed_services.append(sid)
