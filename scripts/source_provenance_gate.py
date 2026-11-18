@@ -20,6 +20,15 @@ PROVENANCE_FIELDS = (
     "release_digest", "release_identity_version",
 )
 
+# Exact, immutable Last Known Good exception tracked by Collection Issue #321.
+# It preserves the pre-existing Taobao binding only; the new Source ref is NOT eligible.
+PHASE2_LKG_EXCEPTIONS = {
+    ("taobao", "f5a3291c5020368f886064bcca026c836801ba3d"): {
+        "snapshot_id": "snap-taobao-834d549e8982036ce1438963",
+        "release_digest": "834d549e8982036ce1438963983527791e70997603616758bac4fb8f7c29d38b",
+    },
+}
+
 
 def load_registry(path: Path) -> dict:
     data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
@@ -147,13 +156,23 @@ def verify_binding(service_id: str, binding: dict) -> dict:
             and lifecycle_digest == str(binding.get("lifecycle_config_sha256"))
         )
         checks["lifecycle_eligibility"] = lifecycle_ok
-        try:
-            checks["phase2_eligibility"] = phase2_eligibility(
-                source_ref, service_id, binding, lifecycle_state
+        legacy_hold = PHASE2_LKG_EXCEPTIONS.get((service_id, source_ref))
+        if legacy_hold is not None:
+            # The exact pinned LKG tuple may remain readable while qualification is repaired,
+            # but no other Source ref or snapshot may inherit this exception.
+            checks["phase2_eligibility"] = (
+                str(binding.get("snapshot_id") or "") == legacy_hold["snapshot_id"]
+                and str(binding.get("release_digest") or "") == legacy_hold["release_digest"]
             )
-        except Exception:
-            checks["phase2_eligibility"] = False
-        lifecycle_attestation = "ATTESTED"
+            lifecycle_attestation = "LEGACY_LKG_PHASE2_HOLD"
+        else:
+            try:
+                checks["phase2_eligibility"] = phase2_eligibility(
+                    source_ref, service_id, binding, lifecycle_state
+                )
+            except Exception:
+                checks["phase2_eligibility"] = False
+            lifecycle_attestation = "ATTESTED"
     else:
         checks["lifecycle_eligibility"] = True
     checks["release_service"] = release.get("service_id") == service_id
