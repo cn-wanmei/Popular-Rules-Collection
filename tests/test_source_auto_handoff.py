@@ -139,3 +139,14 @@ def test_lifecycle_handoff_allows_only_enabled_verified_or_production() -> None:
     assert not _lifecycle_eligible({"state": "review", "enabled": True})
     assert not _lifecycle_eligible({"state": "production", "enabled": False})
     assert not _lifecycle_eligible({})
+
+
+
+def test_release_handoff_qualification_is_candidate_only():
+    from scripts.source_auto_handoff import _release_handoff_eligible
+
+    assert _release_handoff_eligible({"validation": {"release_state": "CANDIDATE"}})
+    assert _release_handoff_eligible({"validation": {"release_state": "CANDIDATE", "handoff_eligible": True}})
+    assert not _release_handoff_eligible({"validation": {"release_state": "REVIEW"}})
+    assert not _release_handoff_eligible({"validation": {"release_state": "CANDIDATE", "handoff_eligible": False}})
+    assert not _release_handoff_eligible({})
