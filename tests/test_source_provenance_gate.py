@@ -112,6 +112,7 @@ def test_provenance_gate_verifies_exact_lifecycle_attestation(monkeypatch):
         "lifecycle_config_sha256": hashlib.sha256(lifecycle_raw).hexdigest(),
     }
     release = {
+        "validation": {"release_state": "CANDIDATE"},
         "service_id": "qqmail", "snapshot_id": "snap-qqmail-test",
         "content_digest": "c" * 64, "evidence_digest": "d" * 64,
         "policy_digest": "e" * 64, "generator_digest": "f" * 64,
@@ -156,6 +157,7 @@ def test_provenance_gate_rejects_review_lifecycle_attestation(monkeypatch):
         "lifecycle_config_sha256": hashlib.sha256(lifecycle_raw).hexdigest(),
     }
     release = {
+        "validation": {"release_state": "CANDIDATE"},
         "service_id": "qqmail", "snapshot_id": "snap-qqmail-test",
         "content_digest": "c" * 64, "evidence_digest": "d" * 64,
         "policy_digest": "e" * 64, "generator_digest": "f" * 64,
