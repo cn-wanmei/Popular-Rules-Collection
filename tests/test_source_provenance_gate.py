@@ -195,7 +195,10 @@ def test_provenance_gate_rejects_review_lifecycle_attestation(monkeypatch):
 def test_phase2_lkg_exceptions_are_exact_and_service_scoped():
     from scripts.source_provenance_gate import is_exact_phase2_lkg
 
-    source_ref = "f5a3291c5020368f886064bcca026c836801ba3d"
+    source_refs = [
+        "f5a3291c5020368f886064bcca026c836801ba3d",
+        "4452ae321d306efef7cd45e67310adbd749195f9",
+    ]
     pinned = {
         "1688": ("snap-1688-222302f3a20ecb7c08c72ed0", "222302f3a20ecb7c08c72ed09a2942e0ae41aa83c1a0086b47ddd9c0679ac776"),
         "cainiao": ("snap-cainiao-a8a898392298ebaa644a783e", "a8a898392298ebaa644a783ed30f4f5dc994c4245e175974ad71a3552b9293d8"),
@@ -207,9 +210,10 @@ def test_phase2_lkg_exceptions_are_exact_and_service_scoped():
     }
     for sid, (snapshot_id, release_digest) in pinned.items():
         binding = {"snapshot_id": snapshot_id, "release_digest": release_digest}
-        assert is_exact_phase2_lkg(sid, source_ref, binding)
-        assert not is_exact_phase2_lkg(sid, source_ref, {**binding, "snapshot_id": snapshot_id + "-changed"})
-        assert not is_exact_phase2_lkg(sid, source_ref, {**binding, "release_digest": "0" * 64})
+        for source_ref in source_refs:
+            assert is_exact_phase2_lkg(sid, source_ref, binding)
+            assert not is_exact_phase2_lkg(sid, source_ref, {**binding, "snapshot_id": snapshot_id + "-changed"})
+            assert not is_exact_phase2_lkg(sid, source_ref, {**binding, "release_digest": "0" * 64})
         assert not is_exact_phase2_lkg(sid, "a" * 40, binding)
 
 
