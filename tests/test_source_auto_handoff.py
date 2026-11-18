@@ -6,6 +6,7 @@ from scripts.source_auto_handoff import (
     LINEAGE_SERVICES,
     _validate_source_seal_report,
     _lifecycle_eligible,
+    _phase2_eligible,
 )
 
 
@@ -139,3 +140,29 @@ def test_lifecycle_handoff_allows_only_enabled_verified_or_production() -> None:
     assert not _lifecycle_eligible({"state": "review", "enabled": True})
     assert not _lifecycle_eligible({"state": "production", "enabled": False})
     assert not _lifecycle_eligible({})
+
+
+
+def test_phase2_handoff_requires_verified_unblocked_matching_release() -> None:
+    lifecycle = {"state": "production", "enabled": True}
+    item = {"snapshot_id": "snap-taobao-test", "release_digest": "a" * 64}
+    good = {
+        "verified": True, "blockers": [], "declared_state": "production",
+        "production_activated": True, "snapshot_id": "snap-taobao-test",
+        "release_digest": "a" * 64,
+    }
+    assert _phase2_eligible(lifecycle, good, item)
+
+    drifted = {
+        **good, "verified": False,
+        "blockers": ["release_state:REVIEW"],
+        "production_activated": False,
+    }
+    assert not _phase2_eligible(lifecycle, drifted, item)
+
+
+def test_phase2_handoff_fails_closed_on_missing_or_stale_report_fields() -> None:
+    lifecycle = {"state": "verified", "enabled": True}
+    item = {"snapshot_id": "snap-test", "release_digest": "b" * 64}
+    assert not _phase2_eligible(lifecycle, None, item)
+    assert not _phase2_eligible(lifecycle, {"verified": True, "blockers": []}, item)
