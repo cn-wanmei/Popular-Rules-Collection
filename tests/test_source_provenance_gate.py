@@ -246,3 +246,55 @@ def test_provenance_gate_rejects_phase2_state_drift_even_when_lifecycle_says_pro
     assert result["checks"]["lifecycle_eligibility"] is True
     assert result["checks"]["phase2_eligibility"] is False
     assert "phase2_eligibility" in result["failed_checks"]
+
+
+
+def test_provenance_gate_preserves_only_exact_pinned_taobao_lkg_tuple(monkeypatch):
+    import hashlib
+    import json
+    import scripts.source_provenance_gate as gate
+
+    source_ref = "f5a3291c5020368f886064bcca026c836801ba3d"
+    body = b"taobao.example.org\\n"
+    lifecycle = {
+        "schema": "popular_rules_source_lifecycle_v1",
+        "services": {"taobao": {"state": "production", "enabled": True}},
+    }
+    lifecycle_raw = json.dumps(lifecycle, sort_keys=True).encode("utf-8")
+    binding = {
+        "status": "active", "source_id": "popular-rules-source",
+        "source_ref": source_ref, "verified_input_commit": "338ef57418768779aeb712f03ddb387545e375a2",
+        "artifact_path": "generated/source/taobao/domains.txt",
+        "release_path": "releases/taobao/snap-taobao-834d549e8982036ce1438963/release.json",
+        "snapshot_id": "snap-taobao-834d549e8982036ce1438963",
+        "content_digest": "c" * 64, "evidence_digest": "d" * 64,
+        "policy_digest": "e" * 64, "generator_digest": "f" * 64,
+        "release_digest": "834d549e8982036ce1438963983527791e70997603616758bac4fb8f7c29d38b",
+        "release_identity_version": "2",
+        "expected_sha256": hashlib.sha256(body).hexdigest(),
+        "lifecycle_ref": source_ref, "lifecycle_state": "production",
+        "lifecycle_config_sha256": hashlib.sha256(lifecycle_raw).hexdigest(),
+    }
+    release = {
+        "service_id": "taobao", "snapshot_id": binding["snapshot_id"],
+        "content_digest": "c" * 64, "evidence_digest": "d" * 64,
+        "policy_digest": "e" * 64, "generator_digest": "f" * 64,
+        "release_digest": binding["release_digest"], "release_identity_version": "2",
+    }
+    monkeypatch.setattr(gate, "get_json", lambda *args, **kwargs: release)
+    monkeypatch.setattr(
+        gate, "get_text",
+        lambda url, *args, **kwargs: lifecycle_raw if url.endswith("config/source_canary_state.yaml") else body,
+    )
+
+    result = gate.verify_binding("taobao", binding)
+    assert result["status"] == "PASS"
+    assert result["lifecycle_attestation"] == "LEGACY_LKG_PHASE2_HOLD"
+    assert result["checks"]["phase2_eligibility"] is True
+
+    # The same service on a new Source ref must not inherit the LKG exception.
+    binding["source_ref"] = "a" * 40
+    binding["lifecycle_ref"] = "a" * 40
+    result = gate.verify_binding("taobao", binding)
+    assert result["status"] == "FAIL"
+    assert result["checks"]["phase2_eligibility"] is False
