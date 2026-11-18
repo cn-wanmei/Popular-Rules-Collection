@@ -7,6 +7,7 @@ from scripts.source_auto_handoff import (
     _validate_source_seal_report,
     _lifecycle_eligible,
     _phase2_eligible,
+    _release_handoff_eligible,
 )
 
 
@@ -166,3 +167,12 @@ def test_phase2_handoff_fails_closed_on_missing_or_stale_report_fields() -> None
     item = {"snapshot_id": "snap-test", "release_digest": "b" * 64}
     assert not _phase2_eligible(lifecycle, None, item)
     assert not _phase2_eligible(lifecycle, {"verified": True, "blockers": []}, item)
+
+
+
+def test_handoff_requires_release_to_be_qualified_candidate() -> None:
+    assert _release_handoff_eligible({"validation": {"release_state": "CANDIDATE"}})
+    assert _release_handoff_eligible({"validation": {"release_state": "CANDIDATE", "handoff_eligible": True}})
+    assert not _release_handoff_eligible({"validation": {"release_state": "REVIEW", "handoff_eligible": False}})
+    assert not _release_handoff_eligible({"validation": {"release_state": "CANDIDATE", "handoff_eligible": False}})
+    assert not _release_handoff_eligible({})
