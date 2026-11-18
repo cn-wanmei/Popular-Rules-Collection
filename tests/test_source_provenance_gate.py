@@ -72,6 +72,7 @@ def test_provenance_gate_rejects_release_identity_drift(monkeypatch):
         "generator_digest": "f" * 64,
         "release_digest": "9" * 64,
         "release_identity_version": "2",
+        "validation": {"release_state": "CANDIDATE"},
     })
     monkeypatch.setattr(gate, "get_text", lambda *args, **kwargs: b"example.org\n")
 
@@ -117,6 +118,7 @@ def test_provenance_gate_verifies_exact_lifecycle_attestation(monkeypatch):
         "content_digest": "c" * 64, "evidence_digest": "d" * 64,
         "policy_digest": "e" * 64, "generator_digest": "f" * 64,
         "release_digest": "0" * 64, "release_identity_version": "2",
+        "validation": {"release_state": "CANDIDATE"},
     }
     phase2 = {
         "schema": "phase2_service_completion_derived_v1",
@@ -172,6 +174,7 @@ def test_provenance_gate_rejects_review_lifecycle_attestation(monkeypatch):
         "content_digest": "c" * 64, "evidence_digest": "d" * 64,
         "policy_digest": "e" * 64, "generator_digest": "f" * 64,
         "release_digest": "0" * 64, "release_identity_version": "2",
+        "validation": {"release_state": "CANDIDATE"},
     }
     phase2 = {
         "schema": "phase2_service_completion_derived_v1",
@@ -223,6 +226,7 @@ def test_provenance_gate_rejects_phase2_state_drift_even_when_lifecycle_says_pro
         "content_digest": "c" * 64, "evidence_digest": "d" * 64,
         "policy_digest": "e" * 64, "generator_digest": "f" * 64,
         "release_digest": "0" * 64, "release_identity_version": "2",
+        "validation": {"release_state": "CANDIDATE"},
     }
     phase2 = {
         "schema": "phase2_service_completion_derived_v1",
@@ -281,6 +285,7 @@ def test_provenance_gate_preserves_only_exact_pinned_taobao_lkg_tuple(monkeypatc
         "content_digest": "c" * 64, "evidence_digest": "d" * 64,
         "policy_digest": "e" * 64, "generator_digest": "f" * 64,
         "release_digest": binding["release_digest"], "release_identity_version": "2",
+        "validation": {"release_state": "CANDIDATE"},
     }
     monkeypatch.setattr(gate, "get_json", lambda *args, **kwargs: release)
     monkeypatch.setattr(
