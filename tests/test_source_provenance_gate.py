@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from scripts.source_provenance_gate import verify_binding
+from scripts.source_provenance_gate import release_handoff_eligible, verify_binding
 
 
 def test_provenance_gate_accepts_complete_v2_binding(monkeypatch):
@@ -30,6 +30,7 @@ def test_provenance_gate_accepts_complete_v2_binding(monkeypatch):
         "generator_digest": "f" * 64,
         "release_digest": "0" * 64,
         "release_identity_version": "2",
+        "validation": {"release_state": "CANDIDATE"},
     }
     body = b"example.org\n"
 
@@ -298,3 +299,12 @@ def test_provenance_gate_preserves_only_exact_pinned_taobao_lkg_tuple(monkeypatc
     result = gate.verify_binding("taobao", binding)
     assert result["status"] == "FAIL"
     assert result["checks"]["phase2_eligibility"] is False
+
+
+
+def test_release_handoff_eligibility_accepts_candidate_and_rejects_review() -> None:
+    assert release_handoff_eligible({"validation": {"release_state": "CANDIDATE"}})
+    assert release_handoff_eligible({"validation": {"release_state": "CANDIDATE", "handoff_eligible": True}})
+    assert not release_handoff_eligible({"validation": {"release_state": "REVIEW", "handoff_eligible": False}})
+    assert not release_handoff_eligible({"validation": {"release_state": "CANDIDATE", "handoff_eligible": False}})
+    assert not release_handoff_eligible({})
