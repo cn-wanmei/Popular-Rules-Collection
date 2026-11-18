@@ -8,21 +8,21 @@
     "singbox",
     "surge"
   ],
-  "collection_date": "2026-11-17",
+  "collection_date": "2026-11-18",
   "file_count": 4707,
   "files": [
     {
-      "file": "_promotion/20261117T044048365836Z-run.json",
+      "file": "_promotion/20261118T034355577607Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "4fd9e1f1dfde57c9b0608e125bef51ae64ca325c29256fb2979ce32ac777f3bb",
+      "sha256": "0715a4da2094f926471e5b193a9258ca0fb8bbb4bf4f304bac56251a4692af06",
       "size": 542960
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "4fd9e1f1dfde57c9b0608e125bef51ae64ca325c29256fb2979ce32ac777f3bb",
+      "sha256": "0715a4da2094f926471e5b193a9258ca0fb8bbb4bf4f304bac56251a4692af06",
       "size": 542960
     },
     {
@@ -5838,16 +5838,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "b8ad49cc3bf8b12002b823feee4f57c2701adb9dd822fba63a62ec361c799f0c",
-      "size": 4184424
+      "sha256": "873991540f2f5aff0c417fe263830b6d13bc12aaa36eedd873b0d56c58c8c68b",
+      "size": 4192221
     },
     {
       "file": "geosite/reject_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 199590,
+      "rule_count": 199996,
       "scope": "geosite",
-      "sha256": "42b7e46218deb9939ef35824d3ceb726cbbe4f7737e84f9d244c189dba242f8a",
-      "size": 6978684
+      "sha256": "37f57b992312ef7ba9f39f273a01a5fd6ebbd101bd3ff9ce0a6953194c563469",
+      "size": 6992165
     },
     {
       "file": "ip/adblock.txt",
@@ -5910,8 +5910,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "ip",
-      "sha256": "0e46a777479f1f5b64c21ea5053fb11c9a80d5429fe97d4fc1f45802d9178d07",
-      "size": 159650
+      "sha256": "d4eebc732e217e923c68d1516bda911cf328013e41e97e872da1f9a16b1c2950",
+      "size": 159667
     },
     {
       "file": "ip/chinamobile.txt",
@@ -5926,8 +5926,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "ip",
-      "sha256": "002fae2cc9a8c4f861044bb2c18e9f0e1361b1238130e8a34807e0b73e72df65",
-      "size": 62298
+      "sha256": "1b08156132219fcadb5f181ab8dba87718bf139e7ce1612071c0a33f8389846c",
+      "size": 62330
     },
     {
       "file": "ip/cloudflare.txt",
@@ -16606,8 +16606,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "mmdb",
-      "sha256": "03996897044b01466b85c6f109f47b9d10405b80aa02aaca56e1624be7257d2a",
-      "size": 4357694
+      "sha256": "da31a791c71a9b5fd27e5f9ae060e6e07b37e324394098127c5ebda62c895654",
+      "size": 4358194
     },
     {
       "file": "network/dns.txt",
@@ -16742,16 +16742,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "07928e6f42f744039c26d0eecbf9b8c0a5968981d59b2f14ad3dc072ca424d0e",
-      "size": 394976
+      "sha256": "c8b88e9249851263a350f30b579edfa82d13b7283208ae2de1c6edba5b7442c1",
+      "size": 394945
     },
     {
       "file": "provider/aws_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 11485,
+      "rule_count": 11484,
       "scope": "provider",
-      "sha256": "0c24a8917121964b1cadeab9f82817a040fe51e2a0439f8851fbd366aae9340c",
-      "size": 490988
+      "sha256": "630fc818f1d412a36a6d5716c41a91cb387474a284fabe12eb72d87c22540383",
+      "size": 490948
     },
     {
       "file": "provider/cloudflare.txt",
@@ -16790,7 +16790,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "575bde6f0286cd5b1140bdeaaf4a6f4c20f8ddbdd8a3bc67b085dcc8c60bc881",
+      "sha256": "fc003538d5faffc3356e07e74f47cd1f715ff44b8d07624a4d6cf5f75f7ad9bc",
       "size": 4691
     },
     {
@@ -16806,7 +16806,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "6c95e87b531e6a43c082258bb7ff8d8af495058ed34e376dcaa24b3adb880ccc",
+      "sha256": "d52202874439db414c88c34989c4aaf42ade9f520b2a96fec2a739a1235dfa5e",
       "size": 38617
     },
     {
@@ -37666,7 +37666,7 @@
       "size": 54
     }
   ],
-  "generated_at": "2026-11-17T04:47:28.113276+00:00",
+  "generated_at": "2026-11-18T03:49:31.332002+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [
