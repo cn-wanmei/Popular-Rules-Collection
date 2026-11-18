@@ -85,6 +85,23 @@ def phase2_eligibility(source_ref: str, service_id: str, binding: dict, lifecycl
 
 
 
+def release_handoff_eligible(release: dict) -> bool:
+    """Only qualified candidate releases may cross the Source -> Collection boundary.
+
+    Older immutable release records predate the explicit handoff_eligible field;
+    their release_state=CANDIDATE remains the compatibility signal. REVIEW archives
+    and explicitly non-handoff-eligible releases must never be materialized.
+    """
+    validation = release.get("validation")
+    if not isinstance(validation, dict):
+        return False
+    if str(validation.get("release_state") or "") != "CANDIDATE":
+        return False
+    if "handoff_eligible" in validation and validation.get("handoff_eligible") is not True:
+        return False
+    return True
+
+
 def verify_binding(service_id: str, binding: dict) -> dict:
     errors: list[str] = []
     source_ref = str(binding.get("source_ref") or "")
@@ -132,6 +149,7 @@ def verify_binding(service_id: str, binding: dict) -> dict:
         }
 
     checks: dict[str, bool] = {}
+    checks["release_handoff_eligibility"] = release_handoff_eligible(release)
     lifecycle_attestation = "LEGACY_LKG_UNATTESTED"
     lifecycle_fields = ("lifecycle_ref", "lifecycle_state", "lifecycle_config_sha256")
     if any(binding.get(field) for field in lifecycle_fields):
