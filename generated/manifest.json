@@ -8,21 +8,21 @@
     "singbox",
     "surge"
   ],
-  "collection_date": "2026-11-18",
+  "collection_date": "2026-11-19",
   "file_count": 4707,
   "files": [
     {
-      "file": "_promotion/20261118T214823691905Z-run.json",
+      "file": "_promotion/20261119T032010204654Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "2190fdb12e08cce4973ab9d31d15b154a469ca48ca20f6357a2c782eae7d2bb8",
+      "sha256": "efdc95d3f53f7cbba01f11187050f271e359866f03782d3595b7f3dcd0e7b107",
       "size": 542960
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "2190fdb12e08cce4973ab9d31d15b154a469ca48ca20f6357a2c782eae7d2bb8",
+      "sha256": "efdc95d3f53f7cbba01f11187050f271e359866f03782d3595b7f3dcd0e7b107",
       "size": 542960
     },
     {
@@ -5246,320 +5246,320 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "a96836eeb2c8c94a12fed0e2bd5a129b9fdb2914427df6b638a28ca78b3718c3",
-      "size": 314073
+      "sha256": "b0760e9a2f7c53849f3528f773956b592c45676abb0246ee65503fed8828a1ff",
+      "size": 313857
     },
     {
       "file": "geoip/au_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 18052,
+      "rule_count": 18036,
       "scope": "geoip",
-      "sha256": "14a572b60d55dc2a0b093f4a3102d796af7dbab3a6c5bc6c76aee5269dbefcaa",
-      "size": 464787
+      "sha256": "830c71ce70419ff9c80650996cd7e16504b9dc503967f3a51e05672fd9ea045c",
+      "size": 464440
     },
     {
       "file": "geoip/au_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "a96836eeb2c8c94a12fed0e2bd5a129b9fdb2914427df6b638a28ca78b3718c3",
-      "size": 314073
+      "sha256": "b0760e9a2f7c53849f3528f773956b592c45676abb0246ee65503fed8828a1ff",
+      "size": 313857
     },
     {
       "file": "geoip/au_surge.list",
       "kind": "network_dataset",
-      "rule_count": 18052,
+      "rule_count": 18036,
       "scope": "geoip",
-      "sha256": "14a572b60d55dc2a0b093f4a3102d796af7dbab3a6c5bc6c76aee5269dbefcaa",
-      "size": 464787
+      "sha256": "830c71ce70419ff9c80650996cd7e16504b9dc503967f3a51e05672fd9ea045c",
+      "size": 464440
     },
     {
       "file": "geoip/cn.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "74e216436a110b94494a3b420283b4098852f39930e30f25634ff01a38f00eb9",
-      "size": 153636
+      "sha256": "367dba0612b895b87a07bc9b22e38a332446c8953de7d7a280b9c7cef39575cf",
+      "size": 154101
     },
     {
       "file": "geoip/cn_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 9640,
+      "rule_count": 9665,
       "scope": "geoip",
-      "sha256": "0639ca347ef5761093b8454f227a5f2b15970429551a090c47ffc24d138b7797",
-      "size": 234179
+      "sha256": "5c33ea82bd22542397c59ca386e7b17d23709770412f1aae688183940a1655ec",
+      "size": 234865
     },
     {
       "file": "geoip/cn_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "74e216436a110b94494a3b420283b4098852f39930e30f25634ff01a38f00eb9",
-      "size": 153636
+      "sha256": "367dba0612b895b87a07bc9b22e38a332446c8953de7d7a280b9c7cef39575cf",
+      "size": 154101
     },
     {
       "file": "geoip/cn_surge.list",
       "kind": "network_dataset",
-      "rule_count": 9640,
+      "rule_count": 9665,
       "scope": "geoip",
-      "sha256": "0639ca347ef5761093b8454f227a5f2b15970429551a090c47ffc24d138b7797",
-      "size": 234179
+      "sha256": "5c33ea82bd22542397c59ca386e7b17d23709770412f1aae688183940a1655ec",
+      "size": 234865
     },
     {
       "file": "geoip/de.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "ff38a68152c5a76c8e2028876b7a2697a94d766d0cebbbda03ea5cb493dedf14",
-      "size": 1414397
+      "sha256": "e663e6940fe80144c9d644c555986709600c964b62c7788c0157f6dac2b2c0ac",
+      "size": 1429316
     },
     {
       "file": "geoip/de_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 73212,
+      "rule_count": 73925,
       "scope": "geoip",
-      "sha256": "04b9c540024908fbf954e0f3c381503954a44769ae42d26247c82bebd7e32a3d",
-      "size": 2042894
+      "sha256": "1ecd60253e03aaef3bebf1f8f56efa971d3ad6817d4269273fb8a20d362b30f8",
+      "size": 2064042
     },
     {
       "file": "geoip/de_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "ff38a68152c5a76c8e2028876b7a2697a94d766d0cebbbda03ea5cb493dedf14",
-      "size": 1414397
+      "sha256": "e663e6940fe80144c9d644c555986709600c964b62c7788c0157f6dac2b2c0ac",
+      "size": 1429316
     },
     {
       "file": "geoip/de_surge.list",
       "kind": "network_dataset",
-      "rule_count": 73212,
+      "rule_count": 73925,
       "scope": "geoip",
-      "sha256": "04b9c540024908fbf954e0f3c381503954a44769ae42d26247c82bebd7e32a3d",
-      "size": 2042894
+      "sha256": "1ecd60253e03aaef3bebf1f8f56efa971d3ad6817d4269273fb8a20d362b30f8",
+      "size": 2064042
     },
     {
       "file": "geoip/gb.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "08eb8c7d09cbd71c2e236646fe1e0c4e984107488227bcac995b53d2fc92807d",
-      "size": 883466
+      "sha256": "e0e873cacbc2d630562eda779004ad0e1bffa5969d0a4390d93d3715afcb5345",
+      "size": 888605
     },
     {
       "file": "geoip/gb_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 50638,
+      "rule_count": 50896,
       "scope": "geoip",
-      "sha256": "c59217817062bffd709bcadbf1fc5632b8db7b6154abbbd66967cfbd7fb091f7",
-      "size": 1302824
+      "sha256": "dfd213551b5356b168717feaa3585247c29d53d8463edf050c894e6979b47921",
+      "size": 1310164
     },
     {
       "file": "geoip/gb_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "08eb8c7d09cbd71c2e236646fe1e0c4e984107488227bcac995b53d2fc92807d",
-      "size": 883466
+      "sha256": "e0e873cacbc2d630562eda779004ad0e1bffa5969d0a4390d93d3715afcb5345",
+      "size": 888605
     },
     {
       "file": "geoip/gb_surge.list",
       "kind": "network_dataset",
-      "rule_count": 50638,
+      "rule_count": 50896,
       "scope": "geoip",
-      "sha256": "c59217817062bffd709bcadbf1fc5632b8db7b6154abbbd66967cfbd7fb091f7",
-      "size": 1302824
+      "sha256": "dfd213551b5356b168717feaa3585247c29d53d8463edf050c894e6979b47921",
+      "size": 1310164
     },
     {
       "file": "geoip/hk.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "3ee07ff1c589e9e3c4ac6fa977e4ad16af03c0c32e50b153706ae4d4aa6be930",
-      "size": 274225
+      "sha256": "0457b12fae28a12141ff231f5fc011e8ca739c0b9a32a94e1a9a91c7ec8c672a",
+      "size": 275103
     },
     {
       "file": "geoip/hk_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 15973,
+      "rule_count": 16021,
       "scope": "geoip",
-      "sha256": "687a77a0cd8a3846356a7cf5ed50381029a4fb3c4d15b9d2d3f08ff9d61f4da2",
-      "size": 406719
+      "sha256": "156b5a3b431758740055edefa098362df768b9a1019c4495d8e0938326c7e3dc",
+      "size": 408008
     },
     {
       "file": "geoip/hk_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "3ee07ff1c589e9e3c4ac6fa977e4ad16af03c0c32e50b153706ae4d4aa6be930",
-      "size": 274225
+      "sha256": "0457b12fae28a12141ff231f5fc011e8ca739c0b9a32a94e1a9a91c7ec8c672a",
+      "size": 275103
     },
     {
       "file": "geoip/hk_surge.list",
       "kind": "network_dataset",
-      "rule_count": 15973,
+      "rule_count": 16021,
       "scope": "geoip",
-      "sha256": "687a77a0cd8a3846356a7cf5ed50381029a4fb3c4d15b9d2d3f08ff9d61f4da2",
-      "size": 406719
+      "sha256": "156b5a3b431758740055edefa098362df768b9a1019c4495d8e0938326c7e3dc",
+      "size": 408008
     },
     {
       "file": "geoip/id.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "e8d0e3001c0028106a5d1b80250018b864acd6bb843e4e10440462f0064fe40a",
-      "size": 191331
+      "sha256": "6b1760587450d6b5c345206a9e339db01ae05192793b2fc8fa950ad2f0e3fab5",
+      "size": 191734
     },
     {
       "file": "geoip/id_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 11133,
+      "rule_count": 11157,
       "scope": "geoip",
-      "sha256": "84dea1a34b33a0fcf35061b378e079158a1d54e884fcfe8996794b10e38777b1",
-      "size": 284733
+      "sha256": "954d0b92799ba4d64261ad0e8b15e8bcd1354f6e458925c4ecc6e3354fbd60a4",
+      "size": 285334
     },
     {
       "file": "geoip/id_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "e8d0e3001c0028106a5d1b80250018b864acd6bb843e4e10440462f0064fe40a",
-      "size": 191331
+      "sha256": "6b1760587450d6b5c345206a9e339db01ae05192793b2fc8fa950ad2f0e3fab5",
+      "size": 191734
     },
     {
       "file": "geoip/id_surge.list",
       "kind": "network_dataset",
-      "rule_count": 11133,
+      "rule_count": 11157,
       "scope": "geoip",
-      "sha256": "84dea1a34b33a0fcf35061b378e079158a1d54e884fcfe8996794b10e38777b1",
-      "size": 284733
+      "sha256": "954d0b92799ba4d64261ad0e8b15e8bcd1354f6e458925c4ecc6e3354fbd60a4",
+      "size": 285334
     },
     {
       "file": "geoip/in.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "75501b24cef370917b00f2ccc01df0ea06ec78ad7e90a4fb66bcb4377fb4a35d",
-      "size": 376232
+      "sha256": "28cedf5d713c4132e442b8e28cac484a7630558a1a490af76a33ac6138467fac",
+      "size": 377231
     },
     {
       "file": "geoip/in_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 21383,
+      "rule_count": 21435,
       "scope": "geoip",
-      "sha256": "16c297e02372152ad2eb2bc6543536573ffa6759fc3d3408f8c3f054a77649e3",
-      "size": 555044
+      "sha256": "0fbef240ef65fd5534d14950af6a09bf10fe5e6132c65cecd2dd46a293b773cd",
+      "size": 556484
     },
     {
       "file": "geoip/in_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "75501b24cef370917b00f2ccc01df0ea06ec78ad7e90a4fb66bcb4377fb4a35d",
-      "size": 376232
+      "sha256": "28cedf5d713c4132e442b8e28cac484a7630558a1a490af76a33ac6138467fac",
+      "size": 377231
     },
     {
       "file": "geoip/in_surge.list",
       "kind": "network_dataset",
-      "rule_count": 21383,
+      "rule_count": 21435,
       "scope": "geoip",
-      "sha256": "16c297e02372152ad2eb2bc6543536573ffa6759fc3d3408f8c3f054a77649e3",
-      "size": 555044
+      "sha256": "0fbef240ef65fd5534d14950af6a09bf10fe5e6132c65cecd2dd46a293b773cd",
+      "size": 556484
     },
     {
       "file": "geoip/jp.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "0e6973372089758f8640509ec88d3098c0516d3f9b47212d120a181aec24998e",
-      "size": 308017
+      "sha256": "6262f6298ca50e8ffb1277b234044002a48adabfa232d956e4632e421889d104",
+      "size": 311256
     },
     {
       "file": "geoip/jp_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 17699,
+      "rule_count": 17870,
       "scope": "geoip",
-      "sha256": "49dd8106f07b7a3ac5367a50652163f073da028d896285f49033c9fcfb0301b9",
-      "size": 454939
+      "sha256": "cf78a40cb8100206106e440159cce1b1d0e6360f7cd933a96872477ac941b6a3",
+      "size": 459620
     },
     {
       "file": "geoip/jp_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "0e6973372089758f8640509ec88d3098c0516d3f9b47212d120a181aec24998e",
-      "size": 308017
+      "sha256": "6262f6298ca50e8ffb1277b234044002a48adabfa232d956e4632e421889d104",
+      "size": 311256
     },
     {
       "file": "geoip/jp_surge.list",
       "kind": "network_dataset",
-      "rule_count": 17699,
+      "rule_count": 17870,
       "scope": "geoip",
-      "sha256": "49dd8106f07b7a3ac5367a50652163f073da028d896285f49033c9fcfb0301b9",
-      "size": 454939
+      "sha256": "cf78a40cb8100206106e440159cce1b1d0e6360f7cd933a96872477ac941b6a3",
+      "size": 459620
     },
     {
       "file": "geoip/kr.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "6ff7ced025a207a6a5dafb5ca4ed9cdf1f8fa605e6635fef631c080643cabd48",
-      "size": 96648
+      "sha256": "ab87759815d9207e11cf144e6b34685c3fc5a59335ff753046fa4ea789bc556e",
+      "size": 97159
     },
     {
       "file": "geoip/kr_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 5581,
+      "rule_count": 5607,
       "scope": "geoip",
-      "sha256": "475464e719ed87e6ea03f6612143f8140af23f15f537768ded9544f23d41b641",
-      "size": 142885
+      "sha256": "804b5256caecb3b8ebf05885ea45031c83a0ce1d7fce59256a4302e5daf1a1ac",
+      "size": 143612
     },
     {
       "file": "geoip/kr_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "6ff7ced025a207a6a5dafb5ca4ed9cdf1f8fa605e6635fef631c080643cabd48",
-      "size": 96648
+      "sha256": "ab87759815d9207e11cf144e6b34685c3fc5a59335ff753046fa4ea789bc556e",
+      "size": 97159
     },
     {
       "file": "geoip/kr_surge.list",
       "kind": "network_dataset",
-      "rule_count": 5581,
+      "rule_count": 5607,
       "scope": "geoip",
-      "sha256": "475464e719ed87e6ea03f6612143f8140af23f15f537768ded9544f23d41b641",
-      "size": 142885
+      "sha256": "804b5256caecb3b8ebf05885ea45031c83a0ce1d7fce59256a4302e5daf1a1ac",
+      "size": 143612
     },
     {
       "file": "geoip/my.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "1f49dcf798f5564de77764bfd2876ae90743b90d007b73f3c37c6cab54d857a1",
-      "size": 69791
+      "sha256": "71396ef8a26710a6b6b44083bdf82de8eab9c39fd9af0602d97f351f1f30bccd",
+      "size": 70651
     },
     {
       "file": "geoip/my_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 3989,
+      "rule_count": 4042,
       "scope": "geoip",
-      "sha256": "645478b47b138af3576d71c7bdd42a65c9e4fb26fba4c1f233109f14cd219607",
-      "size": 103061
+      "sha256": "beba827d4ae768e69bd53a23537cc64ad5c5afbf4a466ad6991dffd829f9236d",
+      "size": 104347
     },
     {
       "file": "geoip/my_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "1f49dcf798f5564de77764bfd2876ae90743b90d007b73f3c37c6cab54d857a1",
-      "size": 69791
+      "sha256": "71396ef8a26710a6b6b44083bdf82de8eab9c39fd9af0602d97f351f1f30bccd",
+      "size": 70651
     },
     {
       "file": "geoip/my_surge.list",
       "kind": "network_dataset",
-      "rule_count": 3989,
+      "rule_count": 4042,
       "scope": "geoip",
-      "sha256": "645478b47b138af3576d71c7bdd42a65c9e4fb26fba4c1f233109f14cd219607",
-      "size": 103061
+      "sha256": "beba827d4ae768e69bd53a23537cc64ad5c5afbf4a466ad6991dffd829f9236d",
+      "size": 104347
     },
     {
       "file": "geoip/private.txt",
@@ -5598,160 +5598,160 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "8fc38eb7949081fe772469b8603baa263fb869e97a5132676a480d0ead08111e",
-      "size": 255039
+      "sha256": "f89f7bca8582414a0bdbc1fe94d9cf83722947aca21b22004dda3623a89634c7",
+      "size": 256726
     },
     {
       "file": "geoip/sg_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 14549,
+      "rule_count": 14643,
       "scope": "geoip",
-      "sha256": "395c6e9616f64fe2dad936cce70eef1d4eb030053ecc0ad2e41f1fc8d051ca7e",
-      "size": 376187
+      "sha256": "5c99a8be4c47bdbca3bb7f22fb1ee5072053f6d928bfa99b4446aff90956c141",
+      "size": 378656
     },
     {
       "file": "geoip/sg_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "8fc38eb7949081fe772469b8603baa263fb869e97a5132676a480d0ead08111e",
-      "size": 255039
+      "sha256": "f89f7bca8582414a0bdbc1fe94d9cf83722947aca21b22004dda3623a89634c7",
+      "size": 256726
     },
     {
       "file": "geoip/sg_surge.list",
       "kind": "network_dataset",
-      "rule_count": 14549,
+      "rule_count": 14643,
       "scope": "geoip",
-      "sha256": "395c6e9616f64fe2dad936cce70eef1d4eb030053ecc0ad2e41f1fc8d051ca7e",
-      "size": 376187
+      "sha256": "5c99a8be4c47bdbca3bb7f22fb1ee5072053f6d928bfa99b4446aff90956c141",
+      "size": 378656
     },
     {
       "file": "geoip/th.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "42506c1685cc6e9140b1e4e57734882880ae3b49fa9fcdbea7b4fdc52f0559b5",
-      "size": 65057
+      "sha256": "b640e790761065316ff0a126832570e94351f5bbc7d224dcec959fe2d13b03b7",
+      "size": 65313
     },
     {
       "file": "geoip/th_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 3611,
+      "rule_count": 3624,
       "scope": "geoip",
-      "sha256": "7f9b54223a3fa901f74e3795d5302bc21abfbb21a5924e0938d6b513cf60950c",
-      "size": 95457
+      "sha256": "2ae2a14a75a2c0b701d79f903f36419ce836e8ca41beb40c294e9f60fc469e90",
+      "size": 95822
     },
     {
       "file": "geoip/th_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "42506c1685cc6e9140b1e4e57734882880ae3b49fa9fcdbea7b4fdc52f0559b5",
-      "size": 65057
+      "sha256": "b640e790761065316ff0a126832570e94351f5bbc7d224dcec959fe2d13b03b7",
+      "size": 65313
     },
     {
       "file": "geoip/th_surge.list",
       "kind": "network_dataset",
-      "rule_count": 3611,
+      "rule_count": 3624,
       "scope": "geoip",
-      "sha256": "7f9b54223a3fa901f74e3795d5302bc21abfbb21a5924e0938d6b513cf60950c",
-      "size": 95457
+      "sha256": "2ae2a14a75a2c0b701d79f903f36419ce836e8ca41beb40c294e9f60fc469e90",
+      "size": 95822
     },
     {
       "file": "geoip/tw.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "593a0be97e9258d36c1bf923d8cca43c0830c5f213a02aa7f3efd1a383a58b4f",
-      "size": 88975
+      "sha256": "40f7708bad0ccf053997c46258801743a553c36022d0d1a39fb02d2781bcf4f7",
+      "size": 90779
     },
     {
       "file": "geoip/tw_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 4885,
+      "rule_count": 4979,
       "scope": "geoip",
-      "sha256": "af0b46b3c5e86a9462a5c18deed12625f0308213aebdfd87be3363228b54624d",
-      "size": 130481
+      "sha256": "8aadd6da9a632138c409f89f74b9e7a7be28f9d03610ef41b6e0b540074b86ef",
+      "size": 133081
     },
     {
       "file": "geoip/tw_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "593a0be97e9258d36c1bf923d8cca43c0830c5f213a02aa7f3efd1a383a58b4f",
-      "size": 88975
+      "sha256": "40f7708bad0ccf053997c46258801743a553c36022d0d1a39fb02d2781bcf4f7",
+      "size": 90779
     },
     {
       "file": "geoip/tw_surge.list",
       "kind": "network_dataset",
-      "rule_count": 4885,
+      "rule_count": 4979,
       "scope": "geoip",
-      "sha256": "af0b46b3c5e86a9462a5c18deed12625f0308213aebdfd87be3363228b54624d",
-      "size": 130481
+      "sha256": "8aadd6da9a632138c409f89f74b9e7a7be28f9d03610ef41b6e0b540074b86ef",
+      "size": 133081
     },
     {
       "file": "geoip/us.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "093500a9ea76c75a9dba32710e91a9b91c7fa6b6ca1fc22846c5625d6d287714",
-      "size": 4829701
+      "sha256": "8b4f5940c9974f8e0bfe2f1071c107706971fb34478a9ca8b899c904ffed61c9",
+      "size": 4810582
     },
     {
       "file": "geoip/us_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 259527,
+      "rule_count": 259036,
       "scope": "geoip",
-      "sha256": "b5efc743781c6a01c0c9ba429d6ba2963870b42bc8f3310b106118174dbf8a14",
-      "size": 7038096
+      "sha256": "aacde4d24d4bb5f3d14917cc4d11bc4ff0c811385f20f53d62f052fa7374d930",
+      "size": 7013505
     },
     {
       "file": "geoip/us_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "093500a9ea76c75a9dba32710e91a9b91c7fa6b6ca1fc22846c5625d6d287714",
-      "size": 4829701
+      "sha256": "8b4f5940c9974f8e0bfe2f1071c107706971fb34478a9ca8b899c904ffed61c9",
+      "size": 4810582
     },
     {
       "file": "geoip/us_surge.list",
       "kind": "network_dataset",
-      "rule_count": 259527,
+      "rule_count": 259036,
       "scope": "geoip",
-      "sha256": "b5efc743781c6a01c0c9ba429d6ba2963870b42bc8f3310b106118174dbf8a14",
-      "size": 7038096
+      "sha256": "aacde4d24d4bb5f3d14917cc4d11bc4ff0c811385f20f53d62f052fa7374d930",
+      "size": 7013505
     },
     {
       "file": "geoip/vn.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "2a9d7fb61e5514065e5c99faf43cbdada9a698e6b81bf9a5391fa147db0f43d1",
-      "size": 67033
+      "sha256": "f93f91519c058806cc36dc48c5c6fae1065aa5786599fd83a2b4973aeb8a3ca2",
+      "size": 67041
     },
     {
       "file": "geoip/vn_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 3870,
+      "rule_count": 3871,
       "scope": "geoip",
-      "sha256": "bbc5b87756641d2227d2569fef8d8ec673a0c0194ddec4e4ea16560c8665fd32",
-      "size": 99598
+      "sha256": "af4ec11dee90059496bca92b69573a78621ccf3d225702d5243cd90ae9aca360",
+      "size": 99613
     },
     {
       "file": "geoip/vn_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "2a9d7fb61e5514065e5c99faf43cbdada9a698e6b81bf9a5391fa147db0f43d1",
-      "size": 67033
+      "sha256": "f93f91519c058806cc36dc48c5c6fae1065aa5786599fd83a2b4973aeb8a3ca2",
+      "size": 67041
     },
     {
       "file": "geoip/vn_surge.list",
       "kind": "network_dataset",
-      "rule_count": 3870,
+      "rule_count": 3871,
       "scope": "geoip",
-      "sha256": "bbc5b87756641d2227d2569fef8d8ec673a0c0194ddec4e4ea16560c8665fd32",
-      "size": 99598
+      "sha256": "af4ec11dee90059496bca92b69573a78621ccf3d225702d5243cd90ae9aca360",
+      "size": 99613
     },
     {
       "file": "geosite/apple-cn.txt",
@@ -5790,16 +5790,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "3fd2559f2d93e3db93ec56428a73f57ec7f4b56334445d59b590ecbf7d944c12",
-      "size": 1395678
+      "sha256": "59b7af16dea596eb4e8a0c60e09974f507e8be128814370bdf1562872fa06c72",
+      "size": 1395740
     },
     {
       "file": "geosite/direct_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 110203,
+      "rule_count": 110207,
       "scope": "geosite",
-      "sha256": "23953731de4ac9cc7a3a7524755f19e7ea0c0498a4cb0d4a99043061daa14ac2",
-      "size": 2938518
+      "sha256": "a89ef0a1fa27313a9f6a1e0ff574cd8b787730c5e4560ff0e7e470790e21730c",
+      "size": 2938636
     },
     {
       "file": "geosite/google-cn.txt",
@@ -5822,32 +5822,32 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "05cbf71a79c93319da8ab36837f33b8984864516e0002924b5ae53463c841980",
-      "size": 410562
+      "sha256": "ba94115837f67457a9259c16107516ba71b5ed7fc1df1b0b3d5b564b3e116095",
+      "size": 410569
     },
     {
       "file": "geosite/proxy_mihomo.list",
       "kind": "network_dataset",
       "rule_count": 27509,
       "scope": "geosite",
-      "sha256": "9546a789100fb0604f6af9799a2de2879b984bc1209b286c303ff09541feab3a",
-      "size": 795686
+      "sha256": "6fca863a5f5fc8efea11f244997fea8034ab1417dabbb30701f397a07bbbc33a",
+      "size": 795693
     },
     {
       "file": "geosite/reject.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "873991540f2f5aff0c417fe263830b6d13bc12aaa36eedd873b0d56c58c8c68b",
-      "size": 4192221
+      "sha256": "11aefb61a010e4c686cee9be945363e3e9246cdeb89938c18053da98e1f48393",
+      "size": 4199538
     },
     {
       "file": "geosite/reject_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 199996,
+      "rule_count": 200374,
       "scope": "geosite",
-      "sha256": "37f57b992312ef7ba9f39f273a01a5fd6ebbd101bd3ff9ce0a6953194c563469",
-      "size": 6992165
+      "sha256": "f3d6c4683b66dafc3db115ba3d3277c8b6909465a9df4bbb17f8a06863833b8d",
+      "size": 7004774
     },
     {
       "file": "ip/adblock.txt",
@@ -5910,8 +5910,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "ip",
-      "sha256": "d4eebc732e217e923c68d1516bda911cf328013e41e97e872da1f9a16b1c2950",
-      "size": 159667
+      "sha256": "3ac103711fa3644f89fa97f9730f7a087ec3c494db5a3b484275e58dbab27c6d",
+      "size": 159682
     },
     {
       "file": "ip/chinamobile.txt",
@@ -16572,18 +16572,18 @@
     {
       "file": "mmdb/ASN.mmdb",
       "kind": "network_dataset",
-      "rule_count": 5,
+      "rule_count": 7,
       "scope": "mmdb",
-      "sha256": "3dceeef0f161aee0b48a3e71dd538798f5d95e9f4c2e0bc35f1c62874e22a4d5",
-      "size": 9065111
+      "sha256": "ba7c4964c71b51d28dc23eefd5e4376801bf90472d26f766648aae003af9388e",
+      "size": 9072814
     },
     {
       "file": "mmdb/Country.mmdb",
       "kind": "network_dataset",
-      "rule_count": 4,
+      "rule_count": 2,
       "scope": "mmdb",
-      "sha256": "bbedba6ef8584c484e35acdee4153ecf4bc9aa5e22b25d3982870ec1e780f681",
-      "size": 7628821
+      "sha256": "9840946762fa8c2673738bbbbab22bb720bde931f6dea327eb58e689babc37dc",
+      "size": 7630477
     },
     {
       "file": "mmdb/geoip-lite.dat",
@@ -16742,16 +16742,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "f607309d149a569401ea643be6d8d70278b7a29be9ce9cfc39c5e2d43b0c4cf2",
-      "size": 395053
+      "sha256": "96cddb5110d9f7a51a128adaeb7f6cf6de1c7b51469e5bfa162f78555c8471c1",
+      "size": 395115
     },
     {
       "file": "provider/aws_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 11487,
+      "rule_count": 11489,
       "scope": "provider",
-      "sha256": "5365851ec6b818c78b13f04f7557366e00a2c6728457c670cc364226f3e2de77",
-      "size": 491083
+      "sha256": "04412b5a8023452fbe54ad56154e66a1d0dae29650f0c628ecb43071295468e9",
+      "size": 491163
     },
     {
       "file": "provider/cloudflare.txt",
@@ -16790,7 +16790,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "bb9e984e89be2177f99831a54bf4491dee348d556445db26b87791ecf17e9fde",
+      "sha256": "4952cc476e304925faba420373b669d6452c4f0cc39fd9a6ee0e5619d2297427",
       "size": 4691
     },
     {
@@ -16806,7 +16806,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "4aac88cfb75774fe90aa3f7e2a9f037bfd1c81ac76281eade4ece6c4511d9d3c",
+      "sha256": "c2239e06508447f091a927cbb057aaa8d7873ab566ad8598c043a882f7dc9fcb",
       "size": 38617
     },
     {
@@ -37666,7 +37666,7 @@
       "size": 54
     }
   ],
-  "generated_at": "2026-11-18T21:55:09.617586+00:00",
+  "generated_at": "2026-11-19T03:25:20.020050+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [

@@ -1,0 +1,24 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: elevenlabs_aggregate
+display_name: ElevenLabs
+generated_from:
+  run_id: 20261119T032010204654Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: daf1ce83c81db219d3e37a49ce352e90e79503635423a63642d0e63053292d05
+  type: DOMAIN_SUFFIX
+  value: elevenlabs.com
+- id: 59bf908c84cde809ca0698db3bcd9483e7c2b792410d4ce6d1162e350dee8cb0
+  type: DOMAIN_SUFFIX
+  value: elevenlabs.io
+- id: 334ef564e7f173ecd9475fcb5b01a22a329800c883cdec4f246a14abc900757e
+  type: DOMAIN_SUFFIX
+  value: elevenlabsusercontent.com
+provider: elevenlabs
