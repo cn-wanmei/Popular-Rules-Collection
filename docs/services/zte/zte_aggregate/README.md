@@ -16,13 +16,13 @@
 | Provider | `zte` |
 | 规则浏览路径 | `rule/zte/zte_aggregate/zte_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `1c55dcc3fa0fc25b5aa72495baa067398c34ba9d6f7ef4d3aeca90a60fb21c09` |
+| SHA-256 | `63ee1d703e0f65799d75fda2370ee95423570f38bd2f13ac3e778d3a0d7c0570` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

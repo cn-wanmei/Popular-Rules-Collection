@@ -16,13 +16,13 @@
 | Provider | `rockstar` |
 | 规则浏览路径 | `rule/rockstar/rockstar/rockstar.yaml` |
 | 规则数量（_index） | **5** |
-| SHA-256 | `4bc585250f144d5854ec77b2ce9785840580ca88ac3f8f840aee948f10f3a172` |
+| SHA-256 | `536f1eedf710d53a60de374f4d907a5c14e5762f91a50c4b30b9d438ff8111a9` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

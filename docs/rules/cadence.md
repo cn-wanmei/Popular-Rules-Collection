@@ -16,13 +16,13 @@
 | Provider | `cadence` |
 | 规则浏览路径 | `rule/cadence/cadence/cadence.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `09bc75a1e7c58a32286fa3b662a0439c13e9208900b52f475604f28852af253c` |
+| SHA-256 | `d058479d846a9b4cc1a8b57a6637a2db33dd11b3d16c05b09b3a1af05c1e5fb5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

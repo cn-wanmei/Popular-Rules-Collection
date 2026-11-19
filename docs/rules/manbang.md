@@ -16,13 +16,13 @@
 | Provider | `manbang` |
 | 规则浏览路径 | `rule/manbang/manbang/manbang.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `bd9ed868d25356dc4b6ea2fb77154653cff12799c451d8b6ac36a929175c6e18` |
+| SHA-256 | `1dde429648e5e19f7088393585fc1cdab78958a6a78288a4a37b312a3c6b1a39` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

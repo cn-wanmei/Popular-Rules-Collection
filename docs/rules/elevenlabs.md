@@ -16,13 +16,13 @@
 | Provider | `elevenlabs` |
 | 规则浏览路径 | `rule/elevenlabs/elevenlabs/elevenlabs.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `0998839c903486351468e003214de9af9d857121eacccd5f136d0ec5ce7af9e4` |
+| SHA-256 | `d7dd7d122033d421fdcda5f260762876f581c110ef5b7712ad5d054cf5a30812` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

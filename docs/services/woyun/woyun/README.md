@@ -16,13 +16,13 @@
 | Provider | `woyun` |
 | 规则浏览路径 | `rule/woyun/woyun/woyun.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `b27c48878b97fcdb2d66006f3baeda7c4387b84ff838da9bf50a60f821c9cacf` |
+| SHA-256 | `cf88ac4c0e3e5f337fc58086130fc7ee7ca12b7591a4725a85128fa02d5281f3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

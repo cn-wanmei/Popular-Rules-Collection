@@ -16,13 +16,13 @@
 | Provider | `binance` |
 | 规则浏览路径 | `rule/binance/binance/binance.yaml` |
 | 规则数量（_index） | **12** |
-| SHA-256 | `bdf2890922366aea219ec8ebe3e56bc4c354a6dd31d38f063d16624a8358745c` |
+| SHA-256 | `5bf16246a5c956e3d8300bc425002d37119add829d68aa3c5a6d3cfd87281bc1` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

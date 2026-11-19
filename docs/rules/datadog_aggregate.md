@@ -16,13 +16,13 @@
 | Provider | `datadog` |
 | 规则浏览路径 | `rule/datadog/datadog_aggregate/datadog_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `2cefa7130e91760b8397aa05fc8e29809d92d06a38a013e37afae4e53acb7d0d` |
+| SHA-256 | `01d3bd86442f852994f90ab7b513eada419a6a1b4e6a6e13e2f6074bc0664d46` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

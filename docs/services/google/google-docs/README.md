@@ -16,13 +16,13 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-docs/google-docs.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `50c038bbeb430614c87150877ad36c53697e8142bb377720499aeb80c31d1807` |
+| SHA-256 | `247d732fa01fd330dd9f2bf8e7ce51f79dee1dc14d11fa3fae73b9850a825217` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

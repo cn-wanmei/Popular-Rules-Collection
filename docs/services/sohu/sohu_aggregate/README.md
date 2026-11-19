@@ -16,13 +16,13 @@
 | Provider | `sohu` |
 | 规则浏览路径 | `rule/sohu/sohu_aggregate/sohu_aggregate.yaml` |
 | 规则数量（_index） | **53** |
-| SHA-256 | `a5504c8e620c46ec2002d4cd910f3e226d86a473544f6a3ba766ccd2043e6489` |
+| SHA-256 | `1fcafe35f9970b6e4802352ea347ecff0ff3b672ba82c58dbb9a4d05b84c1633` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

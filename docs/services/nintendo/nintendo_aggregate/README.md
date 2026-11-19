@@ -16,13 +16,13 @@
 | Provider | `nintendo` |
 | 规则浏览路径 | `rule/nintendo/nintendo_aggregate/nintendo_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `0edebf797da54e234aa9c025793520c5a4f5e1233484d0e943c29a509c196588` |
+| SHA-256 | `72b87a74226bedfa95b924bd36eec359944135fa262b538ccf15a783cf017484` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

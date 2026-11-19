@@ -16,13 +16,13 @@
 | Provider | `amazon` |
 | 规则浏览路径 | `rule/amazon/amazonmusic/amazonmusic.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `d41ad775b2274de6a00e73e63cf3060ea561652dc5f1f580cf0559ba1b05c82e` |
+| SHA-256 | `fac220f6d544f6a1f0ba3628f562cd47a92e6245b6ac1bd032ab202cc918174d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

@@ -14,13 +14,13 @@
 | Provider | `kingsoft` |
 | 规则浏览路径 | `rule/kingsoft/kingsoft_aggregate/kingsoft_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `fce2eae2ec099e239d90713e243534efa2d1bf252dc1f2d9fe8b89f8dc977543` |
+| SHA-256 | `c5c0530ff2d84c486aef14ce919b18e60adafe81c01a8aa8d611565780046970` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

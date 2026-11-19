@@ -16,13 +16,13 @@
 | Provider | `ebay` |
 | 规则浏览路径 | `rule/ebay/ebay/ebay.yaml` |
 | 规则数量（_index） | **370** |
-| SHA-256 | `553e560830af2596b634af2a04d1401eb4ce0b02922d72ee991a2f2bb00f2a4c` |
+| SHA-256 | `51153e621eae1f12217fcd6fe7e1b69d267deb147269e5da4acb32f8881ea73e` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

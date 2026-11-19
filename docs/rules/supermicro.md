@@ -16,13 +16,13 @@
 | Provider | `supermicro` |
 | 规则浏览路径 | `rule/supermicro/supermicro/supermicro.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `22cd1a12ecffbbb53f654656bc55bc897a74fecd0c15bec30798cac9bc473e4a` |
+| SHA-256 | `6233c8db337aa0904282a285ae61e0966227719d8bc03268efed050970d82aba` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

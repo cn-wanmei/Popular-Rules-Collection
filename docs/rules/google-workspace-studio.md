@@ -16,13 +16,13 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-workspace-studio/google-workspace-studio.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `260185c60090b666b68800d69b02c6d86e9c1a8c3e69ff238dff033345ac4864` |
+| SHA-256 | `6d04f0a889b1b4a0095c6e6ae94dbaab6b7d2c5375e3c96910f9c43c19a275e3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

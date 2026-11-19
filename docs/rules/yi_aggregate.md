@@ -16,13 +16,13 @@
 | Provider | `yi` |
 | 规则浏览路径 | `rule/yi/yi_aggregate/yi_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `b45f4953a778c0bb3ef455a973d7df540fe756e77e18e491b483b11c4ba85f25` |
+| SHA-256 | `a918e4061ea25e981f0d9a66402fbd1b667573acee19674b42dfa645cc64aa8a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

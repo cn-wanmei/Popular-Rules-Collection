@@ -16,13 +16,13 @@
 | Provider | `amazon` |
 | 规则浏览路径 | `rule/amazon/goodreads/goodreads.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `914831e63bb4eff75058338a48727c60ddc4095ce38cd4d8ad2c9a869e9af2cf` |
+| SHA-256 | `913273746fb215e5e767d810c50652dfe4758b2949a5367312c9c9639cd72efe` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

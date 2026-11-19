@@ -16,13 +16,13 @@
 | Provider | `emby` |
 | 规则浏览路径 | `rule/emby/emby/emby.yaml` |
 | 规则数量（_index） | **52** |
-| SHA-256 | `a593819fe60ca5a24f827219bb49c65d73b1695110e7c332487d44413e69cdec` |
+| SHA-256 | `625628e99b0040aa207a0a732c8770bf06e6f73d3f9c7d45277276068eeba735` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

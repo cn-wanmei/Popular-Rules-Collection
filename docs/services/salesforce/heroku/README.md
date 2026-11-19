@@ -16,13 +16,13 @@
 | Provider | `salesforce` |
 | 规则浏览路径 | `rule/salesforce/heroku/heroku.yaml` |
 | 规则数量（_index） | **12** |
-| SHA-256 | `449d7f14b25685152e5378ea2e86f7d5a0b2b0968eea82c1a07a4c559d8d8fe8` |
+| SHA-256 | `9e3094f1b38cd9bdf83b996b0ae15e9bb5317fa7a3d7a1019f003cd844c19611` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

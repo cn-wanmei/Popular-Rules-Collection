@@ -16,13 +16,13 @@
 | Provider | `himalaya` |
 | 规则浏览路径 | `rule/himalaya/himalaya/himalaya.yaml` |
 | 规则数量（_index） | **17** |
-| SHA-256 | `d965743b53499e4ae4f0e9bf8cccf41fc3de36967e248eba795a9d0c53ac18d2` |
+| SHA-256 | `77a2ba109e5fe2c903f4c4304c1937516ddebc1c07a26942d55349f850e38f7c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

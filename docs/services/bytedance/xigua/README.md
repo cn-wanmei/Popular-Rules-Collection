@@ -16,13 +16,13 @@
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/xigua/xigua.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `ca24e554d6f964200ea1615d48afa85a473467b03da0c08df478aca825cd92f0` |
+| SHA-256 | `9359006a3127058f53a98495cf8f947877119bf4bc7777062953ac454b16f122` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

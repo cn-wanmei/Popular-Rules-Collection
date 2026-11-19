@@ -16,13 +16,13 @@
 | Provider | `booking` |
 | 规则浏览路径 | `rule/booking/booking/booking.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `b922bc37be84fa808e1410179829e74e84429fafd29faeecb96537382a956b28` |
+| SHA-256 | `1697a55be5342c5b8f747359c7348b0e10081cc3cceb6a3ae018e60ccd86db63` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

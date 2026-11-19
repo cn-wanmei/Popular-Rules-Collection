@@ -16,13 +16,13 @@
 | Provider | `amd` |
 | 规则浏览路径 | `rule/amd/amd/amd.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `afa5bf0360312df0fa67596f3361bfcc3308c949067783c5153e251abc866d93` |
+| SHA-256 | `75bb8753b915f545664063925c194f7652fe0ec6a6b27c37de060de905bf35a4` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

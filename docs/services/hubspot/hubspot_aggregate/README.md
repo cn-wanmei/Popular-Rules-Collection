@@ -16,13 +16,13 @@
 | Provider | `hubspot` |
 | 规则浏览路径 | `rule/hubspot/hubspot_aggregate/hubspot_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `9185838840e2a0a0f885fc84720a12fce5ebc863977e67c53ac250c8881d60f7` |
+| SHA-256 | `a4075f2636abb6119ff9531b161fc53fa3796bfb45b81eaf2f2d48e20efccacf` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

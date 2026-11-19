@@ -14,13 +14,13 @@
 | Provider | `special` |
 | 规则浏览路径 | `rule/special/special/special.yaml` |
 | 规则数量（_index） | **7618** |
-| SHA-256 | `1bf1aeb8501a1679df3e527d65a3f886bb98a538f81c881b986d08dc888595eb` |
+| SHA-256 | `ad242236bbfafdd8405fc82767a62b33cee0a4e41052d2f6470c52199cc5dd24` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

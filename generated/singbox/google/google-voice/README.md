@@ -1,0 +1,10 @@
+<!-- PATH_LINKS_GENERATED_START -->
+# Google Voice · `singbox`
+
+- **Service ID:** `google-voice`
+- **本文件 Raw:** `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/google/google-voice/google-voice.json`
+- **说明文档:** [docs/rules/google-voice.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/rules/google-voice.md)
+- **浏览用规则:** `rule/google/google-voice/google-voice.yaml`（非运行时输入）
+
+本目录其它文件为客户端规则正文；本 README 为自动生成的快速链接（Path Links G3）。
+<!-- PATH_LINKS_GENERATED_END -->

@@ -16,13 +16,13 @@
 | Provider | `oracle` |
 | 规则浏览路径 | `rule/oracle/oracle_aggregate/oracle_aggregate.yaml` |
 | 规则数量（_index） | **27** |
-| SHA-256 | `ef169f03645cb270db604e71f8a095687e53acdd46098981a9c46ada104f1ead` |
+| SHA-256 | `6d4983476c17f14119d1f80a732de8aabfa9c2d35cf15fda536f49fecd33b076` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

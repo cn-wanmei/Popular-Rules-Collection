@@ -16,13 +16,13 @@
 | Provider | `alibaba` |
 | 规则浏览路径 | `rule/alibaba/alibaba/alibaba.yaml` |
 | 规则数量（_index） | **542** |
-| SHA-256 | `e6d109d68d022e7fab4923fbb066f648bc21882e104b8f1899bdd4c2995c9ce4` |
+| SHA-256 | `57bc474e26c720bc9d834774f506cea89d5b2856c69a3e658bb538b2681feb4a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

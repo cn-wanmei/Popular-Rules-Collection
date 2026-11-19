@@ -16,13 +16,13 @@
 | Provider | `kunlunxin` |
 | 规则浏览路径 | `rule/kunlunxin/kunlunxin_aggregate/kunlunxin_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `a10e2f798244f4b67ae4d7768d5d9e6f8cfed2c260fec79cff24f11bf5e30f77` |
+| SHA-256 | `39f42c7c5e7fa9950a10d867b57f8d8aeddbb25d62ec2fe84e535b348d15386c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

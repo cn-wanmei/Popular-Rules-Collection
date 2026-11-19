@@ -16,13 +16,13 @@
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/doubao/doubao.yaml` |
 | 规则数量（_index） | **4** |
-| SHA-256 | `c313c6e565c7dd65b6c2826d5bf3e4ed920317f33c42c97acf6a45c373155be6` |
+| SHA-256 | `c6a8625386bb9c65a005d6be2b9a9671c8bea80e0503c3cff256c5745070b514` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

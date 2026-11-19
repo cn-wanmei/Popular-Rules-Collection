@@ -16,13 +16,13 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-maps/google-maps.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `9b89711a86dbbb53e8a2853c2025bd7769fd04093a620666674f9a2bdd19d446` |
+| SHA-256 | `5c78a2cdd39e84e610cd16891a09f192f9d9f1f63e28f45662d5d8a59178efe5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

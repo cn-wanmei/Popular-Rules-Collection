@@ -16,13 +16,13 @@
 | Provider | `xiaomi` |
 | 规则浏览路径 | `rule/xiaomi/mihome/mihome.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `1a40a4878d3e26aa089f1bd31341169d449f9a5dd974689df2f73f37ccf381c7` |
+| SHA-256 | `ff3f46b691188e894dec799b1136970748c45f3cc6f4db80457c25ac89cbddaf` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

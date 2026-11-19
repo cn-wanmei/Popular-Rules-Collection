@@ -16,13 +16,13 @@
 | Provider | `beike` |
 | 规则浏览路径 | `rule/beike/beike_aggregate/beike_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `54f4b39dff39d7177d59b20199d89274bc9724175b843c9651a5cab7749515ed` |
+| SHA-256 | `f1bf367705f85ebc655d191b4d311250ee5c1da348d686ef23db6ed560163840` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

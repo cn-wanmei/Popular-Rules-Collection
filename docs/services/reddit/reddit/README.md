@@ -16,13 +16,13 @@
 | Provider | `reddit` |
 | 规则浏览路径 | `rule/reddit/reddit/reddit.yaml` |
 | 规则数量（_index） | **15** |
-| SHA-256 | `d60267ef8c37c7302a4b6d093dd8acfa2ccfe1996d8740c4c22304d3c6974cf1` |
+| SHA-256 | `43aa0ebeae2aea4305c0295d5e16e55a764614a8ee28a4f27376568735aa6340` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

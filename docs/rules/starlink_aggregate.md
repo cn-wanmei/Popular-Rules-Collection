@@ -16,13 +16,13 @@
 | Provider | `starlink` |
 | 规则浏览路径 | `rule/starlink/starlink_aggregate/starlink_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `b8be738c8ff0a0f98f545c8a7c2d7d943883d51a77825b30ce7428679d10df95` |
+| SHA-256 | `e64c5a30afe15e7c3f64a98dd4b1b1df43e90e2ba103688054c44b16540d7345` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `twilio` |
 | 规则浏览路径 | `rule/twilio/twilio_aggregate/twilio_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `d394726ad52c7461619a17a241546035b99f75010de62473a8b6f74f679c61b5` |
+| SHA-256 | `2584ff797383a69b6e10e04f4d12eb86d63b3af53a995b9989cd86a8da1a900a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

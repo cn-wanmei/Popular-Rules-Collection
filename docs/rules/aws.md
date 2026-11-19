@@ -16,13 +16,13 @@
 | Provider | `amazon` |
 | 规则浏览路径 | `rule/amazon/aws/aws.yaml` |
 | 规则数量（_index） | **78** |
-| SHA-256 | `161418c3b1bab57a7d95581a293823357287bfda0581a4eba47b228be27ca315` |
+| SHA-256 | `09ae14c1555b2db77c8cae6bd6d0f2e6a6061731a14c29136ed4412413d1749c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

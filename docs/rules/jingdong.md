@@ -16,13 +16,13 @@
 | Provider | `jingdong` |
 | 规则浏览路径 | `rule/jingdong/jingdong/jingdong.yaml` |
 | 规则数量（_index） | **277** |
-| SHA-256 | `00bc46d4bbe4b15ca3ed1b949797a6a2e0f8fde35e69f47462da82cf33f829c0` |
+| SHA-256 | `bbfcb9366d81d9811c68c60b20ff633b20357931b7856691c7d862afa594541d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

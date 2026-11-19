@@ -16,13 +16,13 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-meet/google-meet.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `2efe205bf1b01d25f4010a40cd51e51a5de1c652d9835bf29c92c4502351e2b4` |
+| SHA-256 | `a83a7b468c742f11d6b34153aa69a37514da03a7f04c8efdf93ed67adc4ebc96` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

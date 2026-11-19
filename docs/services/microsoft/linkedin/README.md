@@ -16,13 +16,13 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/linkedin/linkedin.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `acb2f4cecc3c9f86398fc580c1a3725fccdb4111559d264c3e292e9b46a0ce9d` |
+| SHA-256 | `67689e14203dc38ba2bb3282576df8ba4e6e51928594c4172ab789ce0258dcca` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 

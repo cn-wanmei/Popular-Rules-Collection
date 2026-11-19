@@ -16,13 +16,13 @@
 | Provider | `shopify` |
 | 规则浏览路径 | `rule/shopify/shopify/shopify.yaml` |
 | 规则数量（_index） | **8** |
-| SHA-256 | `5201ee2989f6e7c7c098177f468cb47882e57718be2161194cb094cbd5a7d824` |
+| SHA-256 | `bf4825a44ed9d60c6d7a3219176515f4ec93ba476327ac178bba7b947be81be8` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261118T214823691905Z-run` |
+| Run ID | `20261119T032010204654Z-run` |
 | IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
 | IR schema | `semantic_ir_v2` |
 
