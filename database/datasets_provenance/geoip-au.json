@@ -3,9 +3,9 @@
   "kind": "geoip",
   "scope": "geoip",
   "path": "database/geoip/au.txt",
-  "lines": 18052,
-  "sha256_source": "f8c4e967181e8f247ba212f723faa007faa401ff010edb4d56d595b86b344796",
-  "fetched_at": "2026-11-18T21:35:02.608533+00:00",
+  "lines": 18036,
+  "sha256_source": "72cdd7dc2d03ec5e8c370c06c6a07cc955e59264288e8cded4652e9f435a8eeb",
+  "fetched_at": "2026-11-19T03:10:11.032069+00:00",
   "source": {
     "owner": "Loyalsoldier",
     "repo": "geoip",
