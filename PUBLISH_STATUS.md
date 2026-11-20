@@ -7,13 +7,13 @@ Repository: https://github.com/cn-wanmei/Popular-Rules-Collection
 <!-- AUTO-GENERATED:BEGIN -->
 ## Automated status
 
-Generated at: `2026-11-19T03:20:53.026229Z`
+Generated at: `2026-11-20T03:11:31.739053Z`
 
 ### Collection
-- Latest snapshot date: `2026-11-19`
-- Collection ID: `2026-11-19-1191d9a128b7386e5b43`
+- Latest snapshot date: `2026-11-20`
+- Collection ID: `2026-11-20-fb89dd0a81ac6e8e0cf1`
 - Status: `ok`
-- Root: `backup/2026-11-19`
+- Root: `backup/2026-11-20`
 
 ### Source health
 - Scope: Collection `sources/health.yaml` telemetry (10 sources); **not** full Source repo lifecycle count
