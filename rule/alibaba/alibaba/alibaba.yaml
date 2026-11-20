@@ -4,14 +4,14 @@ entity: provider_aggregate
 id: alibaba
 display_name: Alibaba
 generated_from:
-  run_id: 20261119T032010204654Z-run
+  run_id: 20261120T031058455247Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a
+  ir_digest: 2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538
 stats:
-  total: 542
+  total: 543
   by_type:
     DOMAIN-KEYWORD: 4
-    DOMAIN_SUFFIX: 483
+    DOMAIN_SUFFIX: 484
     IP_CIDR: 53
     IP_CIDR6: 1
     PROCESS_NAME: 1
@@ -1102,6 +1102,9 @@ rules:
 - id: 694777595893f7465eb6aa1500d4feca92f533d32d280e9b39061ddf068f039d
   type: DOMAIN_SUFFIX
   value: oss-cn-zhangjiakou.aliyuncs.com
+- id: d5f5089361a9354c54e7e647682c74993353815764fa4c1c9985d88fa1863a59
+  type: DOMAIN_SUFFIX
+  value: oss-enet.aliyuncs.com
 - id: e8d47b81ccc29e4a9587aab604f7485f76fd46f1da842ebeb2db8a67cc7cf051
   type: DOMAIN_SUFFIX
   value: oss-eu-central-1.aliyuncs.com

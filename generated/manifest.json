@@ -8,21 +8,21 @@
     "singbox",
     "surge"
   ],
-  "collection_date": "2026-11-19",
+  "collection_date": "2026-11-20",
   "file_count": 4707,
   "files": [
     {
-      "file": "_promotion/20261119T032010204654Z-run.json",
+      "file": "_promotion/20261120T031058455247Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "efdc95d3f53f7cbba01f11187050f271e359866f03782d3595b7f3dcd0e7b107",
+      "sha256": "f06bf850b9543ced6fa34c76f167a249ab637545d82945e66b378180b933f40c",
       "size": 542960
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "efdc95d3f53f7cbba01f11187050f271e359866f03782d3595b7f3dcd0e7b107",
+      "sha256": "f06bf850b9543ced6fa34c76f167a249ab637545d82945e66b378180b933f40c",
       "size": 542960
     },
     {
@@ -164,10 +164,10 @@
     {
       "file": "egern/alibaba/alibaba/alibaba.yaml",
       "kind": "client_rules",
-      "rule_count": 541,
+      "rule_count": 542,
       "scope": "egern",
-      "sha256": "5250e101ba4451ea25671d88679ce6bc438a2b23c49f707015d7f57560539f43",
-      "size": 11525
+      "sha256": "67456a6d56a5e2ead87bce1a2438787525f5e7a6180354b46e2e4556d72c5fe2",
+      "size": 11553
     },
     {
       "file": "egern/alibaba/alibabacloud/alibabacloud.yaml",
@@ -1156,10 +1156,10 @@
     {
       "file": "egern/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 127836,
+      "rule_count": 127837,
       "scope": "egern",
-      "sha256": "397ee2db11b8c5f4ce25993ae41baf1be0710d18e83aad58034d2a9ddf195979",
-      "size": 2447584
+      "sha256": "51c07fde0aba13a66385be73f0812ed01fc602dc6eca0bcfb8687896188c17d1",
+      "size": 2447612
     },
     {
       "file": "egern/ccb/ccb/ccb.yaml",
@@ -4222,7 +4222,7 @@
       "kind": "client_rules",
       "rule_count": 218,
       "scope": "egern",
-      "sha256": "4e619672eeb63e6849ec94ee1a48555b9a6d1cf634d0bf1443a80b526070dfb2",
+      "sha256": "79a1c834690d5ace4fed92666b57cb5bc10ff4b19b3b07125a0b8dd7b95cb61f",
       "size": 5216
     },
     {
@@ -4246,7 +4246,7 @@
       "kind": "client_rules",
       "rule_count": 12686,
       "scope": "egern",
-      "sha256": "81aa422fed41107efae6e9ffcbda04c11c953a8887dcf6bbcc6fa8b3de80404b",
+      "sha256": "407bf80a16d4eed6f2f79ccf34673cc8191e07ced91b9059ff5340f2c7c24a6e",
       "size": 261820
     },
     {
@@ -5838,16 +5838,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "11aefb61a010e4c686cee9be945363e3e9246cdeb89938c18053da98e1f48393",
-      "size": 4199538
+      "sha256": "30da0a8b7d8db8c795a1259ea25577804126dcaedc88682fa932ed3b61de78ff",
+      "size": 4206876
     },
     {
       "file": "geosite/reject_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 200374,
+      "rule_count": 200748,
       "scope": "geosite",
-      "sha256": "f3d6c4683b66dafc3db115ba3d3277c8b6909465a9df4bbb17f8a06863833b8d",
-      "size": 7004774
+      "sha256": "4f33900d1c561a0875be06e34a547e232a18096d79ded027711f64d910f21b50",
+      "size": 7017348
     },
     {
       "file": "ip/adblock.txt",
@@ -5910,8 +5910,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "ip",
-      "sha256": "3ac103711fa3644f89fa97f9730f7a087ec3c494db5a3b484275e58dbab27c6d",
-      "size": 159682
+      "sha256": "4c317069c58b594eb8a1d8e145303642b36c289dfa39f11329e7daec5c4f71d3",
+      "size": 159952
     },
     {
       "file": "ip/chinamobile.txt",
@@ -6284,10 +6284,10 @@
     {
       "file": "loon/alibaba/alibaba/alibaba.list",
       "kind": "client_rules",
-      "rule_count": 541,
+      "rule_count": 542,
       "scope": "loon",
-      "sha256": "367f48a268e8edd9ca230bf3696649d87c5578d76799b776e81b1ffd86d459b1",
-      "size": 15468
+      "sha256": "bf3726d3cd11fbf06c0c6a80c4e99aa5cba0784ba7a632bf86561656f0297ebb",
+      "size": 15504
     },
     {
       "file": "loon/alibaba/alibabacloud/alibabacloud.list",
@@ -7276,10 +7276,10 @@
     {
       "file": "loon/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 127698,
+      "rule_count": 127699,
       "scope": "loon",
-      "sha256": "4790febfcd81e1d702e72b74b33aaf944a502f22985bc9a62f06175742629868",
-      "size": 3455101
+      "sha256": "dc54ff0c197facbad6f2cf568dd65b3227f39c85f19d48a34ea2dc59fcdc3a8a",
+      "size": 3455137
     },
     {
       "file": "loon/ccb/ccb/ccb.list",
@@ -10342,7 +10342,7 @@
       "kind": "client_rules",
       "rule_count": 218,
       "scope": "loon",
-      "sha256": "a74b0e9100503549c920bebcace5f850984bbbd039dfbfacef1a4517a37df0b9",
+      "sha256": "d299c0ead2264aac79911f790e271db88ac1fccbb6dd909153262748e01ce017",
       "size": 6941
     },
     {
@@ -10366,7 +10366,7 @@
       "kind": "client_rules",
       "rule_count": 12549,
       "scope": "loon",
-      "sha256": "b1f39bdf21e623bdf32676f7d63557acd5c25bdb5bac81e327cc472d25759350",
+      "sha256": "6fa2b90a83c5ce5e5fca88f37eda3f49097e7e1a8f1cf2ba8404a73aa54ed274",
       "size": 357217
     },
     {
@@ -11492,10 +11492,10 @@
     {
       "file": "mihomo/alibaba/alibaba/alibaba.yaml",
       "kind": "client_rules",
-      "rule_count": 541,
+      "rule_count": 542,
       "scope": "mihomo",
-      "sha256": "4cb448228f9721b183fc94d21a55ddce99f120e29a26d445b8895a969482c192",
-      "size": 17641
+      "sha256": "6189bddadacfc77cf9bf8e316c1d370711bff6b8753ffb1c83ca69c0784eccc0",
+      "size": 17681
     },
     {
       "file": "mihomo/alibaba/alibabacloud/alibabacloud.yaml",
@@ -12484,10 +12484,10 @@
     {
       "file": "mihomo/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 127836,
+      "rule_count": 127837,
       "scope": "mihomo",
-      "sha256": "2c5f07e1200301ebe7c31bd763f82d29200eeee2e55c206c0f335898338ffa88",
-      "size": 3972118
+      "sha256": "b7b56e2d594770bbff930c434fca7779b87503a5e2815f0c3e24ed24cb14cc83",
+      "size": 3972158
     },
     {
       "file": "mihomo/ccb/ccb/ccb.yaml",
@@ -15550,7 +15550,7 @@
       "kind": "client_rules",
       "rule_count": 218,
       "scope": "mihomo",
-      "sha256": "1513647e44d788d9c72f6260791142fb021aad3ee86b43af68cd323c41b83642",
+      "sha256": "cdcba94919f44c6dbfc76767efd9d4c19fdcd5a993a0f149a3a09486b3e47282",
       "size": 7822
     },
     {
@@ -15574,7 +15574,7 @@
       "kind": "client_rules",
       "rule_count": 12686,
       "scope": "mihomo",
-      "sha256": "6ec2b50839f6e09e2e58b1e385cca0e13a0bc366a71a696ebec1ad28da4e798e",
+      "sha256": "d6f45a0d4a8b2ef32e6852827e5a225994153376efdb21ff5694fd34b900a8d8",
       "size": 413576
     },
     {
@@ -16598,16 +16598,16 @@
       "kind": "network_dataset",
       "rule_count": 2,
       "scope": "mmdb",
-      "sha256": "304ac8a1cbcc8166e4f5a4f32955e4d0fb77a1bd713583e371b30ee27f3659d8",
-      "size": 16467275
+      "sha256": "d4ec4c5e5d5a38c1399964ea9fd8c94288426a3b31b483904b67819fc07f4466",
+      "size": 16503149
     },
     {
       "file": "mmdb/geosite.dat",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "mmdb",
-      "sha256": "db0c704c3d2d4705729d49d09ec7347c0ec6304c45c856d5456063d4ac5ef1d7",
-      "size": 4358215
+      "sha256": "3ad532e6b868af69bc00fdefac28296acca13c151b2aaf90058b9f41795ae5d7",
+      "size": 4359441
     },
     {
       "file": "network/dns.txt",
@@ -16742,16 +16742,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "96cddb5110d9f7a51a128adaeb7f6cf6de1c7b51469e5bfa162f78555c8471c1",
-      "size": 395115
+      "sha256": "d8b03e8473bc9865beb3c1ad01ab02fb6adbc8bf501b9cd13154ff672863f853",
+      "size": 395146
     },
     {
       "file": "provider/aws_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 11489,
+      "rule_count": 11490,
       "scope": "provider",
-      "sha256": "04412b5a8023452fbe54ad56154e66a1d0dae29650f0c628ecb43071295468e9",
-      "size": 491163
+      "sha256": "d7d4d78f369706181659a633b5a4c0da6aa0ad8d83dec43e55af90665f6d5bf8",
+      "size": 491203
     },
     {
       "file": "provider/cloudflare.txt",
@@ -16790,7 +16790,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "4952cc476e304925faba420373b669d6452c4f0cc39fd9a6ee0e5619d2297427",
+      "sha256": "f87e508997d6b87611235bceeb07812e84596384bf985c855d9042dd3c042863",
       "size": 4691
     },
     {
@@ -16806,7 +16806,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "c2239e06508447f091a927cbb057aaa8d7873ab566ad8598c043a882f7dc9fcb",
+      "sha256": "b6766f48e45488f93ae682968d37a0fbec446202a03aba1bb082f20dd02f16ac",
       "size": 38617
     },
     {
@@ -16964,10 +16964,10 @@
     {
       "file": "quantumultx/alibaba/alibaba/alibaba.list",
       "kind": "client_rules",
-      "rule_count": 541,
+      "rule_count": 542,
       "scope": "quantumultx",
-      "sha256": "8c0bd1b1e836a4d8ac9e108cc436f3a6de396a3e3471bdd4660490dfe0b5fde0",
-      "size": 18822
+      "sha256": "7f559bb53e33fe757d4d9b9bc8ec541e12dee43e048873d026b30990337313cf",
+      "size": 18864
     },
     {
       "file": "quantumultx/alibaba/alibabacloud/alibabacloud.list",
@@ -17956,10 +17956,10 @@
     {
       "file": "quantumultx/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 127698,
+      "rule_count": 127699,
       "scope": "quantumultx",
-      "sha256": "dbf0cc776c8f50dc5dd7d14de6bddf1c6a299ce6a6862f2537f5f84ca01c4c02",
-      "size": 4221977
+      "sha256": "d462fc4af3399e69b1c8706149c96b24acedbd888e0bc4f58f74e34d5785d975",
+      "size": 4222019
     },
     {
       "file": "quantumultx/ccb/ccb/ccb.list",
@@ -21022,7 +21022,7 @@
       "kind": "client_rules",
       "rule_count": 218,
       "scope": "quantumultx",
-      "sha256": "add78e7cccb0857b50d30c59cc6026ce7e4eb83d47ba5c0c0aa46c3dcc3cd755",
+      "sha256": "fbf1142364d0d4d088ff5e1f134fd1d04b0c30ad7c1470d272e7921e5ff65f81",
       "size": 8249
     },
     {
@@ -21046,7 +21046,7 @@
       "kind": "client_rules",
       "rule_count": 12549,
       "scope": "quantumultx",
-      "sha256": "5aa4176dc998cd7e8a51d14090c6033e47284383b233664fd734d4ba56762dcc",
+      "sha256": "10f84d5203938c791ba583be0cd1da1b83af265a6d563df0a0c66e1da0d7ce05",
       "size": 432511
     },
     {
@@ -22172,10 +22172,10 @@
     {
       "file": "shadowrocket/alibaba/alibaba/alibaba.list",
       "kind": "client_rules",
-      "rule_count": 541,
+      "rule_count": 542,
       "scope": "shadowrocket",
-      "sha256": "367f48a268e8edd9ca230bf3696649d87c5578d76799b776e81b1ffd86d459b1",
-      "size": 15468
+      "sha256": "bf3726d3cd11fbf06c0c6a80c4e99aa5cba0784ba7a632bf86561656f0297ebb",
+      "size": 15504
     },
     {
       "file": "shadowrocket/alibaba/alibabacloud/alibabacloud.list",
@@ -23164,10 +23164,10 @@
     {
       "file": "shadowrocket/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 127698,
+      "rule_count": 127699,
       "scope": "shadowrocket",
-      "sha256": "4790febfcd81e1d702e72b74b33aaf944a502f22985bc9a62f06175742629868",
-      "size": 3455101
+      "sha256": "dc54ff0c197facbad6f2cf568dd65b3227f39c85f19d48a34ea2dc59fcdc3a8a",
+      "size": 3455137
     },
     {
       "file": "shadowrocket/ccb/ccb/ccb.list",
@@ -26230,7 +26230,7 @@
       "kind": "client_rules",
       "rule_count": 218,
       "scope": "shadowrocket",
-      "sha256": "a74b0e9100503549c920bebcace5f850984bbbd039dfbfacef1a4517a37df0b9",
+      "sha256": "d299c0ead2264aac79911f790e271db88ac1fccbb6dd909153262748e01ce017",
       "size": 6941
     },
     {
@@ -26254,7 +26254,7 @@
       "kind": "client_rules",
       "rule_count": 12549,
       "scope": "shadowrocket",
-      "sha256": "b1f39bdf21e623bdf32676f7d63557acd5c25bdb5bac81e327cc472d25759350",
+      "sha256": "6fa2b90a83c5ce5e5fca88f37eda3f49097e7e1a8f1cf2ba8404a73aa54ed274",
       "size": 357217
     },
     {
@@ -27382,8 +27382,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "2ebaadf9977855c889bf4854909e57d03d314be8b8676a5187c9a2b007c77964",
-      "size": 14306
+      "sha256": "585109786709d3acdfca812eeb799aa7606983aac9c0d0e80474779f6695fe75",
+      "size": 14339
     },
     {
       "file": "singbox/alibaba/alibabacloud/alibabacloud.json",
@@ -28374,8 +28374,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "ff16f4f5c34f4196acfa94783a7e2f326d70877974a8033fa026d8c3909ea411",
-      "size": 3086868
+      "sha256": "264b2c96514c5e34c8282d226325a6051ca3b279a68e4ce97e3ddbc1e716fb4d",
+      "size": 3086901
     },
     {
       "file": "singbox/ccb/ccb/ccb.json",
@@ -31438,7 +31438,7 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "7b3aaefda8a9bc4a879d49bb660c3a5f9efb8a9c83f8168c6166f7cd1ba0bdd1",
+      "sha256": "fe2292d50e0faaa8fa307564427b0bb21439128788d2c2849cdff6a1e00c212d",
       "size": 6368
     },
     {
@@ -31462,7 +31462,7 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "ec7947fe2f1b1e480b6f243e10edfeed61d30548e4b043bec57f02a31e28d915",
+      "sha256": "783c669370457cf45e5079898b2ffca087eb4763ad868600a0ce07f54d3da761",
       "size": 325354
     },
     {
@@ -32588,10 +32588,10 @@
     {
       "file": "surge/alibaba/alibaba/alibaba.list",
       "kind": "client_rules",
-      "rule_count": 541,
+      "rule_count": 542,
       "scope": "surge",
-      "sha256": "367f48a268e8edd9ca230bf3696649d87c5578d76799b776e81b1ffd86d459b1",
-      "size": 15468
+      "sha256": "bf3726d3cd11fbf06c0c6a80c4e99aa5cba0784ba7a632bf86561656f0297ebb",
+      "size": 15504
     },
     {
       "file": "surge/alibaba/alibabacloud/alibabacloud.list",
@@ -33580,10 +33580,10 @@
     {
       "file": "surge/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 127698,
+      "rule_count": 127699,
       "scope": "surge",
-      "sha256": "4790febfcd81e1d702e72b74b33aaf944a502f22985bc9a62f06175742629868",
-      "size": 3455101
+      "sha256": "dc54ff0c197facbad6f2cf568dd65b3227f39c85f19d48a34ea2dc59fcdc3a8a",
+      "size": 3455137
     },
     {
       "file": "surge/ccb/ccb/ccb.list",
@@ -36646,7 +36646,7 @@
       "kind": "client_rules",
       "rule_count": 218,
       "scope": "surge",
-      "sha256": "a74b0e9100503549c920bebcace5f850984bbbd039dfbfacef1a4517a37df0b9",
+      "sha256": "d299c0ead2264aac79911f790e271db88ac1fccbb6dd909153262748e01ce017",
       "size": 6941
     },
     {
@@ -36670,7 +36670,7 @@
       "kind": "client_rules",
       "rule_count": 12549,
       "scope": "surge",
-      "sha256": "b1f39bdf21e623bdf32676f7d63557acd5c25bdb5bac81e327cc472d25759350",
+      "sha256": "6fa2b90a83c5ce5e5fca88f37eda3f49097e7e1a8f1cf2ba8404a73aa54ed274",
       "size": 357217
     },
     {
@@ -37666,7 +37666,7 @@
       "size": 54
     }
   ],
-  "generated_at": "2026-11-19T03:25:20.020050+00:00",
+  "generated_at": "2026-11-20T03:16:32.651058+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [
