@@ -16,14 +16,14 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/onedrive/onedrive.yaml` |
 | 规则数量（_index） | **13** |
-| SHA-256 | `80d8b0a5df51cb6080c8150ccc583019c11b63880626d2db9e7d1193191cc641` |
+| SHA-256 | `6b0f821c27e055447023976c4a8b6aa77cafcda6745a80b1e995483de251bc28` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261119T032010204654Z-run` |
-| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
+| Run ID | `20261120T031058455247Z-run` |
+| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

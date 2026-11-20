@@ -16,14 +16,14 @@
 | Provider | `tsmc` |
 | 规则浏览路径 | `rule/tsmc/tsmc/tsmc.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `2d7d1d521c1a16837ad7fb28b79b7de1253383c6be1382f1c290f004774fe8f4` |
+| SHA-256 | `6004e3adc07665c75ccec143b86a15913375942f85bda2b60e8b39f4d6811630` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261119T032010204654Z-run` |
-| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
+| Run ID | `20261120T031058455247Z-run` |
+| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

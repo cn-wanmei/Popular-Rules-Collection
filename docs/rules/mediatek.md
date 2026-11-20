@@ -16,14 +16,14 @@
 | Provider | `mediatek` |
 | 规则浏览路径 | `rule/mediatek/mediatek/mediatek.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `ea3c5e46c334df47ec51588a933455fc7cdc742ebe4e00a38ef740a27b05c32d` |
+| SHA-256 | `4489ad876a831b542a95749deab9429b000d6a06e093a74c265d49d389d7bca5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261119T032010204654Z-run` |
-| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
+| Run ID | `20261120T031058455247Z-run` |
+| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

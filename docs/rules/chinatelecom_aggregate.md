@@ -16,14 +16,14 @@
 | Provider | `chinatelecom` |
 | 规则浏览路径 | `rule/chinatelecom/chinatelecom_aggregate/chinatelecom_aggregate.yaml` |
 | 规则数量（_index） | **83** |
-| SHA-256 | `50cbe83cc793f58a261bd4a36d9d906f3e88d609ba563ee4e9dbb73e836d2dd8` |
+| SHA-256 | `4fb794adeb1d2f10f9d660d4339ab657abd77e538a1ea33d5e65314fe0c2e589` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261119T032010204654Z-run` |
-| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
+| Run ID | `20261120T031058455247Z-run` |
+| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

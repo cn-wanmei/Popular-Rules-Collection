@@ -16,14 +16,14 @@
 | Provider | `dell` |
 | 规则浏览路径 | `rule/dell/dell/dell.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `3ea07afd261ed20a06b123241734bc819a8275b21a8f3a82e75bc2732ae01351` |
+| SHA-256 | `9e4d158936b7302ce3d13d6512988aa0fbbd09e788c3fe39ba97c6f57b001eb4` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261119T032010204654Z-run` |
-| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
+| Run ID | `20261120T031058455247Z-run` |
+| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

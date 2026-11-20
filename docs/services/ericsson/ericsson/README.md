@@ -16,14 +16,14 @@
 | Provider | `ericsson` |
 | 规则浏览路径 | `rule/ericsson/ericsson/ericsson.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `194771e24ed60e7f06e236d000ddff5980f06a761e357fedb07f0f3981133119` |
+| SHA-256 | `7c4b80e64480c5dc7b0a0c768e48635675ecc21229efcb18e7bd266be9c13dc3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261119T032010204654Z-run` |
-| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
+| Run ID | `20261120T031058455247Z-run` |
+| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

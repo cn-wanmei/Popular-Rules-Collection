@@ -1,7 +1,7 @@
 # Service Catalog (generated)
 
-Run: `20261119T032010204654Z-run`  
-IR: `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a`  
+Run: `20261120T031058455247Z-run`  
+IR: `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538`  
 Services: **651**  
 Icon release: `icon-2026.10.06.full1`
 
@@ -27,7 +27,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `airbnb` | Airbnb | `airbnb` | service | 83 | 7 | [airbnb](rules/airbnb.md) |
 | `airbnb_aggregate` | Airbnb | `airbnb` | provider_aggregate | 83 | 7 | [airbnb_aggregate](rules/airbnb_aggregate.md) |
 | `aisuite` | AI Suite | `special` | service | 193 | 7 | [aisuite](rules/aisuite.md) |
-| `alibaba` | Alibaba | `alibaba` | provider_aggregate | 542 | 7 | [alibaba](rules/alibaba.md) |
+| `alibaba` | Alibaba | `alibaba` | provider_aggregate | 543 | 7 | [alibaba](rules/alibaba.md) |
 | `alibabacloud` | Alibaba Cloud | `alibaba` | service | 12 | 7 | [alibabacloud](rules/alibabacloud.md) |
 | `aliexpress` | AliExpress | `alibaba` | service | 2 | 7 | [aliexpress](rules/aliexpress.md) |
 | `alipay` | Alipay | `alibaba` | service | 2 | 7 | [alipay](rules/alipay.md) |

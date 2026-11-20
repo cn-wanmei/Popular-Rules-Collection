@@ -16,14 +16,14 @@
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/tencentvideo/tencentvideo.yaml` |
 | 规则数量（_index） | **17** |
-| SHA-256 | `dfd26a8bdb8b9cd796d0cc56a5a9c284c796b94ea0bd4bc178dee4219b2a0857` |
+| SHA-256 | `b3e4b6f148954a1d52fcd51641c1426ae452137cb170452bfcc5ad9a4e6b7a32` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261119T032010204654Z-run` |
-| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
+| Run ID | `20261120T031058455247Z-run` |
+| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

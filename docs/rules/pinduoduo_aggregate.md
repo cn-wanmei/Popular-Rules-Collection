@@ -16,14 +16,14 @@
 | Provider | `pinduoduo` |
 | 规则浏览路径 | `rule/pinduoduo/pinduoduo_aggregate/pinduoduo_aggregate.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `a53a27567847e24424873b1309884348db76ed74fd2ece39a411e48423c8291e` |
+| SHA-256 | `aa60047ffd17cadd6087769f27f9a5cc7a6cd55d97d6f44394a64d2b119b3071` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261119T032010204654Z-run` |
-| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
+| Run ID | `20261120T031058455247Z-run` |
+| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

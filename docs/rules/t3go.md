@@ -16,14 +16,14 @@
 | Provider | `t3go` |
 | 规则浏览路径 | `rule/t3go/t3go/t3go.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `1bfb90e65a53218d472b7e895de60ebf842117fa9bfe255973f6cb0a759a8e22` |
+| SHA-256 | `7cb87d294ea3b84b679411379bf4d72e74258dfd2b7e13093b1bc27d7d1ad29a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261119T032010204654Z-run` |
-| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
+| Run ID | `20261120T031058455247Z-run` |
+| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

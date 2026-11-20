@@ -16,14 +16,14 @@
 | Provider | `gitlab` |
 | 规则浏览路径 | `rule/gitlab/gitlab_aggregate/gitlab_aggregate.yaml` |
 | 规则数量（_index） | **6** |
-| SHA-256 | `5445d0981d80ac556daa4a5ec1150da43b5bd1fca9051e8dbb241048ee940b7c` |
+| SHA-256 | `9db4f29cca310d1f42e53f2b32dc7cede77cdd8552005863200fd4efc2b00e7c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261119T032010204654Z-run` |
-| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
+| Run ID | `20261120T031058455247Z-run` |
+| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

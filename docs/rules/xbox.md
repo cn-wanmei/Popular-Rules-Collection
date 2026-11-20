@@ -16,14 +16,14 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/xbox/xbox.yaml` |
 | 规则数量（_index） | **42** |
-| SHA-256 | `51f5f4646bb9f348f5d96c809bed7d2ff30f2e91005cb3eb1a1a402a83926f9c` |
+| SHA-256 | `58b093142335602dbdf8b60b3cb2aab988ff4f27207fe2847f9265ffa71a3672` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261119T032010204654Z-run` |
-| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
+| Run ID | `20261120T031058455247Z-run` |
+| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

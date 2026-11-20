@@ -16,14 +16,14 @@
 | Provider | `boc` |
 | 规则浏览路径 | `rule/boc/boc_aggregate/boc_aggregate.yaml` |
 | 规则数量（_index） | **22** |
-| SHA-256 | `37a2bd348c2c528e29916cd830e9f8c62663187bbaf4be303096a2753b65c603` |
+| SHA-256 | `4a25b1358d1834d94ff7dc3eaf73554590b82a8be024b97c3c4310a696513588` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261119T032010204654Z-run` |
-| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
+| Run ID | `20261120T031058455247Z-run` |
+| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

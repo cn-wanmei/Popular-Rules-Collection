@@ -16,14 +16,14 @@
 | Provider | `alibaba` |
 | 规则浏览路径 | `rule/alibaba/gaode/gaode.yaml` |
 | 规则数量（_index） | **9** |
-| SHA-256 | `1b7136618274bd0e3629cca2c0fc507c3ac0cb0dbdc035c6f7d05b3b16cf53f7` |
+| SHA-256 | `59f52869601891325e5fc0efddaeca34c9ca2bdab5d8c4559f19d9ad0ed9a31c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261119T032010204654Z-run` |
-| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
+| Run ID | `20261120T031058455247Z-run` |
+| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

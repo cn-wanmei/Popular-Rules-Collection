@@ -16,14 +16,14 @@
 | Provider | `minimax` |
 | 规则浏览路径 | `rule/minimax/minimax/minimax.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `2723ff80d255302756f6046de2448cbf12251fd52737a6bf366c7e68cff1c2c0` |
+| SHA-256 | `15efd440bbdbc38f89fcc21833f9f252ff2de9bba57c9fa30b6771af69b8f003` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261119T032010204654Z-run` |
-| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
+| Run ID | `20261120T031058455247Z-run` |
+| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

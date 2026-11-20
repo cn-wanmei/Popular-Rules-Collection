@@ -16,14 +16,14 @@
 | Provider | `unionpay` |
 | 规则浏览路径 | `rule/unionpay/unionpay/unionpay.yaml` |
 | 规则数量（_index） | **16** |
-| SHA-256 | `a6fd5953e124cd1a6c62c875bee75daf70763a89709836cf74a7d7920b1814b0` |
+| SHA-256 | `c7af98756708b4f9a7105b5f5edc0cbb259716e9ddb56e5e4b06646a048d3499` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261119T032010204654Z-run` |
-| IR digest | `efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a` |
+| Run ID | `20261120T031058455247Z-run` |
+| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

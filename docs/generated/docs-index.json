@@ -1,7 +1,7 @@
 {
   "documentation_contract_version": "1.0",
-  "run_id": "20261119T032010204654Z-run",
-  "ir_digest": "efb67b7b0f633c672a19d66c40b94b4c5ba4b63466d5cf26ef4976529a2fde6a",
+  "run_id": "20261120T031058455247Z-run",
+  "ir_digest": "2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538",
   "icon_release_id": "icon-2026.10.06.full1",
   "service_count": 651,
   "services": [
@@ -317,7 +317,7 @@
       "provider": "alibaba",
       "entity": "provider_aggregate",
       "path": "alibaba/alibaba/alibaba.yaml",
-      "rule_count": 542,
+      "rule_count": 543,
       "clients": [
         "egern",
         "loon",
