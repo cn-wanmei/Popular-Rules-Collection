@@ -8,21 +8,21 @@
     "singbox",
     "surge"
   ],
-  "collection_date": "2026-11-20",
+  "collection_date": "2026-11-21",
   "file_count": 4707,
   "files": [
     {
-      "file": "_promotion/20261120T031058455247Z-run.json",
+      "file": "_promotion/20261121T032141549888Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "f06bf850b9543ced6fa34c76f167a249ab637545d82945e66b378180b933f40c",
+      "sha256": "eb8973203f54d8d2fb431fe43e0d339e9bf100d38f6d9b2c5658c60bb7c57dc1",
       "size": 542960
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "f06bf850b9543ced6fa34c76f167a249ab637545d82945e66b378180b933f40c",
+      "sha256": "eb8973203f54d8d2fb431fe43e0d339e9bf100d38f6d9b2c5658c60bb7c57dc1",
       "size": 542960
     },
     {
@@ -4222,7 +4222,7 @@
       "kind": "client_rules",
       "rule_count": 218,
       "scope": "egern",
-      "sha256": "79a1c834690d5ace4fed92666b57cb5bc10ff4b19b3b07125a0b8dd7b95cb61f",
+      "sha256": "3d07b57976824325820d94c1b6be55ddc15c606e14334373f1b0a7331a16a5f8",
       "size": 5216
     },
     {
@@ -4246,7 +4246,7 @@
       "kind": "client_rules",
       "rule_count": 12686,
       "scope": "egern",
-      "sha256": "407bf80a16d4eed6f2f79ccf34673cc8191e07ced91b9059ff5340f2c7c24a6e",
+      "sha256": "29b8fb94e6c41f40695c703fca0343c9809f14de95d82dcbd2e2a8c31d4ae294",
       "size": 261820
     },
     {
@@ -5790,16 +5790,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "59b7af16dea596eb4e8a0c60e09974f507e8be128814370bdf1562872fa06c72",
-      "size": 1395740
+      "sha256": "60b51fadc54da3f62c4fe5be1ac893c6f1ca47bfafd6f296bd59928c934f5298",
+      "size": 1395776
     },
     {
       "file": "geosite/direct_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 110207,
+      "rule_count": 110210,
       "scope": "geosite",
-      "sha256": "a89ef0a1fa27313a9f6a1e0ff574cd8b787730c5e4560ff0e7e470790e21730c",
-      "size": 2938636
+      "sha256": "b09542820280a8ffb5fc602a69104453b94af842cbf358f040ab6500c77f62dd",
+      "size": 2938714
     },
     {
       "file": "geosite/google-cn.txt",
@@ -5822,32 +5822,32 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "ba94115837f67457a9259c16107516ba71b5ed7fc1df1b0b3d5b564b3e116095",
-      "size": 410569
+      "sha256": "ed3077c8cc56ca6b3a310fd86d1a772969d285e2fce1baa1f96c7c22a6396cd5",
+      "size": 408672
     },
     {
       "file": "geosite/proxy_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 27509,
+      "rule_count": 27398,
       "scope": "geosite",
-      "sha256": "6fca863a5f5fc8efea11f244997fea8034ab1417dabbb30701f397a07bbbc33a",
-      "size": 795693
+      "sha256": "6c1f5b6d4339f61d5cc62060756117ae7684e013b62408755488575f4caebf48",
+      "size": 792242
     },
     {
       "file": "geosite/reject.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "30da0a8b7d8db8c795a1259ea25577804126dcaedc88682fa932ed3b61de78ff",
-      "size": 4206876
+      "sha256": "bf3de83ee97c0f680d7027754a4e2a1d4e0764f77538a592cba80214129d3d6b",
+      "size": 4214007
     },
     {
       "file": "geosite/reject_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 200748,
+      "rule_count": 201108,
       "scope": "geosite",
-      "sha256": "4f33900d1c561a0875be06e34a547e232a18096d79ded027711f64d910f21b50",
-      "size": 7017348
+      "sha256": "c746b5cf9de33a239352cc115947af832c355b4801016471b76d431b131846cb",
+      "size": 7029519
     },
     {
       "file": "ip/adblock.txt",
@@ -5926,8 +5926,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "ip",
-      "sha256": "056a20230e43c29549ff63fd68a81ee74c3e5090e7407e1a8fe7dc7131383740",
-      "size": 62346
+      "sha256": "eb23b7317ef3e3f1c33ebbf3a7175fb2d6d526381d515947f1363e926c41e646",
+      "size": 62327
     },
     {
       "file": "ip/cloudflare.txt",
@@ -10342,7 +10342,7 @@
       "kind": "client_rules",
       "rule_count": 218,
       "scope": "loon",
-      "sha256": "d299c0ead2264aac79911f790e271db88ac1fccbb6dd909153262748e01ce017",
+      "sha256": "d0d7b27ba9b7fa9d1e40b0add70a30fadd37e212c4165f2a1e84bbfc7f5b0783",
       "size": 6941
     },
     {
@@ -10366,7 +10366,7 @@
       "kind": "client_rules",
       "rule_count": 12549,
       "scope": "loon",
-      "sha256": "6fa2b90a83c5ce5e5fca88f37eda3f49097e7e1a8f1cf2ba8404a73aa54ed274",
+      "sha256": "b824b7dac3a336286602598c336e7d4f15cade45947993c67dcb242fa1ded8ea",
       "size": 357217
     },
     {
@@ -15550,7 +15550,7 @@
       "kind": "client_rules",
       "rule_count": 218,
       "scope": "mihomo",
-      "sha256": "cdcba94919f44c6dbfc76767efd9d4c19fdcd5a993a0f149a3a09486b3e47282",
+      "sha256": "3c7525b5a94d367efebf49558939d4f84c6d30a0a7851e17ffa0c2a71a22a5a1",
       "size": 7822
     },
     {
@@ -15574,7 +15574,7 @@
       "kind": "client_rules",
       "rule_count": 12686,
       "scope": "mihomo",
-      "sha256": "d6f45a0d4a8b2ef32e6852827e5a225994153376efdb21ff5694fd34b900a8d8",
+      "sha256": "861a2457759123c0daef776a90acce67c3908634563626f64f2104d22cf2e42c",
       "size": 413576
     },
     {
@@ -16590,8 +16590,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "mmdb",
-      "sha256": "100277efc45f7aef0c6c9e60ed0ec0316ac0deae80fa721de5caade07e5ffaec",
-      "size": 211097
+      "sha256": "d9aee33c098247b300b53f554975b7dec0b543f15c5265cab37c2275060b0afb",
+      "size": 212139
     },
     {
       "file": "mmdb/geoip.dat",
@@ -16606,7 +16606,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "mmdb",
-      "sha256": "3ad532e6b868af69bc00fdefac28296acca13c151b2aaf90058b9f41795ae5d7",
+      "sha256": "05383cf8d1086234116d0cff2af6dc595370b6a8c1197814168dc8a527a781d1",
       "size": 4359441
     },
     {
@@ -16742,16 +16742,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "d8b03e8473bc9865beb3c1ad01ab02fb6adbc8bf501b9cd13154ff672863f853",
-      "size": 395146
+      "sha256": "978fa24a1de994d3a50cf84dfa0206e475510d26a64f3a674290f0d1c78549c5",
+      "size": 395431
     },
     {
       "file": "provider/aws_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 11490,
+      "rule_count": 11498,
       "scope": "provider",
-      "sha256": "d7d4d78f369706181659a633b5a4c0da6aa0ad8d83dec43e55af90665f6d5bf8",
-      "size": 491203
+      "sha256": "63de282487f821368969794445c0812a3abf5431c14a036cfaef9120187fc6e9",
+      "size": 491560
     },
     {
       "file": "provider/cloudflare.txt",
@@ -16790,7 +16790,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "f87e508997d6b87611235bceeb07812e84596384bf985c855d9042dd3c042863",
+      "sha256": "a931b67e2d963391ae711d8e0379a854197f330cc1006091c046fbbb209e0e1f",
       "size": 4691
     },
     {
@@ -16806,7 +16806,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "b6766f48e45488f93ae682968d37a0fbec446202a03aba1bb082f20dd02f16ac",
+      "sha256": "76446fae5938d2d7c006737809e5c7ade35de02089a255d7f5e51cfd896deb6c",
       "size": 38617
     },
     {
@@ -21022,7 +21022,7 @@
       "kind": "client_rules",
       "rule_count": 218,
       "scope": "quantumultx",
-      "sha256": "fbf1142364d0d4d088ff5e1f134fd1d04b0c30ad7c1470d272e7921e5ff65f81",
+      "sha256": "3ff5ad10fbf56c13fee0670c8387e5799fe44285ddf9593e73d50580ca4fb2f5",
       "size": 8249
     },
     {
@@ -21046,7 +21046,7 @@
       "kind": "client_rules",
       "rule_count": 12549,
       "scope": "quantumultx",
-      "sha256": "10f84d5203938c791ba583be0cd1da1b83af265a6d563df0a0c66e1da0d7ce05",
+      "sha256": "dfd15ff5e3b4c380c906fe68e3863356e9751f807b689b4f8a3a0c74a033021c",
       "size": 432511
     },
     {
@@ -26230,7 +26230,7 @@
       "kind": "client_rules",
       "rule_count": 218,
       "scope": "shadowrocket",
-      "sha256": "d299c0ead2264aac79911f790e271db88ac1fccbb6dd909153262748e01ce017",
+      "sha256": "d0d7b27ba9b7fa9d1e40b0add70a30fadd37e212c4165f2a1e84bbfc7f5b0783",
       "size": 6941
     },
     {
@@ -26254,7 +26254,7 @@
       "kind": "client_rules",
       "rule_count": 12549,
       "scope": "shadowrocket",
-      "sha256": "6fa2b90a83c5ce5e5fca88f37eda3f49097e7e1a8f1cf2ba8404a73aa54ed274",
+      "sha256": "b824b7dac3a336286602598c336e7d4f15cade45947993c67dcb242fa1ded8ea",
       "size": 357217
     },
     {
@@ -31438,7 +31438,7 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "fe2292d50e0faaa8fa307564427b0bb21439128788d2c2849cdff6a1e00c212d",
+      "sha256": "ae03908b6fbecc0a344a03a184a9f1459b7c4c78df22cd0cb136b3dc36bc603c",
       "size": 6368
     },
     {
@@ -31462,7 +31462,7 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "783c669370457cf45e5079898b2ffca087eb4763ad868600a0ce07f54d3da761",
+      "sha256": "88e8870815e8fed0626e49857caadd5078e6104ac4951ad06f31f316cef4a247",
       "size": 325354
     },
     {
@@ -36646,7 +36646,7 @@
       "kind": "client_rules",
       "rule_count": 218,
       "scope": "surge",
-      "sha256": "d299c0ead2264aac79911f790e271db88ac1fccbb6dd909153262748e01ce017",
+      "sha256": "d0d7b27ba9b7fa9d1e40b0add70a30fadd37e212c4165f2a1e84bbfc7f5b0783",
       "size": 6941
     },
     {
@@ -36670,7 +36670,7 @@
       "kind": "client_rules",
       "rule_count": 12549,
       "scope": "surge",
-      "sha256": "6fa2b90a83c5ce5e5fca88f37eda3f49097e7e1a8f1cf2ba8404a73aa54ed274",
+      "sha256": "b824b7dac3a336286602598c336e7d4f15cade45947993c67dcb242fa1ded8ea",
       "size": 357217
     },
     {
@@ -37666,7 +37666,7 @@
       "size": 54
     }
   ],
-  "generated_at": "2026-11-20T03:16:32.651058+00:00",
+  "generated_at": "2026-11-21T03:27:07.312042+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [

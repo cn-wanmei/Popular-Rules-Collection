@@ -1,12 +1,10 @@
-<!-- PATH_LINKS_GENERATED_START -->
-# Rule browse tree
+# Rule Browse Distribution
 
-Human-readable rule distribution (`directory_layout_v2`). **Not** client runtime input.
+> Generated from the same Semantic IR Run as generated/. This tree is for human browsing, searching and selecting rules; it is never a V3 runtime input.
 
-- Run: `20261120T031058455247Z-run`
-- Service docs: [docs/SERVICE_CATALOG.generated.md](../docs/SERVICE_CATALOG.generated.md)
-- Flat docs: [docs/rules/](../docs/rules/)
-- Client artifacts: [generated/](../generated/)
+- Run ID: `20261121T032141549888Z-run`
+- IR digest: `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf`
+- Rule files: **651**
+- Layout: `directory_layout_v2`
 
-Each service directory contains a short `README.md` (Path Links G3) with documentation and Raw links.
-<!-- PATH_LINKS_GENERATED_END -->
+Do not hand-edit files under this tree. Rebuild the same immutable Run after changing upstream or Canonical inputs.
