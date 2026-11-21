@@ -16,14 +16,14 @@
 | Provider | `ximalaya` |
 | 规则浏览路径 | `rule/ximalaya/ximalaya_aggregate/ximalaya_aggregate.yaml` |
 | 规则数量（_index） | **5** |
-| SHA-256 | `60b4a12159d745084a7ad6a0459996017108748ee1ddb027f782f64fcd02ada6` |
+| SHA-256 | `2e94ed7d47927da9d67b605080b7cffbd51f8a6e300dbc0865d492371f974046` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261120T031058455247Z-run` |
-| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
+| Run ID | `20261121T032141549888Z-run` |
+| IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

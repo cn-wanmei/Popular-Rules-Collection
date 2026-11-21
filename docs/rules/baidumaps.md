@@ -16,14 +16,14 @@
 | Provider | `baidu` |
 | 规则浏览路径 | `rule/baidu/baidumaps/baidumaps.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `54565ef6856e053c1f4beffd1b0604765e2f2be3bc23c8164749b937effd2b97` |
+| SHA-256 | `a08f881dc727c35c2bb80955ecdbe8c1b6074c6abcea63960fb754f696b5c08c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261120T031058455247Z-run` |
-| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
+| Run ID | `20261121T032141549888Z-run` |
+| IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

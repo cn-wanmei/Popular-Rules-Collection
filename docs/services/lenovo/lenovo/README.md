@@ -16,14 +16,14 @@
 | Provider | `lenovo` |
 | 规则浏览路径 | `rule/lenovo/lenovo/lenovo.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `30b507f9db7413539d0c871550f3bd8613c65f3ba3b4a7642e9f7d1d7ef822c0` |
+| SHA-256 | `a417e4210f08bd5844101b22a3c1dff4a26963229c2f2fdae63781360011dd3c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261120T031058455247Z-run` |
-| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
+| Run ID | `20261121T032141549888Z-run` |
+| IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

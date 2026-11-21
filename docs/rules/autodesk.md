@@ -16,14 +16,14 @@
 | Provider | `autodesk` |
 | 规则浏览路径 | `rule/autodesk/autodesk/autodesk.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `4ababcf27dc0b9616890110f699c2c225fda286613349112d88a140dd1c8172f` |
+| SHA-256 | `51b3a5bb0dbd1bb3c4752ed45729ab30bb9b7b4df231b88d85a6f8e03b427f81` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261120T031058455247Z-run` |
-| IR digest | `2c8f77348f9190134dd9ea4b8408c4e050a6b1e870f8f709331ca6ec43808538` |
+| Run ID | `20261121T032141549888Z-run` |
+| IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
