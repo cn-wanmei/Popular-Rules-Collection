@@ -16,13 +16,13 @@
 | Provider | `arista` |
 | 规则浏览路径 | `rule/arista/arista/arista.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `f994279da795a09c46a71f607a25dbe749483a6933809a5fefe17f370108a05e` |
+| SHA-256 | `3efd2801f13d97e521b43946e02c2f58b49ef70aae555c037fdbbc3ed233d2f8` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

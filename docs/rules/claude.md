@@ -16,13 +16,13 @@
 | Provider | `anthropic` |
 | 规则浏览路径 | `rule/anthropic/claude/claude.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `eb5150ac0f9c48f36e3aa891f7f6a76d4d513ff1ae4c385d5988ad2d1d93a173` |
+| SHA-256 | `eb3637021fe817a9443e75177de9513c0fcc55334873583cde6299f00bcd83e1` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

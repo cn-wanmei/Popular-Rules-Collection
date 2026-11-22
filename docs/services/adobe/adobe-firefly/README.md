@@ -16,13 +16,13 @@
 | Provider | `adobe` |
 | 规则浏览路径 | `rule/adobe/adobe-firefly/adobe-firefly.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `767460c202f74ba3e06aa97bd4baf9d2aeb6b5168d911ddfda984e2a71008706` |
+| SHA-256 | `48e291982902df4a93a4a55a37b61fd45dbe289335266889bbe9595cd521c9c1` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

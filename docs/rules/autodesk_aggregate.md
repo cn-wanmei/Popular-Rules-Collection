@@ -16,13 +16,13 @@
 | Provider | `autodesk` |
 | 规则浏览路径 | `rule/autodesk/autodesk_aggregate/autodesk_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `c3c80c73ac9ad69d2f9a45825cafb3afdb20225a27231df4cdfd4c8ce98389c4` |
+| SHA-256 | `bcefd1206ff6eb2949a3005a6c5117aad57c1946adfd3bafcf9ce38c1c90e5a9` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

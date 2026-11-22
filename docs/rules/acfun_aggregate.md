@@ -16,13 +16,13 @@
 | Provider | `acfun` |
 | 规则浏览路径 | `rule/acfun/acfun_aggregate/acfun_aggregate.yaml` |
 | 规则数量（_index） | **10** |
-| SHA-256 | `89d26eece147a580acd8367b7aca23e328c5ffa70b63fd205b58183bf2c9e70e` |
+| SHA-256 | `8d93b4ef788563cc884d71cb1d3bd72294b9988b8f3ad9f6d3f87a978bba8524` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

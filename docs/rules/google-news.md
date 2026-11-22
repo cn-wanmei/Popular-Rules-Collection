@@ -16,13 +16,13 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-news/google-news.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `fba2dce40ab1efc5e3e3666ac267794e89146f1837f20432db823cc32077e8cf` |
+| SHA-256 | `4cd6b516bda519f56dab21fe53bb132582ce7e881cb9810557bc9f7a2be33671` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

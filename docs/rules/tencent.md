@@ -16,13 +16,13 @@
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/tencent/tencent.yaml` |
 | 规则数量（_index） | **761** |
-| SHA-256 | `cd14a3a30d46a7879a4f8b3191611324b452089d771dd813b3cf3305c20cbc23` |
+| SHA-256 | `fc0b6a65b562711758a1897168ef9eebb8477575b99f6d5675ae4c79fcf886aa` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

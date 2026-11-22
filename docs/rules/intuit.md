@@ -16,13 +16,13 @@
 | Provider | `intuit` |
 | 规则浏览路径 | `rule/intuit/intuit/intuit.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `192ff761b3266d00bdba3d47afacf9e3810c9c3408e0e1228c7014b0bc4de1eb` |
+| SHA-256 | `4c62321db4539bc8fd8f9903f777d273e90ee6ae32c1cb257a3bdd58e891240c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `icbc` |
 | 规则浏览路径 | `rule/icbc/icbc/icbc.yaml` |
 | 规则数量（_index） | **58** |
-| SHA-256 | `9db3bf457d1255be76b25865e0c5717e5649ea2baaa74a07ae3ada56c2131d07` |
+| SHA-256 | `8d90aaab6ea0d7cc261dd62d5ab194cafe85d4b8cbd0081eaebd37774c8bcece` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/googlefcm/googlefcm.yaml` |
 | 规则数量（_index） | **13** |
-| SHA-256 | `c9cb93d4ad1518798db235c813069cfcffbb42f2a569b3fe0c3778c09280db2f` |
+| SHA-256 | `2a6c4f90c78a6086d69400d2b95cdd3fb7461b64dd68ba623b73c6eec6a70e3e` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

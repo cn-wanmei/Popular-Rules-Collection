@@ -16,13 +16,13 @@
 | Provider | `shiji` |
 | 规则浏览路径 | `rule/shiji/shiji_aggregate/shiji_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `c9024e2f17e840b5552fd25fdccf0789ef4e94000288b95f9c27f75fdf230c32` |
+| SHA-256 | `23eb29e937f0c1d1eafa57d4a32d570e2c6069a08e907e1401b896afc65d73e2` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

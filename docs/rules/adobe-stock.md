@@ -16,13 +16,13 @@
 | Provider | `adobe` |
 | 规则浏览路径 | `rule/adobe/adobe-stock/adobe-stock.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `942f4555fad1952892ebcf54d8e2acc453d553df4081484a2cb239b84ef3d280` |
+| SHA-256 | `03a04809947371cc488bda7a7ed161b9a02de1c435c0191345bccd8a5a03c73c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

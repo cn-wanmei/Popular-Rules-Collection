@@ -16,13 +16,13 @@
 | Provider | `ibm` |
 | 规则浏览路径 | `rule/ibm/ibm/ibm.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `3f553927d8d2ed4676606f91773cc9f96b32809c7f3403b5d74e8e8174ffafec` |
+| SHA-256 | `712c61473cf4132932c444fb410b609fa8325db7a3778c5f552237f5cd3d2966` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

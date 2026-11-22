@@ -16,13 +16,13 @@
 | Provider | `boss` |
 | 规则浏览路径 | `rule/boss/boss/boss.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `2af12a5e800c059b8265cc2ef1798516ffac5d3bcb2ba5d509c090639079ebea` |
+| SHA-256 | `373f09be18cc45c7a17549ff6bbd0fbf7d49cae875331656d352a7a41be5eec9` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

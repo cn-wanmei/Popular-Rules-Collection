@@ -16,13 +16,13 @@
 | Provider | `palantir` |
 | 规则浏览路径 | `rule/palantir/palantir_aggregate/palantir_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `3c172049ca18b227d2253b298b9ddaf7244c5c0453ac3aad1ac3ef61aa9b5ac9` |
+| SHA-256 | `9890330a016d56e0798cb9e3cdd01b418d89165238e616e6851319efcd96295a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

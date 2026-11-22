@@ -16,13 +16,13 @@
 | Provider | `special` |
 | 规则浏览路径 | `rule/special/aisuite/aisuite.yaml` |
 | 规则数量（_index） | **193** |
-| SHA-256 | `452cdab49cfac61426b0e0ba38c763a56f8cfac960171cbbac0792dcd88d6cde` |
+| SHA-256 | `7698c064ed7d6f3d16c977490376e55ae27626cad1b5ccbfb53885b73e0d2fc5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

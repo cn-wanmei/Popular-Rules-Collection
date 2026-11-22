@@ -16,13 +16,13 @@
 | Provider | `coinbase` |
 | 规则浏览路径 | `rule/coinbase/coinbase_aggregate/coinbase_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `affe6915398a107a7c55e22b065a377bc8a78887644b05f1926b8c694872c45e` |
+| SHA-256 | `384c168ac3f7836eb704effe3bbf5eedf800518cda363127249bf8bc9b4e06ec` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `cisco` |
 | 规则浏览路径 | `rule/cisco/cisco_aggregate/cisco_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `0c077227d35fd51fbb385822360499f657b8c5f8f23f6664b631c2d3c5848716` |
+| SHA-256 | `f0d501713d6ba9f0c09040081c012390afa1d3a1471fd130a2f64efed8513a0a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

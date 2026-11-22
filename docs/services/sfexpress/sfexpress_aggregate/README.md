@@ -16,13 +16,13 @@
 | Provider | `sfexpress` |
 | 规则浏览路径 | `rule/sfexpress/sfexpress_aggregate/sfexpress_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `fc5be9d6f78d986010818450723f269885b6bccf57989ccc728e56d57b33e105` |
+| SHA-256 | `f5756fe49331501f81092f3a796d22991365da52fdb429544088374d2ec49f3a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

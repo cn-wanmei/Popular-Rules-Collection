@@ -16,13 +16,13 @@
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/icloud/icloud.yaml` |
 | 规则数量（_index） | **58** |
-| SHA-256 | `c6fe5a8e3e3df4be8569475d261589def42dcc730432d7bdccce90011512be2b` |
+| SHA-256 | `1aab211ede3cc0d17d6694273ca119e4b57fac8730709f7fa70637e4b9b784d5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

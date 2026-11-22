@@ -16,13 +16,13 @@
 | Provider | `didi` |
 | 规则浏览路径 | `rule/didi/didi_aggregate/didi_aggregate.yaml` |
 | 规则数量（_index） | **25** |
-| SHA-256 | `597f31b8b514fa05f8447b175861a68a82dec161b9a29d21434c9e6708806be9` |
+| SHA-256 | `519473f262b204878e7eb63c6a4ed334f7bfbb15f811dafafca0f3f6ef773129` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

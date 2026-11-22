@@ -16,13 +16,13 @@
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/applepodcasts/applepodcasts.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `de9a3c291d66364a20b09a126d9ff9edb159934188fef1570c18aa499ad114f6` |
+| SHA-256 | `835fa0dd22d6a768abfe44033dffd14c0201254863aee22d4c74132782073807` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

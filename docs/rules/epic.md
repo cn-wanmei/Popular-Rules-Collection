@@ -16,13 +16,13 @@
 | Provider | `epic` |
 | 规则浏览路径 | `rule/epic/epic/epic.yaml` |
 | 规则数量（_index） | **15** |
-| SHA-256 | `14cd28ba87f2584a05639dff3c25d4d125daa2aec124a28693179f5519f068ef` |
+| SHA-256 | `f36483dd16ec79fbe5cf9a14897705d7f186ae222e9a5580343f78d4e52d053f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

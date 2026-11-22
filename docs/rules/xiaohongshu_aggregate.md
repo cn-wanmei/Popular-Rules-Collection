@@ -16,13 +16,13 @@
 | Provider | `xiaohongshu` |
 | 规则浏览路径 | `rule/xiaohongshu/xiaohongshu_aggregate/xiaohongshu_aggregate.yaml` |
 | 规则数量（_index） | **4** |
-| SHA-256 | `bcb4fb43b9fbb97265fcb754e6c4e7e7cb07b6aa5172d846095d2995ebc41a2e` |
+| SHA-256 | `a5936c04e1cb5b97fc49c5f179f1dda1ebaeddd4cabbec53ac46ccafb1d32c11` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

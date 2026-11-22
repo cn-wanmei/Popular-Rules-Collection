@@ -16,13 +16,13 @@
 | Provider | `lufax` |
 | 规则浏览路径 | `rule/lufax/lufax_aggregate/lufax_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `e17e7db524a63ccbdcac9bff15ed600df975728decb2fc87ff71419f08f972ac` |
+| SHA-256 | `14b68c369af2947e015831aa1bb2867d8f25656afd4e994a6760f44ea74fa8ae` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `micron` |
 | 规则浏览路径 | `rule/micron/micron/micron.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `3be039ded75e4d6cf8d69ab7f5af53acfa8cf3ebeacd961d41af30091d57c3d1` |
+| SHA-256 | `d4807f8c601f84cc624c35d76e20d5a4ede3ffc624cec74d52310eba83dd2ea0` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261121T032141549888Z-run` |
+| Run ID | `20261122T021415995124Z-run` |
 | IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
 | IR schema | `semantic_ir_v2` |
 
