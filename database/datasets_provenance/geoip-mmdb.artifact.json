@@ -2,11 +2,11 @@
   "id": "geoip-mmdb",
   "kind": "geoip",
   "scope": "artifact",
-  "backup": "backup/2026-11-23/datasets/geoip-mmdb.bin",
+  "backup": "backup/2026-11-24/datasets/geoip-mmdb.bin",
   "artifact": "generated/mmdb/Country.mmdb",
   "sha256": "9840946762fa8c2673738bbbbab22bb720bde931f6dea327eb58e689babc37dc",
   "bytes": 7630477,
-  "fetched_at": "2026-11-23T02:30:21.291480+00:00",
+  "fetched_at": "2026-11-24T05:54:10.565790+00:00",
   "source": {
     "owner": "Loyalsoldier",
     "repo": "geoip",
