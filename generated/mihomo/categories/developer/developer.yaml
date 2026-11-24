@@ -89,6 +89,7 @@ payload:
   - DOMAIN-SUFFIX,production-copilot-host-westus.webpubsub.azure.com
   - DOMAIN-SUFFIX,wixapps.net
   - DOMAIN-SUFFIX,macosforge.org
+  - DOMAIN-SUFFIX,tortoisegit.org
   - DOMAIN-SUFFIX,cdn.ampproject.org
   - DOMAIN-SUFFIX,bintray.com
   - DOMAIN-SUFFIX,01.org
@@ -539,6 +540,7 @@ payload:
   - DOMAIN-SUFFIX,crocoblock.com
   - DOMAIN-SUFFIX,framerstatic.com
   - DOMAIN-SUFFIX,playgrounds-cdn.apple.com
+  - DOMAIN-SUFFIX,replit.com
   - DOMAIN-SUFFIX,python.org
   - DOMAIN-SUFFIX,facebookappcenter.org
   - DOMAIN-SUFFIX,apple-mapkit.com

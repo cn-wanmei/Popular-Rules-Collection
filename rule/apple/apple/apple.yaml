@@ -4,15 +4,15 @@ entity: provider_aggregate
 id: apple
 display_name: Apple
 generated_from:
-  run_id: 20261122T021415995124Z-run
+  run_id: 20261124T060424927103Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf
+  ir_digest: d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7
 stats:
-  total: 2052
+  total: 1922
   by_type:
     DOMAIN: 177
     DOMAIN_KEYWORD: 7
-    DOMAIN_SUFFIX: 1842
+    DOMAIN_SUFFIX: 1712
     IP_CIDR: 10
     IP_CIDR6: 3
     PROCESS_NAME: 13
@@ -662,9 +662,6 @@ rules:
 - id: c0627d6c681122f7bcb7f593397e27d81af835ce703a12107e05185d10f94410
   type: DOMAIN_SUFFIX
   value: 2drdrebeats.com
-- id: 10a6e91ee4e50314032c7bae744a38eced9f25938e040aa348b70c0775eee4f6
-  type: DOMAIN_SUFFIX
-  value: 40shopping.com
 - id: 53c61085d0d6f9520c59b7c595ebc2ce2b4c9653c8940df057e51e5942cc1a4b
   type: DOMAIN_SUFFIX
   value: 4beatsbydre.com
@@ -695,9 +692,6 @@ rules:
 - id: efc696ce4bc0a505f3241516facf4d3ab0bf6b629d3e514b43aea3c03d9904a2
   type: DOMAIN_SUFFIX
   value: aaagradeheadphones.com
-- id: 463c3f26a4e3dd226451dbca7507446f20253ecfc2faa6e10f6bc344f10d325b
-  type: DOMAIN_SUFFIX
-  value: aanaan.com
 - id: 085d25f54254ca22254560015da9292637d4448067c52ce27593ce2db531b546
   type: DOMAIN_SUFFIX
   value: aapl.tw
@@ -719,12 +713,6 @@ rules:
 - id: e6b3af96cd4001de541ada5d1e2013f5002cd6f775b1c1e673bbd031c49ce173
   type: DOMAIN_SUFFIX
   value: advertising.apple.com
-- id: b401dde1bfc010ab9936541468973584dfe87d248cc0a5da6ca6e84fd3fa8c56
-  type: DOMAIN_SUFFIX
-  value: aeasyshop.com
-- id: 1bc104ca4fd9b4b72fc27f0c5102f92ee003db864aec0057320235aa349beed5
-  type: DOMAIN_SUFFIX
-  value: airmay.com
 - id: c7ad4c6be5364e0d25c50ac40282c31b567f8595f8e3c1177bd6a458ae49c74b
   type: DOMAIN_SUFFIX
   value: airport.brussels
@@ -746,9 +734,6 @@ rules:
 - id: 57a707e22ee822c3937ae0cc0b95210703cff1061b4687ed7dfb1577bed5bba1
   type: DOMAIN_SUFFIX
   value: airtunes.net
-- id: 4b78b74c4c38a2c14363858b0559b683f59190153a4a7ca5302a98cd8512a9b9
-  type: DOMAIN_SUFFIX
-  value: ajtalk.com
 - id: bac67a2bb97445b9851b637a2da04cc293be29218d1c007e1fbdaff117449f08
   type: DOMAIN_SUFFIX
   value: albeats.com
@@ -785,18 +770,12 @@ rules:
 - id: 8dac56bd7d95431bac3a106f7c321688e23ab09a34f8351a0c414a354e9e9d18
   type: DOMAIN_SUFFIX
   value: amp-api.podcasts.apple.com
-- id: d4803facc549c8c1acdfde7c3806bc80c38d2d1506b5057d390636049c0e5e66
-  type: DOMAIN_SUFFIX
-  value: annstores.net
 - id: e377b0d8f75cf60bbad8b04577f281a44c89d4ecb47157f4ee6d948256ef185b
   type: DOMAIN_SUFFIX
   value: aod-ssl.itunes.apple.com
 - id: b8e1905a9e68a3a574b18fcaab5087e8954a0ba3e309c6cdbc1e9ae5b9c4fc2a
   type: DOMAIN_SUFFIX
   value: aod.itunes.apple.com
-- id: 15f047c60114650a1c171e783de916842adc9ba020003a374e665bcc24b705ae
-  type: DOMAIN_SUFFIX
-  value: aokwholesale.net
 - id: 7fc3c34342e315991dfd39b603883c5fdd210ef8f8748b3d0db7da57d94c5314
   type: DOMAIN_SUFFIX
   value: ap0le.com
@@ -1940,21 +1919,9 @@ rules:
 - id: c0fb3be828cabc32985ec22c80c55cbcae9f0fb3bbcb5b0cda3d9f8656241e36
   type: DOMAIN_SUFFIX
   value: bag-cdn.itunes-apple.com.akadns.net
-- id: 1d81f86e3434044364345be6fc242f9375d44522b6463625b22926e86b800569
-  type: DOMAIN_SUFFIX
-  value: bag-glasses1.com
 - id: 793697a3fed6a7fdd2343472aa3cf63d6e320c9b50580a08cdef1187d7a5d7fe
   type: DOMAIN_SUFFIX
   value: bag.itunes.apple.com
-- id: 6d1cec8267d26c8a9713275e27f3672f45ed3af0a8bb9c02fce8e04128979b87
-  type: DOMAIN_SUFFIX
-  value: bandgirlz.com
-- id: 578739305e762f99ff3b8b88e3bdc9294526be54f05fa2319a13da0a89c4fe2b
-  type: DOMAIN_SUFFIX
-  value: baxsound.com
-- id: 34bf277cf7bf4acecfccd0e8e1439521288c491d3912a6a96a987c3683c74ab3
-  type: DOMAIN_SUFFIX
-  value: bbestmall.com
 - id: 9a286d0b7039736e65163391c564223147b1f0f411e3a9bb2a9f6d8d60e667ec
   type: DOMAIN_SUFFIX
   value: beatbd.com
@@ -2756,9 +2723,6 @@ rules:
 - id: a051755451f74bf8bac374d019ea304cd91aca7cf768a883028aafd90e9d1ca3
   type: DOMAIN_SUFFIX
   value: beddit.tv
-- id: b86ed5a5e370de84bca317c13a7f851c87d5b6625173454d086894aef61d8703
-  type: DOMAIN_SUFFIX
-  value: begin-trade.com
 - id: b082e03f5e990116babf0146f3e0c91721b21f8ddd8d392a366dcebe592683fd
   type: DOMAIN_SUFFIX
   value: bestbeats4u.com
@@ -2771,9 +2735,6 @@ rules:
 - id: b28836678358061c5bf4fb0053605738cf6eb7f574b1b3f349284b0b7b690d9f
   type: DOMAIN_SUFFIX
   value: beta.apple.com
-- id: 3f6e32abe8cffcc57a8bfb0536c26cc01c14c1bf53aa010b63aabeda703078db
-  type: DOMAIN_SUFFIX
-  value: biitii.com
 - id: a509c0fa73e3ad341c150e74c9dd9e0c7cfa3187edfabcc2c2a94647ec2e90fc
   type: DOMAIN_SUFFIX
   value: blackfridaydrebeatsnew.com
@@ -2783,48 +2744,21 @@ rules:
 - id: 9e455c65b0edaa36a1d68da227cb380ede5c6a36111015374a861453eb1d1c20
   type: DOMAIN_SUFFIX
   value: blobstore.apple.com
-- id: f4ad467df3437cd28ef5f62d6afb59f894144d7dc0a30a0a0e1bf818b381a96d
-  type: DOMAIN_SUFFIX
-  value: bloommicroventures.com
 - id: eec928b1331729031dc144e09d58766f8d67075cad998fbe0716a341edcc9d71
   type: DOMAIN_SUFFIX
   value: bookkeeper.itunes.apple.com
-- id: 1a4b14e653334dd5f727e805a4b75cf41bd124b430bb31825cc28d66c8b0d0ca
-  type: DOMAIN_SUFFIX
-  value: bookonsky.net
 - id: b816684038f70a539f0fab85b9e45d334e868f41a7d41064cd806c078a1160e0
   type: DOMAIN_SUFFIX
   value: books.apple.com
-- id: f8fd256fdd96730072f9f8b74c5733c28e71b64c71aca51e21cc261954d35aff
-  type: DOMAIN_SUFFIX
-  value: bossae.com
 - id: 8e87a750070cefeff519c288859444260bee2fa4a4be1985ca8f3765302e1935
   type: DOMAIN_SUFFIX
   value: braeburncapital.com
-- id: 56517ff3b1428166c1f0781547df4b662e9ab9ff926d9c61bdf94c6e09c9856d
-  type: DOMAIN_SUFFIX
-  value: brandeasygo.com
-- id: 263cd5ff9fd07c137a5c1410e1acb38057ee80b112e337609652b9fc5ba1619a
-  type: DOMAIN_SUFFIX
-  value: brandelectronic.com
-- id: a33121f83c1a284e8c2d4024ecff0d8df345ce49532801b85ff079fdb66960cb
-  type: DOMAIN_SUFFIX
-  value: brandproducts1688.com
-- id: 2839f0f61ffabcc088c9fd0816f709b9653ac35c212228059058a076b169c472
-  type: DOMAIN_SUFFIX
-  value: brands098.com
 - id: 340b9071f0274e5b7e54535e36891053f38d1300b08368ed4d50fd44df817088
   type: DOMAIN_SUFFIX
   value: burstly.net
 - id: 04e8a9e07b3ad9709c048fa8fc0f8bd99ce97fca3cdd21096a2a1a38e9ae0016
   type: DOMAIN_SUFFIX
   value: burstlyrewards.com
-- id: fd70acfb0316d499170d86761aeea5376b86143b29af6c448d3a64d84ad5ff49
-  type: DOMAIN_SUFFIX
-  value: businesswebwise.com
-- id: 64a1cd70d3fbdc33337523862b88974b384f62be883d7643f67f371fd3a3bc5b
-  type: DOMAIN_SUFFIX
-  value: buy-from-shanghai.com
 - id: 7746fab2a05c7755ee3fc364e225c2e9be4a7fca6aa57ff3a70c7ed3d6f2602d
   type: DOMAIN_SUFFIX
   value: buyaapl.com
@@ -2861,12 +2795,6 @@ rules:
 - id: 2538cc2398619ee7c862eba54ef4c80bba00a62e645012c8634c3b74e9484256
   type: DOMAIN_SUFFIX
   value: buyonlineheadphones.com
-- id: 80650e4a1b1eb7dacaf8ccf7b4f5cb2731b1d6b8321f02d418ea2910bd9d918b
-  type: DOMAIN_SUFFIX
-  value: buyshoponly.com
-- id: 2c668202d4277fb2c0aeb2ecf627cccbbd0a5d0aa86988523911887ba8fd9d03
-  type: DOMAIN_SUFFIX
-  value: buzzardflapper.com
 - id: 6165a0869e3aae0bb0ec54f53fe837afc1154f49aa8ccda3b043c3cbb0547e9b
   type: DOMAIN_SUFFIX
   value: bybeatsdre.com
@@ -3110,12 +3038,6 @@ rules:
 - id: 8263bb9ce6927683ce9c0adfbe65d9c04a4f278c36e27e2eb49915b0a96c5e41
   type: DOMAIN_SUFFIX
   value: cheapheadphonessale.com
-- id: 6c44c86ef9055bc213c4de4ba7ab72ffca1cb7fd850516d4bd3f4fb0617f68e1
-  type: DOMAIN_SUFFIX
-  value: cheapheadsetmall.com
-- id: 6a0ce8b6ad58f7ba85eef33aac79a228a503e4d15e969436a443d65db335eed8
-  type: DOMAIN_SUFFIX
-  value: cheapheadsetshop.com
 - id: 37cabd90daaad602e80fcc253ad199f993126e08841bd8c97f153856ad7a5198
   type: DOMAIN_SUFFIX
   value: cheapmonsterbeatsbydrdre.com
@@ -3137,30 +3059,12 @@ rules:
 - id: 9416917c15207ccf28f03244e7510bfb765ac1f14cba7e349d493019ddfcf73b
   type: DOMAIN_SUFFIX
   value: cheapsalemonster.com
-- id: 263a8d18d23890db32ae91cf9376267ff5877c8602d823ddf1703a33c92a597d
-  type: DOMAIN_SUFFIX
-  value: cheapshoesvip.com
-- id: 54e174a8aba0cd8cac757dca2603f422bb14109ff0b91c0d33368aa26e8a7d10
-  type: DOMAIN_SUFFIX
-  value: cheapwireless04.com
 - id: dec49b8f7ae89eaed61dee3d7cd8cee1d52b4b0cb5dedee12054837e73d7abdb
   type: DOMAIN_SUFFIX
   value: cheapwirelessbeats.com
-- id: f83b055059a3a43c8f17a0b6928e7c7c2ab3e6f5fffe7156b87c7359138409c2
-  type: DOMAIN_SUFFIX
-  value: cheerwholesale.us
-- id: 9812a75b4968382dc3aee211cdaed34749f28b70bdf183e06527d66d705e8a0b
-  type: DOMAIN_SUFFIX
-  value: chihair-straightener.com
-- id: 11902180289a05c6c9bf8def1822592e25100116b745de9004a9668cba208b4a
-  type: DOMAIN_SUFFIX
-  value: chinaclothesstore.com
 - id: 3159e513b7ffe915647ad5e4c012b54a8861feb182ce4da9462f9275ea8cade5
   type: DOMAIN_SUFFIX
   value: chomp.com
-- id: 00fbf47e28cfae890e262dad32370d9e1b7068149b73db90904e7c170d425ef8
-  type: DOMAIN_SUFFIX
-  value: ciattackers.com
 - id: 46d18b37c87ef4fdc066716d31a8f431c84817ec51ac6293570d6da32f188a2a
   type: DOMAIN_SUFFIX
   value: cl1-cdn.origin-apple.com.akadns.net
@@ -3212,15 +3116,9 @@ rules:
 - id: 92be08f5301d4b2dce8262f61110d91948051acd20b88a026da898f737f744fe
   type: DOMAIN_SUFFIX
   value: cma.itunes.apple.com
-- id: cf2878c07102ef036fd45770720ca1e8edf0bcac6803a9b8d4ba53de371c02e0
-  type: DOMAIN_SUFFIX
-  value: cmhalq.com
 - id: d375f3993ceab20fbd04bd35ba82fb90744478fde7d19030692b5da47a11bc01
   type: DOMAIN_SUFFIX
   value: cn-smp-paymentservices.apple.com
-- id: 1eb6c6d0e174d98c2a114ac10ab9bfaa2f6f632d8e0f8a78ed4b74b8fa870b77
-  type: DOMAIN_SUFFIX
-  value: cnshopin.com
 - id: c5b6c8bdc93bc1eb40eb856a74d93e4dc45721a3493f8304766164793645f756
   type: DOMAIN_SUFFIX
   value: communities.apple.com
@@ -3251,9 +3149,6 @@ rules:
 - id: 35cedbe343cbd00f0a9d7325c99dfa0a2fa8765c9b42557ef62397c5129f1195
   type: DOMAIN_SUFFIX
   value: cozydrdrebeats.com
-- id: 613f7702ac1c284f7abc46997c892704773631f6d41e3fc337c6efc38d9b9881
-  type: DOMAIN_SUFFIX
-  value: cqcorea.com
 - id: 508d95e81341fc4eac4029f3f356e3b21dca4624462a57892784f556d70c8c84
   type: DOMAIN_SUFFIX
   value: crashlytics.com
@@ -3269,9 +3164,6 @@ rules:
 - id: b6ed7c372223445a44458d591912b2959cf2f7d2f94abac4bbfdcd93d873c73a
   type: DOMAIN_SUFFIX
   value: cstat.cdn-apple.com
-- id: f7739cf1771555862364fb6c27ff69826a1b8dd9cfb95caa1ae20449bfda6611
-  type: DOMAIN_SUFFIX
-  value: cuffiesaldi.com
 - id: 1c4886df64596e4b8e787ae500bbd8b9fe99fa47985ef818f62b17a105650088
   type: DOMAIN_SUFFIX
   value: cups.org
@@ -3308,9 +3200,6 @@ rules:
 - id: bb6fdd020a53f0fb6be6911f42a018d9a86901e44b6d9682e38c6a8b06dbf432
   type: DOMAIN_SUFFIX
   value: cybermondaybeats4sale.com
-- id: 11003fc74a4930f52c7f001c268341c0894a33f90adc24bd7f0223cc9dbc1717
-  type: DOMAIN_SUFFIX
-  value: danemarket.com
 - id: 26fbb61c1d45f4a0b3229110dd1b737c90f2a04421e43619157b2f7857afbe26
   type: DOMAIN_SUFFIX
   value: danmarkbeatsbydrdre.com
@@ -3356,9 +3245,6 @@ rules:
 - id: 2af2c85e220724a897dde998ce2a1e5482fdf665d98666e965145f4377e9bbc5
   type: DOMAIN_SUFFIX
   value: desktopmovies.org
-- id: ff10d10dc8d1f783f3b5451045597fd8c7812d9771e6658a4e02fb9eb55c41d6
-  type: DOMAIN_SUFFIX
-  value: detaliczny.com
 - id: 186b60ac8852406ec4504f347fd08457fe42bd5a062ed406140c79aadc2d5da4
   type: DOMAIN_SUFFIX
   value: developer-advisor.com
@@ -3566,9 +3452,6 @@ rules:
 - id: 7dbb36ef57802e43098547a065af457c0acc8dc44128a8958d6f41d404f5c99e
   type: DOMAIN_SUFFIX
   value: dreprofy.com
-- id: 2555f530e6146afce4a6dd21138d660667480650458ca0b20d2b347384d4236f
-  type: DOMAIN_SUFFIX
-  value: dtsell.com
 - id: bef16f3db72c3e0577e01f13c2c06a27d3b66777430efcda150bdd051332895e
   type: DOMAIN_SUFFIX
   value: dvdstudiopro.biz
@@ -3587,18 +3470,12 @@ rules:
 - id: 5d055f71d98e01a1d711d0b7a215c0657fc2cdcc2cbd6d64ea545ba97bffdf91
   type: DOMAIN_SUFFIX
   value: dvdstudiopro.us
-- id: 17fdb1da67dda83532439f60bdfa0fb2d97606ef0cce27ad13dc852f2f5b85c7
-  type: DOMAIN_SUFFIX
-  value: earphonescheapest.com
 - id: 92db1f7509ef9400e2e3be5b68189134491e623b15f07da795d19dfdaf845920
   type: DOMAIN_SUFFIX
   value: earpod.net
 - id: e241e6c4669d61c5033f2553ea3ea857913563f19e023b2e386d9b027907cf39
   type: DOMAIN_SUFFIX
   value: ebookforipad.com
-- id: e5e9fc00b47630d3df66cffd875aa9e29578bcfca6fe2c30ef48fa8f98d4eabb
-  type: DOMAIN_SUFFIX
-  value: ebuyheadphones.com
 - id: e401e7432fcf3eada45b2f3e3eb5c43afb1b2a037baf88d39dfc37b140d349a0
   type: DOMAIN_SUFFIX
   value: ecgapp.com.cn
@@ -3623,9 +3500,6 @@ rules:
 - id: d0bfb0446283599f715d1e73ebbc4350b5ddc6fd352d81adeae719dced573979
   type: DOMAIN_SUFFIX
   value: esbeatsbydrebuy.com
-- id: 1ef98502b96f5560c28896d3c90a24567a8f8f2caa05c14e882ff8be40f8fbb6
-  type: DOMAIN_SUFFIX
-  value: etheadphones.com
 - id: e8db7936d892329d3808fc15350d63c87318af095c4b4453dc542003b7adc27b
   type: DOMAIN_SUFFIX
   value: euroipad.com
@@ -3650,9 +3524,6 @@ rules:
 - id: 03c960c37af3c32aec501724624d13e87ba0070a06c8c4d5d8233a4a1dd98d0c
   type: DOMAIN_SUFFIX
   value: facetime.net
-- id: 08c4f6813603dda7e7bb12fec1f475bc0eb1586b8f7bf94036755175f9a3f388
-  type: DOMAIN_SUFFIX
-  value: famosascalvas.com
 - id: 69ed772ed0539c49fe73e9ed04b46ab109b634816c4dbb59b9cc826590cb1605
   type: DOMAIN_SUFFIX
   value: fcs-keys-pub-prod.cdn-apple.com
@@ -3698,15 +3569,6 @@ rules:
 - id: addda922eb23172e7071d4a02122d21a18e819c60d9d6e9efbccfd3744465d5d
   type: DOMAIN_SUFFIX
   value: frcasquesbeats.com
-- id: 117cd0bc3141695ed43d9dfc3c7c2e21d6f841085eeddef553f5322cbf62b82f
-  type: DOMAIN_SUFFIX
-  value: free-aa.com
-- id: 79e2e134e21364f2043d34e9817deb6492dba3ebe57a891667f1b419c8bfd67d
-  type: DOMAIN_SUFFIX
-  value: free-sns.com
-- id: 7843c6a0f25b9a45a5e40a3e258fa0f4210b81258ead272e9cc1cd9a03fee1c9
-  type: DOMAIN_SUFFIX
-  value: frishoes.com
 - id: 0013c4b6cecab2229f9dffea75c632b6a3b593ae54f86e8e86f91c35805592cb
   type: DOMAIN_SUFFIX
   value: fundaiphone5s.com
@@ -3731,18 +3593,12 @@ rules:
 - id: 3ebff8306dceddb2b159b380c8c7883c5dd4c303fbfb4f406f5cb28730bbae9d
   type: DOMAIN_SUFFIX
   value: gg.apple.com
-- id: 133a2bef68a4aa3d45e5ddd9df59c3389ef90a5ac1cf1c5c0654a72e744f74b2
-  type: DOMAIN_SUFFIX
-  value: gmnetworks.net
 - id: 6d9035db53a8e2b8e6e9dba283e8ff05cffe363fba215380b83b8b5345e5aa62
   type: DOMAIN_SUFFIX
   value: gobeatsye.com
 - id: ffb104b6de95a295442528e4bc380aece41180a2d4fc8d613843285a936e11b8
   type: DOMAIN_SUFFIX
   value: gobuyonlinestore.net
-- id: 805e60059fcd03fbe2d8f2a7f204c0ddc63e74d29d823734fdc372268047bffd
-  type: DOMAIN_SUFFIX
-  value: goodsdunk.net
 - id: 0e21fcf43339fa1ddab7be3a8d34267cea64e89789f0138b64ca1bbe2c3e3a2f
   type: DOMAIN_SUFFIX
   value: gs-loc-cn.apple.com
@@ -3824,12 +3680,6 @@ rules:
 - id: 426afd2672be22be5a05720309b88d03e0bea6ce86f264e20023a38727230d83
   type: DOMAIN_SUFFIX
   value: guzzoni.smoot.apple.com
-- id: 8fb5f8b45f2abdd72d4c978e6a61dbfd5576d973d944a20927131b51259e4bd2
-  type: DOMAIN_SUFFIX
-  value: headphonepubs.com
-- id: aedd558339419722efca7411bed41110ecf65acee0e9e271379db8dfcc4f931c
-  type: DOMAIN_SUFFIX
-  value: headphones-cool.com
 - id: bb456eeec14ea14accccae3240ad2694fc4db52478f48465fef13b6f63cf2305
   type: DOMAIN_SUFFIX
   value: headphones-dre.com
@@ -3845,27 +3695,9 @@ rules:
 - id: 909b72f9b86235eb98684f0d86ba7f0022ee7402f98a3daf1efe042a67f4ec4b
   type: DOMAIN_SUFFIX
   value: headphoneses.com
-- id: 7dce5fc262e0e574e8ba18823d615dafc38fb5edf7dd6984134a3e6d1160f578
-  type: DOMAIN_SUFFIX
-  value: headphoneshome.com
-- id: 9d917089f2b9fac5ba5567316e1c6132555171407b3bf221021b3566611eca05
-  type: DOMAIN_SUFFIX
-  value: headphoneshotsales.com
-- id: d454e3078a6efc0d4a81fb8ab24a552c98ca752257ec9947bc14db37374bf2b5
-  type: DOMAIN_SUFFIX
-  value: headphonesol.com
 - id: fc6365013d12ffd970ab66fab22e91435eedcb3ea253cc0b29f74ca852022e72
   type: DOMAIN_SUFFIX
   value: headphonesretailer.com
-- id: 76dbf0ee0dd1355634eec5f508e9e8b95cf51b9b3a4c7b375fcd2cf2e819ad4b
-  type: DOMAIN_SUFFIX
-  value: headphonessupply.com
-- id: 730ea20fb517b4db14ca8b2df7a542e0151d29b45a049cea27338396d73036c9
-  type: DOMAIN_SUFFIX
-  value: headphonezip.com
-- id: ed1edb4bd86a946a9b49c8b3391eaefc0c0e21cee2030e05d11840a45ac1aa0f
-  type: DOMAIN_SUFFIX
-  value: headset987.com
 - id: 4ec7fd7109e3ab7114895abab2656d530e4ef7d382c5b5107460b52e757b37f8
   type: DOMAIN_SUFFIX
   value: hebiphone.com
@@ -3881,12 +3713,6 @@ rules:
 - id: 97924dca3dc92cfffc620a72d47d9cfc44ea55aab662def3d88f71adb4b5dc3a
   type: DOMAIN_SUFFIX
   value: highdefinitionbeatsbydre.com
-- id: 6d3f240a616dffdf8e695722d54c7226e34fb34e9ed62b3ea6388b5eb1cc1d74
-  type: DOMAIN_SUFFIX
-  value: hipaa6020.com
-- id: 9680091330bee139f9c8bda92ba085dac24e381280111ed413f9d786b84d149c
-  type: DOMAIN_SUFFIX
-  value: hipzoom.net
 - id: 91f79eafa0865ff1bed9703243e11c546dffaeec4c5374c7b4db59dc047a0264
   type: DOMAIN_SUFFIX
   value: hls-amt.itunes.apple.com
@@ -3896,9 +3722,6 @@ rules:
 - id: 272872a0c35c987aab690e45efa6a603bfceb77d507626698b4c6f9fa3a8ea54
   type: DOMAIN_SUFFIX
   value: homepod.cn
-- id: d3dbb7f654842f41c704fd2699e6fdd163ae5373c0ab48126b6d7aa242c560a8
-  type: DOMAIN_SUFFIX
-  value: honawalaan.com
 - id: f2ebecfb3d355a47c94c0824370ac36d9fe3eff9429b8f26d32ffd72151d0d5f
   type: DOMAIN_SUFFIX
   value: hopstop.tv
@@ -3908,12 +3731,6 @@ rules:
 - id: ed3ec4a7097ed7941544b88e674b4fdbbfc8542131053762c04b6b7e8e688a8e
   type: DOMAIN_SUFFIX
   value: hotmonsterbeats.com
-- id: a0bf3ebb2fa9e296570adf12ccc5200e48d98ea4a4be21d37c3a66e7db405243
-  type: DOMAIN_SUFFIX
-  value: hottestheadphonesonline.com
-- id: babc01cbc9f76902b7e9f378ec53ba8c6af5653e422e6695432a022579ce7924
-  type: DOMAIN_SUFFIX
-  value: hrsaz.com
 - id: a02aa78c88a75db3e9e456cea3499a3722e1220a29af1a0de4a44918d597935f
   type: DOMAIN_SUFFIX
   value: i-book.com
@@ -4103,9 +3920,6 @@ rules:
 - id: 6f6f5e631c984850eeafad67d30b892a8711dcdfd6a917ecbe946cdc60607e68
   type: DOMAIN_SUFFIX
   value: ig.apple.com
-- id: 5e2857f6a3d2ce1dc958d2f7f9c4bcbb656c2ccc30060db39c96d3884d113fea
-  type: DOMAIN_SUFFIX
-  value: igoshopping.net
 - id: 2118fb0210df5576fbfccaa3fa6ec7940b901f6e2ae68f02e40aaff9854d0d42
   type: DOMAIN_SUFFIX
   value: ikids.com
@@ -4121,9 +3935,6 @@ rules:
 - id: d5670e0640ba2d276fd11bd3207da8f9f4e3d3877be329dbd99f3c1ac2edfaa6
   type: DOMAIN_SUFFIX
   value: ilife.wang
-- id: c0f5f1afe268e551e3accf73698f6fb317b9e62b5ae34724c5658599a21514f5
-  type: DOMAIN_SUFFIX
-  value: illianacomputerrecycling.com
 - id: 6ad7c907e4d7850429f7932e2cfdac5e68e78d06b8b7ea2a0c601d2e6be00a3a
   type: DOMAIN_SUFFIX
   value: imac-apple.com
@@ -4187,9 +3998,6 @@ rules:
 - id: e2251f765b1d32b873e194163ee3034094f3d574aa076ee011ab28a46c71e0ad
   type: DOMAIN_SUFFIX
   value: inappcheck.itunes.apple.com
-- id: 5caf7a98cc54d2b8ef30a0b3eefa3b0e08f3dad540bbbc9b08174a8da06347fc
-  type: DOMAIN_SUFFIX
-  value: incentivetravelgifts.com
 - id: f1036f8901da8c62a1f512e16768b0820e658f9d7be29c4c13f2bbc11b9502e0
   type: DOMAIN_SUFFIX
   value: indiaipad.com
@@ -4409,9 +4217,6 @@ rules:
 - id: 0507e53ef0aca0e9ffafe892bf14b21df4edde5fb2a8acd1fc7475b5ab91303f
   type: DOMAIN_SUFFIX
   value: iphoneacessorios.com.br
-- id: 088e07de0af8c6b477313952aff4f4c5318d3e81ef8869788616b24252b9dffd
-  type: DOMAIN_SUFFIX
-  value: iphonecase2013.com
 - id: 0fe5e85921b98f8240e797b91e2b21ec147e4cfbb52849bb41cb7e264e7c8442
   type: DOMAIN_SUFFIX
   value: iphonecase5.com
@@ -4622,9 +4427,6 @@ rules:
 - id: 8240e0425052fbafd798bd303e207ccdfef738c77cce1f73f11cb010afc6f1e4
   type: DOMAIN_SUFFIX
   value: ischool.com
-- id: 0612f472a18c7a8b7c4605d0e4890075947cc4c322a5434a0d06e5ca3e2bed55
-  type: DOMAIN_SUFFIX
-  value: islamiccenterofnewlondon.com
 - id: 500495e870dacfd398f153475321ef63f6289484a4a3310d8763a9104549bf1c
   type: DOMAIN_SUFFIX
   value: italiabeatsbydrdre.com
@@ -4763,30 +4565,18 @@ rules:
 - id: 7a68f9d2fe9aabd86c6c4310851bdba517b141a0c366295388cf21f59b850c11
   type: DOMAIN_SUFFIX
   value: js-cdn.music.apple.com
-- id: 0869955c65c75e45157ba79495b28dc05d9ed0f08fbf935ac9688cfbf54c3b27
-  type: DOMAIN_SUFFIX
-  value: kickshatchannel.com
 - id: 3dbc40b7646dc38a7501b31842e8e1d9b2cb6babefd117f111a6140d82f573a2
   type: DOMAIN_SUFFIX
   value: km.support.apple.com
 - id: e77ad810fbf24518f900a006f254a99521518a6e0e5137e856dd7a5ae7bf71cc
   type: DOMAIN_SUFFIX
   value: kobbeatssbydredk.com
-- id: 657fff3d4b03c9d77d108be7b0e66d443368a9db16b0ea5bd826ea15b38bd1dd
-  type: DOMAIN_SUFFIX
-  value: kopfhorergunstigshop.com
 - id: 39207ca52ebe8db127964fbce3a71420804a35272a13a83ef55ff964959d3eee
   type: DOMAIN_SUFFIX
   value: latticedata.com
 - id: 0b3c05a7bcb53ad5b59d5efa3a63268ecdb68ff6bf3c9b12922a1ba979844ef1
   type: DOMAIN_SUFFIX
   value: launchpad.wang
-- id: 8896f9ad14d16eb5116bcdbfaedeb97a24ccb18818545ee3ae7ce32ed28c0d95
-  type: DOMAIN_SUFFIX
-  value: leecountytimes.com
-- id: d62af6217e18531aa0400472d99fff8749d1db222754dea89e79c518b4b25625
-  type: DOMAIN_SUFFIX
-  value: lexuemei.com
 - id: acafd26f2991de67262b9fbea0cd2eb2df8fc9d607db2566937e6f6d9b5c2c7e
   type: DOMAIN_SUFFIX
   value: livephotos.cn
@@ -4808,12 +4598,6 @@ rules:
 - id: d030a55252542b9fd38b1be66759f1ad295656f1f907ff9629464fd146084778
   type: DOMAIN_SUFFIX
   value: ls-apple.com.akadns.net
-- id: 3e502ded5502ca08488f1bfb79e0ab832041cfc82e23fe796d0b8466e95f2823
-  type: DOMAIN_SUFFIX
-  value: luckyissue.com
-- id: 03f6c6b3c9d251978c0b8fa4cd468f4567cc0f34ad6f2ba71a5087df475fdb8b
-  type: DOMAIN_SUFFIX
-  value: lyzsxx.com
 - id: 422a4121754b02058f0a314a460338b5c75aedd7a13dc8f651db1e156cbfb630
   type: DOMAIN_SUFFIX
   value: mac-mini.com
@@ -4967,12 +4751,6 @@ rules:
 - id: 274e30fd363a9c50fa72bdcfc9e383e50c4c3a490633d59520355f98f9d8ddee
   type: DOMAIN_SUFFIX
   value: mairbeats.com
-- id: 49a299d204003e603a7fcada38c582ca049035752477c04e373c943c33d3f80c
-  type: DOMAIN_SUFFIX
-  value: makeeu.com
-- id: ad7622335ab062ab18918bdcb334272b49114aa7164c1945eb6630546f32d492
-  type: DOMAIN_SUFFIX
-  value: mallheadphone.com
 - id: c36165d1a083819abfc96ab704b6c3dd7903f63fe5bbbd44d2c4566ee76e21d9
   type: DOMAIN_SUFFIX
   value: maps.apple.com
@@ -4985,9 +4763,6 @@ rules:
 - id: b97b401b72a40c949abb870a34ec1a894ab4a1863c6f6c1255bdee8c8eeb7046
   type: DOMAIN_SUFFIX
   value: mbeats-tech.com
-- id: 211f867c9eddd2c99fcc45d7131352b688c9b65c0995efc05cee39b3a31654f1
-  type: DOMAIN_SUFFIX
-  value: mbheadphone.com
 - id: 9a6063fda5a44582a9697e0e1dea1a7fec9b34ac0eb011c45ab21e1167d553e3
   type: DOMAIN_SUFFIX
   value: me.com
@@ -5006,9 +4781,6 @@ rules:
 - id: b3c2172ca3ba3b594259044d9728f8071f327d2ccf0abdcfc335eb09ddafba1e
   type: DOMAIN_SUFFIX
   value: mesu.apple.com
-- id: 81b5f0200b2a456253116ebea1ca629106e0ac131e90fc7e856e9f8213e3338b
-  type: DOMAIN_SUFFIX
-  value: micstl.com
 - id: 025efd11f7c44643d90b01a58fda224d43cc432c5fe128adacf3ee8dc866e303
   type: DOMAIN_SUFFIX
   value: misc-assets.itunes.apple.com
@@ -5195,9 +4967,6 @@ rules:
 - id: d8c032c6b6e26d91b0c360f83eed809eb8989c3d342a357875566b70ea59565e
   type: DOMAIN_SUFFIX
   value: monsterheadphone.net
-- id: 06474942d793a79fce58836f2f95d2c0cb32952b63d4b277de3671fe576846f2
-  type: DOMAIN_SUFFIX
-  value: monsterproduct.net
 - id: 5d03925f6ef66e897159d53ef9d3c51f091558bfc7101c7c0366495e9eb8292a
   type: DOMAIN_SUFFIX
   value: monstersbeatbydres.com
@@ -5207,9 +4976,6 @@ rules:
 - id: 9b10c885933ca99f9fdd05bc352a80374635655ddc68c4b14d951d4539533e18
   type: DOMAIN_SUFFIX
   value: monstershopcheapbeats.net
-- id: 9ac82c7347d2c7d130b049f4a3def5e441cf62e21d685fdc267e4cb41e0b11e6
-  type: DOMAIN_SUFFIX
-  value: moreheadphones.com
 - id: 125aa7f14f7782af3000e078248f10187bf9b63eadf5a062d4395b20d2da7dcd
   type: DOMAIN_SUFFIX
   value: mr-apple.com.tw
@@ -5267,9 +5033,6 @@ rules:
 - id: 25af9ed91b016bb8a368bb9629e1d86dc580333cf45e7e2358387c6d3a661a3a
   type: DOMAIN_SUFFIX
   value: namemybeats.com
-- id: bdea40c6b3da672533d3b6871a978e2984e9729249349edabe34bccb6b1c223a
-  type: DOMAIN_SUFFIX
-  value: neborder.com
 - id: 0508dffc48c0118f6b6605e74c49be0ec5fd1003a6519a6156cf56a59a1017ae
   type: DOMAIN_SUFFIX
   value: negozimonsterbeats.com
@@ -5279,18 +5042,12 @@ rules:
 - id: 8ca44f5a535a8ac8fa2a89bf460531117a205f2edecdf3ac3e2b35a99efa0bb3
   type: DOMAIN_SUFFIX
   value: newbeatsblackfriday.com
-- id: 230609622da9fdfd5556f2df56a1218fb3dae5472d15e5d0d96585b7e4138ef0
-  type: DOMAIN_SUFFIX
-  value: newbemany.com
 - id: ce6bcfdd064c237a8f46ba0ff1840c43015148e5ec9a624831d3ae1d5622652c
   type: DOMAIN_SUFFIX
   value: newdrediscount.com
 - id: 48260fd5a52f8ddacd8186a6242a220261c4050ac1c05a974f780a13ad2954bf
   type: DOMAIN_SUFFIX
   value: newestbeatsbydre.com
-- id: 68bbe910dbd95f86abd3da9aba41faf3f8efbb3c3d7f6c7c116bcb47e0c99d30
-  type: DOMAIN_SUFFIX
-  value: newlysprung.net
 - id: 4d6a192f261f4597f3a87c88e2f9c5bff09ae4d4bc5295c7f0231e1711443c7e
   type: DOMAIN_SUFFIX
   value: newmonst1erbeatsto1re.com
@@ -5312,21 +5069,12 @@ rules:
 - id: 72c73fbf370b540675a5170ad41d7a3abd6fc19131905e08f8ed6d22434f3cdd
   type: DOMAIN_SUFFIX
   value: news-events.apple.com
-- id: 9c270416391121d2f5b5abd4e41f792aaf3b5324896d1d689070f77054924237
-  type: DOMAIN_SUFFIX
-  value: newschristmasshopping.com
 - id: bfd572f9b5b02cb7444121747c361c9de8a4b2b402d682bf5b053cf00437908d
   type: DOMAIN_SUFFIX
   value: newton.com
 - id: 73cca94df686511ac0877f13bbdc63902b0bcae4f28c4285e4beecbcc1e456a1
   type: DOMAIN_SUFFIX
   value: next.com
-- id: 9d45c2fc9b023ed72ad31787c008c17d99cf91d740ec5175a3b80020fa2fdb20
-  type: DOMAIN_SUFFIX
-  value: nflhotsalejerseys.com
-- id: 1b4846483563272dbafcb87005d46d4036e82afd1d18e59e4657845d5b1424db
-  type: DOMAIN_SUFFIX
-  value: nicesshop.net
 - id: e5b9a6bb228940da48f50f2a736d33dba0cca18e53e97a2b2774e124be94b751
   type: DOMAIN_SUFFIX
   value: notary-submissions-prod.s3-accelerate.amazonaws.com
@@ -5342,9 +5090,6 @@ rules:
 - id: 819dc6762f282a65ad24baa0f6bac48ff9370ec2c516faf793c2e1ee66186d9a
   type: DOMAIN_SUFFIX
   value: ocsp2.apple.com
-- id: 59a60d9388281d7873400a35a1ad53d0e6dacbf81f73e61ab1b8607f8a6f43bb
-  type: DOMAIN_SUFFIX
-  value: offerairjordanlebron.com
 - id: c16355ea78ed1357753f92b74ea14c07d08d9cc4120c771d1cff732076b2eced
   type: DOMAIN_SUFFIX
   value: officialbeatsbydreshop.com
@@ -5360,9 +5105,6 @@ rules:
 - id: 26fbbb2c457bdb9710010dad38aafa5452c6ece52504e9b5cb740a21174de7b6
   type: DOMAIN_SUFFIX
   value: offrezdesipods.com
-- id: 5d72570ebbaf9d0062968aa899a69469f451a2511c733aa692801b1aa173bc75
-  type: DOMAIN_SUFFIX
-  value: ogameblog.com
 - id: 631f42d3cc9ffcabd21bd004c8bf766d6b5b300411183ca26cdc4ed5edf8bf67
   type: DOMAIN_SUFFIX
   value: onbeatsbydresale.com
@@ -5378,9 +5120,6 @@ rules:
 - id: 6b4c4cc96741f79bb4005a8a8ad06b626bd938015b7dcbdc97040ceff10f040a
   type: DOMAIN_SUFFIX
   value: onsalekey.com
-- id: d14c12af8fdb03f2fc63e658e9c2f459f30669dfc2dcc95c912f9f225378c80a
-  type: DOMAIN_SUFFIX
-  value: onsaletrend.com
 - id: 94a0c8aea0876eb65666d2ca1026d826591ffd0a1a3260eac33346956200e8e7
   type: DOMAIN_SUFFIX
   value: oscdn.apple.com
@@ -5411,9 +5150,6 @@ rules:
 - id: fc122abf92800516e27370466180d7a5f1c5aff88bffb795090ba58e7e263d2d
   type: DOMAIN_SUFFIX
   value: pascherbeatsmonster.com
-- id: 18f18c36718eac199f89f7846bff5dc3e2b466b90ac2a4605a7ef82059c7fd80
-  type: DOMAIN_SUFFIX
-  value: paulsimon-music.com
 - id: 81f47f1222fd8de952250d8a079af091fa27af6420bf5a047ba640dbf6b359de
   type: DOMAIN_SUFFIX
   value: pba0.apple.com
@@ -5423,18 +5159,6 @@ rules:
 - id: 182f7d105316e5ca9a868c327b9439c656eb558f4d74645fc1568a971e62dea8
   type: DOMAIN_SUFFIX
   value: pd.itunes.apple.com
-- id: 5ba8f54872c7c7433376720681a9bd4fe0f6a43fb5e3194c57c44564a9bb4931
-  type: DOMAIN_SUFFIX
-  value: perfectkickz.net
-- id: 6fcb67f599cc42be922f845809e8562d3b2ed978fa4fbf077735734d20f16d79
-  type: DOMAIN_SUFFIX
-  value: personeelsland.com
-- id: 1ca60df2194b7074814945cb916dc314b004fc077ec260b27476c232cd52a521
-  type: DOMAIN_SUFFIX
-  value: picknicekicks.net
-- id: f02ee4e88ecdc37e4ddb0708b7a36cd15dc85297ea79c895e819d0286e0e28f5
-  type: DOMAIN_SUFFIX
-  value: pickshoesclothes.com
 - id: 3cded585fe56d5a9c82471b2020e4b62ba02fc255bdf0696e1c2e8ad098fbeaf
   type: DOMAIN_SUFFIX
   value: pillbeatsblackfridaysale.com
@@ -5450,9 +5174,6 @@ rules:
 - id: c3c28c0ce18534293229063d4533deb7e4a5dacab19db66632c366b57e816b83
   type: DOMAIN_SUFFIX
   value: playgrounds-cdn.apple.com
-- id: f1442ea45d9f737d7e93ac8f975182376b8a049726543605227d87aa0c84c8ef
-  type: DOMAIN_SUFFIX
-  value: pocketbiketrader.com
 - id: 58bf60ad7a47250b04b93c40c539c99585e214223039dbfb549b282fb8496920
   type: DOMAIN_SUFFIX
   value: podcasts.apple.com
@@ -5519,18 +5240,6 @@ rules:
 - id: f88b6c78a2e3078ca0a96c21d95d8b6fba8e44b7841c79ec07956f7c1ce0fe19
   type: DOMAIN_SUFFIX
   value: radio.itunes.apple.com
-- id: 518a31d81eda322852573eadbff4f2008b3d3531975c2b60a7f417db232a4a28
-  type: DOMAIN_SUFFIX
-  value: rbsgr.com
-- id: 9633b4051af7d6f4194b378c5578733b05b03272eceae13fa2e70d3395250d09
-  type: DOMAIN_SUFFIX
-  value: reform-apple.com
-- id: 797771a3b6e2f0c2f9b73f1551740d3ae6e062173620bc50f1589e57d9c7b2c7
-  type: DOMAIN_SUFFIX
-  value: repsneakermall.com
-- id: 2aa9d9117d3b1131e716f1c35ae6a16a52f50266fdf200ffbd353601f8c16de1
-  type: DOMAIN_SUFFIX
-  value: repswing.com
 - id: 705310c0f5b342a3180b5359c5704e2c607e91a59ad51a46705339a463cb001f
   type: DOMAIN_SUFFIX
   value: researchandcare.org
@@ -5576,18 +5285,6 @@ rules:
 - id: d329818d8b41af79549c052b1bd395ca5b982b105e9d25267d034d4d256af4b6
   type: DOMAIN_SUFFIX
   value: saleblackfridaydrebeats.com
-- id: 6d2635d03d8f776f3b48ea5fe6b13c40ba22e78f6e55dc14f92873096e184fcb
-  type: DOMAIN_SUFFIX
-  value: salecheaphandbags.com
-- id: 3c9b0c66ed5a0a001d1ffd3dbf9cc9d1e2606077f060580253dc37f243b75276
-  type: DOMAIN_SUFFIX
-  value: samebags.com
-- id: 18c23ae72f06599453eeeb9cee4c33d03a8e2a3c5d8b562d25bc98d71ec56c18
-  type: DOMAIN_SUFFIX
-  value: sanvaras.com
-- id: 68c54754f6880f8ede551fd4d84c7be463fa22aabb71b457dee40cc2995e9f00
-  type: DOMAIN_SUFFIX
-  value: scnshop.cc
 - id: 8be2f10e11fc3cd21509f00e19fced866869c9bf10fc9ad1fe1a727b5f59d7a3
   type: DOMAIN_SUFFIX
   value: se-edge.itunes.apple.com
@@ -5633,12 +5330,6 @@ rules:
 - id: 9526ce4bd9f68b0b275064f3dee2c3b42fb41da06ced0b92a0f102c5eb2dc747
   type: DOMAIN_SUFFIX
   value: shazam.com
-- id: cef75bde6b9e60268f4272353519cda0cb02c207580f1cf84c32e9668880e60c
-  type: DOMAIN_SUFFIX
-  value: shoers.com
-- id: daaf1122e77f877eb30c380d27b9746ee73f0fdc257e879fe64495e560278998
-  type: DOMAIN_SUFFIX
-  value: shoestop2.com
 - id: b7d08096d8ce44ff135618673a99d69aeaf2d23cfb07379d3d05fd99e5500a18
   type: DOMAIN_SUFFIX
   value: shop-headphones.net
@@ -5657,12 +5348,6 @@ rules:
 - id: 026b3838c8bb8991f9f084ca19295aa9a3a7423b590c145d72da0a22aa06ba0c
   type: DOMAIN_SUFFIX
   value: shopmonsterbeats.com
-- id: 0c2dda426ec0fbebcd1a76cf40b61ee233b07411268391b9b59bc93c4c4565cf
-  type: DOMAIN_SUFFIX
-  value: shopping-days.net
-- id: 1e868aebf813e42c9048ad0f7b8f3831edf5fca47cf65b9214f8f4b2873b4ca2
-  type: DOMAIN_SUFFIX
-  value: shoppinguheadphones.com
 - id: 616ef81393458faee3fe1d9b08280d729b824ee324acd7eae9d8f9876765cb1f
   type: DOMAIN_SUFFIX
   value: simplyipod.com
@@ -5675,36 +5360,18 @@ rules:
 - id: daf9e53cfa84fe317e6cb527d119fd8f281ce87b5bb7deb82003e6ce4cadc3a5
   type: DOMAIN_SUFFIX
   value: smp-device-content.apple.com
-- id: d0e5ef490eaba518b2fab494559068bbf8caf373ec3318696a59d6fca3debccf
-  type: DOMAIN_SUFFIX
-  value: sneaker666.com
-- id: a66d92a763076d09bf461f42ad71ef3deee20cc69882492cf4b36b00c3070a0c
-  type: DOMAIN_SUFFIX
-  value: sneakerpage.net
-- id: e7f25a384d0531cef78eaf2c83b4da3d735a3cb0250ceeae8c37f6ec56d80ef7
-  type: DOMAIN_SUFFIX
-  value: sneakerskick.com
 - id: 14125c23b0439eefce4cb43e241a4c3a9957b152c23902d96b7e9927a00d0022
   type: DOMAIN_SUFFIX
   value: solostudioksale.com
-- id: 8d7d02148a62aa7e71d69e2207144405d87b89894d10d9a397f37218909ff606
-  type: DOMAIN_SUFFIX
-  value: soso7778.com
 - id: 12a7af88259b75fbb45baf75a77fa54f7296931025b97b6acba14a1ce20ff7c5
   type: DOMAIN_SUFFIX
   value: sp.itunes.apple.com
-- id: 3d7f5f347d3c72e88069739e80c3a56758d74c2330e581f18d5073aef4e78c5b
-  type: DOMAIN_SUFFIX
-  value: specialtyheadphones.com
 - id: 3247ff5cb9a118421e6199d6336945decb71849df0cd8cfb32e0859a17affb45
   type: DOMAIN_SUFFIX
   value: speedysub.music.apple.com
 - id: 49e35c63ac97025ca5353cc1c5a6ed91f8d219dd6b1aa12714ee55263674bd86
   type: DOMAIN_SUFFIX
   value: spektral.cc
-- id: e5d4a26b334754b0fdd2f8f54556594a86fb11fa866d58a3643181470a231608
-  type: DOMAIN_SUFFIX
-  value: spiritclubs.com
 - id: ade24a1c143caf5dde05202927ff1e717aff2acb839f0e51467f7f68b67254dc
   type: DOMAIN_SUFFIX
   value: static.gc.apple.com
@@ -5744,18 +5411,6 @@ rules:
 - id: 0ac5ea71529a3c4e22dca0329d3d890ac8e95cab3ebf258e65dd38359864a5c7
   type: DOMAIN_SUFFIX
   value: su.itunes.apple.com
-- id: a0d4092a25df42f3fe0f924be7bfdbebea92ea5cf74920c0d04fb516d11b240f
-  type: DOMAIN_SUFFIX
-  value: sulwerphoto.com
-- id: 03f50a538cea9ccc7b9ae356041f094de1705c8b30a06976dcb847a6df771ee4
-  type: DOMAIN_SUFFIX
-  value: sunglassessale2014.com
-- id: 4ec8c326de1329bd1f406c8aaae192cf8345e4bc7a432b6aa907780c83989854
-  type: DOMAIN_SUFFIX
-  value: superearsenjoy.com
-- id: 440de38b542e2092e05a75ec201387d2b2ae1b9b4e10c92d98054a279df04df6
-  type: DOMAIN_SUFFIX
-  value: supplybestjerseys.com
 - id: 8277f928367868e7b26babc52595a99e5ab5a43d4276fbc64cd3d491eb28ce4b
   type: DOMAIN_SUFFIX
   value: support-china.apple-support.akadns.net
@@ -5819,12 +5474,6 @@ rules:
 - id: e1d043cc8d380c6b70a89d5dc5fb0eb343363260e7076e5703075367ee7fda43
   type: DOMAIN_SUFFIX
   value: szcheapmonsterheadphones.com
-- id: 57cbb4288bfb856eb86e613ca9b21653a1ac9edd431c8d2a11a01483ae68557f
-  type: DOMAIN_SUFFIX
-  value: szwinnertechnology.com
-- id: 47a104566bcf59170a4917e9247b97a5706474565866ebaac832b28e9234c140
-  type: DOMAIN_SUFFIX
-  value: takegoto.com
 - id: a9929274737df52842bc8ef23545df6284b0486c07e5aad7fa1858d0e14ca8ac
   type: DOMAIN_SUFFIX
   value: testflight.apple.com
@@ -5846,9 +5495,6 @@ rules:
 - id: 2382492cb35ab4181c490050ce9a7967f08f36ae4281846000d07694fd01c4cf
   type: DOMAIN_SUFFIX
   value: thebeatsheadphonesale.com
-- id: ebc734ed6cde2ea308e11fb439644cd3480121c13ebe875bd35fd3d565b292fb
-  type: DOMAIN_SUFFIX
-  value: theuab.net
 - id: 9801dc0b2dd19e58963ef1f919492979a37aaf66fcb423a2f1130c2170ca9f30
   type: DOMAIN_SUFFIX
   value: thinkdifferent.us
@@ -5882,18 +5528,12 @@ rules:
 - id: 91e9d2c9700b48006d3abaf5dc71195e51d4c6299211d89da67eca9d01a3cc63
   type: DOMAIN_SUFFIX
   value: tracking-location.com
-- id: 4fa4cd339829d99f4aa4ac2d8ef9633c8138bba3b4c8a8c6ea2a128a84c62e7a
-  type: DOMAIN_SUFFIX
-  value: tradevip1.com
 - id: dba59f6539f0ec57bda4a96ba8370604ab8f146803c64977da8d8a6345b676cc
   type: DOMAIN_SUFFIX
   value: truedepth3d.com
 - id: 05527de2cc44c91e5a59f50ee63b902d4c975636e4dd78237300eea27f120655
   type: DOMAIN_SUFFIX
   value: tryrating.com
-- id: 5b299b81ab5f4037765253f01d102035a730bbfd6bfa9319e40b6630b06d0a48
-  type: DOMAIN_SUFFIX
-  value: tteshop.com
 - id: a99ea65487f4068a310b560eb71f7c56ac32e4fbe8fa18b781ba132b591506d4
   type: DOMAIN_SUFFIX
   value: tv.apple.com
@@ -5912,9 +5552,6 @@ rules:
 - id: 6a75436ae4fbdb945acd93f3dd2d5ed1c83d984549b3318acb616714a3c87c68
   type: DOMAIN_SUFFIX
   value: universal-activity-service.itunes.apple.com
-- id: ab89ad8cffbb6cc3c1de63a9e7af201e44273eff83a3a151a30b521af74f0822
-  type: DOMAIN_SUFFIX
-  value: unstyle.us
 - id: 51e2bc42cafbf05d3a5ae06a82cbda94fe9abed1815205ee8477bcfbbe433500
   type: DOMAIN_SUFFIX
   value: updates-http.cdn-apple.com
@@ -5933,9 +5570,6 @@ rules:
 - id: 87bb2c0bba8d994db5aafbc929fcf5e5e181bc5e823408640ba3cad6ec48678a
   type: DOMAIN_SUFFIX
   value: uts-api.itunes.apple.com
-- id: 969104fcb70a1f0290f34638d57d76e2cd5092229ad1a477cbd7c30eb96192c9
-  type: DOMAIN_SUFFIX
-  value: v-has.com
 - id: 0ed74b897770bd987803a4143ccfce881583f825131391a2a6c441f51f350ca6
   type: DOMAIN_SUFFIX
   value: valid.apple.com
@@ -5948,15 +5582,6 @@ rules:
 - id: a93e0391a01172eeab2b054fbb6a0b5cd26cec5ea19ce64b428781bc34981cc0
   type: DOMAIN_SUFFIX
   value: vipbeatsbydre.com
-- id: 17959ab75595e04c91b5ff2a36cafd66d837a1141158eee837979255024072c5
-  type: DOMAIN_SUFFIX
-  value: vipheadphones.com
-- id: b72815fe17e8ed2138e324e93c2d5e8f29190174c2b804bdb87775b84a253de9
-  type: DOMAIN_SUFFIX
-  value: vipshoes2.com
-- id: 03a51f640b53f45b3f60316d3424df688da287b273bea780436c1bd318f8239e
-  type: DOMAIN_SUFFIX
-  value: wasdj.com
 - id: 0d911fb1d3f513c5795a279a6d443b52aa0283f3052d7fa26e53c7c577c3d276
   type: DOMAIN_SUFFIX
   value: weather-data.apple.com
@@ -5993,24 +5618,9 @@ rules:
 - id: 9cf5d5e06da4e0aebb55815eaf7a0a8835a6234ed1de26ff3655989fabf97bde
   type: DOMAIN_SUFFIX
   value: webobjects.net
-- id: 0f576e5e6e568e83d59e8def961f440bc429ce200779bc9ca3db97dd41fe3528
-  type: DOMAIN_SUFFIX
-  value: wholesale-exporter1.com
-- id: 9ef5fe8f2dd20796c4b6d54d92099c2a9da6b02ef95eb6c4420542a7e744e4ac
-  type: DOMAIN_SUFFIX
-  value: wholesalediscountpurses.com
-- id: f60376099937c85f15356e10bc9edf1b29e43bc4e91bcfa968270880d9288958
-  type: DOMAIN_SUFFIX
-  value: wholesalefine.com
-- id: d20cf34b788ad3633a28d034a3433af97bdde05b2a54ad5f6cfcb1a6012680b5
-  type: DOMAIN_SUFFIX
-  value: wholesaleonlinemart.com
 - id: d89f55fba1e2666c2c8a011ed6d2fa5cfdd73266ee58cc5bb7be4374e186d6de
   type: DOMAIN_SUFFIX
   value: wkms-public.apple.com
-- id: 0181ad077e55c72037494c9acfd92d56354c1d9119600ae599d2197bb62dfc0d
-  type: DOMAIN_SUFFIX
-  value: worldcoinpay.com
 - id: 7774af0af440b1c741bd89ca4dc8dd2870e32348463ecab8c7b5a0b01dfde36e
   type: DOMAIN_SUFFIX
   value: wpewebkit.org

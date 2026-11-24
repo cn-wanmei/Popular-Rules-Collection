@@ -88,6 +88,7 @@ host-suffix, ktor.io, proxy
 host-suffix, production-copilot-host-westus.webpubsub.azure.com, proxy
 host-suffix, wixapps.net, proxy
 host-suffix, macosforge.org, proxy
+host-suffix, tortoisegit.org, proxy
 host-suffix, cdn.ampproject.org, proxy
 host-suffix, bintray.com, proxy
 host-suffix, 01.org, proxy
@@ -538,6 +539,7 @@ host-suffix, vscode.dev, proxy
 host-suffix, crocoblock.com, proxy
 host-suffix, framerstatic.com, proxy
 host-suffix, playgrounds-cdn.apple.com, proxy
+host-suffix, replit.com, proxy
 host-suffix, python.org, proxy
 host-suffix, facebookappcenter.org, proxy
 host-suffix, apple-mapkit.com, proxy

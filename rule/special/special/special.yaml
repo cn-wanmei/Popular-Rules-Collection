@@ -4,9 +4,9 @@ entity: provider_aggregate
 id: special
 display_name: Special / Generic
 generated_from:
-  run_id: 20261122T021415995124Z-run
+  run_id: 20261124T060424927103Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf
+  ir_digest: d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7
 stats:
   total: 7618
   by_type:
@@ -2615,6 +2615,9 @@ rules:
 - id: 31cdb4e617a0f989591c0f2a21db6b75b5c98a23a5ea82d238efc46b1611cbf8
   type: DOMAIN_SUFFIX
   value: 51mh.app
+- id: 870ed516369c7ea6933c0b51efd9c755f3dca5f3e085f5aaee3e4b49fde390b6
+  type: DOMAIN_SUFFIX
+  value: 51papaya.com
 - id: ca7991371ddaee1212f5499237c78ddce21223f1d591b9a643fc94e122ec94fb
   type: DOMAIN_SUFFIX
   value: 51pincha.cc
@@ -7976,6 +7979,9 @@ rules:
 - id: 1d967e985acb935edb000768d5a414e9294a5527001029fd386322e694fde1cb
   type: DOMAIN_SUFFIX
   value: fantasti.cc
+- id: 5c8dbe7da0a0b57ea14325dc7039137752f5f2511f14d5418716f7a265ea8dfd
+  type: DOMAIN_SUFFIX
+  value: fanza.jp
 - id: db09cb006c529b8443f6d4d7b4a29e90da23463b9ef4811b40d5256f03786562
   type: DOMAIN_SUFFIX
   value: fap-xxx.com
@@ -10979,9 +10985,6 @@ rules:
 - id: 9f78ac6a724eafd7c2c08f1e851d61406b4112d809875ba925c8f924d87d0f1b
   type: DOMAIN_SUFFIX
   value: imagepost.com
-- id: 1d1db7f5491308fa9f3a012c362759724a5a87d59d65c0886e754e645c888c6d
-  type: DOMAIN_SUFFIX
-  value: imagetwist.com
 - id: aab4419c1014affd8cb58bf89ca713577b7d2878a7614ccb141ef543104fc8d9
   type: DOMAIN_SUFFIX
   value: imaypb.com
@@ -14120,9 +14123,6 @@ rules:
 - id: ee3e597548cf6c0494a72466969a9a2c88366828c8e54debf80a8a262754456d
   type: DOMAIN_SUFFIX
   value: mycartoonsexgames.com
-- id: 4de6acbc46f29b21c622c6696fcf68537be4aac33dccb4c168a6355d86ca6e2a
-  type: DOMAIN_SUFFIX
-  value: mycdn.me
 - id: 61c3f2a2fd2119f66ef4e4e4957eafd887df1c0ca46d0ffaedbf312d9b5ff503
   type: DOMAIN_SUFFIX
   value: myclitgames.com
