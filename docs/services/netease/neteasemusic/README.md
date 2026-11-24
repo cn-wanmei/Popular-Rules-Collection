@@ -16,14 +16,14 @@
 | Provider | `netease` |
 | 规则浏览路径 | `rule/netease/neteasemusic/neteasemusic.yaml` |
 | 规则数量（_index） | **10** |
-| SHA-256 | `a5e8e0be8c4a879a804ef3812a448bf3edbe41a61f8e2dcc438a912572fe1ad1` |
+| SHA-256 | `ac79e97aab0dd31deeab4c94ed1a98bc2d345162468aa666382b73861331a2b5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261122T021415995124Z-run` |
-| IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
+| Run ID | `20261124T060424927103Z-run` |
+| IR digest | `d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

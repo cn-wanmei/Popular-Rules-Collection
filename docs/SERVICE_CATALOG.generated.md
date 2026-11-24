@@ -1,7 +1,7 @@
 # Service Catalog (generated)
 
-Run: `20261122T021415995124Z-run`  
-IR: `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf`  
+Run: `20261124T060424927103Z-run`  
+IR: `d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7`  
 Services: **651**  
 Icon release: `icon-2026.10.06.full1`
 
@@ -44,7 +44,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `anthropic-claude` | Claude | `anthropic` | service | 1 | 7 | [anthropic-claude](rules/anthropic-claude.md) |
 | `anthropic-platform` | Anthropic Platform | `anthropic` | service | 1 | 7 | [anthropic-platform](rules/anthropic-platform.md) |
 | `anthropic_aggregate` | Anthropic | `anthropic` | provider_aggregate | 26 | 7 | [anthropic_aggregate](rules/anthropic_aggregate.md) |
-| `apple` | Apple | `apple` | provider_aggregate | 2052 | 7 | [apple](rules/apple.md) |
+| `apple` | Apple | `apple` | provider_aggregate | 1922 | 7 | [apple](rules/apple.md) |
 | `applebooks` | Apple Books | `apple` | service | 1 | 7 | [applebooks](rules/applebooks.md) |
 | `appledev` | Apple Developer | `apple` | service | 38 | 7 | [appledev](rules/appledev.md) |
 | `applefirmware` | Apple Firmware | `apple` | service | 175 | 7 | [applefirmware](rules/applefirmware.md) |
@@ -169,7 +169,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `deepseek_aggregate` | DeepSeek | `deepseek` | provider_aggregate | 2 | 7 | [deepseek_aggregate](rules/deepseek_aggregate.md) |
 | `dell` | Dell | `dell` | service | 2 | 7 | [dell](rules/dell.md) |
 | `dell_aggregate` | Dell | `dell` | provider_aggregate | 2 | 7 | [dell_aggregate](rules/dell_aggregate.md) |
-| `developer` | developer | `` | aggregate | 715 | 7 | [developer](rules/developer.md) |
+| `developer` | developer | `` | aggregate | 717 | 7 | [developer](rules/developer.md) |
 | `developer` | Developer Ecosystem | `` | category | 286 | 7 | [developer](rules/developer.md) |
 | `dewu` | Dewu | `dewu` | service | 45 | 7 | [dewu](rules/dewu.md) |
 | `dewu_aggregate` | Dewu | `dewu` | provider_aggregate | 45 | 7 | [dewu_aggregate](rules/dewu_aggregate.md) |

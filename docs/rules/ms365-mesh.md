@@ -16,14 +16,14 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/ms365-mesh/ms365-mesh.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `24d0e555a993227e8e3ae20bb16d99327ffc8b1597d645330b7d6858a8126a0c` |
+| SHA-256 | `0bc726090edce24c05a94e76b17ebe625aed50335b24ce3513036e4640e769db` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261122T021415995124Z-run` |
-| IR digest | `af0e21098fac7fe342a54aa8b973c45890d025c570896b62d8feb6be3489c6bf` |
+| Run ID | `20261124T060424927103Z-run` |
+| IR digest | `d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
