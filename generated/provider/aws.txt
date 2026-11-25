@@ -1,4 +1,4 @@
-"createDate": "2026-11-24-02-47-05",
+"createDate": "2026-11-24-20-57-05",
 "ip_prefix": "1.178.1.0/24",
 "ip_prefix": "1.178.10.0/24",
 "ip_prefix": "1.178.100.0/24",
@@ -1905,7 +1905,9 @@
 "ip_prefix": "15.248.195.0/24",
 "ip_prefix": "15.248.198.0/24",
 "ip_prefix": "15.248.20.0/22",
+"ip_prefix": "15.248.200.0/26",
 "ip_prefix": "15.248.208.0/26",
+"ip_prefix": "15.248.208.64/26",
 "ip_prefix": "15.248.24.0/22",
 "ip_prefix": "15.248.28.0/22",
 "ip_prefix": "15.248.32.0/22",
@@ -10381,6 +10383,7 @@
 "ipv6_prefix": "2600:f0fb:c005::/48",
 "ipv6_prefix": "2600:f0fb:c006::/48",
 "ipv6_prefix": "2600:f0fb:c007::/48",
+"ipv6_prefix": "2600:f0fb:c008::/48",
 "ipv6_prefix": "2600:f0fb:c0ff::/56",
 "ipv6_prefix": "2600:f0fb:c800::/48",
 "ipv6_prefix": "2600:f0fb:c801::/48",
@@ -11693,7 +11696,7 @@
 "service": "ROUTE53_RESOLVER",
 "service": "S3",
 "service": "WORKSPACES_GATEWAYS",
-"syncToken": "1795488425",
+"syncToken": "1795553825",
 ]
 ],
 {
