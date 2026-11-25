@@ -16,13 +16,13 @@
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/feishu/feishu.yaml` |
 | 规则数量（_index） | **43** |
-| SHA-256 | `280aa2a759aa1c87afceac2022ec7200e1e7c76c6ecb4264de52733dd8be3983` |
+| SHA-256 | `97b75aa4ce54e1397c83aa3d43869b8ce3540c7deeda4019eaf263d3ce29b2f7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261124T060424927103Z-run` |
+| Run ID | `20261125T050704244063Z-run` |
 | IR digest | `d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7` |
 | IR schema | `semantic_ir_v2` |
 

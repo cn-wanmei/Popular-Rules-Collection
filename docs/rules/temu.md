@@ -16,13 +16,13 @@
 | Provider | `temu` |
 | 规则浏览路径 | `rule/temu/temu/temu.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `165785db033c1ab1cbe8ae610ddbad9cb466c1c8f6ef64f2d2063ddc8bae8ef4` |
+| SHA-256 | `87d4b3cc3737beaabd5d736a9db717e867832dcd797d340915632fd3fdc99a93` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261124T060424927103Z-run` |
+| Run ID | `20261125T050704244063Z-run` |
 | IR digest | `d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7` |
 | IR schema | `semantic_ir_v2` |
 

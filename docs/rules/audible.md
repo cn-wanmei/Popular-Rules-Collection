@@ -16,13 +16,13 @@
 | Provider | `amazon` |
 | 规则浏览路径 | `rule/amazon/audible/audible.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `2fc8e6d5e02e94ffa21f7b1da2238bd8ec827bba4f597a89b3d786984a0a1793` |
+| SHA-256 | `b2f57501c23be7382ae9880b30b6197593e15d47eb055db1edc7df6da84c0899` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261124T060424927103Z-run` |
+| Run ID | `20261125T050704244063Z-run` |
 | IR digest | `d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7` |
 | IR schema | `semantic_ir_v2` |
 
