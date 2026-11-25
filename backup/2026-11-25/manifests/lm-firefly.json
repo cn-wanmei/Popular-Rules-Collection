@@ -1,0 +1,34 @@
+{
+  "source": "lm-firefly",
+  "fetch": "github_raw",
+  "files_ok": 0,
+  "files_not_modified": 0,
+  "files_skipped": 1,
+  "files_failed": 0,
+  "empty_blocked": 0,
+  "required_failures": 0,
+  "rules_declared": 1,
+  "conditional_cache_hits": 0,
+  "scheduler_skips": 1,
+  "files": [
+    {
+      "name": "LM_Firefly_AppleDev.list",
+      "path": "Apple/AppleDev.list",
+      "service": "appledev",
+      "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/a8789af22f72908da22f94930cc0c692b7f0bf47/generated/source/appledev/domains.txt",
+      "status": "skipped",
+      "decision": "SKIP_FRESH",
+      "reason": "freshness_window_active",
+      "sha256": "42e429a1ca8a8a588d4f5394e0b54866612ee8ed86d972636b7c58786fffa128",
+      "cas_sha256": "42e429a1ca8a8a588d4f5394e0b54866612ee8ed86d972636b7c58786fffa128",
+      "size": 719,
+      "cached_from_cas": true,
+      "local": "sources/lm-firefly/LM_Firefly_AppleDev.list",
+      "cas_object": "data/cas/acquisition/42/e429a1ca8a8a588d4f5394e0b54866612ee8ed86d972636b7c58786fffa128"
+    }
+  ],
+  "registry_priority": 80,
+  "registry_trust": "high",
+  "critical": false,
+  "concurrency_workers": 1
+}
