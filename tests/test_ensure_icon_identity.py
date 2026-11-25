@@ -127,14 +127,14 @@ def test_publish_preflight_refuses_build_index_older_than_main(tmp_path, monkeyp
 
 
 def test_current_main_index_uses_git_sha_and_commit_pinned_raw_file(monkeypatch):
-    expected = b"entries:\\n  - id: current\\n    entity: service\\n"
+    expected = b"entries:\n  - id: current\n    entity: service\n"
     collection_sha = "a" * 40
     observed = {}
 
     def fake_run(args, **kwargs):
         observed["git_args"] = args
         observed["git_kwargs"] = kwargs
-        return type("Completed", (), {"stdout": f"{collection_sha}\\trefs/heads/main\\n"})()
+        return type("Completed", (), {"stdout": f"{collection_sha}\trefs/heads/main\n"})()
 
     class FakeResponse:
         def __enter__(self):
@@ -176,7 +176,7 @@ def test_current_main_index_uses_git_sha_and_commit_pinned_raw_file(monkeypatch)
 
 def test_current_main_index_rejects_invalid_git_sha(monkeypatch):
     def fake_run(args, **kwargs):
-        return type("Completed", (), {"stdout": "not-a-sha\\trefs/heads/main\\n"})()
+        return type("Completed", (), {"stdout": "not-a-sha\trefs/heads/main\n"})()
 
     monkeypatch.setattr(identity.subprocess, "run", fake_run)
 
