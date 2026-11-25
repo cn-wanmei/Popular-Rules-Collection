@@ -126,13 +126,17 @@ def test_publish_preflight_refuses_build_index_older_than_main(tmp_path, monkeyp
 
 
 
-def test_current_main_index_uses_contents_api_not_stale_raw_branch_cdn(monkeypatch):
+def test_current_main_index_uses_git_sha_and_commit_pinned_raw_file(monkeypatch):
     expected = b"entries:\\n  - id: current\\n    entity: service\\n"
+    collection_sha = "a" * 40
     observed = {}
 
-    class FakeResponse:
-        headers = {"Content-Type": "application/octet-stream"}
+    def fake_run(args, **kwargs):
+        observed["git_args"] = args
+        observed["git_kwargs"] = kwargs
+        return type("Completed", (), {"stdout": f"{collection_sha}\\trefs/heads/main\\n"})()
 
+    class FakeResponse:
         def __enter__(self):
             return self
 
@@ -144,17 +148,39 @@ def test_current_main_index_uses_contents_api_not_stale_raw_branch_cdn(monkeypat
 
     def fake_urlopen(request, timeout=30):
         observed["url"] = request.full_url
-        observed["accept"] = request.get_header("Accept")
+        observed["user_agent"] = request.get_header("User-agent")
         observed["cache_control"] = request.get_header("Cache-control")
+        observed["timeout"] = timeout
         return FakeResponse()
 
+    monkeypatch.setattr(identity.subprocess, "run", fake_run)
     monkeypatch.setattr(identity.urllib.request, "urlopen", fake_urlopen)
 
     assert identity.fetch_current_collection_index() == expected
-    assert observed["url"].startswith(
-        "https://api.github.com/repos/cn-wanmei/Popular-Rules-Collection/contents/rule/_index.yaml"
+    assert observed["git_args"] == [
+        "git",
+        "ls-remote",
+        "--exit-code",
+        "--refs",
+        identity.COLLECTION_REPO_GIT_URL,
+        "refs/heads/main",
+    ]
+    assert observed["url"] == (
+        "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/"
+        f"{collection_sha}/rule/_index.yaml"
     )
-    assert "ref=main" in observed["url"]
-    assert "raw.githubusercontent.com" not in observed["url"]
-    assert observed["accept"] == "application/vnd.github.raw+json"
+    assert observed["user_agent"] == "Popular-Rules-Collection-identity-coordinator"
     assert observed["cache_control"] == "no-cache"
+    assert "api.github.com" not in observed["url"]
+
+
+def test_current_main_index_rejects_invalid_git_sha(monkeypatch):
+    def fake_run(args, **kwargs):
+        return type("Completed", (), {"stdout": "not-a-sha\\trefs/heads/main\\n"})()
+
+    monkeypatch.setattr(identity.subprocess, "run", fake_run)
+
+    with pytest.raises(RuntimeError, match="exactly one valid SHA40"):
+        identity.fetch_current_collection_index()
+
+
