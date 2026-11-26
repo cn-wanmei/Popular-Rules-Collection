@@ -16,14 +16,14 @@
 | Provider | `alibaba` |
 | 规则浏览路径 | `rule/alibaba/cainiao/cainiao.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `917b3703ee42fa6188d0893f58c439ee08b1757d9944dac1d80e1f1fa57d52ee` |
+| SHA-256 | `3a5ea5d5c40115729bd61c616d96d976b1b5322004887df1c6749d518d54b84d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261125T050704244063Z-run` |
-| IR digest | `d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7` |
+| Run ID | `20261126T042144760067Z-run` |
+| IR digest | `f6c1f457c372ac45f59607e75030e5e63b169353b4b5bcc9860f678abd1ec7ed` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

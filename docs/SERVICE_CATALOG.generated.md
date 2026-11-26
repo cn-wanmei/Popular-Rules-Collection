@@ -1,7 +1,7 @@
 # Service Catalog (generated)
 
-Run: `20261125T050704244063Z-run`  
-IR: `d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7`  
+Run: `20261126T042144760067Z-run`  
+IR: `f6c1f457c372ac45f59607e75030e5e63b169353b4b5bcc9860f678abd1ec7ed`  
 Services: **651**  
 Icon release: `icon-2026.10.06.full1`
 
@@ -23,7 +23,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `adobe-firefly` | Adobe Firefly | `adobe` | service | 1 | 7 | [adobe-firefly](rules/adobe-firefly.md) |
 | `adobe-fonts` | Adobe Fonts | `adobe` | service | 1 | 7 | [adobe-fonts](rules/adobe-fonts.md) |
 | `adobe-stock` | Adobe Stock | `adobe` | service | 1 | 7 | [adobe-stock](rules/adobe-stock.md) |
-| `ai` | AI | `special` | service | 218 | 7 | [ai](rules/ai.md) |
+| `ai` | AI | `special` | service | 219 | 7 | [ai](rules/ai.md) |
 | `airbnb` | Airbnb | `airbnb` | service | 83 | 7 | [airbnb](rules/airbnb.md) |
 | `airbnb_aggregate` | Airbnb | `airbnb` | provider_aggregate | 83 | 7 | [airbnb_aggregate](rules/airbnb_aggregate.md) |
 | `aisuite` | AI Suite | `special` | service | 193 | 7 | [aisuite](rules/aisuite.md) |
@@ -169,7 +169,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `deepseek_aggregate` | DeepSeek | `deepseek` | provider_aggregate | 2 | 7 | [deepseek_aggregate](rules/deepseek_aggregate.md) |
 | `dell` | Dell | `dell` | service | 2 | 7 | [dell](rules/dell.md) |
 | `dell_aggregate` | Dell | `dell` | provider_aggregate | 2 | 7 | [dell_aggregate](rules/dell_aggregate.md) |
-| `developer` | developer | `` | aggregate | 717 | 7 | [developer](rules/developer.md) |
+| `developer` | developer | `` | aggregate | 720 | 7 | [developer](rules/developer.md) |
 | `developer` | Developer Ecosystem | `` | category | 286 | 7 | [developer](rules/developer.md) |
 | `dewu` | Dewu | `dewu` | service | 45 | 7 | [dewu](rules/dewu.md) |
 | `dewu_aggregate` | Dewu | `dewu` | provider_aggregate | 45 | 7 | [dewu_aggregate](rules/dewu_aggregate.md) |
@@ -236,7 +236,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `globalfoundries_aggregate` | GlobalFoundries | `globalfoundries` | provider_aggregate | 2 | 7 | [globalfoundries_aggregate](rules/globalfoundries_aggregate.md) |
 | `gmail` | Gmail | `google` | service | 1 | 7 | [gmail](rules/gmail.md) |
 | `goodreads` | Goodreads | `amazon` | service | 1 | 7 | [goodreads](rules/goodreads.md) |
-| `google` | Google | `google` | provider_aggregate | 1522 | 7 | [google](rules/google.md) |
+| `google` | Google | `google` | provider_aggregate | 1523 | 7 | [google](rules/google.md) |
 | `google-calendar` | Google Calendar | `google` | service | 1 | 7 | [google-calendar](rules/google-calendar.md) |
 | `google-chat` | Google Chat | `google` | service | 1 | 7 | [google-chat](rules/google-chat.md) |
 | `google-contacts` | Google Contacts | `google` | service | 1 | 7 | [google-contacts](rules/google-contacts.md) |
@@ -526,7 +526,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `soundcloud_aggregate` | SoundCloud | `soundcloud` | provider_aggregate | 5 | 7 | [soundcloud_aggregate](rules/soundcloud_aggregate.md) |
 | `spacex` | SpaceX | `spacex` | service | 2 | 7 | [spacex](rules/spacex.md) |
 | `spacex_aggregate` | SpaceX | `spacex` | provider_aggregate | 2 | 7 | [spacex_aggregate](rules/spacex_aggregate.md) |
-| `special` | Special / Generic | `special` | provider_aggregate | 7618 | 7 | [special](rules/special.md) |
+| `special` | Special / Generic | `special` | provider_aggregate | 7619 | 7 | [special](rules/special.md) |
 | `speedtest` | Speedtest | `ookla` | service | 8 | 7 | [speedtest](rules/speedtest.md) |
 | `spotify` | Spotify | `spotify` | service | 39 | 7 | [spotify](rules/spotify.md) |
 | `spotify_aggregate` | Spotify | `spotify` | provider_aggregate | 39 | 7 | [spotify_aggregate](rules/spotify_aggregate.md) |

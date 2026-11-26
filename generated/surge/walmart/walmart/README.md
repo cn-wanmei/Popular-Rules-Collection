@@ -1,0 +1,10 @@
+<!-- PATH_LINKS_GENERATED_START -->
+# Walmart · `surge`
+
+- **Service ID:** `walmart`
+- **本文件 Raw:** `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/walmart/walmart/walmart.list`
+- **说明文档:** [docs/rules/walmart.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/rules/walmart.md)
+- **浏览用规则:** `rule/walmart/walmart/walmart.yaml`（非运行时输入）
+
+本目录其它文件为客户端规则正文；本 README 为自动生成的快速链接（Path Links G3）。
+<!-- PATH_LINKS_GENERATED_END -->

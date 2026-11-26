@@ -16,14 +16,14 @@
 | Provider | `wangsu` |
 | 规则浏览路径 | `rule/wangsu/wangsu_aggregate/wangsu_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `a7f7b6110ffa160b095eeaa45f87cb04a9432b2dda6f88ac9e34673fceefe81f` |
+| SHA-256 | `b264367fe826879eb3ce8e0044da01c59c944810f46116041b0945ace7a42e6e` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261125T050704244063Z-run` |
-| IR digest | `d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7` |
+| Run ID | `20261126T042144760067Z-run` |
+| IR digest | `f6c1f457c372ac45f59607e75030e5e63b169353b4b5bcc9860f678abd1ec7ed` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

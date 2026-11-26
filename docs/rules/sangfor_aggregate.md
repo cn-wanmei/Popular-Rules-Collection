@@ -16,14 +16,14 @@
 | Provider | `sangfor` |
 | 规则浏览路径 | `rule/sangfor/sangfor_aggregate/sangfor_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `577de5f94f1cec953a42dbae45a2f3afdfcabd007c5ddfa9382822567454a941` |
+| SHA-256 | `3f58190818a25eed397462503dbd43c10611e3b25b781a851fff55df331e0f74` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261125T050704244063Z-run` |
-| IR digest | `d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7` |
+| Run ID | `20261126T042144760067Z-run` |
+| IR digest | `f6c1f457c372ac45f59607e75030e5e63b169353b4b5bcc9860f678abd1ec7ed` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

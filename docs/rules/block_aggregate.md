@@ -16,14 +16,14 @@
 | Provider | `block` |
 | 规则浏览路径 | `rule/block/block_aggregate/block_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `636d13a19c93d08a0630e4ab8a3448671ee14cbc42e17a0ba502363756a20980` |
+| SHA-256 | `3a7cca233c1977fc0ee0dfe6c8ed3995e9d21d4c446d7f3cfe585244563cb28f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261125T050704244063Z-run` |
-| IR digest | `d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7` |
+| Run ID | `20261126T042144760067Z-run` |
+| IR digest | `f6c1f457c372ac45f59607e75030e5e63b169353b4b5bcc9860f678abd1ec7ed` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

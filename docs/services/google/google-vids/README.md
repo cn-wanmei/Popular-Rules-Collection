@@ -16,14 +16,14 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-vids/google-vids.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `65c338a6fb707d76fadb66eb467db02e33845f9fbe359c1e0758c71dfa5e089d` |
+| SHA-256 | `035ab6053fa5c41839abff8eedaff705f2f49302238294e87f66165556c4dc61` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261125T050704244063Z-run` |
-| IR digest | `d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7` |
+| Run ID | `20261126T042144760067Z-run` |
+| IR digest | `f6c1f457c372ac45f59607e75030e5e63b169353b4b5bcc9860f678abd1ec7ed` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

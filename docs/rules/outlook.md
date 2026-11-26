@@ -16,14 +16,14 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/outlook/outlook.yaml` |
 | 规则数量（_index） | **4** |
-| SHA-256 | `f1962e2fa0913dcc2a9aa6b8952942391a5dd9b1d6fa00267ac51d1e36df3758` |
+| SHA-256 | `8f770e41a1256aa7e86c56790de0c63b3bfaf27899d429309e4e1e72b0c975e9` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261125T050704244063Z-run` |
-| IR digest | `d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7` |
+| Run ID | `20261126T042144760067Z-run` |
+| IR digest | `f6c1f457c372ac45f59607e75030e5e63b169353b4b5bcc9860f678abd1ec7ed` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

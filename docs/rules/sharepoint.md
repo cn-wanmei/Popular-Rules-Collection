@@ -16,14 +16,14 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/sharepoint/sharepoint.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `3203a8054c4197c9d75a5f8ba03f4c5ed2e888883f984e2497a4c89bf2cbaed1` |
+| SHA-256 | `e7b6a210205ef983314e36c31acc3f548b5a4208b5224a5708e99565b411ce1f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261125T050704244063Z-run` |
-| IR digest | `d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7` |
+| Run ID | `20261126T042144760067Z-run` |
+| IR digest | `f6c1f457c372ac45f59607e75030e5e63b169353b4b5bcc9860f678abd1ec7ed` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
