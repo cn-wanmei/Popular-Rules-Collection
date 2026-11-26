@@ -4,16 +4,16 @@ entity: provider_aggregate
 id: special
 display_name: Special / Generic
 generated_from:
-  run_id: 20261125T050704244063Z-run
+  run_id: 20261126T042144760067Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7
+  ir_digest: f6c1f457c372ac45f59607e75030e5e63b169353b4b5bcc9860f678abd1ec7ed
 stats:
-  total: 7618
+  total: 7619
   by_type:
     DOMAIN: 540
     DOMAIN_KEYWORD: 4
     DOMAIN_REGEX: 137
-    DOMAIN_SUFFIX: 6895
+    DOMAIN_SUFFIX: 6896
     IP_CIDR: 26
     IP_CIDR6: 16
 rules:
@@ -9008,6 +9008,9 @@ rules:
 - id: 0b539c3176353b88c1b3329c99c0fc51b0e9babc0a681fb718dd0bb2c6a13a6b
   type: DOMAIN_SUFFIX
   value: geminiweb-pa.clients6.google.com
+- id: d5e861439d4091a06ab82a7ecc7814697e7299e4da6854d7c523152f7877739f
+  type: DOMAIN_SUFFIX
+  value: gemma.ai
 - id: 519b18789d57caa1cc93878842fd725f4fc797642a4c8f68e3939247506b2948
   type: DOMAIN_SUFFIX
   value: generativeai.google

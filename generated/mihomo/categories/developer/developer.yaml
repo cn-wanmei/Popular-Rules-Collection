@@ -34,6 +34,7 @@ payload:
   - DOMAIN-SUFFIX,unity3d.com
   - DOMAIN-SUFFIX,fontawesome.com
   - DOMAIN-SUFFIX,pub.dev
+  - DOMAIN-SUFFIX,cachix.org
   - DOMAIN-SUFFIX,talkingkotlin.com
   - DOMAIN-SUFFIX,f8.com
   - DOMAIN-SUFFIX,openwrt.org
@@ -60,6 +61,7 @@ payload:
   - DOMAIN-SUFFIX,jquery.com
   - DOMAIN-SUFFIX,ubuntu.com
   - DOMAIN-SUFFIX,mystrikingly.com
+  - DOMAIN-SUFFIX,debian.map.fastlydns.net
   - DOMAIN-SUFFIX,kotl.in
   - DOMAIN-SUFFIX,ziglang.org
   - DOMAIN-SUFFIX,docker.io
@@ -241,6 +243,7 @@ payload:
   - DOMAIN-SUFFIX,vscode-sync.trafficmanager.net
   - DOMAIN-SUFFIX,stackoverflow.email
   - DOMAIN-SUFFIX,gh.io
+  - DOMAIN-SUFFIX,vivox.com
   - DOMAIN-SUFFIX,kde.org
   - DOMAIN-SUFFIX,stackoverflowbusiness.com
   - DOMAIN-SUFFIX,linux.org

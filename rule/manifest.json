@@ -3,9 +3,9 @@
   "version": 1,
   "schema_version": 2,
   "status": "ready",
-  "run_id": "20261125T050704244063Z-run",
+  "run_id": "20261126T042144760067Z-run",
   "ir_schema": "semantic_ir_v2",
-  "ir_digest": "d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7",
+  "ir_digest": "f6c1f457c372ac45f59607e75030e5e63b169353b4b5bcc9860f678abd1ec7ed",
   "layout_schema": "directory_layout_v2",
   "validation": {
     "duplicate_paths": 0,
@@ -14,7 +14,7 @@
     "layout_schema": "directory_layout_v2"
   },
   "rule_file_count": 651,
-  "rule_count": 145008,
+  "rule_count": 145014,
   "entities": {
     "provider_aggregates": 254,
     "services": 394,

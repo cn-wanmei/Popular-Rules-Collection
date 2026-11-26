@@ -4,13 +4,13 @@ entity: aggregate
 id: developer
 display_name: developer
 generated_from:
-  run_id: 20261125T050704244063Z-run
+  run_id: 20261126T042144760067Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: d717cab0c694827aaf30e73a9ec9b5b21f9d1f5b3742c778a1ab86d515e69cf7
+  ir_digest: f6c1f457c372ac45f59607e75030e5e63b169353b4b5bcc9860f678abd1ec7ed
 stats:
-  total: 717
+  total: 720
   by_type:
-    DOMAIN_SUFFIX: 717
+    DOMAIN_SUFFIX: 720
 rules:
 - id: 2448051afa80b760ccf196ef03d6f74d0da413b077c971aa0aa96ff2bf6c36dd
   type: DOMAIN_SUFFIX
@@ -198,6 +198,9 @@ rules:
 - id: f246934c7d24b0f81f4eb0f2dbebd726ec1fc8b5f5432c6a350abe2c0f2e6a51
   type: DOMAIN_SUFFIX
   value: busybox.net
+- id: 0da3664bece6d586fba2a1a88598b8fdad4dc14d416d2e5c89e48dc110a0b983
+  type: DOMAIN_SUFFIX
+  value: cachix.org
 - id: 411e9e5fd7c471810b6e37757a75ffb947636c8cca4342a7a72411a53bdc0df2
   type: DOMAIN_SUFFIX
   value: cafe.github.com
@@ -369,6 +372,9 @@ rules:
 - id: 9554f492633200b2f974234e9399c835fb9adbd45f4e6bd3069fc514168c7437
   type: DOMAIN_SUFFIX
   value: debian.com
+- id: 16fd62059ecde9ee2b5e9d45838901207ad997b660a9e950f653b85007982f4f
+  type: DOMAIN_SUFFIX
+  value: debian.map.fastlydns.net
 - id: 8d73c49800e41f5611d7c7981aa066d28116af999817ac507f83c7d353fe909d
   type: DOMAIN_SUFFIX
   value: debian.org
@@ -2007,6 +2013,9 @@ rules:
 - id: b74d0624a6bc411f252ed7da57c2fff5860b2b8bffab3167c04b567235fdc1ab
   type: DOMAIN_SUFFIX
   value: visualstudio.net
+- id: 56d353aef8cbe82a409b29d5931650865430054ec1f22145edefad7b943a7553
+  type: DOMAIN_SUFFIX
+  value: vivox.com
 - id: 15f43ee9120b9f678a316566261268a7c9793db5edc8ea52dd17abf71b0a4810
   type: DOMAIN_SUFFIX
   value: vsassets.io
