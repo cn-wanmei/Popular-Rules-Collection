@@ -8,17 +8,17 @@ sources:
     empty_blocked: 0
     rules_declared: 8
   blackmatrix7:
-    last_attempt: '2026-11-27T04:10:45.867578+00:00'
-    last_success: '2026-11-27T04:10:45.867592+00:00'
+    last_attempt: '2026-11-28T03:59:53.384911+00:00'
+    last_success: '2026-11-28T03:59:53.384917+00:00'
     failure_count: 0
     files_ok: 0
     files_failed: 0
     empty_blocked: 0
     rules_declared: 154
-    files_not_modified: 0
-    files_skipped: 154
-    conditional_cache_hits: 0
-    scheduler_skips: 154
+    files_not_modified: 154
+    files_skipped: 0
+    conditional_cache_hits: 154
+    scheduler_skips: 0
     fetch_workers: 12
     cas_objects: 154
     status: healthy
@@ -47,69 +47,69 @@ sources:
     empty_blocked: 0
     rules_declared: 3
   metacubex:
-    last_attempt: '2026-11-27T04:10:45.917890+00:00'
-    files_ok: 0
+    last_attempt: '2026-11-28T04:00:19.660249+00:00'
+    files_ok: 10
     files_failed: 0
     empty_blocked: 0
     rules_declared: 76
-    last_success: '2026-11-27T04:10:45.917902+00:00'
+    last_success: '2026-11-28T04:00:19.660255+00:00'
     failure_count: 0
-    files_not_modified: 0
-    files_skipped: 76
-    conditional_cache_hits: 0
-    scheduler_skips: 76
+    files_not_modified: 66
+    files_skipped: 0
+    conditional_cache_hits: 66
+    scheduler_skips: 0
     fetch_workers: 12
     cas_objects: 76
     status: healthy
   v2fly:
-    last_attempt: '2026-11-27T04:10:45.953167+00:00'
-    files_ok: 0
+    last_attempt: '2026-11-28T04:00:38.971143+00:00'
+    files_ok: 1
     files_failed: 0
     empty_blocked: 0
     rules_declared: 56
-    last_success: '2026-11-27T04:10:45.953177+00:00'
+    last_success: '2026-11-28T04:00:38.971148+00:00'
     failure_count: 0
-    files_not_modified: 0
-    files_skipped: 56
-    conditional_cache_hits: 0
-    scheduler_skips: 56
+    files_not_modified: 55
+    files_skipped: 0
+    conditional_cache_hits: 55
+    scheduler_skips: 0
     fetch_workers: 12
     cas_objects: 56
     status: healthy
   dler:
-    last_attempt: '2026-11-27T04:10:45.966733+00:00'
+    last_attempt: '2026-11-28T04:00:45.806635+00:00'
     files_ok: 0
     files_failed: 0
     empty_blocked: 0
     rules_declared: 20
-    last_success: '2026-11-27T04:10:45.966743+00:00'
+    last_success: '2026-11-28T04:00:45.806642+00:00'
     failure_count: 0
-    files_not_modified: 0
-    files_skipped: 20
-    conditional_cache_hits: 0
-    scheduler_skips: 20
+    files_not_modified: 20
+    files_skipped: 0
+    conditional_cache_hits: 20
+    scheduler_skips: 0
     fetch_workers: 12
     cas_objects: 20
     status: healthy
   lm-firefly:
-    last_attempt: '2026-11-27T04:10:45.967729+00:00'
+    last_attempt: '2026-11-28T04:00:46.116516+00:00'
     files_ok: 0
-    files_not_modified: 0
-    files_skipped: 1
+    files_not_modified: 1
+    files_skipped: 0
     files_failed: 0
     empty_blocked: 0
     rules_declared: 1
-    conditional_cache_hits: 0
-    scheduler_skips: 1
+    conditional_cache_hits: 1
+    scheduler_skips: 0
     fetch_workers: 1
     cas_objects: 1
-    last_success: '2026-11-27T04:10:45.967737+00:00'
+    last_success: '2026-11-28T04:00:46.116523+00:00'
     failure_count: 0
     status: healthy
     last_failure: '2026-11-10T04:11:38.698482+00:00'
     reason: all fetches failed
   popular-rules-source:
-    last_attempt: '2026-11-27T04:10:45.768035+00:00'
+    last_attempt: '2026-11-28T03:59:00.212363+00:00'
     files_ok: 281
     files_not_modified: 0
     files_skipped: 0
@@ -120,7 +120,7 @@ sources:
     scheduler_skips: 0
     fetch_workers: 12
     cas_objects: 281
-    last_success: '2026-11-27T04:10:45.768042+00:00'
+    last_success: '2026-11-28T03:59:00.212372+00:00'
     failure_count: 0
     status: healthy
-updated_at: '2026-11-27T04:10:45.989769+00:00'
+updated_at: '2026-11-28T04:00:46.139165+00:00'

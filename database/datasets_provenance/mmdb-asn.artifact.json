@@ -2,11 +2,11 @@
   "id": "mmdb-asn",
   "kind": "binary",
   "scope": "artifact",
-  "backup": "backup/2026-11-27/datasets/mmdb-asn.bin",
+  "backup": "backup/2026-11-28/datasets/mmdb-asn.bin",
   "artifact": "generated/mmdb/ASN.mmdb",
   "sha256": "cb8dcc465b4a1e90940520c74ed87972ea962e390580912bfe4aa94bc82cf1d0",
   "bytes": 9081677,
-  "fetched_at": "2026-11-27T04:06:05.742500+00:00",
+  "fetched_at": "2026-11-28T03:54:14.635680+00:00",
   "source": {
     "owner": "Loyalsoldier",
     "repo": "geoip",
