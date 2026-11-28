@@ -12,6 +12,7 @@ import base64
 import hashlib
 import json
 import os
+import re
 import subprocess
 import sys
 import time
@@ -23,12 +24,13 @@ ICON_SNAPSHOT_API_URL = (
     "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/"
     "contents/config/collection_identity_snapshot.json"
 )
-# Read the live branch through GitHub's Contents API, not raw.githubusercontent.com.
-# The raw branch URL can remain stale after a successful push even with a cache-buster,
-# causing a just-promoted immutable artifact to be misclassified as an old build.
-COLLECTION_INDEX_API_URL = (
-    "https://api.github.com/repos/cn-wanmei/Popular-Rules-Collection/"
-    "contents/rule/_index.yaml"
+# Resolve Collection main through Git transport and fetch the index at that exact
+# immutable commit. Reading the Contents API can exhaust the unauthenticated REST
+# rate limit; reading raw.githubusercontent.com/main can return a stale branch cache.
+# The commit-pinned raw URL avoids both failure modes.
+COLLECTION_REPO_GIT_URL = "https://github.com/cn-wanmei/Popular-Rules-Collection.git"
+COLLECTION_INDEX_RAW_URL = (
+    "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/"
 )
 ICON_DISPATCH_URL = "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/dispatches"
 
@@ -83,7 +85,59 @@ def fetch_contents_api_bytes(
 
 
 def fetch_current_collection_index(timeout: int = 30) -> bytes:
-    return fetch_contents_api_bytes(COLLECTION_INDEX_API_URL, timeout=timeout)
+    """Read the live Collection main index via an immutable commit pin.
+
+    git ls-remote resolves the current main SHA without consuming GitHub REST
+    API rate limits. Fetching the raw file by that SHA is content-addressed to
+    the observed commit, unlike a potentially stale raw /main/ URL.
+    """
+    try:
+        result = subprocess.run(
+            [
+                "git",
+                "ls-remote",
+                "--exit-code",
+                "--refs",
+                COLLECTION_REPO_GIT_URL,
+                "refs/heads/main",
+            ],
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=min(timeout, 30),
+        )
+    except Exception as exc:
+        raise RuntimeError(f"cannot resolve Collection main with git ls-remote: {exc}") from exc
+
+    matches = []
+    for line in result.stdout.splitlines():
+        fields = line.split()
+        if len(fields) == 2 and fields[1] == "refs/heads/main":
+            matches.append(fields[0].lower())
+    if len(matches) != 1 or not re.fullmatch(r"[0-9a-f]{40}", matches[0]):
+        raise RuntimeError(
+            "git ls-remote did not return exactly one valid SHA40 for Collection refs/heads/main"
+        )
+
+    collection_sha = matches[0]
+    url = f"{COLLECTION_INDEX_RAW_URL}{collection_sha}/rule/_index.yaml"
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "Popular-Rules-Collection-identity-coordinator",
+            "Cache-Control": "no-cache",
+        },
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            raw = response.read()
+    except Exception as exc:
+        raise RuntimeError(
+            f"cannot fetch Collection main index at immutable commit {collection_sha}: {exc}"
+        ) from exc
+    if not raw:
+        raise RuntimeError(f"Collection main index is empty at immutable commit {collection_sha}")
+    return raw
 
 
 def pinned_sha(snapshot: dict) -> str:
